@@ -609,7 +609,7 @@ public final class Data {
 
     /**
      * <pre>
-     * The link to this object.
+     * Media download link.
      * </pre>
      *
      * <code>string media_link = 100;</code>
@@ -618,7 +618,7 @@ public final class Data {
     java.lang.String getMediaLink();
     /**
      * <pre>
-     * The link to this object.
+     * Media download link.
      * </pre>
      *
      * <code>string media_link = 100;</code>
@@ -629,7 +629,7 @@ public final class Data {
 
     /**
      * <pre>
-     * Media download link.
+     * The link to this object.
      * </pre>
      *
      * <code>string self_link = 101;</code>
@@ -638,7 +638,7 @@ public final class Data {
     java.lang.String getSelfLink();
     /**
      * <pre>
-     * Media download link.
+     * The link to this object.
      * </pre>
      *
      * <code>string self_link = 101;</code>
@@ -646,6 +646,26 @@ public final class Data {
      */
     com.google.protobuf.ByteString
         getSelfLinkBytes();
+
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     * @return The kind.
+     */
+    java.lang.String getKind();
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     * @return The bytes for kind.
+     */
+    com.google.protobuf.ByteString
+        getKindBytes();
   }
   /**
    * <pre>
@@ -679,6 +699,7 @@ public final class Data {
       bucket_ = "";
       mediaLink_ = "";
       selfLink_ = "";
+      kind_ = "";
     }
 
     @java.lang.Override
@@ -921,6 +942,12 @@ public final class Data {
               java.lang.String s = input.readStringRequireUtf8();
 
               selfLink_ = s;
+              break;
+            }
+            case 818: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              kind_ = s;
               break;
             }
             default: {
@@ -2835,7 +2862,7 @@ public final class Data {
     private volatile java.lang.Object mediaLink_;
     /**
      * <pre>
-     * The link to this object.
+     * Media download link.
      * </pre>
      *
      * <code>string media_link = 100;</code>
@@ -2856,7 +2883,7 @@ public final class Data {
     }
     /**
      * <pre>
-     * The link to this object.
+     * Media download link.
      * </pre>
      *
      * <code>string media_link = 100;</code>
@@ -2881,7 +2908,7 @@ public final class Data {
     private volatile java.lang.Object selfLink_;
     /**
      * <pre>
-     * Media download link.
+     * The link to this object.
      * </pre>
      *
      * <code>string self_link = 101;</code>
@@ -2902,7 +2929,7 @@ public final class Data {
     }
     /**
      * <pre>
-     * Media download link.
+     * The link to this object.
      * </pre>
      *
      * <code>string self_link = 101;</code>
@@ -2917,6 +2944,52 @@ public final class Data {
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         selfLink_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int KIND_FIELD_NUMBER = 102;
+    private volatile java.lang.Object kind_;
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     * @return The kind.
+     */
+    @java.lang.Override
+    public java.lang.String getKind() {
+      java.lang.Object ref = kind_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        kind_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     * @return The bytes for kind.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getKindBytes() {
+      java.lang.Object ref = kind_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        kind_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -3023,6 +3096,9 @@ public final class Data {
       }
       if (!getSelfLinkBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 101, selfLink_);
+      }
+      if (!getKindBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 102, kind_);
       }
       unknownFields.writeTo(output);
     }
@@ -3136,6 +3212,9 @@ public final class Data {
       if (!getSelfLinkBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(101, selfLink_);
       }
+      if (!getKindBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(102, kind_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -3225,6 +3304,8 @@ public final class Data {
           .equals(other.getMediaLink())) return false;
       if (!getSelfLink()
           .equals(other.getSelfLink())) return false;
+      if (!getKind()
+          .equals(other.getKind())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -3311,6 +3392,8 @@ public final class Data {
       hash = (53 * hash) + getMediaLink().hashCode();
       hash = (37 * hash) + SELF_LINK_FIELD_NUMBER;
       hash = (53 * hash) + getSelfLink().hashCode();
+      hash = (37 * hash) + KIND_FIELD_NUMBER;
+      hash = (53 * hash) + getKind().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3549,6 +3632,8 @@ public final class Data {
 
         selfLink_ = "";
 
+        kind_ = "";
+
         return this;
       }
 
@@ -3629,6 +3714,7 @@ public final class Data {
         }
         result.mediaLink_ = mediaLink_;
         result.selfLink_ = selfLink_;
+        result.kind_ = kind_;
         onBuilt();
         return result;
       }
@@ -3773,6 +3859,10 @@ public final class Data {
         }
         if (!other.getSelfLink().isEmpty()) {
           selfLink_ = other.selfLink_;
+          onChanged();
+        }
+        if (!other.getKind().isEmpty()) {
+          kind_ = other.kind_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -6542,7 +6632,7 @@ public final class Data {
       private java.lang.Object mediaLink_ = "";
       /**
        * <pre>
-       * The link to this object.
+       * Media download link.
        * </pre>
        *
        * <code>string media_link = 100;</code>
@@ -6562,7 +6652,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * The link to this object.
+       * Media download link.
        * </pre>
        *
        * <code>string media_link = 100;</code>
@@ -6583,7 +6673,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * The link to this object.
+       * Media download link.
        * </pre>
        *
        * <code>string media_link = 100;</code>
@@ -6602,7 +6692,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * The link to this object.
+       * Media download link.
        * </pre>
        *
        * <code>string media_link = 100;</code>
@@ -6616,7 +6706,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * The link to this object.
+       * Media download link.
        * </pre>
        *
        * <code>string media_link = 100;</code>
@@ -6638,7 +6728,7 @@ public final class Data {
       private java.lang.Object selfLink_ = "";
       /**
        * <pre>
-       * Media download link.
+       * The link to this object.
        * </pre>
        *
        * <code>string self_link = 101;</code>
@@ -6658,7 +6748,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * Media download link.
+       * The link to this object.
        * </pre>
        *
        * <code>string self_link = 101;</code>
@@ -6679,7 +6769,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * Media download link.
+       * The link to this object.
        * </pre>
        *
        * <code>string self_link = 101;</code>
@@ -6698,7 +6788,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * Media download link.
+       * The link to this object.
        * </pre>
        *
        * <code>string self_link = 101;</code>
@@ -6712,7 +6802,7 @@ public final class Data {
       }
       /**
        * <pre>
-       * Media download link.
+       * The link to this object.
        * </pre>
        *
        * <code>string self_link = 101;</code>
@@ -6727,6 +6817,102 @@ public final class Data {
   checkByteStringIsUtf8(value);
         
         selfLink_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object kind_ = "";
+      /**
+       * <pre>
+       * The kind of item this is. For objects, this is always "storage#object".
+       * </pre>
+       *
+       * <code>string kind = 102;</code>
+       * @return The kind.
+       */
+      public java.lang.String getKind() {
+        java.lang.Object ref = kind_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          kind_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * The kind of item this is. For objects, this is always "storage#object".
+       * </pre>
+       *
+       * <code>string kind = 102;</code>
+       * @return The bytes for kind.
+       */
+      public com.google.protobuf.ByteString
+          getKindBytes() {
+        java.lang.Object ref = kind_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          kind_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * The kind of item this is. For objects, this is always "storage#object".
+       * </pre>
+       *
+       * <code>string kind = 102;</code>
+       * @param value The kind to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKind(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        kind_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * The kind of item this is. For objects, this is always "storage#object".
+       * </pre>
+       *
+       * <code>string kind = 102;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKind() {
+        
+        kind_ = getDefaultInstance().getKind();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * The kind of item this is. For objects, this is always "storage#object".
+       * </pre>
+       *
+       * <code>string kind = 102;</code>
+       * @param value The bytes for kind to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKindBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        kind_ = value;
         onChanged();
         return this;
       }
@@ -6809,7 +6995,7 @@ public final class Data {
     java.lang.String[] descriptorData = {
       "\n)google/events/cloud/storage/v1/data.pr" +
       "oto\022\036google.events.cloud.storage.v1\032\037goo" +
-      "gle/protobuf/timestamp.proto\"\203\010\n\021Storage" +
+      "gle/protobuf/timestamp.proto\"\221\010\n\021Storage" +
       "ObjectData\022\030\n\020content_encoding\030\001 \001(\t\022\033\n\023" +
       "content_disposition\030\002 \001(\t\022\025\n\rcache_contr" +
       "ol\030\003 \001(\t\022\030\n\020content_language\030\005 \001(\t\022\026\n\016me" +
@@ -6832,11 +7018,12 @@ public final class Data {
       "a\n\023customer_encryption\030\034 \001(\0132D.google.ev" +
       "ents.cloud.storage.v1.StorageObjectData." +
       "CustomerEncryption\022\022\n\nmedia_link\030d \001(\t\022\021" +
-      "\n\tself_link\030e \001(\t\032F\n\022CustomerEncryption\022" +
-      "\034\n\024encryption_algorithm\030\001 \001(\t\022\022\n\nkey_sha" +
-      "256\030\002 \001(\t\032/\n\rMetadataEntry\022\013\n\003key\030\001 \001(\t\022" +
-      "\r\n\005value\030\002 \001(\t:\0028\001B*\252\002\'Google.Events.Pro" +
-      "tobuf.Cloud.Storage.V1b\006proto3"
+      "\n\tself_link\030e \001(\t\022\014\n\004kind\030f \001(\t\032F\n\022Custo" +
+      "merEncryption\022\034\n\024encryption_algorithm\030\001 " +
+      "\001(\t\022\022\n\nkey_sha256\030\002 \001(\t\032/\n\rMetadataEntry" +
+      "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B*\252\002\'Goo" +
+      "gle.Events.Protobuf.Cloud.Storage.V1b\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -6848,7 +7035,7 @@ public final class Data {
     internal_static_google_events_cloud_storage_v1_StorageObjectData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_google_events_cloud_storage_v1_StorageObjectData_descriptor,
-        new java.lang.String[] { "ContentEncoding", "ContentDisposition", "CacheControl", "ContentLanguage", "Metageneration", "TimeDeleted", "ContentType", "Size", "TimeCreated", "Crc32C", "ComponentCount", "Md5Hash", "Etag", "Updated", "StorageClass", "KmsKeyName", "TimeStorageClassUpdated", "TemporaryHold", "RetentionExpirationTime", "Metadata", "EventBasedHold", "Name", "Id", "Bucket", "Generation", "CustomerEncryption", "MediaLink", "SelfLink", });
+        new java.lang.String[] { "ContentEncoding", "ContentDisposition", "CacheControl", "ContentLanguage", "Metageneration", "TimeDeleted", "ContentType", "Size", "TimeCreated", "Crc32C", "ComponentCount", "Md5Hash", "Etag", "Updated", "StorageClass", "KmsKeyName", "TimeStorageClassUpdated", "TemporaryHold", "RetentionExpirationTime", "Metadata", "EventBasedHold", "Name", "Id", "Bucket", "Generation", "CustomerEncryption", "MediaLink", "SelfLink", "Kind", });
     internal_static_google_events_cloud_storage_v1_StorageObjectData_CustomerEncryption_descriptor =
       internal_static_google_events_cloud_storage_v1_StorageObjectData_descriptor.getNestedTypes().get(0);
     internal_static_google_events_cloud_storage_v1_StorageObjectData_CustomerEncryption_fieldAccessorTable = new
