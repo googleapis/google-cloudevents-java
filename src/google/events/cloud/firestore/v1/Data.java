@@ -107,90 +107,6 @@ public final class Data {
      * <code>.google.events.cloud.firestore.v1.DocumentMask update_mask = 3;</code>
      */
     google.events.cloud.firestore.v1.Data.DocumentMaskOrBuilder getUpdateMaskOrBuilder();
-
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    int getWildcardsCount();
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    boolean containsWildcards(
-        java.lang.String key);
-    /**
-     * Use {@link #getWildcardsMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.String, java.lang.String>
-    getWildcards();
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    java.util.Map<java.lang.String, java.lang.String>
-    getWildcardsMap();
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-
-    java.lang.String getWildcardsOrDefault(
-        java.lang.String key,
-        java.lang.String defaultValue);
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-
-    java.lang.String getWildcardsOrThrow(
-        java.lang.String key);
   }
   /**
    * <pre>
@@ -231,7 +147,6 @@ public final class Data {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -281,19 +196,6 @@ public final class Data {
 
               break;
             }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                wildcards_ = com.google.protobuf.MapField.newMapField(
-                    WildcardsDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
-              wildcards__ = input.readMessage(
-                  WildcardsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              wildcards_.getMutableMap().put(
-                  wildcards__.getKey(), wildcards__.getValue());
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -318,18 +220,6 @@ public final class Data {
       return google.events.cloud.firestore.v1.Data.internal_static_google_events_cloud_firestore_v1_DocumentEventData_descriptor;
     }
 
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
-        case 4:
-          return internalGetWildcards();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -461,127 +351,6 @@ public final class Data {
       return getUpdateMask();
     }
 
-    public static final int WILDCARDS_FIELD_NUMBER = 4;
-    private static final class WildcardsDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.String, java.lang.String> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.String, java.lang.String>newDefaultInstance(
-                  google.events.cloud.firestore.v1.Data.internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.STRING,
-                  "",
-                  com.google.protobuf.WireFormat.FieldType.STRING,
-                  "");
-    }
-    private com.google.protobuf.MapField<
-        java.lang.String, java.lang.String> wildcards_;
-    private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-    internalGetWildcards() {
-      if (wildcards_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            WildcardsDefaultEntryHolder.defaultEntry);
-      }
-      return wildcards_;
-    }
-
-    public int getWildcardsCount() {
-      return internalGetWildcards().getMap().size();
-    }
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsWildcards(
-        java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
-      return internalGetWildcards().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getWildcardsMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, java.lang.String> getWildcards() {
-      return getWildcardsMap();
-    }
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.String, java.lang.String> getWildcardsMap() {
-      return internalGetWildcards().getMap();
-    }
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    @java.lang.Override
-
-    public java.lang.String getWildcardsOrDefault(
-        java.lang.String key,
-        java.lang.String defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, java.lang.String> map =
-          internalGetWildcards().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <pre>
-     * The matches from wildcards specified in the event subscription, to the
-     * values of those wildcards in the document name. For example,
-     * a subscription to
-     * `/projects/my_project/databases/(default)/documents/users/{username}`
-     * matching a document with name
-     * `/projects/my_project/databases/(default)/documents/users/marie`
-     * would result in a mapping of `'username': 'marie'`.
-     * </pre>
-     *
-     * <code>map&lt;string, string&gt; wildcards = 4;</code>
-     */
-    @java.lang.Override
-
-    public java.lang.String getWildcardsOrThrow(
-        java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, java.lang.String> map =
-          internalGetWildcards().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -605,12 +374,6 @@ public final class Data {
       if (updateMask_ != null) {
         output.writeMessage(3, getUpdateMask());
       }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeStringMapTo(
-          output,
-          internalGetWildcards(),
-          WildcardsDefaultEntryHolder.defaultEntry,
-          4);
       unknownFields.writeTo(output);
     }
 
@@ -631,16 +394,6 @@ public final class Data {
       if (updateMask_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getUpdateMask());
-      }
-      for (java.util.Map.Entry<java.lang.String, java.lang.String> entry
-           : internalGetWildcards().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
-        wildcards__ = WildcardsDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, wildcards__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -672,8 +425,6 @@ public final class Data {
         if (!getUpdateMask()
             .equals(other.getUpdateMask())) return false;
       }
-      if (!internalGetWildcards().equals(
-          other.internalGetWildcards())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -696,10 +447,6 @@ public final class Data {
       if (hasUpdateMask()) {
         hash = (37 * hash) + UPDATE_MASK_FIELD_NUMBER;
         hash = (53 * hash) + getUpdateMask().hashCode();
-      }
-      if (!internalGetWildcards().getMap().isEmpty()) {
-        hash = (37 * hash) + WILDCARDS_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetWildcards().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -812,28 +559,6 @@ public final class Data {
         return google.events.cloud.firestore.v1.Data.internal_static_google_events_cloud_firestore_v1_DocumentEventData_descriptor;
       }
 
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(
-          int number) {
-        switch (number) {
-          case 4:
-            return internalGetWildcards();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(
-          int number) {
-        switch (number) {
-          case 4:
-            return internalGetMutableWildcards();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
@@ -878,7 +603,6 @@ public final class Data {
           updateMask_ = null;
           updateMaskBuilder_ = null;
         }
-        internalGetMutableWildcards().clear();
         return this;
       }
 
@@ -905,7 +629,6 @@ public final class Data {
       @java.lang.Override
       public google.events.cloud.firestore.v1.Data.DocumentEventData buildPartial() {
         google.events.cloud.firestore.v1.Data.DocumentEventData result = new google.events.cloud.firestore.v1.Data.DocumentEventData(this);
-        int from_bitField0_ = bitField0_;
         if (valueBuilder_ == null) {
           result.value_ = value_;
         } else {
@@ -921,8 +644,6 @@ public final class Data {
         } else {
           result.updateMask_ = updateMaskBuilder_.build();
         }
-        result.wildcards_ = internalGetWildcards();
-        result.wildcards_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -980,8 +701,6 @@ public final class Data {
         if (other.hasUpdateMask()) {
           mergeUpdateMask(other.getUpdateMask());
         }
-        internalGetMutableWildcards().mergeFrom(
-            other.internalGetWildcards());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1010,7 +729,6 @@ public final class Data {
         }
         return this;
       }
-      private int bitField0_;
 
       private google.events.cloud.firestore.v1.Data.Document value_;
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1502,204 +1220,6 @@ public final class Data {
           updateMask_ = null;
         }
         return updateMaskBuilder_;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.String, java.lang.String> wildcards_;
-      private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-      internalGetWildcards() {
-        if (wildcards_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              WildcardsDefaultEntryHolder.defaultEntry);
-        }
-        return wildcards_;
-      }
-      private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-      internalGetMutableWildcards() {
-        onChanged();;
-        if (wildcards_ == null) {
-          wildcards_ = com.google.protobuf.MapField.newMapField(
-              WildcardsDefaultEntryHolder.defaultEntry);
-        }
-        if (!wildcards_.isMutable()) {
-          wildcards_ = wildcards_.copy();
-        }
-        return wildcards_;
-      }
-
-      public int getWildcardsCount() {
-        return internalGetWildcards().getMap().size();
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsWildcards(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        return internalGetWildcards().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getWildcardsMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, java.lang.String> getWildcards() {
-        return getWildcardsMap();
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.String, java.lang.String> getWildcardsMap() {
-        return internalGetWildcards().getMap();
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-      @java.lang.Override
-
-      public java.lang.String getWildcardsOrDefault(
-          java.lang.String key,
-          java.lang.String defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        java.util.Map<java.lang.String, java.lang.String> map =
-            internalGetWildcards().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-      @java.lang.Override
-
-      public java.lang.String getWildcardsOrThrow(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        java.util.Map<java.lang.String, java.lang.String> map =
-            internalGetWildcards().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearWildcards() {
-        internalGetMutableWildcards().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-
-      public Builder removeWildcards(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableWildcards().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, java.lang.String>
-      getMutableWildcards() {
-        return internalGetMutableWildcards().getMutableMap();
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-      public Builder putWildcards(
-          java.lang.String key,
-          java.lang.String value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableWildcards().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <pre>
-       * The matches from wildcards specified in the event subscription, to the
-       * values of those wildcards in the document name. For example,
-       * a subscription to
-       * `/projects/my_project/databases/(default)/documents/users/{username}`
-       * matching a document with name
-       * `/projects/my_project/databases/(default)/documents/users/marie`
-       * would result in a mapping of `'username': 'marie'`.
-       * </pre>
-       *
-       * <code>map&lt;string, string&gt; wildcards = 4;</code>
-       */
-
-      public Builder putAllWildcards(
-          java.util.Map<java.lang.String, java.lang.String> values) {
-        internalGetMutableWildcards().getMutableMap()
-            .putAll(values);
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -8977,11 +8497,6 @@ public final class Data {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_events_cloud_firestore_v1_DocumentEventData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_google_events_cloud_firestore_v1_DocumentMask_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -9029,42 +8544,39 @@ public final class Data {
       "proto\022 google.events.cloud.firestore.v1\032" +
       "\034google/protobuf/struct.proto\032\037google/pr" +
       "otobuf/timestamp.proto\032\030google/type/latl" +
-      "ng.proto\"\333\002\n\021DocumentEventData\0229\n\005value\030" +
+      "ng.proto\"\322\001\n\021DocumentEventData\0229\n\005value\030" +
       "\001 \001(\0132*.google.events.cloud.firestore.v1" +
       ".Document\022=\n\told_value\030\002 \001(\0132*.google.ev" +
       "ents.cloud.firestore.v1.Document\022C\n\013upda" +
       "te_mask\030\003 \001(\0132..google.events.cloud.fire" +
-      "store.v1.DocumentMask\022U\n\twildcards\030\004 \003(\013" +
-      "2B.google.events.cloud.firestore.v1.Docu" +
-      "mentEventData.WildcardsEntry\0320\n\016Wildcard" +
-      "sEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"#" +
-      "\n\014DocumentMask\022\023\n\013field_paths\030\001 \003(\t\"\232\002\n\010" +
-      "Document\022\014\n\004name\030\001 \001(\t\022F\n\006fields\030\002 \003(\01326" +
-      ".google.events.cloud.firestore.v1.Docume" +
-      "nt.FieldsEntry\022/\n\013create_time\030\003 \001(\0132\032.go" +
-      "ogle.protobuf.Timestamp\022/\n\013update_time\030\004" +
-      " \001(\0132\032.google.protobuf.Timestamp\032V\n\013Fiel" +
-      "dsEntry\022\013\n\003key\030\001 \001(\t\0226\n\005value\030\002 \001(\0132\'.go" +
-      "ogle.events.cloud.firestore.v1.Value:\0028\001" +
-      "\"\310\003\n\005Value\0220\n\nnull_value\030\013 \001(\0162\032.google." +
-      "protobuf.NullValueH\000\022\027\n\rboolean_value\030\001 " +
-      "\001(\010H\000\022\027\n\rinteger_value\030\002 \001(\003H\000\022\026\n\014double" +
-      "_value\030\003 \001(\001H\000\0225\n\017timestamp_value\030\n \001(\0132" +
-      "\032.google.protobuf.TimestampH\000\022\026\n\014string_" +
-      "value\030\021 \001(\tH\000\022\025\n\013bytes_value\030\022 \001(\014H\000\022\031\n\017" +
-      "reference_value\030\005 \001(\tH\000\022.\n\017geo_point_val" +
-      "ue\030\010 \001(\0132\023.google.type.LatLngH\000\022C\n\013array" +
-      "_value\030\t \001(\0132,.google.events.cloud.fires" +
-      "tore.v1.ArrayValueH\000\022?\n\tmap_value\030\006 \001(\0132" +
-      "*.google.events.cloud.firestore.v1.MapVa" +
-      "lueH\000B\014\n\nvalue_type\"E\n\nArrayValue\0227\n\006val" +
-      "ues\030\001 \003(\0132\'.google.events.cloud.firestor" +
-      "e.v1.Value\"\252\001\n\010MapValue\022F\n\006fields\030\001 \003(\0132" +
-      "6.google.events.cloud.firestore.v1.MapVa" +
-      "lue.FieldsEntry\032V\n\013FieldsEntry\022\013\n\003key\030\001 " +
+      "store.v1.DocumentMask\"#\n\014DocumentMask\022\023\n" +
+      "\013field_paths\030\001 \003(\t\"\232\002\n\010Document\022\014\n\004name\030" +
+      "\001 \001(\t\022F\n\006fields\030\002 \003(\01326.google.events.cl" +
+      "oud.firestore.v1.Document.FieldsEntry\022/\n" +
+      "\013create_time\030\003 \001(\0132\032.google.protobuf.Tim" +
+      "estamp\022/\n\013update_time\030\004 \001(\0132\032.google.pro" +
+      "tobuf.Timestamp\032V\n\013FieldsEntry\022\013\n\003key\030\001 " +
       "\001(\t\0226\n\005value\030\002 \001(\0132\'.google.events.cloud" +
-      ".firestore.v1.Value:\0028\001B,\252\002)Google.Event" +
-      "s.Protobuf.Cloud.Firestore.V1b\006proto3"
+      ".firestore.v1.Value:\0028\001\"\310\003\n\005Value\0220\n\nnul" +
+      "l_value\030\013 \001(\0162\032.google.protobuf.NullValu" +
+      "eH\000\022\027\n\rboolean_value\030\001 \001(\010H\000\022\027\n\rinteger_" +
+      "value\030\002 \001(\003H\000\022\026\n\014double_value\030\003 \001(\001H\000\0225\n" +
+      "\017timestamp_value\030\n \001(\0132\032.google.protobuf" +
+      ".TimestampH\000\022\026\n\014string_value\030\021 \001(\tH\000\022\025\n\013" +
+      "bytes_value\030\022 \001(\014H\000\022\031\n\017reference_value\030\005" +
+      " \001(\tH\000\022.\n\017geo_point_value\030\010 \001(\0132\023.google" +
+      ".type.LatLngH\000\022C\n\013array_value\030\t \001(\0132,.go" +
+      "ogle.events.cloud.firestore.v1.ArrayValu" +
+      "eH\000\022?\n\tmap_value\030\006 \001(\0132*.google.events.c" +
+      "loud.firestore.v1.MapValueH\000B\014\n\nvalue_ty" +
+      "pe\"E\n\nArrayValue\0227\n\006values\030\001 \003(\0132\'.googl" +
+      "e.events.cloud.firestore.v1.Value\"\252\001\n\010Ma" +
+      "pValue\022F\n\006fields\030\001 \003(\01326.google.events.c" +
+      "loud.firestore.v1.MapValue.FieldsEntry\032V" +
+      "\n\013FieldsEntry\022\013\n\003key\030\001 \001(\t\0226\n\005value\030\002 \001(" +
+      "\0132\'.google.events.cloud.firestore.v1.Val" +
+      "ue:\0028\001B,\252\002)Google.Events.Protobuf.Cloud." +
+      "Firestore.V1b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -9078,13 +8590,7 @@ public final class Data {
     internal_static_google_events_cloud_firestore_v1_DocumentEventData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_google_events_cloud_firestore_v1_DocumentEventData_descriptor,
-        new java.lang.String[] { "Value", "OldValue", "UpdateMask", "Wildcards", });
-    internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_descriptor =
-      internal_static_google_events_cloud_firestore_v1_DocumentEventData_descriptor.getNestedTypes().get(0);
-    internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_google_events_cloud_firestore_v1_DocumentEventData_WildcardsEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "Value", "OldValue", "UpdateMask", });
     internal_static_google_events_cloud_firestore_v1_DocumentMask_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_google_events_cloud_firestore_v1_DocumentMask_fieldAccessorTable = new
