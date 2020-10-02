@@ -1,4 +1,24 @@
-# How to Contribute
+# Contributing
+
+
+
+Run tests:
+
+```
+mvn test -B -Dclirr.skip=true -Denforcer.skip=true
+```
+
+Generate Maven Project:
+
+```
+mvn -B archetype:generate \
+-DgroupId=com.google.events \
+-DartifactId=google-cloudevent-types \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.4
+```
+
+## How to Contribute
 
 We'd love to accept your patches and contributions to this project. There are
 just a few small guidelines you need to follow.

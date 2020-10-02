@@ -15,3 +15,14 @@ Generate libraries:
 ```
 
 Observe the new files in `src/`.
+
+---
+
+mvn -B archetype:generate \
+-DgroupId=com.google.events \
+-DartifactId=google-cloudevent-types \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=1.4
+
+//     com.fasterxml.jackson.core     : jackson-databind          : 2.9.0
+//     com.fasterxml.jackson.datatype : jackson-datatype-jsr310   : 2.9.0

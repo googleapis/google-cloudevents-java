@@ -64,4 +64,6 @@ $PROTOC \
 echo "- Removing tmp/"
 rm -rf tmp
 
+# Move generated code to package
+
 echo "~ DONE ✓"
