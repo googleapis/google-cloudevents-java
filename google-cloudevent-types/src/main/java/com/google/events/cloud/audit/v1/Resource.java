@@ -1,6 +1,5 @@
 package com.google.events.cloud.audit.v1;
 
-import com.fasterxml.jackson.annotation.*;
 import java.util.Map;
 
 /**
@@ -15,23 +14,15 @@ public class Resource {
     private String service;
     private String type;
 
-    @JsonProperty("labels")
     public Map<String, Object> getLabels() { return labels; }
-    @JsonProperty("labels")
     public void setLabels(Map<String, Object> value) { this.labels = value; }
 
-    @JsonProperty("name")
     public String getName() { return name; }
-    @JsonProperty("name")
     public void setName(String value) { this.name = value; }
 
-    @JsonProperty("service")
     public String getService() { return service; }
-    @JsonProperty("service")
     public void setService(String value) { this.service = value; }
 
-    @JsonProperty("type")
     public String getType() { return type; }
-    @JsonProperty("type")
     public void setType(String value) { this.type = value; }
 }

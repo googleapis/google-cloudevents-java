@@ -1,7 +1,5 @@
 package com.google.events.cloud.audit.v1;
 
-import com.fasterxml.jackson.annotation.*;
-
 /**
  * The resource location information.
  *
@@ -16,9 +14,7 @@ public class ResourceLocation {
      * delete a location based resource must populate the 'current_locations' field and not the
      * 'original_locations' field.
      */
-    @JsonProperty("current_locations")
     public String[] getCurrentLocations() { return currentLocations; }
-    @JsonProperty("current_locations")
     public void setCurrentLocations(String[] value) { this.currentLocations = value; }
 
     /**
@@ -26,8 +22,6 @@ public class ResourceLocation {
      * the resource's location must populate both the 'original_locations' as well as the
      * 'current_locations' fields. For example:
      */
-    @JsonProperty("original_locations")
     public String[] getOriginalLocations() { return originalLocations; }
-    @JsonProperty("original_locations")
     public void setOriginalLocations(String[] value) { this.originalLocations = value; }
 }

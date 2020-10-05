@@ -1,28 +1,58 @@
 # Google CloudEvents – Java
 
-This repository contains types for CloudEvents issued by Google.
+This repository contains POJOs for CloudEvents issued by Google.
 
 ## Prerequisites
 
 - Java 7 (or higher)
 
-## Generate
+## Installation
 
-Generate libraries:
+To use Maven, add the following lines to your `pom.xml` file:
 
-```sh
-./gen.sh
+```xml
+<project>
+  <dependencies>
+    <dependency>
+      <groupId>google.events</groupId>
+      <artifactId>google-cloudevent-types</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>
 ```
 
-Observe the new files in `src/`.
+## Event Types
 
----
+This repo contains these types:
 
-mvn -B archetype:generate \
--DgroupId=com.google.events \
--DartifactId=google-cloudevent-types \
--DarchetypeArtifactId=maven-archetype-quickstart \
--DarchetypeVersion=1.4
+- [`com.google.events.cloud.pubsub.v1.MessagePublishedData`](google-cloudevent-types/src/main/java/com/google/events/cloud/pubsub/v1/MessagePublishedData.java)
+- [`com.google.events.cloud.audit.v1.LogEntryData`](google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/LogEntryData.java)
 
-//     com.fasterxml.jackson.core     : jackson-databind          : 2.9.0
-//     com.fasterxml.jackson.datatype : jackson-datatype-jsr310   : 2.9.0
+> Note: This repo is generated from the Google CloudEvent schema sources in https://github.com/googleapis/google-cloudevents.
+
+## Usage
+
+The event types can be used to transform a HTTP POST request's body to a Java object.
+
+For example, in the Spring Framework, this library can be used as such:
+
+```java
+import com.google.events.cloud.pubsub.v1.MessagePublishedData;
+import com.google.events.cloud.pubsub.v1.PubsubMessage;
+//...
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EventController {
+  @RequestMapping(value = "/", method = RequestMethod.POST)
+  public ResponseEntity<String> receiveMessage(
+      @RequestBody MessagePublishedData messagePublisedData, @RequestHeader Map<String, String> headers) {
+    // Get PubSub message from request body.
+    PubsubMessage message = messagePublisedData.getMessage();
+```

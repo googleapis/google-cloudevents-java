@@ -1,7 +1,5 @@
 package com.google.events.cloud.audit.v1;
 
-import com.fasterxml.jackson.annotation.*;
-
 /**
  * The status of the overall operation.
  */
@@ -13,18 +11,14 @@ public class Status {
     /**
      * The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
      */
-    @JsonProperty("code")
     public Long getCode() { return code; }
-    @JsonProperty("code")
     public void setCode(Long value) { this.code = value; }
 
     /**
      * A list of messages that carry the error details.  There is a common set of message types
      * for APIs to use.
      */
-    @JsonProperty("details")
     public Object getDetails() { return details; }
-    @JsonProperty("details")
     public void setDetails(Object value) { this.details = value; }
 
     /**
@@ -32,8 +26,6 @@ public class Status {
      * message should be localized and sent in the
      * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      */
-    @JsonProperty("message")
     public String getMessage() { return message; }
-    @JsonProperty("message")
     public void setMessage(String value) { this.message = value; }
 }

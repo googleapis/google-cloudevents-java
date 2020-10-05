@@ -1,6 +1,5 @@
 package com.google.events.cloud.audit.v1;
 
-import com.fasterxml.jackson.annotation.*;
 import java.util.Map;
 
 /**
@@ -19,17 +18,13 @@ public class MonitoredResource {
      * example, Compute Engine VM instances use the labels `"project_id"`, `"instance_id"`, and
      * `"zone"`.
      */
-    @JsonProperty("labels")
     public Map<String, Object> getLabels() { return labels; }
-    @JsonProperty("labels")
     public void setLabels(Map<String, Object> value) { this.labels = value; }
 
     /**
      * Required. The monitored resource type. For example, the type of a Compute Engine VM
      * instance is `gce_instance`.
      */
-    @JsonProperty("type")
     public String getType() { return type; }
-    @JsonProperty("type")
     public void setType(String value) { this.type = value; }
 }
