@@ -22,7 +22,7 @@ To use Maven, add the following lines to your `pom.xml` file:
 </project>
 ```
 
-## Event Types
+## CloudEvent Types
 
 This repo contains these types:
 
