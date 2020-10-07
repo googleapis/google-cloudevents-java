@@ -52,7 +52,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class EventController {
   @RequestMapping(value = "/", method = RequestMethod.POST)
   public ResponseEntity<String> receiveMessage(
-      @RequestBody MessagePublishedData messagePublisedData, @RequestHeader Map<String, String> headers) {
+      @RequestBody MessagePublishedData messagePublishedData, @RequestHeader Map<String, String> headers) {
     // Get PubSub message from request body.
-    PubsubMessage message = messagePublisedData.getMessage();
+    PubsubMessage message = messagePublishedData.getMessage();
+    // Use message data
+  }
+}
 ```

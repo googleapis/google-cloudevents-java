@@ -25,20 +25,20 @@ Run tests in the `google-cloudevent-types` :
 
 ```sh
 cd google-cloudevent-types
-mvn install
 mvn test
 ```
 
 ## Generate a New Artifact
 
-A new artifact is unlikely. Here is a generic script to generate a new artifact:
+This repo contains one artifact, `google-cloudevent-types`. A new artifact besides this one is unlikely.
+Here is a generic script to generate a new artifact if needed:
 
 ```sh
 mvn -B archetype:generate \
--DgroupId=google.events \
--DartifactId=google-cloudevent-types \
--DarchetypeArtifactId=maven-archetype-quickstart \
--DarchetypeVersion=1.4
+  -DgroupId=google.events \
+  -DartifactId=google-cloudevent-types \
+  -DarchetypeArtifactId=maven-archetype-quickstart \
+  -DarchetypeVersion=1.4
 ```
 
 ## How to Contribute
