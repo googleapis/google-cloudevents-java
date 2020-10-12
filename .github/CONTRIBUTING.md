@@ -14,31 +14,18 @@ Before generating the library, you must set up your environment like such:
 Then, to generate, run the ./gen.sh file in the java repo. This will generate the whole library with the source of truth JSON schemas.
 
 ```sh
-./gen.sh
+./tools/gen.sh
 ```
 
 Observe the new files in `google-cloudevent-types/src/`.
 
 ## Test
-
+  
 Run tests in the `google-cloudevent-types` :
 
 ```sh
 cd google-cloudevent-types
 mvn test
-```
-
-## Generate a New Artifact
-
-This repo contains one artifact, `google-cloudevent-types`. A new artifact besides this one is unlikely.
-Here is a generic script to generate a new artifact if needed:
-
-```sh
-mvn -B archetype:generate \
-  -DgroupId=google.events \
-  -DartifactId=google-cloudevent-types \
-  -DarchetypeArtifactId=maven-archetype-quickstart \
-  -DarchetypeVersion=1.4
 ```
 
 ## How to Contribute
