@@ -1,4 +1,34 @@
-# How to Contribute
+# Contributing
+
+This library's source code is mainly generated from JSON schema in the [Google CloudEvents repo](https://github.com/googleapis/google-cloudevents).
+
+Specifically, the `google-cloudevents-types/src` directory is generated and should not be modified as changes will be overwritten when the library is re-generated. Rather, the upstream CloudEvents repo should be modified.
+
+## Generate API types
+
+Before generating the library, you must set up your environment like such:
+- Have Java 11+ and Node (for generation) installed.
+- Install the [quicktype wrapper CLI](https://github.com/googleapis/google-cloudevents/tree/master/tools/quicktype-wrapper) using npm.
+- Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same directory as this repo.
+
+Then, to generate, run the ./gen.sh file in the java repo. This will generate the whole library with the source of truth JSON schemas.
+
+```sh
+./tools/gen.sh
+```
+
+Observe the new files in `google-cloudevent-types/src/`.
+
+## Test
+  
+Run tests in the `google-cloudevent-types` :
+
+```sh
+cd google-cloudevent-types
+mvn test
+```
+
+## How to Contribute
 
 We'd love to accept your patches and contributions to this project. There are
 just a few small guidelines you need to follow.
