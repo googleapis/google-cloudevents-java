@@ -16,7 +16,50 @@
 
 set -e
 
+# Delete current types
+rm -rf google-cloudevent-types/src/main/java/com
+
+# Generate new types
 qt \
 --in=$(dirname $PWD)/google-cloudevents/jsonschema \
 --out=$PWD \
 --l=java
+
+# Move types to correct directory
+mkdir -p google-cloudevent-types/src/main/java/com/google
+mv google google-cloudevent-types/src/main/java/com
+
+# Get all generated type files
+PATHS=$(grep -r "package io.quicktype;" google-cloudevent-types)
+
+# For each path, fix the package.
+#
+# Example:
+# PATH: google-cloudevent-types/src/main/java/com/google/google/events/cloud/audit/v1/AuditLog.java
+# i.e. IN: "package io.quicktype;" – default generated package
+# i.e. OUT: "package com.google.google.events.cloud.audit.v1;" – desired package
+while IFS= read -r PATHS; do
+    FILE=$(echo $PATHS | cut -f1 -d:)
+    # Generator defaults string to: package io.quicktype;
+    IO_QUICKTYPE_STRING=$(echo $PATHS | cut -f2 -d:)
+
+    # Remove the prefix (path)
+    # IN: google-cloudevent-types/src/main/java/com/google/google/events/cloud/pubsub/v1/MessagePublishedData.java
+    # OUT: com/google/google/events/cloud/pubsub/v1/MessagePublishedData.java
+    FILE_PREFIX="google-cloudevent-types/src/main/java/"
+    FILE_WITHOUT_PREFIX=${FILE#"$FILE_PREFIX"}
+
+    # Remove suffix (all characters after last "/")
+    # From: https://askubuntu.com/a/1010311
+    # IN: com/google/google/events/cloud/pubsub/v1/MessagePublishedData.java
+    # OUT: com/google/google/events/cloud/pubsub/v1
+    FILE_WITHOUT_PREFIX_OR_SUFFIX=$(echo $FILE_WITHOUT_PREFIX | sed 's|\(.*\)/.*|\1|')
+
+    # Replace "/" with "."
+    PACKAGE=$(echo $FILE_WITHOUT_PREFIX_OR_SUFFIX | tr / .)
+    # Get correct package string. Like "package com.google.google.events.cloud.audit.v1;"
+    PACKAGE_STRING="package $PACKAGE;"
+
+    # Replace bad package string with good package string.
+    sed -i '' "1s/.*/${PACKAGE_STRING}/" $FILE
+done <<< "$PATHS"

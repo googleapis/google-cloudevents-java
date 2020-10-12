@@ -1,0 +1,16 @@
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/pubsub/v1/MessagePublishedData.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/Resource.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/ResourceLocation.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/AuditLog.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/Peer.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/ServiceAccountDelegationInfo.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/Request.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/RequestMetadata.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/LogEntryData.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/pubsub/v1/PubsubMessage.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/MonitoredResource.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/AuthenticationInfo.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/AuthorizationInfo.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/LogEntryOperation.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/Auth.java
+/Users/timmerman/Documents/github/googleapis/google-cloudevents-java/google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/Status.java
