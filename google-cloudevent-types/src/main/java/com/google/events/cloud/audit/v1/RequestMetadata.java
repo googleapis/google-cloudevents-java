@@ -1,3 +1,17 @@
+// Copyright 2020 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 package com.google.events.cloud.audit.v1;
 
 /**
@@ -15,7 +29,7 @@ public class RequestMetadata {
      * address. For caller from a Compute Engine VM with external IP address, this will be the
      * VM's external IP address. For caller from a Compute Engine VM without external IP
      * address, if the VM is in the same organization (or project) as the accessed resource,
-     * `caller_ip` will be the VM's internal IPv4 address, otherwise the `caller_ip` will be
+     * `callerIp` will be the VM's internal IPv4 address, otherwise the `callerIp` will be
      * redacted to "gce-internal-ip". See https://cloud.google.com/compute/docs/vpc/ for more
      * information."
      */
