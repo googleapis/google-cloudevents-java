@@ -12,32 +12,31 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.events.cloud.audit.v1;
+package google.events.cloud.audit.v1;
 
 import java.util.Map;
 
 /**
- * The destination of a network activity, such as accepting a TCP connection.
+ * Resource attributes used in IAM condition evaluation. This field contains resource
+ * attributes like resource type and resource name. To get the whole view of the attributes
+ * used in IAM condition evaluation, the user must also look into
+ * AuditLog.requestMetadata.requestAttributes.
  */
-public class Peer {
-    private String ip;
+public class Resource {
     private Map<String, Object> labels;
-    private Long port;
-    private String principal;
-    private String regionCode;
-
-    public String getIP() { return ip; }
-    public void setIP(String value) { this.ip = value; }
+    private String name;
+    private String service;
+    private String type;
 
     public Map<String, Object> getLabels() { return labels; }
     public void setLabels(Map<String, Object> value) { this.labels = value; }
 
-    public Long getPort() { return port; }
-    public void setPort(Long value) { this.port = value; }
+    public String getName() { return name; }
+    public void setName(String value) { this.name = value; }
 
-    public String getPrincipal() { return principal; }
-    public void setPrincipal(String value) { this.principal = value; }
+    public String getService() { return service; }
+    public void setService(String value) { this.service = value; }
 
-    public String getRegionCode() { return regionCode; }
-    public void setRegionCode(String value) { this.regionCode = value; }
+    public String getType() { return type; }
+    public void setType(String value) { this.type = value; }
 }

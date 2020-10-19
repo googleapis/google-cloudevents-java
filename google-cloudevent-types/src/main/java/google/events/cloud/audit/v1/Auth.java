@@ -12,32 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.events.cloud.audit.v1;
+package google.events.cloud.audit.v1;
 
 import java.util.Map;
 
-/**
- * The destination of a network activity, such as accepting a TCP connection.
- */
-public class Peer {
-    private String ip;
-    private Map<String, Object> labels;
-    private Long port;
+public class Auth {
+    private String[] accessLevels;
+    private String[] audiences;
+    private Map<String, Object> claims;
+    private String presenter;
     private String principal;
-    private String regionCode;
 
-    public String getIP() { return ip; }
-    public void setIP(String value) { this.ip = value; }
+    public String[] getAccessLevels() { return accessLevels; }
+    public void setAccessLevels(String[] value) { this.accessLevels = value; }
 
-    public Map<String, Object> getLabels() { return labels; }
-    public void setLabels(Map<String, Object> value) { this.labels = value; }
+    public String[] getAudiences() { return audiences; }
+    public void setAudiences(String[] value) { this.audiences = value; }
 
-    public Long getPort() { return port; }
-    public void setPort(Long value) { this.port = value; }
+    public Map<String, Object> getClaims() { return claims; }
+    public void setClaims(Map<String, Object> value) { this.claims = value; }
+
+    public String getPresenter() { return presenter; }
+    public void setPresenter(String value) { this.presenter = value; }
 
     public String getPrincipal() { return principal; }
     public void setPrincipal(String value) { this.principal = value; }
-
-    public String getRegionCode() { return regionCode; }
-    public void setRegionCode(String value) { this.regionCode = value; }
 }

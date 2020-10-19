@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.events.cloud.pubsub.v1;
+package google.events.cloud.pubsub.v1;
 
 /**
  * A message that is published by publishers and consumed by subscribers.

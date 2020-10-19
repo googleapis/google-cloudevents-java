@@ -61,5 +61,5 @@ while IFS= read -r PATHS; do
     PACKAGE_STRING="package $PACKAGE;"
 
     # Replace bad package string with good package string.
-    sed -i '' "1s/.*/${PACKAGE_STRING}/" $FILE
+    sed -i '' "s/package io.quicktype;/${PACKAGE_STRING}/" $FILE
 done <<< "$PATHS"

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.google.events.cloud.audit.v1;
+package google.events.cloud.audit.v1;
 
 /**
  * Authorization information. If there are multiple resources or permissions involved, then
