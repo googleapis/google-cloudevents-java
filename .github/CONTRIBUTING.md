@@ -28,6 +28,24 @@ cd google-cloudevent-types
 mvn test
 ```
 
+## Package Locally
+
+To test the library locally, package the artifact:
+
+```
+cd google-cloudevent-types
+mvn package
+```
+
+This will create a local `jar` in the `target/` directory
+such as `target/google-cloudevent-types-1.0-SNAPSHOT.jar`.
+
+Then require it in a different project:
+
+```sh
+TODO
+```
+
 ## How to Contribute
 
 We'd love to accept your patches and contributions to this project. There are

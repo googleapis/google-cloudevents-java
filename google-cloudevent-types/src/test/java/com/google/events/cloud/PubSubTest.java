@@ -17,7 +17,7 @@ public class PubSubTest {
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void shouldCreatePubSubPOJOManually() {
         String base64String = Base64.getEncoder().encodeToString("foo".getBytes());
         
         // Create Pub/Sub message POJO
