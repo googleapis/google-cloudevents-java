@@ -1,0 +1,15 @@
+{
+  "name": "google-cloudevent-types",
+  "name_pretty": "CloudEvent Types",
+  "product_documentation": "https://cloud.google.com/functions",
+  "api_description": "is a scalable pay as you go Functions-as-a-Service (FaaS) to run your code with zero server management.",
+  "client_documentation": "https://googleapis.dev/java/google-cloud-functions/latest/index.html",
+  "release_level": "ga",
+  "transport": "grpc",
+  "language": "java",
+  "repo": "googleapis/google-cloudevent-types",
+  "repo_short": "google-cloudevent-types",
+  "distribution_name": "com.google.cloud:google-cloudevent-types",
+  "api_id": "cloudfunctions.googleapis.com",
+  "requires_billing": true
+}
