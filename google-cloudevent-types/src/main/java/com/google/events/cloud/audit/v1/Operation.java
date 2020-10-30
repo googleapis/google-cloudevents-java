@@ -16,11 +16,8 @@ package com.google.events.cloud.audit.v1;
 
 /**
  * Information about an operation associated with the log entry, if applicable.
- *
- * Additional information about a potentially long-running operation with which a log entry
- * is associated.
  */
-public class LogEntryOperation {
+public class Operation {
     private Boolean first;
     private String id;
     private Boolean last;
@@ -33,8 +30,8 @@ public class LogEntryOperation {
     public void setFirst(Boolean value) { this.first = value; }
 
     /**
-     * An arbitrary operation identifier. Log entries with the same identifier are assumed to be
-     * part of the same operation.
+     * An arbitrary operation identifier. Log entries with the same
+     * identifier are assumed to be part of the same operation.
      */
     public String getID() { return id; }
     public void setID(String value) { this.id = value; }
@@ -46,9 +43,9 @@ public class LogEntryOperation {
     public void setLast(Boolean value) { this.last = value; }
 
     /**
-     * An arbitrary producer identifier. The combination of `id` and `producer` must be globally
-     * unique. Examples for `producer`: `"MyDivision.MyBigCompany.com"`,
-     * `"github.com/MyProject/MyApplication"`.
+     * An arbitrary producer identifier. The combination of `id` and
+     * `producer` must be globally unique. Examples for `producer`:
+     * `"MyDivision.MyBigCompany.com"`, `"github.com/MyProject/MyApplication"`.
      */
     public String getProducer() { return producer; }
     public void setProducer(String value) { this.producer = value; }

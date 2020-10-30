@@ -17,26 +17,28 @@ package com.google.events.cloud.audit.v1;
 import java.util.Map;
 
 /**
- * Resource attributes used in IAM condition evaluation. This field contains resource
- * attributes like resource type and resource name. To get the whole view of the attributes
- * used in IAM condition evaluation, the user must also look into
- * AuditLog.requestMetadata.requestAttributes.
+ * The monitored resource that produced this log entry.
+ *
+ * Example: a log entry that reports a database error would be associated with
+ * the monitored resource designating the particular database that reported
+ * the error.
  */
 public class Resource {
-    private Map<String, Object> labels;
-    private String name;
-    private String service;
+    private Map<String, String> labels;
     private String type;
 
-    public Map<String, Object> getLabels() { return labels; }
-    public void setLabels(Map<String, Object> value) { this.labels = value; }
+    /**
+     * Values for all of the labels listed in the associated monitored
+     * resource descriptor. For example, Compute Engine VM instances use the
+     * labels `"project_id"`, `"instance_id"`, and `"zone"`.
+     */
+    public Map<String, String> getLabels() { return labels; }
+    public void setLabels(Map<String, String> value) { this.labels = value; }
 
-    public String getName() { return name; }
-    public void setName(String value) { this.name = value; }
-
-    public String getService() { return service; }
-    public void setService(String value) { this.service = value; }
-
+    /**
+     * Required. The monitored resource type. For example, the type of a
+     * Compute Engine VM instance is `gce_instance`.
+     */
     public String getType() { return type; }
     public void setType(String value) { this.type = value; }
 }
