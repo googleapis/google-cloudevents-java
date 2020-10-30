@@ -6,7 +6,7 @@
 
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloudevent-types</artifactId>
-  <version>0.0.1-SNAPSHOT</version><!-- {x-version-update:google-cloudevent-types:current} -->
+  <version>0.1.0</version><!-- {x-version-update:google-cloudevent-types:current} -->
 
   <parent>
     <groupId>com.google.cloud</groupId>
