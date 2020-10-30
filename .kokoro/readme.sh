@@ -15,7 +15,7 @@
 
 set -eo pipefail
 
-cd ${KOKORO_ARTIFACTS_DIR}/github/google-cloudevent-types
+cd ${KOKORO_ARTIFACTS_DIR}/github/google-cloudevents-java
 
 # Disable buffering, so that the logs stream through.
 export PYTHONUNBUFFERED=1
@@ -29,7 +29,7 @@ git config --global credential.helper 'store --file ~/.git-credentials'
 
 python3.6 -m pip install git+https://github.com/googleapis/synthtool.git#egg=gcp-synthtool
 python3.6 -m autosynth.synth \
-    --repository=googleapis/google-cloudevent-types \
+    --repository=googleapis/google-cloudevents-java \
     --synth-file-name=.github/readme/synth.py \
     --metadata-path=.github/readme/synth.metadata \
     --pr-title="chore: regenerate README" \
