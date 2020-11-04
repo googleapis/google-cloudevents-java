@@ -24,7 +24,7 @@ import java.util.Map;
 public class EventDim {
     private String date;
     private String name;
-    private Map<String, GoogleEventsFirebaseAnalyticsV1AnalyticsValue> params;
+    private Map<String, AnalyticsValue> params;
     private IntValue previousTimestampMicros;
     private IntValue timestampMicros;
     private Double valueInUsd;
@@ -45,8 +45,8 @@ public class EventDim {
     /**
      * A repeated record of the parameters associated with this event.
      */
-    public Map<String, GoogleEventsFirebaseAnalyticsV1AnalyticsValue> getParams() { return params; }
-    public void setParams(Map<String, GoogleEventsFirebaseAnalyticsV1AnalyticsValue> value) { this.params = value; }
+    public Map<String, AnalyticsValue> getParams() { return params; }
+    public void setParams(Map<String, AnalyticsValue> value) { this.params = value; }
 
     /**
      * UTC client time when the previous event happened.

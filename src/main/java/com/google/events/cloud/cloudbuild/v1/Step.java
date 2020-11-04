@@ -31,7 +31,7 @@ public class Step {
     private DiskSizeGBUnion status;
     private StepTimeout timeout;
     private StepTiming timing;
-    private GoogleEventsCloudCloudbuildV1Volume[] volumes;
+    private Volume[] volumes;
     private String[] waitFor;
 
     /**
@@ -153,8 +153,8 @@ public class Step {
      * Using a named volume in only one step is not valid as it is indicative
      * of a build request with an incorrect configuration.
      */
-    public GoogleEventsCloudCloudbuildV1Volume[] getVolumes() { return volumes; }
-    public void setVolumes(GoogleEventsCloudCloudbuildV1Volume[] value) { this.volumes = value; }
+    public Volume[] getVolumes() { return volumes; }
+    public void setVolumes(Volume[] value) { this.volumes = value; }
 
     /**
      * The ID(s) of the step(s) that this build step depends on.

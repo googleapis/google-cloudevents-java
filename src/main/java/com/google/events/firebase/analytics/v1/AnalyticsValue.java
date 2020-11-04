@@ -20,7 +20,7 @@ package com.google.events.firebase.analytics.v1;
  * Value for Event Params and UserProperty can be of type string or int or
  * float or double.
  */
-public class GoogleEventsFirebaseAnalyticsV1AnalyticsValue {
+public class AnalyticsValue {
     private Double doubleValue;
     private Double floatValue;
     private IntValue intValue;

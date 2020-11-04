@@ -29,7 +29,7 @@ public class Options {
     private String[] secretEnv;
     private SourceProvenanceHashElement[] sourceProvenanceHash;
     private SubstitutionOption substitutionOption;
-    private GoogleEventsCloudCloudbuildV1Volume[] volumes;
+    private Volume[] volumes;
     private String workerPool;
 
     /**
@@ -113,8 +113,8 @@ public class Options {
      * Using a global volume in a build with only one step is not valid as
      * it is indicative of a build request with an incorrect configuration.
      */
-    public GoogleEventsCloudCloudbuildV1Volume[] getVolumes() { return volumes; }
-    public void setVolumes(GoogleEventsCloudCloudbuildV1Volume[] value) { this.volumes = value; }
+    public Volume[] getVolumes() { return volumes; }
+    public void setVolumes(Volume[] value) { this.volumes = value; }
 
     /**
      * Option to specify a `WorkerPool` for the build.

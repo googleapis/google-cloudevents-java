@@ -21,7 +21,7 @@ package com.google.events.cloud.cloudbuild.v1;
  *
  * Location of the source in an archive file in Google Cloud Storage.
  */
-public class StorageSource {
+public class StorageSourceClass {
     private String bucket;
     private DiskSizeGBUnion generation;
     private String object;

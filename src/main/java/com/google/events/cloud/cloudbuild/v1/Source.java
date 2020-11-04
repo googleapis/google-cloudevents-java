@@ -16,26 +16,23 @@
 
 package com.google.events.cloud.cloudbuild.v1;
 
-import java.time.OffsetDateTime;
-
 /**
- * Stores timing information for pushing all artifact objects.
- *
- * Start and end times for a build execution phase.
+ * The location of the source files to build.
  */
-public class GoogleEventsCloudCloudbuildV1TimeSpan {
-    private OffsetDateTime endTime;
-    private OffsetDateTime startTime;
+public class Source {
+    private RepoSourceClass repoSource;
+    private StorageSourceClass storageSource;
 
     /**
-     * End of time span.
+     * If provided, get the source from this location in a Cloud Source
+     * Repository.
      */
-    public OffsetDateTime getEndTime() { return endTime; }
-    public void setEndTime(OffsetDateTime value) { this.endTime = value; }
+    public RepoSourceClass getRepoSource() { return repoSource; }
+    public void setRepoSource(RepoSourceClass value) { this.repoSource = value; }
 
     /**
-     * Start of time span.
+     * If provided, get the source from this location in Google Cloud Storage.
      */
-    public OffsetDateTime getStartTime() { return startTime; }
-    public void setStartTime(OffsetDateTime value) { this.startTime = value; }
+    public StorageSourceClass getStorageSource() { return storageSource; }
+    public void setStorageSource(StorageSourceClass value) { this.storageSource = value; }
 }

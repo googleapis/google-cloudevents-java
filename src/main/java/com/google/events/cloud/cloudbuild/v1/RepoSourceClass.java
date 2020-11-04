@@ -24,7 +24,7 @@ import java.util.Map;
  *
  * Location of the source in a Google Cloud Source Repository.
  */
-public class RepoSource {
+public class RepoSourceClass {
     private String branchName;
     private String commitSHA;
     private String dir;

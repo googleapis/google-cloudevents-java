@@ -20,7 +20,7 @@ package com.google.events.cloud.cloudbuild.v1;
  * Volume describes a Docker container volume which is mounted into build steps
  * in order to persist files across build step execution.
  */
-public class GoogleEventsCloudCloudbuildV1Volume {
+public class Volume {
     private String name;
     private String path;
 

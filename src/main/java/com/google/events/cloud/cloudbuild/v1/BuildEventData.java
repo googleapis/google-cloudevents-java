@@ -49,7 +49,7 @@ public class BuildEventData {
     private Map<String, String> substitutions;
     private String[] tags;
     private BuildEventDataTimeout timeout;
-    private Map<String, GoogleEventsCloudCloudbuildV1TimeSpan> timing;
+    private Map<String, TimeSpan> timing;
 
     /**
      * Artifacts produced by the build that should be uploaded upon
@@ -217,6 +217,6 @@ public class BuildEventData {
      * If the build does not specify source or images,
      * these keys will not be included.
      */
-    public Map<String, GoogleEventsCloudCloudbuildV1TimeSpan> getTiming() { return timing; }
-    public void setTiming(Map<String, GoogleEventsCloudCloudbuildV1TimeSpan> value) { this.timing = value; }
+    public Map<String, TimeSpan> getTiming() { return timing; }
+    public void setTiming(Map<String, TimeSpan> value) { this.timing = value; }
 }
