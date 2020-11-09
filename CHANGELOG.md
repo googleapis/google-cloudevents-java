@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.1](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.0...v0.1.1) (2020-11-09)
+
+
+### Documentation
+
+* add badge ([#30](https://www.github.com/googleapis/google-cloudevents-java/issues/30)) ([cac11fa](https://www.github.com/googleapis/google-cloudevents-java/commit/cac11fab73a5baf8f5eec211e17fce169c76a25b))
+
 ## 0.1.0 (2020-10-30)
 
 
