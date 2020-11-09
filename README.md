@@ -1,5 +1,7 @@
 # Google CloudEvents – Java
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://search.maven.org/artifact/com.google.cloud/google-cloudevent-types)
+
 This repository contains POJOs for CloudEvents issued by Google.
 
 ## Prerequisites
