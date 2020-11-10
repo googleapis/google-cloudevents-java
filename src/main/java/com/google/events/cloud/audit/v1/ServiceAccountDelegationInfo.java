@@ -1,11 +1,11 @@
-/*
+/**
  * Copyright 2020 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     https://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,31 +16,22 @@
 
 package com.google.events.cloud.audit.v1;
 
-import java.util.Map;
-
 /**
- * Identity delegation history of an authenticated service account
+ * Identity delegation history of an authenticated service account.
  */
 public class ServiceAccountDelegationInfo {
-    private String principalEmail;
-    private Map<String, Object> serviceMetadata;
-    private Map<String, Object> thirdPartyClaims;
+    private FirstPartyPrincipal firstPartyPrincipal;
+    private ServiceAccountDelegationInfoThirdPartyPrincipal thirdPartyPrincipal;
 
     /**
-     * The email address of a Google account.
+     * First party (Google) identity as the real authority.
      */
-    public String getPrincipalEmail() { return principalEmail; }
-    public void setPrincipalEmail(String value) { this.principalEmail = value; }
+    public FirstPartyPrincipal getFirstPartyPrincipal() { return firstPartyPrincipal; }
+    public void setFirstPartyPrincipal(FirstPartyPrincipal value) { this.firstPartyPrincipal = value; }
 
     /**
-     * Metadata about the service that uses the service account.
+     * Third party identity as the real authority.
      */
-    public Map<String, Object> getServiceMetadata() { return serviceMetadata; }
-    public void setServiceMetadata(Map<String, Object> value) { this.serviceMetadata = value; }
-
-    /**
-     * Metadata about third party identity.
-     */
-    public Map<String, Object> getThirdPartyClaims() { return thirdPartyClaims; }
-    public void setThirdPartyClaims(Map<String, Object> value) { this.thirdPartyClaims = value; }
+    public ServiceAccountDelegationInfoThirdPartyPrincipal getThirdPartyPrincipal() { return thirdPartyPrincipal; }
+    public void setThirdPartyPrincipal(ServiceAccountDelegationInfoThirdPartyPrincipal value) { this.thirdPartyPrincipal = value; }
 }
