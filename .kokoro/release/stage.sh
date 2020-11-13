@@ -29,6 +29,7 @@ create_settings_xml_file "settings.xml"
 mvn clean install deploy -B \
   --settings ${MAVEN_SETTINGS_FILE} \
   -DskipTests=true \
+  -Dclirr.skip \ # Ignore running clirr for breaking changes. See #43
   -DperformRelease=true \
   -Dgpg.executable=gpg \
   -Dgpg.passphrase=${GPG_PASSPHRASE} \
