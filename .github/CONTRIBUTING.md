@@ -17,15 +17,22 @@ Then, to generate, run the ./gen.sh file in the java repo. This will generate th
 ./tools/gen.sh
 ```
 
-Observe the new files in `google-cloudevent-types/src/`.
+Observe the new files in `src/`.
 
 ## Test
   
-Run tests in the `google-cloudevent-types` :
+Run tests:
 
 ```sh
-cd google-cloudevent-types
 mvn test
+```
+
+## Prepublish Checklist
+
+Install the library to ensure it builds correctly:
+
+```
+mvn install -Dclirr.skip
 ```
 
 ## How to Contribute
