@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.2...v0.1.3) (2020-11-13)
+
+
+### Bug Fixes
+
+* use java specific headers ([#39](https://www.github.com/googleapis/google-cloudevents-java/issues/39)) ([ac6ffac](https://www.github.com/googleapis/google-cloudevents-java/commit/ac6ffaca273ac36826231931db56c7848e617283))
+
 ### [0.1.2](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.1...v0.1.2) (2020-11-12)
 
 
