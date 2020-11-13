@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.5](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.4...v0.1.5) (2020-11-13)
+
+
+### Bug Fixes
+
+* update release process, remove comment ([#47](https://www.github.com/googleapis/google-cloudevents-java/issues/47)) ([694dd35](https://www.github.com/googleapis/google-cloudevents-java/commit/694dd356e7b04885823618e7273da80bc5d2be09))
+
 ### [0.1.4](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.3...v0.1.4) (2020-11-13)
 
 
