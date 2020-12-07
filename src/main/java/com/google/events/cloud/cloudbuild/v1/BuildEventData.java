@@ -20,11 +20,7 @@ import java.time.OffsetDateTime;
 import java.util.Map;
 
 /**
- * Build event data
- * Common build format for Google Cloud Platform API operations.
- * Copied from
- *
- * https://github.com/googleapis/googleapis/blob/master/google/devtools/cloudbuild/v1/cloudbuild.proto.
+ * Build event data for Google Cloud Platform API operations.
  */
 public class BuildEventData {
     private Artifacts artifacts;
@@ -43,7 +39,7 @@ public class BuildEventData {
     private Source source;
     private SourceProvenance sourceProvenance;
     private OffsetDateTime startTime;
-    private Status status;
+    private BuildEventDataStatus status;
     private String statusDetail;
     private Step[] steps;
     private Map<String, String> substitutions;
@@ -171,8 +167,8 @@ public class BuildEventData {
     /**
      * Status of the build.
      */
-    public Status getStatus() { return status; }
-    public void setStatus(Status value) { this.status = value; }
+    public BuildEventDataStatus getStatus() { return status; }
+    public void setStatus(BuildEventDataStatus value) { this.status = value; }
 
     /**
      * Customer-readable message about the current status.

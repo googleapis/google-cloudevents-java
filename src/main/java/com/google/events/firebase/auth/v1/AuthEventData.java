@@ -17,7 +17,7 @@
 package com.google.events.firebase.auth.v1;
 
 /**
- * The data within all Firebase Auth events
+ * The data within all Firebase Auth events.
  */
 public class AuthEventData {
     private CustomClaims customClaims;

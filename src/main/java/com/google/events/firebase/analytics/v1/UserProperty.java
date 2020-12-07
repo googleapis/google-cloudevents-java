@@ -18,7 +18,7 @@ package com.google.events.firebase.analytics.v1;
 
 public class UserProperty {
     private Long index;
-    private IntValue setTimestampUsec;
+    private String setTimestampUsec;
     private Value value;
 
     /**
@@ -30,8 +30,8 @@ public class UserProperty {
     /**
      * UTC client time when user property was last set.
      */
-    public IntValue getSetTimestampUsec() { return setTimestampUsec; }
-    public void setSetTimestampUsec(IntValue value) { this.setTimestampUsec = value; }
+    public String getSetTimestampUsec() { return setTimestampUsec; }
+    public void setSetTimestampUsec(String value) { this.setTimestampUsec = value; }
 
     /**
      * Last set value of user property.

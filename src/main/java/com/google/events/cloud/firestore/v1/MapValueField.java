@@ -27,9 +27,9 @@ public class MapValueField {
     private String bytesValue;
     private Double doubleValue;
     private GeoPointValue geoPointValue;
-    private IntegerValueUnion integerValue;
+    private String integerValue;
     private MapValue mapValue;
-    private IntegerValueUnion nullValue;
+    private NullValue nullValue;
     private String referenceValue;
     private String stringValue;
     private OffsetDateTime timestampValue;
@@ -73,8 +73,8 @@ public class MapValueField {
     /**
      * An integer value.
      */
-    public IntegerValueUnion getIntegerValue() { return integerValue; }
-    public void setIntegerValue(IntegerValueUnion value) { this.integerValue = value; }
+    public String getIntegerValue() { return integerValue; }
+    public void setIntegerValue(String value) { this.integerValue = value; }
 
     /**
      * A map value.
@@ -85,8 +85,8 @@ public class MapValueField {
     /**
      * A null value.
      */
-    public IntegerValueUnion getNullValue() { return nullValue; }
-    public void setNullValue(IntegerValueUnion value) { this.nullValue = value; }
+    public NullValue getNullValue() { return nullValue; }
+    public void setNullValue(NullValue value) { this.nullValue = value; }
 
     /**
      * A reference to a document. For example:

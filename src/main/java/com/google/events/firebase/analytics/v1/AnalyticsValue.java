@@ -23,7 +23,7 @@ package com.google.events.firebase.analytics.v1;
 public class AnalyticsValue {
     private Double doubleValue;
     private Double floatValue;
-    private IntValue intValue;
+    private String intValue;
     private String stringValue;
 
     public Double getDoubleValue() { return doubleValue; }
@@ -32,8 +32,8 @@ public class AnalyticsValue {
     public Double getFloatValue() { return floatValue; }
     public void setFloatValue(Double value) { this.floatValue = value; }
 
-    public IntValue getIntValue() { return intValue; }
-    public void setIntValue(IntValue value) { this.intValue = value; }
+    public String getIntValue() { return intValue; }
+    public void setIntValue(String value) { this.intValue = value; }
 
     public String getStringValue() { return stringValue; }
     public void setStringValue(String value) { this.stringValue = value; }

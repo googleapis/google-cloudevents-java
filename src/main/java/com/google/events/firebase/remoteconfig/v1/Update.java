@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.storage.v1;
+package com.google.events.firebase.remoteconfig.v1;
 
 import java.io.IOException;
 
-public class Generation {
+public class Update {
     public Long integerValue;
     public String stringValue;
 }

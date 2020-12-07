@@ -40,7 +40,7 @@ public class RequestAttributes {
     private String query;
     private String reason;
     private String scheme;
-    private NumResponseItems size;
+    private String size;
     private OffsetDateTime time;
 
     /**
@@ -117,8 +117,8 @@ public class RequestAttributes {
     /**
      * The HTTP request size in bytes. If unknown, it must be -1.
      */
-    public NumResponseItems getSize() { return size; }
-    public void setSize(NumResponseItems value) { this.size = value; }
+    public String getSize() { return size; }
+    public void setSize(String value) { this.size = value; }
 
     /**
      * The timestamp when the `destination` service receives the first byte of

@@ -34,18 +34,18 @@ public class StorageObjectData {
     private CustomerEncryption customerEncryption;
     private String etag;
     private Boolean eventBasedHold;
-    private Generation generation;
+    private String generation;
     private String id;
     private String kind;
     private String kmsKeyName;
     private String md5Hash;
     private String mediaLink;
     private Map<String, String> metadata;
-    private Generation metageneration;
+    private String metageneration;
     private String name;
     private OffsetDateTime retentionExpirationTime;
     private String selfLink;
-    private Generation size;
+    private String size;
     private String storageClass;
     private Boolean temporaryHold;
     private OffsetDateTime timeCreated;
@@ -137,8 +137,8 @@ public class StorageObjectData {
      * The content generation of this object. Used for object versioning.
      * Attempting to set this field will result in an error.
      */
-    public Generation getGeneration() { return generation; }
-    public void setGeneration(Generation value) { this.generation = value; }
+    public String getGeneration() { return generation; }
+    public void setGeneration(String value) { this.generation = value; }
 
     /**
      * The ID of the object, including the bucket name, object name, and
@@ -188,8 +188,8 @@ public class StorageObjectData {
      * number is only meaningful in the context of a particular generation of a
      * particular object.
      */
-    public Generation getMetageneration() { return metageneration; }
-    public void setMetageneration(Generation value) { this.metageneration = value; }
+    public String getMetageneration() { return metageneration; }
+    public void setMetageneration(String value) { this.metageneration = value; }
 
     /**
      * The name of the object.
@@ -214,8 +214,8 @@ public class StorageObjectData {
      * Content-Length of the object data in bytes, matching
      * [https://tools.ietf.org/html/rfc7230#section-3.3.2][RFC 7230 §3.3.2].
      */
-    public Generation getSize() { return size; }
-    public void setSize(Generation value) { this.size = value; }
+    public String getSize() { return size; }
+    public void setSize(String value) { this.size = value; }
 
     /**
      * Storage class of the object.

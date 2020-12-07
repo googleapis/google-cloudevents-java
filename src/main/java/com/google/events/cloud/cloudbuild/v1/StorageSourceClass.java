@@ -23,7 +23,7 @@ package com.google.events.cloud.cloudbuild.v1;
  */
 public class StorageSourceClass {
     private String bucket;
-    private DiskSizeGBUnion generation;
+    private String generation;
     private String object;
 
     /**
@@ -38,8 +38,8 @@ public class StorageSourceClass {
      * Google Cloud Storage generation for the object. If the generation is
      * omitted, the latest generation will be used.
      */
-    public DiskSizeGBUnion getGeneration() { return generation; }
-    public void setGeneration(DiskSizeGBUnion value) { this.generation = value; }
+    public String getGeneration() { return generation; }
+    public void setGeneration(String value) { this.generation = value; }
 
     /**
      * Google Cloud Storage object containing the source.

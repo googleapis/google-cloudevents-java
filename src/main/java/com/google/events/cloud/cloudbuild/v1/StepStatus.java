@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.firestore.v1;
+package com.google.events.cloud.cloudbuild.v1;
 
 import java.io.IOException;
 
-public class IntegerValueUnion {
+public class StepStatus {
     public Long integerValue;
     public String stringValue;
 }

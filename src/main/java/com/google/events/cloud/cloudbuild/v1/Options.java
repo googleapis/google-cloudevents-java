@@ -20,7 +20,7 @@ package com.google.events.cloud.cloudbuild.v1;
  * Special options for this build.
  */
 public class Options {
-    private DiskSizeGBUnion diskSizeGB;
+    private String diskSizeGB;
     private String[] env;
     private Logging logging;
     private LogStreamingOption logStreamingOption;
@@ -40,8 +40,8 @@ public class Options {
      * requested. At present, the maximum disk size is 1000GB; builds that request
      * more than the maximum are rejected with an error.
      */
-    public DiskSizeGBUnion getDiskSizeGB() { return diskSizeGB; }
-    public void setDiskSizeGB(DiskSizeGBUnion value) { this.diskSizeGB = value; }
+    public String getDiskSizeGB() { return diskSizeGB; }
+    public void setDiskSizeGB(String value) { this.diskSizeGB = value; }
 
     /**
      * A list of global environment variable definitions that will exist for all

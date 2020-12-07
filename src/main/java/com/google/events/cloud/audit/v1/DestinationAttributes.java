@@ -28,7 +28,7 @@ import java.util.Map;
 public class DestinationAttributes {
     private String ip;
     private Map<String, String> labels;
-    private NumResponseItems port;
+    private String port;
     private String principal;
     private String regionCode;
 
@@ -47,8 +47,8 @@ public class DestinationAttributes {
     /**
      * The network port of the peer.
      */
-    public NumResponseItems getPort() { return port; }
-    public void setPort(NumResponseItems value) { this.port = value; }
+    public String getPort() { return port; }
+    public void setPort(String value) { this.port = value; }
 
     /**
      * The identity of this peer. Similar to `Request.auth.principal`, but

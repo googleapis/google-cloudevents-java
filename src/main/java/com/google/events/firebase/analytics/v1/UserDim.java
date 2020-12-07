@@ -25,7 +25,7 @@ public class UserDim {
     private AppInfo appInfo;
     private BundleInfo bundleInfo;
     private DeviceInfo deviceInfo;
-    private IntValue firstOpenTimestampMicros;
+    private String firstOpenTimestampMicros;
     private GeoInfo geoInfo;
     private LtvInfo ltvInfo;
     private TrafficSource trafficSource;
@@ -53,8 +53,8 @@ public class UserDim {
     /**
      * The time (in microseconds) at which the user first opened the app.
      */
-    public IntValue getFirstOpenTimestampMicros() { return firstOpenTimestampMicros; }
-    public void setFirstOpenTimestampMicros(IntValue value) { this.firstOpenTimestampMicros = value; }
+    public String getFirstOpenTimestampMicros() { return firstOpenTimestampMicros; }
+    public void setFirstOpenTimestampMicros(String value) { this.firstOpenTimestampMicros = value; }
 
     /**
      * User's geographic information.

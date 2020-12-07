@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.cloudbuild.v1;
+package com.google.events.cloud.firestore.v1;
 
 import java.io.IOException;
 
 /**
- * Status of the build.
+ * A null value.
  */
-public class Status {
+public class NullValue {
     public Long integerValue;
-    public StatusEnum enumValue;
+    public String stringValue;
 }

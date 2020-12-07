@@ -23,12 +23,12 @@ import java.time.OffsetDateTime;
  */
 public class RemoteConfigEventData {
     private String description;
-    private RollbackSource rollbackSource;
-    private RollbackSource updateOrigin;
+    private String rollbackSource;
+    private Update updateOrigin;
     private OffsetDateTime updateTime;
-    private RollbackSource updateType;
+    private Update updateType;
     private UpdateUser updateUser;
-    private RollbackSource versionNumber;
+    private String versionNumber;
 
     /**
      * The user-provided description of the corresponding Remote Config template.
@@ -40,14 +40,14 @@ public class RemoteConfigEventData {
      * Only present if this version is the result of a rollback, and will be the
      * version number of the Remote Config template that was rolled-back to.
      */
-    public RollbackSource getRollbackSource() { return rollbackSource; }
-    public void setRollbackSource(RollbackSource value) { this.rollbackSource = value; }
+    public String getRollbackSource() { return rollbackSource; }
+    public void setRollbackSource(String value) { this.rollbackSource = value; }
 
     /**
      * Where the update action originated.
      */
-    public RollbackSource getUpdateOrigin() { return updateOrigin; }
-    public void setUpdateOrigin(RollbackSource value) { this.updateOrigin = value; }
+    public Update getUpdateOrigin() { return updateOrigin; }
+    public void setUpdateOrigin(Update value) { this.updateOrigin = value; }
 
     /**
      * When the Remote Config template was written to the Remote Config server.
@@ -58,8 +58,8 @@ public class RemoteConfigEventData {
     /**
      * What type of update was made.
      */
-    public RollbackSource getUpdateType() { return updateType; }
-    public void setUpdateType(RollbackSource value) { this.updateType = value; }
+    public Update getUpdateType() { return updateType; }
+    public void setUpdateType(Update value) { this.updateType = value; }
 
     /**
      * Aggregation of all metadata fields about the account that performed the update.
@@ -70,6 +70,6 @@ public class RemoteConfigEventData {
     /**
      * The version number of the version's corresponding Remote Config template.
      */
-    public RollbackSource getVersionNumber() { return versionNumber; }
-    public void setVersionNumber(RollbackSource value) { this.versionNumber = value; }
+    public String getVersionNumber() { return versionNumber; }
+    public void setVersionNumber(String value) { this.versionNumber = value; }
 }

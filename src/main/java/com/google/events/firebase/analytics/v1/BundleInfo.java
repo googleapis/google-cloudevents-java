@@ -21,7 +21,7 @@ package com.google.events.firebase.analytics.v1;
  */
 public class BundleInfo {
     private Long bundleSequenceID;
-    private IntValue serverTimestampOffsetMicros;
+    private String serverTimestampOffsetMicros;
 
     /**
      * Monotonically increasing index for each bundle set by SDK.
@@ -32,6 +32,6 @@ public class BundleInfo {
     /**
      * Timestamp offset between collection time and upload time.
      */
-    public IntValue getServerTimestampOffsetMicros() { return serverTimestampOffsetMicros; }
-    public void setServerTimestampOffsetMicros(IntValue value) { this.serverTimestampOffsetMicros = value; }
+    public String getServerTimestampOffsetMicros() { return serverTimestampOffsetMicros; }
+    public void setServerTimestampOffsetMicros(String value) { this.serverTimestampOffsetMicros = value; }
 }
