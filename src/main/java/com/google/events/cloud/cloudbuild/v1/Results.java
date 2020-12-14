@@ -25,7 +25,7 @@ public class Results {
     private String[] buildStepImages;
     private String[] buildStepOutputs;
     private Image[] images;
-    private String numArtifacts;
+    private Long numArtifacts;
 
     /**
      * Path to the artifact manifest. Only populated when artifacts are uploaded.
@@ -66,6 +66,6 @@ public class Results {
     /**
      * Number of artifacts uploaded. Only populated when artifacts are uploaded.
      */
-    public String getNumArtifacts() { return numArtifacts; }
-    public void setNumArtifacts(String value) { this.numArtifacts = value; }
+    public Long getNumArtifacts() { return numArtifacts; }
+    public void setNumArtifacts(Long value) { this.numArtifacts = value; }
 }

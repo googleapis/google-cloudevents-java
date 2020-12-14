@@ -27,7 +27,7 @@ public class ValueElement {
     private String bytesValue;
     private Double doubleValue;
     private GeoPointValue geoPointValue;
-    private String integerValue;
+    private Long integerValue;
     private MapValue mapValue;
     private NullValue nullValue;
     private String referenceValue;
@@ -73,8 +73,8 @@ public class ValueElement {
     /**
      * An integer value.
      */
-    public String getIntegerValue() { return integerValue; }
-    public void setIntegerValue(String value) { this.integerValue = value; }
+    public Long getIntegerValue() { return integerValue; }
+    public void setIntegerValue(Long value) { this.integerValue = value; }
 
     /**
      * A map value.

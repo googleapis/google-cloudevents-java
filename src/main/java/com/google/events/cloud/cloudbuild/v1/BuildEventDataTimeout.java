@@ -23,7 +23,7 @@ package com.google.events.cloud.cloudbuild.v1;
  */
 public class BuildEventDataTimeout {
     private Long nanos;
-    private String seconds;
+    private Long seconds;
 
     /**
      * Signed fractions of a second at nanosecond resolution of the span
@@ -41,6 +41,6 @@ public class BuildEventDataTimeout {
      * to +315,576,000,000 inclusive. Note: these bounds are computed from:
      * 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
      */
-    public String getSeconds() { return seconds; }
-    public void setSeconds(String value) { this.seconds = value; }
+    public Long getSeconds() { return seconds; }
+    public void setSeconds(Long value) { this.seconds = value; }
 }

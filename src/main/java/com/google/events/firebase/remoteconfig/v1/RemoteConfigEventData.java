@@ -23,12 +23,12 @@ import java.time.OffsetDateTime;
  */
 public class RemoteConfigEventData {
     private String description;
-    private String rollbackSource;
+    private Long rollbackSource;
     private Update updateOrigin;
     private OffsetDateTime updateTime;
     private Update updateType;
     private UpdateUser updateUser;
-    private String versionNumber;
+    private Long versionNumber;
 
     /**
      * The user-provided description of the corresponding Remote Config template.
@@ -40,8 +40,8 @@ public class RemoteConfigEventData {
      * Only present if this version is the result of a rollback, and will be the
      * version number of the Remote Config template that was rolled-back to.
      */
-    public String getRollbackSource() { return rollbackSource; }
-    public void setRollbackSource(String value) { this.rollbackSource = value; }
+    public Long getRollbackSource() { return rollbackSource; }
+    public void setRollbackSource(Long value) { this.rollbackSource = value; }
 
     /**
      * Where the update action originated.
@@ -70,6 +70,6 @@ public class RemoteConfigEventData {
     /**
      * The version number of the version's corresponding Remote Config template.
      */
-    public String getVersionNumber() { return versionNumber; }
-    public void setVersionNumber(String value) { this.versionNumber = value; }
+    public Long getVersionNumber() { return versionNumber; }
+    public void setVersionNumber(Long value) { this.versionNumber = value; }
 }
