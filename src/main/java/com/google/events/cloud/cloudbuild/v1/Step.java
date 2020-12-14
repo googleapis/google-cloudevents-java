@@ -28,7 +28,7 @@ public class Step {
     private String name;
     private PullTiming pullTiming;
     private String[] secretEnv;
-    private DiskSizeGBUnion status;
+    private StepStatus status;
     private StepTimeout timeout;
     private StepTiming timing;
     private Volume[] volumes;
@@ -126,8 +126,8 @@ public class Step {
      * only updated on build completion; step status is not updated in real-time
      * as the build progresses.
      */
-    public DiskSizeGBUnion getStatus() { return status; }
-    public void setStatus(DiskSizeGBUnion value) { this.status = value; }
+    public StepStatus getStatus() { return status; }
+    public void setStatus(StepStatus value) { this.status = value; }
 
     /**
      * Time limit for executing this build step. If not defined, the step has no

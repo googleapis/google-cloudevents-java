@@ -25,7 +25,7 @@ public class Results {
     private String[] buildStepImages;
     private String[] buildStepOutputs;
     private Image[] images;
-    private DiskSizeGBUnion numArtifacts;
+    private Long numArtifacts;
 
     /**
      * Path to the artifact manifest. Only populated when artifacts are uploaded.
@@ -66,6 +66,6 @@ public class Results {
     /**
      * Number of artifacts uploaded. Only populated when artifacts are uploaded.
      */
-    public DiskSizeGBUnion getNumArtifacts() { return numArtifacts; }
-    public void setNumArtifacts(DiskSizeGBUnion value) { this.numArtifacts = value; }
+    public Long getNumArtifacts() { return numArtifacts; }
+    public void setNumArtifacts(Long value) { this.numArtifacts = value; }
 }

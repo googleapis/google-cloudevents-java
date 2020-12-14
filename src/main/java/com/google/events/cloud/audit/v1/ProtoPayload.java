@@ -24,7 +24,7 @@ public class ProtoPayload {
     private AuthorizationInfo[] authorizationInfo;
     private Metadata metadata;
     private String methodName;
-    private NumResponseItems numResponseItems;
+    private Long numResponseItems;
     private Request request;
     private RequestMetadata requestMetadata;
     private ResourceLocation resourceLocation;
@@ -71,8 +71,8 @@ public class ProtoPayload {
      * The number of items returned from a List or Query API method,
      * if applicable.
      */
-    public NumResponseItems getNumResponseItems() { return numResponseItems; }
-    public void setNumResponseItems(NumResponseItems value) { this.numResponseItems = value; }
+    public Long getNumResponseItems() { return numResponseItems; }
+    public void setNumResponseItems(Long value) { this.numResponseItems = value; }
 
     /**
      * The operation request. This may not include all request parameters,

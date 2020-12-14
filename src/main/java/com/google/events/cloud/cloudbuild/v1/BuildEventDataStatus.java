@@ -14,11 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
+package com.google.events.cloud.cloudbuild.v1;
 
 import java.io.IOException;
 
-public class NumResponseItems {
+/**
+ * Status of the build.
+ */
+public class BuildEventDataStatus {
     public Long integerValue;
-    public String stringValue;
+    public StatusEnum enumValue;
 }

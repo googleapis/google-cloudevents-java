@@ -17,7 +17,7 @@
 package com.google.events.cloud.pubsub.v1;
 
 /**
- * The data received in an event when a message is published to a topic.
+ * The event data when a message is published to a topic.
  */
 public class MessagePublishedData {
     private Message message;

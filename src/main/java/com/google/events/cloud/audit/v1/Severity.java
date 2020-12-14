@@ -14,11 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.firebase.remoteconfig.v1;
+package com.google.events.cloud.audit.v1;
 
 import java.io.IOException;
 
-public class RollbackSource {
+/**
+ * The severity of the log entry.
+ */
+public class Severity {
     public Long integerValue;
     public String stringValue;
 }

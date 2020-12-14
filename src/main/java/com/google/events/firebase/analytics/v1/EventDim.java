@@ -25,8 +25,8 @@ public class EventDim {
     private String date;
     private String name;
     private Map<String, AnalyticsValue> params;
-    private IntValue previousTimestampMicros;
-    private IntValue timestampMicros;
+    private Long previousTimestampMicros;
+    private Long timestampMicros;
     private Double valueInUsd;
 
     /**
@@ -51,14 +51,14 @@ public class EventDim {
     /**
      * UTC client time when the previous event happened.
      */
-    public IntValue getPreviousTimestampMicros() { return previousTimestampMicros; }
-    public void setPreviousTimestampMicros(IntValue value) { this.previousTimestampMicros = value; }
+    public Long getPreviousTimestampMicros() { return previousTimestampMicros; }
+    public void setPreviousTimestampMicros(Long value) { this.previousTimestampMicros = value; }
 
     /**
      * UTC client time when the event happened.
      */
-    public IntValue getTimestampMicros() { return timestampMicros; }
-    public void setTimestampMicros(IntValue value) { this.timestampMicros = value; }
+    public Long getTimestampMicros() { return timestampMicros; }
+    public void setTimestampMicros(Long value) { this.timestampMicros = value; }
 
     /**
      * Value param in USD.

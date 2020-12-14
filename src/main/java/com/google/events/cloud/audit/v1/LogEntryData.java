@@ -20,10 +20,7 @@ import java.time.OffsetDateTime;
 import java.util.Map;
 
 /**
- * Generic log entry, used as a wrapper for Cloud Audit Logs in events.
- * This is copied from
- * https://github.com/googleapis/googleapis/blob/master/google/logging/v2/log_entry.proto
- * and adapted appropriately.
+ * The data within all Cloud Audit Logs log entry events.
  */
 public class LogEntryData {
     private String insertID;
@@ -33,7 +30,7 @@ public class LogEntryData {
     private ProtoPayload protoPayload;
     private OffsetDateTime receiveTimestamp;
     private Resource resource;
-    private NumResponseItems severity;
+    private Severity severity;
     private String spanID;
     private OffsetDateTime timestamp;
     private String trace;
@@ -88,8 +85,8 @@ public class LogEntryData {
     /**
      * The severity of the log entry.
      */
-    public NumResponseItems getSeverity() { return severity; }
-    public void setSeverity(NumResponseItems value) { this.severity = value; }
+    public Severity getSeverity() { return severity; }
+    public void setSeverity(Severity value) { this.severity = value; }
 
     /**
      * The span ID within the trace associated with the log entry, if any.
