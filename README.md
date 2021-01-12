@@ -16,9 +16,9 @@ To use Maven, add the following lines to your `pom.xml` file:
 <project>
   <dependencies>
     <dependency>
-      <groupId>google.events</groupId>
+      <groupId>com.google.cloud</groupId>
       <artifactId>google-cloudevent-types</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>0.1.5</version>
     </dependency>
   </dependencies>
 </project>
