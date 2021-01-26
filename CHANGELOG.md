@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.5...v0.2.0) (2021-01-26)
+
+
+### Features
+
+* run the generator – fewer oneOf types, 12/07/2020 ([#54](https://www.github.com/googleapis/google-cloudevents-java/issues/54)) ([615e3e7](https://www.github.com/googleapis/google-cloudevents-java/commit/615e3e72f07a2918bd68f244e537948e3aa8ec33))
+
+
+### Documentation
+
+* update doc install instructions ([#56](https://www.github.com/googleapis/google-cloudevents-java/issues/56)) ([55f551a](https://www.github.com/googleapis/google-cloudevents-java/commit/55f551a06bae742cf33c3e0346de6b7239d33b31))
+
 ### [0.1.5](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.4...v0.1.5) (2020-11-13)
 
 
