@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ public class Options {
     private MachineType machineType;
     private RequestedVerifyOption requestedVerifyOption;
     private String[] secretEnv;
-    private SourceProvenanceHashElement[] sourceProvenanceHash;
+    private SourceProvenanceHash[] sourceProvenanceHash;
     private SubstitutionOption substitutionOption;
     private Volume[] volumes;
     private String workerPool;
@@ -92,8 +92,8 @@ public class Options {
     /**
      * Requested hash for SourceProvenance.
      */
-    public SourceProvenanceHashElement[] getSourceProvenanceHash() { return sourceProvenanceHash; }
-    public void setSourceProvenanceHash(SourceProvenanceHashElement[] value) { this.sourceProvenanceHash = value; }
+    public SourceProvenanceHash[] getSourceProvenanceHash() { return sourceProvenanceHash; }
+    public void setSourceProvenanceHash(SourceProvenanceHash[] value) { this.sourceProvenanceHash = value; }
 
     /**
      * Option to specify behavior when there is an error in the substitution
