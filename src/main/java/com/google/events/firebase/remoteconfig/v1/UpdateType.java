@@ -14,17 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
+package com.google.events.firebase.remoteconfig.v1;
+
+import java.io.IOException;
 
 /**
- * Third party identity as the real authority.
+ * What type of update was made.
  */
-public class ServiceAccountDelegationInfoThirdPartyPrincipal {
-    private ThirdPartyClaims thirdPartyClaims;
-
-    /**
-     * Metadata about third party identity.
-     */
-    public ThirdPartyClaims getThirdPartyClaims() { return thirdPartyClaims; }
-    public void setThirdPartyClaims(ThirdPartyClaims value) { this.thirdPartyClaims = value; }
+public class UpdateType {
+    public Long integerValue;
+    public UpdateTypeEnum enumValue;
 }

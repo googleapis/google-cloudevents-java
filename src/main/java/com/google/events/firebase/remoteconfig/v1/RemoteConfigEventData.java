@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@ import java.time.OffsetDateTime;
 public class RemoteConfigEventData {
     private String description;
     private Long rollbackSource;
-    private Update updateOrigin;
+    private UpdateOrigin updateOrigin;
     private OffsetDateTime updateTime;
-    private Update updateType;
+    private UpdateType updateType;
     private UpdateUser updateUser;
     private Long versionNumber;
 
@@ -46,8 +46,8 @@ public class RemoteConfigEventData {
     /**
      * Where the update action originated.
      */
-    public Update getUpdateOrigin() { return updateOrigin; }
-    public void setUpdateOrigin(Update value) { this.updateOrigin = value; }
+    public UpdateOrigin getUpdateOrigin() { return updateOrigin; }
+    public void setUpdateOrigin(UpdateOrigin value) { this.updateOrigin = value; }
 
     /**
      * When the Remote Config template was written to the Remote Config server.
@@ -58,11 +58,12 @@ public class RemoteConfigEventData {
     /**
      * What type of update was made.
      */
-    public Update getUpdateType() { return updateType; }
-    public void setUpdateType(Update value) { this.updateType = value; }
+    public UpdateType getUpdateType() { return updateType; }
+    public void setUpdateType(UpdateType value) { this.updateType = value; }
 
     /**
-     * Aggregation of all metadata fields about the account that performed the update.
+     * Aggregation of all metadata fields about the account that performed the
+     * update.
      */
     public UpdateUser getUpdateUser() { return updateUser; }
     public void setUpdateUser(UpdateUser value) { this.updateUser = value; }
