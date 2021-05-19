@@ -43,6 +43,9 @@ mvn clean site -B -q -P docFX
 # copy README to docfx-yml dir and rename index.md
 cp README.md target/docfx-yml/index.md
 
+# copy CHANGELOG to docfx-yml dir and rename history.md
+cp CHANGELOG.md target/docfx-yml/history.md
+
 pushd target/docfx-yml
 
 # create metadata
