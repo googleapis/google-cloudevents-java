@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,22 @@
  * limitations under the License.
  */
 
-package com.google.events.firebase.remoteconfig.v1;
+package com.google.events.cloud.firestore.v1;
 
 import java.io.IOException;
 
-public class Update {
-    public Long integerValue;
-    public String stringValue;
+public enum BytesValue {
+    NULL_VALUE;
+
+    public String toValue() {
+        switch (this) {
+            case NULL_VALUE: return "NULL_VALUE";
+        }
+        return null;
+    }
+
+    public static BytesValue forValue(String value) throws IOException {
+        if (value.equals("NULL_VALUE")) return NULL_VALUE;
+        throw new IOException("Cannot deserialize BytesValue");
+    }
 }

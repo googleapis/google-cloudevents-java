@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,9 +25,15 @@ public class ReferenceEventData {
     private Map<String, Object> data;
     private Map<String, Object> delta;
 
+    /**
+     * The original data for the reference.
+     */
     public Map<String, Object> getData() { return data; }
     public void setData(Map<String, Object> value) { this.data = value; }
 
+    /**
+     * The change in the reference data.
+     */
     public Map<String, Object> getDelta() { return delta; }
     public void setDelta(Map<String, Object> value) { this.delta = value; }
 }

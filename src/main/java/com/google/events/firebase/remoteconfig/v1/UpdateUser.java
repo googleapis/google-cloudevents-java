@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,8 @@
 package com.google.events.firebase.remoteconfig.v1;
 
 /**
- * Aggregation of all metadata fields about the account that performed the update.
+ * Aggregation of all metadata fields about the account that performed the
+ * update.
  */
 public class UpdateUser {
     private String email;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,13 +55,15 @@ public class LogEntryData {
     public void setLogName(String value) { this.logName = value; }
 
     /**
-     * Information about an operation associated with the log entry, if applicable.
+     * Information about an operation associated with the log entry, if
+     * applicable.
      */
     public Operation getOperation() { return operation; }
     public void setOperation(Operation value) { this.operation = value; }
 
     /**
-     * The log entry payload, which is always an AuditLog for Cloud Audit Log events.
+     * The log entry payload, which is always an AuditLog for Cloud Audit Log
+     * events.
      */
     public ProtoPayload getProtoPayload() { return protoPayload; }
     public void setProtoPayload(ProtoPayload value) { this.protoPayload = value; }

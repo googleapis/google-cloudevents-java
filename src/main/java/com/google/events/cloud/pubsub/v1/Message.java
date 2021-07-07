@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 
 package com.google.events.cloud.pubsub.v1;
 
+import java.time.OffsetDateTime;
 import java.util.Map;
 
 /**
@@ -25,6 +26,7 @@ public class Message {
     private Map<String, String> attributes;
     private String data;
     private String messageID;
+    private OffsetDateTime publishTime;
 
     /**
      * Attributes for this message.
@@ -44,4 +46,11 @@ public class Message {
      */
     public String getMessageID() { return messageID; }
     public void setMessageID(String value) { this.messageID = value; }
+
+    /**
+     * The time at which the message was published, populated by the server when
+     * it receives the `Publish` call.
+     */
+    public OffsetDateTime getPublishTime() { return publishTime; }
+    public void setPublishTime(OffsetDateTime value) { this.publishTime = value; }
 }
