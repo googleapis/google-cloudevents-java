@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ public class Step {
     private String name;
     private PullTiming pullTiming;
     private String[] secretEnv;
-    private StepStatus status;
+    private Status status;
     private StepTimeout timeout;
     private StepTiming timing;
     private Volume[] volumes;
@@ -126,8 +126,8 @@ public class Step {
      * only updated on build completion; step status is not updated in real-time
      * as the build progresses.
      */
-    public StepStatus getStatus() { return status; }
-    public void setStatus(StepStatus value) { this.status = value; }
+    public Status getStatus() { return status; }
+    public void setStatus(Status value) { this.status = value; }
 
     /**
      * Time limit for executing this build step. If not defined, the step has no

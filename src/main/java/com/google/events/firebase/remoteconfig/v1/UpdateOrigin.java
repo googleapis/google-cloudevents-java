@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.cloudbuild.v1;
+package com.google.events.firebase.remoteconfig.v1;
 
 import java.io.IOException;
 
-public class SourceProvenanceHashElement {
+/**
+ * Where the update action originated.
+ */
+public class UpdateOrigin {
     public Long integerValue;
-    public String stringValue;
+    public UpdateOriginEnum enumValue;
 }

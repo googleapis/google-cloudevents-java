@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package com.google.events.cloud.cloudbuild.v1;
 
 import java.io.IOException;
 
-public enum TypeEnum {
+public enum SourceProvenanceHashEnum {
     MD5, NONE, SHA256;
 
     public String toValue() {
@@ -30,10 +30,10 @@ public enum TypeEnum {
         return null;
     }
 
-    public static TypeEnum forValue(String value) throws IOException {
+    public static SourceProvenanceHashEnum forValue(String value) throws IOException {
         if (value.equals("MD5")) return MD5;
         if (value.equals("NONE")) return NONE;
         if (value.equals("SHA256")) return SHA256;
-        throw new IOException("Cannot deserialize TypeEnum");
+        throw new IOException("Cannot deserialize SourceProvenanceHashEnum");
     }
 }

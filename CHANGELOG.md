@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.2.0...v0.3.0) (2021-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* re-run the generator (#66)
+
+### Features
+
+* re-run the generator ([#66](https://www.github.com/googleapis/google-cloudevents-java/issues/66)) ([e29d085](https://www.github.com/googleapis/google-cloudevents-java/commit/e29d085f460e8d5196ad4a036f4fe94d6fa1b2d0))
+
 ## [0.2.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.1.5...v0.2.0) (2021-01-26)
 
 

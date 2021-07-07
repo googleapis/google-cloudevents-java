@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ public class BuildEventData {
     private Source source;
     private SourceProvenance sourceProvenance;
     private OffsetDateTime startTime;
-    private BuildEventDataStatus status;
+    private Status status;
     private String statusDetail;
     private Step[] steps;
     private Map<String, String> substitutions;
@@ -167,8 +167,8 @@ public class BuildEventData {
     /**
      * Status of the build.
      */
-    public BuildEventDataStatus getStatus() { return status; }
-    public void setStatus(BuildEventDataStatus value) { this.status = value; }
+    public Status getStatus() { return status; }
+    public void setStatus(Status value) { this.status = value; }
 
     /**
      * Customer-readable message about the current status.
