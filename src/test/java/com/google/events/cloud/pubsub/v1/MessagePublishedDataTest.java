@@ -39,7 +39,6 @@ public class MessagePublishedDataTest {
             "        },\n" +
             "        \"data\": \"dGVzdCBtZXNzYWdlIDM=\",\n" +
             "        \"messageId\": \"message-id\",\n" +
-            "        \"publishTime\":\"2021-02-05T04:06:14.109Z\"\n" +
             "      }\n" +
             "}";
     MessagePublishedData m = new Gson().fromJson(json, MessagePublishedData.class);
