@@ -20,11 +20,12 @@ import static org.junit.Assert.assertEquals;
 import com.google.gson.Gson;
 import org.junit.Test;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class MessagePublishedDataTest {
   private String decode(String data) {
-    return new String(Base64.getDecoder().decode(data));
+    return new String(Base64.getDecoder().decode(data), StandardCharsets.UTF_8.toString());
   }
 
   @Test
