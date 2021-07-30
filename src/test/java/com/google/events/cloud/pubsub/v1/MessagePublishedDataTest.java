@@ -20,16 +20,17 @@ import static org.junit.Assert.assertEquals;
 import com.google.gson.Gson;
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class MessagePublishedDataTest {
-  private String decode(String data) {
+  private String decode(String data) throws UnsupportedEncodingException {
     return new String(Base64.getDecoder().decode(data), StandardCharsets.UTF_8.toString());
   }
 
   @Test
-  public void testPubSubEvent() {
+  public void testPubSubEvent() throws UnsupportedEncodingException {
     final String json = "{\n" +
             "      \"subscription\": \"projects/my-project/subscriptions/my-subscription\",\n" +
             "      \"message\": {\n" +
@@ -38,7 +39,7 @@ public class MessagePublishedDataTest {
             "          \"attr1\":\"attr1-value\"\n" +
             "        },\n" +
             "        \"data\": \"dGVzdCBtZXNzYWdlIDM=\",\n" +
-            "        \"messageId\": \"message-id\",\n" +
+            "        \"messageId\": \"message-id\"\n" +
             "      }\n" +
             "}";
     MessagePublishedData m = new Gson().fromJson(json, MessagePublishedData.class);
