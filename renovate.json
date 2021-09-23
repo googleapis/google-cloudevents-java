@@ -2,5 +2,8 @@
   "extends": [
     "config:base",
     ":disableDependencyDashboard"
+  ],
+  "schedule": [
+    "every 3 months on the first day of the month"
   ]
 }
