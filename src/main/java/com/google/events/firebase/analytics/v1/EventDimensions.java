@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * Message containing information pertaining to the event.
  */
-public class EventDim {
+public class EventDimensions {
     private String date;
     private String name;
     private Map<String, AnalyticsValue> params;

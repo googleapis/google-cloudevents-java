@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
+package com.google.events.cloud.cloudbuild.v1;
 
 /**
- * Third party identity as the real authority.
+ * Container message for hashes of byte content of files, used in
+ * SourceProvenance messages to verify integrity of source input to the build.
  */
-public class ServiceAccountDelegationInfoThirdPartyPrincipal {
-    private ThirdPartyClaims thirdPartyClaims;
+public class FileHashes {
+    private Hash[] fileHash;
 
     /**
-     * Metadata about third party identity.
+     * Collection of file hashes.
      */
-    public ThirdPartyClaims getThirdPartyClaims() { return thirdPartyClaims; }
-    public void setThirdPartyClaims(ThirdPartyClaims value) { this.thirdPartyClaims = value; }
+    public Hash[] getFileHash() { return fileHash; }
+    public void setFileHash(Hash[] value) { this.fileHash = value; }
 }

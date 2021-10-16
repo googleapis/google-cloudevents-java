@@ -16,8 +16,12 @@
 
 package com.google.events.cloud.audit.v1;
 
+import java.util.Map;
+
 /**
  * Authentication information.
+ *
+ * Authentication information for the operation.
  */
 public class AuthenticationInfo {
     private String authoritySelector;
@@ -25,7 +29,7 @@ public class AuthenticationInfo {
     private String principalSubject;
     private ServiceAccountDelegationInfo[] serviceAccountDelegationInfo;
     private String serviceAccountKeyName;
-    private AuthenticationInfoThirdPartyPrincipal thirdPartyPrincipal;
+    private Map<String, Object> thirdPartyPrincipal;
 
     /**
      * The authority selector specified by the requestor, if any.
@@ -76,6 +80,6 @@ public class AuthenticationInfo {
      * When the JSON object represented here has a proto equivalent, the proto
      * name will be indicated in the `@type` property.
      */
-    public AuthenticationInfoThirdPartyPrincipal getThirdPartyPrincipal() { return thirdPartyPrincipal; }
-    public void setThirdPartyPrincipal(AuthenticationInfoThirdPartyPrincipal value) { this.thirdPartyPrincipal = value; }
+    public Map<String, Object> getThirdPartyPrincipal() { return thirdPartyPrincipal; }
+    public void setThirdPartyPrincipal(Map<String, Object> value) { this.thirdPartyPrincipal = value; }
 }

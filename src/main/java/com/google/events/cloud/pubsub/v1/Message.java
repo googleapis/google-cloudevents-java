@@ -21,11 +21,14 @@ import java.util.Map;
 
 /**
  * The message that was published.
+ *
+ * A message published to a topic.
  */
 public class Message {
     private Map<String, String> attributes;
     private String data;
     private String messageID;
+    private String orderingKey;
     private OffsetDateTime publishTime;
 
     /**
@@ -46,6 +49,13 @@ public class Message {
      */
     public String getMessageID() { return messageID; }
     public void setMessageID(String value) { this.messageID = value; }
+
+    /**
+     * If non-empty, identifies related messages for which publish order should be
+     * respected.
+     */
+    public String getOrderingKey() { return orderingKey; }
+    public void setOrderingKey(String value) { this.orderingKey = value; }
 
     /**
      * The time at which the message was published, populated by the server when

@@ -16,11 +16,13 @@
 
 package com.google.events.firebase.auth.v1;
 
+import java.util.Map;
+
 /**
  * The data within all Firebase Auth events.
  */
 public class AuthEventData {
-    private CustomClaims customClaims;
+    private Map<String, Object> customClaims;
     private Boolean disabled;
     private String displayName;
     private String email;
@@ -28,15 +30,15 @@ public class AuthEventData {
     private Metadata metadata;
     private String phoneNumber;
     private String photoURL;
-    private ProviderDatum[] providerData;
+    private UserInfo[] providerData;
     private String uid;
 
     /**
      * User's custom claims, typically used to define user roles and propagated
      * to an authenticated user's ID token.
      */
-    public CustomClaims getCustomClaims() { return customClaims; }
-    public void setCustomClaims(CustomClaims value) { this.customClaims = value; }
+    public Map<String, Object> getCustomClaims() { return customClaims; }
+    public void setCustomClaims(Map<String, Object> value) { this.customClaims = value; }
 
     /**
      * Whether the user is disabled.
@@ -83,8 +85,8 @@ public class AuthEventData {
     /**
      * User's info at the providers
      */
-    public ProviderDatum[] getProviderData() { return providerData; }
-    public void setProviderData(ProviderDatum[] value) { this.providerData = value; }
+    public UserInfo[] getProviderData() { return providerData; }
+    public void setProviderData(UserInfo[] value) { this.providerData = value; }
 
     /**
      * The user identifier in the Firebase app.

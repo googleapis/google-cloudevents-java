@@ -14,19 +14,23 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
+package com.google.events.firebase.database.v1;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
- * Metadata about third party identity.
+ * `Value` represents a dynamically typed value which can be either
+ * null, a number, a string, a boolean, a recursive struct value, or a
+ * list of values. A producer of value is expected to set one of that
+ * variants, absence of any variant indicates an error.
+ *
+ * The JSON representation for `Value` is JSON value.
  */
-public class ThirdPartyClaims {
-    private Map<String, Map<String, Object>> fields;
-
-    /**
-     * Unordered map of dynamically typed values.
-     */
-    public Map<String, Map<String, Object>> getFields() { return fields; }
-    public void setFields(Map<String, Map<String, Object>> value) { this.fields = value; }
+public class Data {
+    public Object[] anythingArrayValue;
+    public Boolean boolValue;
+    public Double doubleValue;
+    public Map<String, Object> anythingMapValue;
+    public String stringValue;
 }

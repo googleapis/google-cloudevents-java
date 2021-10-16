@@ -19,7 +19,7 @@ package com.google.events.cloud.cloudbuild.v1;
 /**
  * A step in the build pipeline.
  */
-public class Step {
+public class BuildStep {
     private String[] args;
     private String dir;
     private String entrypoint;
@@ -29,7 +29,7 @@ public class Step {
     private PullTiming pullTiming;
     private String[] secretEnv;
     private Status status;
-    private StepTimeout timeout;
+    private String timeout;
     private StepTiming timing;
     private Volume[] volumes;
     private String[] waitFor;
@@ -134,8 +134,8 @@ public class Step {
      * time limit and will be allowed to continue to run until either it completes
      * or the build itself times out.
      */
-    public StepTimeout getTimeout() { return timeout; }
-    public void setTimeout(StepTimeout value) { this.timeout = value; }
+    public String getTimeout() { return timeout; }
+    public void setTimeout(String value) { this.timeout = value; }
 
     /**
      * Stores timing information for executing this build step.

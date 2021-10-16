@@ -18,6 +18,9 @@ package com.google.events.firebase.analytics.v1;
 
 /**
  * Information regarding the bundle in which these events were uploaded.
+ *
+ * Message containing information regarding the bundle in which these
+ * events were uploaded.
  */
 public class BundleInfo {
     private Long bundleSequenceID;

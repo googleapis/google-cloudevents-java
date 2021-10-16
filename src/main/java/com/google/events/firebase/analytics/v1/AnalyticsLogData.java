@@ -20,14 +20,14 @@ package com.google.events.firebase.analytics.v1;
  * The data within Firebase Analytics log events.
  */
 public class AnalyticsLogData {
-    private EventDim[] eventDim;
+    private EventDimensions[] eventDim;
     private UserDim userDim;
 
     /**
      * A repeated record of event related dimensions.
      */
-    public EventDim[] getEventDim() { return eventDim; }
-    public void setEventDim(EventDim[] value) { this.eventDim = value; }
+    public EventDimensions[] getEventDim() { return eventDim; }
+    public void setEventDim(EventDimensions[] value) { this.eventDim = value; }
 
     /**
      * User related dimensions.

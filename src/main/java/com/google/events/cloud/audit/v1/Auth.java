@@ -16,14 +16,20 @@
 
 package com.google.events.cloud.audit.v1;
 
+import java.util.Map;
+
 /**
  * The request authentication. May be absent for unauthenticated requests.
  * Derived from the HTTP request `Authorization` header or equivalent.
+ *
+ * This message defines request authentication attributes. Terminology is
+ * based on the JSON Web Token (JWT) standard, but the terms also
+ * correlate to concepts in other standards.
  */
 public class Auth {
     private String[] accessLevels;
     private String[] audiences;
-    private Claims claims;
+    private Map<String, Object> claims;
     private String presenter;
     private String principal;
 
@@ -75,8 +81,8 @@ public class Auth {
      * SAML assertions are similarly specified, but with an identity provider
      * dependent structure.
      */
-    public Claims getClaims() { return claims; }
-    public void setClaims(Claims value) { this.claims = value; }
+    public Map<String, Object> getClaims() { return claims; }
+    public void setClaims(Map<String, Object> value) { this.claims = value; }
 
     /**
      * The authorized presenter of the credential. Reflects the optional
