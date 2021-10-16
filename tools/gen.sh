@@ -16,8 +16,8 @@
 
 set -e
 
-# Delete current types
-rm -rf src
+# Delete current types (not tests)
+rm -rf src/main
 
 # Generate new types
 qt \
