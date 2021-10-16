@@ -27,7 +27,7 @@ public class RemoteConfigEventData {
     private UpdateOrigin updateOrigin;
     private OffsetDateTime updateTime;
     private UpdateType updateType;
-    private UpdateUser updateUser;
+    private User updateUser;
     private Long versionNumber;
 
     /**
@@ -65,8 +65,8 @@ public class RemoteConfigEventData {
      * Aggregation of all metadata fields about the account that performed the
      * update.
      */
-    public UpdateUser getUpdateUser() { return updateUser; }
-    public void setUpdateUser(UpdateUser value) { this.updateUser = value; }
+    public User getUpdateUser() { return updateUser; }
+    public void setUpdateUser(User value) { this.updateUser = value; }
 
     /**
      * The version number of the version's corresponding Remote Config template.

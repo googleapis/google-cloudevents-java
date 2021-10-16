@@ -33,7 +33,7 @@ public class BuildEventData {
     private String logURL;
     private Options options;
     private String projectID;
-    private QueueTTL queueTTL;
+    private String queueTTL;
     private Results results;
     private Secret[] secrets;
     private Source source;
@@ -41,10 +41,10 @@ public class BuildEventData {
     private OffsetDateTime startTime;
     private Status status;
     private String statusDetail;
-    private Step[] steps;
+    private BuildStep[] steps;
     private Map<String, String> substitutions;
     private String[] tags;
-    private BuildEventDataTimeout timeout;
+    private String timeout;
     private Map<String, TimeSpan> timing;
 
     /**
@@ -131,8 +131,8 @@ public class BuildEventData {
      *
      * The TTL starts ticking from create_time.
      */
-    public QueueTTL getQueueTTL() { return queueTTL; }
-    public void setQueueTTL(QueueTTL value) { this.queueTTL = value; }
+    public String getQueueTTL() { return queueTTL; }
+    public void setQueueTTL(String value) { this.queueTTL = value; }
 
     /**
      * Results of the build.
@@ -179,8 +179,8 @@ public class BuildEventData {
     /**
      * The operations to be performed on the workspace.
      */
-    public Step[] getSteps() { return steps; }
-    public void setSteps(Step[] value) { this.steps = value; }
+    public BuildStep[] getSteps() { return steps; }
+    public void setSteps(BuildStep[] value) { this.steps = value; }
 
     /**
      * Substitutions data for `Build` resource.
@@ -199,8 +199,8 @@ public class BuildEventData {
      * granularity. If this amount of time elapses, work on the build will cease
      * and the build status will be `TIMEOUT`.
      */
-    public BuildEventDataTimeout getTimeout() { return timeout; }
-    public void setTimeout(BuildEventDataTimeout value) { this.timeout = value; }
+    public String getTimeout() { return timeout; }
+    public void setTimeout(String value) { this.timeout = value; }
 
     /**
      * Stores timing information for phases of the build. Valid keys

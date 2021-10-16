@@ -18,13 +18,15 @@ package com.google.events.cloud.audit.v1;
 
 /**
  * Metadata about the operation.
+ *
+ * Metadata about the request.
  */
 public class RequestMetadata {
     private String callerIP;
     private String callerNetwork;
     private String callerSuppliedUserAgent;
     private DestinationAttributes destinationAttributes;
-    private RequestAttributes requestAttributes;
+    private Request requestAttributes;
 
     /**
      * The IP address of the caller.
@@ -88,6 +90,6 @@ public class RequestMetadata {
      * condition evaluation, the user must also look into
      * `AuditLog.authentication_info.resource_attributes`.
      */
-    public RequestAttributes getRequestAttributes() { return requestAttributes; }
-    public void setRequestAttributes(RequestAttributes value) { this.requestAttributes = value; }
+    public Request getRequestAttributes() { return requestAttributes; }
+    public void setRequestAttributes(Request value) { this.requestAttributes = value; }
 }

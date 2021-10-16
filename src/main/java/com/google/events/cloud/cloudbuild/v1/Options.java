@@ -18,6 +18,8 @@ package com.google.events.cloud.cloudbuild.v1;
 
 /**
  * Special options for this build.
+ *
+ * Optional arguments to enable specific features of builds.
  */
 public class Options {
     private Long diskSizeGB;

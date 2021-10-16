@@ -18,6 +18,8 @@ package com.google.events.firebase.analytics.v1;
 
 /**
  * App information.
+ *
+ * Message which contains App Information.
  */
 public class AppInfo {
     private String appID;

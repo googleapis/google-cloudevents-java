@@ -14,20 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.firestore.v1;
+package com.google.events.firebase.testlab.v1;
+
+import java.io.IOException;
 
 /**
- * A DocumentMask object that lists changed fields.
- * This is only populated for update events.
+ * Outcome summary of the test matrix.
  */
-public class UpdateMask {
-    private String[] fieldPaths;
-
-    /**
-     * The list of field paths in the mask.
-     * See [Document.fields][google.cloud.firestore.v1.events.Document.fields]
-     * for a field path syntax reference.
-     */
-    public String[] getFieldPaths() { return fieldPaths; }
-    public void setFieldPaths(String[] value) { this.fieldPaths = value; }
+public class OutcomeSummary {
+    public Long integerValue;
+    public OutcomeSummaryEnum enumValue;
 }

@@ -29,7 +29,7 @@ public class LogEntryData {
     private Operation operation;
     private ProtoPayload protoPayload;
     private OffsetDateTime receiveTimestamp;
-    private Resource resource;
+    private ResourceClass resource;
     private Severity severity;
     private String spanID;
     private OffsetDateTime timestamp;
@@ -81,8 +81,8 @@ public class LogEntryData {
      * the monitored resource designating the particular database that reported
      * the error.
      */
-    public Resource getResource() { return resource; }
-    public void setResource(Resource value) { this.resource = value; }
+    public ResourceClass getResource() { return resource; }
+    public void setResource(ResourceClass value) { this.resource = value; }
 
     /**
      * The severity of the log entry.
