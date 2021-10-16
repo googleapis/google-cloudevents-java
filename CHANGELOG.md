@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.4.0...v0.5.0) (2021-10-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* release 0.4.1-SNAPSHOT (#101)
+
+### Miscellaneous Chores
+
+* release 0.4.1-SNAPSHOT ([#101](https://www.github.com/googleapis/google-cloudevents-java/issues/101)) ([005728f](https://www.github.com/googleapis/google-cloudevents-java/commit/005728f16895956e11c391add14ab30719a72a6e))
+
 ## [0.4.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.3.0...v0.4.0) (2021-10-16)
 
 
