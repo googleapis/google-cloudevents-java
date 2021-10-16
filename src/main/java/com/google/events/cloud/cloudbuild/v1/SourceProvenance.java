@@ -20,9 +20,12 @@ import java.util.Map;
 
 /**
  * A permanent fixed identifier for source.
+ *
+ * Provenance of the source. Ways to find the original source, or verify that
+ * some source was used for this build.
  */
 public class SourceProvenance {
-    private Map<String, FileHashValue> fileHashes;
+    private Map<String, FileHashes> fileHashes;
     private ResolvedRepoSourceClass resolvedRepoSource;
     private ResolvedStorageSourceClass resolvedStorageSource;
 
@@ -38,8 +41,8 @@ public class SourceProvenance {
      * If the build source came in a single package such as a gzipped tarfile
      * (`.tar.gz`), the `FileHash` will be for the single path to that file.
      */
-    public Map<String, FileHashValue> getFileHashes() { return fileHashes; }
-    public void setFileHashes(Map<String, FileHashValue> value) { this.fileHashes = value; }
+    public Map<String, FileHashes> getFileHashes() { return fileHashes; }
+    public void setFileHashes(Map<String, FileHashes> value) { this.fileHashes = value; }
 
     /**
      * A copy of the build's `source.repo_source`, if exists, with any

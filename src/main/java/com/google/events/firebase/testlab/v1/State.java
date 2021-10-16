@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.cloudbuild.v1;
+package com.google.events.firebase.testlab.v1;
 
-public class FileHashValue {
-    private FileHashElement[] fileHash;
+import java.io.IOException;
 
-    /**
-     * Collection of file hashes.
-     */
-    public FileHashElement[] getFileHash() { return fileHash; }
-    public void setFileHash(FileHashElement[] value) { this.fileHash = value; }
+/**
+ * State of the test matrix.
+ */
+public class State {
+    public Long integerValue;
+    public StateEnum enumValue;
 }

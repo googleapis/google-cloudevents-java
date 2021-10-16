@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  * A Document object containing a post-operation document snapshot.
- * This is not populated for delete events. (TODO: check this!)
+ * This is not populated for delete events.
  *
  * A Document object containing a pre-operation document snapshot.
  * This is only populated for update and delete events.
@@ -74,8 +74,8 @@ public class Value {
     public void setFields(Map<String, OldValueField> value) { this.fields = value; }
 
     /**
-     * The resource name of the document, for example
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+     * The resource name of the document. For example:
+     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`
      */
     public String getName() { return name; }
     public void setName(String value) { this.name = value; }

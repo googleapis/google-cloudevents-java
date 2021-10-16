@@ -18,6 +18,8 @@ package com.google.events.firebase.analytics.v1;
 
 /**
  * Device information.
+ *
+ * Message containing device informations.
  */
 public class DeviceInfo {
     private String deviceCategory;

@@ -21,7 +21,7 @@ package com.google.events.cloud.firestore.v1;
  */
 public class DocumentEventData {
     private OldValue oldValue;
-    private UpdateMask updateMask;
+    private Mask updateMask;
     private Value value;
 
     /**
@@ -35,12 +35,12 @@ public class DocumentEventData {
      * A DocumentMask object that lists changed fields.
      * This is only populated for update events.
      */
-    public UpdateMask getUpdateMask() { return updateMask; }
-    public void setUpdateMask(UpdateMask value) { this.updateMask = value; }
+    public Mask getUpdateMask() { return updateMask; }
+    public void setUpdateMask(Mask value) { this.updateMask = value; }
 
     /**
      * A Document object containing a post-operation document snapshot.
-     * This is not populated for delete events. (TODO: check this!)
+     * This is not populated for delete events.
      */
     public Value getValue() { return value; }
     public void setValue(Value value) { this.value = value; }

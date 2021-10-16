@@ -14,20 +14,24 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
-
-import java.util.Map;
+package com.google.events.cloud.cloudbuild.v1;
 
 /**
- * Other service-specific data about the request, response, and other
- * information associated with the current audited event.
+ * Container message for hash values.
  */
-public class Metadata {
-    private Map<String, Map<String, Object>> fields;
+public class Hash {
+    private Type type;
+    private String value;
 
     /**
-     * Unordered map of dynamically typed values.
+     * The type of hash that was performed.
      */
-    public Map<String, Map<String, Object>> getFields() { return fields; }
-    public void setFields(Map<String, Map<String, Object>> value) { this.fields = value; }
+    public Type getType() { return type; }
+    public void setType(Type value) { this.type = value; }
+
+    /**
+     * The hash value.
+     */
+    public String getValue() { return value; }
+    public void setValue(String value) { this.value = value; }
 }

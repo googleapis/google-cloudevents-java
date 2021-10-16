@@ -23,7 +23,7 @@ public class AuthorizationInfo {
     private Boolean granted;
     private String permission;
     private String resource;
-    private ResourceAttributes resourceAttributes;
+    private ResourceAttributesClass resourceAttributes;
 
     /**
      * Whether or not authorization for `resource` and `permission`
@@ -54,6 +54,6 @@ public class AuthorizationInfo {
      * condition evaluation, the user must also look into
      * `AuditLogData.request_metadata.request_attributes`.
      */
-    public ResourceAttributes getResourceAttributes() { return resourceAttributes; }
-    public void setResourceAttributes(ResourceAttributes value) { this.resourceAttributes = value; }
+    public ResourceAttributesClass getResourceAttributes() { return resourceAttributes; }
+    public void setResourceAttributes(ResourceAttributesClass value) { this.resourceAttributes = value; }
 }

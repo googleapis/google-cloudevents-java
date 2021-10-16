@@ -20,6 +20,8 @@ import java.util.Map;
 
 /**
  * User related dimensions.
+ *
+ * Message containing information about the user associated with the event.
  */
 public class UserDim {
     private AppInfo appInfo;
@@ -30,7 +32,7 @@ public class UserDim {
     private LtvInfo ltvInfo;
     private TrafficSource trafficSource;
     private String userID;
-    private Map<String, UserProperty> userProperties;
+    private Map<String, UserPropertyValue> userProperties;
 
     /**
      * App information.
@@ -84,6 +86,6 @@ public class UserDim {
      * A repeated record of user properties set with the setUserProperty API.
      * https://firebase.google.com/docs/analytics/android/properties
      */
-    public Map<String, UserProperty> getUserProperties() { return userProperties; }
-    public void setUserProperties(Map<String, UserProperty> value) { this.userProperties = value; }
+    public Map<String, UserPropertyValue> getUserProperties() { return userProperties; }
+    public void setUserProperties(Map<String, UserPropertyValue> value) { this.userProperties = value; }
 }

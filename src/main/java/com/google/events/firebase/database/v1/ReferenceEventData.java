@@ -22,18 +22,28 @@ import java.util.Map;
  * The data within all Firebase Real Time Database reference events.
  */
 public class ReferenceEventData {
-    private Map<String, Object> data;
-    private Map<String, Object> delta;
+    private Data data;
+    private Data delta;
 
     /**
-     * The original data for the reference.
+     * `Value` represents a dynamically typed value which can be either
+     * null, a number, a string, a boolean, a recursive struct value, or a
+     * list of values. A producer of value is expected to set one of that
+     * variants, absence of any variant indicates an error.
+     *
+     * The JSON representation for `Value` is JSON value.
      */
-    public Map<String, Object> getData() { return data; }
-    public void setData(Map<String, Object> value) { this.data = value; }
+    public Data getData() { return data; }
+    public void setData(Data value) { this.data = value; }
 
     /**
-     * The change in the reference data.
+     * `Value` represents a dynamically typed value which can be either
+     * null, a number, a string, a boolean, a recursive struct value, or a
+     * list of values. A producer of value is expected to set one of that
+     * variants, absence of any variant indicates an error.
+     *
+     * The JSON representation for `Value` is JSON value.
      */
-    public Map<String, Object> getDelta() { return delta; }
-    public void setDelta(Map<String, Object> value) { this.delta = value; }
+    public Data getDelta() { return delta; }
+    public void setDelta(Data value) { this.delta = value; }
 }

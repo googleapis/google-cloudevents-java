@@ -16,23 +16,30 @@
 
 package com.google.events.cloud.audit.v1;
 
+import java.util.Map;
+
 /**
  * The log entry payload, which is always an AuditLog for Cloud Audit Log
  * events.
+ *
+ * Common audit log format for Google Cloud Platform API operations.
+ * Copied from
+ * https://github.com/googleapis/googleapis/blob/master/google/cloud/audit/audit_log.proto,
+ * but changing service_data from Any to Struct.
  */
 public class ProtoPayload {
     private AuthenticationInfo authenticationInfo;
     private AuthorizationInfo[] authorizationInfo;
-    private Metadata metadata;
+    private Map<String, Object> metadata;
     private String methodName;
     private Long numResponseItems;
-    private Request request;
+    private Map<String, Object> request;
     private RequestMetadata requestMetadata;
     private ResourceLocation resourceLocation;
     private String resourceName;
-    private ResourceOriginalState resourceOriginalState;
-    private Response response;
-    private ServiceData serviceData;
+    private Map<String, Object> resourceOriginalState;
+    private Map<String, Object> response;
+    private Map<String, Object> serviceData;
     private String serviceName;
     private Status status;
 
@@ -54,8 +61,8 @@ public class ProtoPayload {
      * Other service-specific data about the request, response, and other
      * information associated with the current audited event.
      */
-    public Metadata getMetadata() { return metadata; }
-    public void setMetadata(Metadata value) { this.metadata = value; }
+    public Map<String, Object> getMetadata() { return metadata; }
+    public void setMetadata(Map<String, Object> value) { this.metadata = value; }
 
     /**
      * The name of the service method or operation.
@@ -83,8 +90,8 @@ public class ProtoPayload {
      * When the JSON object represented here has a proto equivalent, the proto
      * name will be indicated in the `@type` property.
      */
-    public Request getRequest() { return request; }
-    public void setRequest(Request value) { this.request = value; }
+    public Map<String, Object> getRequest() { return request; }
+    public void setRequest(Map<String, Object> value) { this.request = value; }
 
     /**
      * Metadata about the operation.
@@ -118,8 +125,8 @@ public class ProtoPayload {
      * When the JSON object represented here has a proto equivalent,
      * the proto name will be indicated in the `@type` property.
      */
-    public ResourceOriginalState getResourceOriginalState() { return resourceOriginalState; }
-    public void setResourceOriginalState(ResourceOriginalState value) { this.resourceOriginalState = value; }
+    public Map<String, Object> getResourceOriginalState() { return resourceOriginalState; }
+    public void setResourceOriginalState(Map<String, Object> value) { this.resourceOriginalState = value; }
 
     /**
      * The operation response. This may not include all response elements,
@@ -129,18 +136,18 @@ public class ProtoPayload {
      * When the JSON object represented here has a proto equivalent, the proto
      * name will be indicated in the `@type` property.
      */
-    public Response getResponse() { return response; }
-    public void setResponse(Response value) { this.response = value; }
+    public Map<String, Object> getResponse() { return response; }
+    public void setResponse(Map<String, Object> value) { this.response = value; }
 
     /**
-     * Deprecated, use `metadata` field instead.
+     * Deprecated: Use `metadata` field instead.
      * Other service-specific data about the request, response, and other
      * activities.
      * When the JSON object represented here has a proto equivalent, the proto
      * name will be indicated in the `@type` property.
      */
-    public ServiceData getServiceData() { return serviceData; }
-    public void setServiceData(ServiceData value) { this.serviceData = value; }
+    public Map<String, Object> getServiceData() { return serviceData; }
+    public void setServiceData(Map<String, Object> value) { this.serviceData = value; }
 
     /**
      * The name of the API service performing the operation. For example,

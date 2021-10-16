@@ -18,6 +18,8 @@ package com.google.events.firebase.analytics.v1;
 
 /**
  * Information about marketing campaign which acquired the user.
+ *
+ * Mesage containing marketing campaign information which acquired the user.
  */
 public class TrafficSource {
     private String userAcquiredCampaign;
