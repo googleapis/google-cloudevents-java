@@ -21,7 +21,7 @@ package com.google.events.cloud.audit.v1;
  */
 public class ServiceAccountDelegationInfo {
     private FirstPartyPrincipal firstPartyPrincipal;
-    private ServiceAccountDelegationInfoThirdPartyPrincipal thirdPartyPrincipal;
+    private ThirdPartyPrincipal thirdPartyPrincipal;
 
     /**
      * First party (Google) identity as the real authority.
@@ -32,6 +32,6 @@ public class ServiceAccountDelegationInfo {
     /**
      * Third party identity as the real authority.
      */
-    public ServiceAccountDelegationInfoThirdPartyPrincipal getThirdPartyPrincipal() { return thirdPartyPrincipal; }
-    public void setThirdPartyPrincipal(ServiceAccountDelegationInfoThirdPartyPrincipal value) { this.thirdPartyPrincipal = value; }
+    public ThirdPartyPrincipal getThirdPartyPrincipal() { return thirdPartyPrincipal; }
+    public void setThirdPartyPrincipal(ThirdPartyPrincipal value) { this.thirdPartyPrincipal = value; }
 }

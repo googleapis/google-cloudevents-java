@@ -21,6 +21,8 @@ package com.google.events.cloud.firestore.v1;
  *
  * Cannot directly contain another array value, though can contain an
  * map which contains another array.
+ *
+ * An array value.
  */
 public class ArrayValue {
     private ValueElement[] values;

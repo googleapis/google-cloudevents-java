@@ -19,7 +19,7 @@ package com.google.events.cloud.cloudbuild.v1;
 /**
  * An image built by the pipeline.
  */
-public class Image {
+public class BuiltImage {
     private String digest;
     private String name;
     private PushTiming pushTiming;

@@ -18,6 +18,8 @@ package com.google.events.firebase.analytics.v1;
 
 /**
  * User's geographic information.
+ *
+ * User's geographic informaiton.
  */
 public class GeoInfo {
     private String city;

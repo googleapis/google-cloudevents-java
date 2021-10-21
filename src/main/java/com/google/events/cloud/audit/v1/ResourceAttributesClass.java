@@ -25,8 +25,12 @@ import java.util.Map;
  * To get the whole view of the attributes used in IAM
  * condition evaluation, the user must also look into
  * `AuditLogData.request_metadata.request_attributes`.
+ *
+ * This message defines core attributes for a resource. A resource is an
+ * addressable (named) entity provided by the destination service. For
+ * example, a file stored on a network storage service.
  */
-public class ResourceAttributes {
+public class ResourceAttributesClass {
     private Map<String, String> labels;
     private String name;
     private String service;

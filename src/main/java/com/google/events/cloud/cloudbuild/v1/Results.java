@@ -18,13 +18,15 @@ package com.google.events.cloud.cloudbuild.v1;
 
 /**
  * Results of the build.
+ *
+ * Artifacts created by the build pipeline.
  */
 public class Results {
     private String artifactManifest;
     private ArtifactTiming artifactTiming;
     private String[] buildStepImages;
     private String[] buildStepOutputs;
-    private Image[] images;
+    private BuiltImage[] images;
     private Long numArtifacts;
 
     /**
@@ -60,8 +62,8 @@ public class Results {
     /**
      * Container images that were built as a part of the build.
      */
-    public Image[] getImages() { return images; }
-    public void setImages(Image[] value) { this.images = value; }
+    public BuiltImage[] getImages() { return images; }
+    public void setImages(BuiltImage[] value) { this.images = value; }
 
     /**
      * Number of artifacts uploaded. Only populated when artifacts are uploaded.

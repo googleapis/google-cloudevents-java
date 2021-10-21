@@ -19,6 +19,9 @@ package com.google.events.cloud.cloudbuild.v1;
 /**
  * Artifacts produced by the build that should be uploaded upon
  * successful completion of all build steps.
+ *
+ * Artifacts produced by a build that should be uploaded upon
+ * successful completion of all build steps.
  */
 public class Artifacts {
     private String[] images;

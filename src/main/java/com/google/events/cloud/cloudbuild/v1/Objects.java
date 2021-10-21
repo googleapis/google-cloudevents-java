@@ -28,6 +28,9 @@ package com.google.events.cloud.cloudbuild.v1;
  * Build resource's results field.
  *
  * If any objects fail to be pushed, the build is marked FAILURE.
+ *
+ * Files in the workspace to upload to Cloud Storage upon successful
+ * completion of all build steps.
  */
 public class Objects {
     private String location;

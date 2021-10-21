@@ -14,19 +14,22 @@
  * limitations under the License.
  */
 
-package com.google.events.cloud.audit.v1;
-
-import java.util.Map;
+package com.google.events.cloud.firestore.v1;
 
 /**
- * Metadata about the service that uses the service account.
+ * A DocumentMask object that lists changed fields.
+ * This is only populated for update events.
+ *
+ * A set of field paths on a document.
  */
-public class ServiceMetadata {
-    private Map<String, Map<String, Object>> fields;
+public class Mask {
+    private String[] fieldPaths;
 
     /**
-     * Unordered map of dynamically typed values.
+     * The list of field paths in the mask.
+     * See [Document.fields][google.cloud.firestore.v1.events.Document.fields]
+     * for a field path syntax reference.
      */
-    public Map<String, Map<String, Object>> getFields() { return fields; }
-    public void setFields(Map<String, Map<String, Object>> value) { this.fields = value; }
+    public String[] getFieldPaths() { return fieldPaths; }
+    public void setFieldPaths(String[] value) { this.fieldPaths = value; }
 }

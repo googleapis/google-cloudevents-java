@@ -16,12 +16,16 @@
 
 package com.google.events.cloud.audit.v1;
 
+import java.util.Map;
+
 /**
  * First party (Google) identity as the real authority.
+ *
+ * First party identity principal.
  */
 public class FirstPartyPrincipal {
     private String principalEmail;
-    private ServiceMetadata serviceMetadata;
+    private Map<String, Object> serviceMetadata;
 
     /**
      * The email address of a Google account.
@@ -32,6 +36,6 @@ public class FirstPartyPrincipal {
     /**
      * Metadata about the service that uses the service account.
      */
-    public ServiceMetadata getServiceMetadata() { return serviceMetadata; }
-    public void setServiceMetadata(ServiceMetadata value) { this.serviceMetadata = value; }
+    public Map<String, Object> getServiceMetadata() { return serviceMetadata; }
+    public void setServiceMetadata(Map<String, Object> value) { this.serviceMetadata = value; }
 }

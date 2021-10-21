@@ -19,7 +19,7 @@ package com.google.events.firebase.auth.v1;
 /**
  * User's info at the identity provider
  */
-public class ProviderDatum {
+public class UserInfo {
     private String displayName;
     private String email;
     private String photoURL;

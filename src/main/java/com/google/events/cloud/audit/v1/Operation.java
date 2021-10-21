@@ -19,6 +19,9 @@ package com.google.events.cloud.audit.v1;
 /**
  * Information about an operation associated with the log entry, if
  * applicable.
+ *
+ * Additional information about a potentially long-running operation with which
+ * a log entry is associated.
  */
 public class Operation {
     private Boolean first;

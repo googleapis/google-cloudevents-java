@@ -18,6 +18,8 @@ package com.google.events.cloud.audit.v1;
 
 /**
  * The resource location information.
+ *
+ * Location information about a resource.
  */
 public class ResourceLocation {
     private String[] currentLocations;

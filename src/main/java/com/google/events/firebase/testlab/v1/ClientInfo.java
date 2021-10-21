@@ -14,20 +14,28 @@
  * limitations under the License.
  */
 
-package com.google.events.firebase.auth.v1;
+package com.google.events.firebase.testlab.v1;
 
 import java.util.Map;
 
 /**
- * User's custom claims, typically used to define user roles and propagated
- * to an authenticated user's ID token.
+ * Information provided by the client that created the test matrix.
+ *
+ * Information about the client which invoked the test.
  */
-public class CustomClaims {
-    private Map<String, Map<String, Object>> fields;
+public class ClientInfo {
+    private String client;
+    private Map<String, String> details;
 
     /**
-     * Unordered map of dynamically typed values.
+     * Client name, such as "gcloud".
      */
-    public Map<String, Map<String, Object>> getFields() { return fields; }
-    public void setFields(Map<String, Map<String, Object>> value) { this.fields = value; }
+    public String getClient() { return client; }
+    public void setClient(String value) { this.client = value; }
+
+    /**
+     * Map of detailed information about the client.
+     */
+    public Map<String, String> getDetails() { return details; }
+    public void setDetails(Map<String, String> value) { this.details = value; }
 }

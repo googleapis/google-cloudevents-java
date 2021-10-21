@@ -19,19 +19,16 @@ package com.google.events.cloud.audit.v1;
 import java.util.Map;
 
 /**
- * The operation response. This may not include all response elements,
- * such as those that are too large, privacy-sensitive, or duplicated
- * elsewhere in the log record.
- * It should never include user-generated data, such as file contents.
- * When the JSON object represented here has a proto equivalent, the proto
- * name will be indicated in the `@type` property.
+ * Third party identity as the real authority.
+ *
+ * Third party identity principal.
  */
-public class Response {
-    private Map<String, Map<String, Object>> fields;
+public class ThirdPartyPrincipal {
+    private Map<String, Object> thirdPartyClaims;
 
     /**
-     * Unordered map of dynamically typed values.
+     * Metadata about third party identity.
      */
-    public Map<String, Map<String, Object>> getFields() { return fields; }
-    public void setFields(Map<String, Map<String, Object>> value) { this.fields = value; }
+    public Map<String, Object> getThirdPartyClaims() { return thirdPartyClaims; }
+    public void setThirdPartyClaims(Map<String, Object> value) { this.thirdPartyClaims = value; }
 }
