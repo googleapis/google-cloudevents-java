@@ -28,6 +28,7 @@ public class TestMatrixEventData {
     private OutcomeSummary outcomeSummary;
     private ResultStorage resultStorage;
     private State state;
+    private String testMatrixID;
 
     /**
      * Information provided by the client that created the test matrix.
@@ -65,4 +66,10 @@ public class TestMatrixEventData {
      */
     public State getState() { return state; }
     public void setState(State value) { this.state = value; }
+
+    /**
+     * ID of the test matrix this event belongs to.
+     */
+    public String getTestMatrixID() { return testMatrixID; }
+    public void setTestMatrixID(String value) { this.testMatrixID = value; }
 }
