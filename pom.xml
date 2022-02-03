@@ -9,9 +9,9 @@
   <version>0.5.0</version><!-- {x-version-update:google-cloudevent-types:current} -->
 
   <parent>
-    <groupId>com.google.cloud</groupId>
-    <artifactId>google-cloud-shared-config</artifactId>
-    <version>1.0.3</version>
+    <groupId>com.google.cloud.samples</groupId>
+    <artifactId>shared-configuration</artifactId>
+    <version>1.2.0</version>
   </parent>
 
   <name>google-cloudevent-types</name>
