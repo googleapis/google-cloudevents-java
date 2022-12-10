@@ -1,0 +1,9 @@
+
+package ${packageName};
+
+public class ${className} {
+
+#foreach($field in ${fields})
+    ${field}
+#end
+}
