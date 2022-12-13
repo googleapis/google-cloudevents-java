@@ -10,1234 +10,138 @@ package com.google.events.firebase.analytics.v1;
  *
  * Protobuf type {@code google.events.firebase.analytics.v1.UserDimensions}
  */
-public final class UserDimensions extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.UserDimensions)
-    UserDimensionsOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use UserDimensions.newBuilder() to construct.
-  private UserDimensions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private UserDimensions() {
-    userId_ = "";
-  }
+public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.UserDimensions)
+        UserDimensionsOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new UserDimensions();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
-  }
-
-  @SuppressWarnings({"rawtypes"})
-  @java.lang.Override
-  protected com.google.protobuf.MapField internalGetMapField(
-      int number) {
-    switch (number) {
-      case 3:
-        return internalGetUserProperties();
-      default:
-        throw new RuntimeException(
-            "Invalid map field number: " + number);
-    }
-  }
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.google.events.firebase.analytics.v1.UserDimensions.class, com.google.events.firebase.analytics.v1.UserDimensions.Builder.class);
-  }
-
-  public static final int USER_ID_FIELD_NUMBER = 1;
-  private volatile java.lang.Object userId_;
-  /**
-   * <pre>
-   * The user ID set via the setUserId API.
-   * </pre>
-   *
-   * <code>string user_id = 1;</code>
-   * @return The userId.
-   */
-  @java.lang.Override
-  public java.lang.String getUserId() {
-    java.lang.Object ref = userId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      userId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user ID set via the setUserId API.
-   * </pre>
-   *
-   * <code>string user_id = 1;</code>
-   * @return The bytes for userId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getUserIdBytes() {
-    java.lang.Object ref = userId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      userId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int FIRST_OPEN_TIMESTAMP_MICROS_FIELD_NUMBER = 2;
-  private long firstOpenTimestampMicros_;
-  /**
-   * <pre>
-   * The time (in microseconds) at which the user first opened the app.
-   * </pre>
-   *
-   * <code>int64 first_open_timestamp_micros = 2;</code>
-   * @return The firstOpenTimestampMicros.
-   */
-  @java.lang.Override
-  public long getFirstOpenTimestampMicros() {
-    return firstOpenTimestampMicros_;
-  }
-
-  public static final int USER_PROPERTIES_FIELD_NUMBER = 3;
-  private static final class UserPropertiesDefaultEntryHolder {
-    static final com.google.protobuf.MapEntry<
-        java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> defaultEntry =
-            com.google.protobuf.MapEntry
-            .<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>newDefaultInstance(
-                com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_UserPropertiesEntry_descriptor, 
-                com.google.protobuf.WireFormat.FieldType.STRING,
-                "",
-                com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                com.google.events.firebase.analytics.v1.UserPropertyValue.getDefaultInstance());
-  }
-  private com.google.protobuf.MapField<
-      java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties_;
-  private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-  internalGetUserProperties() {
-    if (userProperties_ == null) {
-      return com.google.protobuf.MapField.emptyMapField(
-          UserPropertiesDefaultEntryHolder.defaultEntry);
-    }
-    return userProperties_;
-  }
-
-  public int getUserPropertiesCount() {
-    return internalGetUserProperties().getMap().size();
-  }
-  /**
-   * <pre>
-   * A repeated record of user properties set with the setUserProperty API.
-   * https://firebase.google.com/docs/analytics/android/properties
-   * </pre>
-   *
-   * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-   */
-
-  @java.lang.Override
-  public boolean containsUserProperties(
-      java.lang.String key) {
-    if (key == null) { throw new NullPointerException("map key"); }
-    return internalGetUserProperties().getMap().containsKey(key);
-  }
-  /**
-   * Use {@link #getUserPropertiesMap()} instead.
-   */
-  @java.lang.Override
-  @java.lang.Deprecated
-  public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserProperties() {
-    return getUserPropertiesMap();
-  }
-  /**
-   * <pre>
-   * A repeated record of user properties set with the setUserProperty API.
-   * https://firebase.google.com/docs/analytics/android/properties
-   * </pre>
-   *
-   * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-   */
-  @java.lang.Override
-
-  public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserPropertiesMap() {
-    return internalGetUserProperties().getMap();
-  }
-  /**
-   * <pre>
-   * A repeated record of user properties set with the setUserProperty API.
-   * https://firebase.google.com/docs/analytics/android/properties
-   * </pre>
-   *
-   * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-   */
-  @java.lang.Override
-
-  public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrDefault(
-      java.lang.String key,
-      com.google.events.firebase.analytics.v1.UserPropertyValue defaultValue) {
-    if (key == null) { throw new NullPointerException("map key"); }
-    java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map =
-        internalGetUserProperties().getMap();
-    return map.containsKey(key) ? map.get(key) : defaultValue;
-  }
-  /**
-   * <pre>
-   * A repeated record of user properties set with the setUserProperty API.
-   * https://firebase.google.com/docs/analytics/android/properties
-   * </pre>
-   *
-   * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-   */
-  @java.lang.Override
-
-  public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrThrow(
-      java.lang.String key) {
-    if (key == null) { throw new NullPointerException("map key"); }
-    java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map =
-        internalGetUserProperties().getMap();
-    if (!map.containsKey(key)) {
-      throw new java.lang.IllegalArgumentException();
-    }
-    return map.get(key);
-  }
-
-  public static final int DEVICE_INFO_FIELD_NUMBER = 4;
-  private com.google.events.firebase.analytics.v1.DeviceInfo deviceInfo_;
-  /**
-   * <pre>
-   * Device information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-   * @return Whether the deviceInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasDeviceInfo() {
-    return deviceInfo_ != null;
-  }
-  /**
-   * <pre>
-   * Device information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-   * @return The deviceInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.DeviceInfo getDeviceInfo() {
-    return deviceInfo_ == null ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance() : deviceInfo_;
-  }
-  /**
-   * <pre>
-   * Device information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder getDeviceInfoOrBuilder() {
-    return getDeviceInfo();
-  }
-
-  public static final int GEO_INFO_FIELD_NUMBER = 5;
-  private com.google.events.firebase.analytics.v1.GeoInfo geoInfo_;
-  /**
-   * <pre>
-   * User's geographic information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-   * @return Whether the geoInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasGeoInfo() {
-    return geoInfo_ != null;
-  }
-  /**
-   * <pre>
-   * User's geographic information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-   * @return The geoInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.GeoInfo getGeoInfo() {
-    return geoInfo_ == null ? com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance() : geoInfo_;
-  }
-  /**
-   * <pre>
-   * User's geographic information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.GeoInfoOrBuilder getGeoInfoOrBuilder() {
-    return getGeoInfo();
-  }
-
-  public static final int APP_INFO_FIELD_NUMBER = 6;
-  private com.google.events.firebase.analytics.v1.AppInfo appInfo_;
-  /**
-   * <pre>
-   * App information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-   * @return Whether the appInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasAppInfo() {
-    return appInfo_ != null;
-  }
-  /**
-   * <pre>
-   * App information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-   * @return The appInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.AppInfo getAppInfo() {
-    return appInfo_ == null ? com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance() : appInfo_;
-  }
-  /**
-   * <pre>
-   * App information.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.AppInfoOrBuilder getAppInfoOrBuilder() {
-    return getAppInfo();
-  }
-
-  public static final int TRAFFIC_SOURCE_FIELD_NUMBER = 7;
-  private com.google.events.firebase.analytics.v1.TrafficSource trafficSource_;
-  /**
-   * <pre>
-   * Information about marketing campaign which acquired the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-   * @return Whether the trafficSource field is set.
-   */
-  @java.lang.Override
-  public boolean hasTrafficSource() {
-    return trafficSource_ != null;
-  }
-  /**
-   * <pre>
-   * Information about marketing campaign which acquired the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-   * @return The trafficSource.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.TrafficSource getTrafficSource() {
-    return trafficSource_ == null ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance() : trafficSource_;
-  }
-  /**
-   * <pre>
-   * Information about marketing campaign which acquired the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder getTrafficSourceOrBuilder() {
-    return getTrafficSource();
-  }
-
-  public static final int BUNDLE_INFO_FIELD_NUMBER = 8;
-  private com.google.events.firebase.analytics.v1.ExportBundleInfo bundleInfo_;
-  /**
-   * <pre>
-   * Information regarding the bundle in which these events were uploaded.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-   * @return Whether the bundleInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasBundleInfo() {
-    return bundleInfo_ != null;
-  }
-  /**
-   * <pre>
-   * Information regarding the bundle in which these events were uploaded.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-   * @return The bundleInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.ExportBundleInfo getBundleInfo() {
-    return bundleInfo_ == null ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance() : bundleInfo_;
-  }
-  /**
-   * <pre>
-   * Information regarding the bundle in which these events were uploaded.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder getBundleInfoOrBuilder() {
-    return getBundleInfo();
-  }
-
-  public static final int LTV_INFO_FIELD_NUMBER = 9;
-  private com.google.events.firebase.analytics.v1.LtvInfo ltvInfo_;
-  /**
-   * <pre>
-   * Lifetime Value information about this user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-   * @return Whether the ltvInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasLtvInfo() {
-    return ltvInfo_ != null;
-  }
-  /**
-   * <pre>
-   * Lifetime Value information about this user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-   * @return The ltvInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.LtvInfo getLtvInfo() {
-    return ltvInfo_ == null ? com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance() : ltvInfo_;
-  }
-  /**
-   * <pre>
-   * Lifetime Value information about this user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.LtvInfoOrBuilder getLtvInfoOrBuilder() {
-    return getLtvInfo();
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userId_);
-    }
-    if (firstOpenTimestampMicros_ != 0L) {
-      output.writeInt64(2, firstOpenTimestampMicros_);
-    }
-    com.google.protobuf.GeneratedMessageV3
-      .serializeStringMapTo(
-        output,
-        internalGetUserProperties(),
-        UserPropertiesDefaultEntryHolder.defaultEntry,
-        3);
-    if (deviceInfo_ != null) {
-      output.writeMessage(4, getDeviceInfo());
-    }
-    if (geoInfo_ != null) {
-      output.writeMessage(5, getGeoInfo());
-    }
-    if (appInfo_ != null) {
-      output.writeMessage(6, getAppInfo());
-    }
-    if (trafficSource_ != null) {
-      output.writeMessage(7, getTrafficSource());
-    }
-    if (bundleInfo_ != null) {
-      output.writeMessage(8, getBundleInfo());
-    }
-    if (ltvInfo_ != null) {
-      output.writeMessage(9, getLtvInfo());
-    }
-    getUnknownFields().writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userId_);
-    }
-    if (firstOpenTimestampMicros_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(2, firstOpenTimestampMicros_);
-    }
-    for (java.util.Map.Entry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> entry
-         : internalGetUserProperties().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-      userProperties__ = UserPropertiesDefaultEntryHolder.defaultEntry.newBuilderForType()
-          .setKey(entry.getKey())
-          .setValue(entry.getValue())
-          .build();
-      size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, userProperties__);
-    }
-    if (deviceInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getDeviceInfo());
-    }
-    if (geoInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getGeoInfo());
-    }
-    if (appInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getAppInfo());
-    }
-    if (trafficSource_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getTrafficSource());
-    }
-    if (bundleInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getBundleInfo());
-    }
-    if (ltvInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getLtvInfo());
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof com.google.events.firebase.analytics.v1.UserDimensions)) {
-      return super.equals(obj);
-    }
-    com.google.events.firebase.analytics.v1.UserDimensions other = (com.google.events.firebase.analytics.v1.UserDimensions) obj;
-
-    if (!getUserId()
-        .equals(other.getUserId())) return false;
-    if (getFirstOpenTimestampMicros()
-        != other.getFirstOpenTimestampMicros()) return false;
-    if (!internalGetUserProperties().equals(
-        other.internalGetUserProperties())) return false;
-    if (hasDeviceInfo() != other.hasDeviceInfo()) return false;
-    if (hasDeviceInfo()) {
-      if (!getDeviceInfo()
-          .equals(other.getDeviceInfo())) return false;
-    }
-    if (hasGeoInfo() != other.hasGeoInfo()) return false;
-    if (hasGeoInfo()) {
-      if (!getGeoInfo()
-          .equals(other.getGeoInfo())) return false;
-    }
-    if (hasAppInfo() != other.hasAppInfo()) return false;
-    if (hasAppInfo()) {
-      if (!getAppInfo()
-          .equals(other.getAppInfo())) return false;
-    }
-    if (hasTrafficSource() != other.hasTrafficSource()) return false;
-    if (hasTrafficSource()) {
-      if (!getTrafficSource()
-          .equals(other.getTrafficSource())) return false;
-    }
-    if (hasBundleInfo() != other.hasBundleInfo()) return false;
-    if (hasBundleInfo()) {
-      if (!getBundleInfo()
-          .equals(other.getBundleInfo())) return false;
-    }
-    if (hasLtvInfo() != other.hasLtvInfo()) return false;
-    if (hasLtvInfo()) {
-      if (!getLtvInfo()
-          .equals(other.getLtvInfo())) return false;
-    }
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + USER_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getUserId().hashCode();
-    hash = (37 * hash) + FIRST_OPEN_TIMESTAMP_MICROS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getFirstOpenTimestampMicros());
-    if (!internalGetUserProperties().getMap().isEmpty()) {
-      hash = (37 * hash) + USER_PROPERTIES_FIELD_NUMBER;
-      hash = (53 * hash) + internalGetUserProperties().hashCode();
-    }
-    if (hasDeviceInfo()) {
-      hash = (37 * hash) + DEVICE_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getDeviceInfo().hashCode();
-    }
-    if (hasGeoInfo()) {
-      hash = (37 * hash) + GEO_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getGeoInfo().hashCode();
-    }
-    if (hasAppInfo()) {
-      hash = (37 * hash) + APP_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getAppInfo().hashCode();
-    }
-    if (hasTrafficSource()) {
-      hash = (37 * hash) + TRAFFIC_SOURCE_FIELD_NUMBER;
-      hash = (53 * hash) + getTrafficSource().hashCode();
-    }
-    if (hasBundleInfo()) {
-      hash = (37 * hash) + BUNDLE_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getBundleInfo().hashCode();
-    }
-    if (hasLtvInfo()) {
-      hash = (37 * hash) + LTV_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getLtvInfo().hashCode();
-    }
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(com.google.events.firebase.analytics.v1.UserDimensions prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * <pre>
-   * Message containing information about the user associated with the event.
-   * </pre>
-   *
-   * Protobuf type {@code google.events.firebase.analytics.v1.UserDimensions}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:google.events.firebase.analytics.v1.UserDimensions)
-      com.google.events.firebase.analytics.v1.UserDimensionsOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
+    // Use UserDimensions.newBuilder() to construct.
+    private UserDimensions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
     }
 
-    @SuppressWarnings({"rawtypes"})
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
+    private UserDimensions() {
+        userId_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({ "unused" })
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+        return new UserDimensions();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
+    }
+
+    @SuppressWarnings({ "rawtypes" })
+    @java.lang.Override
+    protected com.google.protobuf.MapField internalGetMapField(int number) {
+        switch (number) {
         case 3:
-          return internalGetUserProperties();
+            return internalGetUserProperties();
         default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
-    @SuppressWarnings({"rawtypes"})
-    protected com.google.protobuf.MapField internalGetMutableMapField(
-        int number) {
-      switch (number) {
-        case 3:
-          return internalGetMutableUserProperties();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.google.events.firebase.analytics.v1.UserDimensions.class, com.google.events.firebase.analytics.v1.UserDimensions.Builder.class);
-    }
-
-    // Construct using com.google.events.firebase.analytics.v1.UserDimensions.newBuilder()
-    private Builder() {
-
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      userId_ = "";
-
-      firstOpenTimestampMicros_ = 0L;
-
-      internalGetMutableUserProperties().clear();
-      if (deviceInfoBuilder_ == null) {
-        deviceInfo_ = null;
-      } else {
-        deviceInfo_ = null;
-        deviceInfoBuilder_ = null;
-      }
-      if (geoInfoBuilder_ == null) {
-        geoInfo_ = null;
-      } else {
-        geoInfo_ = null;
-        geoInfoBuilder_ = null;
-      }
-      if (appInfoBuilder_ == null) {
-        appInfo_ = null;
-      } else {
-        appInfo_ = null;
-        appInfoBuilder_ = null;
-      }
-      if (trafficSourceBuilder_ == null) {
-        trafficSource_ = null;
-      } else {
-        trafficSource_ = null;
-        trafficSourceBuilder_ = null;
-      }
-      if (bundleInfoBuilder_ == null) {
-        bundleInfo_ = null;
-      } else {
-        bundleInfo_ = null;
-        bundleInfoBuilder_ = null;
-      }
-      if (ltvInfoBuilder_ == null) {
-        ltvInfo_ = null;
-      } else {
-        ltvInfo_ = null;
-        ltvInfoBuilder_ = null;
-      }
-      return this;
+            throw new RuntimeException("Invalid map field number: " + number);
+        }
     }
 
     @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(com.google.events.firebase.analytics.v1.UserDimensions.class,
+                        com.google.events.firebase.analytics.v1.UserDimensions.Builder.class);
     }
 
-    @java.lang.Override
-    public com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstanceForType() {
-      return com.google.events.firebase.analytics.v1.UserDimensions.getDefaultInstance();
-    }
+    public static final int USER_ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object userId_;
 
-    @java.lang.Override
-    public com.google.events.firebase.analytics.v1.UserDimensions build() {
-      com.google.events.firebase.analytics.v1.UserDimensions result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
-    }
-
-    @java.lang.Override
-    public com.google.events.firebase.analytics.v1.UserDimensions buildPartial() {
-      com.google.events.firebase.analytics.v1.UserDimensions result = new com.google.events.firebase.analytics.v1.UserDimensions(this);
-      int from_bitField0_ = bitField0_;
-      result.userId_ = userId_;
-      result.firstOpenTimestampMicros_ = firstOpenTimestampMicros_;
-      result.userProperties_ = internalGetUserProperties();
-      result.userProperties_.makeImmutable();
-      if (deviceInfoBuilder_ == null) {
-        result.deviceInfo_ = deviceInfo_;
-      } else {
-        result.deviceInfo_ = deviceInfoBuilder_.build();
-      }
-      if (geoInfoBuilder_ == null) {
-        result.geoInfo_ = geoInfo_;
-      } else {
-        result.geoInfo_ = geoInfoBuilder_.build();
-      }
-      if (appInfoBuilder_ == null) {
-        result.appInfo_ = appInfo_;
-      } else {
-        result.appInfo_ = appInfoBuilder_.build();
-      }
-      if (trafficSourceBuilder_ == null) {
-        result.trafficSource_ = trafficSource_;
-      } else {
-        result.trafficSource_ = trafficSourceBuilder_.build();
-      }
-      if (bundleInfoBuilder_ == null) {
-        result.bundleInfo_ = bundleInfo_;
-      } else {
-        result.bundleInfo_ = bundleInfoBuilder_.build();
-      }
-      if (ltvInfoBuilder_ == null) {
-        result.ltvInfo_ = ltvInfo_;
-      } else {
-        result.ltvInfo_ = ltvInfoBuilder_.build();
-      }
-      onBuilt();
-      return result;
-    }
-
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.events.firebase.analytics.v1.UserDimensions) {
-        return mergeFrom((com.google.events.firebase.analytics.v1.UserDimensions)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(com.google.events.firebase.analytics.v1.UserDimensions other) {
-      if (other == com.google.events.firebase.analytics.v1.UserDimensions.getDefaultInstance()) return this;
-      if (!other.getUserId().isEmpty()) {
-        userId_ = other.userId_;
-        onChanged();
-      }
-      if (other.getFirstOpenTimestampMicros() != 0L) {
-        setFirstOpenTimestampMicros(other.getFirstOpenTimestampMicros());
-      }
-      internalGetMutableUserProperties().mergeFrom(
-          other.internalGetUserProperties());
-      if (other.hasDeviceInfo()) {
-        mergeDeviceInfo(other.getDeviceInfo());
-      }
-      if (other.hasGeoInfo()) {
-        mergeGeoInfo(other.getGeoInfo());
-      }
-      if (other.hasAppInfo()) {
-        mergeAppInfo(other.getAppInfo());
-      }
-      if (other.hasTrafficSource()) {
-        mergeTrafficSource(other.getTrafficSource());
-      }
-      if (other.hasBundleInfo()) {
-        mergeBundleInfo(other.getBundleInfo());
-      }
-      if (other.hasLtvInfo()) {
-        mergeLtvInfo(other.getLtvInfo());
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              userId_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 10
-            case 16: {
-              firstOpenTimestampMicros_ = input.readInt64();
-
-              break;
-            } // case 16
-            case 26: {
-              com.google.protobuf.MapEntry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-              userProperties__ = input.readMessage(
-                  UserPropertiesDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              internalGetMutableUserProperties().getMutableMap().put(
-                  userProperties__.getKey(), userProperties__.getValue());
-              break;
-            } // case 26
-            case 34: {
-              input.readMessage(
-                  getDeviceInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 34
-            case 42: {
-              input.readMessage(
-                  getGeoInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 42
-            case 50: {
-              input.readMessage(
-                  getAppInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 50
-            case 58: {
-              input.readMessage(
-                  getTrafficSourceFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 58
-            case 66: {
-              input.readMessage(
-                  getBundleInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 66
-            case 74: {
-              input.readMessage(
-                  getLtvInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 74
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
-    private int bitField0_;
-
-    private java.lang.Object userId_ = "";
     /**
      * <pre>
      * The user ID set via the setUserId API.
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
      * @return The userId.
      */
+    @java.lang.Override
     public java.lang.String getUserId() {
-      java.lang.Object ref = userId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        userId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user ID set via the setUserId API.
-     * </pre>
-     *
-     * <code>string user_id = 1;</code>
-     * @return The bytes for userId.
-     */
-    public com.google.protobuf.ByteString
-        getUserIdBytes() {
-      java.lang.Object ref = userId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        userId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user ID set via the setUserId API.
-     * </pre>
-     *
-     * <code>string user_id = 1;</code>
-     * @param value The userId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      userId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user ID set via the setUserId API.
-     * </pre>
-     *
-     * <code>string user_id = 1;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearUserId() {
-      
-      userId_ = getDefaultInstance().getUserId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user ID set via the setUserId API.
-     * </pre>
-     *
-     * <code>string user_id = 1;</code>
-     * @param value The bytes for userId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      userId_ = value;
-      onChanged();
-      return this;
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            userId_ = s;
+            return s;
+        }
     }
 
-    private long firstOpenTimestampMicros_ ;
+    /**
+     * <pre>
+     * The user ID set via the setUserId API.
+     * </pre>
+     *
+     * <code>string user_id = 1;</code>
+     *
+     * @return The bytes for userId.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getUserIdBytes() {
+        java.lang.Object ref = userId_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            userId_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    public static final int FIRST_OPEN_TIMESTAMP_MICROS_FIELD_NUMBER = 2;
+    private long firstOpenTimestampMicros_;
+
     /**
      * <pre>
      * The time (in microseconds) at which the user first opened the app.
      * </pre>
      *
      * <code>int64 first_open_timestamp_micros = 2;</code>
+     *
      * @return The firstOpenTimestampMicros.
      */
     @java.lang.Override
     public long getFirstOpenTimestampMicros() {
-      return firstOpenTimestampMicros_;
-    }
-    /**
-     * <pre>
-     * The time (in microseconds) at which the user first opened the app.
-     * </pre>
-     *
-     * <code>int64 first_open_timestamp_micros = 2;</code>
-     * @param value The firstOpenTimestampMicros to set.
-     * @return This builder for chaining.
-     */
-    public Builder setFirstOpenTimestampMicros(long value) {
-      
-      firstOpenTimestampMicros_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The time (in microseconds) at which the user first opened the app.
-     * </pre>
-     *
-     * <code>int64 first_open_timestamp_micros = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearFirstOpenTimestampMicros() {
-      
-      firstOpenTimestampMicros_ = 0L;
-      onChanged();
-      return this;
+        return firstOpenTimestampMicros_;
     }
 
-    private com.google.protobuf.MapField<
-        java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties_;
-    private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-    internalGetUserProperties() {
-      if (userProperties_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            UserPropertiesDefaultEntryHolder.defaultEntry);
-      }
-      return userProperties_;
+    public static final int USER_PROPERTIES_FIELD_NUMBER = 3;
+
+    private static final class UserPropertiesDefaultEntryHolder {
+        static final com.google.protobuf.MapEntry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> defaultEntry = com.google.protobuf.MapEntry.<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> newDefaultInstance(
+                com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_UserPropertiesEntry_descriptor,
+                com.google.protobuf.WireFormat.FieldType.STRING, "", com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                com.google.events.firebase.analytics.v1.UserPropertyValue.getDefaultInstance());
     }
-    private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-    internalGetMutableUserProperties() {
-      onChanged();;
-      if (userProperties_ == null) {
-        userProperties_ = com.google.protobuf.MapField.newMapField(
-            UserPropertiesDefaultEntryHolder.defaultEntry);
-      }
-      if (!userProperties_.isMutable()) {
-        userProperties_ = userProperties_.copy();
-      }
-      return userProperties_;
+
+    private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties_;
+
+    private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> internalGetUserProperties() {
+        if (userProperties_ == null) {
+            return com.google.protobuf.MapField.emptyMapField(UserPropertiesDefaultEntryHolder.defaultEntry);
+        }
+        return userProperties_;
     }
 
     public int getUserPropertiesCount() {
-      return internalGetUserProperties().getMap().size();
+        return internalGetUserProperties().getMap().size();
     }
+
     /**
      * <pre>
      * A repeated record of user properties set with the setUserProperty API.
@@ -1248,19 +152,22 @@ private static final long serialVersionUID = 0L;
      */
 
     @java.lang.Override
-    public boolean containsUserProperties(
-        java.lang.String key) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      return internalGetUserProperties().getMap().containsKey(key);
+    public boolean containsUserProperties(java.lang.String key) {
+        if (key == null) {
+            throw new NullPointerException("map key");
+        }
+        return internalGetUserProperties().getMap().containsKey(key);
     }
+
     /**
      * Use {@link #getUserPropertiesMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserProperties() {
-      return getUserPropertiesMap();
+        return getUserPropertiesMap();
     }
+
     /**
      * <pre>
      * A repeated record of user properties set with the setUserProperty API.
@@ -1272,8 +179,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
 
     public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserPropertiesMap() {
-      return internalGetUserProperties().getMap();
+        return internalGetUserProperties().getMap();
     }
+
     /**
      * <pre>
      * A repeated record of user properties set with the setUserProperty API.
@@ -1284,14 +192,16 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
 
-    public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrDefault(
-        java.lang.String key,
-        com.google.events.firebase.analytics.v1.UserPropertyValue defaultValue) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map =
-          internalGetUserProperties().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
+    public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrDefault(java.lang.String key,
+            com.google.events.firebase.analytics.v1.UserPropertyValue defaultValue) {
+        if (key == null) {
+            throw new NullPointerException("map key");
+        }
+        java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map = internalGetUserProperties()
+                .getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      * <pre>
      * A repeated record of user properties set with the setUserProperty API.
@@ -1302,131 +212,50 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
 
-    public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrThrow(
-        java.lang.String key) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map =
-          internalGetUserProperties().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
+    public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrThrow(java.lang.String key) {
+        if (key == null) {
+            throw new NullPointerException("map key");
+        }
+        java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map = internalGetUserProperties()
+                .getMap();
+        if (!map.containsKey(key)) {
+            throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
     }
 
-    public Builder clearUserProperties() {
-      internalGetMutableUserProperties().getMutableMap()
-          .clear();
-      return this;
-    }
-    /**
-     * <pre>
-     * A repeated record of user properties set with the setUserProperty API.
-     * https://firebase.google.com/docs/analytics/android/properties
-     * </pre>
-     *
-     * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-     */
-
-    public Builder removeUserProperties(
-        java.lang.String key) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      internalGetMutableUserProperties().getMutableMap()
-          .remove(key);
-      return this;
-    }
-    /**
-     * Use alternate mutation accessors instead.
-     */
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
-    getMutableUserProperties() {
-      return internalGetMutableUserProperties().getMutableMap();
-    }
-    /**
-     * <pre>
-     * A repeated record of user properties set with the setUserProperty API.
-     * https://firebase.google.com/docs/analytics/android/properties
-     * </pre>
-     *
-     * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-     */
-    public Builder putUserProperties(
-        java.lang.String key,
-        com.google.events.firebase.analytics.v1.UserPropertyValue value) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      if (value == null) {
-  throw new NullPointerException("map value");
-}
-
-      internalGetMutableUserProperties().getMutableMap()
-          .put(key, value);
-      return this;
-    }
-    /**
-     * <pre>
-     * A repeated record of user properties set with the setUserProperty API.
-     * https://firebase.google.com/docs/analytics/android/properties
-     * </pre>
-     *
-     * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
-     */
-
-    public Builder putAllUserProperties(
-        java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> values) {
-      internalGetMutableUserProperties().getMutableMap()
-          .putAll(values);
-      return this;
-    }
-
+    public static final int DEVICE_INFO_FIELD_NUMBER = 4;
     private com.google.events.firebase.analytics.v1.DeviceInfo deviceInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder> deviceInfoBuilder_;
+
     /**
      * <pre>
      * Device information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+     *
      * @return Whether the deviceInfo field is set.
      */
+    @java.lang.Override
     public boolean hasDeviceInfo() {
-      return deviceInfoBuilder_ != null || deviceInfo_ != null;
+        return deviceInfo_ != null;
     }
+
     /**
      * <pre>
      * Device information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+     *
      * @return The deviceInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.DeviceInfo getDeviceInfo() {
-      if (deviceInfoBuilder_ == null) {
-        return deviceInfo_ == null ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance() : deviceInfo_;
-      } else {
-        return deviceInfoBuilder_.getMessage();
-      }
+        return deviceInfo_ == null ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance()
+                : deviceInfo_;
     }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
-    public Builder setDeviceInfo(com.google.events.firebase.analytics.v1.DeviceInfo value) {
-      if (deviceInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        deviceInfo_ = value;
-        onChanged();
-      } else {
-        deviceInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Device information.
@@ -1434,154 +263,42 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
      */
-    public Builder setDeviceInfo(
-        com.google.events.firebase.analytics.v1.DeviceInfo.Builder builderForValue) {
-      if (deviceInfoBuilder_ == null) {
-        deviceInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        deviceInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
-    public Builder mergeDeviceInfo(com.google.events.firebase.analytics.v1.DeviceInfo value) {
-      if (deviceInfoBuilder_ == null) {
-        if (deviceInfo_ != null) {
-          deviceInfo_ =
-            com.google.events.firebase.analytics.v1.DeviceInfo.newBuilder(deviceInfo_).mergeFrom(value).buildPartial();
-        } else {
-          deviceInfo_ = value;
-        }
-        onChanged();
-      } else {
-        deviceInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
-    public Builder clearDeviceInfo() {
-      if (deviceInfoBuilder_ == null) {
-        deviceInfo_ = null;
-        onChanged();
-      } else {
-        deviceInfo_ = null;
-        deviceInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
-    public com.google.events.firebase.analytics.v1.DeviceInfo.Builder getDeviceInfoBuilder() {
-      
-      onChanged();
-      return getDeviceInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder getDeviceInfoOrBuilder() {
-      if (deviceInfoBuilder_ != null) {
-        return deviceInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return deviceInfo_ == null ?
-            com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance() : deviceInfo_;
-      }
-    }
-    /**
-     * <pre>
-     * Device information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder> 
-        getDeviceInfoFieldBuilder() {
-      if (deviceInfoBuilder_ == null) {
-        deviceInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder>(
-                getDeviceInfo(),
-                getParentForChildren(),
-                isClean());
-        deviceInfo_ = null;
-      }
-      return deviceInfoBuilder_;
+        return getDeviceInfo();
     }
 
+    public static final int GEO_INFO_FIELD_NUMBER = 5;
     private com.google.events.firebase.analytics.v1.GeoInfo geoInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder> geoInfoBuilder_;
+
     /**
      * <pre>
      * User's geographic information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+     *
      * @return Whether the geoInfo field is set.
      */
+    @java.lang.Override
     public boolean hasGeoInfo() {
-      return geoInfoBuilder_ != null || geoInfo_ != null;
+        return geoInfo_ != null;
     }
+
     /**
      * <pre>
      * User's geographic information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+     *
      * @return The geoInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.GeoInfo getGeoInfo() {
-      if (geoInfoBuilder_ == null) {
         return geoInfo_ == null ? com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance() : geoInfo_;
-      } else {
-        return geoInfoBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
-    public Builder setGeoInfo(com.google.events.firebase.analytics.v1.GeoInfo value) {
-      if (geoInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        geoInfo_ = value;
-        onChanged();
-      } else {
-        geoInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * User's geographic information.
@@ -1589,154 +306,42 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
      */
-    public Builder setGeoInfo(
-        com.google.events.firebase.analytics.v1.GeoInfo.Builder builderForValue) {
-      if (geoInfoBuilder_ == null) {
-        geoInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        geoInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
-    public Builder mergeGeoInfo(com.google.events.firebase.analytics.v1.GeoInfo value) {
-      if (geoInfoBuilder_ == null) {
-        if (geoInfo_ != null) {
-          geoInfo_ =
-            com.google.events.firebase.analytics.v1.GeoInfo.newBuilder(geoInfo_).mergeFrom(value).buildPartial();
-        } else {
-          geoInfo_ = value;
-        }
-        onChanged();
-      } else {
-        geoInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
-    public Builder clearGeoInfo() {
-      if (geoInfoBuilder_ == null) {
-        geoInfo_ = null;
-        onChanged();
-      } else {
-        geoInfo_ = null;
-        geoInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
-    public com.google.events.firebase.analytics.v1.GeoInfo.Builder getGeoInfoBuilder() {
-      
-      onChanged();
-      return getGeoInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.GeoInfoOrBuilder getGeoInfoOrBuilder() {
-      if (geoInfoBuilder_ != null) {
-        return geoInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return geoInfo_ == null ?
-            com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance() : geoInfo_;
-      }
-    }
-    /**
-     * <pre>
-     * User's geographic information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder> 
-        getGeoInfoFieldBuilder() {
-      if (geoInfoBuilder_ == null) {
-        geoInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder>(
-                getGeoInfo(),
-                getParentForChildren(),
-                isClean());
-        geoInfo_ = null;
-      }
-      return geoInfoBuilder_;
+        return getGeoInfo();
     }
 
+    public static final int APP_INFO_FIELD_NUMBER = 6;
     private com.google.events.firebase.analytics.v1.AppInfo appInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder> appInfoBuilder_;
+
     /**
      * <pre>
      * App information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+     *
      * @return Whether the appInfo field is set.
      */
+    @java.lang.Override
     public boolean hasAppInfo() {
-      return appInfoBuilder_ != null || appInfo_ != null;
+        return appInfo_ != null;
     }
+
     /**
      * <pre>
      * App information.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+     *
      * @return The appInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.AppInfo getAppInfo() {
-      if (appInfoBuilder_ == null) {
         return appInfo_ == null ? com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance() : appInfo_;
-      } else {
-        return appInfoBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
-    public Builder setAppInfo(com.google.events.firebase.analytics.v1.AppInfo value) {
-      if (appInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        appInfo_ = value;
-        onChanged();
-      } else {
-        appInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * App information.
@@ -1744,154 +349,43 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
      */
-    public Builder setAppInfo(
-        com.google.events.firebase.analytics.v1.AppInfo.Builder builderForValue) {
-      if (appInfoBuilder_ == null) {
-        appInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        appInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
-    public Builder mergeAppInfo(com.google.events.firebase.analytics.v1.AppInfo value) {
-      if (appInfoBuilder_ == null) {
-        if (appInfo_ != null) {
-          appInfo_ =
-            com.google.events.firebase.analytics.v1.AppInfo.newBuilder(appInfo_).mergeFrom(value).buildPartial();
-        } else {
-          appInfo_ = value;
-        }
-        onChanged();
-      } else {
-        appInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
-    public Builder clearAppInfo() {
-      if (appInfoBuilder_ == null) {
-        appInfo_ = null;
-        onChanged();
-      } else {
-        appInfo_ = null;
-        appInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
-    public com.google.events.firebase.analytics.v1.AppInfo.Builder getAppInfoBuilder() {
-      
-      onChanged();
-      return getAppInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.AppInfoOrBuilder getAppInfoOrBuilder() {
-      if (appInfoBuilder_ != null) {
-        return appInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return appInfo_ == null ?
-            com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance() : appInfo_;
-      }
-    }
-    /**
-     * <pre>
-     * App information.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder> 
-        getAppInfoFieldBuilder() {
-      if (appInfoBuilder_ == null) {
-        appInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder>(
-                getAppInfo(),
-                getParentForChildren(),
-                isClean());
-        appInfo_ = null;
-      }
-      return appInfoBuilder_;
+        return getAppInfo();
     }
 
+    public static final int TRAFFIC_SOURCE_FIELD_NUMBER = 7;
     private com.google.events.firebase.analytics.v1.TrafficSource trafficSource_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder> trafficSourceBuilder_;
+
     /**
      * <pre>
      * Information about marketing campaign which acquired the user.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+     *
      * @return Whether the trafficSource field is set.
      */
+    @java.lang.Override
     public boolean hasTrafficSource() {
-      return trafficSourceBuilder_ != null || trafficSource_ != null;
+        return trafficSource_ != null;
     }
+
     /**
      * <pre>
      * Information about marketing campaign which acquired the user.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+     *
      * @return The trafficSource.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.TrafficSource getTrafficSource() {
-      if (trafficSourceBuilder_ == null) {
-        return trafficSource_ == null ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance() : trafficSource_;
-      } else {
-        return trafficSourceBuilder_.getMessage();
-      }
+        return trafficSource_ == null ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance()
+                : trafficSource_;
     }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
-    public Builder setTrafficSource(com.google.events.firebase.analytics.v1.TrafficSource value) {
-      if (trafficSourceBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        trafficSource_ = value;
-        onChanged();
-      } else {
-        trafficSourceBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Information about marketing campaign which acquired the user.
@@ -1899,154 +393,43 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
      */
-    public Builder setTrafficSource(
-        com.google.events.firebase.analytics.v1.TrafficSource.Builder builderForValue) {
-      if (trafficSourceBuilder_ == null) {
-        trafficSource_ = builderForValue.build();
-        onChanged();
-      } else {
-        trafficSourceBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
-    public Builder mergeTrafficSource(com.google.events.firebase.analytics.v1.TrafficSource value) {
-      if (trafficSourceBuilder_ == null) {
-        if (trafficSource_ != null) {
-          trafficSource_ =
-            com.google.events.firebase.analytics.v1.TrafficSource.newBuilder(trafficSource_).mergeFrom(value).buildPartial();
-        } else {
-          trafficSource_ = value;
-        }
-        onChanged();
-      } else {
-        trafficSourceBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
-    public Builder clearTrafficSource() {
-      if (trafficSourceBuilder_ == null) {
-        trafficSource_ = null;
-        onChanged();
-      } else {
-        trafficSource_ = null;
-        trafficSourceBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
-    public com.google.events.firebase.analytics.v1.TrafficSource.Builder getTrafficSourceBuilder() {
-      
-      onChanged();
-      return getTrafficSourceFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder getTrafficSourceOrBuilder() {
-      if (trafficSourceBuilder_ != null) {
-        return trafficSourceBuilder_.getMessageOrBuilder();
-      } else {
-        return trafficSource_ == null ?
-            com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance() : trafficSource_;
-      }
-    }
-    /**
-     * <pre>
-     * Information about marketing campaign which acquired the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder> 
-        getTrafficSourceFieldBuilder() {
-      if (trafficSourceBuilder_ == null) {
-        trafficSourceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder>(
-                getTrafficSource(),
-                getParentForChildren(),
-                isClean());
-        trafficSource_ = null;
-      }
-      return trafficSourceBuilder_;
+        return getTrafficSource();
     }
 
+    public static final int BUNDLE_INFO_FIELD_NUMBER = 8;
     private com.google.events.firebase.analytics.v1.ExportBundleInfo bundleInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder> bundleInfoBuilder_;
+
     /**
      * <pre>
      * Information regarding the bundle in which these events were uploaded.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+     *
      * @return Whether the bundleInfo field is set.
      */
+    @java.lang.Override
     public boolean hasBundleInfo() {
-      return bundleInfoBuilder_ != null || bundleInfo_ != null;
+        return bundleInfo_ != null;
     }
+
     /**
      * <pre>
      * Information regarding the bundle in which these events were uploaded.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+     *
      * @return The bundleInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.ExportBundleInfo getBundleInfo() {
-      if (bundleInfoBuilder_ == null) {
-        return bundleInfo_ == null ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance() : bundleInfo_;
-      } else {
-        return bundleInfoBuilder_.getMessage();
-      }
+        return bundleInfo_ == null ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance()
+                : bundleInfo_;
     }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
-    public Builder setBundleInfo(com.google.events.firebase.analytics.v1.ExportBundleInfo value) {
-      if (bundleInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bundleInfo_ = value;
-        onChanged();
-      } else {
-        bundleInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Information regarding the bundle in which these events were uploaded.
@@ -2054,154 +437,42 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
      */
-    public Builder setBundleInfo(
-        com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder builderForValue) {
-      if (bundleInfoBuilder_ == null) {
-        bundleInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        bundleInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
-    public Builder mergeBundleInfo(com.google.events.firebase.analytics.v1.ExportBundleInfo value) {
-      if (bundleInfoBuilder_ == null) {
-        if (bundleInfo_ != null) {
-          bundleInfo_ =
-            com.google.events.firebase.analytics.v1.ExportBundleInfo.newBuilder(bundleInfo_).mergeFrom(value).buildPartial();
-        } else {
-          bundleInfo_ = value;
-        }
-        onChanged();
-      } else {
-        bundleInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
-    public Builder clearBundleInfo() {
-      if (bundleInfoBuilder_ == null) {
-        bundleInfo_ = null;
-        onChanged();
-      } else {
-        bundleInfo_ = null;
-        bundleInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
-    public com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder getBundleInfoBuilder() {
-      
-      onChanged();
-      return getBundleInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder getBundleInfoOrBuilder() {
-      if (bundleInfoBuilder_ != null) {
-        return bundleInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return bundleInfo_ == null ?
-            com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance() : bundleInfo_;
-      }
-    }
-    /**
-     * <pre>
-     * Information regarding the bundle in which these events were uploaded.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder> 
-        getBundleInfoFieldBuilder() {
-      if (bundleInfoBuilder_ == null) {
-        bundleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder>(
-                getBundleInfo(),
-                getParentForChildren(),
-                isClean());
-        bundleInfo_ = null;
-      }
-      return bundleInfoBuilder_;
+        return getBundleInfo();
     }
 
+    public static final int LTV_INFO_FIELD_NUMBER = 9;
     private com.google.events.firebase.analytics.v1.LtvInfo ltvInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder> ltvInfoBuilder_;
+
     /**
      * <pre>
      * Lifetime Value information about this user.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+     *
      * @return Whether the ltvInfo field is set.
      */
+    @java.lang.Override
     public boolean hasLtvInfo() {
-      return ltvInfoBuilder_ != null || ltvInfo_ != null;
+        return ltvInfo_ != null;
     }
+
     /**
      * <pre>
      * Lifetime Value information about this user.
      * </pre>
      *
      * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+     *
      * @return The ltvInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.LtvInfo getLtvInfo() {
-      if (ltvInfoBuilder_ == null) {
         return ltvInfo_ == null ? com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance() : ltvInfo_;
-      } else {
-        return ltvInfoBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * Lifetime Value information about this user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-     */
-    public Builder setLtvInfo(com.google.events.firebase.analytics.v1.LtvInfo value) {
-      if (ltvInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ltvInfo_ = value;
-        onChanged();
-      } else {
-        ltvInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Lifetime Value information about this user.
@@ -2209,165 +480,1952 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
      */
-    public Builder setLtvInfo(
-        com.google.events.firebase.analytics.v1.LtvInfo.Builder builderForValue) {
-      if (ltvInfoBuilder_ == null) {
-        ltvInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        ltvInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Lifetime Value information about this user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-     */
-    public Builder mergeLtvInfo(com.google.events.firebase.analytics.v1.LtvInfo value) {
-      if (ltvInfoBuilder_ == null) {
-        if (ltvInfo_ != null) {
-          ltvInfo_ =
-            com.google.events.firebase.analytics.v1.LtvInfo.newBuilder(ltvInfo_).mergeFrom(value).buildPartial();
-        } else {
-          ltvInfo_ = value;
-        }
-        onChanged();
-      } else {
-        ltvInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Lifetime Value information about this user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-     */
-    public Builder clearLtvInfo() {
-      if (ltvInfoBuilder_ == null) {
-        ltvInfo_ = null;
-        onChanged();
-      } else {
-        ltvInfo_ = null;
-        ltvInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Lifetime Value information about this user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-     */
-    public com.google.events.firebase.analytics.v1.LtvInfo.Builder getLtvInfoBuilder() {
-      
-      onChanged();
-      return getLtvInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Lifetime Value information about this user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.analytics.v1.LtvInfoOrBuilder getLtvInfoOrBuilder() {
-      if (ltvInfoBuilder_ != null) {
-        return ltvInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return ltvInfo_ == null ?
-            com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance() : ltvInfo_;
-      }
+        return getLtvInfo();
     }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1)
+            return true;
+        if (isInitialized == 0)
+            return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userId_);
+        }
+        if (firstOpenTimestampMicros_ != 0L) {
+            output.writeInt64(2, firstOpenTimestampMicros_);
+        }
+        com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(output, internalGetUserProperties(),
+                UserPropertiesDefaultEntryHolder.defaultEntry, 3);
+        if (deviceInfo_ != null) {
+            output.writeMessage(4, getDeviceInfo());
+        }
+        if (geoInfo_ != null) {
+            output.writeMessage(5, getGeoInfo());
+        }
+        if (appInfo_ != null) {
+            output.writeMessage(6, getAppInfo());
+        }
+        if (trafficSource_ != null) {
+            output.writeMessage(7, getTrafficSource());
+        }
+        if (bundleInfo_ != null) {
+            output.writeMessage(8, getBundleInfo());
+        }
+        if (ltvInfo_ != null) {
+            output.writeMessage(9, getLtvInfo());
+        }
+        getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1)
+            return size;
+
+        size = 0;
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userId_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userId_);
+        }
+        if (firstOpenTimestampMicros_ != 0L) {
+            size += com.google.protobuf.CodedOutputStream.computeInt64Size(2, firstOpenTimestampMicros_);
+        }
+        for (java.util.Map.Entry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> entry : internalGetUserProperties()
+                .getMap().entrySet()) {
+            com.google.protobuf.MapEntry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties__ = UserPropertiesDefaultEntryHolder.defaultEntry
+                    .newBuilderForType().setKey(entry.getKey()).setValue(entry.getValue()).build();
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, userProperties__);
+        }
+        if (deviceInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getDeviceInfo());
+        }
+        if (geoInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(5, getGeoInfo());
+        }
+        if (appInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(6, getAppInfo());
+        }
+        if (trafficSource_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(7, getTrafficSource());
+        }
+        if (bundleInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(8, getBundleInfo());
+        }
+        if (ltvInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(9, getLtvInfo());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof com.google.events.firebase.analytics.v1.UserDimensions)) {
+            return super.equals(obj);
+        }
+        com.google.events.firebase.analytics.v1.UserDimensions other = (com.google.events.firebase.analytics.v1.UserDimensions) obj;
+
+        if (!getUserId().equals(other.getUserId()))
+            return false;
+        if (getFirstOpenTimestampMicros() != other.getFirstOpenTimestampMicros())
+            return false;
+        if (!internalGetUserProperties().equals(other.internalGetUserProperties()))
+            return false;
+        if (hasDeviceInfo() != other.hasDeviceInfo())
+            return false;
+        if (hasDeviceInfo()) {
+            if (!getDeviceInfo().equals(other.getDeviceInfo()))
+                return false;
+        }
+        if (hasGeoInfo() != other.hasGeoInfo())
+            return false;
+        if (hasGeoInfo()) {
+            if (!getGeoInfo().equals(other.getGeoInfo()))
+                return false;
+        }
+        if (hasAppInfo() != other.hasAppInfo())
+            return false;
+        if (hasAppInfo()) {
+            if (!getAppInfo().equals(other.getAppInfo()))
+                return false;
+        }
+        if (hasTrafficSource() != other.hasTrafficSource())
+            return false;
+        if (hasTrafficSource()) {
+            if (!getTrafficSource().equals(other.getTrafficSource()))
+                return false;
+        }
+        if (hasBundleInfo() != other.hasBundleInfo())
+            return false;
+        if (hasBundleInfo()) {
+            if (!getBundleInfo().equals(other.getBundleInfo()))
+                return false;
+        }
+        if (hasLtvInfo() != other.hasLtvInfo())
+            return false;
+        if (hasLtvInfo()) {
+            if (!getLtvInfo().equals(other.getLtvInfo()))
+                return false;
+        }
+        if (!getUnknownFields().equals(other.getUnknownFields()))
+            return false;
+        return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + USER_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getUserId().hashCode();
+        hash = (37 * hash) + FIRST_OPEN_TIMESTAMP_MICROS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getFirstOpenTimestampMicros());
+        if (!internalGetUserProperties().getMap().isEmpty()) {
+            hash = (37 * hash) + USER_PROPERTIES_FIELD_NUMBER;
+            hash = (53 * hash) + internalGetUserProperties().hashCode();
+        }
+        if (hasDeviceInfo()) {
+            hash = (37 * hash) + DEVICE_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getDeviceInfo().hashCode();
+        }
+        if (hasGeoInfo()) {
+            hash = (37 * hash) + GEO_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getGeoInfo().hashCode();
+        }
+        if (hasAppInfo()) {
+            hash = (37 * hash) + APP_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getAppInfo().hashCode();
+        }
+        if (hasTrafficSource()) {
+            hash = (37 * hash) + TRAFFIC_SOURCE_FIELD_NUMBER;
+            hash = (53 * hash) + getTrafficSource().hashCode();
+        }
+        if (hasBundleInfo()) {
+            hash = (37 * hash) + BUNDLE_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getBundleInfo().hashCode();
+        }
+        if (hasLtvInfo()) {
+            hash = (37 * hash) + LTV_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getLtvInfo().hashCode();
+        }
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseDelimitedFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
+            com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions parseFrom(
+            com.google.protobuf.CodedInputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.google.events.firebase.analytics.v1.UserDimensions prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
     /**
      * <pre>
-     * Lifetime Value information about this user.
+     * Message containing information about the user associated with the event.
      * </pre>
      *
-     * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+     * Protobuf type {@code google.events.firebase.analytics.v1.UserDimensions}
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder> 
-        getLtvInfoFieldBuilder() {
-      if (ltvInfoBuilder_ == null) {
-        ltvInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder>(
-                getLtvInfo(),
-                getParentForChildren(),
-                isClean());
-        ltvInfo_ = null;
-      }
-      return ltvInfoBuilder_;
+    public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:google.events.firebase.analytics.v1.UserDimensions)
+            com.google.events.firebase.analytics.v1.UserDimensionsOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
+        }
+
+        @SuppressWarnings({ "rawtypes" })
+        protected com.google.protobuf.MapField internalGetMapField(int number) {
+            switch (number) {
+            case 3:
+                return internalGetUserProperties();
+            default:
+                throw new RuntimeException("Invalid map field number: " + number);
+            }
+        }
+
+        @SuppressWarnings({ "rawtypes" })
+        protected com.google.protobuf.MapField internalGetMutableMapField(int number) {
+            switch (number) {
+            case 3:
+                return internalGetMutableUserProperties();
+            default:
+                throw new RuntimeException("Invalid map field number: " + number);
+            }
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(com.google.events.firebase.analytics.v1.UserDimensions.class,
+                            com.google.events.firebase.analytics.v1.UserDimensions.Builder.class);
+        }
+
+        // Construct using com.google.events.firebase.analytics.v1.UserDimensions.newBuilder()
+        private Builder() {
+
+        }
+
+        private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            userId_ = "";
+
+            firstOpenTimestampMicros_ = 0L;
+
+            internalGetMutableUserProperties().clear();
+            if (deviceInfoBuilder_ == null) {
+                deviceInfo_ = null;
+            } else {
+                deviceInfo_ = null;
+                deviceInfoBuilder_ = null;
+            }
+            if (geoInfoBuilder_ == null) {
+                geoInfo_ = null;
+            } else {
+                geoInfo_ = null;
+                geoInfoBuilder_ = null;
+            }
+            if (appInfoBuilder_ == null) {
+                appInfo_ = null;
+            } else {
+                appInfo_ = null;
+                appInfoBuilder_ = null;
+            }
+            if (trafficSourceBuilder_ == null) {
+                trafficSource_ = null;
+            } else {
+                trafficSource_ = null;
+                trafficSourceBuilder_ = null;
+            }
+            if (bundleInfoBuilder_ == null) {
+                bundleInfo_ = null;
+            } else {
+                bundleInfo_ = null;
+                bundleInfoBuilder_ = null;
+            }
+            if (ltvInfoBuilder_ == null) {
+                ltvInfo_ = null;
+            } else {
+                ltvInfo_ = null;
+                ltvInfoBuilder_ = null;
+            }
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_UserDimensions_descriptor;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstanceForType() {
+            return com.google.events.firebase.analytics.v1.UserDimensions.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.UserDimensions build() {
+            com.google.events.firebase.analytics.v1.UserDimensions result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.UserDimensions buildPartial() {
+            com.google.events.firebase.analytics.v1.UserDimensions result = new com.google.events.firebase.analytics.v1.UserDimensions(
+                    this);
+            int from_bitField0_ = bitField0_;
+            result.userId_ = userId_;
+            result.firstOpenTimestampMicros_ = firstOpenTimestampMicros_;
+            result.userProperties_ = internalGetUserProperties();
+            result.userProperties_.makeImmutable();
+            if (deviceInfoBuilder_ == null) {
+                result.deviceInfo_ = deviceInfo_;
+            } else {
+                result.deviceInfo_ = deviceInfoBuilder_.build();
+            }
+            if (geoInfoBuilder_ == null) {
+                result.geoInfo_ = geoInfo_;
+            } else {
+                result.geoInfo_ = geoInfoBuilder_.build();
+            }
+            if (appInfoBuilder_ == null) {
+                result.appInfo_ = appInfo_;
+            } else {
+                result.appInfo_ = appInfoBuilder_.build();
+            }
+            if (trafficSourceBuilder_ == null) {
+                result.trafficSource_ = trafficSource_;
+            } else {
+                result.trafficSource_ = trafficSourceBuilder_.build();
+            }
+            if (bundleInfoBuilder_ == null) {
+                result.bundleInfo_ = bundleInfo_;
+            } else {
+                result.bundleInfo_ = bundleInfoBuilder_.build();
+            }
+            if (ltvInfoBuilder_ == null) {
+                result.ltvInfo_ = ltvInfo_;
+            } else {
+                result.ltvInfo_ = ltvInfoBuilder_.build();
+            }
+            onBuilt();
+            return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+                java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.google.events.firebase.analytics.v1.UserDimensions) {
+                return mergeFrom((com.google.events.firebase.analytics.v1.UserDimensions) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(com.google.events.firebase.analytics.v1.UserDimensions other) {
+            if (other == com.google.events.firebase.analytics.v1.UserDimensions.getDefaultInstance())
+                return this;
+            if (!other.getUserId().isEmpty()) {
+                userId_ = other.userId_;
+                onChanged();
+            }
+            if (other.getFirstOpenTimestampMicros() != 0L) {
+                setFirstOpenTimestampMicros(other.getFirstOpenTimestampMicros());
+            }
+            internalGetMutableUserProperties().mergeFrom(other.internalGetUserProperties());
+            if (other.hasDeviceInfo()) {
+                mergeDeviceInfo(other.getDeviceInfo());
+            }
+            if (other.hasGeoInfo()) {
+                mergeGeoInfo(other.getGeoInfo());
+            }
+            if (other.hasAppInfo()) {
+                mergeAppInfo(other.getAppInfo());
+            }
+            if (other.hasTrafficSource()) {
+                mergeTrafficSource(other.getTrafficSource());
+            }
+            if (other.hasBundleInfo()) {
+                mergeBundleInfo(other.getBundleInfo());
+            }
+            if (other.hasLtvInfo()) {
+                mergeLtvInfo(other.getLtvInfo());
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    case 10: {
+                        userId_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 10
+                    case 16: {
+                        firstOpenTimestampMicros_ = input.readInt64();
+
+                        break;
+                    } // case 16
+                    case 26: {
+                        com.google.protobuf.MapEntry<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties__ = input
+                                .readMessage(UserPropertiesDefaultEntryHolder.defaultEntry.getParserForType(),
+                                        extensionRegistry);
+                        internalGetMutableUserProperties().getMutableMap().put(userProperties__.getKey(),
+                                userProperties__.getValue());
+                        break;
+                    } // case 26
+                    case 34: {
+                        input.readMessage(getDeviceInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 34
+                    case 42: {
+                        input.readMessage(getGeoInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 42
+                    case 50: {
+                        input.readMessage(getAppInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 50
+                    case 58: {
+                        input.readMessage(getTrafficSourceFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 58
+                    case 66: {
+                        input.readMessage(getBundleInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 66
+                    case 74: {
+                        input.readMessage(getLtvInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 74
+                    default: {
+                        if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                            done = true; // was an endgroup tag
+                        }
+                        break;
+                    } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private int bitField0_;
+
+        private java.lang.Object userId_ = "";
+
+        /**
+         * <pre>
+         * The user ID set via the setUserId API.
+         * </pre>
+         *
+         * <code>string user_id = 1;</code>
+         *
+         * @return The userId.
+         */
+        public java.lang.String getUserId() {
+            java.lang.Object ref = userId_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                userId_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user ID set via the setUserId API.
+         * </pre>
+         *
+         * <code>string user_id = 1;</code>
+         *
+         * @return The bytes for userId.
+         */
+        public com.google.protobuf.ByteString getUserIdBytes() {
+            java.lang.Object ref = userId_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                userId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user ID set via the setUserId API.
+         * </pre>
+         *
+         * <code>string user_id = 1;</code>
+         *
+         * @param value
+         *            The userId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUserId(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            userId_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user ID set via the setUserId API.
+         * </pre>
+         *
+         * <code>string user_id = 1;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearUserId() {
+
+            userId_ = getDefaultInstance().getUserId();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user ID set via the setUserId API.
+         * </pre>
+         *
+         * <code>string user_id = 1;</code>
+         *
+         * @param value
+         *            The bytes for userId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUserIdBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            userId_ = value;
+            onChanged();
+            return this;
+        }
+
+        private long firstOpenTimestampMicros_;
+
+        /**
+         * <pre>
+         * The time (in microseconds) at which the user first opened the app.
+         * </pre>
+         *
+         * <code>int64 first_open_timestamp_micros = 2;</code>
+         *
+         * @return The firstOpenTimestampMicros.
+         */
+        @java.lang.Override
+        public long getFirstOpenTimestampMicros() {
+            return firstOpenTimestampMicros_;
+        }
+
+        /**
+         * <pre>
+         * The time (in microseconds) at which the user first opened the app.
+         * </pre>
+         *
+         * <code>int64 first_open_timestamp_micros = 2;</code>
+         *
+         * @param value
+         *            The firstOpenTimestampMicros to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setFirstOpenTimestampMicros(long value) {
+
+            firstOpenTimestampMicros_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The time (in microseconds) at which the user first opened the app.
+         * </pre>
+         *
+         * <code>int64 first_open_timestamp_micros = 2;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearFirstOpenTimestampMicros() {
+
+            firstOpenTimestampMicros_ = 0L;
+            onChanged();
+            return this;
+        }
+
+        private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> userProperties_;
+
+        private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> internalGetUserProperties() {
+            if (userProperties_ == null) {
+                return com.google.protobuf.MapField.emptyMapField(UserPropertiesDefaultEntryHolder.defaultEntry);
+            }
+            return userProperties_;
+        }
+
+        private com.google.protobuf.MapField<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> internalGetMutableUserProperties() {
+            onChanged();
+            ;
+            if (userProperties_ == null) {
+                userProperties_ = com.google.protobuf.MapField
+                        .newMapField(UserPropertiesDefaultEntryHolder.defaultEntry);
+            }
+            if (!userProperties_.isMutable()) {
+                userProperties_ = userProperties_.copy();
+            }
+            return userProperties_;
+        }
+
+        public int getUserPropertiesCount() {
+            return internalGetUserProperties().getMap().size();
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+
+        @java.lang.Override
+        public boolean containsUserProperties(java.lang.String key) {
+            if (key == null) {
+                throw new NullPointerException("map key");
+            }
+            return internalGetUserProperties().getMap().containsKey(key);
+        }
+
+        /**
+         * Use {@link #getUserPropertiesMap()} instead.
+         */
+        @java.lang.Override
+        @java.lang.Deprecated
+        public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserProperties() {
+            return getUserPropertiesMap();
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+        @java.lang.Override
+
+        public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getUserPropertiesMap() {
+            return internalGetUserProperties().getMap();
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+        @java.lang.Override
+
+        public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrDefault(
+                java.lang.String key, com.google.events.firebase.analytics.v1.UserPropertyValue defaultValue) {
+            if (key == null) {
+                throw new NullPointerException("map key");
+            }
+            java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map = internalGetUserProperties()
+                    .getMap();
+            return map.containsKey(key) ? map.get(key) : defaultValue;
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+        @java.lang.Override
+
+        public com.google.events.firebase.analytics.v1.UserPropertyValue getUserPropertiesOrThrow(
+                java.lang.String key) {
+            if (key == null) {
+                throw new NullPointerException("map key");
+            }
+            java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> map = internalGetUserProperties()
+                    .getMap();
+            if (!map.containsKey(key)) {
+                throw new java.lang.IllegalArgumentException();
+            }
+            return map.get(key);
+        }
+
+        public Builder clearUserProperties() {
+            internalGetMutableUserProperties().getMutableMap().clear();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+
+        public Builder removeUserProperties(java.lang.String key) {
+            if (key == null) {
+                throw new NullPointerException("map key");
+            }
+            internalGetMutableUserProperties().getMutableMap().remove(key);
+            return this;
+        }
+
+        /**
+         * Use alternate mutation accessors instead.
+         */
+        @java.lang.Deprecated
+        public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> getMutableUserProperties() {
+            return internalGetMutableUserProperties().getMutableMap();
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+        public Builder putUserProperties(java.lang.String key,
+                com.google.events.firebase.analytics.v1.UserPropertyValue value) {
+            if (key == null) {
+                throw new NullPointerException("map key");
+            }
+            if (value == null) {
+                throw new NullPointerException("map value");
+            }
+
+            internalGetMutableUserProperties().getMutableMap().put(key, value);
+            return this;
+        }
+
+        /**
+         * <pre>
+         * A repeated record of user properties set with the setUserProperty API.
+         * https://firebase.google.com/docs/analytics/android/properties
+         * </pre>
+         *
+         * <code>map&lt;string, .google.events.firebase.analytics.v1.UserPropertyValue&gt; user_properties = 3;</code>
+         */
+
+        public Builder putAllUserProperties(
+                java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue> values) {
+            internalGetMutableUserProperties().getMutableMap().putAll(values);
+            return this;
+        }
+
+        private com.google.events.firebase.analytics.v1.DeviceInfo deviceInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder> deviceInfoBuilder_;
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         *
+         * @return Whether the deviceInfo field is set.
+         */
+        public boolean hasDeviceInfo() {
+            return deviceInfoBuilder_ != null || deviceInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         *
+         * @return The deviceInfo.
+         */
+        public com.google.events.firebase.analytics.v1.DeviceInfo getDeviceInfo() {
+            if (deviceInfoBuilder_ == null) {
+                return deviceInfo_ == null ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance()
+                        : deviceInfo_;
+            } else {
+                return deviceInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public Builder setDeviceInfo(com.google.events.firebase.analytics.v1.DeviceInfo value) {
+            if (deviceInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                deviceInfo_ = value;
+                onChanged();
+            } else {
+                deviceInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public Builder setDeviceInfo(com.google.events.firebase.analytics.v1.DeviceInfo.Builder builderForValue) {
+            if (deviceInfoBuilder_ == null) {
+                deviceInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                deviceInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public Builder mergeDeviceInfo(com.google.events.firebase.analytics.v1.DeviceInfo value) {
+            if (deviceInfoBuilder_ == null) {
+                if (deviceInfo_ != null) {
+                    deviceInfo_ = com.google.events.firebase.analytics.v1.DeviceInfo.newBuilder(deviceInfo_)
+                            .mergeFrom(value).buildPartial();
+                } else {
+                    deviceInfo_ = value;
+                }
+                onChanged();
+            } else {
+                deviceInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public Builder clearDeviceInfo() {
+            if (deviceInfoBuilder_ == null) {
+                deviceInfo_ = null;
+                onChanged();
+            } else {
+                deviceInfo_ = null;
+                deviceInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public com.google.events.firebase.analytics.v1.DeviceInfo.Builder getDeviceInfoBuilder() {
+
+            onChanged();
+            return getDeviceInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        public com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder getDeviceInfoOrBuilder() {
+            if (deviceInfoBuilder_ != null) {
+                return deviceInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return deviceInfo_ == null ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance()
+                        : deviceInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.DeviceInfo device_info = 4;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder> getDeviceInfoFieldBuilder() {
+            if (deviceInfoBuilder_ == null) {
+                deviceInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.DeviceInfo, com.google.events.firebase.analytics.v1.DeviceInfo.Builder, com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder>(
+                        getDeviceInfo(), getParentForChildren(), isClean());
+                deviceInfo_ = null;
+            }
+            return deviceInfoBuilder_;
+        }
+
+        private com.google.events.firebase.analytics.v1.GeoInfo geoInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder> geoInfoBuilder_;
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         *
+         * @return Whether the geoInfo field is set.
+         */
+        public boolean hasGeoInfo() {
+            return geoInfoBuilder_ != null || geoInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         *
+         * @return The geoInfo.
+         */
+        public com.google.events.firebase.analytics.v1.GeoInfo getGeoInfo() {
+            if (geoInfoBuilder_ == null) {
+                return geoInfo_ == null ? com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance()
+                        : geoInfo_;
+            } else {
+                return geoInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public Builder setGeoInfo(com.google.events.firebase.analytics.v1.GeoInfo value) {
+            if (geoInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                geoInfo_ = value;
+                onChanged();
+            } else {
+                geoInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public Builder setGeoInfo(com.google.events.firebase.analytics.v1.GeoInfo.Builder builderForValue) {
+            if (geoInfoBuilder_ == null) {
+                geoInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                geoInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public Builder mergeGeoInfo(com.google.events.firebase.analytics.v1.GeoInfo value) {
+            if (geoInfoBuilder_ == null) {
+                if (geoInfo_ != null) {
+                    geoInfo_ = com.google.events.firebase.analytics.v1.GeoInfo.newBuilder(geoInfo_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    geoInfo_ = value;
+                }
+                onChanged();
+            } else {
+                geoInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public Builder clearGeoInfo() {
+            if (geoInfoBuilder_ == null) {
+                geoInfo_ = null;
+                onChanged();
+            } else {
+                geoInfo_ = null;
+                geoInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public com.google.events.firebase.analytics.v1.GeoInfo.Builder getGeoInfoBuilder() {
+
+            onChanged();
+            return getGeoInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        public com.google.events.firebase.analytics.v1.GeoInfoOrBuilder getGeoInfoOrBuilder() {
+            if (geoInfoBuilder_ != null) {
+                return geoInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return geoInfo_ == null ? com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance()
+                        : geoInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * User's geographic information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.GeoInfo geo_info = 5;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder> getGeoInfoFieldBuilder() {
+            if (geoInfoBuilder_ == null) {
+                geoInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.GeoInfo, com.google.events.firebase.analytics.v1.GeoInfo.Builder, com.google.events.firebase.analytics.v1.GeoInfoOrBuilder>(
+                        getGeoInfo(), getParentForChildren(), isClean());
+                geoInfo_ = null;
+            }
+            return geoInfoBuilder_;
+        }
+
+        private com.google.events.firebase.analytics.v1.AppInfo appInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder> appInfoBuilder_;
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         *
+         * @return Whether the appInfo field is set.
+         */
+        public boolean hasAppInfo() {
+            return appInfoBuilder_ != null || appInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         *
+         * @return The appInfo.
+         */
+        public com.google.events.firebase.analytics.v1.AppInfo getAppInfo() {
+            if (appInfoBuilder_ == null) {
+                return appInfo_ == null ? com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance()
+                        : appInfo_;
+            } else {
+                return appInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public Builder setAppInfo(com.google.events.firebase.analytics.v1.AppInfo value) {
+            if (appInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                appInfo_ = value;
+                onChanged();
+            } else {
+                appInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public Builder setAppInfo(com.google.events.firebase.analytics.v1.AppInfo.Builder builderForValue) {
+            if (appInfoBuilder_ == null) {
+                appInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                appInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public Builder mergeAppInfo(com.google.events.firebase.analytics.v1.AppInfo value) {
+            if (appInfoBuilder_ == null) {
+                if (appInfo_ != null) {
+                    appInfo_ = com.google.events.firebase.analytics.v1.AppInfo.newBuilder(appInfo_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    appInfo_ = value;
+                }
+                onChanged();
+            } else {
+                appInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public Builder clearAppInfo() {
+            if (appInfoBuilder_ == null) {
+                appInfo_ = null;
+                onChanged();
+            } else {
+                appInfo_ = null;
+                appInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public com.google.events.firebase.analytics.v1.AppInfo.Builder getAppInfoBuilder() {
+
+            onChanged();
+            return getAppInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        public com.google.events.firebase.analytics.v1.AppInfoOrBuilder getAppInfoOrBuilder() {
+            if (appInfoBuilder_ != null) {
+                return appInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return appInfo_ == null ? com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance()
+                        : appInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * App information.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.AppInfo app_info = 6;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder> getAppInfoFieldBuilder() {
+            if (appInfoBuilder_ == null) {
+                appInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.AppInfo, com.google.events.firebase.analytics.v1.AppInfo.Builder, com.google.events.firebase.analytics.v1.AppInfoOrBuilder>(
+                        getAppInfo(), getParentForChildren(), isClean());
+                appInfo_ = null;
+            }
+            return appInfoBuilder_;
+        }
+
+        private com.google.events.firebase.analytics.v1.TrafficSource trafficSource_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder> trafficSourceBuilder_;
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         *
+         * @return Whether the trafficSource field is set.
+         */
+        public boolean hasTrafficSource() {
+            return trafficSourceBuilder_ != null || trafficSource_ != null;
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         *
+         * @return The trafficSource.
+         */
+        public com.google.events.firebase.analytics.v1.TrafficSource getTrafficSource() {
+            if (trafficSourceBuilder_ == null) {
+                return trafficSource_ == null
+                        ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance() : trafficSource_;
+            } else {
+                return trafficSourceBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public Builder setTrafficSource(com.google.events.firebase.analytics.v1.TrafficSource value) {
+            if (trafficSourceBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                trafficSource_ = value;
+                onChanged();
+            } else {
+                trafficSourceBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public Builder setTrafficSource(com.google.events.firebase.analytics.v1.TrafficSource.Builder builderForValue) {
+            if (trafficSourceBuilder_ == null) {
+                trafficSource_ = builderForValue.build();
+                onChanged();
+            } else {
+                trafficSourceBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public Builder mergeTrafficSource(com.google.events.firebase.analytics.v1.TrafficSource value) {
+            if (trafficSourceBuilder_ == null) {
+                if (trafficSource_ != null) {
+                    trafficSource_ = com.google.events.firebase.analytics.v1.TrafficSource.newBuilder(trafficSource_)
+                            .mergeFrom(value).buildPartial();
+                } else {
+                    trafficSource_ = value;
+                }
+                onChanged();
+            } else {
+                trafficSourceBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public Builder clearTrafficSource() {
+            if (trafficSourceBuilder_ == null) {
+                trafficSource_ = null;
+                onChanged();
+            } else {
+                trafficSource_ = null;
+                trafficSourceBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public com.google.events.firebase.analytics.v1.TrafficSource.Builder getTrafficSourceBuilder() {
+
+            onChanged();
+            return getTrafficSourceFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        public com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder getTrafficSourceOrBuilder() {
+            if (trafficSourceBuilder_ != null) {
+                return trafficSourceBuilder_.getMessageOrBuilder();
+            } else {
+                return trafficSource_ == null
+                        ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance() : trafficSource_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Information about marketing campaign which acquired the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.TrafficSource traffic_source = 7;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder> getTrafficSourceFieldBuilder() {
+            if (trafficSourceBuilder_ == null) {
+                trafficSourceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.TrafficSource, com.google.events.firebase.analytics.v1.TrafficSource.Builder, com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder>(
+                        getTrafficSource(), getParentForChildren(), isClean());
+                trafficSource_ = null;
+            }
+            return trafficSourceBuilder_;
+        }
+
+        private com.google.events.firebase.analytics.v1.ExportBundleInfo bundleInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder> bundleInfoBuilder_;
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         *
+         * @return Whether the bundleInfo field is set.
+         */
+        public boolean hasBundleInfo() {
+            return bundleInfoBuilder_ != null || bundleInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         *
+         * @return The bundleInfo.
+         */
+        public com.google.events.firebase.analytics.v1.ExportBundleInfo getBundleInfo() {
+            if (bundleInfoBuilder_ == null) {
+                return bundleInfo_ == null
+                        ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance() : bundleInfo_;
+            } else {
+                return bundleInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public Builder setBundleInfo(com.google.events.firebase.analytics.v1.ExportBundleInfo value) {
+            if (bundleInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                bundleInfo_ = value;
+                onChanged();
+            } else {
+                bundleInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public Builder setBundleInfo(com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder builderForValue) {
+            if (bundleInfoBuilder_ == null) {
+                bundleInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                bundleInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public Builder mergeBundleInfo(com.google.events.firebase.analytics.v1.ExportBundleInfo value) {
+            if (bundleInfoBuilder_ == null) {
+                if (bundleInfo_ != null) {
+                    bundleInfo_ = com.google.events.firebase.analytics.v1.ExportBundleInfo.newBuilder(bundleInfo_)
+                            .mergeFrom(value).buildPartial();
+                } else {
+                    bundleInfo_ = value;
+                }
+                onChanged();
+            } else {
+                bundleInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public Builder clearBundleInfo() {
+            if (bundleInfoBuilder_ == null) {
+                bundleInfo_ = null;
+                onChanged();
+            } else {
+                bundleInfo_ = null;
+                bundleInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder getBundleInfoBuilder() {
+
+            onChanged();
+            return getBundleInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        public com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder getBundleInfoOrBuilder() {
+            if (bundleInfoBuilder_ != null) {
+                return bundleInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return bundleInfo_ == null
+                        ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance() : bundleInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Information regarding the bundle in which these events were uploaded.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.ExportBundleInfo bundle_info = 8;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder> getBundleInfoFieldBuilder() {
+            if (bundleInfoBuilder_ == null) {
+                bundleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.ExportBundleInfo, com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder, com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder>(
+                        getBundleInfo(), getParentForChildren(), isClean());
+                bundleInfo_ = null;
+            }
+            return bundleInfoBuilder_;
+        }
+
+        private com.google.events.firebase.analytics.v1.LtvInfo ltvInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder> ltvInfoBuilder_;
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         *
+         * @return Whether the ltvInfo field is set.
+         */
+        public boolean hasLtvInfo() {
+            return ltvInfoBuilder_ != null || ltvInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         *
+         * @return The ltvInfo.
+         */
+        public com.google.events.firebase.analytics.v1.LtvInfo getLtvInfo() {
+            if (ltvInfoBuilder_ == null) {
+                return ltvInfo_ == null ? com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance()
+                        : ltvInfo_;
+            } else {
+                return ltvInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public Builder setLtvInfo(com.google.events.firebase.analytics.v1.LtvInfo value) {
+            if (ltvInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                ltvInfo_ = value;
+                onChanged();
+            } else {
+                ltvInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public Builder setLtvInfo(com.google.events.firebase.analytics.v1.LtvInfo.Builder builderForValue) {
+            if (ltvInfoBuilder_ == null) {
+                ltvInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                ltvInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public Builder mergeLtvInfo(com.google.events.firebase.analytics.v1.LtvInfo value) {
+            if (ltvInfoBuilder_ == null) {
+                if (ltvInfo_ != null) {
+                    ltvInfo_ = com.google.events.firebase.analytics.v1.LtvInfo.newBuilder(ltvInfo_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    ltvInfo_ = value;
+                }
+                onChanged();
+            } else {
+                ltvInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public Builder clearLtvInfo() {
+            if (ltvInfoBuilder_ == null) {
+                ltvInfo_ = null;
+                onChanged();
+            } else {
+                ltvInfo_ = null;
+                ltvInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public com.google.events.firebase.analytics.v1.LtvInfo.Builder getLtvInfoBuilder() {
+
+            onChanged();
+            return getLtvInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        public com.google.events.firebase.analytics.v1.LtvInfoOrBuilder getLtvInfoOrBuilder() {
+            if (ltvInfoBuilder_ != null) {
+                return ltvInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return ltvInfo_ == null ? com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance()
+                        : ltvInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Lifetime Value information about this user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.analytics.v1.LtvInfo ltv_info = 9;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder> getLtvInfoFieldBuilder() {
+            if (ltvInfoBuilder_ == null) {
+                ltvInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.analytics.v1.LtvInfo, com.google.events.firebase.analytics.v1.LtvInfo.Builder, com.google.events.firebase.analytics.v1.LtvInfoOrBuilder>(
+                        getLtvInfo(), getParentForChildren(), isClean());
+                ltvInfo_ = null;
+            }
+            return ltvInfoBuilder_;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+        // @@protoc_insertion_point(builder_scope:google.events.firebase.analytics.v1.UserDimensions)
     }
+
+    // @@protoc_insertion_point(class_scope:google.events.firebase.analytics.v1.UserDimensions)
+    private static final com.google.events.firebase.analytics.v1.UserDimensions DEFAULT_INSTANCE;
+    static {
+        DEFAULT_INSTANCE = new com.google.events.firebase.analytics.v1.UserDimensions();
+    }
+
+    public static com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserDimensions> PARSER = new com.google.protobuf.AbstractParser<UserDimensions>() {
+        @java.lang.Override
+        public UserDimensions parsePartialFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<UserDimensions> parser() {
+        return PARSER;
+    }
+
     @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
+    public com.google.protobuf.Parser<UserDimensions> getParserForType() {
+        return PARSER;
     }
 
     @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
+    public com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
     }
-
-
-    // @@protoc_insertion_point(builder_scope:google.events.firebase.analytics.v1.UserDimensions)
-  }
-
-  // @@protoc_insertion_point(class_scope:google.events.firebase.analytics.v1.UserDimensions)
-  private static final com.google.events.firebase.analytics.v1.UserDimensions DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new com.google.events.firebase.analytics.v1.UserDimensions();
-  }
-
-  public static com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<UserDimensions>
-      PARSER = new com.google.protobuf.AbstractParser<UserDimensions>() {
-    @java.lang.Override
-    public UserDimensions parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
-    }
-  };
-
-  public static com.google.protobuf.Parser<UserDimensions> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<UserDimensions> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.UserDimensions getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
 
 }
-

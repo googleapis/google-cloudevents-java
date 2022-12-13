@@ -10,192 +10,192 @@ package com.google.events.firebase.testlab.v1;
  *
  * Protobuf enum {@code google.events.firebase.testlab.v1.TestState}
  */
-public enum TestState
-    implements com.google.protobuf.ProtocolMessageEnum {
-  /**
-   * <pre>
-   * The default value. This value is used if the state is omitted.
-   * </pre>
-   *
-   * <code>TEST_STATE_UNSPECIFIED = 0;</code>
-   */
-  TEST_STATE_UNSPECIFIED(0),
-  /**
-   * <pre>
-   * The test matrix is being validated.
-   * </pre>
-   *
-   * <code>VALIDATING = 1;</code>
-   */
-  VALIDATING(1),
-  /**
-   * <pre>
-   * The test matrix is waiting for resources to become available.
-   * </pre>
-   *
-   * <code>PENDING = 2;</code>
-   */
-  PENDING(2),
-  /**
-   * <pre>
-   * The test matrix has completed normally.
-   * </pre>
-   *
-   * <code>FINISHED = 3;</code>
-   */
-  FINISHED(3),
-  /**
-   * <pre>
-   * The test matrix has completed because of an infrastructure failure.
-   * </pre>
-   *
-   * <code>ERROR = 4;</code>
-   */
-  ERROR(4),
-  /**
-   * <pre>
-   * The test matrix was not run because the provided inputs are not valid.
-   * </pre>
-   *
-   * <code>INVALID = 5;</code>
-   */
-  INVALID(5),
-  UNRECOGNIZED(-1),
-  ;
+public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * The default value. This value is used if the state is omitted.
+     * </pre>
+     *
+     * <code>TEST_STATE_UNSPECIFIED = 0;</code>
+     */
+    TEST_STATE_UNSPECIFIED(0),
+    /**
+     * <pre>
+     * The test matrix is being validated.
+     * </pre>
+     *
+     * <code>VALIDATING = 1;</code>
+     */
+    VALIDATING(1),
+    /**
+     * <pre>
+     * The test matrix is waiting for resources to become available.
+     * </pre>
+     *
+     * <code>PENDING = 2;</code>
+     */
+    PENDING(2),
+    /**
+     * <pre>
+     * The test matrix has completed normally.
+     * </pre>
+     *
+     * <code>FINISHED = 3;</code>
+     */
+    FINISHED(3),
+    /**
+     * <pre>
+     * The test matrix has completed because of an infrastructure failure.
+     * </pre>
+     *
+     * <code>ERROR = 4;</code>
+     */
+    ERROR(4),
+    /**
+     * <pre>
+     * The test matrix was not run because the provided inputs are not valid.
+     * </pre>
+     *
+     * <code>INVALID = 5;</code>
+     */
+    INVALID(5), UNRECOGNIZED(-1),;
 
-  /**
-   * <pre>
-   * The default value. This value is used if the state is omitted.
-   * </pre>
-   *
-   * <code>TEST_STATE_UNSPECIFIED = 0;</code>
-   */
-  public static final int TEST_STATE_UNSPECIFIED_VALUE = 0;
-  /**
-   * <pre>
-   * The test matrix is being validated.
-   * </pre>
-   *
-   * <code>VALIDATING = 1;</code>
-   */
-  public static final int VALIDATING_VALUE = 1;
-  /**
-   * <pre>
-   * The test matrix is waiting for resources to become available.
-   * </pre>
-   *
-   * <code>PENDING = 2;</code>
-   */
-  public static final int PENDING_VALUE = 2;
-  /**
-   * <pre>
-   * The test matrix has completed normally.
-   * </pre>
-   *
-   * <code>FINISHED = 3;</code>
-   */
-  public static final int FINISHED_VALUE = 3;
-  /**
-   * <pre>
-   * The test matrix has completed because of an infrastructure failure.
-   * </pre>
-   *
-   * <code>ERROR = 4;</code>
-   */
-  public static final int ERROR_VALUE = 4;
-  /**
-   * <pre>
-   * The test matrix was not run because the provided inputs are not valid.
-   * </pre>
-   *
-   * <code>INVALID = 5;</code>
-   */
-  public static final int INVALID_VALUE = 5;
+    /**
+     * <pre>
+     * The default value. This value is used if the state is omitted.
+     * </pre>
+     *
+     * <code>TEST_STATE_UNSPECIFIED = 0;</code>
+     */
+    public static final int TEST_STATE_UNSPECIFIED_VALUE = 0;
+    /**
+     * <pre>
+     * The test matrix is being validated.
+     * </pre>
+     *
+     * <code>VALIDATING = 1;</code>
+     */
+    public static final int VALIDATING_VALUE = 1;
+    /**
+     * <pre>
+     * The test matrix is waiting for resources to become available.
+     * </pre>
+     *
+     * <code>PENDING = 2;</code>
+     */
+    public static final int PENDING_VALUE = 2;
+    /**
+     * <pre>
+     * The test matrix has completed normally.
+     * </pre>
+     *
+     * <code>FINISHED = 3;</code>
+     */
+    public static final int FINISHED_VALUE = 3;
+    /**
+     * <pre>
+     * The test matrix has completed because of an infrastructure failure.
+     * </pre>
+     *
+     * <code>ERROR = 4;</code>
+     */
+    public static final int ERROR_VALUE = 4;
+    /**
+     * <pre>
+     * The test matrix was not run because the provided inputs are not valid.
+     * </pre>
+     *
+     * <code>INVALID = 5;</code>
+     */
+    public static final int INVALID_VALUE = 5;
 
-
-  public final int getNumber() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalArgumentException(
-          "Can't get the number of an unknown enum value.");
+    public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalArgumentException("Can't get the number of an unknown enum value.");
+        }
+        return value;
     }
-    return value;
-  }
 
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   * @deprecated Use {@link #forNumber(int)} instead.
-   */
-  @java.lang.Deprecated
-  public static TestState valueOf(int value) {
-    return forNumber(value);
-  }
-
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   */
-  public static TestState forNumber(int value) {
-    switch (value) {
-      case 0: return TEST_STATE_UNSPECIFIED;
-      case 1: return VALIDATING;
-      case 2: return PENDING;
-      case 3: return FINISHED;
-      case 4: return ERROR;
-      case 5: return INVALID;
-      default: return null;
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     *
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TestState valueOf(int value) {
+        return forNumber(value);
     }
-  }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<TestState>
-      internalGetValueMap() {
-    return internalValueMap;
-  }
-  private static final com.google.protobuf.Internal.EnumLiteMap<
-      TestState> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<TestState>() {
-          public TestState findValueByNumber(int number) {
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static TestState forNumber(int value) {
+        switch (value) {
+        case 0:
+            return TEST_STATE_UNSPECIFIED;
+        case 1:
+            return VALIDATING;
+        case 2:
+            return PENDING;
+        case 3:
+            return FINISHED;
+        case 4:
+            return ERROR;
+        case 5:
+            return INVALID;
+        default:
+            return null;
+        }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<TestState> internalGetValueMap() {
+        return internalValueMap;
+    }
+
+    private static final com.google.protobuf.Internal.EnumLiteMap<TestState> internalValueMap = new com.google.protobuf.Internal.EnumLiteMap<TestState>() {
+        public TestState findValueByNumber(int number) {
             return TestState.forNumber(number);
-          }
-        };
+        }
+    };
 
-  public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException("Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
     }
-    return getDescriptor().getValues().get(ordinal());
-  }
-  public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
-    return getDescriptor();
-  }
-  public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
-    return com.google.events.firebase.testlab.v1.Data.getDescriptor().getEnumTypes().get(0);
-  }
 
-  private static final TestState[] VALUES = values();
-
-  public static TestState valueOf(
-      com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-    if (desc.getType() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
-        "EnumValueDescriptor is not for this type.");
+    public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
     }
-    if (desc.getIndex() == -1) {
-      return UNRECOGNIZED;
+
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return com.google.events.firebase.testlab.v1.Data.getDescriptor().getEnumTypes().get(0);
     }
-    return VALUES[desc.getIndex()];
-  }
 
-  private final int value;
+    private static final TestState[] VALUES = values();
 
-  private TestState(int value) {
-    this.value = value;
-  }
+    public static TestState valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+            throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+            return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+    }
 
-  // @@protoc_insertion_point(enum_scope:google.events.firebase.testlab.v1.TestState)
+    private final int value;
+
+    private TestState(int value) {
+        this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:google.events.firebase.testlab.v1.TestState)
 }
-

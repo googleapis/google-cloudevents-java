@@ -1,126 +1,123 @@
+/*
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
 package com.google.events;
+
+import static com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.Feature.FEATURE_PROTO3_OPTIONAL;
 
 import com.google.protobuf.DescriptorProtos;
 import com.google.protobuf.Descriptors;
-import com.google.protobuf.Descriptors.Descriptor;
-import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse;
 import com.google.protobuf.compiler.PluginProtos.CodeGeneratorRequest;
+import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.time.Year;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.Velocity;
 import org.apache.velocity.app.VelocityEngine;
-import java.io.StringWriter;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.time.Year;
+import org.apache.velocity.runtime.RuntimeConstants;
+import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Plugin {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Plugin.class);
 
     public static void main(String[] args) throws IOException, Descriptors.DescriptorValidationException {
-        // Plugin receives a serialized CodeGeneratorRequest via stdin
+        // An encoded CodeGeneratorRequest is written to the plugin's stdin.
         CodeGeneratorRequest request = CodeGeneratorRequest.parseFrom(System.in);
-
-        // CodeGeneratorRequest contain FileDescriptorProtos for all the proto files we need to process
-        // as well as their dependencies. We want to convert the FileDescriptorProtos into FileDescriptor instances,
-        // since they are easier to work with. We will build a map that maps file names to the corresponding file
-        // descriptor.
+        LOGGER.debug("Plugin opt: " + request.getParameter());
+        // CodeGeneratorRequest contain FileDescriptorProtos for all the proto files and
+        // associated dependencies
+        // FileDescriptorProtos will be converted into FileDescriptor instances and
+        // mapped to file names
+        // https://cloud.google.com/java/docs/reference/protobuf/latest/com.google.protobuf.Descriptors.FileDescriptor
+        // Describes a .proto file, including everything defined within. That includes,
+        // in particular, descriptors for all the messages and file descriptors for all
+        // other imported .proto files (dependencies).
         Map<String, Descriptors.FileDescriptor> filesByName = new HashMap<>();
-
         for (DescriptorProtos.FileDescriptorProto fp : request.getProtoFileList()) {
-            // The dependencies of fp are provided as strings, we look them up in the map as we are generating it.
+            LOGGER.debug("Preprocessing FileDescriptorProto: " + fp.getName());
+            // The dependencies of fp are provided as strings, we look them up in the map as
+            // we are generating it.
             Descriptors.FileDescriptor dependencies[] = fp.getDependencyList().stream().map(filesByName::get)
                     .toArray(Descriptors.FileDescriptor[]::new);
-
+            LOGGER.debug(dependencies.toString());
             Descriptors.FileDescriptor fd = Descriptors.FileDescriptor.buildFrom(fp, dependencies);
+            LOGGER.debug("FileDescriptor: " + fd.toString());
             filesByName.put(fp.getName(), fd);
         }
 
-        // Building the response
-        // output to java files under test folder
-        // change file name to test file name
-        CodeGeneratorResponse.Builder response = CodeGeneratorResponse.newBuilder();
+        // The plugin writes an encoded CodeGeneratorResponse to stdout.
+        CodeGeneratorResponse.Builder response = CodeGeneratorResponse.newBuilder()
+                .setSupportedFeatures(FEATURE_PROTO3_OPTIONAL.getNumber());
+
+        // Process the .proto files that were explicitly listed on the command-line.
         for (String fileName : request.getFileToGenerateList()) {
-            if (!fileName.endsWith("data.proto")) { // Ignore 3P and non-data protos
-                continue;
-            }
-            Descriptors.FileDescriptor fd = filesByName.get(fileName);
-            for (Descriptors.Descriptor messageType : fd.getMessageTypes()) {
-                if (messageType.getName().endsWith("Data")) {
-                    response.addFileBuilder()
-                            .setName(fd.getFullName().replaceAll("data.proto", messageType.getName() + "Test.java"))
-                            .setContent(generateTestFile(fd, messageType));
-                    // .setName(fd.getFullName().replaceAll("\\.proto$", ".java"))
-                    // .setContent(generateFileContent(fd));
+            // Process only data.proto
+            // Ignore events.protos, cloudevent.protos, and named 3P protos
+            if (fileName.endsWith("data.proto")) {
+                Descriptors.FileDescriptor fd = filesByName.get(fileName);
+                for (Descriptors.Descriptor messageType : fd.getMessageTypes()) {
+                    // Process Top Level Messages ie message types ending in "Data"
+                    if (messageType.getName().endsWith("Data")) {
+                        LOGGER.info("Generating Test File for " + messageType.getName());
+                        // Generate file name and path
+                        // google/events/cloud/pubsub/v1/data.proto -->
+                        // google/events/cloud/pubsub/v1/MessagePublishedDataTest.java
+                        String name = "com/"
+                                + fd.getFullName().replaceAll("data.proto", messageType.getName() + "Test.java");
+                        // Generate test file
+                        String testFileContent = generateTestFile(fd, messageType, request.getParameter());
+                        response.addFileBuilder().setName(name).setContent(testFileContent);
+                    }
                 }
             }
         }
 
-        // Serialize the response to stdout
-        response.setSupportedFeatures((long) 1);
+        // Serializes the message and writes it to output.
         response.build().writeTo(System.out);
     }
 
-    private static String generateTestFile(Descriptors.FileDescriptor fd, Descriptors.Descriptor messageType) {
-        String inputTemplate = "./protoc-gen-java-snowpea/src/main/resources/classTemplate.vm";
+    private static String generateTestFile(Descriptors.FileDescriptor fd, Descriptors.Descriptor messageType,
+            String opts) {
         VelocityEngine velocityEngine = new VelocityEngine();
+        velocityEngine.setProperty(RuntimeConstants.RESOURCE_LOADERS, "classpath");
+        velocityEngine.setProperty("resource.loader.classpath.class", ClasspathResourceLoader.class.getName());
         velocityEngine.init();
-        VelocityContext context = new VelocityContext();
 
+        Template t = velocityEngine.getTemplate("classTemplate.vm");
         String packageName = fd.getPackage();
         String className = messageType.getName();
+
+        List<String> optList = Arrays.asList(opts.split("\\s*,\\s*"));
+
+        VelocityContext context = new VelocityContext();
         context.put("packageName", packageName);
         context.put("className", className);
         context.put("year", Year.now().getValue());
+        context.put("skip", optList.contains(className));
 
         StringWriter writer = new StringWriter();
-        Velocity.mergeTemplate(inputTemplate, "UTF-8", context, writer);
+        t.merge(context, writer);
 
         return writer.toString();
-    }
-
-    private static String generateFileContent(Descriptors.FileDescriptor fd) {
-        StringBuilder sb = new StringBuilder();
-        for (Descriptors.Descriptor messageType : fd.getMessageTypes()) {
-            generateMessage(sb, messageType, 0);
-        }
-        return sb.toString();
-    }
-
-    private static String renderType(Descriptors.FieldDescriptor fd) {
-        if (fd.isRepeated()) {
-            return "List<" + renderSingleType(fd) + ">";
-        } else {
-            return renderSingleType(fd);
-        }
-    }
-
-    private static String renderSingleType(Descriptors.FieldDescriptor fd) {
-        if (fd.getType() != Descriptors.FieldDescriptor.Type.MESSAGE) {
-            return fd.getType().toString();
-        } else {
-            return fd.getMessageType().getName();
-        }
-    }
-
-    private static void generateMessage(StringBuilder sb, Descriptors.Descriptor messageType, int indent) {
-        sb.append(String.join("", Collections.nCopies(indent, " ")));
-        sb.append("|- ");
-        sb.append(messageType.getName());
-        sb.append("(");
-
-        sb.append(String.join(", ", messageType.getFields().stream()
-                .map(field -> field.getName() + ": " + renderType(field)).collect(Collectors.joining(", "))));
-        sb.append(")");
-        sb.append(System.getProperty("line.separator"));
-
-        // recurse for nested messages.
-        sb.append(String.join("", Collections.nCopies(indent, " ")));
-        for (Descriptors.Descriptor nestedType : messageType.getNestedTypes()) {
-            generateMessage(sb, nestedType, indent + 3);
-        }
     }
 }

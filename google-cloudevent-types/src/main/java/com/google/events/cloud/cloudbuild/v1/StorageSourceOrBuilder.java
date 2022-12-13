@@ -4,61 +4,66 @@
 package com.google.events.cloud.cloudbuild.v1;
 
 public interface StorageSourceOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.cloudbuild.v1.StorageSource)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.cloudbuild.v1.StorageSource)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Google Cloud Storage bucket containing the source (see
-   * [Bucket Name
-   * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
-   * </pre>
-   *
-   * <code>string bucket = 1;</code>
-   * @return The bucket.
-   */
-  java.lang.String getBucket();
-  /**
-   * <pre>
-   * Google Cloud Storage bucket containing the source (see
-   * [Bucket Name
-   * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
-   * </pre>
-   *
-   * <code>string bucket = 1;</code>
-   * @return The bytes for bucket.
-   */
-  com.google.protobuf.ByteString
-      getBucketBytes();
+    /**
+     * <pre>
+     * Google Cloud Storage bucket containing the source (see
+     * [Bucket Name
+     * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
+     * </pre>
+     *
+     * <code>string bucket = 1;</code>
+     *
+     * @return The bucket.
+     */
+    java.lang.String getBucket();
 
-  /**
-   * <pre>
-   * Google Cloud Storage object containing the source.
-   * </pre>
-   *
-   * <code>string object = 2;</code>
-   * @return The object.
-   */
-  java.lang.String getObject();
-  /**
-   * <pre>
-   * Google Cloud Storage object containing the source.
-   * </pre>
-   *
-   * <code>string object = 2;</code>
-   * @return The bytes for object.
-   */
-  com.google.protobuf.ByteString
-      getObjectBytes();
+    /**
+     * <pre>
+     * Google Cloud Storage bucket containing the source (see
+     * [Bucket Name
+     * Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)).
+     * </pre>
+     *
+     * <code>string bucket = 1;</code>
+     *
+     * @return The bytes for bucket.
+     */
+    com.google.protobuf.ByteString getBucketBytes();
 
-  /**
-   * <pre>
-   * Google Cloud Storage generation for the object. If the generation is
-   * omitted, the latest generation will be used.
-   * </pre>
-   *
-   * <code>int64 generation = 3;</code>
-   * @return The generation.
-   */
-  long getGeneration();
+    /**
+     * <pre>
+     * Google Cloud Storage object containing the source.
+     * </pre>
+     *
+     * <code>string object = 2;</code>
+     *
+     * @return The object.
+     */
+    java.lang.String getObject();
+
+    /**
+     * <pre>
+     * Google Cloud Storage object containing the source.
+     * </pre>
+     *
+     * <code>string object = 2;</code>
+     *
+     * @return The bytes for object.
+     */
+    com.google.protobuf.ByteString getObjectBytes();
+
+    /**
+     * <pre>
+     * Google Cloud Storage generation for the object. If the generation is
+     * omitted, the latest generation will be used.
+     * </pre>
+     *
+     * <code>int64 generation = 3;</code>
+     *
+     * @return The generation.
+     */
+    long getGeneration();
 }

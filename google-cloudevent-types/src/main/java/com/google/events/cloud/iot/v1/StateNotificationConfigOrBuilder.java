@@ -4,28 +4,30 @@
 package com.google.events.cloud.iot.v1;
 
 public interface StateNotificationConfigOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.StateNotificationConfig)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.StateNotificationConfig)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * A Cloud Pub/Sub topic name. For example,
-   * `projects/myProject/topics/deviceEvents`.
-   * </pre>
-   *
-   * <code>string pubsub_topic_name = 1;</code>
-   * @return The pubsubTopicName.
-   */
-  java.lang.String getPubsubTopicName();
-  /**
-   * <pre>
-   * A Cloud Pub/Sub topic name. For example,
-   * `projects/myProject/topics/deviceEvents`.
-   * </pre>
-   *
-   * <code>string pubsub_topic_name = 1;</code>
-   * @return The bytes for pubsubTopicName.
-   */
-  com.google.protobuf.ByteString
-      getPubsubTopicNameBytes();
+    /**
+     * <pre>
+     * A Cloud Pub/Sub topic name. For example,
+     * `projects/myProject/topics/deviceEvents`.
+     * </pre>
+     *
+     * <code>string pubsub_topic_name = 1;</code>
+     *
+     * @return The pubsubTopicName.
+     */
+    java.lang.String getPubsubTopicName();
+
+    /**
+     * <pre>
+     * A Cloud Pub/Sub topic name. For example,
+     * `projects/myProject/topics/deviceEvents`.
+     * </pre>
+     *
+     * <code>string pubsub_topic_name = 1;</code>
+     *
+     * @return The bytes for pubsubTopicName.
+     */
+    com.google.protobuf.ByteString getPubsubTopicNameBytes();
 }

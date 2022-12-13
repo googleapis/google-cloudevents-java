@@ -4,35 +4,39 @@
 package com.google.events.cloud.iot.v1;
 
 public interface RegistryCredentialOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.RegistryCredential)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.RegistryCredential)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * A public key certificate used to verify the device credentials.
-   * </pre>
-   *
-   * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
-   * @return Whether the publicKeyCertificate field is set.
-   */
-  boolean hasPublicKeyCertificate();
-  /**
-   * <pre>
-   * A public key certificate used to verify the device credentials.
-   * </pre>
-   *
-   * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
-   * @return The publicKeyCertificate.
-   */
-  com.google.events.cloud.iot.v1.PublicKeyCertificate getPublicKeyCertificate();
-  /**
-   * <pre>
-   * A public key certificate used to verify the device credentials.
-   * </pre>
-   *
-   * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
-   */
-  com.google.events.cloud.iot.v1.PublicKeyCertificateOrBuilder getPublicKeyCertificateOrBuilder();
+    /**
+     * <pre>
+     * A public key certificate used to verify the device credentials.
+     * </pre>
+     *
+     * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
+     *
+     * @return Whether the publicKeyCertificate field is set.
+     */
+    boolean hasPublicKeyCertificate();
 
-  public com.google.events.cloud.iot.v1.RegistryCredential.CredentialCase getCredentialCase();
+    /**
+     * <pre>
+     * A public key certificate used to verify the device credentials.
+     * </pre>
+     *
+     * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
+     *
+     * @return The publicKeyCertificate.
+     */
+    com.google.events.cloud.iot.v1.PublicKeyCertificate getPublicKeyCertificate();
+
+    /**
+     * <pre>
+     * A public key certificate used to verify the device credentials.
+     * </pre>
+     *
+     * <code>.google.events.cloud.iot.v1.PublicKeyCertificate public_key_certificate = 1;</code>
+     */
+    com.google.events.cloud.iot.v1.PublicKeyCertificateOrBuilder getPublicKeyCertificateOrBuilder();
+
+    public com.google.events.cloud.iot.v1.RegistryCredential.CredentialCase getCredentialCase();
 }

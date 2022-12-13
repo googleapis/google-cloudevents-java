@@ -4,657 +4,719 @@
 package com.google.events.cloud.storage.v1;
 
 public interface StorageObjectDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.storage.v1.StorageObjectData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.storage.v1.StorageObjectData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Content-Encoding of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.2.2][RFC 7231 §3.1.2.2]
-   * </pre>
-   *
-   * <code>string content_encoding = 1;</code>
-   * @return The contentEncoding.
-   */
-  java.lang.String getContentEncoding();
-  /**
-   * <pre>
-   * Content-Encoding of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.2.2][RFC 7231 §3.1.2.2]
-   * </pre>
-   *
-   * <code>string content_encoding = 1;</code>
-   * @return The bytes for contentEncoding.
-   */
-  com.google.protobuf.ByteString
-      getContentEncodingBytes();
+    /**
+     * <pre>
+     * Content-Encoding of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.2.2][RFC 7231 §3.1.2.2]
+     * </pre>
+     *
+     * <code>string content_encoding = 1;</code>
+     *
+     * @return The contentEncoding.
+     */
+    java.lang.String getContentEncoding();
 
-  /**
-   * <pre>
-   * Content-Disposition of the object data, matching
-   * [https://tools.ietf.org/html/rfc6266][RFC 6266].
-   * </pre>
-   *
-   * <code>string content_disposition = 2;</code>
-   * @return The contentDisposition.
-   */
-  java.lang.String getContentDisposition();
-  /**
-   * <pre>
-   * Content-Disposition of the object data, matching
-   * [https://tools.ietf.org/html/rfc6266][RFC 6266].
-   * </pre>
-   *
-   * <code>string content_disposition = 2;</code>
-   * @return The bytes for contentDisposition.
-   */
-  com.google.protobuf.ByteString
-      getContentDispositionBytes();
+    /**
+     * <pre>
+     * Content-Encoding of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.2.2][RFC 7231 §3.1.2.2]
+     * </pre>
+     *
+     * <code>string content_encoding = 1;</code>
+     *
+     * @return The bytes for contentEncoding.
+     */
+    com.google.protobuf.ByteString getContentEncodingBytes();
 
-  /**
-   * <pre>
-   * Cache-Control directive for the object data, matching
-   * [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
-   * </pre>
-   *
-   * <code>string cache_control = 3;</code>
-   * @return The cacheControl.
-   */
-  java.lang.String getCacheControl();
-  /**
-   * <pre>
-   * Cache-Control directive for the object data, matching
-   * [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
-   * </pre>
-   *
-   * <code>string cache_control = 3;</code>
-   * @return The bytes for cacheControl.
-   */
-  com.google.protobuf.ByteString
-      getCacheControlBytes();
+    /**
+     * <pre>
+     * Content-Disposition of the object data, matching
+     * [https://tools.ietf.org/html/rfc6266][RFC 6266].
+     * </pre>
+     *
+     * <code>string content_disposition = 2;</code>
+     *
+     * @return The contentDisposition.
+     */
+    java.lang.String getContentDisposition();
 
-  /**
-   * <pre>
-   * Content-Language of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
-   * </pre>
-   *
-   * <code>string content_language = 5;</code>
-   * @return The contentLanguage.
-   */
-  java.lang.String getContentLanguage();
-  /**
-   * <pre>
-   * Content-Language of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
-   * </pre>
-   *
-   * <code>string content_language = 5;</code>
-   * @return The bytes for contentLanguage.
-   */
-  com.google.protobuf.ByteString
-      getContentLanguageBytes();
+    /**
+     * <pre>
+     * Content-Disposition of the object data, matching
+     * [https://tools.ietf.org/html/rfc6266][RFC 6266].
+     * </pre>
+     *
+     * <code>string content_disposition = 2;</code>
+     *
+     * @return The bytes for contentDisposition.
+     */
+    com.google.protobuf.ByteString getContentDispositionBytes();
 
-  /**
-   * <pre>
-   * The version of the metadata for this object at this generation. Used for
-   * preconditions and for detecting changes in metadata. A metageneration
-   * number is only meaningful in the context of a particular generation of a
-   * particular object.
-   * </pre>
-   *
-   * <code>int64 metageneration = 6;</code>
-   * @return The metageneration.
-   */
-  long getMetageneration();
+    /**
+     * <pre>
+     * Cache-Control directive for the object data, matching
+     * [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
+     * </pre>
+     *
+     * <code>string cache_control = 3;</code>
+     *
+     * @return The cacheControl.
+     */
+    java.lang.String getCacheControl();
 
-  /**
-   * <pre>
-   * The deletion time of the object. Will be returned if and only if this
-   * version of the object has been deleted.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
-   * @return Whether the timeDeleted field is set.
-   */
-  boolean hasTimeDeleted();
-  /**
-   * <pre>
-   * The deletion time of the object. Will be returned if and only if this
-   * version of the object has been deleted.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
-   * @return The timeDeleted.
-   */
-  com.google.protobuf.Timestamp getTimeDeleted();
-  /**
-   * <pre>
-   * The deletion time of the object. Will be returned if and only if this
-   * version of the object has been deleted.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
-   */
-  com.google.protobuf.TimestampOrBuilder getTimeDeletedOrBuilder();
+    /**
+     * <pre>
+     * Cache-Control directive for the object data, matching
+     * [https://tools.ietf.org/html/rfc7234#section-5.2"][RFC 7234 §5.2].
+     * </pre>
+     *
+     * <code>string cache_control = 3;</code>
+     *
+     * @return The bytes for cacheControl.
+     */
+    com.google.protobuf.ByteString getCacheControlBytes();
 
-  /**
-   * <pre>
-   * Content-Type of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.1.5][RFC 7231 §3.1.1.5].
-   * If an object is stored without a Content-Type, it is served as
-   * `application/octet-stream`.
-   * </pre>
-   *
-   * <code>string content_type = 8;</code>
-   * @return The contentType.
-   */
-  java.lang.String getContentType();
-  /**
-   * <pre>
-   * Content-Type of the object data, matching
-   * [https://tools.ietf.org/html/rfc7231#section-3.1.1.5][RFC 7231 §3.1.1.5].
-   * If an object is stored without a Content-Type, it is served as
-   * `application/octet-stream`.
-   * </pre>
-   *
-   * <code>string content_type = 8;</code>
-   * @return The bytes for contentType.
-   */
-  com.google.protobuf.ByteString
-      getContentTypeBytes();
+    /**
+     * <pre>
+     * Content-Language of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
+     * </pre>
+     *
+     * <code>string content_language = 5;</code>
+     *
+     * @return The contentLanguage.
+     */
+    java.lang.String getContentLanguage();
 
-  /**
-   * <pre>
-   * Content-Length of the object data in bytes, matching
-   * [https://tools.ietf.org/html/rfc7230#section-3.3.2][RFC 7230 §3.3.2].
-   * </pre>
-   *
-   * <code>int64 size = 9;</code>
-   * @return The size.
-   */
-  long getSize();
+    /**
+     * <pre>
+     * Content-Language of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.3.2][RFC 7231 §3.1.3.2].
+     * </pre>
+     *
+     * <code>string content_language = 5;</code>
+     *
+     * @return The bytes for contentLanguage.
+     */
+    com.google.protobuf.ByteString getContentLanguageBytes();
 
-  /**
-   * <pre>
-   * The creation time of the object.
-   * Attempting to set this field will result in an error.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_created = 10;</code>
-   * @return Whether the timeCreated field is set.
-   */
-  boolean hasTimeCreated();
-  /**
-   * <pre>
-   * The creation time of the object.
-   * Attempting to set this field will result in an error.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_created = 10;</code>
-   * @return The timeCreated.
-   */
-  com.google.protobuf.Timestamp getTimeCreated();
-  /**
-   * <pre>
-   * The creation time of the object.
-   * Attempting to set this field will result in an error.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_created = 10;</code>
-   */
-  com.google.protobuf.TimestampOrBuilder getTimeCreatedOrBuilder();
+    /**
+     * <pre>
+     * The version of the metadata for this object at this generation. Used for
+     * preconditions and for detecting changes in metadata. A metageneration
+     * number is only meaningful in the context of a particular generation of a
+     * particular object.
+     * </pre>
+     *
+     * <code>int64 metageneration = 6;</code>
+     *
+     * @return The metageneration.
+     */
+    long getMetageneration();
 
-  /**
-   * <pre>
-   * CRC32c checksum. For more information about using the CRC32c
-   * checksum, see
-   * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
-   * ETags: Best Practices].
-   * </pre>
-   *
-   * <code>string crc32c = 11;</code>
-   * @return The crc32c.
-   */
-  java.lang.String getCrc32C();
-  /**
-   * <pre>
-   * CRC32c checksum. For more information about using the CRC32c
-   * checksum, see
-   * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
-   * ETags: Best Practices].
-   * </pre>
-   *
-   * <code>string crc32c = 11;</code>
-   * @return The bytes for crc32c.
-   */
-  com.google.protobuf.ByteString
-      getCrc32CBytes();
+    /**
+     * <pre>
+     * The deletion time of the object. Will be returned if and only if this
+     * version of the object has been deleted.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
+     *
+     * @return Whether the timeDeleted field is set.
+     */
+    boolean hasTimeDeleted();
 
-  /**
-   * <pre>
-   * Number of underlying components that make up this object. Components are
-   * accumulated by compose operations.
-   * Attempting to set this field will result in an error.
-   * </pre>
-   *
-   * <code>int32 component_count = 12;</code>
-   * @return The componentCount.
-   */
-  int getComponentCount();
+    /**
+     * <pre>
+     * The deletion time of the object. Will be returned if and only if this
+     * version of the object has been deleted.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
+     *
+     * @return The timeDeleted.
+     */
+    com.google.protobuf.Timestamp getTimeDeleted();
 
-  /**
-   * <pre>
-   * MD5 hash of the data; encoded using base64 as per
-   * [https://tools.ietf.org/html/rfc4648#section-4][RFC 4648 §4]. For more
-   * information about using the MD5 hash, see
-   * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
-   * ETags: Best Practices].
-   * </pre>
-   *
-   * <code>string md5_hash = 13;</code>
-   * @return The md5Hash.
-   */
-  java.lang.String getMd5Hash();
-  /**
-   * <pre>
-   * MD5 hash of the data; encoded using base64 as per
-   * [https://tools.ietf.org/html/rfc4648#section-4][RFC 4648 §4]. For more
-   * information about using the MD5 hash, see
-   * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
-   * ETags: Best Practices].
-   * </pre>
-   *
-   * <code>string md5_hash = 13;</code>
-   * @return The bytes for md5Hash.
-   */
-  com.google.protobuf.ByteString
-      getMd5HashBytes();
+    /**
+     * <pre>
+     * The deletion time of the object. Will be returned if and only if this
+     * version of the object has been deleted.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_deleted = 7;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getTimeDeletedOrBuilder();
 
-  /**
-   * <pre>
-   * HTTP 1.1 Entity tag for the object. See
-   * [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
-   * </pre>
-   *
-   * <code>string etag = 14;</code>
-   * @return The etag.
-   */
-  java.lang.String getEtag();
-  /**
-   * <pre>
-   * HTTP 1.1 Entity tag for the object. See
-   * [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
-   * </pre>
-   *
-   * <code>string etag = 14;</code>
-   * @return The bytes for etag.
-   */
-  com.google.protobuf.ByteString
-      getEtagBytes();
+    /**
+     * <pre>
+     * Content-Type of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.1.5][RFC 7231 §3.1.1.5].
+     * If an object is stored without a Content-Type, it is served as
+     * `application/octet-stream`.
+     * </pre>
+     *
+     * <code>string content_type = 8;</code>
+     *
+     * @return The contentType.
+     */
+    java.lang.String getContentType();
 
-  /**
-   * <pre>
-   * The modification time of the object metadata.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp updated = 15;</code>
-   * @return Whether the updated field is set.
-   */
-  boolean hasUpdated();
-  /**
-   * <pre>
-   * The modification time of the object metadata.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp updated = 15;</code>
-   * @return The updated.
-   */
-  com.google.protobuf.Timestamp getUpdated();
-  /**
-   * <pre>
-   * The modification time of the object metadata.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp updated = 15;</code>
-   */
-  com.google.protobuf.TimestampOrBuilder getUpdatedOrBuilder();
+    /**
+     * <pre>
+     * Content-Type of the object data, matching
+     * [https://tools.ietf.org/html/rfc7231#section-3.1.1.5][RFC 7231 §3.1.1.5].
+     * If an object is stored without a Content-Type, it is served as
+     * `application/octet-stream`.
+     * </pre>
+     *
+     * <code>string content_type = 8;</code>
+     *
+     * @return The bytes for contentType.
+     */
+    com.google.protobuf.ByteString getContentTypeBytes();
 
-  /**
-   * <pre>
-   * Storage class of the object.
-   * </pre>
-   *
-   * <code>string storage_class = 16;</code>
-   * @return The storageClass.
-   */
-  java.lang.String getStorageClass();
-  /**
-   * <pre>
-   * Storage class of the object.
-   * </pre>
-   *
-   * <code>string storage_class = 16;</code>
-   * @return The bytes for storageClass.
-   */
-  com.google.protobuf.ByteString
-      getStorageClassBytes();
+    /**
+     * <pre>
+     * Content-Length of the object data in bytes, matching
+     * [https://tools.ietf.org/html/rfc7230#section-3.3.2][RFC 7230 §3.3.2].
+     * </pre>
+     *
+     * <code>int64 size = 9;</code>
+     *
+     * @return The size.
+     */
+    long getSize();
 
-  /**
-   * <pre>
-   * Cloud KMS Key used to encrypt this object, if the object is encrypted by
-   * such a key.
-   * </pre>
-   *
-   * <code>string kms_key_name = 17;</code>
-   * @return The kmsKeyName.
-   */
-  java.lang.String getKmsKeyName();
-  /**
-   * <pre>
-   * Cloud KMS Key used to encrypt this object, if the object is encrypted by
-   * such a key.
-   * </pre>
-   *
-   * <code>string kms_key_name = 17;</code>
-   * @return The bytes for kmsKeyName.
-   */
-  com.google.protobuf.ByteString
-      getKmsKeyNameBytes();
+    /**
+     * <pre>
+     * The creation time of the object.
+     * Attempting to set this field will result in an error.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_created = 10;</code>
+     *
+     * @return Whether the timeCreated field is set.
+     */
+    boolean hasTimeCreated();
 
-  /**
-   * <pre>
-   * The time at which the object's storage class was last changed.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
-   * @return Whether the timeStorageClassUpdated field is set.
-   */
-  boolean hasTimeStorageClassUpdated();
-  /**
-   * <pre>
-   * The time at which the object's storage class was last changed.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
-   * @return The timeStorageClassUpdated.
-   */
-  com.google.protobuf.Timestamp getTimeStorageClassUpdated();
-  /**
-   * <pre>
-   * The time at which the object's storage class was last changed.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
-   */
-  com.google.protobuf.TimestampOrBuilder getTimeStorageClassUpdatedOrBuilder();
+    /**
+     * <pre>
+     * The creation time of the object.
+     * Attempting to set this field will result in an error.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_created = 10;</code>
+     *
+     * @return The timeCreated.
+     */
+    com.google.protobuf.Timestamp getTimeCreated();
 
-  /**
-   * <pre>
-   * Whether an object is under temporary hold.
-   * </pre>
-   *
-   * <code>bool temporary_hold = 19;</code>
-   * @return The temporaryHold.
-   */
-  boolean getTemporaryHold();
+    /**
+     * <pre>
+     * The creation time of the object.
+     * Attempting to set this field will result in an error.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_created = 10;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getTimeCreatedOrBuilder();
 
-  /**
-   * <pre>
-   * A server-determined value that specifies the earliest time that the
-   * object's retention period expires.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
-   * @return Whether the retentionExpirationTime field is set.
-   */
-  boolean hasRetentionExpirationTime();
-  /**
-   * <pre>
-   * A server-determined value that specifies the earliest time that the
-   * object's retention period expires.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
-   * @return The retentionExpirationTime.
-   */
-  com.google.protobuf.Timestamp getRetentionExpirationTime();
-  /**
-   * <pre>
-   * A server-determined value that specifies the earliest time that the
-   * object's retention period expires.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
-   */
-  com.google.protobuf.TimestampOrBuilder getRetentionExpirationTimeOrBuilder();
+    /**
+     * <pre>
+     * CRC32c checksum. For more information about using the CRC32c
+     * checksum, see
+     * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
+     * ETags: Best Practices].
+     * </pre>
+     *
+     * <code>string crc32c = 11;</code>
+     *
+     * @return The crc32c.
+     */
+    java.lang.String getCrc32C();
 
-  /**
-   * <pre>
-   * User-provided metadata, in key/value pairs.
-   * </pre>
-   *
-   * <code>map&lt;string, string&gt; metadata = 21;</code>
-   */
-  int getMetadataCount();
-  /**
-   * <pre>
-   * User-provided metadata, in key/value pairs.
-   * </pre>
-   *
-   * <code>map&lt;string, string&gt; metadata = 21;</code>
-   */
-  boolean containsMetadata(
-      java.lang.String key);
-  /**
-   * Use {@link #getMetadataMap()} instead.
-   */
-  @java.lang.Deprecated
-  java.util.Map<java.lang.String, java.lang.String>
-  getMetadata();
-  /**
-   * <pre>
-   * User-provided metadata, in key/value pairs.
-   * </pre>
-   *
-   * <code>map&lt;string, string&gt; metadata = 21;</code>
-   */
-  java.util.Map<java.lang.String, java.lang.String>
-  getMetadataMap();
-  /**
-   * <pre>
-   * User-provided metadata, in key/value pairs.
-   * </pre>
-   *
-   * <code>map&lt;string, string&gt; metadata = 21;</code>
-   */
+    /**
+     * <pre>
+     * CRC32c checksum. For more information about using the CRC32c
+     * checksum, see
+     * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
+     * ETags: Best Practices].
+     * </pre>
+     *
+     * <code>string crc32c = 11;</code>
+     *
+     * @return The bytes for crc32c.
+     */
+    com.google.protobuf.ByteString getCrc32CBytes();
 
-  /* nullable */
-java.lang.String getMetadataOrDefault(
-      java.lang.String key,
-      /* nullable */
-java.lang.String defaultValue);
-  /**
-   * <pre>
-   * User-provided metadata, in key/value pairs.
-   * </pre>
-   *
-   * <code>map&lt;string, string&gt; metadata = 21;</code>
-   */
+    /**
+     * <pre>
+     * Number of underlying components that make up this object. Components are
+     * accumulated by compose operations.
+     * Attempting to set this field will result in an error.
+     * </pre>
+     *
+     * <code>int32 component_count = 12;</code>
+     *
+     * @return The componentCount.
+     */
+    int getComponentCount();
 
-  java.lang.String getMetadataOrThrow(
-      java.lang.String key);
+    /**
+     * <pre>
+     * MD5 hash of the data; encoded using base64 as per
+     * [https://tools.ietf.org/html/rfc4648#section-4][RFC 4648 §4]. For more
+     * information about using the MD5 hash, see
+     * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
+     * ETags: Best Practices].
+     * </pre>
+     *
+     * <code>string md5_hash = 13;</code>
+     *
+     * @return The md5Hash.
+     */
+    java.lang.String getMd5Hash();
 
-  /**
-   * <pre>
-   * Whether an object is under event-based hold.
-   * </pre>
-   *
-   * <code>bool event_based_hold = 29;</code>
-   * @return The eventBasedHold.
-   */
-  boolean getEventBasedHold();
+    /**
+     * <pre>
+     * MD5 hash of the data; encoded using base64 as per
+     * [https://tools.ietf.org/html/rfc4648#section-4][RFC 4648 §4]. For more
+     * information about using the MD5 hash, see
+     * [https://cloud.google.com/storage/docs/hashes-etags#_JSONAPI][Hashes and
+     * ETags: Best Practices].
+     * </pre>
+     *
+     * <code>string md5_hash = 13;</code>
+     *
+     * @return The bytes for md5Hash.
+     */
+    com.google.protobuf.ByteString getMd5HashBytes();
 
-  /**
-   * <pre>
-   * The name of the object.
-   * </pre>
-   *
-   * <code>string name = 23;</code>
-   * @return The name.
-   */
-  java.lang.String getName();
-  /**
-   * <pre>
-   * The name of the object.
-   * </pre>
-   *
-   * <code>string name = 23;</code>
-   * @return The bytes for name.
-   */
-  com.google.protobuf.ByteString
-      getNameBytes();
+    /**
+     * <pre>
+     * HTTP 1.1 Entity tag for the object. See
+     * [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
+     * </pre>
+     *
+     * <code>string etag = 14;</code>
+     *
+     * @return The etag.
+     */
+    java.lang.String getEtag();
 
-  /**
-   * <pre>
-   * The ID of the object, including the bucket name, object name, and
-   * generation number.
-   * </pre>
-   *
-   * <code>string id = 24;</code>
-   * @return The id.
-   */
-  java.lang.String getId();
-  /**
-   * <pre>
-   * The ID of the object, including the bucket name, object name, and
-   * generation number.
-   * </pre>
-   *
-   * <code>string id = 24;</code>
-   * @return The bytes for id.
-   */
-  com.google.protobuf.ByteString
-      getIdBytes();
+    /**
+     * <pre>
+     * HTTP 1.1 Entity tag for the object. See
+     * [https://tools.ietf.org/html/rfc7232#section-2.3][RFC 7232 §2.3].
+     * </pre>
+     *
+     * <code>string etag = 14;</code>
+     *
+     * @return The bytes for etag.
+     */
+    com.google.protobuf.ByteString getEtagBytes();
 
-  /**
-   * <pre>
-   * The name of the bucket containing this object.
-   * </pre>
-   *
-   * <code>string bucket = 25;</code>
-   * @return The bucket.
-   */
-  java.lang.String getBucket();
-  /**
-   * <pre>
-   * The name of the bucket containing this object.
-   * </pre>
-   *
-   * <code>string bucket = 25;</code>
-   * @return The bytes for bucket.
-   */
-  com.google.protobuf.ByteString
-      getBucketBytes();
+    /**
+     * <pre>
+     * The modification time of the object metadata.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp updated = 15;</code>
+     *
+     * @return Whether the updated field is set.
+     */
+    boolean hasUpdated();
 
-  /**
-   * <pre>
-   * The content generation of this object. Used for object versioning.
-   * Attempting to set this field will result in an error.
-   * </pre>
-   *
-   * <code>int64 generation = 26;</code>
-   * @return The generation.
-   */
-  long getGeneration();
+    /**
+     * <pre>
+     * The modification time of the object metadata.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp updated = 15;</code>
+     *
+     * @return The updated.
+     */
+    com.google.protobuf.Timestamp getUpdated();
 
-  /**
-   * <pre>
-   * Metadata of customer-supplied encryption key, if the object is encrypted by
-   * such a key.
-   * </pre>
-   *
-   * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
-   * @return Whether the customerEncryption field is set.
-   */
-  boolean hasCustomerEncryption();
-  /**
-   * <pre>
-   * Metadata of customer-supplied encryption key, if the object is encrypted by
-   * such a key.
-   * </pre>
-   *
-   * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
-   * @return The customerEncryption.
-   */
-  com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption getCustomerEncryption();
-  /**
-   * <pre>
-   * Metadata of customer-supplied encryption key, if the object is encrypted by
-   * such a key.
-   * </pre>
-   *
-   * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
-   */
-  com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryptionOrBuilder getCustomerEncryptionOrBuilder();
+    /**
+     * <pre>
+     * The modification time of the object metadata.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp updated = 15;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getUpdatedOrBuilder();
 
-  /**
-   * <pre>
-   * Media download link.
-   * </pre>
-   *
-   * <code>string media_link = 100;</code>
-   * @return The mediaLink.
-   */
-  java.lang.String getMediaLink();
-  /**
-   * <pre>
-   * Media download link.
-   * </pre>
-   *
-   * <code>string media_link = 100;</code>
-   * @return The bytes for mediaLink.
-   */
-  com.google.protobuf.ByteString
-      getMediaLinkBytes();
+    /**
+     * <pre>
+     * Storage class of the object.
+     * </pre>
+     *
+     * <code>string storage_class = 16;</code>
+     *
+     * @return The storageClass.
+     */
+    java.lang.String getStorageClass();
 
-  /**
-   * <pre>
-   * The link to this object.
-   * </pre>
-   *
-   * <code>string self_link = 101;</code>
-   * @return The selfLink.
-   */
-  java.lang.String getSelfLink();
-  /**
-   * <pre>
-   * The link to this object.
-   * </pre>
-   *
-   * <code>string self_link = 101;</code>
-   * @return The bytes for selfLink.
-   */
-  com.google.protobuf.ByteString
-      getSelfLinkBytes();
+    /**
+     * <pre>
+     * Storage class of the object.
+     * </pre>
+     *
+     * <code>string storage_class = 16;</code>
+     *
+     * @return The bytes for storageClass.
+     */
+    com.google.protobuf.ByteString getStorageClassBytes();
 
-  /**
-   * <pre>
-   * The kind of item this is. For objects, this is always "storage#object".
-   * </pre>
-   *
-   * <code>string kind = 102;</code>
-   * @return The kind.
-   */
-  java.lang.String getKind();
-  /**
-   * <pre>
-   * The kind of item this is. For objects, this is always "storage#object".
-   * </pre>
-   *
-   * <code>string kind = 102;</code>
-   * @return The bytes for kind.
-   */
-  com.google.protobuf.ByteString
-      getKindBytes();
+    /**
+     * <pre>
+     * Cloud KMS Key used to encrypt this object, if the object is encrypted by
+     * such a key.
+     * </pre>
+     *
+     * <code>string kms_key_name = 17;</code>
+     *
+     * @return The kmsKeyName.
+     */
+    java.lang.String getKmsKeyName();
+
+    /**
+     * <pre>
+     * Cloud KMS Key used to encrypt this object, if the object is encrypted by
+     * such a key.
+     * </pre>
+     *
+     * <code>string kms_key_name = 17;</code>
+     *
+     * @return The bytes for kmsKeyName.
+     */
+    com.google.protobuf.ByteString getKmsKeyNameBytes();
+
+    /**
+     * <pre>
+     * The time at which the object's storage class was last changed.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
+     *
+     * @return Whether the timeStorageClassUpdated field is set.
+     */
+    boolean hasTimeStorageClassUpdated();
+
+    /**
+     * <pre>
+     * The time at which the object's storage class was last changed.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
+     *
+     * @return The timeStorageClassUpdated.
+     */
+    com.google.protobuf.Timestamp getTimeStorageClassUpdated();
+
+    /**
+     * <pre>
+     * The time at which the object's storage class was last changed.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp time_storage_class_updated = 18;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getTimeStorageClassUpdatedOrBuilder();
+
+    /**
+     * <pre>
+     * Whether an object is under temporary hold.
+     * </pre>
+     *
+     * <code>bool temporary_hold = 19;</code>
+     *
+     * @return The temporaryHold.
+     */
+    boolean getTemporaryHold();
+
+    /**
+     * <pre>
+     * A server-determined value that specifies the earliest time that the
+     * object's retention period expires.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
+     *
+     * @return Whether the retentionExpirationTime field is set.
+     */
+    boolean hasRetentionExpirationTime();
+
+    /**
+     * <pre>
+     * A server-determined value that specifies the earliest time that the
+     * object's retention period expires.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
+     *
+     * @return The retentionExpirationTime.
+     */
+    com.google.protobuf.Timestamp getRetentionExpirationTime();
+
+    /**
+     * <pre>
+     * A server-determined value that specifies the earliest time that the
+     * object's retention period expires.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp retention_expiration_time = 20;</code>
+     */
+    com.google.protobuf.TimestampOrBuilder getRetentionExpirationTimeOrBuilder();
+
+    /**
+     * <pre>
+     * User-provided metadata, in key/value pairs.
+     * </pre>
+     *
+     * <code>map&lt;string, string&gt; metadata = 21;</code>
+     */
+    int getMetadataCount();
+
+    /**
+     * <pre>
+     * User-provided metadata, in key/value pairs.
+     * </pre>
+     *
+     * <code>map&lt;string, string&gt; metadata = 21;</code>
+     */
+    boolean containsMetadata(java.lang.String key);
+
+    /**
+     * Use {@link #getMetadataMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.String, java.lang.String> getMetadata();
+
+    /**
+     * <pre>
+     * User-provided metadata, in key/value pairs.
+     * </pre>
+     *
+     * <code>map&lt;string, string&gt; metadata = 21;</code>
+     */
+    java.util.Map<java.lang.String, java.lang.String> getMetadataMap();
+
+    /**
+     * <pre>
+     * User-provided metadata, in key/value pairs.
+     * </pre>
+     *
+     * <code>map&lt;string, string&gt; metadata = 21;</code>
+     */
+
+    /* nullable */
+    java.lang.String getMetadataOrDefault(java.lang.String key,
+            /* nullable */
+            java.lang.String defaultValue);
+
+    /**
+     * <pre>
+     * User-provided metadata, in key/value pairs.
+     * </pre>
+     *
+     * <code>map&lt;string, string&gt; metadata = 21;</code>
+     */
+
+    java.lang.String getMetadataOrThrow(java.lang.String key);
+
+    /**
+     * <pre>
+     * Whether an object is under event-based hold.
+     * </pre>
+     *
+     * <code>bool event_based_hold = 29;</code>
+     *
+     * @return The eventBasedHold.
+     */
+    boolean getEventBasedHold();
+
+    /**
+     * <pre>
+     * The name of the object.
+     * </pre>
+     *
+     * <code>string name = 23;</code>
+     *
+     * @return The name.
+     */
+    java.lang.String getName();
+
+    /**
+     * <pre>
+     * The name of the object.
+     * </pre>
+     *
+     * <code>string name = 23;</code>
+     *
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString getNameBytes();
+
+    /**
+     * <pre>
+     * The ID of the object, including the bucket name, object name, and
+     * generation number.
+     * </pre>
+     *
+     * <code>string id = 24;</code>
+     *
+     * @return The id.
+     */
+    java.lang.String getId();
+
+    /**
+     * <pre>
+     * The ID of the object, including the bucket name, object name, and
+     * generation number.
+     * </pre>
+     *
+     * <code>string id = 24;</code>
+     *
+     * @return The bytes for id.
+     */
+    com.google.protobuf.ByteString getIdBytes();
+
+    /**
+     * <pre>
+     * The name of the bucket containing this object.
+     * </pre>
+     *
+     * <code>string bucket = 25;</code>
+     *
+     * @return The bucket.
+     */
+    java.lang.String getBucket();
+
+    /**
+     * <pre>
+     * The name of the bucket containing this object.
+     * </pre>
+     *
+     * <code>string bucket = 25;</code>
+     *
+     * @return The bytes for bucket.
+     */
+    com.google.protobuf.ByteString getBucketBytes();
+
+    /**
+     * <pre>
+     * The content generation of this object. Used for object versioning.
+     * Attempting to set this field will result in an error.
+     * </pre>
+     *
+     * <code>int64 generation = 26;</code>
+     *
+     * @return The generation.
+     */
+    long getGeneration();
+
+    /**
+     * <pre>
+     * Metadata of customer-supplied encryption key, if the object is encrypted by
+     * such a key.
+     * </pre>
+     *
+     * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
+     *
+     * @return Whether the customerEncryption field is set.
+     */
+    boolean hasCustomerEncryption();
+
+    /**
+     * <pre>
+     * Metadata of customer-supplied encryption key, if the object is encrypted by
+     * such a key.
+     * </pre>
+     *
+     * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
+     *
+     * @return The customerEncryption.
+     */
+    com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption getCustomerEncryption();
+
+    /**
+     * <pre>
+     * Metadata of customer-supplied encryption key, if the object is encrypted by
+     * such a key.
+     * </pre>
+     *
+     * <code>.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption customer_encryption = 28;</code>
+     */
+    com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryptionOrBuilder getCustomerEncryptionOrBuilder();
+
+    /**
+     * <pre>
+     * Media download link.
+     * </pre>
+     *
+     * <code>string media_link = 100;</code>
+     *
+     * @return The mediaLink.
+     */
+    java.lang.String getMediaLink();
+
+    /**
+     * <pre>
+     * Media download link.
+     * </pre>
+     *
+     * <code>string media_link = 100;</code>
+     *
+     * @return The bytes for mediaLink.
+     */
+    com.google.protobuf.ByteString getMediaLinkBytes();
+
+    /**
+     * <pre>
+     * The link to this object.
+     * </pre>
+     *
+     * <code>string self_link = 101;</code>
+     *
+     * @return The selfLink.
+     */
+    java.lang.String getSelfLink();
+
+    /**
+     * <pre>
+     * The link to this object.
+     * </pre>
+     *
+     * <code>string self_link = 101;</code>
+     *
+     * @return The bytes for selfLink.
+     */
+    com.google.protobuf.ByteString getSelfLinkBytes();
+
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     *
+     * @return The kind.
+     */
+    java.lang.String getKind();
+
+    /**
+     * <pre>
+     * The kind of item this is. For objects, this is always "storage#object".
+     * </pre>
+     *
+     * <code>string kind = 102;</code>
+     *
+     * @return The bytes for kind.
+     */
+    com.google.protobuf.ByteString getKindBytes();
 }

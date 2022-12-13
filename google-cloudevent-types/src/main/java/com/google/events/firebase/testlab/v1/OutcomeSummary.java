@@ -10,189 +10,188 @@ package com.google.events.firebase.testlab.v1;
  *
  * Protobuf enum {@code google.events.firebase.testlab.v1.OutcomeSummary}
  */
-public enum OutcomeSummary
-    implements com.google.protobuf.ProtocolMessageEnum {
-  /**
-   * <pre>
-   * The default value. This value is used if the state is omitted.
-   * </pre>
-   *
-   * <code>OUTCOME_SUMMARY_UNSPECIFIED = 0;</code>
-   */
-  OUTCOME_SUMMARY_UNSPECIFIED(0),
-  /**
-   * <pre>
-   * The test matrix run was successful, for instance:
-   * - All test cases passed.
-   * - No crash of the application under test was detected.
-   * </pre>
-   *
-   * <code>SUCCESS = 1;</code>
-   */
-  SUCCESS(1),
-  /**
-   * <pre>
-   * A run failed, for instance:
-   * - One or more test case failed.
-   * - A test timed out.
-   * - The application under test crashed.
-   * </pre>
-   *
-   * <code>FAILURE = 2;</code>
-   */
-  FAILURE(2),
-  /**
-   * <pre>
-   * Something unexpected happened. The test run should still be considered
-   * unsuccessful but this is likely a transient problem and re-running the
-   * test might be successful.
-   * </pre>
-   *
-   * <code>INCONCLUSIVE = 3;</code>
-   */
-  INCONCLUSIVE(3),
-  /**
-   * <pre>
-   * All tests were skipped.
-   * </pre>
-   *
-   * <code>SKIPPED = 4;</code>
-   */
-  SKIPPED(4),
-  UNRECOGNIZED(-1),
-  ;
+public enum OutcomeSummary implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * The default value. This value is used if the state is omitted.
+     * </pre>
+     *
+     * <code>OUTCOME_SUMMARY_UNSPECIFIED = 0;</code>
+     */
+    OUTCOME_SUMMARY_UNSPECIFIED(0),
+    /**
+     * <pre>
+     * The test matrix run was successful, for instance:
+     * - All test cases passed.
+     * - No crash of the application under test was detected.
+     * </pre>
+     *
+     * <code>SUCCESS = 1;</code>
+     */
+    SUCCESS(1),
+    /**
+     * <pre>
+     * A run failed, for instance:
+     * - One or more test case failed.
+     * - A test timed out.
+     * - The application under test crashed.
+     * </pre>
+     *
+     * <code>FAILURE = 2;</code>
+     */
+    FAILURE(2),
+    /**
+     * <pre>
+     * Something unexpected happened. The test run should still be considered
+     * unsuccessful but this is likely a transient problem and re-running the
+     * test might be successful.
+     * </pre>
+     *
+     * <code>INCONCLUSIVE = 3;</code>
+     */
+    INCONCLUSIVE(3),
+    /**
+     * <pre>
+     * All tests were skipped.
+     * </pre>
+     *
+     * <code>SKIPPED = 4;</code>
+     */
+    SKIPPED(4), UNRECOGNIZED(-1),;
 
-  /**
-   * <pre>
-   * The default value. This value is used if the state is omitted.
-   * </pre>
-   *
-   * <code>OUTCOME_SUMMARY_UNSPECIFIED = 0;</code>
-   */
-  public static final int OUTCOME_SUMMARY_UNSPECIFIED_VALUE = 0;
-  /**
-   * <pre>
-   * The test matrix run was successful, for instance:
-   * - All test cases passed.
-   * - No crash of the application under test was detected.
-   * </pre>
-   *
-   * <code>SUCCESS = 1;</code>
-   */
-  public static final int SUCCESS_VALUE = 1;
-  /**
-   * <pre>
-   * A run failed, for instance:
-   * - One or more test case failed.
-   * - A test timed out.
-   * - The application under test crashed.
-   * </pre>
-   *
-   * <code>FAILURE = 2;</code>
-   */
-  public static final int FAILURE_VALUE = 2;
-  /**
-   * <pre>
-   * Something unexpected happened. The test run should still be considered
-   * unsuccessful but this is likely a transient problem and re-running the
-   * test might be successful.
-   * </pre>
-   *
-   * <code>INCONCLUSIVE = 3;</code>
-   */
-  public static final int INCONCLUSIVE_VALUE = 3;
-  /**
-   * <pre>
-   * All tests were skipped.
-   * </pre>
-   *
-   * <code>SKIPPED = 4;</code>
-   */
-  public static final int SKIPPED_VALUE = 4;
+    /**
+     * <pre>
+     * The default value. This value is used if the state is omitted.
+     * </pre>
+     *
+     * <code>OUTCOME_SUMMARY_UNSPECIFIED = 0;</code>
+     */
+    public static final int OUTCOME_SUMMARY_UNSPECIFIED_VALUE = 0;
+    /**
+     * <pre>
+     * The test matrix run was successful, for instance:
+     * - All test cases passed.
+     * - No crash of the application under test was detected.
+     * </pre>
+     *
+     * <code>SUCCESS = 1;</code>
+     */
+    public static final int SUCCESS_VALUE = 1;
+    /**
+     * <pre>
+     * A run failed, for instance:
+     * - One or more test case failed.
+     * - A test timed out.
+     * - The application under test crashed.
+     * </pre>
+     *
+     * <code>FAILURE = 2;</code>
+     */
+    public static final int FAILURE_VALUE = 2;
+    /**
+     * <pre>
+     * Something unexpected happened. The test run should still be considered
+     * unsuccessful but this is likely a transient problem and re-running the
+     * test might be successful.
+     * </pre>
+     *
+     * <code>INCONCLUSIVE = 3;</code>
+     */
+    public static final int INCONCLUSIVE_VALUE = 3;
+    /**
+     * <pre>
+     * All tests were skipped.
+     * </pre>
+     *
+     * <code>SKIPPED = 4;</code>
+     */
+    public static final int SKIPPED_VALUE = 4;
 
-
-  public final int getNumber() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalArgumentException(
-          "Can't get the number of an unknown enum value.");
+    public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalArgumentException("Can't get the number of an unknown enum value.");
+        }
+        return value;
     }
-    return value;
-  }
 
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   * @deprecated Use {@link #forNumber(int)} instead.
-   */
-  @java.lang.Deprecated
-  public static OutcomeSummary valueOf(int value) {
-    return forNumber(value);
-  }
-
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   */
-  public static OutcomeSummary forNumber(int value) {
-    switch (value) {
-      case 0: return OUTCOME_SUMMARY_UNSPECIFIED;
-      case 1: return SUCCESS;
-      case 2: return FAILURE;
-      case 3: return INCONCLUSIVE;
-      case 4: return SKIPPED;
-      default: return null;
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     *
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static OutcomeSummary valueOf(int value) {
+        return forNumber(value);
     }
-  }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<OutcomeSummary>
-      internalGetValueMap() {
-    return internalValueMap;
-  }
-  private static final com.google.protobuf.Internal.EnumLiteMap<
-      OutcomeSummary> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<OutcomeSummary>() {
-          public OutcomeSummary findValueByNumber(int number) {
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static OutcomeSummary forNumber(int value) {
+        switch (value) {
+        case 0:
+            return OUTCOME_SUMMARY_UNSPECIFIED;
+        case 1:
+            return SUCCESS;
+        case 2:
+            return FAILURE;
+        case 3:
+            return INCONCLUSIVE;
+        case 4:
+            return SKIPPED;
+        default:
+            return null;
+        }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<OutcomeSummary> internalGetValueMap() {
+        return internalValueMap;
+    }
+
+    private static final com.google.protobuf.Internal.EnumLiteMap<OutcomeSummary> internalValueMap = new com.google.protobuf.Internal.EnumLiteMap<OutcomeSummary>() {
+        public OutcomeSummary findValueByNumber(int number) {
             return OutcomeSummary.forNumber(number);
-          }
-        };
+        }
+    };
 
-  public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException("Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
     }
-    return getDescriptor().getValues().get(ordinal());
-  }
-  public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
-    return getDescriptor();
-  }
-  public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
-    return com.google.events.firebase.testlab.v1.Data.getDescriptor().getEnumTypes().get(1);
-  }
 
-  private static final OutcomeSummary[] VALUES = values();
-
-  public static OutcomeSummary valueOf(
-      com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-    if (desc.getType() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
-        "EnumValueDescriptor is not for this type.");
+    public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
     }
-    if (desc.getIndex() == -1) {
-      return UNRECOGNIZED;
+
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return com.google.events.firebase.testlab.v1.Data.getDescriptor().getEnumTypes().get(1);
     }
-    return VALUES[desc.getIndex()];
-  }
 
-  private final int value;
+    private static final OutcomeSummary[] VALUES = values();
 
-  private OutcomeSummary(int value) {
-    this.value = value;
-  }
+    public static OutcomeSummary valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+            throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+            return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+    }
 
-  // @@protoc_insertion_point(enum_scope:google.events.firebase.testlab.v1.OutcomeSummary)
+    private final int value;
+
+    private OutcomeSummary(int value) {
+        this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:google.events.firebase.testlab.v1.OutcomeSummary)
 }
-

@@ -10,158 +10,156 @@ package com.google.events.firebase.remoteconfig.v1;
  *
  * Protobuf enum {@code google.events.firebase.remoteconfig.v1.RemoteConfigUpdateOrigin}
  */
-public enum RemoteConfigUpdateOrigin
-    implements com.google.protobuf.ProtocolMessageEnum {
-  /**
-   * <pre>
-   * Catch-all for unrecognized values.
-   * </pre>
-   *
-   * <code>REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = 0;</code>
-   */
-  REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED(0),
-  /**
-   * <pre>
-   * The update came from the Firebase UI.
-   * </pre>
-   *
-   * <code>CONSOLE = 1;</code>
-   */
-  CONSOLE(1),
-  /**
-   * <pre>
-   * The update came from the Remote Config REST API.
-   * </pre>
-   *
-   * <code>REST_API = 2;</code>
-   */
-  REST_API(2),
-  /**
-   * <pre>
-   * The update came from the Firebase Admin Node SDK.
-   * </pre>
-   *
-   * <code>ADMIN_SDK_NODE = 3;</code>
-   */
-  ADMIN_SDK_NODE(3),
-  UNRECOGNIZED(-1),
-  ;
+public enum RemoteConfigUpdateOrigin implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <pre>
+     * Catch-all for unrecognized values.
+     * </pre>
+     *
+     * <code>REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = 0;</code>
+     */
+    REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED(0),
+    /**
+     * <pre>
+     * The update came from the Firebase UI.
+     * </pre>
+     *
+     * <code>CONSOLE = 1;</code>
+     */
+    CONSOLE(1),
+    /**
+     * <pre>
+     * The update came from the Remote Config REST API.
+     * </pre>
+     *
+     * <code>REST_API = 2;</code>
+     */
+    REST_API(2),
+    /**
+     * <pre>
+     * The update came from the Firebase Admin Node SDK.
+     * </pre>
+     *
+     * <code>ADMIN_SDK_NODE = 3;</code>
+     */
+    ADMIN_SDK_NODE(3), UNRECOGNIZED(-1),;
 
-  /**
-   * <pre>
-   * Catch-all for unrecognized values.
-   * </pre>
-   *
-   * <code>REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = 0;</code>
-   */
-  public static final int REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED_VALUE = 0;
-  /**
-   * <pre>
-   * The update came from the Firebase UI.
-   * </pre>
-   *
-   * <code>CONSOLE = 1;</code>
-   */
-  public static final int CONSOLE_VALUE = 1;
-  /**
-   * <pre>
-   * The update came from the Remote Config REST API.
-   * </pre>
-   *
-   * <code>REST_API = 2;</code>
-   */
-  public static final int REST_API_VALUE = 2;
-  /**
-   * <pre>
-   * The update came from the Firebase Admin Node SDK.
-   * </pre>
-   *
-   * <code>ADMIN_SDK_NODE = 3;</code>
-   */
-  public static final int ADMIN_SDK_NODE_VALUE = 3;
+    /**
+     * <pre>
+     * Catch-all for unrecognized values.
+     * </pre>
+     *
+     * <code>REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = 0;</code>
+     */
+    public static final int REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED_VALUE = 0;
+    /**
+     * <pre>
+     * The update came from the Firebase UI.
+     * </pre>
+     *
+     * <code>CONSOLE = 1;</code>
+     */
+    public static final int CONSOLE_VALUE = 1;
+    /**
+     * <pre>
+     * The update came from the Remote Config REST API.
+     * </pre>
+     *
+     * <code>REST_API = 2;</code>
+     */
+    public static final int REST_API_VALUE = 2;
+    /**
+     * <pre>
+     * The update came from the Firebase Admin Node SDK.
+     * </pre>
+     *
+     * <code>ADMIN_SDK_NODE = 3;</code>
+     */
+    public static final int ADMIN_SDK_NODE_VALUE = 3;
 
-
-  public final int getNumber() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalArgumentException(
-          "Can't get the number of an unknown enum value.");
+    public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalArgumentException("Can't get the number of an unknown enum value.");
+        }
+        return value;
     }
-    return value;
-  }
 
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   * @deprecated Use {@link #forNumber(int)} instead.
-   */
-  @java.lang.Deprecated
-  public static RemoteConfigUpdateOrigin valueOf(int value) {
-    return forNumber(value);
-  }
-
-  /**
-   * @param value The numeric wire value of the corresponding enum entry.
-   * @return The enum associated with the given numeric wire value.
-   */
-  public static RemoteConfigUpdateOrigin forNumber(int value) {
-    switch (value) {
-      case 0: return REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED;
-      case 1: return CONSOLE;
-      case 2: return REST_API;
-      case 3: return ADMIN_SDK_NODE;
-      default: return null;
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     *
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static RemoteConfigUpdateOrigin valueOf(int value) {
+        return forNumber(value);
     }
-  }
 
-  public static com.google.protobuf.Internal.EnumLiteMap<RemoteConfigUpdateOrigin>
-      internalGetValueMap() {
-    return internalValueMap;
-  }
-  private static final com.google.protobuf.Internal.EnumLiteMap<
-      RemoteConfigUpdateOrigin> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<RemoteConfigUpdateOrigin>() {
-          public RemoteConfigUpdateOrigin findValueByNumber(int number) {
+    /**
+     * @param value
+     *            The numeric wire value of the corresponding enum entry.
+     *
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static RemoteConfigUpdateOrigin forNumber(int value) {
+        switch (value) {
+        case 0:
+            return REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED;
+        case 1:
+            return CONSOLE;
+        case 2:
+            return REST_API;
+        case 3:
+            return ADMIN_SDK_NODE;
+        default:
+            return null;
+        }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<RemoteConfigUpdateOrigin> internalGetValueMap() {
+        return internalValueMap;
+    }
+
+    private static final com.google.protobuf.Internal.EnumLiteMap<RemoteConfigUpdateOrigin> internalValueMap = new com.google.protobuf.Internal.EnumLiteMap<RemoteConfigUpdateOrigin>() {
+        public RemoteConfigUpdateOrigin findValueByNumber(int number) {
             return RemoteConfigUpdateOrigin.forNumber(number);
-          }
-        };
+        }
+    };
 
-  public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException("Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
     }
-    return getDescriptor().getValues().get(ordinal());
-  }
-  public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
-    return getDescriptor();
-  }
-  public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
-    return com.google.events.firebase.remoteconfig.v1.Data.getDescriptor().getEnumTypes().get(0);
-  }
 
-  private static final RemoteConfigUpdateOrigin[] VALUES = values();
-
-  public static RemoteConfigUpdateOrigin valueOf(
-      com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-    if (desc.getType() != getDescriptor()) {
-      throw new java.lang.IllegalArgumentException(
-        "EnumValueDescriptor is not for this type.");
+    public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
     }
-    if (desc.getIndex() == -1) {
-      return UNRECOGNIZED;
+
+    public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return com.google.events.firebase.remoteconfig.v1.Data.getDescriptor().getEnumTypes().get(0);
     }
-    return VALUES[desc.getIndex()];
-  }
 
-  private final int value;
+    private static final RemoteConfigUpdateOrigin[] VALUES = values();
 
-  private RemoteConfigUpdateOrigin(int value) {
-    this.value = value;
-  }
+    public static RemoteConfigUpdateOrigin valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+            throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+            return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+    }
 
-  // @@protoc_insertion_point(enum_scope:google.events.firebase.remoteconfig.v1.RemoteConfigUpdateOrigin)
+    private final int value;
+
+    private RemoteConfigUpdateOrigin(int value) {
+        this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:google.events.firebase.remoteconfig.v1.RemoteConfigUpdateOrigin)
 }
-

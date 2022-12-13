@@ -10,860 +10,860 @@ package com.google.events.firebase.auth.v1;
  *
  * Protobuf type {@code google.events.firebase.auth.v1.UserMetadata}
  */
-public final class UserMetadata extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:google.events.firebase.auth.v1.UserMetadata)
-    UserMetadataOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use UserMetadata.newBuilder() to construct.
-  private UserMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private UserMetadata() {
-  }
+public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:google.events.firebase.auth.v1.UserMetadata)
+        UserMetadataOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new UserMetadata();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.google.events.firebase.auth.v1.UserMetadata.class, com.google.events.firebase.auth.v1.UserMetadata.Builder.class);
-  }
-
-  public static final int CREATE_TIME_FIELD_NUMBER = 1;
-  private com.google.protobuf.Timestamp createTime_;
-  /**
-   * <pre>
-   * The date the user was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   * @return Whether the createTime field is set.
-   */
-  @java.lang.Override
-  public boolean hasCreateTime() {
-    return createTime_ != null;
-  }
-  /**
-   * <pre>
-   * The date the user was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   * @return The createTime.
-   */
-  @java.lang.Override
-  public com.google.protobuf.Timestamp getCreateTime() {
-    return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-  }
-  /**
-   * <pre>
-   * The date the user was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
-    return getCreateTime();
-  }
-
-  public static final int LAST_SIGN_IN_TIME_FIELD_NUMBER = 2;
-  private com.google.protobuf.Timestamp lastSignInTime_;
-  /**
-   * <pre>
-   * The date the user last signed in.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-   * @return Whether the lastSignInTime field is set.
-   */
-  @java.lang.Override
-  public boolean hasLastSignInTime() {
-    return lastSignInTime_ != null;
-  }
-  /**
-   * <pre>
-   * The date the user last signed in.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-   * @return The lastSignInTime.
-   */
-  @java.lang.Override
-  public com.google.protobuf.Timestamp getLastSignInTime() {
-    return lastSignInTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
-  }
-  /**
-   * <pre>
-   * The date the user last signed in.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.TimestampOrBuilder getLastSignInTimeOrBuilder() {
-    return getLastSignInTime();
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (createTime_ != null) {
-      output.writeMessage(1, getCreateTime());
+    // Use UserMetadata.newBuilder() to construct.
+    private UserMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
     }
-    if (lastSignInTime_ != null) {
-      output.writeMessage(2, getLastSignInTime());
-    }
-    getUnknownFields().writeTo(output);
-  }
 
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (createTime_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getCreateTime());
-    }
-    if (lastSignInTime_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getLastSignInTime());
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof com.google.events.firebase.auth.v1.UserMetadata)) {
-      return super.equals(obj);
-    }
-    com.google.events.firebase.auth.v1.UserMetadata other = (com.google.events.firebase.auth.v1.UserMetadata) obj;
-
-    if (hasCreateTime() != other.hasCreateTime()) return false;
-    if (hasCreateTime()) {
-      if (!getCreateTime()
-          .equals(other.getCreateTime())) return false;
-    }
-    if (hasLastSignInTime() != other.hasLastSignInTime()) return false;
-    if (hasLastSignInTime()) {
-      if (!getLastSignInTime()
-          .equals(other.getLastSignInTime())) return false;
-    }
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasCreateTime()) {
-      hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCreateTime().hashCode();
-    }
-    if (hasLastSignInTime()) {
-      hash = (37 * hash) + LAST_SIGN_IN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastSignInTime().hashCode();
-    }
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(com.google.events.firebase.auth.v1.UserMetadata prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * <pre>
-   * Additional metadata about the user.
-   * </pre>
-   *
-   * Protobuf type {@code google.events.firebase.auth.v1.UserMetadata}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:google.events.firebase.auth.v1.UserMetadata)
-      com.google.events.firebase.auth.v1.UserMetadataOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
+    private UserMetadata() {
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.google.events.firebase.auth.v1.UserMetadata.class, com.google.events.firebase.auth.v1.UserMetadata.Builder.class);
-    }
-
-    // Construct using com.google.events.firebase.auth.v1.UserMetadata.newBuilder()
-    private Builder() {
-
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      if (createTimeBuilder_ == null) {
-        createTime_ = null;
-      } else {
-        createTime_ = null;
-        createTimeBuilder_ = null;
-      }
-      if (lastSignInTimeBuilder_ == null) {
-        lastSignInTime_ = null;
-      } else {
-        lastSignInTime_ = null;
-        lastSignInTimeBuilder_ = null;
-      }
-      return this;
+    @SuppressWarnings({ "unused" })
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+        return new UserMetadata();
     }
 
     @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(com.google.events.firebase.auth.v1.UserMetadata.class,
+                        com.google.events.firebase.auth.v1.UserMetadata.Builder.class);
+    }
+
+    public static final int CREATE_TIME_FIELD_NUMBER = 1;
+    private com.google.protobuf.Timestamp createTime_;
+
+    /**
+     * <pre>
+     * The date the user was created.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp create_time = 1;</code>
+     *
+     * @return Whether the createTime field is set.
+     */
+    @java.lang.Override
+    public boolean hasCreateTime() {
+        return createTime_ != null;
+    }
+
+    /**
+     * <pre>
+     * The date the user was created.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp create_time = 1;</code>
+     *
+     * @return The createTime.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Timestamp getCreateTime() {
+        return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
+    }
+
+    /**
+     * <pre>
+     * The date the user was created.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp create_time = 1;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
+        return getCreateTime();
+    }
+
+    public static final int LAST_SIGN_IN_TIME_FIELD_NUMBER = 2;
+    private com.google.protobuf.Timestamp lastSignInTime_;
+
+    /**
+     * <pre>
+     * The date the user last signed in.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+     *
+     * @return Whether the lastSignInTime field is set.
+     */
+    @java.lang.Override
+    public boolean hasLastSignInTime() {
+        return lastSignInTime_ != null;
+    }
+
+    /**
+     * <pre>
+     * The date the user last signed in.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+     *
+     * @return The lastSignInTime.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Timestamp getLastSignInTime() {
+        return lastSignInTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
+    }
+
+    /**
+     * <pre>
+     * The date the user last signed in.
+     * </pre>
+     *
+     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.TimestampOrBuilder getLastSignInTimeOrBuilder() {
+        return getLastSignInTime();
+    }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1)
+            return true;
+        if (isInitialized == 0)
+            return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+        if (createTime_ != null) {
+            output.writeMessage(1, getCreateTime());
+        }
+        if (lastSignInTime_ != null) {
+            output.writeMessage(2, getLastSignInTime());
+        }
+        getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1)
+            return size;
+
+        size = 0;
+        if (createTime_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getCreateTime());
+        }
+        if (lastSignInTime_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getLastSignInTime());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof com.google.events.firebase.auth.v1.UserMetadata)) {
+            return super.equals(obj);
+        }
+        com.google.events.firebase.auth.v1.UserMetadata other = (com.google.events.firebase.auth.v1.UserMetadata) obj;
+
+        if (hasCreateTime() != other.hasCreateTime())
+            return false;
+        if (hasCreateTime()) {
+            if (!getCreateTime().equals(other.getCreateTime()))
+                return false;
+        }
+        if (hasLastSignInTime() != other.hasLastSignInTime())
+            return false;
+        if (hasLastSignInTime()) {
+            if (!getLastSignInTime().equals(other.getLastSignInTime()))
+                return false;
+        }
+        if (!getUnknownFields().equals(other.getUnknownFields()))
+            return false;
+        return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        if (hasCreateTime()) {
+            hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
+            hash = (53 * hash) + getCreateTime().hashCode();
+        }
+        if (hasLastSignInTime()) {
+            hash = (37 * hash) + LAST_SIGN_IN_TIME_FIELD_NUMBER;
+            hash = (53 * hash) + getLastSignInTime().hashCode();
+        }
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseDelimitedFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata parseFrom(com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.google.events.firebase.auth.v1.UserMetadata prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
+    /**
+     * <pre>
+     * Additional metadata about the user.
+     * </pre>
+     *
+     * Protobuf type {@code google.events.firebase.auth.v1.UserMetadata}
+     */
+    public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:google.events.firebase.auth.v1.UserMetadata)
+            com.google.events.firebase.auth.v1.UserMetadataOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(com.google.events.firebase.auth.v1.UserMetadata.class,
+                            com.google.events.firebase.auth.v1.UserMetadata.Builder.class);
+        }
+
+        // Construct using com.google.events.firebase.auth.v1.UserMetadata.newBuilder()
+        private Builder() {
+
+        }
+
+        private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            if (createTimeBuilder_ == null) {
+                createTime_ = null;
+            } else {
+                createTime_ = null;
+                createTimeBuilder_ = null;
+            }
+            if (lastSignInTimeBuilder_ == null) {
+                lastSignInTime_ = null;
+            } else {
+                lastSignInTime_ = null;
+                lastSignInTimeBuilder_ = null;
+            }
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_UserMetadata_descriptor;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.UserMetadata getDefaultInstanceForType() {
+            return com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.UserMetadata build() {
+            com.google.events.firebase.auth.v1.UserMetadata result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.UserMetadata buildPartial() {
+            com.google.events.firebase.auth.v1.UserMetadata result = new com.google.events.firebase.auth.v1.UserMetadata(
+                    this);
+            if (createTimeBuilder_ == null) {
+                result.createTime_ = createTime_;
+            } else {
+                result.createTime_ = createTimeBuilder_.build();
+            }
+            if (lastSignInTimeBuilder_ == null) {
+                result.lastSignInTime_ = lastSignInTime_;
+            } else {
+                result.lastSignInTime_ = lastSignInTimeBuilder_.build();
+            }
+            onBuilt();
+            return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+                java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.google.events.firebase.auth.v1.UserMetadata) {
+                return mergeFrom((com.google.events.firebase.auth.v1.UserMetadata) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(com.google.events.firebase.auth.v1.UserMetadata other) {
+            if (other == com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance())
+                return this;
+            if (other.hasCreateTime()) {
+                mergeCreateTime(other.getCreateTime());
+            }
+            if (other.hasLastSignInTime()) {
+                mergeLastSignInTime(other.getLastSignInTime());
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    case 10: {
+                        input.readMessage(getCreateTimeFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 10
+                    case 18: {
+                        input.readMessage(getLastSignInTimeFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 18
+                    default: {
+                        if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                            done = true; // was an endgroup tag
+                        }
+                        break;
+                    } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private com.google.protobuf.Timestamp createTime_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createTimeBuilder_;
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         *
+         * @return Whether the createTime field is set.
+         */
+        public boolean hasCreateTime() {
+            return createTimeBuilder_ != null || createTime_ != null;
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         *
+         * @return The createTime.
+         */
+        public com.google.protobuf.Timestamp getCreateTime() {
+            if (createTimeBuilder_ == null) {
+                return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
+            } else {
+                return createTimeBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder setCreateTime(com.google.protobuf.Timestamp value) {
+            if (createTimeBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                createTime_ = value;
+                onChanged();
+            } else {
+                createTimeBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder setCreateTime(com.google.protobuf.Timestamp.Builder builderForValue) {
+            if (createTimeBuilder_ == null) {
+                createTime_ = builderForValue.build();
+                onChanged();
+            } else {
+                createTimeBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder mergeCreateTime(com.google.protobuf.Timestamp value) {
+            if (createTimeBuilder_ == null) {
+                if (createTime_ != null) {
+                    createTime_ = com.google.protobuf.Timestamp.newBuilder(createTime_).mergeFrom(value).buildPartial();
+                } else {
+                    createTime_ = value;
+                }
+                onChanged();
+            } else {
+                createTimeBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder clearCreateTime() {
+            if (createTimeBuilder_ == null) {
+                createTime_ = null;
+                onChanged();
+            } else {
+                createTime_ = null;
+                createTimeBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public com.google.protobuf.Timestamp.Builder getCreateTimeBuilder() {
+
+            onChanged();
+            return getCreateTimeFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
+            if (createTimeBuilder_ != null) {
+                return createTimeBuilder_.getMessageOrBuilder();
+            } else {
+                return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
+            }
+        }
+
+        /**
+         * <pre>
+         * The date the user was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> getCreateTimeFieldBuilder() {
+            if (createTimeBuilder_ == null) {
+                createTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+                        getCreateTime(), getParentForChildren(), isClean());
+                createTime_ = null;
+            }
+            return createTimeBuilder_;
+        }
+
+        private com.google.protobuf.Timestamp lastSignInTime_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> lastSignInTimeBuilder_;
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         *
+         * @return Whether the lastSignInTime field is set.
+         */
+        public boolean hasLastSignInTime() {
+            return lastSignInTimeBuilder_ != null || lastSignInTime_ != null;
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         *
+         * @return The lastSignInTime.
+         */
+        public com.google.protobuf.Timestamp getLastSignInTime() {
+            if (lastSignInTimeBuilder_ == null) {
+                return lastSignInTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
+            } else {
+                return lastSignInTimeBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public Builder setLastSignInTime(com.google.protobuf.Timestamp value) {
+            if (lastSignInTimeBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                lastSignInTime_ = value;
+                onChanged();
+            } else {
+                lastSignInTimeBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public Builder setLastSignInTime(com.google.protobuf.Timestamp.Builder builderForValue) {
+            if (lastSignInTimeBuilder_ == null) {
+                lastSignInTime_ = builderForValue.build();
+                onChanged();
+            } else {
+                lastSignInTimeBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public Builder mergeLastSignInTime(com.google.protobuf.Timestamp value) {
+            if (lastSignInTimeBuilder_ == null) {
+                if (lastSignInTime_ != null) {
+                    lastSignInTime_ = com.google.protobuf.Timestamp.newBuilder(lastSignInTime_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    lastSignInTime_ = value;
+                }
+                onChanged();
+            } else {
+                lastSignInTimeBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public Builder clearLastSignInTime() {
+            if (lastSignInTimeBuilder_ == null) {
+                lastSignInTime_ = null;
+                onChanged();
+            } else {
+                lastSignInTime_ = null;
+                lastSignInTimeBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public com.google.protobuf.Timestamp.Builder getLastSignInTimeBuilder() {
+
+            onChanged();
+            return getLastSignInTimeFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        public com.google.protobuf.TimestampOrBuilder getLastSignInTimeOrBuilder() {
+            if (lastSignInTimeBuilder_ != null) {
+                return lastSignInTimeBuilder_.getMessageOrBuilder();
+            } else {
+                return lastSignInTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
+            }
+        }
+
+        /**
+         * <pre>
+         * The date the user last signed in.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> getLastSignInTimeFieldBuilder() {
+            if (lastSignInTimeBuilder_ == null) {
+                lastSignInTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+                        getLastSignInTime(), getParentForChildren(), isClean());
+                lastSignInTime_ = null;
+            }
+            return lastSignInTimeBuilder_;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+        // @@protoc_insertion_point(builder_scope:google.events.firebase.auth.v1.UserMetadata)
+    }
+
+    // @@protoc_insertion_point(class_scope:google.events.firebase.auth.v1.UserMetadata)
+    private static final com.google.events.firebase.auth.v1.UserMetadata DEFAULT_INSTANCE;
+    static {
+        DEFAULT_INSTANCE = new com.google.events.firebase.auth.v1.UserMetadata();
+    }
+
+    public static com.google.events.firebase.auth.v1.UserMetadata getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UserMetadata> PARSER = new com.google.protobuf.AbstractParser<UserMetadata>() {
+        @java.lang.Override
+        public UserMetadata parsePartialFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<UserMetadata> parser() {
+        return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UserMetadata> getParserForType() {
+        return PARSER;
     }
 
     @java.lang.Override
     public com.google.events.firebase.auth.v1.UserMetadata getDefaultInstanceForType() {
-      return com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance();
+        return DEFAULT_INSTANCE;
     }
-
-    @java.lang.Override
-    public com.google.events.firebase.auth.v1.UserMetadata build() {
-      com.google.events.firebase.auth.v1.UserMetadata result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
-    }
-
-    @java.lang.Override
-    public com.google.events.firebase.auth.v1.UserMetadata buildPartial() {
-      com.google.events.firebase.auth.v1.UserMetadata result = new com.google.events.firebase.auth.v1.UserMetadata(this);
-      if (createTimeBuilder_ == null) {
-        result.createTime_ = createTime_;
-      } else {
-        result.createTime_ = createTimeBuilder_.build();
-      }
-      if (lastSignInTimeBuilder_ == null) {
-        result.lastSignInTime_ = lastSignInTime_;
-      } else {
-        result.lastSignInTime_ = lastSignInTimeBuilder_.build();
-      }
-      onBuilt();
-      return result;
-    }
-
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.events.firebase.auth.v1.UserMetadata) {
-        return mergeFrom((com.google.events.firebase.auth.v1.UserMetadata)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(com.google.events.firebase.auth.v1.UserMetadata other) {
-      if (other == com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance()) return this;
-      if (other.hasCreateTime()) {
-        mergeCreateTime(other.getCreateTime());
-      }
-      if (other.hasLastSignInTime()) {
-        mergeLastSignInTime(other.getLastSignInTime());
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              input.readMessage(
-                  getCreateTimeFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 10
-            case 18: {
-              input.readMessage(
-                  getLastSignInTimeFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 18
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
-
-    private com.google.protobuf.Timestamp createTime_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createTimeBuilder_;
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     * @return Whether the createTime field is set.
-     */
-    public boolean hasCreateTime() {
-      return createTimeBuilder_ != null || createTime_ != null;
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     * @return The createTime.
-     */
-    public com.google.protobuf.Timestamp getCreateTime() {
-      if (createTimeBuilder_ == null) {
-        return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-      } else {
-        return createTimeBuilder_.getMessage();
-      }
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder setCreateTime(com.google.protobuf.Timestamp value) {
-      if (createTimeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        createTime_ = value;
-        onChanged();
-      } else {
-        createTimeBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder setCreateTime(
-        com.google.protobuf.Timestamp.Builder builderForValue) {
-      if (createTimeBuilder_ == null) {
-        createTime_ = builderForValue.build();
-        onChanged();
-      } else {
-        createTimeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder mergeCreateTime(com.google.protobuf.Timestamp value) {
-      if (createTimeBuilder_ == null) {
-        if (createTime_ != null) {
-          createTime_ =
-            com.google.protobuf.Timestamp.newBuilder(createTime_).mergeFrom(value).buildPartial();
-        } else {
-          createTime_ = value;
-        }
-        onChanged();
-      } else {
-        createTimeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder clearCreateTime() {
-      if (createTimeBuilder_ == null) {
-        createTime_ = null;
-        onChanged();
-      } else {
-        createTime_ = null;
-        createTimeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public com.google.protobuf.Timestamp.Builder getCreateTimeBuilder() {
-      
-      onChanged();
-      return getCreateTimeFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
-      if (createTimeBuilder_ != null) {
-        return createTimeBuilder_.getMessageOrBuilder();
-      } else {
-        return createTime_ == null ?
-            com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-      }
-    }
-    /**
-     * <pre>
-     * The date the user was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
-        getCreateTimeFieldBuilder() {
-      if (createTimeBuilder_ == null) {
-        createTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
-                getCreateTime(),
-                getParentForChildren(),
-                isClean());
-        createTime_ = null;
-      }
-      return createTimeBuilder_;
-    }
-
-    private com.google.protobuf.Timestamp lastSignInTime_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> lastSignInTimeBuilder_;
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     * @return Whether the lastSignInTime field is set.
-     */
-    public boolean hasLastSignInTime() {
-      return lastSignInTimeBuilder_ != null || lastSignInTime_ != null;
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     * @return The lastSignInTime.
-     */
-    public com.google.protobuf.Timestamp getLastSignInTime() {
-      if (lastSignInTimeBuilder_ == null) {
-        return lastSignInTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
-      } else {
-        return lastSignInTimeBuilder_.getMessage();
-      }
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public Builder setLastSignInTime(com.google.protobuf.Timestamp value) {
-      if (lastSignInTimeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        lastSignInTime_ = value;
-        onChanged();
-      } else {
-        lastSignInTimeBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public Builder setLastSignInTime(
-        com.google.protobuf.Timestamp.Builder builderForValue) {
-      if (lastSignInTimeBuilder_ == null) {
-        lastSignInTime_ = builderForValue.build();
-        onChanged();
-      } else {
-        lastSignInTimeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public Builder mergeLastSignInTime(com.google.protobuf.Timestamp value) {
-      if (lastSignInTimeBuilder_ == null) {
-        if (lastSignInTime_ != null) {
-          lastSignInTime_ =
-            com.google.protobuf.Timestamp.newBuilder(lastSignInTime_).mergeFrom(value).buildPartial();
-        } else {
-          lastSignInTime_ = value;
-        }
-        onChanged();
-      } else {
-        lastSignInTimeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public Builder clearLastSignInTime() {
-      if (lastSignInTimeBuilder_ == null) {
-        lastSignInTime_ = null;
-        onChanged();
-      } else {
-        lastSignInTime_ = null;
-        lastSignInTimeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public com.google.protobuf.Timestamp.Builder getLastSignInTimeBuilder() {
-      
-      onChanged();
-      return getLastSignInTimeFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    public com.google.protobuf.TimestampOrBuilder getLastSignInTimeOrBuilder() {
-      if (lastSignInTimeBuilder_ != null) {
-        return lastSignInTimeBuilder_.getMessageOrBuilder();
-      } else {
-        return lastSignInTime_ == null ?
-            com.google.protobuf.Timestamp.getDefaultInstance() : lastSignInTime_;
-      }
-    }
-    /**
-     * <pre>
-     * The date the user last signed in.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp last_sign_in_time = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
-        getLastSignInTimeFieldBuilder() {
-      if (lastSignInTimeBuilder_ == null) {
-        lastSignInTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
-                getLastSignInTime(),
-                getParentForChildren(),
-                isClean());
-        lastSignInTime_ = null;
-      }
-      return lastSignInTimeBuilder_;
-    }
-    @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
-    }
-
-    @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
-    }
-
-
-    // @@protoc_insertion_point(builder_scope:google.events.firebase.auth.v1.UserMetadata)
-  }
-
-  // @@protoc_insertion_point(class_scope:google.events.firebase.auth.v1.UserMetadata)
-  private static final com.google.events.firebase.auth.v1.UserMetadata DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new com.google.events.firebase.auth.v1.UserMetadata();
-  }
-
-  public static com.google.events.firebase.auth.v1.UserMetadata getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<UserMetadata>
-      PARSER = new com.google.protobuf.AbstractParser<UserMetadata>() {
-    @java.lang.Override
-    public UserMetadata parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
-    }
-  };
-
-  public static com.google.protobuf.Parser<UserMetadata> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<UserMetadata> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.UserMetadata getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
 
 }
-

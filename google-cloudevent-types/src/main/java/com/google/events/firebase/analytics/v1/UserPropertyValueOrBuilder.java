@@ -4,53 +4,59 @@
 package com.google.events.firebase.analytics.v1;
 
 public interface UserPropertyValueOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.UserPropertyValue)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.UserPropertyValue)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Last set value of user property.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
-   * @return Whether the value field is set.
-   */
-  boolean hasValue();
-  /**
-   * <pre>
-   * Last set value of user property.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
-   * @return The value.
-   */
-  com.google.events.firebase.analytics.v1.AnalyticsValue getValue();
-  /**
-   * <pre>
-   * Last set value of user property.
-   * </pre>
-   *
-   * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
-   */
-  com.google.events.firebase.analytics.v1.AnalyticsValueOrBuilder getValueOrBuilder();
+    /**
+     * <pre>
+     * Last set value of user property.
+     * </pre>
+     *
+     * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
+     *
+     * @return Whether the value field is set.
+     */
+    boolean hasValue();
 
-  /**
-   * <pre>
-   * UTC client time when user property was last set.
-   * </pre>
-   *
-   * <code>int64 set_timestamp_usec = 2;</code>
-   * @return The setTimestampUsec.
-   */
-  long getSetTimestampUsec();
+    /**
+     * <pre>
+     * Last set value of user property.
+     * </pre>
+     *
+     * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
+     *
+     * @return The value.
+     */
+    com.google.events.firebase.analytics.v1.AnalyticsValue getValue();
 
-  /**
-   * <pre>
-   * Index for user property (one-based).
-   * </pre>
-   *
-   * <code>int32 index = 3;</code>
-   * @return The index.
-   */
-  int getIndex();
+    /**
+     * <pre>
+     * Last set value of user property.
+     * </pre>
+     *
+     * <code>.google.events.firebase.analytics.v1.AnalyticsValue value = 1;</code>
+     */
+    com.google.events.firebase.analytics.v1.AnalyticsValueOrBuilder getValueOrBuilder();
+
+    /**
+     * <pre>
+     * UTC client time when user property was last set.
+     * </pre>
+     *
+     * <code>int64 set_timestamp_usec = 2;</code>
+     *
+     * @return The setTimestampUsec.
+     */
+    long getSetTimestampUsec();
+
+    /**
+     * <pre>
+     * Index for user property (one-based).
+     * </pre>
+     *
+     * <code>int32 index = 3;</code>
+     *
+     * @return The index.
+     */
+    int getIndex();
 }

@@ -4,66 +4,72 @@
 package com.google.events.firebase.analytics.v1;
 
 public interface TrafficSourceOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.TrafficSource)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.TrafficSource)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * The name of the campaign which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_campaign = 2;</code>
-   * @return The userAcquiredCampaign.
-   */
-  java.lang.String getUserAcquiredCampaign();
-  /**
-   * <pre>
-   * The name of the campaign which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_campaign = 2;</code>
-   * @return The bytes for userAcquiredCampaign.
-   */
-  com.google.protobuf.ByteString
-      getUserAcquiredCampaignBytes();
+    /**
+     * <pre>
+     * The name of the campaign which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_campaign = 2;</code>
+     *
+     * @return The userAcquiredCampaign.
+     */
+    java.lang.String getUserAcquiredCampaign();
 
-  /**
-   * <pre>
-   * The name of the network which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_source = 3;</code>
-   * @return The userAcquiredSource.
-   */
-  java.lang.String getUserAcquiredSource();
-  /**
-   * <pre>
-   * The name of the network which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_source = 3;</code>
-   * @return The bytes for userAcquiredSource.
-   */
-  com.google.protobuf.ByteString
-      getUserAcquiredSourceBytes();
+    /**
+     * <pre>
+     * The name of the campaign which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_campaign = 2;</code>
+     *
+     * @return The bytes for userAcquiredCampaign.
+     */
+    com.google.protobuf.ByteString getUserAcquiredCampaignBytes();
 
-  /**
-   * <pre>
-   * The name of the medium which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_medium = 4;</code>
-   * @return The userAcquiredMedium.
-   */
-  java.lang.String getUserAcquiredMedium();
-  /**
-   * <pre>
-   * The name of the medium which acquired the user.
-   * </pre>
-   *
-   * <code>string user_acquired_medium = 4;</code>
-   * @return The bytes for userAcquiredMedium.
-   */
-  com.google.protobuf.ByteString
-      getUserAcquiredMediumBytes();
+    /**
+     * <pre>
+     * The name of the network which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_source = 3;</code>
+     *
+     * @return The userAcquiredSource.
+     */
+    java.lang.String getUserAcquiredSource();
+
+    /**
+     * <pre>
+     * The name of the network which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_source = 3;</code>
+     *
+     * @return The bytes for userAcquiredSource.
+     */
+    com.google.protobuf.ByteString getUserAcquiredSourceBytes();
+
+    /**
+     * <pre>
+     * The name of the medium which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_medium = 4;</code>
+     *
+     * @return The userAcquiredMedium.
+     */
+    java.lang.String getUserAcquiredMedium();
+
+    /**
+     * <pre>
+     * The name of the medium which acquired the user.
+     * </pre>
+     *
+     * <code>string user_acquired_medium = 4;</code>
+     *
+     * @return The bytes for userAcquiredMedium.
+     */
+    com.google.protobuf.ByteString getUserAcquiredMediumBytes();
 }

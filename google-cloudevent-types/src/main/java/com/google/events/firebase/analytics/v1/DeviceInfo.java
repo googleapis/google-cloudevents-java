@@ -10,1062 +10,53 @@ package com.google.events.firebase.analytics.v1;
  *
  * Protobuf type {@code google.events.firebase.analytics.v1.DeviceInfo}
  */
-public final class DeviceInfo extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.DeviceInfo)
-    DeviceInfoOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use DeviceInfo.newBuilder() to construct.
-  private DeviceInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private DeviceInfo() {
-    deviceCategory_ = "";
-    mobileBrandName_ = "";
-    mobileModelName_ = "";
-    mobileMarketingName_ = "";
-    deviceModel_ = "";
-    platformVersion_ = "";
-    deviceId_ = "";
-    resettableDeviceId_ = "";
-    userDefaultLanguage_ = "";
-  }
+public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.DeviceInfo)
+        DeviceInfoOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new DeviceInfo();
-  }
+    // Use DeviceInfo.newBuilder() to construct.
+    private DeviceInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+    }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.google.events.firebase.analytics.v1.DeviceInfo.class, com.google.events.firebase.analytics.v1.DeviceInfo.Builder.class);
-  }
-
-  public static final int DEVICE_CATEGORY_FIELD_NUMBER = 1;
-  private volatile java.lang.Object deviceCategory_;
-  /**
-   * <pre>
-   * Device category.
-   * Eg. tablet or mobile.
-   * </pre>
-   *
-   * <code>string device_category = 1;</code>
-   * @return The deviceCategory.
-   */
-  @java.lang.Override
-  public java.lang.String getDeviceCategory() {
-    java.lang.Object ref = deviceCategory_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      deviceCategory_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device category.
-   * Eg. tablet or mobile.
-   * </pre>
-   *
-   * <code>string device_category = 1;</code>
-   * @return The bytes for deviceCategory.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getDeviceCategoryBytes() {
-    java.lang.Object ref = deviceCategory_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      deviceCategory_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int MOBILE_BRAND_NAME_FIELD_NUMBER = 2;
-  private volatile java.lang.Object mobileBrandName_;
-  /**
-   * <pre>
-   * Device brand name.
-   * Eg. Samsung, HTC, etc.
-   * </pre>
-   *
-   * <code>string mobile_brand_name = 2;</code>
-   * @return The mobileBrandName.
-   */
-  @java.lang.Override
-  public java.lang.String getMobileBrandName() {
-    java.lang.Object ref = mobileBrandName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      mobileBrandName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device brand name.
-   * Eg. Samsung, HTC, etc.
-   * </pre>
-   *
-   * <code>string mobile_brand_name = 2;</code>
-   * @return The bytes for mobileBrandName.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getMobileBrandNameBytes() {
-    java.lang.Object ref = mobileBrandName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      mobileBrandName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int MOBILE_MODEL_NAME_FIELD_NUMBER = 3;
-  private volatile java.lang.Object mobileModelName_;
-  /**
-   * <pre>
-   * Device model name.
-   * Eg. GT-I9192
-   * </pre>
-   *
-   * <code>string mobile_model_name = 3;</code>
-   * @return The mobileModelName.
-   */
-  @java.lang.Override
-  public java.lang.String getMobileModelName() {
-    java.lang.Object ref = mobileModelName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      mobileModelName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device model name.
-   * Eg. GT-I9192
-   * </pre>
-   *
-   * <code>string mobile_model_name = 3;</code>
-   * @return The bytes for mobileModelName.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getMobileModelNameBytes() {
-    java.lang.Object ref = mobileModelName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      mobileModelName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int MOBILE_MARKETING_NAME_FIELD_NUMBER = 4;
-  private volatile java.lang.Object mobileMarketingName_;
-  /**
-   * <pre>
-   * Device marketing name.
-   * Eg. Galaxy S4 Mini
-   * </pre>
-   *
-   * <code>string mobile_marketing_name = 4;</code>
-   * @return The mobileMarketingName.
-   */
-  @java.lang.Override
-  public java.lang.String getMobileMarketingName() {
-    java.lang.Object ref = mobileMarketingName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      mobileMarketingName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device marketing name.
-   * Eg. Galaxy S4 Mini
-   * </pre>
-   *
-   * <code>string mobile_marketing_name = 4;</code>
-   * @return The bytes for mobileMarketingName.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getMobileMarketingNameBytes() {
-    java.lang.Object ref = mobileMarketingName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      mobileMarketingName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int DEVICE_MODEL_FIELD_NUMBER = 12;
-  private volatile java.lang.Object deviceModel_;
-  /**
-   * <pre>
-   * Device model.
-   * Eg. GT-I9192
-   * </pre>
-   *
-   * <code>string device_model = 12;</code>
-   * @return The deviceModel.
-   */
-  @java.lang.Override
-  public java.lang.String getDeviceModel() {
-    java.lang.Object ref = deviceModel_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      deviceModel_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device model.
-   * Eg. GT-I9192
-   * </pre>
-   *
-   * <code>string device_model = 12;</code>
-   * @return The bytes for deviceModel.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getDeviceModelBytes() {
-    java.lang.Object ref = deviceModel_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      deviceModel_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int PLATFORM_VERSION_FIELD_NUMBER = 6;
-  private volatile java.lang.Object platformVersion_;
-  /**
-   * <pre>
-   * Device OS version when data capture ended.
-   * Eg. 4.4.2
-   * </pre>
-   *
-   * <code>string platform_version = 6;</code>
-   * @return The platformVersion.
-   */
-  @java.lang.Override
-  public java.lang.String getPlatformVersion() {
-    java.lang.Object ref = platformVersion_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      platformVersion_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Device OS version when data capture ended.
-   * Eg. 4.4.2
-   * </pre>
-   *
-   * <code>string platform_version = 6;</code>
-   * @return The bytes for platformVersion.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getPlatformVersionBytes() {
-    java.lang.Object ref = platformVersion_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      platformVersion_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int DEVICE_ID_FIELD_NUMBER = 7;
-  private volatile java.lang.Object deviceId_;
-  /**
-   * <pre>
-   * Vendor specific device identifier. This is IDFV on iOS. Not used for
-   * Android.
-   * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
-   * </pre>
-   *
-   * <code>string device_id = 7;</code>
-   * @return The deviceId.
-   */
-  @java.lang.Override
-  public java.lang.String getDeviceId() {
-    java.lang.Object ref = deviceId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      deviceId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Vendor specific device identifier. This is IDFV on iOS. Not used for
-   * Android.
-   * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
-   * </pre>
-   *
-   * <code>string device_id = 7;</code>
-   * @return The bytes for deviceId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getDeviceIdBytes() {
-    java.lang.Object ref = deviceId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      deviceId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int RESETTABLE_DEVICE_ID_FIELD_NUMBER = 8;
-  private volatile java.lang.Object resettableDeviceId_;
-  /**
-   * <pre>
-   * The type of the resettable_device_id is always IDFA on iOS and AdId
-   * on Android.
-   * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
-   * </pre>
-   *
-   * <code>string resettable_device_id = 8;</code>
-   * @return The resettableDeviceId.
-   */
-  @java.lang.Override
-  public java.lang.String getResettableDeviceId() {
-    java.lang.Object ref = resettableDeviceId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      resettableDeviceId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The type of the resettable_device_id is always IDFA on iOS and AdId
-   * on Android.
-   * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
-   * </pre>
-   *
-   * <code>string resettable_device_id = 8;</code>
-   * @return The bytes for resettableDeviceId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getResettableDeviceIdBytes() {
-    java.lang.Object ref = resettableDeviceId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      resettableDeviceId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int USER_DEFAULT_LANGUAGE_FIELD_NUMBER = 9;
-  private volatile java.lang.Object userDefaultLanguage_;
-  /**
-   * <pre>
-   * The user language.
-   * Eg. "en-us", "en-za", "zh-tw", "jp"
-   * </pre>
-   *
-   * <code>string user_default_language = 9;</code>
-   * @return The userDefaultLanguage.
-   */
-  @java.lang.Override
-  public java.lang.String getUserDefaultLanguage() {
-    java.lang.Object ref = userDefaultLanguage_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      userDefaultLanguage_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user language.
-   * Eg. "en-us", "en-za", "zh-tw", "jp"
-   * </pre>
-   *
-   * <code>string user_default_language = 9;</code>
-   * @return The bytes for userDefaultLanguage.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getUserDefaultLanguageBytes() {
-    java.lang.Object ref = userDefaultLanguage_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      userDefaultLanguage_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int DEVICE_TIME_ZONE_OFFSET_SECONDS_FIELD_NUMBER = 10;
-  private int deviceTimeZoneOffsetSeconds_;
-  /**
-   * <pre>
-   * The timezone of the device when data was uploaded as seconds skew from UTC.
-   * </pre>
-   *
-   * <code>int32 device_time_zone_offset_seconds = 10;</code>
-   * @return The deviceTimeZoneOffsetSeconds.
-   */
-  @java.lang.Override
-  public int getDeviceTimeZoneOffsetSeconds() {
-    return deviceTimeZoneOffsetSeconds_;
-  }
-
-  public static final int LIMITED_AD_TRACKING_FIELD_NUMBER = 11;
-  private boolean limitedAdTracking_;
-  /**
-   * <pre>
-   * The device's Limit Ad Tracking setting.
-   * When true, we cannot use device_id for remarketing, demographics or
-   * influencing ads serving behaviour. However, we can use device_id for
-   * conversion tracking and campaign attribution.
-   * </pre>
-   *
-   * <code>bool limited_ad_tracking = 11;</code>
-   * @return The limitedAdTracking.
-   */
-  @java.lang.Override
-  public boolean getLimitedAdTracking() {
-    return limitedAdTracking_;
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceCategory_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceCategory_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileBrandName_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, mobileBrandName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileModelName_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, mobileModelName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileMarketingName_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, mobileMarketingName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platformVersion_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, platformVersion_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceId_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, deviceId_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(resettableDeviceId_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, resettableDeviceId_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userDefaultLanguage_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, userDefaultLanguage_);
-    }
-    if (deviceTimeZoneOffsetSeconds_ != 0) {
-      output.writeInt32(10, deviceTimeZoneOffsetSeconds_);
-    }
-    if (limitedAdTracking_ != false) {
-      output.writeBool(11, limitedAdTracking_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceModel_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, deviceModel_);
-    }
-    getUnknownFields().writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceCategory_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceCategory_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileBrandName_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, mobileBrandName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileModelName_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, mobileModelName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileMarketingName_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, mobileMarketingName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platformVersion_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, platformVersion_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceId_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, deviceId_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(resettableDeviceId_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, resettableDeviceId_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userDefaultLanguage_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, userDefaultLanguage_);
-    }
-    if (deviceTimeZoneOffsetSeconds_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(10, deviceTimeZoneOffsetSeconds_);
-    }
-    if (limitedAdTracking_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(11, limitedAdTracking_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceModel_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, deviceModel_);
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof com.google.events.firebase.analytics.v1.DeviceInfo)) {
-      return super.equals(obj);
-    }
-    com.google.events.firebase.analytics.v1.DeviceInfo other = (com.google.events.firebase.analytics.v1.DeviceInfo) obj;
-
-    if (!getDeviceCategory()
-        .equals(other.getDeviceCategory())) return false;
-    if (!getMobileBrandName()
-        .equals(other.getMobileBrandName())) return false;
-    if (!getMobileModelName()
-        .equals(other.getMobileModelName())) return false;
-    if (!getMobileMarketingName()
-        .equals(other.getMobileMarketingName())) return false;
-    if (!getDeviceModel()
-        .equals(other.getDeviceModel())) return false;
-    if (!getPlatformVersion()
-        .equals(other.getPlatformVersion())) return false;
-    if (!getDeviceId()
-        .equals(other.getDeviceId())) return false;
-    if (!getResettableDeviceId()
-        .equals(other.getResettableDeviceId())) return false;
-    if (!getUserDefaultLanguage()
-        .equals(other.getUserDefaultLanguage())) return false;
-    if (getDeviceTimeZoneOffsetSeconds()
-        != other.getDeviceTimeZoneOffsetSeconds()) return false;
-    if (getLimitedAdTracking()
-        != other.getLimitedAdTracking()) return false;
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + DEVICE_CATEGORY_FIELD_NUMBER;
-    hash = (53 * hash) + getDeviceCategory().hashCode();
-    hash = (37 * hash) + MOBILE_BRAND_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getMobileBrandName().hashCode();
-    hash = (37 * hash) + MOBILE_MODEL_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getMobileModelName().hashCode();
-    hash = (37 * hash) + MOBILE_MARKETING_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getMobileMarketingName().hashCode();
-    hash = (37 * hash) + DEVICE_MODEL_FIELD_NUMBER;
-    hash = (53 * hash) + getDeviceModel().hashCode();
-    hash = (37 * hash) + PLATFORM_VERSION_FIELD_NUMBER;
-    hash = (53 * hash) + getPlatformVersion().hashCode();
-    hash = (37 * hash) + DEVICE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getDeviceId().hashCode();
-    hash = (37 * hash) + RESETTABLE_DEVICE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getResettableDeviceId().hashCode();
-    hash = (37 * hash) + USER_DEFAULT_LANGUAGE_FIELD_NUMBER;
-    hash = (53 * hash) + getUserDefaultLanguage().hashCode();
-    hash = (37 * hash) + DEVICE_TIME_ZONE_OFFSET_SECONDS_FIELD_NUMBER;
-    hash = (53 * hash) + getDeviceTimeZoneOffsetSeconds();
-    hash = (37 * hash) + LIMITED_AD_TRACKING_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getLimitedAdTracking());
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(com.google.events.firebase.analytics.v1.DeviceInfo prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * <pre>
-   * Message containing device informations.
-   * </pre>
-   *
-   * Protobuf type {@code google.events.firebase.analytics.v1.DeviceInfo}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:google.events.firebase.analytics.v1.DeviceInfo)
-      com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
+    private DeviceInfo() {
+        deviceCategory_ = "";
+        mobileBrandName_ = "";
+        mobileModelName_ = "";
+        mobileMarketingName_ = "";
+        deviceModel_ = "";
+        platformVersion_ = "";
+        deviceId_ = "";
+        resettableDeviceId_ = "";
+        userDefaultLanguage_ = "";
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.google.events.firebase.analytics.v1.DeviceInfo.class, com.google.events.firebase.analytics.v1.DeviceInfo.Builder.class);
-    }
-
-    // Construct using com.google.events.firebase.analytics.v1.DeviceInfo.newBuilder()
-    private Builder() {
-
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      deviceCategory_ = "";
-
-      mobileBrandName_ = "";
-
-      mobileModelName_ = "";
-
-      mobileMarketingName_ = "";
-
-      deviceModel_ = "";
-
-      platformVersion_ = "";
-
-      deviceId_ = "";
-
-      resettableDeviceId_ = "";
-
-      userDefaultLanguage_ = "";
-
-      deviceTimeZoneOffsetSeconds_ = 0;
-
-      limitedAdTracking_ = false;
-
-      return this;
+    @SuppressWarnings({ "unused" })
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+        return new DeviceInfo();
     }
 
     @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
     }
 
     @java.lang.Override
-    public com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstanceForType() {
-      return com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance();
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(com.google.events.firebase.analytics.v1.DeviceInfo.class,
+                        com.google.events.firebase.analytics.v1.DeviceInfo.Builder.class);
     }
 
-    @java.lang.Override
-    public com.google.events.firebase.analytics.v1.DeviceInfo build() {
-      com.google.events.firebase.analytics.v1.DeviceInfo result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
-    }
+    public static final int DEVICE_CATEGORY_FIELD_NUMBER = 1;
+    private volatile java.lang.Object deviceCategory_;
 
-    @java.lang.Override
-    public com.google.events.firebase.analytics.v1.DeviceInfo buildPartial() {
-      com.google.events.firebase.analytics.v1.DeviceInfo result = new com.google.events.firebase.analytics.v1.DeviceInfo(this);
-      result.deviceCategory_ = deviceCategory_;
-      result.mobileBrandName_ = mobileBrandName_;
-      result.mobileModelName_ = mobileModelName_;
-      result.mobileMarketingName_ = mobileMarketingName_;
-      result.deviceModel_ = deviceModel_;
-      result.platformVersion_ = platformVersion_;
-      result.deviceId_ = deviceId_;
-      result.resettableDeviceId_ = resettableDeviceId_;
-      result.userDefaultLanguage_ = userDefaultLanguage_;
-      result.deviceTimeZoneOffsetSeconds_ = deviceTimeZoneOffsetSeconds_;
-      result.limitedAdTracking_ = limitedAdTracking_;
-      onBuilt();
-      return result;
-    }
-
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.events.firebase.analytics.v1.DeviceInfo) {
-        return mergeFrom((com.google.events.firebase.analytics.v1.DeviceInfo)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(com.google.events.firebase.analytics.v1.DeviceInfo other) {
-      if (other == com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance()) return this;
-      if (!other.getDeviceCategory().isEmpty()) {
-        deviceCategory_ = other.deviceCategory_;
-        onChanged();
-      }
-      if (!other.getMobileBrandName().isEmpty()) {
-        mobileBrandName_ = other.mobileBrandName_;
-        onChanged();
-      }
-      if (!other.getMobileModelName().isEmpty()) {
-        mobileModelName_ = other.mobileModelName_;
-        onChanged();
-      }
-      if (!other.getMobileMarketingName().isEmpty()) {
-        mobileMarketingName_ = other.mobileMarketingName_;
-        onChanged();
-      }
-      if (!other.getDeviceModel().isEmpty()) {
-        deviceModel_ = other.deviceModel_;
-        onChanged();
-      }
-      if (!other.getPlatformVersion().isEmpty()) {
-        platformVersion_ = other.platformVersion_;
-        onChanged();
-      }
-      if (!other.getDeviceId().isEmpty()) {
-        deviceId_ = other.deviceId_;
-        onChanged();
-      }
-      if (!other.getResettableDeviceId().isEmpty()) {
-        resettableDeviceId_ = other.resettableDeviceId_;
-        onChanged();
-      }
-      if (!other.getUserDefaultLanguage().isEmpty()) {
-        userDefaultLanguage_ = other.userDefaultLanguage_;
-        onChanged();
-      }
-      if (other.getDeviceTimeZoneOffsetSeconds() != 0) {
-        setDeviceTimeZoneOffsetSeconds(other.getDeviceTimeZoneOffsetSeconds());
-      }
-      if (other.getLimitedAdTracking() != false) {
-        setLimitedAdTracking(other.getLimitedAdTracking());
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              deviceCategory_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 10
-            case 18: {
-              mobileBrandName_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 18
-            case 26: {
-              mobileModelName_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 26
-            case 34: {
-              mobileMarketingName_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 34
-            case 50: {
-              platformVersion_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 50
-            case 58: {
-              deviceId_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 58
-            case 66: {
-              resettableDeviceId_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 66
-            case 74: {
-              userDefaultLanguage_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 74
-            case 80: {
-              deviceTimeZoneOffsetSeconds_ = input.readInt32();
-
-              break;
-            } // case 80
-            case 88: {
-              limitedAdTracking_ = input.readBool();
-
-              break;
-            } // case 88
-            case 98: {
-              deviceModel_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 98
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
-
-    private java.lang.Object deviceCategory_ = "";
     /**
      * <pre>
      * Device category.
@@ -1073,20 +64,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_category = 1;</code>
+     *
      * @return The deviceCategory.
      */
+    @java.lang.Override
     public java.lang.String getDeviceCategory() {
-      java.lang.Object ref = deviceCategory_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        deviceCategory_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = deviceCategory_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            deviceCategory_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device category.
@@ -1094,79 +87,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_category = 1;</code>
+     *
      * @return The bytes for deviceCategory.
      */
-    public com.google.protobuf.ByteString
-        getDeviceCategoryBytes() {
-      java.lang.Object ref = deviceCategory_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        deviceCategory_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device category.
-     * Eg. tablet or mobile.
-     * </pre>
-     *
-     * <code>string device_category = 1;</code>
-     * @param value The deviceCategory to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceCategory(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      deviceCategory_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device category.
-     * Eg. tablet or mobile.
-     * </pre>
-     *
-     * <code>string device_category = 1;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDeviceCategory() {
-      
-      deviceCategory_ = getDefaultInstance().getDeviceCategory();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device category.
-     * Eg. tablet or mobile.
-     * </pre>
-     *
-     * <code>string device_category = 1;</code>
-     * @param value The bytes for deviceCategory to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceCategoryBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      deviceCategory_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getDeviceCategoryBytes() {
+        java.lang.Object ref = deviceCategory_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            deviceCategory_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object mobileBrandName_ = "";
+    public static final int MOBILE_BRAND_NAME_FIELD_NUMBER = 2;
+    private volatile java.lang.Object mobileBrandName_;
+
     /**
      * <pre>
      * Device brand name.
@@ -1174,20 +112,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_brand_name = 2;</code>
+     *
      * @return The mobileBrandName.
      */
+    @java.lang.Override
     public java.lang.String getMobileBrandName() {
-      java.lang.Object ref = mobileBrandName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        mobileBrandName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = mobileBrandName_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            mobileBrandName_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device brand name.
@@ -1195,79 +135,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_brand_name = 2;</code>
+     *
      * @return The bytes for mobileBrandName.
      */
-    public com.google.protobuf.ByteString
-        getMobileBrandNameBytes() {
-      java.lang.Object ref = mobileBrandName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        mobileBrandName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device brand name.
-     * Eg. Samsung, HTC, etc.
-     * </pre>
-     *
-     * <code>string mobile_brand_name = 2;</code>
-     * @param value The mobileBrandName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileBrandName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      mobileBrandName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device brand name.
-     * Eg. Samsung, HTC, etc.
-     * </pre>
-     *
-     * <code>string mobile_brand_name = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMobileBrandName() {
-      
-      mobileBrandName_ = getDefaultInstance().getMobileBrandName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device brand name.
-     * Eg. Samsung, HTC, etc.
-     * </pre>
-     *
-     * <code>string mobile_brand_name = 2;</code>
-     * @param value The bytes for mobileBrandName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileBrandNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      mobileBrandName_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getMobileBrandNameBytes() {
+        java.lang.Object ref = mobileBrandName_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            mobileBrandName_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object mobileModelName_ = "";
+    public static final int MOBILE_MODEL_NAME_FIELD_NUMBER = 3;
+    private volatile java.lang.Object mobileModelName_;
+
     /**
      * <pre>
      * Device model name.
@@ -1275,20 +160,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_model_name = 3;</code>
+     *
      * @return The mobileModelName.
      */
+    @java.lang.Override
     public java.lang.String getMobileModelName() {
-      java.lang.Object ref = mobileModelName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        mobileModelName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = mobileModelName_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            mobileModelName_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device model name.
@@ -1296,79 +183,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_model_name = 3;</code>
+     *
      * @return The bytes for mobileModelName.
      */
-    public com.google.protobuf.ByteString
-        getMobileModelNameBytes() {
-      java.lang.Object ref = mobileModelName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        mobileModelName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device model name.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string mobile_model_name = 3;</code>
-     * @param value The mobileModelName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileModelName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      mobileModelName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device model name.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string mobile_model_name = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMobileModelName() {
-      
-      mobileModelName_ = getDefaultInstance().getMobileModelName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device model name.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string mobile_model_name = 3;</code>
-     * @param value The bytes for mobileModelName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileModelNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      mobileModelName_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getMobileModelNameBytes() {
+        java.lang.Object ref = mobileModelName_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            mobileModelName_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object mobileMarketingName_ = "";
+    public static final int MOBILE_MARKETING_NAME_FIELD_NUMBER = 4;
+    private volatile java.lang.Object mobileMarketingName_;
+
     /**
      * <pre>
      * Device marketing name.
@@ -1376,20 +208,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_marketing_name = 4;</code>
+     *
      * @return The mobileMarketingName.
      */
+    @java.lang.Override
     public java.lang.String getMobileMarketingName() {
-      java.lang.Object ref = mobileMarketingName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        mobileMarketingName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = mobileMarketingName_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            mobileMarketingName_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device marketing name.
@@ -1397,79 +231,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string mobile_marketing_name = 4;</code>
+     *
      * @return The bytes for mobileMarketingName.
      */
-    public com.google.protobuf.ByteString
-        getMobileMarketingNameBytes() {
-      java.lang.Object ref = mobileMarketingName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        mobileMarketingName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device marketing name.
-     * Eg. Galaxy S4 Mini
-     * </pre>
-     *
-     * <code>string mobile_marketing_name = 4;</code>
-     * @param value The mobileMarketingName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileMarketingName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      mobileMarketingName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device marketing name.
-     * Eg. Galaxy S4 Mini
-     * </pre>
-     *
-     * <code>string mobile_marketing_name = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMobileMarketingName() {
-      
-      mobileMarketingName_ = getDefaultInstance().getMobileMarketingName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device marketing name.
-     * Eg. Galaxy S4 Mini
-     * </pre>
-     *
-     * <code>string mobile_marketing_name = 4;</code>
-     * @param value The bytes for mobileMarketingName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMobileMarketingNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      mobileMarketingName_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getMobileMarketingNameBytes() {
+        java.lang.Object ref = mobileMarketingName_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            mobileMarketingName_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object deviceModel_ = "";
+    public static final int DEVICE_MODEL_FIELD_NUMBER = 12;
+    private volatile java.lang.Object deviceModel_;
+
     /**
      * <pre>
      * Device model.
@@ -1477,20 +256,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_model = 12;</code>
+     *
      * @return The deviceModel.
      */
+    @java.lang.Override
     public java.lang.String getDeviceModel() {
-      java.lang.Object ref = deviceModel_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        deviceModel_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = deviceModel_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            deviceModel_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device model.
@@ -1498,79 +279,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_model = 12;</code>
+     *
      * @return The bytes for deviceModel.
      */
-    public com.google.protobuf.ByteString
-        getDeviceModelBytes() {
-      java.lang.Object ref = deviceModel_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        deviceModel_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device model.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string device_model = 12;</code>
-     * @param value The deviceModel to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceModel(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      deviceModel_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device model.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string device_model = 12;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDeviceModel() {
-      
-      deviceModel_ = getDefaultInstance().getDeviceModel();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device model.
-     * Eg. GT-I9192
-     * </pre>
-     *
-     * <code>string device_model = 12;</code>
-     * @param value The bytes for deviceModel to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceModelBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      deviceModel_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getDeviceModelBytes() {
+        java.lang.Object ref = deviceModel_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            deviceModel_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object platformVersion_ = "";
+    public static final int PLATFORM_VERSION_FIELD_NUMBER = 6;
+    private volatile java.lang.Object platformVersion_;
+
     /**
      * <pre>
      * Device OS version when data capture ended.
@@ -1578,20 +304,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string platform_version = 6;</code>
+     *
      * @return The platformVersion.
      */
+    @java.lang.Override
     public java.lang.String getPlatformVersion() {
-      java.lang.Object ref = platformVersion_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        platformVersion_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = platformVersion_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            platformVersion_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Device OS version when data capture ended.
@@ -1599,79 +327,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string platform_version = 6;</code>
+     *
      * @return The bytes for platformVersion.
      */
-    public com.google.protobuf.ByteString
-        getPlatformVersionBytes() {
-      java.lang.Object ref = platformVersion_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        platformVersion_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Device OS version when data capture ended.
-     * Eg. 4.4.2
-     * </pre>
-     *
-     * <code>string platform_version = 6;</code>
-     * @param value The platformVersion to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPlatformVersion(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      platformVersion_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device OS version when data capture ended.
-     * Eg. 4.4.2
-     * </pre>
-     *
-     * <code>string platform_version = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPlatformVersion() {
-      
-      platformVersion_ = getDefaultInstance().getPlatformVersion();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Device OS version when data capture ended.
-     * Eg. 4.4.2
-     * </pre>
-     *
-     * <code>string platform_version = 6;</code>
-     * @param value The bytes for platformVersion to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPlatformVersionBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      platformVersion_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getPlatformVersionBytes() {
+        java.lang.Object ref = platformVersion_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            platformVersion_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object deviceId_ = "";
+    public static final int DEVICE_ID_FIELD_NUMBER = 7;
+    private volatile java.lang.Object deviceId_;
+
     /**
      * <pre>
      * Vendor specific device identifier. This is IDFV on iOS. Not used for
@@ -1680,20 +353,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_id = 7;</code>
+     *
      * @return The deviceId.
      */
+    @java.lang.Override
     public java.lang.String getDeviceId() {
-      java.lang.Object ref = deviceId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        deviceId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = deviceId_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            deviceId_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * Vendor specific device identifier. This is IDFV on iOS. Not used for
@@ -1702,82 +377,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string device_id = 7;</code>
+     *
      * @return The bytes for deviceId.
      */
-    public com.google.protobuf.ByteString
-        getDeviceIdBytes() {
-      java.lang.Object ref = deviceId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        deviceId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Vendor specific device identifier. This is IDFV on iOS. Not used for
-     * Android.
-     * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
-     * </pre>
-     *
-     * <code>string device_id = 7;</code>
-     * @param value The deviceId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      deviceId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Vendor specific device identifier. This is IDFV on iOS. Not used for
-     * Android.
-     * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
-     * </pre>
-     *
-     * <code>string device_id = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDeviceId() {
-      
-      deviceId_ = getDefaultInstance().getDeviceId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Vendor specific device identifier. This is IDFV on iOS. Not used for
-     * Android.
-     * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
-     * </pre>
-     *
-     * <code>string device_id = 7;</code>
-     * @param value The bytes for deviceId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      deviceId_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getDeviceIdBytes() {
+        java.lang.Object ref = deviceId_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            deviceId_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object resettableDeviceId_ = "";
+    public static final int RESETTABLE_DEVICE_ID_FIELD_NUMBER = 8;
+    private volatile java.lang.Object resettableDeviceId_;
+
     /**
      * <pre>
      * The type of the resettable_device_id is always IDFA on iOS and AdId
@@ -1786,20 +403,22 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string resettable_device_id = 8;</code>
+     *
      * @return The resettableDeviceId.
      */
+    @java.lang.Override
     public java.lang.String getResettableDeviceId() {
-      java.lang.Object ref = resettableDeviceId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        resettableDeviceId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = resettableDeviceId_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            resettableDeviceId_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * The type of the resettable_device_id is always IDFA on iOS and AdId
@@ -1808,82 +427,24 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string resettable_device_id = 8;</code>
+     *
      * @return The bytes for resettableDeviceId.
      */
-    public com.google.protobuf.ByteString
-        getResettableDeviceIdBytes() {
-      java.lang.Object ref = resettableDeviceId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        resettableDeviceId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The type of the resettable_device_id is always IDFA on iOS and AdId
-     * on Android.
-     * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
-     * </pre>
-     *
-     * <code>string resettable_device_id = 8;</code>
-     * @param value The resettableDeviceId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setResettableDeviceId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      resettableDeviceId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The type of the resettable_device_id is always IDFA on iOS and AdId
-     * on Android.
-     * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
-     * </pre>
-     *
-     * <code>string resettable_device_id = 8;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearResettableDeviceId() {
-      
-      resettableDeviceId_ = getDefaultInstance().getResettableDeviceId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The type of the resettable_device_id is always IDFA on iOS and AdId
-     * on Android.
-     * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
-     * </pre>
-     *
-     * <code>string resettable_device_id = 8;</code>
-     * @param value The bytes for resettableDeviceId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setResettableDeviceIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      resettableDeviceId_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getResettableDeviceIdBytes() {
+        java.lang.Object ref = resettableDeviceId_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            resettableDeviceId_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object userDefaultLanguage_ = "";
+    public static final int USER_DEFAULT_LANGUAGE_FIELD_NUMBER = 9;
+    private volatile java.lang.Object userDefaultLanguage_;
+
     /**
      * <pre>
      * The user language.
@@ -1891,143 +452,64 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string user_default_language = 9;</code>
+     *
      * @return The userDefaultLanguage.
      */
+    @java.lang.Override
     public java.lang.String getUserDefaultLanguage() {
-      java.lang.Object ref = userDefaultLanguage_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        userDefaultLanguage_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user language.
-     * Eg. "en-us", "en-za", "zh-tw", "jp"
-     * </pre>
-     *
-     * <code>string user_default_language = 9;</code>
-     * @return The bytes for userDefaultLanguage.
-     */
-    public com.google.protobuf.ByteString
-        getUserDefaultLanguageBytes() {
-      java.lang.Object ref = userDefaultLanguage_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        userDefaultLanguage_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user language.
-     * Eg. "en-us", "en-za", "zh-tw", "jp"
-     * </pre>
-     *
-     * <code>string user_default_language = 9;</code>
-     * @param value The userDefaultLanguage to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserDefaultLanguage(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      userDefaultLanguage_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user language.
-     * Eg. "en-us", "en-za", "zh-tw", "jp"
-     * </pre>
-     *
-     * <code>string user_default_language = 9;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearUserDefaultLanguage() {
-      
-      userDefaultLanguage_ = getDefaultInstance().getUserDefaultLanguage();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user language.
-     * Eg. "en-us", "en-za", "zh-tw", "jp"
-     * </pre>
-     *
-     * <code>string user_default_language = 9;</code>
-     * @param value The bytes for userDefaultLanguage to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserDefaultLanguageBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      userDefaultLanguage_ = value;
-      onChanged();
-      return this;
+        java.lang.Object ref = userDefaultLanguage_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            userDefaultLanguage_ = s;
+            return s;
+        }
     }
 
-    private int deviceTimeZoneOffsetSeconds_ ;
+    /**
+     * <pre>
+     * The user language.
+     * Eg. "en-us", "en-za", "zh-tw", "jp"
+     * </pre>
+     *
+     * <code>string user_default_language = 9;</code>
+     *
+     * @return The bytes for userDefaultLanguage.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getUserDefaultLanguageBytes() {
+        java.lang.Object ref = userDefaultLanguage_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            userDefaultLanguage_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    public static final int DEVICE_TIME_ZONE_OFFSET_SECONDS_FIELD_NUMBER = 10;
+    private int deviceTimeZoneOffsetSeconds_;
+
     /**
      * <pre>
      * The timezone of the device when data was uploaded as seconds skew from UTC.
      * </pre>
      *
      * <code>int32 device_time_zone_offset_seconds = 10;</code>
+     *
      * @return The deviceTimeZoneOffsetSeconds.
      */
     @java.lang.Override
     public int getDeviceTimeZoneOffsetSeconds() {
-      return deviceTimeZoneOffsetSeconds_;
-    }
-    /**
-     * <pre>
-     * The timezone of the device when data was uploaded as seconds skew from UTC.
-     * </pre>
-     *
-     * <code>int32 device_time_zone_offset_seconds = 10;</code>
-     * @param value The deviceTimeZoneOffsetSeconds to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeviceTimeZoneOffsetSeconds(int value) {
-      
-      deviceTimeZoneOffsetSeconds_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The timezone of the device when data was uploaded as seconds skew from UTC.
-     * </pre>
-     *
-     * <code>int32 device_time_zone_offset_seconds = 10;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDeviceTimeZoneOffsetSeconds() {
-      
-      deviceTimeZoneOffsetSeconds_ = 0;
-      onChanged();
-      return this;
+        return deviceTimeZoneOffsetSeconds_;
     }
 
-    private boolean limitedAdTracking_ ;
+    public static final int LIMITED_AD_TRACKING_FIELD_NUMBER = 11;
+    private boolean limitedAdTracking_;
+
     /**
      * <pre>
      * The device's Limit Ad Tracking setting.
@@ -2037,108 +519,1705 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>bool limited_ad_tracking = 11;</code>
+     *
      * @return The limitedAdTracking.
      */
     @java.lang.Override
     public boolean getLimitedAdTracking() {
-      return limitedAdTracking_;
+        return limitedAdTracking_;
     }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1)
+            return true;
+        if (isInitialized == 0)
+            return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceCategory_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceCategory_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileBrandName_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 2, mobileBrandName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileModelName_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 3, mobileModelName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileMarketingName_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 4, mobileMarketingName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platformVersion_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 6, platformVersion_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceId_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 7, deviceId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(resettableDeviceId_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 8, resettableDeviceId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userDefaultLanguage_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 9, userDefaultLanguage_);
+        }
+        if (deviceTimeZoneOffsetSeconds_ != 0) {
+            output.writeInt32(10, deviceTimeZoneOffsetSeconds_);
+        }
+        if (limitedAdTracking_ != false) {
+            output.writeBool(11, limitedAdTracking_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceModel_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 12, deviceModel_);
+        }
+        getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1)
+            return size;
+
+        size = 0;
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceCategory_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceCategory_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileBrandName_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, mobileBrandName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileModelName_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, mobileModelName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mobileMarketingName_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, mobileMarketingName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(platformVersion_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, platformVersion_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceId_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, deviceId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(resettableDeviceId_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, resettableDeviceId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userDefaultLanguage_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, userDefaultLanguage_);
+        }
+        if (deviceTimeZoneOffsetSeconds_ != 0) {
+            size += com.google.protobuf.CodedOutputStream.computeInt32Size(10, deviceTimeZoneOffsetSeconds_);
+        }
+        if (limitedAdTracking_ != false) {
+            size += com.google.protobuf.CodedOutputStream.computeBoolSize(11, limitedAdTracking_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceModel_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, deviceModel_);
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof com.google.events.firebase.analytics.v1.DeviceInfo)) {
+            return super.equals(obj);
+        }
+        com.google.events.firebase.analytics.v1.DeviceInfo other = (com.google.events.firebase.analytics.v1.DeviceInfo) obj;
+
+        if (!getDeviceCategory().equals(other.getDeviceCategory()))
+            return false;
+        if (!getMobileBrandName().equals(other.getMobileBrandName()))
+            return false;
+        if (!getMobileModelName().equals(other.getMobileModelName()))
+            return false;
+        if (!getMobileMarketingName().equals(other.getMobileMarketingName()))
+            return false;
+        if (!getDeviceModel().equals(other.getDeviceModel()))
+            return false;
+        if (!getPlatformVersion().equals(other.getPlatformVersion()))
+            return false;
+        if (!getDeviceId().equals(other.getDeviceId()))
+            return false;
+        if (!getResettableDeviceId().equals(other.getResettableDeviceId()))
+            return false;
+        if (!getUserDefaultLanguage().equals(other.getUserDefaultLanguage()))
+            return false;
+        if (getDeviceTimeZoneOffsetSeconds() != other.getDeviceTimeZoneOffsetSeconds())
+            return false;
+        if (getLimitedAdTracking() != other.getLimitedAdTracking())
+            return false;
+        if (!getUnknownFields().equals(other.getUnknownFields()))
+            return false;
+        return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + DEVICE_CATEGORY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceCategory().hashCode();
+        hash = (37 * hash) + MOBILE_BRAND_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getMobileBrandName().hashCode();
+        hash = (37 * hash) + MOBILE_MODEL_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getMobileModelName().hashCode();
+        hash = (37 * hash) + MOBILE_MARKETING_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getMobileMarketingName().hashCode();
+        hash = (37 * hash) + DEVICE_MODEL_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceModel().hashCode();
+        hash = (37 * hash) + PLATFORM_VERSION_FIELD_NUMBER;
+        hash = (53 * hash) + getPlatformVersion().hashCode();
+        hash = (37 * hash) + DEVICE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceId().hashCode();
+        hash = (37 * hash) + RESETTABLE_DEVICE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getResettableDeviceId().hashCode();
+        hash = (37 * hash) + USER_DEFAULT_LANGUAGE_FIELD_NUMBER;
+        hash = (53 * hash) + getUserDefaultLanguage().hashCode();
+        hash = (37 * hash) + DEVICE_TIME_ZONE_OFFSET_SECONDS_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceTimeZoneOffsetSeconds();
+        hash = (37 * hash) + LIMITED_AD_TRACKING_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(getLimitedAdTracking());
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseDelimitedFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
+            com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo parseFrom(
+            com.google.protobuf.CodedInputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.google.events.firebase.analytics.v1.DeviceInfo prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
     /**
      * <pre>
-     * The device's Limit Ad Tracking setting.
-     * When true, we cannot use device_id for remarketing, demographics or
-     * influencing ads serving behaviour. However, we can use device_id for
-     * conversion tracking and campaign attribution.
+     * Message containing device informations.
      * </pre>
      *
-     * <code>bool limited_ad_tracking = 11;</code>
-     * @param value The limitedAdTracking to set.
-     * @return This builder for chaining.
+     * Protobuf type {@code google.events.firebase.analytics.v1.DeviceInfo}
      */
-    public Builder setLimitedAdTracking(boolean value) {
-      
-      limitedAdTracking_ = value;
-      onChanged();
-      return this;
+    public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:google.events.firebase.analytics.v1.DeviceInfo)
+            com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(com.google.events.firebase.analytics.v1.DeviceInfo.class,
+                            com.google.events.firebase.analytics.v1.DeviceInfo.Builder.class);
+        }
+
+        // Construct using com.google.events.firebase.analytics.v1.DeviceInfo.newBuilder()
+        private Builder() {
+
+        }
+
+        private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            deviceCategory_ = "";
+
+            mobileBrandName_ = "";
+
+            mobileModelName_ = "";
+
+            mobileMarketingName_ = "";
+
+            deviceModel_ = "";
+
+            platformVersion_ = "";
+
+            deviceId_ = "";
+
+            resettableDeviceId_ = "";
+
+            userDefaultLanguage_ = "";
+
+            deviceTimeZoneOffsetSeconds_ = 0;
+
+            limitedAdTracking_ = false;
+
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+            return com.google.events.firebase.analytics.v1.Data.internal_static_google_events_firebase_analytics_v1_DeviceInfo_descriptor;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstanceForType() {
+            return com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.DeviceInfo build() {
+            com.google.events.firebase.analytics.v1.DeviceInfo result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.analytics.v1.DeviceInfo buildPartial() {
+            com.google.events.firebase.analytics.v1.DeviceInfo result = new com.google.events.firebase.analytics.v1.DeviceInfo(
+                    this);
+            result.deviceCategory_ = deviceCategory_;
+            result.mobileBrandName_ = mobileBrandName_;
+            result.mobileModelName_ = mobileModelName_;
+            result.mobileMarketingName_ = mobileMarketingName_;
+            result.deviceModel_ = deviceModel_;
+            result.platformVersion_ = platformVersion_;
+            result.deviceId_ = deviceId_;
+            result.resettableDeviceId_ = resettableDeviceId_;
+            result.userDefaultLanguage_ = userDefaultLanguage_;
+            result.deviceTimeZoneOffsetSeconds_ = deviceTimeZoneOffsetSeconds_;
+            result.limitedAdTracking_ = limitedAdTracking_;
+            onBuilt();
+            return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+                java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.google.events.firebase.analytics.v1.DeviceInfo) {
+                return mergeFrom((com.google.events.firebase.analytics.v1.DeviceInfo) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(com.google.events.firebase.analytics.v1.DeviceInfo other) {
+            if (other == com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance())
+                return this;
+            if (!other.getDeviceCategory().isEmpty()) {
+                deviceCategory_ = other.deviceCategory_;
+                onChanged();
+            }
+            if (!other.getMobileBrandName().isEmpty()) {
+                mobileBrandName_ = other.mobileBrandName_;
+                onChanged();
+            }
+            if (!other.getMobileModelName().isEmpty()) {
+                mobileModelName_ = other.mobileModelName_;
+                onChanged();
+            }
+            if (!other.getMobileMarketingName().isEmpty()) {
+                mobileMarketingName_ = other.mobileMarketingName_;
+                onChanged();
+            }
+            if (!other.getDeviceModel().isEmpty()) {
+                deviceModel_ = other.deviceModel_;
+                onChanged();
+            }
+            if (!other.getPlatformVersion().isEmpty()) {
+                platformVersion_ = other.platformVersion_;
+                onChanged();
+            }
+            if (!other.getDeviceId().isEmpty()) {
+                deviceId_ = other.deviceId_;
+                onChanged();
+            }
+            if (!other.getResettableDeviceId().isEmpty()) {
+                resettableDeviceId_ = other.resettableDeviceId_;
+                onChanged();
+            }
+            if (!other.getUserDefaultLanguage().isEmpty()) {
+                userDefaultLanguage_ = other.userDefaultLanguage_;
+                onChanged();
+            }
+            if (other.getDeviceTimeZoneOffsetSeconds() != 0) {
+                setDeviceTimeZoneOffsetSeconds(other.getDeviceTimeZoneOffsetSeconds());
+            }
+            if (other.getLimitedAdTracking() != false) {
+                setLimitedAdTracking(other.getLimitedAdTracking());
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    case 10: {
+                        deviceCategory_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 10
+                    case 18: {
+                        mobileBrandName_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 18
+                    case 26: {
+                        mobileModelName_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 26
+                    case 34: {
+                        mobileMarketingName_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 34
+                    case 50: {
+                        platformVersion_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 50
+                    case 58: {
+                        deviceId_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 58
+                    case 66: {
+                        resettableDeviceId_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 66
+                    case 74: {
+                        userDefaultLanguage_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 74
+                    case 80: {
+                        deviceTimeZoneOffsetSeconds_ = input.readInt32();
+
+                        break;
+                    } // case 80
+                    case 88: {
+                        limitedAdTracking_ = input.readBool();
+
+                        break;
+                    } // case 88
+                    case 98: {
+                        deviceModel_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 98
+                    default: {
+                        if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                            done = true; // was an endgroup tag
+                        }
+                        break;
+                    } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private java.lang.Object deviceCategory_ = "";
+
+        /**
+         * <pre>
+         * Device category.
+         * Eg. tablet or mobile.
+         * </pre>
+         *
+         * <code>string device_category = 1;</code>
+         *
+         * @return The deviceCategory.
+         */
+        public java.lang.String getDeviceCategory() {
+            java.lang.Object ref = deviceCategory_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                deviceCategory_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device category.
+         * Eg. tablet or mobile.
+         * </pre>
+         *
+         * <code>string device_category = 1;</code>
+         *
+         * @return The bytes for deviceCategory.
+         */
+        public com.google.protobuf.ByteString getDeviceCategoryBytes() {
+            java.lang.Object ref = deviceCategory_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                deviceCategory_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device category.
+         * Eg. tablet or mobile.
+         * </pre>
+         *
+         * <code>string device_category = 1;</code>
+         *
+         * @param value
+         *            The deviceCategory to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceCategory(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            deviceCategory_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device category.
+         * Eg. tablet or mobile.
+         * </pre>
+         *
+         * <code>string device_category = 1;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDeviceCategory() {
+
+            deviceCategory_ = getDefaultInstance().getDeviceCategory();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device category.
+         * Eg. tablet or mobile.
+         * </pre>
+         *
+         * <code>string device_category = 1;</code>
+         *
+         * @param value
+         *            The bytes for deviceCategory to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceCategoryBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            deviceCategory_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object mobileBrandName_ = "";
+
+        /**
+         * <pre>
+         * Device brand name.
+         * Eg. Samsung, HTC, etc.
+         * </pre>
+         *
+         * <code>string mobile_brand_name = 2;</code>
+         *
+         * @return The mobileBrandName.
+         */
+        public java.lang.String getMobileBrandName() {
+            java.lang.Object ref = mobileBrandName_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                mobileBrandName_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device brand name.
+         * Eg. Samsung, HTC, etc.
+         * </pre>
+         *
+         * <code>string mobile_brand_name = 2;</code>
+         *
+         * @return The bytes for mobileBrandName.
+         */
+        public com.google.protobuf.ByteString getMobileBrandNameBytes() {
+            java.lang.Object ref = mobileBrandName_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                mobileBrandName_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device brand name.
+         * Eg. Samsung, HTC, etc.
+         * </pre>
+         *
+         * <code>string mobile_brand_name = 2;</code>
+         *
+         * @param value
+         *            The mobileBrandName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileBrandName(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            mobileBrandName_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device brand name.
+         * Eg. Samsung, HTC, etc.
+         * </pre>
+         *
+         * <code>string mobile_brand_name = 2;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearMobileBrandName() {
+
+            mobileBrandName_ = getDefaultInstance().getMobileBrandName();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device brand name.
+         * Eg. Samsung, HTC, etc.
+         * </pre>
+         *
+         * <code>string mobile_brand_name = 2;</code>
+         *
+         * @param value
+         *            The bytes for mobileBrandName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileBrandNameBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            mobileBrandName_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object mobileModelName_ = "";
+
+        /**
+         * <pre>
+         * Device model name.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string mobile_model_name = 3;</code>
+         *
+         * @return The mobileModelName.
+         */
+        public java.lang.String getMobileModelName() {
+            java.lang.Object ref = mobileModelName_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                mobileModelName_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device model name.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string mobile_model_name = 3;</code>
+         *
+         * @return The bytes for mobileModelName.
+         */
+        public com.google.protobuf.ByteString getMobileModelNameBytes() {
+            java.lang.Object ref = mobileModelName_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                mobileModelName_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device model name.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string mobile_model_name = 3;</code>
+         *
+         * @param value
+         *            The mobileModelName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileModelName(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            mobileModelName_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device model name.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string mobile_model_name = 3;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearMobileModelName() {
+
+            mobileModelName_ = getDefaultInstance().getMobileModelName();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device model name.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string mobile_model_name = 3;</code>
+         *
+         * @param value
+         *            The bytes for mobileModelName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileModelNameBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            mobileModelName_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object mobileMarketingName_ = "";
+
+        /**
+         * <pre>
+         * Device marketing name.
+         * Eg. Galaxy S4 Mini
+         * </pre>
+         *
+         * <code>string mobile_marketing_name = 4;</code>
+         *
+         * @return The mobileMarketingName.
+         */
+        public java.lang.String getMobileMarketingName() {
+            java.lang.Object ref = mobileMarketingName_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                mobileMarketingName_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device marketing name.
+         * Eg. Galaxy S4 Mini
+         * </pre>
+         *
+         * <code>string mobile_marketing_name = 4;</code>
+         *
+         * @return The bytes for mobileMarketingName.
+         */
+        public com.google.protobuf.ByteString getMobileMarketingNameBytes() {
+            java.lang.Object ref = mobileMarketingName_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                mobileMarketingName_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device marketing name.
+         * Eg. Galaxy S4 Mini
+         * </pre>
+         *
+         * <code>string mobile_marketing_name = 4;</code>
+         *
+         * @param value
+         *            The mobileMarketingName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileMarketingName(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            mobileMarketingName_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device marketing name.
+         * Eg. Galaxy S4 Mini
+         * </pre>
+         *
+         * <code>string mobile_marketing_name = 4;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearMobileMarketingName() {
+
+            mobileMarketingName_ = getDefaultInstance().getMobileMarketingName();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device marketing name.
+         * Eg. Galaxy S4 Mini
+         * </pre>
+         *
+         * <code>string mobile_marketing_name = 4;</code>
+         *
+         * @param value
+         *            The bytes for mobileMarketingName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setMobileMarketingNameBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            mobileMarketingName_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object deviceModel_ = "";
+
+        /**
+         * <pre>
+         * Device model.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string device_model = 12;</code>
+         *
+         * @return The deviceModel.
+         */
+        public java.lang.String getDeviceModel() {
+            java.lang.Object ref = deviceModel_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                deviceModel_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device model.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string device_model = 12;</code>
+         *
+         * @return The bytes for deviceModel.
+         */
+        public com.google.protobuf.ByteString getDeviceModelBytes() {
+            java.lang.Object ref = deviceModel_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                deviceModel_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device model.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string device_model = 12;</code>
+         *
+         * @param value
+         *            The deviceModel to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceModel(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            deviceModel_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device model.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string device_model = 12;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDeviceModel() {
+
+            deviceModel_ = getDefaultInstance().getDeviceModel();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device model.
+         * Eg. GT-I9192
+         * </pre>
+         *
+         * <code>string device_model = 12;</code>
+         *
+         * @param value
+         *            The bytes for deviceModel to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceModelBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            deviceModel_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object platformVersion_ = "";
+
+        /**
+         * <pre>
+         * Device OS version when data capture ended.
+         * Eg. 4.4.2
+         * </pre>
+         *
+         * <code>string platform_version = 6;</code>
+         *
+         * @return The platformVersion.
+         */
+        public java.lang.String getPlatformVersion() {
+            java.lang.Object ref = platformVersion_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                platformVersion_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device OS version when data capture ended.
+         * Eg. 4.4.2
+         * </pre>
+         *
+         * <code>string platform_version = 6;</code>
+         *
+         * @return The bytes for platformVersion.
+         */
+        public com.google.protobuf.ByteString getPlatformVersionBytes() {
+            java.lang.Object ref = platformVersion_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                platformVersion_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Device OS version when data capture ended.
+         * Eg. 4.4.2
+         * </pre>
+         *
+         * <code>string platform_version = 6;</code>
+         *
+         * @param value
+         *            The platformVersion to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPlatformVersion(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            platformVersion_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device OS version when data capture ended.
+         * Eg. 4.4.2
+         * </pre>
+         *
+         * <code>string platform_version = 6;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearPlatformVersion() {
+
+            platformVersion_ = getDefaultInstance().getPlatformVersion();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Device OS version when data capture ended.
+         * Eg. 4.4.2
+         * </pre>
+         *
+         * <code>string platform_version = 6;</code>
+         *
+         * @param value
+         *            The bytes for platformVersion to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPlatformVersionBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            platformVersion_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object deviceId_ = "";
+
+        /**
+         * <pre>
+         * Vendor specific device identifier. This is IDFV on iOS. Not used for
+         * Android.
+         * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
+         * </pre>
+         *
+         * <code>string device_id = 7;</code>
+         *
+         * @return The deviceId.
+         */
+        public java.lang.String getDeviceId() {
+            java.lang.Object ref = deviceId_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                deviceId_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Vendor specific device identifier. This is IDFV on iOS. Not used for
+         * Android.
+         * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
+         * </pre>
+         *
+         * <code>string device_id = 7;</code>
+         *
+         * @return The bytes for deviceId.
+         */
+        public com.google.protobuf.ByteString getDeviceIdBytes() {
+            java.lang.Object ref = deviceId_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                deviceId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Vendor specific device identifier. This is IDFV on iOS. Not used for
+         * Android.
+         * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
+         * </pre>
+         *
+         * <code>string device_id = 7;</code>
+         *
+         * @param value
+         *            The deviceId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceId(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            deviceId_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Vendor specific device identifier. This is IDFV on iOS. Not used for
+         * Android.
+         * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
+         * </pre>
+         *
+         * <code>string device_id = 7;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDeviceId() {
+
+            deviceId_ = getDefaultInstance().getDeviceId();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Vendor specific device identifier. This is IDFV on iOS. Not used for
+         * Android.
+         * Example: "599F9C00-92DC-4B5C-9464-7971F01F8370"
+         * </pre>
+         *
+         * <code>string device_id = 7;</code>
+         *
+         * @param value
+         *            The bytes for deviceId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceIdBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            deviceId_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object resettableDeviceId_ = "";
+
+        /**
+         * <pre>
+         * The type of the resettable_device_id is always IDFA on iOS and AdId
+         * on Android.
+         * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
+         * </pre>
+         *
+         * <code>string resettable_device_id = 8;</code>
+         *
+         * @return The resettableDeviceId.
+         */
+        public java.lang.String getResettableDeviceId() {
+            java.lang.Object ref = resettableDeviceId_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                resettableDeviceId_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The type of the resettable_device_id is always IDFA on iOS and AdId
+         * on Android.
+         * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
+         * </pre>
+         *
+         * <code>string resettable_device_id = 8;</code>
+         *
+         * @return The bytes for resettableDeviceId.
+         */
+        public com.google.protobuf.ByteString getResettableDeviceIdBytes() {
+            java.lang.Object ref = resettableDeviceId_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                resettableDeviceId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The type of the resettable_device_id is always IDFA on iOS and AdId
+         * on Android.
+         * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
+         * </pre>
+         *
+         * <code>string resettable_device_id = 8;</code>
+         *
+         * @param value
+         *            The resettableDeviceId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setResettableDeviceId(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            resettableDeviceId_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The type of the resettable_device_id is always IDFA on iOS and AdId
+         * on Android.
+         * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
+         * </pre>
+         *
+         * <code>string resettable_device_id = 8;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearResettableDeviceId() {
+
+            resettableDeviceId_ = getDefaultInstance().getResettableDeviceId();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The type of the resettable_device_id is always IDFA on iOS and AdId
+         * on Android.
+         * Example: "71683BF9-FA3B-4B0D-9535-A1F05188BAF3"
+         * </pre>
+         *
+         * <code>string resettable_device_id = 8;</code>
+         *
+         * @param value
+         *            The bytes for resettableDeviceId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setResettableDeviceIdBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            resettableDeviceId_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object userDefaultLanguage_ = "";
+
+        /**
+         * <pre>
+         * The user language.
+         * Eg. "en-us", "en-za", "zh-tw", "jp"
+         * </pre>
+         *
+         * <code>string user_default_language = 9;</code>
+         *
+         * @return The userDefaultLanguage.
+         */
+        public java.lang.String getUserDefaultLanguage() {
+            java.lang.Object ref = userDefaultLanguage_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                userDefaultLanguage_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user language.
+         * Eg. "en-us", "en-za", "zh-tw", "jp"
+         * </pre>
+         *
+         * <code>string user_default_language = 9;</code>
+         *
+         * @return The bytes for userDefaultLanguage.
+         */
+        public com.google.protobuf.ByteString getUserDefaultLanguageBytes() {
+            java.lang.Object ref = userDefaultLanguage_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                userDefaultLanguage_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user language.
+         * Eg. "en-us", "en-za", "zh-tw", "jp"
+         * </pre>
+         *
+         * <code>string user_default_language = 9;</code>
+         *
+         * @param value
+         *            The userDefaultLanguage to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUserDefaultLanguage(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            userDefaultLanguage_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user language.
+         * Eg. "en-us", "en-za", "zh-tw", "jp"
+         * </pre>
+         *
+         * <code>string user_default_language = 9;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearUserDefaultLanguage() {
+
+            userDefaultLanguage_ = getDefaultInstance().getUserDefaultLanguage();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user language.
+         * Eg. "en-us", "en-za", "zh-tw", "jp"
+         * </pre>
+         *
+         * <code>string user_default_language = 9;</code>
+         *
+         * @param value
+         *            The bytes for userDefaultLanguage to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUserDefaultLanguageBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            userDefaultLanguage_ = value;
+            onChanged();
+            return this;
+        }
+
+        private int deviceTimeZoneOffsetSeconds_;
+
+        /**
+         * <pre>
+         * The timezone of the device when data was uploaded as seconds skew from UTC.
+         * </pre>
+         *
+         * <code>int32 device_time_zone_offset_seconds = 10;</code>
+         *
+         * @return The deviceTimeZoneOffsetSeconds.
+         */
+        @java.lang.Override
+        public int getDeviceTimeZoneOffsetSeconds() {
+            return deviceTimeZoneOffsetSeconds_;
+        }
+
+        /**
+         * <pre>
+         * The timezone of the device when data was uploaded as seconds skew from UTC.
+         * </pre>
+         *
+         * <code>int32 device_time_zone_offset_seconds = 10;</code>
+         *
+         * @param value
+         *            The deviceTimeZoneOffsetSeconds to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDeviceTimeZoneOffsetSeconds(int value) {
+
+            deviceTimeZoneOffsetSeconds_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The timezone of the device when data was uploaded as seconds skew from UTC.
+         * </pre>
+         *
+         * <code>int32 device_time_zone_offset_seconds = 10;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDeviceTimeZoneOffsetSeconds() {
+
+            deviceTimeZoneOffsetSeconds_ = 0;
+            onChanged();
+            return this;
+        }
+
+        private boolean limitedAdTracking_;
+
+        /**
+         * <pre>
+         * The device's Limit Ad Tracking setting.
+         * When true, we cannot use device_id for remarketing, demographics or
+         * influencing ads serving behaviour. However, we can use device_id for
+         * conversion tracking and campaign attribution.
+         * </pre>
+         *
+         * <code>bool limited_ad_tracking = 11;</code>
+         *
+         * @return The limitedAdTracking.
+         */
+        @java.lang.Override
+        public boolean getLimitedAdTracking() {
+            return limitedAdTracking_;
+        }
+
+        /**
+         * <pre>
+         * The device's Limit Ad Tracking setting.
+         * When true, we cannot use device_id for remarketing, demographics or
+         * influencing ads serving behaviour. However, we can use device_id for
+         * conversion tracking and campaign attribution.
+         * </pre>
+         *
+         * <code>bool limited_ad_tracking = 11;</code>
+         *
+         * @param value
+         *            The limitedAdTracking to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setLimitedAdTracking(boolean value) {
+
+            limitedAdTracking_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The device's Limit Ad Tracking setting.
+         * When true, we cannot use device_id for remarketing, demographics or
+         * influencing ads serving behaviour. However, we can use device_id for
+         * conversion tracking and campaign attribution.
+         * </pre>
+         *
+         * <code>bool limited_ad_tracking = 11;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearLimitedAdTracking() {
+
+            limitedAdTracking_ = false;
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+        // @@protoc_insertion_point(builder_scope:google.events.firebase.analytics.v1.DeviceInfo)
     }
-    /**
-     * <pre>
-     * The device's Limit Ad Tracking setting.
-     * When true, we cannot use device_id for remarketing, demographics or
-     * influencing ads serving behaviour. However, we can use device_id for
-     * conversion tracking and campaign attribution.
-     * </pre>
-     *
-     * <code>bool limited_ad_tracking = 11;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLimitedAdTracking() {
-      
-      limitedAdTracking_ = false;
-      onChanged();
-      return this;
+
+    // @@protoc_insertion_point(class_scope:google.events.firebase.analytics.v1.DeviceInfo)
+    private static final com.google.events.firebase.analytics.v1.DeviceInfo DEFAULT_INSTANCE;
+    static {
+        DEFAULT_INSTANCE = new com.google.events.firebase.analytics.v1.DeviceInfo();
     }
+
+    public static com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<DeviceInfo> PARSER = new com.google.protobuf.AbstractParser<DeviceInfo>() {
+        @java.lang.Override
+        public DeviceInfo parsePartialFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<DeviceInfo> parser() {
+        return PARSER;
+    }
+
     @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
+    public com.google.protobuf.Parser<DeviceInfo> getParserForType() {
+        return PARSER;
     }
 
     @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
+    public com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
     }
-
-
-    // @@protoc_insertion_point(builder_scope:google.events.firebase.analytics.v1.DeviceInfo)
-  }
-
-  // @@protoc_insertion_point(class_scope:google.events.firebase.analytics.v1.DeviceInfo)
-  private static final com.google.events.firebase.analytics.v1.DeviceInfo DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new com.google.events.firebase.analytics.v1.DeviceInfo();
-  }
-
-  public static com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<DeviceInfo>
-      PARSER = new com.google.protobuf.AbstractParser<DeviceInfo>() {
-    @java.lang.Override
-    public DeviceInfo parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
-    }
-  };
-
-  public static com.google.protobuf.Parser<DeviceInfo> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<DeviceInfo> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.events.firebase.analytics.v1.DeviceInfo getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
 
 }
-

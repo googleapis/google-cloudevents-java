@@ -10,1564 +10,296 @@ package com.google.events.firebase.auth.v1;
  *
  * Protobuf type {@code google.events.firebase.auth.v1.AuthEventData}
  */
-public final class AuthEventData extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:google.events.firebase.auth.v1.AuthEventData)
-    AuthEventDataOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use AuthEventData.newBuilder() to construct.
-  private AuthEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private AuthEventData() {
-    uid_ = "";
-    email_ = "";
-    displayName_ = "";
-    photoURL_ = "";
-    providerData_ = java.util.Collections.emptyList();
-    phoneNumber_ = "";
-  }
+public final class AuthEventData extends com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:google.events.firebase.auth.v1.AuthEventData)
+        AuthEventDataOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new AuthEventData();
-  }
-
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.google.events.firebase.auth.v1.AuthEventData.class, com.google.events.firebase.auth.v1.AuthEventData.Builder.class);
-  }
-
-  public static final int UID_FIELD_NUMBER = 1;
-  private volatile java.lang.Object uid_;
-  /**
-   * <pre>
-   * The user identifier in the Firebase app.
-   * </pre>
-   *
-   * <code>string uid = 1;</code>
-   * @return The uid.
-   */
-  @java.lang.Override
-  public java.lang.String getUid() {
-    java.lang.Object ref = uid_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      uid_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user identifier in the Firebase app.
-   * </pre>
-   *
-   * <code>string uid = 1;</code>
-   * @return The bytes for uid.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getUidBytes() {
-    java.lang.Object ref = uid_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      uid_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int EMAIL_FIELD_NUMBER = 2;
-  private volatile java.lang.Object email_;
-  /**
-   * <pre>
-   * The user's primary email, if set.
-   * </pre>
-   *
-   * <code>string email = 2;</code>
-   * @return The email.
-   */
-  @java.lang.Override
-  public java.lang.String getEmail() {
-    java.lang.Object ref = email_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      email_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user's primary email, if set.
-   * </pre>
-   *
-   * <code>string email = 2;</code>
-   * @return The bytes for email.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getEmailBytes() {
-    java.lang.Object ref = email_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      email_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int EMAIL_VERIFIED_FIELD_NUMBER = 3;
-  private boolean emailVerified_;
-  /**
-   * <pre>
-   * Whether or not the user's primary email is verified.
-   * </pre>
-   *
-   * <code>bool email_verified = 3;</code>
-   * @return The emailVerified.
-   */
-  @java.lang.Override
-  public boolean getEmailVerified() {
-    return emailVerified_;
-  }
-
-  public static final int DISPLAY_NAME_FIELD_NUMBER = 4;
-  private volatile java.lang.Object displayName_;
-  /**
-   * <pre>
-   * The user's display name.
-   * </pre>
-   *
-   * <code>string display_name = 4;</code>
-   * @return The displayName.
-   */
-  @java.lang.Override
-  public java.lang.String getDisplayName() {
-    java.lang.Object ref = displayName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      displayName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user's display name.
-   * </pre>
-   *
-   * <code>string display_name = 4;</code>
-   * @return The bytes for displayName.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getDisplayNameBytes() {
-    java.lang.Object ref = displayName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      displayName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int PHOTO_URL_FIELD_NUMBER = 5;
-  private volatile java.lang.Object photoURL_;
-  /**
-   * <pre>
-   * The user's photo URL.
-   * </pre>
-   *
-   * <code>string photo_URL = 5;</code>
-   * @return The photoURL.
-   */
-  @java.lang.Override
-  public java.lang.String getPhotoURL() {
-    java.lang.Object ref = photoURL_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      photoURL_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user's photo URL.
-   * </pre>
-   *
-   * <code>string photo_URL = 5;</code>
-   * @return The bytes for photoURL.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getPhotoURLBytes() {
-    java.lang.Object ref = photoURL_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      photoURL_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int DISABLED_FIELD_NUMBER = 6;
-  private boolean disabled_;
-  /**
-   * <pre>
-   * Whether the user is disabled.
-   * </pre>
-   *
-   * <code>bool disabled = 6;</code>
-   * @return The disabled.
-   */
-  @java.lang.Override
-  public boolean getDisabled() {
-    return disabled_;
-  }
-
-  public static final int METADATA_FIELD_NUMBER = 7;
-  private com.google.events.firebase.auth.v1.UserMetadata metadata_;
-  /**
-   * <pre>
-   * Additional metadata about the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-   * @return Whether the metadata field is set.
-   */
-  @java.lang.Override
-  public boolean hasMetadata() {
-    return metadata_ != null;
-  }
-  /**
-   * <pre>
-   * Additional metadata about the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-   * @return The metadata.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.UserMetadata getMetadata() {
-    return metadata_ == null ? com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance() : metadata_;
-  }
-  /**
-   * <pre>
-   * Additional metadata about the user.
-   * </pre>
-   *
-   * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.UserMetadataOrBuilder getMetadataOrBuilder() {
-    return getMetadata();
-  }
-
-  public static final int PROVIDER_DATA_FIELD_NUMBER = 8;
-  private java.util.List<com.google.events.firebase.auth.v1.UserInfo> providerData_;
-  /**
-   * <pre>
-   * User's info at the providers
-   * </pre>
-   *
-   * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-   */
-  @java.lang.Override
-  public java.util.List<com.google.events.firebase.auth.v1.UserInfo> getProviderDataList() {
-    return providerData_;
-  }
-  /**
-   * <pre>
-   * User's info at the providers
-   * </pre>
-   *
-   * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-   */
-  @java.lang.Override
-  public java.util.List<? extends com.google.events.firebase.auth.v1.UserInfoOrBuilder> 
-      getProviderDataOrBuilderList() {
-    return providerData_;
-  }
-  /**
-   * <pre>
-   * User's info at the providers
-   * </pre>
-   *
-   * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-   */
-  @java.lang.Override
-  public int getProviderDataCount() {
-    return providerData_.size();
-  }
-  /**
-   * <pre>
-   * User's info at the providers
-   * </pre>
-   *
-   * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.UserInfo getProviderData(int index) {
-    return providerData_.get(index);
-  }
-  /**
-   * <pre>
-   * User's info at the providers
-   * </pre>
-   *
-   * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.UserInfoOrBuilder getProviderDataOrBuilder(
-      int index) {
-    return providerData_.get(index);
-  }
-
-  public static final int PHONE_NUMBER_FIELD_NUMBER = 9;
-  private volatile java.lang.Object phoneNumber_;
-  /**
-   * <pre>
-   * The user's phone number.
-   * </pre>
-   *
-   * <code>string phone_number = 9;</code>
-   * @return The phoneNumber.
-   */
-  @java.lang.Override
-  public java.lang.String getPhoneNumber() {
-    java.lang.Object ref = phoneNumber_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      phoneNumber_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * The user's phone number.
-   * </pre>
-   *
-   * <code>string phone_number = 9;</code>
-   * @return The bytes for phoneNumber.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getPhoneNumberBytes() {
-    java.lang.Object ref = phoneNumber_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      phoneNumber_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int CUSTOM_CLAIMS_FIELD_NUMBER = 10;
-  private com.google.protobuf.Struct customClaims_;
-  /**
-   * <pre>
-   * User's custom claims, typically used to define user roles and propagated
-   * to an authenticated user's ID token.
-   * </pre>
-   *
-   * <code>.google.protobuf.Struct custom_claims = 10;</code>
-   * @return Whether the customClaims field is set.
-   */
-  @java.lang.Override
-  public boolean hasCustomClaims() {
-    return customClaims_ != null;
-  }
-  /**
-   * <pre>
-   * User's custom claims, typically used to define user roles and propagated
-   * to an authenticated user's ID token.
-   * </pre>
-   *
-   * <code>.google.protobuf.Struct custom_claims = 10;</code>
-   * @return The customClaims.
-   */
-  @java.lang.Override
-  public com.google.protobuf.Struct getCustomClaims() {
-    return customClaims_ == null ? com.google.protobuf.Struct.getDefaultInstance() : customClaims_;
-  }
-  /**
-   * <pre>
-   * User's custom claims, typically used to define user roles and propagated
-   * to an authenticated user's ID token.
-   * </pre>
-   *
-   * <code>.google.protobuf.Struct custom_claims = 10;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.StructOrBuilder getCustomClaimsOrBuilder() {
-    return getCustomClaims();
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uid_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, uid_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(email_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, email_);
-    }
-    if (emailVerified_ != false) {
-      output.writeBool(3, emailVerified_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, displayName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(photoURL_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, photoURL_);
-    }
-    if (disabled_ != false) {
-      output.writeBool(6, disabled_);
-    }
-    if (metadata_ != null) {
-      output.writeMessage(7, getMetadata());
-    }
-    for (int i = 0; i < providerData_.size(); i++) {
-      output.writeMessage(8, providerData_.get(i));
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, phoneNumber_);
-    }
-    if (customClaims_ != null) {
-      output.writeMessage(10, getCustomClaims());
-    }
-    getUnknownFields().writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uid_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, uid_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(email_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, email_);
-    }
-    if (emailVerified_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(3, emailVerified_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, displayName_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(photoURL_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, photoURL_);
-    }
-    if (disabled_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(6, disabled_);
-    }
-    if (metadata_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getMetadata());
-    }
-    for (int i = 0; i < providerData_.size(); i++) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, providerData_.get(i));
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, phoneNumber_);
-    }
-    if (customClaims_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getCustomClaims());
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof com.google.events.firebase.auth.v1.AuthEventData)) {
-      return super.equals(obj);
-    }
-    com.google.events.firebase.auth.v1.AuthEventData other = (com.google.events.firebase.auth.v1.AuthEventData) obj;
-
-    if (!getUid()
-        .equals(other.getUid())) return false;
-    if (!getEmail()
-        .equals(other.getEmail())) return false;
-    if (getEmailVerified()
-        != other.getEmailVerified()) return false;
-    if (!getDisplayName()
-        .equals(other.getDisplayName())) return false;
-    if (!getPhotoURL()
-        .equals(other.getPhotoURL())) return false;
-    if (getDisabled()
-        != other.getDisabled()) return false;
-    if (hasMetadata() != other.hasMetadata()) return false;
-    if (hasMetadata()) {
-      if (!getMetadata()
-          .equals(other.getMetadata())) return false;
-    }
-    if (!getProviderDataList()
-        .equals(other.getProviderDataList())) return false;
-    if (!getPhoneNumber()
-        .equals(other.getPhoneNumber())) return false;
-    if (hasCustomClaims() != other.hasCustomClaims()) return false;
-    if (hasCustomClaims()) {
-      if (!getCustomClaims()
-          .equals(other.getCustomClaims())) return false;
-    }
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + UID_FIELD_NUMBER;
-    hash = (53 * hash) + getUid().hashCode();
-    hash = (37 * hash) + EMAIL_FIELD_NUMBER;
-    hash = (53 * hash) + getEmail().hashCode();
-    hash = (37 * hash) + EMAIL_VERIFIED_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getEmailVerified());
-    hash = (37 * hash) + DISPLAY_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getDisplayName().hashCode();
-    hash = (37 * hash) + PHOTO_URL_FIELD_NUMBER;
-    hash = (53 * hash) + getPhotoURL().hashCode();
-    hash = (37 * hash) + DISABLED_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getDisabled());
-    if (hasMetadata()) {
-      hash = (37 * hash) + METADATA_FIELD_NUMBER;
-      hash = (53 * hash) + getMetadata().hashCode();
-    }
-    if (getProviderDataCount() > 0) {
-      hash = (37 * hash) + PROVIDER_DATA_FIELD_NUMBER;
-      hash = (53 * hash) + getProviderDataList().hashCode();
-    }
-    hash = (37 * hash) + PHONE_NUMBER_FIELD_NUMBER;
-    hash = (53 * hash) + getPhoneNumber().hashCode();
-    if (hasCustomClaims()) {
-      hash = (37 * hash) + CUSTOM_CLAIMS_FIELD_NUMBER;
-      hash = (53 * hash) + getCustomClaims().hashCode();
-    }
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(com.google.events.firebase.auth.v1.AuthEventData prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * <pre>
-   * The data within all Firebase Auth events.
-   * </pre>
-   *
-   * Protobuf type {@code google.events.firebase.auth.v1.AuthEventData}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:google.events.firebase.auth.v1.AuthEventData)
-      com.google.events.firebase.auth.v1.AuthEventDataOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
+    // Use AuthEventData.newBuilder() to construct.
+    private AuthEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.google.events.firebase.auth.v1.AuthEventData.class, com.google.events.firebase.auth.v1.AuthEventData.Builder.class);
-    }
-
-    // Construct using com.google.events.firebase.auth.v1.AuthEventData.newBuilder()
-    private Builder() {
-
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      uid_ = "";
-
-      email_ = "";
-
-      emailVerified_ = false;
-
-      displayName_ = "";
-
-      photoURL_ = "";
-
-      disabled_ = false;
-
-      if (metadataBuilder_ == null) {
-        metadata_ = null;
-      } else {
-        metadata_ = null;
-        metadataBuilder_ = null;
-      }
-      if (providerDataBuilder_ == null) {
+    private AuthEventData() {
+        uid_ = "";
+        email_ = "";
+        displayName_ = "";
+        photoURL_ = "";
         providerData_ = java.util.Collections.emptyList();
-      } else {
-        providerData_ = null;
-        providerDataBuilder_.clear();
-      }
-      bitField0_ = (bitField0_ & ~0x00000001);
-      phoneNumber_ = "";
-
-      if (customClaimsBuilder_ == null) {
-        customClaims_ = null;
-      } else {
-        customClaims_ = null;
-        customClaimsBuilder_ = null;
-      }
-      return this;
+        phoneNumber_ = "";
     }
 
     @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
+    @SuppressWarnings({ "unused" })
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+        return new AuthEventData();
     }
 
     @java.lang.Override
-    public com.google.events.firebase.auth.v1.AuthEventData getDefaultInstanceForType() {
-      return com.google.events.firebase.auth.v1.AuthEventData.getDefaultInstance();
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
     }
 
     @java.lang.Override
-    public com.google.events.firebase.auth.v1.AuthEventData build() {
-      com.google.events.firebase.auth.v1.AuthEventData result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(com.google.events.firebase.auth.v1.AuthEventData.class,
+                        com.google.events.firebase.auth.v1.AuthEventData.Builder.class);
     }
 
-    @java.lang.Override
-    public com.google.events.firebase.auth.v1.AuthEventData buildPartial() {
-      com.google.events.firebase.auth.v1.AuthEventData result = new com.google.events.firebase.auth.v1.AuthEventData(this);
-      int from_bitField0_ = bitField0_;
-      result.uid_ = uid_;
-      result.email_ = email_;
-      result.emailVerified_ = emailVerified_;
-      result.displayName_ = displayName_;
-      result.photoURL_ = photoURL_;
-      result.disabled_ = disabled_;
-      if (metadataBuilder_ == null) {
-        result.metadata_ = metadata_;
-      } else {
-        result.metadata_ = metadataBuilder_.build();
-      }
-      if (providerDataBuilder_ == null) {
-        if (((bitField0_ & 0x00000001) != 0)) {
-          providerData_ = java.util.Collections.unmodifiableList(providerData_);
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.providerData_ = providerData_;
-      } else {
-        result.providerData_ = providerDataBuilder_.build();
-      }
-      result.phoneNumber_ = phoneNumber_;
-      if (customClaimsBuilder_ == null) {
-        result.customClaims_ = customClaims_;
-      } else {
-        result.customClaims_ = customClaimsBuilder_.build();
-      }
-      onBuilt();
-      return result;
-    }
+    public static final int UID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object uid_;
 
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.events.firebase.auth.v1.AuthEventData) {
-        return mergeFrom((com.google.events.firebase.auth.v1.AuthEventData)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(com.google.events.firebase.auth.v1.AuthEventData other) {
-      if (other == com.google.events.firebase.auth.v1.AuthEventData.getDefaultInstance()) return this;
-      if (!other.getUid().isEmpty()) {
-        uid_ = other.uid_;
-        onChanged();
-      }
-      if (!other.getEmail().isEmpty()) {
-        email_ = other.email_;
-        onChanged();
-      }
-      if (other.getEmailVerified() != false) {
-        setEmailVerified(other.getEmailVerified());
-      }
-      if (!other.getDisplayName().isEmpty()) {
-        displayName_ = other.displayName_;
-        onChanged();
-      }
-      if (!other.getPhotoURL().isEmpty()) {
-        photoURL_ = other.photoURL_;
-        onChanged();
-      }
-      if (other.getDisabled() != false) {
-        setDisabled(other.getDisabled());
-      }
-      if (other.hasMetadata()) {
-        mergeMetadata(other.getMetadata());
-      }
-      if (providerDataBuilder_ == null) {
-        if (!other.providerData_.isEmpty()) {
-          if (providerData_.isEmpty()) {
-            providerData_ = other.providerData_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureProviderDataIsMutable();
-            providerData_.addAll(other.providerData_);
-          }
-          onChanged();
-        }
-      } else {
-        if (!other.providerData_.isEmpty()) {
-          if (providerDataBuilder_.isEmpty()) {
-            providerDataBuilder_.dispose();
-            providerDataBuilder_ = null;
-            providerData_ = other.providerData_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-            providerDataBuilder_ = 
-              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getProviderDataFieldBuilder() : null;
-          } else {
-            providerDataBuilder_.addAllMessages(other.providerData_);
-          }
-        }
-      }
-      if (!other.getPhoneNumber().isEmpty()) {
-        phoneNumber_ = other.phoneNumber_;
-        onChanged();
-      }
-      if (other.hasCustomClaims()) {
-        mergeCustomClaims(other.getCustomClaims());
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              uid_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 10
-            case 18: {
-              email_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 18
-            case 24: {
-              emailVerified_ = input.readBool();
-
-              break;
-            } // case 24
-            case 34: {
-              displayName_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 34
-            case 42: {
-              photoURL_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 42
-            case 48: {
-              disabled_ = input.readBool();
-
-              break;
-            } // case 48
-            case 58: {
-              input.readMessage(
-                  getMetadataFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 58
-            case 66: {
-              com.google.events.firebase.auth.v1.UserInfo m =
-                  input.readMessage(
-                      com.google.events.firebase.auth.v1.UserInfo.parser(),
-                      extensionRegistry);
-              if (providerDataBuilder_ == null) {
-                ensureProviderDataIsMutable();
-                providerData_.add(m);
-              } else {
-                providerDataBuilder_.addMessage(m);
-              }
-              break;
-            } // case 66
-            case 74: {
-              phoneNumber_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 74
-            case 82: {
-              input.readMessage(
-                  getCustomClaimsFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 82
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
-    private int bitField0_;
-
-    private java.lang.Object uid_ = "";
     /**
      * <pre>
      * The user identifier in the Firebase app.
      * </pre>
      *
      * <code>string uid = 1;</code>
+     *
      * @return The uid.
      */
+    @java.lang.Override
     public java.lang.String getUid() {
-      java.lang.Object ref = uid_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        uid_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = uid_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            uid_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * The user identifier in the Firebase app.
      * </pre>
      *
      * <code>string uid = 1;</code>
+     *
      * @return The bytes for uid.
      */
-    public com.google.protobuf.ByteString
-        getUidBytes() {
-      java.lang.Object ref = uid_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        uid_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user identifier in the Firebase app.
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @param value The uid to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUid(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      uid_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user identifier in the Firebase app.
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearUid() {
-      
-      uid_ = getDefaultInstance().getUid();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user identifier in the Firebase app.
-     * </pre>
-     *
-     * <code>string uid = 1;</code>
-     * @param value The bytes for uid to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUidBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      uid_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getUidBytes() {
+        java.lang.Object ref = uid_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            uid_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object email_ = "";
+    public static final int EMAIL_FIELD_NUMBER = 2;
+    private volatile java.lang.Object email_;
+
     /**
      * <pre>
      * The user's primary email, if set.
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
      * @return The email.
      */
+    @java.lang.Override
     public java.lang.String getEmail() {
-      java.lang.Object ref = email_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        email_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's primary email, if set.
-     * </pre>
-     *
-     * <code>string email = 2;</code>
-     * @return The bytes for email.
-     */
-    public com.google.protobuf.ByteString
-        getEmailBytes() {
-      java.lang.Object ref = email_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        email_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's primary email, if set.
-     * </pre>
-     *
-     * <code>string email = 2;</code>
-     * @param value The email to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEmail(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      email_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's primary email, if set.
-     * </pre>
-     *
-     * <code>string email = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearEmail() {
-      
-      email_ = getDefaultInstance().getEmail();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's primary email, if set.
-     * </pre>
-     *
-     * <code>string email = 2;</code>
-     * @param value The bytes for email to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEmailBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      email_ = value;
-      onChanged();
-      return this;
+        java.lang.Object ref = email_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            email_ = s;
+            return s;
+        }
     }
 
-    private boolean emailVerified_ ;
+    /**
+     * <pre>
+     * The user's primary email, if set.
+     * </pre>
+     *
+     * <code>string email = 2;</code>
+     *
+     * @return The bytes for email.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getEmailBytes() {
+        java.lang.Object ref = email_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            email_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    public static final int EMAIL_VERIFIED_FIELD_NUMBER = 3;
+    private boolean emailVerified_;
+
     /**
      * <pre>
      * Whether or not the user's primary email is verified.
      * </pre>
      *
      * <code>bool email_verified = 3;</code>
+     *
      * @return The emailVerified.
      */
     @java.lang.Override
     public boolean getEmailVerified() {
-      return emailVerified_;
-    }
-    /**
-     * <pre>
-     * Whether or not the user's primary email is verified.
-     * </pre>
-     *
-     * <code>bool email_verified = 3;</code>
-     * @param value The emailVerified to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEmailVerified(boolean value) {
-      
-      emailVerified_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Whether or not the user's primary email is verified.
-     * </pre>
-     *
-     * <code>bool email_verified = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearEmailVerified() {
-      
-      emailVerified_ = false;
-      onChanged();
-      return this;
+        return emailVerified_;
     }
 
-    private java.lang.Object displayName_ = "";
+    public static final int DISPLAY_NAME_FIELD_NUMBER = 4;
+    private volatile java.lang.Object displayName_;
+
     /**
      * <pre>
      * The user's display name.
      * </pre>
      *
      * <code>string display_name = 4;</code>
+     *
      * @return The displayName.
      */
+    @java.lang.Override
     public java.lang.String getDisplayName() {
-      java.lang.Object ref = displayName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        displayName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = displayName_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            displayName_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * The user's display name.
      * </pre>
      *
      * <code>string display_name = 4;</code>
+     *
      * @return The bytes for displayName.
      */
-    public com.google.protobuf.ByteString
-        getDisplayNameBytes() {
-      java.lang.Object ref = displayName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        displayName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's display name.
-     * </pre>
-     *
-     * <code>string display_name = 4;</code>
-     * @param value The displayName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDisplayName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      displayName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's display name.
-     * </pre>
-     *
-     * <code>string display_name = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDisplayName() {
-      
-      displayName_ = getDefaultInstance().getDisplayName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's display name.
-     * </pre>
-     *
-     * <code>string display_name = 4;</code>
-     * @param value The bytes for displayName to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDisplayNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      displayName_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getDisplayNameBytes() {
+        java.lang.Object ref = displayName_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            displayName_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
-    private java.lang.Object photoURL_ = "";
+    public static final int PHOTO_URL_FIELD_NUMBER = 5;
+    private volatile java.lang.Object photoURL_;
+
     /**
      * <pre>
      * The user's photo URL.
      * </pre>
      *
      * <code>string photo_URL = 5;</code>
+     *
      * @return The photoURL.
      */
+    @java.lang.Override
     public java.lang.String getPhotoURL() {
-      java.lang.Object ref = photoURL_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        photoURL_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's photo URL.
-     * </pre>
-     *
-     * <code>string photo_URL = 5;</code>
-     * @return The bytes for photoURL.
-     */
-    public com.google.protobuf.ByteString
-        getPhotoURLBytes() {
-      java.lang.Object ref = photoURL_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        photoURL_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's photo URL.
-     * </pre>
-     *
-     * <code>string photo_URL = 5;</code>
-     * @param value The photoURL to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhotoURL(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      photoURL_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's photo URL.
-     * </pre>
-     *
-     * <code>string photo_URL = 5;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPhotoURL() {
-      
-      photoURL_ = getDefaultInstance().getPhotoURL();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's photo URL.
-     * </pre>
-     *
-     * <code>string photo_URL = 5;</code>
-     * @param value The bytes for photoURL to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhotoURLBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      photoURL_ = value;
-      onChanged();
-      return this;
+        java.lang.Object ref = photoURL_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            photoURL_ = s;
+            return s;
+        }
     }
 
-    private boolean disabled_ ;
+    /**
+     * <pre>
+     * The user's photo URL.
+     * </pre>
+     *
+     * <code>string photo_URL = 5;</code>
+     *
+     * @return The bytes for photoURL.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getPhotoURLBytes() {
+        java.lang.Object ref = photoURL_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            photoURL_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    public static final int DISABLED_FIELD_NUMBER = 6;
+    private boolean disabled_;
+
     /**
      * <pre>
      * Whether the user is disabled.
      * </pre>
      *
      * <code>bool disabled = 6;</code>
+     *
      * @return The disabled.
      */
     @java.lang.Override
     public boolean getDisabled() {
-      return disabled_;
-    }
-    /**
-     * <pre>
-     * Whether the user is disabled.
-     * </pre>
-     *
-     * <code>bool disabled = 6;</code>
-     * @param value The disabled to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDisabled(boolean value) {
-      
-      disabled_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Whether the user is disabled.
-     * </pre>
-     *
-     * <code>bool disabled = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDisabled() {
-      
-      disabled_ = false;
-      onChanged();
-      return this;
+        return disabled_;
     }
 
+    public static final int METADATA_FIELD_NUMBER = 7;
     private com.google.events.firebase.auth.v1.UserMetadata metadata_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder> metadataBuilder_;
+
     /**
      * <pre>
      * Additional metadata about the user.
      * </pre>
      *
      * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+     *
      * @return Whether the metadata field is set.
      */
+    @java.lang.Override
     public boolean hasMetadata() {
-      return metadataBuilder_ != null || metadata_ != null;
+        return metadata_ != null;
     }
+
     /**
      * <pre>
      * Additional metadata about the user.
      * </pre>
      *
      * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+     *
      * @return The metadata.
      */
+    @java.lang.Override
     public com.google.events.firebase.auth.v1.UserMetadata getMetadata() {
-      if (metadataBuilder_ == null) {
         return metadata_ == null ? com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance() : metadata_;
-      } else {
-        return metadataBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
-    public Builder setMetadata(com.google.events.firebase.auth.v1.UserMetadata value) {
-      if (metadataBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        metadata_ = value;
-        onChanged();
-      } else {
-        metadataBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Additional metadata about the user.
@@ -1575,116 +307,13 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
      */
-    public Builder setMetadata(
-        com.google.events.firebase.auth.v1.UserMetadata.Builder builderForValue) {
-      if (metadataBuilder_ == null) {
-        metadata_ = builderForValue.build();
-        onChanged();
-      } else {
-        metadataBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
-    public Builder mergeMetadata(com.google.events.firebase.auth.v1.UserMetadata value) {
-      if (metadataBuilder_ == null) {
-        if (metadata_ != null) {
-          metadata_ =
-            com.google.events.firebase.auth.v1.UserMetadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
-        } else {
-          metadata_ = value;
-        }
-        onChanged();
-      } else {
-        metadataBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
-    public Builder clearMetadata() {
-      if (metadataBuilder_ == null) {
-        metadata_ = null;
-        onChanged();
-      } else {
-        metadata_ = null;
-        metadataBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserMetadata.Builder getMetadataBuilder() {
-      
-      onChanged();
-      return getMetadataFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.auth.v1.UserMetadataOrBuilder getMetadataOrBuilder() {
-      if (metadataBuilder_ != null) {
-        return metadataBuilder_.getMessageOrBuilder();
-      } else {
-        return metadata_ == null ?
-            com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance() : metadata_;
-      }
-    }
-    /**
-     * <pre>
-     * Additional metadata about the user.
-     * </pre>
-     *
-     * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder> 
-        getMetadataFieldBuilder() {
-      if (metadataBuilder_ == null) {
-        metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder>(
-                getMetadata(),
-                getParentForChildren(),
-                isClean());
-        metadata_ = null;
-      }
-      return metadataBuilder_;
+        return getMetadata();
     }
 
-    private java.util.List<com.google.events.firebase.auth.v1.UserInfo> providerData_ =
-      java.util.Collections.emptyList();
-    private void ensureProviderDataIsMutable() {
-      if (!((bitField0_ & 0x00000001) != 0)) {
-        providerData_ = new java.util.ArrayList<com.google.events.firebase.auth.v1.UserInfo>(providerData_);
-        bitField0_ |= 0x00000001;
-       }
-    }
-
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder> providerDataBuilder_;
+    public static final int PROVIDER_DATA_FIELD_NUMBER = 8;
+    private java.util.List<com.google.events.firebase.auth.v1.UserInfo> providerData_;
 
     /**
      * <pre>
@@ -1693,398 +322,108 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
      */
+    @java.lang.Override
     public java.util.List<com.google.events.firebase.auth.v1.UserInfo> getProviderDataList() {
-      if (providerDataBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(providerData_);
-      } else {
-        return providerDataBuilder_.getMessageList();
-      }
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public int getProviderDataCount() {
-      if (providerDataBuilder_ == null) {
-        return providerData_.size();
-      } else {
-        return providerDataBuilder_.getCount();
-      }
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserInfo getProviderData(int index) {
-      if (providerDataBuilder_ == null) {
-        return providerData_.get(index);
-      } else {
-        return providerDataBuilder_.getMessage(index);
-      }
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder setProviderData(
-        int index, com.google.events.firebase.auth.v1.UserInfo value) {
-      if (providerDataBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureProviderDataIsMutable();
-        providerData_.set(index, value);
-        onChanged();
-      } else {
-        providerDataBuilder_.setMessage(index, value);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder setProviderData(
-        int index, com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
-      if (providerDataBuilder_ == null) {
-        ensureProviderDataIsMutable();
-        providerData_.set(index, builderForValue.build());
-        onChanged();
-      } else {
-        providerDataBuilder_.setMessage(index, builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder addProviderData(com.google.events.firebase.auth.v1.UserInfo value) {
-      if (providerDataBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureProviderDataIsMutable();
-        providerData_.add(value);
-        onChanged();
-      } else {
-        providerDataBuilder_.addMessage(value);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder addProviderData(
-        int index, com.google.events.firebase.auth.v1.UserInfo value) {
-      if (providerDataBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureProviderDataIsMutable();
-        providerData_.add(index, value);
-        onChanged();
-      } else {
-        providerDataBuilder_.addMessage(index, value);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder addProviderData(
-        com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
-      if (providerDataBuilder_ == null) {
-        ensureProviderDataIsMutable();
-        providerData_.add(builderForValue.build());
-        onChanged();
-      } else {
-        providerDataBuilder_.addMessage(builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder addProviderData(
-        int index, com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
-      if (providerDataBuilder_ == null) {
-        ensureProviderDataIsMutable();
-        providerData_.add(index, builderForValue.build());
-        onChanged();
-      } else {
-        providerDataBuilder_.addMessage(index, builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder addAllProviderData(
-        java.lang.Iterable<? extends com.google.events.firebase.auth.v1.UserInfo> values) {
-      if (providerDataBuilder_ == null) {
-        ensureProviderDataIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, providerData_);
-        onChanged();
-      } else {
-        providerDataBuilder_.addAllMessages(values);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder clearProviderData() {
-      if (providerDataBuilder_ == null) {
-        providerData_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-      } else {
-        providerDataBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public Builder removeProviderData(int index) {
-      if (providerDataBuilder_ == null) {
-        ensureProviderDataIsMutable();
-        providerData_.remove(index);
-        onChanged();
-      } else {
-        providerDataBuilder_.remove(index);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserInfo.Builder getProviderDataBuilder(
-        int index) {
-      return getProviderDataFieldBuilder().getBuilder(index);
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserInfoOrBuilder getProviderDataOrBuilder(
-        int index) {
-      if (providerDataBuilder_ == null) {
-        return providerData_.get(index);  } else {
-        return providerDataBuilder_.getMessageOrBuilder(index);
-      }
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public java.util.List<? extends com.google.events.firebase.auth.v1.UserInfoOrBuilder> 
-         getProviderDataOrBuilderList() {
-      if (providerDataBuilder_ != null) {
-        return providerDataBuilder_.getMessageOrBuilderList();
-      } else {
-        return java.util.Collections.unmodifiableList(providerData_);
-      }
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserInfo.Builder addProviderDataBuilder() {
-      return getProviderDataFieldBuilder().addBuilder(
-          com.google.events.firebase.auth.v1.UserInfo.getDefaultInstance());
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public com.google.events.firebase.auth.v1.UserInfo.Builder addProviderDataBuilder(
-        int index) {
-      return getProviderDataFieldBuilder().addBuilder(
-          index, com.google.events.firebase.auth.v1.UserInfo.getDefaultInstance());
-    }
-    /**
-     * <pre>
-     * User's info at the providers
-     * </pre>
-     *
-     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
-     */
-    public java.util.List<com.google.events.firebase.auth.v1.UserInfo.Builder> 
-         getProviderDataBuilderList() {
-      return getProviderDataFieldBuilder().getBuilderList();
-    }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder> 
-        getProviderDataFieldBuilder() {
-      if (providerDataBuilder_ == null) {
-        providerDataBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder>(
-                providerData_,
-                ((bitField0_ & 0x00000001) != 0),
-                getParentForChildren(),
-                isClean());
-        providerData_ = null;
-      }
-      return providerDataBuilder_;
+        return providerData_;
     }
 
-    private java.lang.Object phoneNumber_ = "";
+    /**
+     * <pre>
+     * User's info at the providers
+     * </pre>
+     *
+     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends com.google.events.firebase.auth.v1.UserInfoOrBuilder> getProviderDataOrBuilderList() {
+        return providerData_;
+    }
+
+    /**
+     * <pre>
+     * User's info at the providers
+     * </pre>
+     *
+     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+     */
+    @java.lang.Override
+    public int getProviderDataCount() {
+        return providerData_.size();
+    }
+
+    /**
+     * <pre>
+     * User's info at the providers
+     * </pre>
+     *
+     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+     */
+    @java.lang.Override
+    public com.google.events.firebase.auth.v1.UserInfo getProviderData(int index) {
+        return providerData_.get(index);
+    }
+
+    /**
+     * <pre>
+     * User's info at the providers
+     * </pre>
+     *
+     * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+     */
+    @java.lang.Override
+    public com.google.events.firebase.auth.v1.UserInfoOrBuilder getProviderDataOrBuilder(int index) {
+        return providerData_.get(index);
+    }
+
+    public static final int PHONE_NUMBER_FIELD_NUMBER = 9;
+    private volatile java.lang.Object phoneNumber_;
+
     /**
      * <pre>
      * The user's phone number.
      * </pre>
      *
      * <code>string phone_number = 9;</code>
+     *
      * @return The phoneNumber.
      */
+    @java.lang.Override
     public java.lang.String getPhoneNumber() {
-      java.lang.Object ref = phoneNumber_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        phoneNumber_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = phoneNumber_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            phoneNumber_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * The user's phone number.
      * </pre>
      *
      * <code>string phone_number = 9;</code>
+     *
      * @return The bytes for phoneNumber.
      */
-    public com.google.protobuf.ByteString
-        getPhoneNumberBytes() {
-      java.lang.Object ref = phoneNumber_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        phoneNumber_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * The user's phone number.
-     * </pre>
-     *
-     * <code>string phone_number = 9;</code>
-     * @param value The phoneNumber to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhoneNumber(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      phoneNumber_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's phone number.
-     * </pre>
-     *
-     * <code>string phone_number = 9;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPhoneNumber() {
-      
-      phoneNumber_ = getDefaultInstance().getPhoneNumber();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * The user's phone number.
-     * </pre>
-     *
-     * <code>string phone_number = 9;</code>
-     * @param value The bytes for phoneNumber to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhoneNumberBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      phoneNumber_ = value;
-      onChanged();
-      return this;
+    @java.lang.Override
+    public com.google.protobuf.ByteString getPhoneNumberBytes() {
+        java.lang.Object ref = phoneNumber_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            phoneNumber_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
     }
 
+    public static final int CUSTOM_CLAIMS_FIELD_NUMBER = 10;
     private com.google.protobuf.Struct customClaims_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> customClaimsBuilder_;
+
     /**
      * <pre>
      * User's custom claims, typically used to define user roles and propagated
@@ -2092,11 +431,14 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>.google.protobuf.Struct custom_claims = 10;</code>
+     *
      * @return Whether the customClaims field is set.
      */
+    @java.lang.Override
     public boolean hasCustomClaims() {
-      return customClaimsBuilder_ != null || customClaims_ != null;
+        return customClaims_ != null;
     }
+
     /**
      * <pre>
      * User's custom claims, typically used to define user roles and propagated
@@ -2104,36 +446,14 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>.google.protobuf.Struct custom_claims = 10;</code>
+     *
      * @return The customClaims.
      */
+    @java.lang.Override
     public com.google.protobuf.Struct getCustomClaims() {
-      if (customClaimsBuilder_ == null) {
         return customClaims_ == null ? com.google.protobuf.Struct.getDefaultInstance() : customClaims_;
-      } else {
-        return customClaimsBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
-     * </pre>
-     *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
-     */
-    public Builder setCustomClaims(com.google.protobuf.Struct value) {
-      if (customClaimsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        customClaims_ = value;
-        onChanged();
-      } else {
-        customClaimsBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * User's custom claims, typically used to define user roles and propagated
@@ -2142,170 +462,1911 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Struct custom_claims = 10;</code>
      */
-    public Builder setCustomClaims(
-        com.google.protobuf.Struct.Builder builderForValue) {
-      if (customClaimsBuilder_ == null) {
-        customClaims_ = builderForValue.build();
-        onChanged();
-      } else {
-        customClaimsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
-     * </pre>
-     *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
-     */
-    public Builder mergeCustomClaims(com.google.protobuf.Struct value) {
-      if (customClaimsBuilder_ == null) {
-        if (customClaims_ != null) {
-          customClaims_ =
-            com.google.protobuf.Struct.newBuilder(customClaims_).mergeFrom(value).buildPartial();
-        } else {
-          customClaims_ = value;
-        }
-        onChanged();
-      } else {
-        customClaimsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
-     * </pre>
-     *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
-     */
-    public Builder clearCustomClaims() {
-      if (customClaimsBuilder_ == null) {
-        customClaims_ = null;
-        onChanged();
-      } else {
-        customClaims_ = null;
-        customClaimsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
-     * </pre>
-     *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
-     */
-    public com.google.protobuf.Struct.Builder getCustomClaimsBuilder() {
-      
-      onChanged();
-      return getCustomClaimsFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
-     * </pre>
-     *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
-     */
+    @java.lang.Override
     public com.google.protobuf.StructOrBuilder getCustomClaimsOrBuilder() {
-      if (customClaimsBuilder_ != null) {
-        return customClaimsBuilder_.getMessageOrBuilder();
-      } else {
-        return customClaims_ == null ?
-            com.google.protobuf.Struct.getDefaultInstance() : customClaims_;
-      }
+        return getCustomClaims();
     }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1)
+            return true;
+        if (isInitialized == 0)
+            return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uid_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 1, uid_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(email_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 2, email_);
+        }
+        if (emailVerified_ != false) {
+            output.writeBool(3, emailVerified_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 4, displayName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(photoURL_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 5, photoURL_);
+        }
+        if (disabled_ != false) {
+            output.writeBool(6, disabled_);
+        }
+        if (metadata_ != null) {
+            output.writeMessage(7, getMetadata());
+        }
+        for (int i = 0; i < providerData_.size(); i++) {
+            output.writeMessage(8, providerData_.get(i));
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 9, phoneNumber_);
+        }
+        if (customClaims_ != null) {
+            output.writeMessage(10, getCustomClaims());
+        }
+        getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1)
+            return size;
+
+        size = 0;
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uid_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, uid_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(email_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, email_);
+        }
+        if (emailVerified_ != false) {
+            size += com.google.protobuf.CodedOutputStream.computeBoolSize(3, emailVerified_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, displayName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(photoURL_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, photoURL_);
+        }
+        if (disabled_ != false) {
+            size += com.google.protobuf.CodedOutputStream.computeBoolSize(6, disabled_);
+        }
+        if (metadata_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(7, getMetadata());
+        }
+        for (int i = 0; i < providerData_.size(); i++) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(8, providerData_.get(i));
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, phoneNumber_);
+        }
+        if (customClaims_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(10, getCustomClaims());
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof com.google.events.firebase.auth.v1.AuthEventData)) {
+            return super.equals(obj);
+        }
+        com.google.events.firebase.auth.v1.AuthEventData other = (com.google.events.firebase.auth.v1.AuthEventData) obj;
+
+        if (!getUid().equals(other.getUid()))
+            return false;
+        if (!getEmail().equals(other.getEmail()))
+            return false;
+        if (getEmailVerified() != other.getEmailVerified())
+            return false;
+        if (!getDisplayName().equals(other.getDisplayName()))
+            return false;
+        if (!getPhotoURL().equals(other.getPhotoURL()))
+            return false;
+        if (getDisabled() != other.getDisabled())
+            return false;
+        if (hasMetadata() != other.hasMetadata())
+            return false;
+        if (hasMetadata()) {
+            if (!getMetadata().equals(other.getMetadata()))
+                return false;
+        }
+        if (!getProviderDataList().equals(other.getProviderDataList()))
+            return false;
+        if (!getPhoneNumber().equals(other.getPhoneNumber()))
+            return false;
+        if (hasCustomClaims() != other.hasCustomClaims())
+            return false;
+        if (hasCustomClaims()) {
+            if (!getCustomClaims().equals(other.getCustomClaims()))
+                return false;
+        }
+        if (!getUnknownFields().equals(other.getUnknownFields()))
+            return false;
+        return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + UID_FIELD_NUMBER;
+        hash = (53 * hash) + getUid().hashCode();
+        hash = (37 * hash) + EMAIL_FIELD_NUMBER;
+        hash = (53 * hash) + getEmail().hashCode();
+        hash = (37 * hash) + EMAIL_VERIFIED_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(getEmailVerified());
+        hash = (37 * hash) + DISPLAY_NAME_FIELD_NUMBER;
+        hash = (53 * hash) + getDisplayName().hashCode();
+        hash = (37 * hash) + PHOTO_URL_FIELD_NUMBER;
+        hash = (53 * hash) + getPhotoURL().hashCode();
+        hash = (37 * hash) + DISABLED_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(getDisabled());
+        if (hasMetadata()) {
+            hash = (37 * hash) + METADATA_FIELD_NUMBER;
+            hash = (53 * hash) + getMetadata().hashCode();
+        }
+        if (getProviderDataCount() > 0) {
+            hash = (37 * hash) + PROVIDER_DATA_FIELD_NUMBER;
+            hash = (53 * hash) + getProviderDataList().hashCode();
+        }
+        hash = (37 * hash) + PHONE_NUMBER_FIELD_NUMBER;
+        hash = (53 * hash) + getPhoneNumber().hashCode();
+        if (hasCustomClaims()) {
+            hash = (37 * hash) + CUSTOM_CLAIMS_FIELD_NUMBER;
+            hash = (53 * hash) + getCustomClaims().hashCode();
+        }
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseDelimitedFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData parseFrom(com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.google.events.firebase.auth.v1.AuthEventData prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
     /**
      * <pre>
-     * User's custom claims, typically used to define user roles and propagated
-     * to an authenticated user's ID token.
+     * The data within all Firebase Auth events.
      * </pre>
      *
-     * <code>.google.protobuf.Struct custom_claims = 10;</code>
+     * Protobuf type {@code google.events.firebase.auth.v1.AuthEventData}
      */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> 
-        getCustomClaimsFieldBuilder() {
-      if (customClaimsBuilder_ == null) {
-        customClaimsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder>(
-                getCustomClaims(),
-                getParentForChildren(),
-                isClean());
-        customClaims_ = null;
-      }
-      return customClaimsBuilder_;
+    public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:google.events.firebase.auth.v1.AuthEventData)
+            com.google.events.firebase.auth.v1.AuthEventDataOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(com.google.events.firebase.auth.v1.AuthEventData.class,
+                            com.google.events.firebase.auth.v1.AuthEventData.Builder.class);
+        }
+
+        // Construct using com.google.events.firebase.auth.v1.AuthEventData.newBuilder()
+        private Builder() {
+
+        }
+
+        private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            uid_ = "";
+
+            email_ = "";
+
+            emailVerified_ = false;
+
+            displayName_ = "";
+
+            photoURL_ = "";
+
+            disabled_ = false;
+
+            if (metadataBuilder_ == null) {
+                metadata_ = null;
+            } else {
+                metadata_ = null;
+                metadataBuilder_ = null;
+            }
+            if (providerDataBuilder_ == null) {
+                providerData_ = java.util.Collections.emptyList();
+            } else {
+                providerData_ = null;
+                providerDataBuilder_.clear();
+            }
+            bitField0_ = (bitField0_ & ~0x00000001);
+            phoneNumber_ = "";
+
+            if (customClaimsBuilder_ == null) {
+                customClaims_ = null;
+            } else {
+                customClaims_ = null;
+                customClaimsBuilder_ = null;
+            }
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+            return com.google.events.firebase.auth.v1.Data.internal_static_google_events_firebase_auth_v1_AuthEventData_descriptor;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.AuthEventData getDefaultInstanceForType() {
+            return com.google.events.firebase.auth.v1.AuthEventData.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.AuthEventData build() {
+            com.google.events.firebase.auth.v1.AuthEventData result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.auth.v1.AuthEventData buildPartial() {
+            com.google.events.firebase.auth.v1.AuthEventData result = new com.google.events.firebase.auth.v1.AuthEventData(
+                    this);
+            int from_bitField0_ = bitField0_;
+            result.uid_ = uid_;
+            result.email_ = email_;
+            result.emailVerified_ = emailVerified_;
+            result.displayName_ = displayName_;
+            result.photoURL_ = photoURL_;
+            result.disabled_ = disabled_;
+            if (metadataBuilder_ == null) {
+                result.metadata_ = metadata_;
+            } else {
+                result.metadata_ = metadataBuilder_.build();
+            }
+            if (providerDataBuilder_ == null) {
+                if (((bitField0_ & 0x00000001) != 0)) {
+                    providerData_ = java.util.Collections.unmodifiableList(providerData_);
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                }
+                result.providerData_ = providerData_;
+            } else {
+                result.providerData_ = providerDataBuilder_.build();
+            }
+            result.phoneNumber_ = phoneNumber_;
+            if (customClaimsBuilder_ == null) {
+                result.customClaims_ = customClaims_;
+            } else {
+                result.customClaims_ = customClaimsBuilder_.build();
+            }
+            onBuilt();
+            return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+                java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.google.events.firebase.auth.v1.AuthEventData) {
+                return mergeFrom((com.google.events.firebase.auth.v1.AuthEventData) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(com.google.events.firebase.auth.v1.AuthEventData other) {
+            if (other == com.google.events.firebase.auth.v1.AuthEventData.getDefaultInstance())
+                return this;
+            if (!other.getUid().isEmpty()) {
+                uid_ = other.uid_;
+                onChanged();
+            }
+            if (!other.getEmail().isEmpty()) {
+                email_ = other.email_;
+                onChanged();
+            }
+            if (other.getEmailVerified() != false) {
+                setEmailVerified(other.getEmailVerified());
+            }
+            if (!other.getDisplayName().isEmpty()) {
+                displayName_ = other.displayName_;
+                onChanged();
+            }
+            if (!other.getPhotoURL().isEmpty()) {
+                photoURL_ = other.photoURL_;
+                onChanged();
+            }
+            if (other.getDisabled() != false) {
+                setDisabled(other.getDisabled());
+            }
+            if (other.hasMetadata()) {
+                mergeMetadata(other.getMetadata());
+            }
+            if (providerDataBuilder_ == null) {
+                if (!other.providerData_.isEmpty()) {
+                    if (providerData_.isEmpty()) {
+                        providerData_ = other.providerData_;
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        ensureProviderDataIsMutable();
+                        providerData_.addAll(other.providerData_);
+                    }
+                    onChanged();
+                }
+            } else {
+                if (!other.providerData_.isEmpty()) {
+                    if (providerDataBuilder_.isEmpty()) {
+                        providerDataBuilder_.dispose();
+                        providerDataBuilder_ = null;
+                        providerData_ = other.providerData_;
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                        providerDataBuilder_ = com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
+                                ? getProviderDataFieldBuilder() : null;
+                    } else {
+                        providerDataBuilder_.addAllMessages(other.providerData_);
+                    }
+                }
+            }
+            if (!other.getPhoneNumber().isEmpty()) {
+                phoneNumber_ = other.phoneNumber_;
+                onChanged();
+            }
+            if (other.hasCustomClaims()) {
+                mergeCustomClaims(other.getCustomClaims());
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    case 10: {
+                        uid_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 10
+                    case 18: {
+                        email_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 18
+                    case 24: {
+                        emailVerified_ = input.readBool();
+
+                        break;
+                    } // case 24
+                    case 34: {
+                        displayName_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 34
+                    case 42: {
+                        photoURL_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 42
+                    case 48: {
+                        disabled_ = input.readBool();
+
+                        break;
+                    } // case 48
+                    case 58: {
+                        input.readMessage(getMetadataFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 58
+                    case 66: {
+                        com.google.events.firebase.auth.v1.UserInfo m = input
+                                .readMessage(com.google.events.firebase.auth.v1.UserInfo.parser(), extensionRegistry);
+                        if (providerDataBuilder_ == null) {
+                            ensureProviderDataIsMutable();
+                            providerData_.add(m);
+                        } else {
+                            providerDataBuilder_.addMessage(m);
+                        }
+                        break;
+                    } // case 66
+                    case 74: {
+                        phoneNumber_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 74
+                    case 82: {
+                        input.readMessage(getCustomClaimsFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 82
+                    default: {
+                        if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                            done = true; // was an endgroup tag
+                        }
+                        break;
+                    } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private int bitField0_;
+
+        private java.lang.Object uid_ = "";
+
+        /**
+         * <pre>
+         * The user identifier in the Firebase app.
+         * </pre>
+         *
+         * <code>string uid = 1;</code>
+         *
+         * @return The uid.
+         */
+        public java.lang.String getUid() {
+            java.lang.Object ref = uid_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                uid_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user identifier in the Firebase app.
+         * </pre>
+         *
+         * <code>string uid = 1;</code>
+         *
+         * @return The bytes for uid.
+         */
+        public com.google.protobuf.ByteString getUidBytes() {
+            java.lang.Object ref = uid_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                uid_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user identifier in the Firebase app.
+         * </pre>
+         *
+         * <code>string uid = 1;</code>
+         *
+         * @param value
+         *            The uid to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUid(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            uid_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user identifier in the Firebase app.
+         * </pre>
+         *
+         * <code>string uid = 1;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearUid() {
+
+            uid_ = getDefaultInstance().getUid();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user identifier in the Firebase app.
+         * </pre>
+         *
+         * <code>string uid = 1;</code>
+         *
+         * @param value
+         *            The bytes for uid to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setUidBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            uid_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object email_ = "";
+
+        /**
+         * <pre>
+         * The user's primary email, if set.
+         * </pre>
+         *
+         * <code>string email = 2;</code>
+         *
+         * @return The email.
+         */
+        public java.lang.String getEmail() {
+            java.lang.Object ref = email_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                email_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's primary email, if set.
+         * </pre>
+         *
+         * <code>string email = 2;</code>
+         *
+         * @return The bytes for email.
+         */
+        public com.google.protobuf.ByteString getEmailBytes() {
+            java.lang.Object ref = email_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                email_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's primary email, if set.
+         * </pre>
+         *
+         * <code>string email = 2;</code>
+         *
+         * @param value
+         *            The email to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setEmail(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            email_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's primary email, if set.
+         * </pre>
+         *
+         * <code>string email = 2;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearEmail() {
+
+            email_ = getDefaultInstance().getEmail();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's primary email, if set.
+         * </pre>
+         *
+         * <code>string email = 2;</code>
+         *
+         * @param value
+         *            The bytes for email to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setEmailBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            email_ = value;
+            onChanged();
+            return this;
+        }
+
+        private boolean emailVerified_;
+
+        /**
+         * <pre>
+         * Whether or not the user's primary email is verified.
+         * </pre>
+         *
+         * <code>bool email_verified = 3;</code>
+         *
+         * @return The emailVerified.
+         */
+        @java.lang.Override
+        public boolean getEmailVerified() {
+            return emailVerified_;
+        }
+
+        /**
+         * <pre>
+         * Whether or not the user's primary email is verified.
+         * </pre>
+         *
+         * <code>bool email_verified = 3;</code>
+         *
+         * @param value
+         *            The emailVerified to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setEmailVerified(boolean value) {
+
+            emailVerified_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Whether or not the user's primary email is verified.
+         * </pre>
+         *
+         * <code>bool email_verified = 3;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearEmailVerified() {
+
+            emailVerified_ = false;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object displayName_ = "";
+
+        /**
+         * <pre>
+         * The user's display name.
+         * </pre>
+         *
+         * <code>string display_name = 4;</code>
+         *
+         * @return The displayName.
+         */
+        public java.lang.String getDisplayName() {
+            java.lang.Object ref = displayName_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                displayName_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's display name.
+         * </pre>
+         *
+         * <code>string display_name = 4;</code>
+         *
+         * @return The bytes for displayName.
+         */
+        public com.google.protobuf.ByteString getDisplayNameBytes() {
+            java.lang.Object ref = displayName_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                displayName_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's display name.
+         * </pre>
+         *
+         * <code>string display_name = 4;</code>
+         *
+         * @param value
+         *            The displayName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDisplayName(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            displayName_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's display name.
+         * </pre>
+         *
+         * <code>string display_name = 4;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDisplayName() {
+
+            displayName_ = getDefaultInstance().getDisplayName();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's display name.
+         * </pre>
+         *
+         * <code>string display_name = 4;</code>
+         *
+         * @param value
+         *            The bytes for displayName to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDisplayNameBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            displayName_ = value;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object photoURL_ = "";
+
+        /**
+         * <pre>
+         * The user's photo URL.
+         * </pre>
+         *
+         * <code>string photo_URL = 5;</code>
+         *
+         * @return The photoURL.
+         */
+        public java.lang.String getPhotoURL() {
+            java.lang.Object ref = photoURL_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                photoURL_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's photo URL.
+         * </pre>
+         *
+         * <code>string photo_URL = 5;</code>
+         *
+         * @return The bytes for photoURL.
+         */
+        public com.google.protobuf.ByteString getPhotoURLBytes() {
+            java.lang.Object ref = photoURL_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                photoURL_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's photo URL.
+         * </pre>
+         *
+         * <code>string photo_URL = 5;</code>
+         *
+         * @param value
+         *            The photoURL to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPhotoURL(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            photoURL_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's photo URL.
+         * </pre>
+         *
+         * <code>string photo_URL = 5;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearPhotoURL() {
+
+            photoURL_ = getDefaultInstance().getPhotoURL();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's photo URL.
+         * </pre>
+         *
+         * <code>string photo_URL = 5;</code>
+         *
+         * @param value
+         *            The bytes for photoURL to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPhotoURLBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            photoURL_ = value;
+            onChanged();
+            return this;
+        }
+
+        private boolean disabled_;
+
+        /**
+         * <pre>
+         * Whether the user is disabled.
+         * </pre>
+         *
+         * <code>bool disabled = 6;</code>
+         *
+         * @return The disabled.
+         */
+        @java.lang.Override
+        public boolean getDisabled() {
+            return disabled_;
+        }
+
+        /**
+         * <pre>
+         * Whether the user is disabled.
+         * </pre>
+         *
+         * <code>bool disabled = 6;</code>
+         *
+         * @param value
+         *            The disabled to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setDisabled(boolean value) {
+
+            disabled_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Whether the user is disabled.
+         * </pre>
+         *
+         * <code>bool disabled = 6;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearDisabled() {
+
+            disabled_ = false;
+            onChanged();
+            return this;
+        }
+
+        private com.google.events.firebase.auth.v1.UserMetadata metadata_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder> metadataBuilder_;
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         *
+         * @return Whether the metadata field is set.
+         */
+        public boolean hasMetadata() {
+            return metadataBuilder_ != null || metadata_ != null;
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         *
+         * @return The metadata.
+         */
+        public com.google.events.firebase.auth.v1.UserMetadata getMetadata() {
+            if (metadataBuilder_ == null) {
+                return metadata_ == null ? com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance()
+                        : metadata_;
+            } else {
+                return metadataBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public Builder setMetadata(com.google.events.firebase.auth.v1.UserMetadata value) {
+            if (metadataBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                metadata_ = value;
+                onChanged();
+            } else {
+                metadataBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public Builder setMetadata(com.google.events.firebase.auth.v1.UserMetadata.Builder builderForValue) {
+            if (metadataBuilder_ == null) {
+                metadata_ = builderForValue.build();
+                onChanged();
+            } else {
+                metadataBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public Builder mergeMetadata(com.google.events.firebase.auth.v1.UserMetadata value) {
+            if (metadataBuilder_ == null) {
+                if (metadata_ != null) {
+                    metadata_ = com.google.events.firebase.auth.v1.UserMetadata.newBuilder(metadata_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    metadata_ = value;
+                }
+                onChanged();
+            } else {
+                metadataBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public Builder clearMetadata() {
+            if (metadataBuilder_ == null) {
+                metadata_ = null;
+                onChanged();
+            } else {
+                metadata_ = null;
+                metadataBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserMetadata.Builder getMetadataBuilder() {
+
+            onChanged();
+            return getMetadataFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserMetadataOrBuilder getMetadataOrBuilder() {
+            if (metadataBuilder_ != null) {
+                return metadataBuilder_.getMessageOrBuilder();
+            } else {
+                return metadata_ == null ? com.google.events.firebase.auth.v1.UserMetadata.getDefaultInstance()
+                        : metadata_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Additional metadata about the user.
+         * </pre>
+         *
+         * <code>.google.events.firebase.auth.v1.UserMetadata metadata = 7;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder> getMetadataFieldBuilder() {
+            if (metadataBuilder_ == null) {
+                metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.auth.v1.UserMetadata, com.google.events.firebase.auth.v1.UserMetadata.Builder, com.google.events.firebase.auth.v1.UserMetadataOrBuilder>(
+                        getMetadata(), getParentForChildren(), isClean());
+                metadata_ = null;
+            }
+            return metadataBuilder_;
+        }
+
+        private java.util.List<com.google.events.firebase.auth.v1.UserInfo> providerData_ = java.util.Collections
+                .emptyList();
+
+        private void ensureProviderDataIsMutable() {
+            if (!((bitField0_ & 0x00000001) != 0)) {
+                providerData_ = new java.util.ArrayList<com.google.events.firebase.auth.v1.UserInfo>(providerData_);
+                bitField0_ |= 0x00000001;
+            }
+        }
+
+        private com.google.protobuf.RepeatedFieldBuilderV3<com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder> providerDataBuilder_;
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public java.util.List<com.google.events.firebase.auth.v1.UserInfo> getProviderDataList() {
+            if (providerDataBuilder_ == null) {
+                return java.util.Collections.unmodifiableList(providerData_);
+            } else {
+                return providerDataBuilder_.getMessageList();
+            }
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public int getProviderDataCount() {
+            if (providerDataBuilder_ == null) {
+                return providerData_.size();
+            } else {
+                return providerDataBuilder_.getCount();
+            }
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserInfo getProviderData(int index) {
+            if (providerDataBuilder_ == null) {
+                return providerData_.get(index);
+            } else {
+                return providerDataBuilder_.getMessage(index);
+            }
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder setProviderData(int index, com.google.events.firebase.auth.v1.UserInfo value) {
+            if (providerDataBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                ensureProviderDataIsMutable();
+                providerData_.set(index, value);
+                onChanged();
+            } else {
+                providerDataBuilder_.setMessage(index, value);
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder setProviderData(int index, com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
+            if (providerDataBuilder_ == null) {
+                ensureProviderDataIsMutable();
+                providerData_.set(index, builderForValue.build());
+                onChanged();
+            } else {
+                providerDataBuilder_.setMessage(index, builderForValue.build());
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder addProviderData(com.google.events.firebase.auth.v1.UserInfo value) {
+            if (providerDataBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                ensureProviderDataIsMutable();
+                providerData_.add(value);
+                onChanged();
+            } else {
+                providerDataBuilder_.addMessage(value);
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder addProviderData(int index, com.google.events.firebase.auth.v1.UserInfo value) {
+            if (providerDataBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                ensureProviderDataIsMutable();
+                providerData_.add(index, value);
+                onChanged();
+            } else {
+                providerDataBuilder_.addMessage(index, value);
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder addProviderData(com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
+            if (providerDataBuilder_ == null) {
+                ensureProviderDataIsMutable();
+                providerData_.add(builderForValue.build());
+                onChanged();
+            } else {
+                providerDataBuilder_.addMessage(builderForValue.build());
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder addProviderData(int index, com.google.events.firebase.auth.v1.UserInfo.Builder builderForValue) {
+            if (providerDataBuilder_ == null) {
+                ensureProviderDataIsMutable();
+                providerData_.add(index, builderForValue.build());
+                onChanged();
+            } else {
+                providerDataBuilder_.addMessage(index, builderForValue.build());
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder addAllProviderData(
+                java.lang.Iterable<? extends com.google.events.firebase.auth.v1.UserInfo> values) {
+            if (providerDataBuilder_ == null) {
+                ensureProviderDataIsMutable();
+                com.google.protobuf.AbstractMessageLite.Builder.addAll(values, providerData_);
+                onChanged();
+            } else {
+                providerDataBuilder_.addAllMessages(values);
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder clearProviderData() {
+            if (providerDataBuilder_ == null) {
+                providerData_ = java.util.Collections.emptyList();
+                bitField0_ = (bitField0_ & ~0x00000001);
+                onChanged();
+            } else {
+                providerDataBuilder_.clear();
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public Builder removeProviderData(int index) {
+            if (providerDataBuilder_ == null) {
+                ensureProviderDataIsMutable();
+                providerData_.remove(index);
+                onChanged();
+            } else {
+                providerDataBuilder_.remove(index);
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserInfo.Builder getProviderDataBuilder(int index) {
+            return getProviderDataFieldBuilder().getBuilder(index);
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserInfoOrBuilder getProviderDataOrBuilder(int index) {
+            if (providerDataBuilder_ == null) {
+                return providerData_.get(index);
+            } else {
+                return providerDataBuilder_.getMessageOrBuilder(index);
+            }
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public java.util.List<? extends com.google.events.firebase.auth.v1.UserInfoOrBuilder> getProviderDataOrBuilderList() {
+            if (providerDataBuilder_ != null) {
+                return providerDataBuilder_.getMessageOrBuilderList();
+            } else {
+                return java.util.Collections.unmodifiableList(providerData_);
+            }
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserInfo.Builder addProviderDataBuilder() {
+            return getProviderDataFieldBuilder()
+                    .addBuilder(com.google.events.firebase.auth.v1.UserInfo.getDefaultInstance());
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public com.google.events.firebase.auth.v1.UserInfo.Builder addProviderDataBuilder(int index) {
+            return getProviderDataFieldBuilder().addBuilder(index,
+                    com.google.events.firebase.auth.v1.UserInfo.getDefaultInstance());
+        }
+
+        /**
+         * <pre>
+         * User's info at the providers
+         * </pre>
+         *
+         * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
+         */
+        public java.util.List<com.google.events.firebase.auth.v1.UserInfo.Builder> getProviderDataBuilderList() {
+            return getProviderDataFieldBuilder().getBuilderList();
+        }
+
+        private com.google.protobuf.RepeatedFieldBuilderV3<com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder> getProviderDataFieldBuilder() {
+            if (providerDataBuilder_ == null) {
+                providerDataBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<com.google.events.firebase.auth.v1.UserInfo, com.google.events.firebase.auth.v1.UserInfo.Builder, com.google.events.firebase.auth.v1.UserInfoOrBuilder>(
+                        providerData_, ((bitField0_ & 0x00000001) != 0), getParentForChildren(), isClean());
+                providerData_ = null;
+            }
+            return providerDataBuilder_;
+        }
+
+        private java.lang.Object phoneNumber_ = "";
+
+        /**
+         * <pre>
+         * The user's phone number.
+         * </pre>
+         *
+         * <code>string phone_number = 9;</code>
+         *
+         * @return The phoneNumber.
+         */
+        public java.lang.String getPhoneNumber() {
+            java.lang.Object ref = phoneNumber_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                phoneNumber_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's phone number.
+         * </pre>
+         *
+         * <code>string phone_number = 9;</code>
+         *
+         * @return The bytes for phoneNumber.
+         */
+        public com.google.protobuf.ByteString getPhoneNumberBytes() {
+            java.lang.Object ref = phoneNumber_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                phoneNumber_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * The user's phone number.
+         * </pre>
+         *
+         * <code>string phone_number = 9;</code>
+         *
+         * @param value
+         *            The phoneNumber to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPhoneNumber(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            phoneNumber_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's phone number.
+         * </pre>
+         *
+         * <code>string phone_number = 9;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearPhoneNumber() {
+
+            phoneNumber_ = getDefaultInstance().getPhoneNumber();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * The user's phone number.
+         * </pre>
+         *
+         * <code>string phone_number = 9;</code>
+         *
+         * @param value
+         *            The bytes for phoneNumber to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setPhoneNumberBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            phoneNumber_ = value;
+            onChanged();
+            return this;
+        }
+
+        private com.google.protobuf.Struct customClaims_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> customClaimsBuilder_;
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         *
+         * @return Whether the customClaims field is set.
+         */
+        public boolean hasCustomClaims() {
+            return customClaimsBuilder_ != null || customClaims_ != null;
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         *
+         * @return The customClaims.
+         */
+        public com.google.protobuf.Struct getCustomClaims() {
+            if (customClaimsBuilder_ == null) {
+                return customClaims_ == null ? com.google.protobuf.Struct.getDefaultInstance() : customClaims_;
+            } else {
+                return customClaimsBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public Builder setCustomClaims(com.google.protobuf.Struct value) {
+            if (customClaimsBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                customClaims_ = value;
+                onChanged();
+            } else {
+                customClaimsBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public Builder setCustomClaims(com.google.protobuf.Struct.Builder builderForValue) {
+            if (customClaimsBuilder_ == null) {
+                customClaims_ = builderForValue.build();
+                onChanged();
+            } else {
+                customClaimsBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public Builder mergeCustomClaims(com.google.protobuf.Struct value) {
+            if (customClaimsBuilder_ == null) {
+                if (customClaims_ != null) {
+                    customClaims_ = com.google.protobuf.Struct.newBuilder(customClaims_).mergeFrom(value)
+                            .buildPartial();
+                } else {
+                    customClaims_ = value;
+                }
+                onChanged();
+            } else {
+                customClaimsBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public Builder clearCustomClaims() {
+            if (customClaimsBuilder_ == null) {
+                customClaims_ = null;
+                onChanged();
+            } else {
+                customClaims_ = null;
+                customClaimsBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public com.google.protobuf.Struct.Builder getCustomClaimsBuilder() {
+
+            onChanged();
+            return getCustomClaimsFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        public com.google.protobuf.StructOrBuilder getCustomClaimsOrBuilder() {
+            if (customClaimsBuilder_ != null) {
+                return customClaimsBuilder_.getMessageOrBuilder();
+            } else {
+                return customClaims_ == null ? com.google.protobuf.Struct.getDefaultInstance() : customClaims_;
+            }
+        }
+
+        /**
+         * <pre>
+         * User's custom claims, typically used to define user roles and propagated
+         * to an authenticated user's ID token.
+         * </pre>
+         *
+         * <code>.google.protobuf.Struct custom_claims = 10;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder> getCustomClaimsFieldBuilder() {
+            if (customClaimsBuilder_ == null) {
+                customClaimsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Struct, com.google.protobuf.Struct.Builder, com.google.protobuf.StructOrBuilder>(
+                        getCustomClaims(), getParentForChildren(), isClean());
+                customClaims_ = null;
+            }
+            return customClaimsBuilder_;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+        // @@protoc_insertion_point(builder_scope:google.events.firebase.auth.v1.AuthEventData)
     }
+
+    // @@protoc_insertion_point(class_scope:google.events.firebase.auth.v1.AuthEventData)
+    private static final com.google.events.firebase.auth.v1.AuthEventData DEFAULT_INSTANCE;
+    static {
+        DEFAULT_INSTANCE = new com.google.events.firebase.auth.v1.AuthEventData();
+    }
+
+    public static com.google.events.firebase.auth.v1.AuthEventData getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<AuthEventData> PARSER = new com.google.protobuf.AbstractParser<AuthEventData>() {
+        @java.lang.Override
+        public AuthEventData parsePartialFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<AuthEventData> parser() {
+        return PARSER;
+    }
+
     @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
+    public com.google.protobuf.Parser<AuthEventData> getParserForType() {
+        return PARSER;
     }
 
     @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
+    public com.google.events.firebase.auth.v1.AuthEventData getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
     }
-
-
-    // @@protoc_insertion_point(builder_scope:google.events.firebase.auth.v1.AuthEventData)
-  }
-
-  // @@protoc_insertion_point(class_scope:google.events.firebase.auth.v1.AuthEventData)
-  private static final com.google.events.firebase.auth.v1.AuthEventData DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new com.google.events.firebase.auth.v1.AuthEventData();
-  }
-
-  public static com.google.events.firebase.auth.v1.AuthEventData getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<AuthEventData>
-      PARSER = new com.google.protobuf.AbstractParser<AuthEventData>() {
-    @java.lang.Override
-    public AuthEventData parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
-    }
-  };
-
-  public static com.google.protobuf.Parser<AuthEventData> parser() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<AuthEventData> getParserForType() {
-    return PARSER;
-  }
-
-  @java.lang.Override
-  public com.google.events.firebase.auth.v1.AuthEventData getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
 
 }
-

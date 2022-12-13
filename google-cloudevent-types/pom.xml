@@ -14,7 +14,7 @@
   </description>
 
   <parent>
-    <groupId>com.google.cloud</groupId>
+    <groupId>com.google.events</groupId>
     <artifactId>google-cloudevent-types-parent</artifactId>
     <version>0.5.1-SNAPSHOT</version> <!-- {x-version-update:google-cloudevent-types:current} -->
   </parent>
@@ -29,17 +29,15 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.21.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.protobuf</groupId>
+      <artifactId>protobuf-java-util</artifactId>
     </dependency>
     <dependency>
       <groupId>com.google.api.grpc</groupId>
       <artifactId>proto-google-common-protos</artifactId>
       <version>2.10.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.protobuf</groupId>
-      <artifactId>protobuf-java-util</artifactId>
-      <version>3.21.7</version>
     </dependency>
     <dependency>
       <groupId>com.google.api-client</groupId>
@@ -65,12 +63,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M7</version>
-        <configuration>
-          <excludes>
-            <exclude>**/MessagePublishedDataTest.java</exclude>
-            <exclude>**/LogEntryDataTest.java</exclude>
-          </excludes>
-        </configuration>
       </plugin>
     </plugins>
   </build>

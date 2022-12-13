@@ -10,852 +10,76 @@ package com.google.events.firebase.testlab.v1;
  *
  * Protobuf type {@code google.events.firebase.testlab.v1.TestMatrixEventData}
  */
-public final class TestMatrixEventData extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:google.events.firebase.testlab.v1.TestMatrixEventData)
-    TestMatrixEventDataOrBuilder {
-private static final long serialVersionUID = 0L;
-  // Use TestMatrixEventData.newBuilder() to construct.
-  private TestMatrixEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-    super(builder);
-  }
-  private TestMatrixEventData() {
-    state_ = 0;
-    invalidMatrixDetails_ = "";
-    outcomeSummary_ = 0;
-    testMatrixId_ = "";
-  }
+public final class TestMatrixEventData extends com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:google.events.firebase.testlab.v1.TestMatrixEventData)
+        TestMatrixEventDataOrBuilder {
+    private static final long serialVersionUID = 0L;
 
-  @java.lang.Override
-  @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
-    return new TestMatrixEventData();
-  }
+    // Use TestMatrixEventData.newBuilder() to construct.
+    private TestMatrixEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+    }
 
-  @java.lang.Override
-  public final com.google.protobuf.UnknownFieldSet
-  getUnknownFields() {
-    return this.unknownFields;
-  }
-  public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
-    return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
-  }
-
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
-    return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.google.events.firebase.testlab.v1.TestMatrixEventData.class, com.google.events.firebase.testlab.v1.TestMatrixEventData.Builder.class);
-  }
-
-  public static final int CREATE_TIME_FIELD_NUMBER = 1;
-  private com.google.protobuf.Timestamp createTime_;
-  /**
-   * <pre>
-   * Time the test matrix was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   * @return Whether the createTime field is set.
-   */
-  @java.lang.Override
-  public boolean hasCreateTime() {
-    return createTime_ != null;
-  }
-  /**
-   * <pre>
-   * Time the test matrix was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   * @return The createTime.
-   */
-  @java.lang.Override
-  public com.google.protobuf.Timestamp getCreateTime() {
-    return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-  }
-  /**
-   * <pre>
-   * Time the test matrix was created.
-   * </pre>
-   *
-   * <code>.google.protobuf.Timestamp create_time = 1;</code>
-   */
-  @java.lang.Override
-  public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
-    return getCreateTime();
-  }
-
-  public static final int STATE_FIELD_NUMBER = 2;
-  private int state_;
-  /**
-   * <pre>
-   * State of the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
-   * @return The enum numeric value on the wire for state.
-   */
-  @java.lang.Override public int getStateValue() {
-    return state_;
-  }
-  /**
-   * <pre>
-   * State of the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
-   * @return The state.
-   */
-  @java.lang.Override public com.google.events.firebase.testlab.v1.TestState getState() {
-    @SuppressWarnings("deprecation")
-    com.google.events.firebase.testlab.v1.TestState result = com.google.events.firebase.testlab.v1.TestState.valueOf(state_);
-    return result == null ? com.google.events.firebase.testlab.v1.TestState.UNRECOGNIZED : result;
-  }
-
-  public static final int INVALID_MATRIX_DETAILS_FIELD_NUMBER = 3;
-  private volatile java.lang.Object invalidMatrixDetails_;
-  /**
-   * <pre>
-   * Code that describes why the test matrix is considered invalid. Only set for
-   * matrices in the INVALID state.
-   * </pre>
-   *
-   * <code>string invalid_matrix_details = 3;</code>
-   * @return The invalidMatrixDetails.
-   */
-  @java.lang.Override
-  public java.lang.String getInvalidMatrixDetails() {
-    java.lang.Object ref = invalidMatrixDetails_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      invalidMatrixDetails_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * Code that describes why the test matrix is considered invalid. Only set for
-   * matrices in the INVALID state.
-   * </pre>
-   *
-   * <code>string invalid_matrix_details = 3;</code>
-   * @return The bytes for invalidMatrixDetails.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getInvalidMatrixDetailsBytes() {
-    java.lang.Object ref = invalidMatrixDetails_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      invalidMatrixDetails_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int OUTCOME_SUMMARY_FIELD_NUMBER = 4;
-  private int outcomeSummary_;
-  /**
-   * <pre>
-   * Outcome summary of the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
-   * @return The enum numeric value on the wire for outcomeSummary.
-   */
-  @java.lang.Override public int getOutcomeSummaryValue() {
-    return outcomeSummary_;
-  }
-  /**
-   * <pre>
-   * Outcome summary of the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
-   * @return The outcomeSummary.
-   */
-  @java.lang.Override public com.google.events.firebase.testlab.v1.OutcomeSummary getOutcomeSummary() {
-    @SuppressWarnings("deprecation")
-    com.google.events.firebase.testlab.v1.OutcomeSummary result = com.google.events.firebase.testlab.v1.OutcomeSummary.valueOf(outcomeSummary_);
-    return result == null ? com.google.events.firebase.testlab.v1.OutcomeSummary.UNRECOGNIZED : result;
-  }
-
-  public static final int RESULT_STORAGE_FIELD_NUMBER = 5;
-  private com.google.events.firebase.testlab.v1.ResultStorage resultStorage_;
-  /**
-   * <pre>
-   * Locations where test results are stored.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-   * @return Whether the resultStorage field is set.
-   */
-  @java.lang.Override
-  public boolean hasResultStorage() {
-    return resultStorage_ != null;
-  }
-  /**
-   * <pre>
-   * Locations where test results are stored.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-   * @return The resultStorage.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.testlab.v1.ResultStorage getResultStorage() {
-    return resultStorage_ == null ? com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance() : resultStorage_;
-  }
-  /**
-   * <pre>
-   * Locations where test results are stored.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.testlab.v1.ResultStorageOrBuilder getResultStorageOrBuilder() {
-    return getResultStorage();
-  }
-
-  public static final int CLIENT_INFO_FIELD_NUMBER = 6;
-  private com.google.events.firebase.testlab.v1.ClientInfo clientInfo_;
-  /**
-   * <pre>
-   * Information provided by the client that created the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-   * @return Whether the clientInfo field is set.
-   */
-  @java.lang.Override
-  public boolean hasClientInfo() {
-    return clientInfo_ != null;
-  }
-  /**
-   * <pre>
-   * Information provided by the client that created the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-   * @return The clientInfo.
-   */
-  @java.lang.Override
-  public com.google.events.firebase.testlab.v1.ClientInfo getClientInfo() {
-    return clientInfo_ == null ? com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance() : clientInfo_;
-  }
-  /**
-   * <pre>
-   * Information provided by the client that created the test matrix.
-   * </pre>
-   *
-   * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-   */
-  @java.lang.Override
-  public com.google.events.firebase.testlab.v1.ClientInfoOrBuilder getClientInfoOrBuilder() {
-    return getClientInfo();
-  }
-
-  public static final int TEST_MATRIX_ID_FIELD_NUMBER = 7;
-  private volatile java.lang.Object testMatrixId_;
-  /**
-   * <pre>
-   * ID of the test matrix this event belongs to.
-   * </pre>
-   *
-   * <code>string test_matrix_id = 7;</code>
-   * @return The testMatrixId.
-   */
-  @java.lang.Override
-  public java.lang.String getTestMatrixId() {
-    java.lang.Object ref = testMatrixId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      testMatrixId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   * ID of the test matrix this event belongs to.
-   * </pre>
-   *
-   * <code>string test_matrix_id = 7;</code>
-   * @return The bytes for testMatrixId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getTestMatrixIdBytes() {
-    java.lang.Object ref = testMatrixId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      testMatrixId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  private byte memoizedIsInitialized = -1;
-  @java.lang.Override
-  public final boolean isInitialized() {
-    byte isInitialized = memoizedIsInitialized;
-    if (isInitialized == 1) return true;
-    if (isInitialized == 0) return false;
-
-    memoizedIsInitialized = 1;
-    return true;
-  }
-
-  @java.lang.Override
-  public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
-    if (createTime_ != null) {
-      output.writeMessage(1, getCreateTime());
-    }
-    if (state_ != com.google.events.firebase.testlab.v1.TestState.TEST_STATE_UNSPECIFIED.getNumber()) {
-      output.writeEnum(2, state_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invalidMatrixDetails_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, invalidMatrixDetails_);
-    }
-    if (outcomeSummary_ != com.google.events.firebase.testlab.v1.OutcomeSummary.OUTCOME_SUMMARY_UNSPECIFIED.getNumber()) {
-      output.writeEnum(4, outcomeSummary_);
-    }
-    if (resultStorage_ != null) {
-      output.writeMessage(5, getResultStorage());
-    }
-    if (clientInfo_ != null) {
-      output.writeMessage(6, getClientInfo());
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(testMatrixId_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, testMatrixId_);
-    }
-    getUnknownFields().writeTo(output);
-  }
-
-  @java.lang.Override
-  public int getSerializedSize() {
-    int size = memoizedSize;
-    if (size != -1) return size;
-
-    size = 0;
-    if (createTime_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getCreateTime());
-    }
-    if (state_ != com.google.events.firebase.testlab.v1.TestState.TEST_STATE_UNSPECIFIED.getNumber()) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, state_);
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invalidMatrixDetails_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, invalidMatrixDetails_);
-    }
-    if (outcomeSummary_ != com.google.events.firebase.testlab.v1.OutcomeSummary.OUTCOME_SUMMARY_UNSPECIFIED.getNumber()) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(4, outcomeSummary_);
-    }
-    if (resultStorage_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getResultStorage());
-    }
-    if (clientInfo_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getClientInfo());
-    }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(testMatrixId_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, testMatrixId_);
-    }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSize = size;
-    return size;
-  }
-
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
-    if (obj == this) {
-     return true;
-    }
-    if (!(obj instanceof com.google.events.firebase.testlab.v1.TestMatrixEventData)) {
-      return super.equals(obj);
-    }
-    com.google.events.firebase.testlab.v1.TestMatrixEventData other = (com.google.events.firebase.testlab.v1.TestMatrixEventData) obj;
-
-    if (hasCreateTime() != other.hasCreateTime()) return false;
-    if (hasCreateTime()) {
-      if (!getCreateTime()
-          .equals(other.getCreateTime())) return false;
-    }
-    if (state_ != other.state_) return false;
-    if (!getInvalidMatrixDetails()
-        .equals(other.getInvalidMatrixDetails())) return false;
-    if (outcomeSummary_ != other.outcomeSummary_) return false;
-    if (hasResultStorage() != other.hasResultStorage()) return false;
-    if (hasResultStorage()) {
-      if (!getResultStorage()
-          .equals(other.getResultStorage())) return false;
-    }
-    if (hasClientInfo() != other.hasClientInfo()) return false;
-    if (hasClientInfo()) {
-      if (!getClientInfo()
-          .equals(other.getClientInfo())) return false;
-    }
-    if (!getTestMatrixId()
-        .equals(other.getTestMatrixId())) return false;
-    if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-    return true;
-  }
-
-  @java.lang.Override
-  public int hashCode() {
-    if (memoizedHashCode != 0) {
-      return memoizedHashCode;
-    }
-    int hash = 41;
-    hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasCreateTime()) {
-      hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCreateTime().hashCode();
-    }
-    hash = (37 * hash) + STATE_FIELD_NUMBER;
-    hash = (53 * hash) + state_;
-    hash = (37 * hash) + INVALID_MATRIX_DETAILS_FIELD_NUMBER;
-    hash = (53 * hash) + getInvalidMatrixDetails().hashCode();
-    hash = (37 * hash) + OUTCOME_SUMMARY_FIELD_NUMBER;
-    hash = (53 * hash) + outcomeSummary_;
-    if (hasResultStorage()) {
-      hash = (37 * hash) + RESULT_STORAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getResultStorage().hashCode();
-    }
-    if (hasClientInfo()) {
-      hash = (37 * hash) + CLIENT_INFO_FIELD_NUMBER;
-      hash = (53 * hash) + getClientInfo().hashCode();
-    }
-    hash = (37 * hash) + TEST_MATRIX_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getTestMatrixId().hashCode();
-    hash = (29 * hash) + getUnknownFields().hashCode();
-    memoizedHashCode = hash;
-    return hash;
-  }
-
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
-    return PARSER.parseFrom(data, extensionRegistry);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
-  }
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
-  }
-
-  @java.lang.Override
-  public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder() {
-    return DEFAULT_INSTANCE.toBuilder();
-  }
-  public static Builder newBuilder(com.google.events.firebase.testlab.v1.TestMatrixEventData prototype) {
-    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-  }
-  @java.lang.Override
-  public Builder toBuilder() {
-    return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
-  }
-
-  @java.lang.Override
-  protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-    Builder builder = new Builder(parent);
-    return builder;
-  }
-  /**
-   * <pre>
-   * The data within all Firebase test matrix events.
-   * </pre>
-   *
-   * Protobuf type {@code google.events.firebase.testlab.v1.TestMatrixEventData}
-   */
-  public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:google.events.firebase.testlab.v1.TestMatrixEventData)
-      com.google.events.firebase.testlab.v1.TestMatrixEventDataOrBuilder {
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
+    private TestMatrixEventData() {
+        state_ = 0;
+        invalidMatrixDetails_ = "";
+        outcomeSummary_ = 0;
+        testMatrixId_ = "";
     }
 
     @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.google.events.firebase.testlab.v1.TestMatrixEventData.class, com.google.events.firebase.testlab.v1.TestMatrixEventData.Builder.class);
-    }
-
-    // Construct using com.google.events.firebase.testlab.v1.TestMatrixEventData.newBuilder()
-    private Builder() {
-
-    }
-
-    private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      super(parent);
-
-    }
-    @java.lang.Override
-    public Builder clear() {
-      super.clear();
-      if (createTimeBuilder_ == null) {
-        createTime_ = null;
-      } else {
-        createTime_ = null;
-        createTimeBuilder_ = null;
-      }
-      state_ = 0;
-
-      invalidMatrixDetails_ = "";
-
-      outcomeSummary_ = 0;
-
-      if (resultStorageBuilder_ == null) {
-        resultStorage_ = null;
-      } else {
-        resultStorage_ = null;
-        resultStorageBuilder_ = null;
-      }
-      if (clientInfoBuilder_ == null) {
-        clientInfo_ = null;
-      } else {
-        clientInfo_ = null;
-        clientInfoBuilder_ = null;
-      }
-      testMatrixId_ = "";
-
-      return this;
+    @SuppressWarnings({ "unused" })
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+        return new TestMatrixEventData();
     }
 
     @java.lang.Override
-    public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-      return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
+    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+        return this.unknownFields;
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+        return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
     }
 
     @java.lang.Override
-    public com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstanceForType() {
-      return com.google.events.firebase.testlab.v1.TestMatrixEventData.getDefaultInstance();
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+        return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(com.google.events.firebase.testlab.v1.TestMatrixEventData.class,
+                        com.google.events.firebase.testlab.v1.TestMatrixEventData.Builder.class);
     }
 
-    @java.lang.Override
-    public com.google.events.firebase.testlab.v1.TestMatrixEventData build() {
-      com.google.events.firebase.testlab.v1.TestMatrixEventData result = buildPartial();
-      if (!result.isInitialized()) {
-        throw newUninitializedMessageException(result);
-      }
-      return result;
-    }
-
-    @java.lang.Override
-    public com.google.events.firebase.testlab.v1.TestMatrixEventData buildPartial() {
-      com.google.events.firebase.testlab.v1.TestMatrixEventData result = new com.google.events.firebase.testlab.v1.TestMatrixEventData(this);
-      if (createTimeBuilder_ == null) {
-        result.createTime_ = createTime_;
-      } else {
-        result.createTime_ = createTimeBuilder_.build();
-      }
-      result.state_ = state_;
-      result.invalidMatrixDetails_ = invalidMatrixDetails_;
-      result.outcomeSummary_ = outcomeSummary_;
-      if (resultStorageBuilder_ == null) {
-        result.resultStorage_ = resultStorage_;
-      } else {
-        result.resultStorage_ = resultStorageBuilder_.build();
-      }
-      if (clientInfoBuilder_ == null) {
-        result.clientInfo_ = clientInfo_;
-      } else {
-        result.clientInfo_ = clientInfoBuilder_.build();
-      }
-      result.testMatrixId_ = testMatrixId_;
-      onBuilt();
-      return result;
-    }
-
-    @java.lang.Override
-    public Builder clone() {
-      return super.clone();
-    }
-    @java.lang.Override
-    public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.setField(field, value);
-    }
-    @java.lang.Override
-    public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return super.clearField(field);
-    }
-    @java.lang.Override
-    public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return super.clearOneof(oneof);
-    }
-    @java.lang.Override
-    public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
-      return super.setRepeatedField(field, index, value);
-    }
-    @java.lang.Override
-    public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
-      return super.addRepeatedField(field, value);
-    }
-    @java.lang.Override
-    public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.google.events.firebase.testlab.v1.TestMatrixEventData) {
-        return mergeFrom((com.google.events.firebase.testlab.v1.TestMatrixEventData)other);
-      } else {
-        super.mergeFrom(other);
-        return this;
-      }
-    }
-
-    public Builder mergeFrom(com.google.events.firebase.testlab.v1.TestMatrixEventData other) {
-      if (other == com.google.events.firebase.testlab.v1.TestMatrixEventData.getDefaultInstance()) return this;
-      if (other.hasCreateTime()) {
-        mergeCreateTime(other.getCreateTime());
-      }
-      if (other.state_ != 0) {
-        setStateValue(other.getStateValue());
-      }
-      if (!other.getInvalidMatrixDetails().isEmpty()) {
-        invalidMatrixDetails_ = other.invalidMatrixDetails_;
-        onChanged();
-      }
-      if (other.outcomeSummary_ != 0) {
-        setOutcomeSummaryValue(other.getOutcomeSummaryValue());
-      }
-      if (other.hasResultStorage()) {
-        mergeResultStorage(other.getResultStorage());
-      }
-      if (other.hasClientInfo()) {
-        mergeClientInfo(other.getClientInfo());
-      }
-      if (!other.getTestMatrixId().isEmpty()) {
-        testMatrixId_ = other.testMatrixId_;
-        onChanged();
-      }
-      this.mergeUnknownFields(other.getUnknownFields());
-      onChanged();
-      return this;
-    }
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      return true;
-    }
-
-    @java.lang.Override
-    public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              input.readMessage(
-                  getCreateTimeFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 10
-            case 16: {
-              state_ = input.readEnum();
-
-              break;
-            } // case 16
-            case 26: {
-              invalidMatrixDetails_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 26
-            case 32: {
-              outcomeSummary_ = input.readEnum();
-
-              break;
-            } // case 32
-            case 42: {
-              input.readMessage(
-                  getResultStorageFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 42
-            case 50: {
-              input.readMessage(
-                  getClientInfoFieldBuilder().getBuilder(),
-                  extensionRegistry);
-
-              break;
-            } // case 50
-            case 58: {
-              testMatrixId_ = input.readStringRequireUtf8();
-
-              break;
-            } // case 58
-            default: {
-              if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                done = true; // was an endgroup tag
-              }
-              break;
-            } // default:
-          } // switch (tag)
-        } // while (!done)
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.unwrapIOException();
-      } finally {
-        onChanged();
-      } // finally
-      return this;
-    }
-
+    public static final int CREATE_TIME_FIELD_NUMBER = 1;
     private com.google.protobuf.Timestamp createTime_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createTimeBuilder_;
+
     /**
      * <pre>
      * Time the test matrix was created.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp create_time = 1;</code>
+     *
      * @return Whether the createTime field is set.
      */
+    @java.lang.Override
     public boolean hasCreateTime() {
-      return createTimeBuilder_ != null || createTime_ != null;
+        return createTime_ != null;
     }
+
     /**
      * <pre>
      * Time the test matrix was created.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp create_time = 1;</code>
+     *
      * @return The createTime.
      */
+    @java.lang.Override
     public com.google.protobuf.Timestamp getCreateTime() {
-      if (createTimeBuilder_ == null) {
         return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-      } else {
-        return createTimeBuilder_.getMessage();
-      }
     }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder setCreateTime(com.google.protobuf.Timestamp value) {
-      if (createTimeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        createTime_ = value;
-        onChanged();
-      } else {
-        createTimeBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Time the test matrix was created.
@@ -863,180 +87,48 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.protobuf.Timestamp create_time = 1;</code>
      */
-    public Builder setCreateTime(
-        com.google.protobuf.Timestamp.Builder builderForValue) {
-      if (createTimeBuilder_ == null) {
-        createTime_ = builderForValue.build();
-        onChanged();
-      } else {
-        createTimeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder mergeCreateTime(com.google.protobuf.Timestamp value) {
-      if (createTimeBuilder_ == null) {
-        if (createTime_ != null) {
-          createTime_ =
-            com.google.protobuf.Timestamp.newBuilder(createTime_).mergeFrom(value).buildPartial();
-        } else {
-          createTime_ = value;
-        }
-        onChanged();
-      } else {
-        createTimeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public Builder clearCreateTime() {
-      if (createTimeBuilder_ == null) {
-        createTime_ = null;
-        onChanged();
-      } else {
-        createTime_ = null;
-        createTimeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    public com.google.protobuf.Timestamp.Builder getCreateTimeBuilder() {
-      
-      onChanged();
-      return getCreateTimeFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
+    @java.lang.Override
     public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
-      if (createTimeBuilder_ != null) {
-        return createTimeBuilder_.getMessageOrBuilder();
-      } else {
-        return createTime_ == null ?
-            com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
-      }
-    }
-    /**
-     * <pre>
-     * Time the test matrix was created.
-     * </pre>
-     *
-     * <code>.google.protobuf.Timestamp create_time = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> 
-        getCreateTimeFieldBuilder() {
-      if (createTimeBuilder_ == null) {
-        createTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
-                getCreateTime(),
-                getParentForChildren(),
-                isClean());
-        createTime_ = null;
-      }
-      return createTimeBuilder_;
+        return getCreateTime();
     }
 
-    private int state_ = 0;
+    public static final int STATE_FIELD_NUMBER = 2;
+    private int state_;
+
     /**
      * <pre>
      * State of the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+     *
      * @return The enum numeric value on the wire for state.
      */
-    @java.lang.Override public int getStateValue() {
-      return state_;
+    @java.lang.Override
+    public int getStateValue() {
+        return state_;
     }
+
     /**
      * <pre>
      * State of the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
-     * @param value The enum numeric value on the wire for state to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStateValue(int value) {
-      
-      state_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * State of the test matrix.
-     * </pre>
      *
-     * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
      * @return The state.
      */
     @java.lang.Override
     public com.google.events.firebase.testlab.v1.TestState getState() {
-      @SuppressWarnings("deprecation")
-      com.google.events.firebase.testlab.v1.TestState result = com.google.events.firebase.testlab.v1.TestState.valueOf(state_);
-      return result == null ? com.google.events.firebase.testlab.v1.TestState.UNRECOGNIZED : result;
-    }
-    /**
-     * <pre>
-     * State of the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
-     * @param value The state to set.
-     * @return This builder for chaining.
-     */
-    public Builder setState(com.google.events.firebase.testlab.v1.TestState value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-      
-      state_ = value.getNumber();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * State of the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearState() {
-      
-      state_ = 0;
-      onChanged();
-      return this;
+        @SuppressWarnings("deprecation")
+        com.google.events.firebase.testlab.v1.TestState result = com.google.events.firebase.testlab.v1.TestState
+                .valueOf(state_);
+        return result == null ? com.google.events.firebase.testlab.v1.TestState.UNRECOGNIZED : result;
     }
 
-    private java.lang.Object invalidMatrixDetails_ = "";
+    public static final int INVALID_MATRIX_DETAILS_FIELD_NUMBER = 3;
+    private volatile java.lang.Object invalidMatrixDetails_;
+
     /**
      * <pre>
      * Code that describes why the test matrix is considered invalid. Only set for
@@ -1044,222 +136,110 @@ private static final long serialVersionUID = 0L;
      * </pre>
      *
      * <code>string invalid_matrix_details = 3;</code>
+     *
      * @return The invalidMatrixDetails.
      */
+    @java.lang.Override
     public java.lang.String getInvalidMatrixDetails() {
-      java.lang.Object ref = invalidMatrixDetails_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        invalidMatrixDetails_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Code that describes why the test matrix is considered invalid. Only set for
-     * matrices in the INVALID state.
-     * </pre>
-     *
-     * <code>string invalid_matrix_details = 3;</code>
-     * @return The bytes for invalidMatrixDetails.
-     */
-    public com.google.protobuf.ByteString
-        getInvalidMatrixDetailsBytes() {
-      java.lang.Object ref = invalidMatrixDetails_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        invalidMatrixDetails_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * Code that describes why the test matrix is considered invalid. Only set for
-     * matrices in the INVALID state.
-     * </pre>
-     *
-     * <code>string invalid_matrix_details = 3;</code>
-     * @param value The invalidMatrixDetails to set.
-     * @return This builder for chaining.
-     */
-    public Builder setInvalidMatrixDetails(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      invalidMatrixDetails_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Code that describes why the test matrix is considered invalid. Only set for
-     * matrices in the INVALID state.
-     * </pre>
-     *
-     * <code>string invalid_matrix_details = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearInvalidMatrixDetails() {
-      
-      invalidMatrixDetails_ = getDefaultInstance().getInvalidMatrixDetails();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Code that describes why the test matrix is considered invalid. Only set for
-     * matrices in the INVALID state.
-     * </pre>
-     *
-     * <code>string invalid_matrix_details = 3;</code>
-     * @param value The bytes for invalidMatrixDetails to set.
-     * @return This builder for chaining.
-     */
-    public Builder setInvalidMatrixDetailsBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      invalidMatrixDetails_ = value;
-      onChanged();
-      return this;
+        java.lang.Object ref = invalidMatrixDetails_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            invalidMatrixDetails_ = s;
+            return s;
+        }
     }
 
-    private int outcomeSummary_ = 0;
+    /**
+     * <pre>
+     * Code that describes why the test matrix is considered invalid. Only set for
+     * matrices in the INVALID state.
+     * </pre>
+     *
+     * <code>string invalid_matrix_details = 3;</code>
+     *
+     * @return The bytes for invalidMatrixDetails.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString getInvalidMatrixDetailsBytes() {
+        java.lang.Object ref = invalidMatrixDetails_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            invalidMatrixDetails_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    public static final int OUTCOME_SUMMARY_FIELD_NUMBER = 4;
+    private int outcomeSummary_;
+
     /**
      * <pre>
      * Outcome summary of the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+     *
      * @return The enum numeric value on the wire for outcomeSummary.
      */
-    @java.lang.Override public int getOutcomeSummaryValue() {
-      return outcomeSummary_;
+    @java.lang.Override
+    public int getOutcomeSummaryValue() {
+        return outcomeSummary_;
     }
+
     /**
      * <pre>
      * Outcome summary of the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
-     * @param value The enum numeric value on the wire for outcomeSummary to set.
-     * @return This builder for chaining.
-     */
-    public Builder setOutcomeSummaryValue(int value) {
-      
-      outcomeSummary_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Outcome summary of the test matrix.
-     * </pre>
      *
-     * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
      * @return The outcomeSummary.
      */
     @java.lang.Override
     public com.google.events.firebase.testlab.v1.OutcomeSummary getOutcomeSummary() {
-      @SuppressWarnings("deprecation")
-      com.google.events.firebase.testlab.v1.OutcomeSummary result = com.google.events.firebase.testlab.v1.OutcomeSummary.valueOf(outcomeSummary_);
-      return result == null ? com.google.events.firebase.testlab.v1.OutcomeSummary.UNRECOGNIZED : result;
-    }
-    /**
-     * <pre>
-     * Outcome summary of the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
-     * @param value The outcomeSummary to set.
-     * @return This builder for chaining.
-     */
-    public Builder setOutcomeSummary(com.google.events.firebase.testlab.v1.OutcomeSummary value) {
-      if (value == null) {
-        throw new NullPointerException();
-      }
-      
-      outcomeSummary_ = value.getNumber();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * Outcome summary of the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearOutcomeSummary() {
-      
-      outcomeSummary_ = 0;
-      onChanged();
-      return this;
+        @SuppressWarnings("deprecation")
+        com.google.events.firebase.testlab.v1.OutcomeSummary result = com.google.events.firebase.testlab.v1.OutcomeSummary
+                .valueOf(outcomeSummary_);
+        return result == null ? com.google.events.firebase.testlab.v1.OutcomeSummary.UNRECOGNIZED : result;
     }
 
+    public static final int RESULT_STORAGE_FIELD_NUMBER = 5;
     private com.google.events.firebase.testlab.v1.ResultStorage resultStorage_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder> resultStorageBuilder_;
+
     /**
      * <pre>
      * Locations where test results are stored.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+     *
      * @return Whether the resultStorage field is set.
      */
+    @java.lang.Override
     public boolean hasResultStorage() {
-      return resultStorageBuilder_ != null || resultStorage_ != null;
+        return resultStorage_ != null;
     }
+
     /**
      * <pre>
      * Locations where test results are stored.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+     *
      * @return The resultStorage.
      */
+    @java.lang.Override
     public com.google.events.firebase.testlab.v1.ResultStorage getResultStorage() {
-      if (resultStorageBuilder_ == null) {
-        return resultStorage_ == null ? com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance() : resultStorage_;
-      } else {
-        return resultStorageBuilder_.getMessage();
-      }
+        return resultStorage_ == null ? com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance()
+                : resultStorage_;
     }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
-    public Builder setResultStorage(com.google.events.firebase.testlab.v1.ResultStorage value) {
-      if (resultStorageBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        resultStorage_ = value;
-        onChanged();
-      } else {
-        resultStorageBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Locations where test results are stored.
@@ -1267,154 +247,43 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
      */
-    public Builder setResultStorage(
-        com.google.events.firebase.testlab.v1.ResultStorage.Builder builderForValue) {
-      if (resultStorageBuilder_ == null) {
-        resultStorage_ = builderForValue.build();
-        onChanged();
-      } else {
-        resultStorageBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
-    public Builder mergeResultStorage(com.google.events.firebase.testlab.v1.ResultStorage value) {
-      if (resultStorageBuilder_ == null) {
-        if (resultStorage_ != null) {
-          resultStorage_ =
-            com.google.events.firebase.testlab.v1.ResultStorage.newBuilder(resultStorage_).mergeFrom(value).buildPartial();
-        } else {
-          resultStorage_ = value;
-        }
-        onChanged();
-      } else {
-        resultStorageBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
-    public Builder clearResultStorage() {
-      if (resultStorageBuilder_ == null) {
-        resultStorage_ = null;
-        onChanged();
-      } else {
-        resultStorage_ = null;
-        resultStorageBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
-    public com.google.events.firebase.testlab.v1.ResultStorage.Builder getResultStorageBuilder() {
-      
-      onChanged();
-      return getResultStorageFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.testlab.v1.ResultStorageOrBuilder getResultStorageOrBuilder() {
-      if (resultStorageBuilder_ != null) {
-        return resultStorageBuilder_.getMessageOrBuilder();
-      } else {
-        return resultStorage_ == null ?
-            com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance() : resultStorage_;
-      }
-    }
-    /**
-     * <pre>
-     * Locations where test results are stored.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder> 
-        getResultStorageFieldBuilder() {
-      if (resultStorageBuilder_ == null) {
-        resultStorageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder>(
-                getResultStorage(),
-                getParentForChildren(),
-                isClean());
-        resultStorage_ = null;
-      }
-      return resultStorageBuilder_;
+        return getResultStorage();
     }
 
+    public static final int CLIENT_INFO_FIELD_NUMBER = 6;
     private com.google.events.firebase.testlab.v1.ClientInfo clientInfo_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder> clientInfoBuilder_;
+
     /**
      * <pre>
      * Information provided by the client that created the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+     *
      * @return Whether the clientInfo field is set.
      */
+    @java.lang.Override
     public boolean hasClientInfo() {
-      return clientInfoBuilder_ != null || clientInfo_ != null;
+        return clientInfo_ != null;
     }
+
     /**
      * <pre>
      * Information provided by the client that created the test matrix.
      * </pre>
      *
      * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+     *
      * @return The clientInfo.
      */
+    @java.lang.Override
     public com.google.events.firebase.testlab.v1.ClientInfo getClientInfo() {
-      if (clientInfoBuilder_ == null) {
-        return clientInfo_ == null ? com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance() : clientInfo_;
-      } else {
-        return clientInfoBuilder_.getMessage();
-      }
+        return clientInfo_ == null ? com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance()
+                : clientInfo_;
     }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
-    public Builder setClientInfo(com.google.events.firebase.testlab.v1.ClientInfo value) {
-      if (clientInfoBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        clientInfo_ = value;
-        onChanged();
-      } else {
-        clientInfoBuilder_.setMessage(value);
-      }
 
-      return this;
-    }
     /**
      * <pre>
      * Information provided by the client that created the test matrix.
@@ -1422,261 +291,1470 @@ private static final long serialVersionUID = 0L;
      *
      * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
      */
-    public Builder setClientInfo(
-        com.google.events.firebase.testlab.v1.ClientInfo.Builder builderForValue) {
-      if (clientInfoBuilder_ == null) {
-        clientInfo_ = builderForValue.build();
-        onChanged();
-      } else {
-        clientInfoBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
-    public Builder mergeClientInfo(com.google.events.firebase.testlab.v1.ClientInfo value) {
-      if (clientInfoBuilder_ == null) {
-        if (clientInfo_ != null) {
-          clientInfo_ =
-            com.google.events.firebase.testlab.v1.ClientInfo.newBuilder(clientInfo_).mergeFrom(value).buildPartial();
-        } else {
-          clientInfo_ = value;
-        }
-        onChanged();
-      } else {
-        clientInfoBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
-    public Builder clearClientInfo() {
-      if (clientInfoBuilder_ == null) {
-        clientInfo_ = null;
-        onChanged();
-      } else {
-        clientInfo_ = null;
-        clientInfoBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
-    public com.google.events.firebase.testlab.v1.ClientInfo.Builder getClientInfoBuilder() {
-      
-      onChanged();
-      return getClientInfoFieldBuilder().getBuilder();
-    }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
+    @java.lang.Override
     public com.google.events.firebase.testlab.v1.ClientInfoOrBuilder getClientInfoOrBuilder() {
-      if (clientInfoBuilder_ != null) {
-        return clientInfoBuilder_.getMessageOrBuilder();
-      } else {
-        return clientInfo_ == null ?
-            com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance() : clientInfo_;
-      }
-    }
-    /**
-     * <pre>
-     * Information provided by the client that created the test matrix.
-     * </pre>
-     *
-     * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder> 
-        getClientInfoFieldBuilder() {
-      if (clientInfoBuilder_ == null) {
-        clientInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder>(
-                getClientInfo(),
-                getParentForChildren(),
-                isClean());
-        clientInfo_ = null;
-      }
-      return clientInfoBuilder_;
+        return getClientInfo();
     }
 
-    private java.lang.Object testMatrixId_ = "";
+    public static final int TEST_MATRIX_ID_FIELD_NUMBER = 7;
+    private volatile java.lang.Object testMatrixId_;
+
     /**
      * <pre>
      * ID of the test matrix this event belongs to.
      * </pre>
      *
      * <code>string test_matrix_id = 7;</code>
+     *
      * @return The testMatrixId.
      */
+    @java.lang.Override
     public java.lang.String getTestMatrixId() {
-      java.lang.Object ref = testMatrixId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        testMatrixId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+        java.lang.Object ref = testMatrixId_;
+        if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+        } else {
+            com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            testMatrixId_ = s;
+            return s;
+        }
     }
+
     /**
      * <pre>
      * ID of the test matrix this event belongs to.
      * </pre>
      *
      * <code>string test_matrix_id = 7;</code>
+     *
      * @return The bytes for testMatrixId.
      */
-    public com.google.protobuf.ByteString
-        getTestMatrixIdBytes() {
-      java.lang.Object ref = testMatrixId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        testMatrixId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     * ID of the test matrix this event belongs to.
-     * </pre>
-     *
-     * <code>string test_matrix_id = 7;</code>
-     * @param value The testMatrixId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setTestMatrixId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      testMatrixId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * ID of the test matrix this event belongs to.
-     * </pre>
-     *
-     * <code>string test_matrix_id = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearTestMatrixId() {
-      
-      testMatrixId_ = getDefaultInstance().getTestMatrixId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     * ID of the test matrix this event belongs to.
-     * </pre>
-     *
-     * <code>string test_matrix_id = 7;</code>
-     * @param value The bytes for testMatrixId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setTestMatrixIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      testMatrixId_ = value;
-      onChanged();
-      return this;
-    }
     @java.lang.Override
-    public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFields(unknownFields);
+    public com.google.protobuf.ByteString getTestMatrixIdBytes() {
+        java.lang.Object ref = testMatrixId_;
+        if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+            testMatrixId_ = b;
+            return b;
+        } else {
+            return (com.google.protobuf.ByteString) ref;
+        }
+    }
+
+    private byte memoizedIsInitialized = -1;
+
+    @java.lang.Override
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1)
+            return true;
+        if (isInitialized == 0)
+            return false;
+
+        memoizedIsInitialized = 1;
+        return true;
     }
 
     @java.lang.Override
-    public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.mergeUnknownFields(unknownFields);
+    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+        if (createTime_ != null) {
+            output.writeMessage(1, getCreateTime());
+        }
+        if (state_ != com.google.events.firebase.testlab.v1.TestState.TEST_STATE_UNSPECIFIED.getNumber()) {
+            output.writeEnum(2, state_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invalidMatrixDetails_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 3, invalidMatrixDetails_);
+        }
+        if (outcomeSummary_ != com.google.events.firebase.testlab.v1.OutcomeSummary.OUTCOME_SUMMARY_UNSPECIFIED
+                .getNumber()) {
+            output.writeEnum(4, outcomeSummary_);
+        }
+        if (resultStorage_ != null) {
+            output.writeMessage(5, getResultStorage());
+        }
+        if (clientInfo_ != null) {
+            output.writeMessage(6, getClientInfo());
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(testMatrixId_)) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 7, testMatrixId_);
+        }
+        getUnknownFields().writeTo(output);
     }
 
-
-    // @@protoc_insertion_point(builder_scope:google.events.firebase.testlab.v1.TestMatrixEventData)
-  }
-
-  // @@protoc_insertion_point(class_scope:google.events.firebase.testlab.v1.TestMatrixEventData)
-  private static final com.google.events.firebase.testlab.v1.TestMatrixEventData DEFAULT_INSTANCE;
-  static {
-    DEFAULT_INSTANCE = new com.google.events.firebase.testlab.v1.TestMatrixEventData();
-  }
-
-  public static com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstance() {
-    return DEFAULT_INSTANCE;
-  }
-
-  private static final com.google.protobuf.Parser<TestMatrixEventData>
-      PARSER = new com.google.protobuf.AbstractParser<TestMatrixEventData>() {
     @java.lang.Override
-    public TestMatrixEventData parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      Builder builder = newBuilder();
-      try {
-        builder.mergeFrom(input, extensionRegistry);
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(builder.buildPartial());
-      } catch (com.google.protobuf.UninitializedMessageException e) {
-        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e)
-            .setUnfinishedMessage(builder.buildPartial());
-      }
-      return builder.buildPartial();
+    public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1)
+            return size;
+
+        size = 0;
+        if (createTime_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, getCreateTime());
+        }
+        if (state_ != com.google.events.firebase.testlab.v1.TestState.TEST_STATE_UNSPECIFIED.getNumber()) {
+            size += com.google.protobuf.CodedOutputStream.computeEnumSize(2, state_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invalidMatrixDetails_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, invalidMatrixDetails_);
+        }
+        if (outcomeSummary_ != com.google.events.firebase.testlab.v1.OutcomeSummary.OUTCOME_SUMMARY_UNSPECIFIED
+                .getNumber()) {
+            size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, outcomeSummary_);
+        }
+        if (resultStorage_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(5, getResultStorage());
+        }
+        if (clientInfo_ != null) {
+            size += com.google.protobuf.CodedOutputStream.computeMessageSize(6, getClientInfo());
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(testMatrixId_)) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, testMatrixId_);
+        }
+        size += getUnknownFields().getSerializedSize();
+        memoizedSize = size;
+        return size;
     }
-  };
 
-  public static com.google.protobuf.Parser<TestMatrixEventData> parser() {
-    return PARSER;
-  }
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof com.google.events.firebase.testlab.v1.TestMatrixEventData)) {
+            return super.equals(obj);
+        }
+        com.google.events.firebase.testlab.v1.TestMatrixEventData other = (com.google.events.firebase.testlab.v1.TestMatrixEventData) obj;
 
-  @java.lang.Override
-  public com.google.protobuf.Parser<TestMatrixEventData> getParserForType() {
-    return PARSER;
-  }
+        if (hasCreateTime() != other.hasCreateTime())
+            return false;
+        if (hasCreateTime()) {
+            if (!getCreateTime().equals(other.getCreateTime()))
+                return false;
+        }
+        if (state_ != other.state_)
+            return false;
+        if (!getInvalidMatrixDetails().equals(other.getInvalidMatrixDetails()))
+            return false;
+        if (outcomeSummary_ != other.outcomeSummary_)
+            return false;
+        if (hasResultStorage() != other.hasResultStorage())
+            return false;
+        if (hasResultStorage()) {
+            if (!getResultStorage().equals(other.getResultStorage()))
+                return false;
+        }
+        if (hasClientInfo() != other.hasClientInfo())
+            return false;
+        if (hasClientInfo()) {
+            if (!getClientInfo().equals(other.getClientInfo()))
+                return false;
+        }
+        if (!getTestMatrixId().equals(other.getTestMatrixId()))
+            return false;
+        if (!getUnknownFields().equals(other.getUnknownFields()))
+            return false;
+        return true;
+    }
 
-  @java.lang.Override
-  public com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstanceForType() {
-    return DEFAULT_INSTANCE;
-  }
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        if (hasCreateTime()) {
+            hash = (37 * hash) + CREATE_TIME_FIELD_NUMBER;
+            hash = (53 * hash) + getCreateTime().hashCode();
+        }
+        hash = (37 * hash) + STATE_FIELD_NUMBER;
+        hash = (53 * hash) + state_;
+        hash = (37 * hash) + INVALID_MATRIX_DETAILS_FIELD_NUMBER;
+        hash = (53 * hash) + getInvalidMatrixDetails().hashCode();
+        hash = (37 * hash) + OUTCOME_SUMMARY_FIELD_NUMBER;
+        hash = (53 * hash) + outcomeSummary_;
+        if (hasResultStorage()) {
+            hash = (37 * hash) + RESULT_STORAGE_FIELD_NUMBER;
+            hash = (53 * hash) + getResultStorage().hashCode();
+        }
+        if (hasClientInfo()) {
+            hash = (37 * hash) + CLIENT_INFO_FIELD_NUMBER;
+            hash = (53 * hash) + getClientInfo().hashCode();
+        }
+        hash = (37 * hash) + TEST_MATRIX_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getTestMatrixId().hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
+            com.google.protobuf.ByteString data) throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
+            com.google.protobuf.ByteString data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseDelimitedFrom(
+            java.io.InputStream input) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseDelimitedFrom(
+            java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
+            com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData parseFrom(
+            com.google.protobuf.CodedInputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() {
+        return newBuilder();
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.google.events.firebase.testlab.v1.TestMatrixEventData prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    @java.lang.Override
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+    }
+
+    /**
+     * <pre>
+     * The data within all Firebase test matrix events.
+     * </pre>
+     *
+     * Protobuf type {@code google.events.firebase.testlab.v1.TestMatrixEventData}
+     */
+    public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:google.events.firebase.testlab.v1.TestMatrixEventData)
+            com.google.events.firebase.testlab.v1.TestMatrixEventDataOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+            return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+            return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(com.google.events.firebase.testlab.v1.TestMatrixEventData.class,
+                            com.google.events.firebase.testlab.v1.TestMatrixEventData.Builder.class);
+        }
+
+        // Construct using com.google.events.firebase.testlab.v1.TestMatrixEventData.newBuilder()
+        private Builder() {
+
+        }
+
+        private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+
+        }
+
+        @java.lang.Override
+        public Builder clear() {
+            super.clear();
+            if (createTimeBuilder_ == null) {
+                createTime_ = null;
+            } else {
+                createTime_ = null;
+                createTimeBuilder_ = null;
+            }
+            state_ = 0;
+
+            invalidMatrixDetails_ = "";
+
+            outcomeSummary_ = 0;
+
+            if (resultStorageBuilder_ == null) {
+                resultStorage_ = null;
+            } else {
+                resultStorage_ = null;
+                resultStorageBuilder_ = null;
+            }
+            if (clientInfoBuilder_ == null) {
+                clientInfo_ = null;
+            } else {
+                clientInfo_ = null;
+                clientInfoBuilder_ = null;
+            }
+            testMatrixId_ = "";
+
+            return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+            return com.google.events.firebase.testlab.v1.Data.internal_static_google_events_firebase_testlab_v1_TestMatrixEventData_descriptor;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstanceForType() {
+            return com.google.events.firebase.testlab.v1.TestMatrixEventData.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.testlab.v1.TestMatrixEventData build() {
+            com.google.events.firebase.testlab.v1.TestMatrixEventData result = buildPartial();
+            if (!result.isInitialized()) {
+                throw newUninitializedMessageException(result);
+            }
+            return result;
+        }
+
+        @java.lang.Override
+        public com.google.events.firebase.testlab.v1.TestMatrixEventData buildPartial() {
+            com.google.events.firebase.testlab.v1.TestMatrixEventData result = new com.google.events.firebase.testlab.v1.TestMatrixEventData(
+                    this);
+            if (createTimeBuilder_ == null) {
+                result.createTime_ = createTime_;
+            } else {
+                result.createTime_ = createTimeBuilder_.build();
+            }
+            result.state_ = state_;
+            result.invalidMatrixDetails_ = invalidMatrixDetails_;
+            result.outcomeSummary_ = outcomeSummary_;
+            if (resultStorageBuilder_ == null) {
+                result.resultStorage_ = resultStorage_;
+            } else {
+                result.resultStorage_ = resultStorageBuilder_.build();
+            }
+            if (clientInfoBuilder_ == null) {
+                result.clientInfo_ = clientInfo_;
+            } else {
+                result.clientInfo_ = clientInfoBuilder_.build();
+            }
+            result.testMatrixId_ = testMatrixId_;
+            onBuilt();
+            return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+            return super.clone();
+        }
+
+        @java.lang.Override
+        public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.setField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+        }
+
+        @java.lang.Override
+        public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+        }
+
+        @java.lang.Override
+        public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+                java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+        }
+
+        @java.lang.Override
+        public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.google.events.firebase.testlab.v1.TestMatrixEventData) {
+                return mergeFrom((com.google.events.firebase.testlab.v1.TestMatrixEventData) other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        public Builder mergeFrom(com.google.events.firebase.testlab.v1.TestMatrixEventData other) {
+            if (other == com.google.events.firebase.testlab.v1.TestMatrixEventData.getDefaultInstance())
+                return this;
+            if (other.hasCreateTime()) {
+                mergeCreateTime(other.getCreateTime());
+            }
+            if (other.state_ != 0) {
+                setStateValue(other.getStateValue());
+            }
+            if (!other.getInvalidMatrixDetails().isEmpty()) {
+                invalidMatrixDetails_ = other.invalidMatrixDetails_;
+                onChanged();
+            }
+            if (other.outcomeSummary_ != 0) {
+                setOutcomeSummaryValue(other.getOutcomeSummaryValue());
+            }
+            if (other.hasResultStorage()) {
+                mergeResultStorage(other.getResultStorage());
+            }
+            if (other.hasClientInfo()) {
+                mergeClientInfo(other.getClientInfo());
+            }
+            if (!other.getTestMatrixId().isEmpty()) {
+                testMatrixId_ = other.testMatrixId_;
+                onChanged();
+            }
+            this.mergeUnknownFields(other.getUnknownFields());
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+            return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+            if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+            }
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    case 10: {
+                        input.readMessage(getCreateTimeFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 10
+                    case 16: {
+                        state_ = input.readEnum();
+
+                        break;
+                    } // case 16
+                    case 26: {
+                        invalidMatrixDetails_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 26
+                    case 32: {
+                        outcomeSummary_ = input.readEnum();
+
+                        break;
+                    } // case 32
+                    case 42: {
+                        input.readMessage(getResultStorageFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 42
+                    case 50: {
+                        input.readMessage(getClientInfoFieldBuilder().getBuilder(), extensionRegistry);
+
+                        break;
+                    } // case 50
+                    case 58: {
+                        testMatrixId_ = input.readStringRequireUtf8();
+
+                        break;
+                    } // case 58
+                    default: {
+                        if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                            done = true; // was an endgroup tag
+                        }
+                        break;
+                    } // default:
+                    } // switch (tag)
+                } // while (!done)
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.unwrapIOException();
+            } finally {
+                onChanged();
+            } // finally
+            return this;
+        }
+
+        private com.google.protobuf.Timestamp createTime_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> createTimeBuilder_;
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         *
+         * @return Whether the createTime field is set.
+         */
+        public boolean hasCreateTime() {
+            return createTimeBuilder_ != null || createTime_ != null;
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         *
+         * @return The createTime.
+         */
+        public com.google.protobuf.Timestamp getCreateTime() {
+            if (createTimeBuilder_ == null) {
+                return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
+            } else {
+                return createTimeBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder setCreateTime(com.google.protobuf.Timestamp value) {
+            if (createTimeBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                createTime_ = value;
+                onChanged();
+            } else {
+                createTimeBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder setCreateTime(com.google.protobuf.Timestamp.Builder builderForValue) {
+            if (createTimeBuilder_ == null) {
+                createTime_ = builderForValue.build();
+                onChanged();
+            } else {
+                createTimeBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder mergeCreateTime(com.google.protobuf.Timestamp value) {
+            if (createTimeBuilder_ == null) {
+                if (createTime_ != null) {
+                    createTime_ = com.google.protobuf.Timestamp.newBuilder(createTime_).mergeFrom(value).buildPartial();
+                } else {
+                    createTime_ = value;
+                }
+                onChanged();
+            } else {
+                createTimeBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public Builder clearCreateTime() {
+            if (createTimeBuilder_ == null) {
+                createTime_ = null;
+                onChanged();
+            } else {
+                createTime_ = null;
+                createTimeBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public com.google.protobuf.Timestamp.Builder getCreateTimeBuilder() {
+
+            onChanged();
+            return getCreateTimeFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
+            if (createTimeBuilder_ != null) {
+                return createTimeBuilder_.getMessageOrBuilder();
+            } else {
+                return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Time the test matrix was created.
+         * </pre>
+         *
+         * <code>.google.protobuf.Timestamp create_time = 1;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> getCreateTimeFieldBuilder() {
+            if (createTimeBuilder_ == null) {
+                createTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder>(
+                        getCreateTime(), getParentForChildren(), isClean());
+                createTime_ = null;
+            }
+            return createTimeBuilder_;
+        }
+
+        private int state_ = 0;
+
+        /**
+         * <pre>
+         * State of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+         *
+         * @return The enum numeric value on the wire for state.
+         */
+        @java.lang.Override
+        public int getStateValue() {
+            return state_;
+        }
+
+        /**
+         * <pre>
+         * State of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+         *
+         * @param value
+         *            The enum numeric value on the wire for state to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setStateValue(int value) {
+
+            state_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * State of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+         *
+         * @return The state.
+         */
+        @java.lang.Override
+        public com.google.events.firebase.testlab.v1.TestState getState() {
+            @SuppressWarnings("deprecation")
+            com.google.events.firebase.testlab.v1.TestState result = com.google.events.firebase.testlab.v1.TestState
+                    .valueOf(state_);
+            return result == null ? com.google.events.firebase.testlab.v1.TestState.UNRECOGNIZED : result;
+        }
+
+        /**
+         * <pre>
+         * State of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+         *
+         * @param value
+         *            The state to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setState(com.google.events.firebase.testlab.v1.TestState value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            state_ = value.getNumber();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * State of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.TestState state = 2;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearState() {
+
+            state_ = 0;
+            onChanged();
+            return this;
+        }
+
+        private java.lang.Object invalidMatrixDetails_ = "";
+
+        /**
+         * <pre>
+         * Code that describes why the test matrix is considered invalid. Only set for
+         * matrices in the INVALID state.
+         * </pre>
+         *
+         * <code>string invalid_matrix_details = 3;</code>
+         *
+         * @return The invalidMatrixDetails.
+         */
+        public java.lang.String getInvalidMatrixDetails() {
+            java.lang.Object ref = invalidMatrixDetails_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                invalidMatrixDetails_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Code that describes why the test matrix is considered invalid. Only set for
+         * matrices in the INVALID state.
+         * </pre>
+         *
+         * <code>string invalid_matrix_details = 3;</code>
+         *
+         * @return The bytes for invalidMatrixDetails.
+         */
+        public com.google.protobuf.ByteString getInvalidMatrixDetailsBytes() {
+            java.lang.Object ref = invalidMatrixDetails_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                invalidMatrixDetails_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * Code that describes why the test matrix is considered invalid. Only set for
+         * matrices in the INVALID state.
+         * </pre>
+         *
+         * <code>string invalid_matrix_details = 3;</code>
+         *
+         * @param value
+         *            The invalidMatrixDetails to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setInvalidMatrixDetails(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            invalidMatrixDetails_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Code that describes why the test matrix is considered invalid. Only set for
+         * matrices in the INVALID state.
+         * </pre>
+         *
+         * <code>string invalid_matrix_details = 3;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearInvalidMatrixDetails() {
+
+            invalidMatrixDetails_ = getDefaultInstance().getInvalidMatrixDetails();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Code that describes why the test matrix is considered invalid. Only set for
+         * matrices in the INVALID state.
+         * </pre>
+         *
+         * <code>string invalid_matrix_details = 3;</code>
+         *
+         * @param value
+         *            The bytes for invalidMatrixDetails to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setInvalidMatrixDetailsBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            invalidMatrixDetails_ = value;
+            onChanged();
+            return this;
+        }
+
+        private int outcomeSummary_ = 0;
+
+        /**
+         * <pre>
+         * Outcome summary of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+         *
+         * @return The enum numeric value on the wire for outcomeSummary.
+         */
+        @java.lang.Override
+        public int getOutcomeSummaryValue() {
+            return outcomeSummary_;
+        }
+
+        /**
+         * <pre>
+         * Outcome summary of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+         *
+         * @param value
+         *            The enum numeric value on the wire for outcomeSummary to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setOutcomeSummaryValue(int value) {
+
+            outcomeSummary_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Outcome summary of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+         *
+         * @return The outcomeSummary.
+         */
+        @java.lang.Override
+        public com.google.events.firebase.testlab.v1.OutcomeSummary getOutcomeSummary() {
+            @SuppressWarnings("deprecation")
+            com.google.events.firebase.testlab.v1.OutcomeSummary result = com.google.events.firebase.testlab.v1.OutcomeSummary
+                    .valueOf(outcomeSummary_);
+            return result == null ? com.google.events.firebase.testlab.v1.OutcomeSummary.UNRECOGNIZED : result;
+        }
+
+        /**
+         * <pre>
+         * Outcome summary of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+         *
+         * @param value
+         *            The outcomeSummary to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setOutcomeSummary(com.google.events.firebase.testlab.v1.OutcomeSummary value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            outcomeSummary_ = value.getNumber();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Outcome summary of the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.OutcomeSummary outcome_summary = 4;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearOutcomeSummary() {
+
+            outcomeSummary_ = 0;
+            onChanged();
+            return this;
+        }
+
+        private com.google.events.firebase.testlab.v1.ResultStorage resultStorage_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder> resultStorageBuilder_;
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         *
+         * @return Whether the resultStorage field is set.
+         */
+        public boolean hasResultStorage() {
+            return resultStorageBuilder_ != null || resultStorage_ != null;
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         *
+         * @return The resultStorage.
+         */
+        public com.google.events.firebase.testlab.v1.ResultStorage getResultStorage() {
+            if (resultStorageBuilder_ == null) {
+                return resultStorage_ == null ? com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance()
+                        : resultStorage_;
+            } else {
+                return resultStorageBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public Builder setResultStorage(com.google.events.firebase.testlab.v1.ResultStorage value) {
+            if (resultStorageBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                resultStorage_ = value;
+                onChanged();
+            } else {
+                resultStorageBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public Builder setResultStorage(com.google.events.firebase.testlab.v1.ResultStorage.Builder builderForValue) {
+            if (resultStorageBuilder_ == null) {
+                resultStorage_ = builderForValue.build();
+                onChanged();
+            } else {
+                resultStorageBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public Builder mergeResultStorage(com.google.events.firebase.testlab.v1.ResultStorage value) {
+            if (resultStorageBuilder_ == null) {
+                if (resultStorage_ != null) {
+                    resultStorage_ = com.google.events.firebase.testlab.v1.ResultStorage.newBuilder(resultStorage_)
+                            .mergeFrom(value).buildPartial();
+                } else {
+                    resultStorage_ = value;
+                }
+                onChanged();
+            } else {
+                resultStorageBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public Builder clearResultStorage() {
+            if (resultStorageBuilder_ == null) {
+                resultStorage_ = null;
+                onChanged();
+            } else {
+                resultStorage_ = null;
+                resultStorageBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public com.google.events.firebase.testlab.v1.ResultStorage.Builder getResultStorageBuilder() {
+
+            onChanged();
+            return getResultStorageFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        public com.google.events.firebase.testlab.v1.ResultStorageOrBuilder getResultStorageOrBuilder() {
+            if (resultStorageBuilder_ != null) {
+                return resultStorageBuilder_.getMessageOrBuilder();
+            } else {
+                return resultStorage_ == null ? com.google.events.firebase.testlab.v1.ResultStorage.getDefaultInstance()
+                        : resultStorage_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Locations where test results are stored.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ResultStorage result_storage = 5;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder> getResultStorageFieldBuilder() {
+            if (resultStorageBuilder_ == null) {
+                resultStorageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ResultStorage, com.google.events.firebase.testlab.v1.ResultStorage.Builder, com.google.events.firebase.testlab.v1.ResultStorageOrBuilder>(
+                        getResultStorage(), getParentForChildren(), isClean());
+                resultStorage_ = null;
+            }
+            return resultStorageBuilder_;
+        }
+
+        private com.google.events.firebase.testlab.v1.ClientInfo clientInfo_;
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder> clientInfoBuilder_;
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         *
+         * @return Whether the clientInfo field is set.
+         */
+        public boolean hasClientInfo() {
+            return clientInfoBuilder_ != null || clientInfo_ != null;
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         *
+         * @return The clientInfo.
+         */
+        public com.google.events.firebase.testlab.v1.ClientInfo getClientInfo() {
+            if (clientInfoBuilder_ == null) {
+                return clientInfo_ == null ? com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance()
+                        : clientInfo_;
+            } else {
+                return clientInfoBuilder_.getMessage();
+            }
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public Builder setClientInfo(com.google.events.firebase.testlab.v1.ClientInfo value) {
+            if (clientInfoBuilder_ == null) {
+                if (value == null) {
+                    throw new NullPointerException();
+                }
+                clientInfo_ = value;
+                onChanged();
+            } else {
+                clientInfoBuilder_.setMessage(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public Builder setClientInfo(com.google.events.firebase.testlab.v1.ClientInfo.Builder builderForValue) {
+            if (clientInfoBuilder_ == null) {
+                clientInfo_ = builderForValue.build();
+                onChanged();
+            } else {
+                clientInfoBuilder_.setMessage(builderForValue.build());
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public Builder mergeClientInfo(com.google.events.firebase.testlab.v1.ClientInfo value) {
+            if (clientInfoBuilder_ == null) {
+                if (clientInfo_ != null) {
+                    clientInfo_ = com.google.events.firebase.testlab.v1.ClientInfo.newBuilder(clientInfo_)
+                            .mergeFrom(value).buildPartial();
+                } else {
+                    clientInfo_ = value;
+                }
+                onChanged();
+            } else {
+                clientInfoBuilder_.mergeFrom(value);
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public Builder clearClientInfo() {
+            if (clientInfoBuilder_ == null) {
+                clientInfo_ = null;
+                onChanged();
+            } else {
+                clientInfo_ = null;
+                clientInfoBuilder_ = null;
+            }
+
+            return this;
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public com.google.events.firebase.testlab.v1.ClientInfo.Builder getClientInfoBuilder() {
+
+            onChanged();
+            return getClientInfoFieldBuilder().getBuilder();
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        public com.google.events.firebase.testlab.v1.ClientInfoOrBuilder getClientInfoOrBuilder() {
+            if (clientInfoBuilder_ != null) {
+                return clientInfoBuilder_.getMessageOrBuilder();
+            } else {
+                return clientInfo_ == null ? com.google.events.firebase.testlab.v1.ClientInfo.getDefaultInstance()
+                        : clientInfo_;
+            }
+        }
+
+        /**
+         * <pre>
+         * Information provided by the client that created the test matrix.
+         * </pre>
+         *
+         * <code>.google.events.firebase.testlab.v1.ClientInfo client_info = 6;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder> getClientInfoFieldBuilder() {
+            if (clientInfoBuilder_ == null) {
+                clientInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.google.events.firebase.testlab.v1.ClientInfo, com.google.events.firebase.testlab.v1.ClientInfo.Builder, com.google.events.firebase.testlab.v1.ClientInfoOrBuilder>(
+                        getClientInfo(), getParentForChildren(), isClean());
+                clientInfo_ = null;
+            }
+            return clientInfoBuilder_;
+        }
+
+        private java.lang.Object testMatrixId_ = "";
+
+        /**
+         * <pre>
+         * ID of the test matrix this event belongs to.
+         * </pre>
+         *
+         * <code>string test_matrix_id = 7;</code>
+         *
+         * @return The testMatrixId.
+         */
+        public java.lang.String getTestMatrixId() {
+            java.lang.Object ref = testMatrixId_;
+            if (!(ref instanceof java.lang.String)) {
+                com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+                java.lang.String s = bs.toStringUtf8();
+                testMatrixId_ = s;
+                return s;
+            } else {
+                return (java.lang.String) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * ID of the test matrix this event belongs to.
+         * </pre>
+         *
+         * <code>string test_matrix_id = 7;</code>
+         *
+         * @return The bytes for testMatrixId.
+         */
+        public com.google.protobuf.ByteString getTestMatrixIdBytes() {
+            java.lang.Object ref = testMatrixId_;
+            if (ref instanceof String) {
+                com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+                testMatrixId_ = b;
+                return b;
+            } else {
+                return (com.google.protobuf.ByteString) ref;
+            }
+        }
+
+        /**
+         * <pre>
+         * ID of the test matrix this event belongs to.
+         * </pre>
+         *
+         * <code>string test_matrix_id = 7;</code>
+         *
+         * @param value
+         *            The testMatrixId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setTestMatrixId(java.lang.String value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+
+            testMatrixId_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * ID of the test matrix this event belongs to.
+         * </pre>
+         *
+         * <code>string test_matrix_id = 7;</code>
+         *
+         * @return This builder for chaining.
+         */
+        public Builder clearTestMatrixId() {
+
+            testMatrixId_ = getDefaultInstance().getTestMatrixId();
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         * ID of the test matrix this event belongs to.
+         * </pre>
+         *
+         * <code>string test_matrix_id = 7;</code>
+         *
+         * @param value
+         *            The bytes for testMatrixId to set.
+         *
+         * @return This builder for chaining.
+         */
+        public Builder setTestMatrixIdBytes(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            checkByteStringIsUtf8(value);
+
+            testMatrixId_ = value;
+            onChanged();
+            return this;
+        }
+
+        @java.lang.Override
+        public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
+
+        // @@protoc_insertion_point(builder_scope:google.events.firebase.testlab.v1.TestMatrixEventData)
+    }
+
+    // @@protoc_insertion_point(class_scope:google.events.firebase.testlab.v1.TestMatrixEventData)
+    private static final com.google.events.firebase.testlab.v1.TestMatrixEventData DEFAULT_INSTANCE;
+    static {
+        DEFAULT_INSTANCE = new com.google.events.firebase.testlab.v1.TestMatrixEventData();
+    }
+
+    public static com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<TestMatrixEventData> PARSER = new com.google.protobuf.AbstractParser<TestMatrixEventData>() {
+        @java.lang.Override
+        public TestMatrixEventData parsePartialFrom(com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            Builder builder = newBuilder();
+            try {
+                builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                        .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
+        }
+    };
+
+    public static com.google.protobuf.Parser<TestMatrixEventData> parser() {
+        return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TestMatrixEventData> getParserForType() {
+        return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.events.firebase.testlab.v1.TestMatrixEventData getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+    }
 
 }
-

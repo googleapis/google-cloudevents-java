@@ -4,60 +4,68 @@
 package com.google.events.firebase.database.v1;
 
 public interface ReferenceEventDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.firebase.database.v1.ReferenceEventData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.firebase.database.v1.ReferenceEventData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * The original data for the reference.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value data = 1;</code>
-   * @return Whether the data field is set.
-   */
-  boolean hasData();
-  /**
-   * <pre>
-   * The original data for the reference.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value data = 1;</code>
-   * @return The data.
-   */
-  com.google.protobuf.Value getData();
-  /**
-   * <pre>
-   * The original data for the reference.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value data = 1;</code>
-   */
-  com.google.protobuf.ValueOrBuilder getDataOrBuilder();
+    /**
+     * <pre>
+     * The original data for the reference.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value data = 1;</code>
+     *
+     * @return Whether the data field is set.
+     */
+    boolean hasData();
 
-  /**
-   * <pre>
-   * The change in the reference data.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value delta = 2;</code>
-   * @return Whether the delta field is set.
-   */
-  boolean hasDelta();
-  /**
-   * <pre>
-   * The change in the reference data.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value delta = 2;</code>
-   * @return The delta.
-   */
-  com.google.protobuf.Value getDelta();
-  /**
-   * <pre>
-   * The change in the reference data.
-   * </pre>
-   *
-   * <code>.google.protobuf.Value delta = 2;</code>
-   */
-  com.google.protobuf.ValueOrBuilder getDeltaOrBuilder();
+    /**
+     * <pre>
+     * The original data for the reference.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value data = 1;</code>
+     *
+     * @return The data.
+     */
+    com.google.protobuf.Value getData();
+
+    /**
+     * <pre>
+     * The original data for the reference.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value data = 1;</code>
+     */
+    com.google.protobuf.ValueOrBuilder getDataOrBuilder();
+
+    /**
+     * <pre>
+     * The change in the reference data.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value delta = 2;</code>
+     *
+     * @return Whether the delta field is set.
+     */
+    boolean hasDelta();
+
+    /**
+     * <pre>
+     * The change in the reference data.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value delta = 2;</code>
+     *
+     * @return The delta.
+     */
+    com.google.protobuf.Value getDelta();
+
+    /**
+     * <pre>
+     * The change in the reference data.
+     * </pre>
+     *
+     * <code>.google.protobuf.Value delta = 2;</code>
+     */
+    com.google.protobuf.ValueOrBuilder getDeltaOrBuilder();
 }

@@ -4,51 +4,55 @@
 package com.google.events.cloud.audit.v1;
 
 public interface LogSplitOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.audit.v1.LogSplit)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.audit.v1.LogSplit)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * A globally unique identifier for all LogEntries in a sequence of split
-   * logs. All LogEntries with the same |LogSplit.uid| are assumed to be part of
-   * the same sequence of split logs.
-   * </pre>
-   *
-   * <code>string uid = 1;</code>
-   * @return The uid.
-   */
-  java.lang.String getUid();
-  /**
-   * <pre>
-   * A globally unique identifier for all LogEntries in a sequence of split
-   * logs. All LogEntries with the same |LogSplit.uid| are assumed to be part of
-   * the same sequence of split logs.
-   * </pre>
-   *
-   * <code>string uid = 1;</code>
-   * @return The bytes for uid.
-   */
-  com.google.protobuf.ByteString
-      getUidBytes();
+    /**
+     * <pre>
+     * A globally unique identifier for all LogEntries in a sequence of split
+     * logs. All LogEntries with the same |LogSplit.uid| are assumed to be part of
+     * the same sequence of split logs.
+     * </pre>
+     *
+     * <code>string uid = 1;</code>
+     *
+     * @return The uid.
+     */
+    java.lang.String getUid();
 
-  /**
-   * <pre>
-   * The index of this LogEntry in the sequence of split logs. LogEntries are
-   * given |index| values 0, 1, ..., n-1 for a sequence of n entries.
-   * </pre>
-   *
-   * <code>int32 index = 2;</code>
-   * @return The index.
-   */
-  int getIndex();
+    /**
+     * <pre>
+     * A globally unique identifier for all LogEntries in a sequence of split
+     * logs. All LogEntries with the same |LogSplit.uid| are assumed to be part of
+     * the same sequence of split logs.
+     * </pre>
+     *
+     * <code>string uid = 1;</code>
+     *
+     * @return The bytes for uid.
+     */
+    com.google.protobuf.ByteString getUidBytes();
 
-  /**
-   * <pre>
-   * The total number of logs that the original LogEntry was split into.
-   * </pre>
-   *
-   * <code>int32 total_splits = 3;</code>
-   * @return The totalSplits.
-   */
-  int getTotalSplits();
+    /**
+     * <pre>
+     * The index of this LogEntry in the sequence of split logs. LogEntries are
+     * given |index| values 0, 1, ..., n-1 for a sequence of n entries.
+     * </pre>
+     *
+     * <code>int32 index = 2;</code>
+     *
+     * @return The index.
+     */
+    int getIndex();
+
+    /**
+     * <pre>
+     * The total number of logs that the original LogEntry was split into.
+     * </pre>
+     *
+     * <code>int32 total_splits = 3;</code>
+     *
+     * @return The totalSplits.
+     */
+    int getTotalSplits();
 }

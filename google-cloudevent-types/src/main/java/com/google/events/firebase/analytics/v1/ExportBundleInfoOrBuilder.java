@@ -4,26 +4,28 @@
 package com.google.events.firebase.analytics.v1;
 
 public interface ExportBundleInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.ExportBundleInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.ExportBundleInfo)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Monotonically increasing index for each bundle set by SDK.
-   * </pre>
-   *
-   * <code>int32 bundle_sequence_id = 1;</code>
-   * @return The bundleSequenceId.
-   */
-  int getBundleSequenceId();
+    /**
+     * <pre>
+     * Monotonically increasing index for each bundle set by SDK.
+     * </pre>
+     *
+     * <code>int32 bundle_sequence_id = 1;</code>
+     *
+     * @return The bundleSequenceId.
+     */
+    int getBundleSequenceId();
 
-  /**
-   * <pre>
-   * Timestamp offset between collection time and upload time.
-   * </pre>
-   *
-   * <code>int64 server_timestamp_offset_micros = 2;</code>
-   * @return The serverTimestampOffsetMicros.
-   */
-  long getServerTimestampOffsetMicros();
+    /**
+     * <pre>
+     * Timestamp offset between collection time and upload time.
+     * </pre>
+     *
+     * <code>int64 server_timestamp_offset_micros = 2;</code>
+     *
+     * @return The serverTimestampOffsetMicros.
+     */
+    long getServerTimestampOffsetMicros();
 }

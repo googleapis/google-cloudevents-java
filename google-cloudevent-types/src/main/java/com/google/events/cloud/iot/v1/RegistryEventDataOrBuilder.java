@@ -4,33 +4,37 @@
 package com.google.events.cloud.iot.v1;
 
 public interface RegistryEventDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.RegistryEventData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.RegistryEventData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Optional. The Registry event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
-   * @return Whether the payload field is set.
-   */
-  boolean hasPayload();
-  /**
-   * <pre>
-   * Optional. The Registry event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
-   * @return The payload.
-   */
-  com.google.events.cloud.iot.v1.DeviceRegistry getPayload();
-  /**
-   * <pre>
-   * Optional. The Registry event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
-   */
-  com.google.events.cloud.iot.v1.DeviceRegistryOrBuilder getPayloadOrBuilder();
+    /**
+     * <pre>
+     * Optional. The Registry event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
+     *
+     * @return Whether the payload field is set.
+     */
+    boolean hasPayload();
+
+    /**
+     * <pre>
+     * Optional. The Registry event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
+     *
+     * @return The payload.
+     */
+    com.google.events.cloud.iot.v1.DeviceRegistry getPayload();
+
+    /**
+     * <pre>
+     * Optional. The Registry event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.DeviceRegistry payload = 1;</code>
+     */
+    com.google.events.cloud.iot.v1.DeviceRegistryOrBuilder getPayloadOrBuilder();
 }

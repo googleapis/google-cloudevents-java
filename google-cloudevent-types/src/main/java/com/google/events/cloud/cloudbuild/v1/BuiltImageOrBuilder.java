@@ -4,75 +4,83 @@
 package com.google.events.cloud.cloudbuild.v1;
 
 public interface BuiltImageOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.cloudbuild.v1.BuiltImage)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.cloudbuild.v1.BuiltImage)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Name used to push the container image to Google Container Registry, as
-   * presented to `docker push`.
-   * </pre>
-   *
-   * <code>string name = 1;</code>
-   * @return The name.
-   */
-  java.lang.String getName();
-  /**
-   * <pre>
-   * Name used to push the container image to Google Container Registry, as
-   * presented to `docker push`.
-   * </pre>
-   *
-   * <code>string name = 1;</code>
-   * @return The bytes for name.
-   */
-  com.google.protobuf.ByteString
-      getNameBytes();
+    /**
+     * <pre>
+     * Name used to push the container image to Google Container Registry, as
+     * presented to `docker push`.
+     * </pre>
+     *
+     * <code>string name = 1;</code>
+     *
+     * @return The name.
+     */
+    java.lang.String getName();
 
-  /**
-   * <pre>
-   * Docker Registry 2.0 digest.
-   * </pre>
-   *
-   * <code>string digest = 3;</code>
-   * @return The digest.
-   */
-  java.lang.String getDigest();
-  /**
-   * <pre>
-   * Docker Registry 2.0 digest.
-   * </pre>
-   *
-   * <code>string digest = 3;</code>
-   * @return The bytes for digest.
-   */
-  com.google.protobuf.ByteString
-      getDigestBytes();
+    /**
+     * <pre>
+     * Name used to push the container image to Google Container Registry, as
+     * presented to `docker push`.
+     * </pre>
+     *
+     * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString getNameBytes();
 
-  /**
-   * <pre>
-   * Stores timing information for pushing the specified image.
-   * </pre>
-   *
-   * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
-   * @return Whether the pushTiming field is set.
-   */
-  boolean hasPushTiming();
-  /**
-   * <pre>
-   * Stores timing information for pushing the specified image.
-   * </pre>
-   *
-   * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
-   * @return The pushTiming.
-   */
-  com.google.events.cloud.cloudbuild.v1.TimeSpan getPushTiming();
-  /**
-   * <pre>
-   * Stores timing information for pushing the specified image.
-   * </pre>
-   *
-   * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
-   */
-  com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder getPushTimingOrBuilder();
+    /**
+     * <pre>
+     * Docker Registry 2.0 digest.
+     * </pre>
+     *
+     * <code>string digest = 3;</code>
+     *
+     * @return The digest.
+     */
+    java.lang.String getDigest();
+
+    /**
+     * <pre>
+     * Docker Registry 2.0 digest.
+     * </pre>
+     *
+     * <code>string digest = 3;</code>
+     *
+     * @return The bytes for digest.
+     */
+    com.google.protobuf.ByteString getDigestBytes();
+
+    /**
+     * <pre>
+     * Stores timing information for pushing the specified image.
+     * </pre>
+     *
+     * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
+     *
+     * @return Whether the pushTiming field is set.
+     */
+    boolean hasPushTiming();
+
+    /**
+     * <pre>
+     * Stores timing information for pushing the specified image.
+     * </pre>
+     *
+     * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
+     *
+     * @return The pushTiming.
+     */
+    com.google.events.cloud.cloudbuild.v1.TimeSpan getPushTiming();
+
+    /**
+     * <pre>
+     * Stores timing information for pushing the specified image.
+     * </pre>
+     *
+     * <code>.google.events.cloud.cloudbuild.v1.TimeSpan push_timing = 4;</code>
+     */
+    com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder getPushTimingOrBuilder();
 }

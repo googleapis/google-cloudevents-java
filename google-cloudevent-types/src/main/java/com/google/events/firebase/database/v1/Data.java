@@ -4,52 +4,41 @@
 package com.google.events.firebase.database.v1;
 
 public final class Data {
-  private Data() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
-  }
+    private Data() {
+    }
 
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
-  }
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_google_events_firebase_database_v1_ReferenceEventData_fieldAccessorTable;
+    public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {
+    }
 
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static  com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n-google/events/firebase/database/v1/dat" +
-      "a.proto\022\"google.events.firebase.database" +
-      ".v1\032\034google/protobuf/struct.proto\"a\n\022Ref" +
-      "erenceEventData\022$\n\004data\030\001 \001(\0132\026.google.p" +
-      "rotobuf.Value\022%\n\005delta\030\002 \001(\0132\026.google.pr" +
-      "otobuf.ValueBX\n&com.google.events.fireba" +
-      "se.database.v1P\001\252\002+Google.Events.Protobu" +
-      "f.Firebase.Database.V1b\006proto3"
-    };
-    descriptor = com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.google.protobuf.StructProto.getDescriptor(),
-        });
-    internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_google_events_firebase_database_v1_ReferenceEventData_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor,
-        new java.lang.String[] { "Data", "Delta", });
-    com.google.protobuf.StructProto.getDescriptor();
-  }
+    public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+    }
 
-  // @@protoc_insertion_point(outer_class_scope)
+    static final com.google.protobuf.Descriptors.Descriptor internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor;
+    static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internal_static_google_events_firebase_database_v1_ReferenceEventData_fieldAccessorTable;
+
+    public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+    static {
+        java.lang.String[] descriptorData = { "\n-google/events/firebase/database/v1/dat"
+                + "a.proto\022\"google.events.firebase.database" + ".v1\032\034google/protobuf/struct.proto\"a\n\022Ref"
+                + "erenceEventData\022$\n\004data\030\001 \001(\0132\026.google.p"
+                + "rotobuf.Value\022%\n\005delta\030\002 \001(\0132\026.google.pr"
+                + "otobuf.ValueBX\n&com.google.events.fireba" + "se.database.v1P\001\252\002+Google.Events.Protobu"
+                + "f.Firebase.Database.V1b\006proto3" };
+        descriptor = com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(descriptorData,
+                new com.google.protobuf.Descriptors.FileDescriptor[] {
+                        com.google.protobuf.StructProto.getDescriptor(), });
+        internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor = getDescriptor()
+                .getMessageTypes().get(0);
+        internal_static_google_events_firebase_database_v1_ReferenceEventData_fieldAccessorTable = new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_google_events_firebase_database_v1_ReferenceEventData_descriptor,
+                new java.lang.String[] { "Data", "Delta", });
+        com.google.protobuf.StructProto.getDescriptor();
+    }
+
+    // @@protoc_insertion_point(outer_class_scope)
 }

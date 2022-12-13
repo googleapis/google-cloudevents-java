@@ -4,33 +4,37 @@
 package com.google.events.cloud.iot.v1;
 
 public interface DeviceEventDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.DeviceEventData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.iot.v1.DeviceEventData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * Optional. The Device event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
-   * @return Whether the payload field is set.
-   */
-  boolean hasPayload();
-  /**
-   * <pre>
-   * Optional. The Device event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
-   * @return The payload.
-   */
-  com.google.events.cloud.iot.v1.Device getPayload();
-  /**
-   * <pre>
-   * Optional. The Device event payload. Unset for deletion events.
-   * </pre>
-   *
-   * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
-   */
-  com.google.events.cloud.iot.v1.DeviceOrBuilder getPayloadOrBuilder();
+    /**
+     * <pre>
+     * Optional. The Device event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
+     *
+     * @return Whether the payload field is set.
+     */
+    boolean hasPayload();
+
+    /**
+     * <pre>
+     * Optional. The Device event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
+     *
+     * @return The payload.
+     */
+    com.google.events.cloud.iot.v1.Device getPayload();
+
+    /**
+     * <pre>
+     * Optional. The Device event payload. Unset for deletion events.
+     * </pre>
+     *
+     * <code>optional .google.events.cloud.iot.v1.Device payload = 1;</code>
+     */
+    com.google.events.cloud.iot.v1.DeviceOrBuilder getPayloadOrBuilder();
 }

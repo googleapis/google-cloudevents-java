@@ -4,94 +4,102 @@
 package com.google.events.firebase.analytics.v1;
 
 public interface GeoInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.GeoInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.firebase.analytics.v1.GeoInfo)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * The geographic continent.
-   * Eg. Americas
-   * </pre>
-   *
-   * <code>string continent = 1;</code>
-   * @return The continent.
-   */
-  java.lang.String getContinent();
-  /**
-   * <pre>
-   * The geographic continent.
-   * Eg. Americas
-   * </pre>
-   *
-   * <code>string continent = 1;</code>
-   * @return The bytes for continent.
-   */
-  com.google.protobuf.ByteString
-      getContinentBytes();
+    /**
+     * <pre>
+     * The geographic continent.
+     * Eg. Americas
+     * </pre>
+     *
+     * <code>string continent = 1;</code>
+     *
+     * @return The continent.
+     */
+    java.lang.String getContinent();
 
-  /**
-   * <pre>
-   * The geographic country.
-   * Eg. Brazil
-   * </pre>
-   *
-   * <code>string country = 2;</code>
-   * @return The country.
-   */
-  java.lang.String getCountry();
-  /**
-   * <pre>
-   * The geographic country.
-   * Eg. Brazil
-   * </pre>
-   *
-   * <code>string country = 2;</code>
-   * @return The bytes for country.
-   */
-  com.google.protobuf.ByteString
-      getCountryBytes();
+    /**
+     * <pre>
+     * The geographic continent.
+     * Eg. Americas
+     * </pre>
+     *
+     * <code>string continent = 1;</code>
+     *
+     * @return The bytes for continent.
+     */
+    com.google.protobuf.ByteString getContinentBytes();
 
-  /**
-   * <pre>
-   * The geographic region.
-   * Eg. State of Sao Paulo
-   * </pre>
-   *
-   * <code>string region = 3;</code>
-   * @return The region.
-   */
-  java.lang.String getRegion();
-  /**
-   * <pre>
-   * The geographic region.
-   * Eg. State of Sao Paulo
-   * </pre>
-   *
-   * <code>string region = 3;</code>
-   * @return The bytes for region.
-   */
-  com.google.protobuf.ByteString
-      getRegionBytes();
+    /**
+     * <pre>
+     * The geographic country.
+     * Eg. Brazil
+     * </pre>
+     *
+     * <code>string country = 2;</code>
+     *
+     * @return The country.
+     */
+    java.lang.String getCountry();
 
-  /**
-   * <pre>
-   * The geographic city.
-   * Eg. Sao Paulo
-   * </pre>
-   *
-   * <code>string city = 4;</code>
-   * @return The city.
-   */
-  java.lang.String getCity();
-  /**
-   * <pre>
-   * The geographic city.
-   * Eg. Sao Paulo
-   * </pre>
-   *
-   * <code>string city = 4;</code>
-   * @return The bytes for city.
-   */
-  com.google.protobuf.ByteString
-      getCityBytes();
+    /**
+     * <pre>
+     * The geographic country.
+     * Eg. Brazil
+     * </pre>
+     *
+     * <code>string country = 2;</code>
+     *
+     * @return The bytes for country.
+     */
+    com.google.protobuf.ByteString getCountryBytes();
+
+    /**
+     * <pre>
+     * The geographic region.
+     * Eg. State of Sao Paulo
+     * </pre>
+     *
+     * <code>string region = 3;</code>
+     *
+     * @return The region.
+     */
+    java.lang.String getRegion();
+
+    /**
+     * <pre>
+     * The geographic region.
+     * Eg. State of Sao Paulo
+     * </pre>
+     *
+     * <code>string region = 3;</code>
+     *
+     * @return The bytes for region.
+     */
+    com.google.protobuf.ByteString getRegionBytes();
+
+    /**
+     * <pre>
+     * The geographic city.
+     * Eg. Sao Paulo
+     * </pre>
+     *
+     * <code>string city = 4;</code>
+     *
+     * @return The city.
+     */
+    java.lang.String getCity();
+
+    /**
+     * <pre>
+     * The geographic city.
+     * Eg. Sao Paulo
+     * </pre>
+     *
+     * <code>string city = 4;</code>
+     *
+     * @return The bytes for city.
+     */
+    com.google.protobuf.ByteString getCityBytes();
 }

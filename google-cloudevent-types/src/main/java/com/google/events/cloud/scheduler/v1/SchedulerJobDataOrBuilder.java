@@ -4,16 +4,17 @@
 package com.google.events.cloud.scheduler.v1;
 
 public interface SchedulerJobDataOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:google.events.cloud.scheduler.v1.SchedulerJobData)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:google.events.cloud.scheduler.v1.SchedulerJobData)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * The custom data the user specified when creating the scheduler source.
-   * </pre>
-   *
-   * <code>bytes custom_data = 1;</code>
-   * @return The customData.
-   */
-  com.google.protobuf.ByteString getCustomData();
+    /**
+     * <pre>
+     * The custom data the user specified when creating the scheduler source.
+     * </pre>
+     *
+     * <code>bytes custom_data = 1;</code>
+     *
+     * @return The customData.
+     */
+    com.google.protobuf.ByteString getCustomData();
 }
