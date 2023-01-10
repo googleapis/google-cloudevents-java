@@ -27,7 +27,7 @@ jobs:
       cancel-in-progress: true
     env:
       LIBRARY_CHECKOUT_PATH: library # sync with defaults.run.working-directory
-      DATA_SOURCE_CHECKOUT_PATH: protos-source-repo
+      DATA_SOURCE_CHECKOUT_PATH: google-cloudevents
 
     steps:
       - name: Java Library > Checkout Repository
@@ -49,8 +49,6 @@ jobs:
 
       - name: Run the generator
         working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
-        env:
-          DATA_SOURCE_PATH: ${{ env.GITHUB_WORKSPACE }}/${{ env.DATA_SOURCE_CHECKOUT_PATH }}
         run: ./tools/build.sh
 
       # This step identifies the github revision of the data source repository.

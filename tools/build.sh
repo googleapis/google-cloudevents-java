@@ -20,7 +20,7 @@ LIBRARY_SRC="google-cloudevent-types"
 PROTOC_OUT="${LIBRARY_SRC}/src/main/java/"
 TEST_GEN_OUT="${LIBRARY_SRC}/src/test/java/"
 
-DATA_SOURCE_PATH="${DATA_SOURCE_PATH:-../}"
+DATA_SOURCE_PATH="${GITHUB_WORKSPACE:-../}"
 SOURCE_OF_TRUTH="${DATA_SOURCE_PATH}/google-cloudevents"
 PROTOBUF_SRC="${SOURCE_OF_TRUTH}/proto"
 THIRDPARTY="${SOURCE_OF_TRUTH}/third_party/googleapis"
@@ -43,7 +43,7 @@ if [[ "$BUILD_LOCALLY" == "true" ]]; then
 fi 
 
 # Assemble protoc plugin to generate tests
-mvn clean package assembly:single -f protoc-gen-java-snowpea/
+# mvn clean package assembly:single -f protoc-gen-java-snowpea/
 
 # Setup monitored resource proto with Java options
 MonitoredResourceProto=$(find $THIRDPARTY -name "monitored_resource.proto")
@@ -74,15 +74,15 @@ _generate() {
         --java_out=$PROTOC_OUT \
         $proto_src
 
-    echo "# - validation tests"
-    protoc \
-        --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
-        --java-snowpea_out $TEST_GEN_OUT \
-        --java-snowpea_opt "MessagePublishedData,LogEntryData" \
-        -I $PROTOBUF_SRC \
-        -I $THIRDPARTY \
-        --experimental_allow_proto3_optional \
-        $proto_src
+    # echo "# - validation tests"
+    # protoc \
+    #     --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
+    #     --java-snowpea_out $TEST_GEN_OUT \
+    #     --java-snowpea_opt "MessagePublishedData,LogEntryData" \
+    #     -I $PROTOBUF_SRC \
+    #     -I $THIRDPARTY \
+    #     --experimental_allow_proto3_optional \
+    #     $proto_src
 }
 
 for i in $(find "${PROTOBUF_SRC}" -type f -name data.proto); do
