@@ -25,6 +25,8 @@ SOURCE_OF_TRUTH="${DATA_SOURCE_PATH}/google-cloudevents"
 PROTOBUF_SRC="${SOURCE_OF_TRUTH}/proto"
 THIRDPARTY="${SOURCE_OF_TRUTH}/third_party/googleapis"
 
+PROTOC_PATH="${PROTOC_PATH:-protoc}"
+
 # Clean up previously generated files.
 rm -rf $PROTOC_OUT
 mkdir -p $PROTOC_OUT
@@ -68,14 +70,14 @@ _generate() {
     echo -en "\n$(cat PROTO_PACKAGE);" >> $proto_src
 
     echo "# - proto bindings"
-    protoc \
+    $PROTOC_PATH \
         -I=$PROTOBUF_SRC \
         -I=$THIRDPARTY \
         --java_out=$PROTOC_OUT \
         $proto_src
 
     # echo "# - validation tests"
-    # protoc \
+    # $PROTOC_PATH \
     #     --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
     #     --java-snowpea_out $TEST_GEN_OUT \
     #     --java-snowpea_opt "MessagePublishedData,LogEntryData" \

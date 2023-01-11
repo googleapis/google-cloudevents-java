@@ -47,9 +47,15 @@ jobs:
           java-version: 11
           distribution: temurin
 
+      - name: Setup Protoc
+        working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
+        run: ./tools/setup-protoc.sh
+
       - name: Run the generator
         working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
         run: ./tools/build.sh
+        env:
+          PROTOC_PATH: tmp/protobuf/bin/protoc
 
       # This step identifies the github revision of the data source repository.
       # This is used to create a detailed Pull Request description.
