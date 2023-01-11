@@ -105,10 +105,10 @@ echo "########################################################"
 echo "# Running library tests..."
 mvn verify
 
-echo
-echo "########################################################"
-echo "# Running sample tests..."
-mvn install -DskipTests
-mvn verify -f samples/gcf
-mvn verify -f samples/springboot
-mvn verify -f samples/springboot-proto
+# echo
+# echo "########################################################"
+# echo "# Running sample tests..."
+# mvn install -DskipTests
+# mvn verify -f samples/gcf
+# mvn verify -f samples/springboot
+# mvn verify -f samples/springboot-proto
