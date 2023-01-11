@@ -57,14 +57,15 @@ jobs:
         env:
           PROTOC_PATH: tmp/protobuf/bin/protoc
 
-      # This step identifies the github revision of the data source repository.
-      # This is used to create a detailed Pull Request description.
-      - name: Source Version
+      - name: Generator output
+        run: git diff
+
+      - name: Get source version
         id: source-version
+        working-directory: ${{ env.DATA_SOURCE_CHECKOUT_PATH }}
         run: |
           rev=$(git rev-parse --short HEAD)
           echo "revision=${rev}" >> $GITHUB_OUTPUT
-        working-directory: ${{ env.DATA_SOURCE_CHECKOUT_PATH }}
 
       - name: Create a pull request with updates
         # https://github.com/googleapis/code-suggester#Action

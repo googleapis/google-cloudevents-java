@@ -14,20 +14,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Build the Java library from Protobuf source:
+# https://github.com/googleapis/google-cloudevents
+
 set -e # Must be set for script to fail
 
+# Set Library Path
 LIBRARY_SRC="google-cloudevent-types"
 PROTOC_OUT="${LIBRARY_SRC}/src/main/java/"
 TEST_GEN_OUT="${LIBRARY_SRC}/src/test/java/"
 
-DATA_SOURCE_PATH="${GITHUB_WORKSPACE:-../}"
+# Set Data Source Path
+DATA_SOURCE_PATH="${GITHUB_WORKSPACE:-../}"  # Use GitHub Workspace or default to local path
 SOURCE_OF_TRUTH="${DATA_SOURCE_PATH}/google-cloudevents"
 PROTOBUF_SRC="${SOURCE_OF_TRUTH}/proto"
 THIRDPARTY="${SOURCE_OF_TRUTH}/third_party/googleapis"
 
+# Set protoc Path
 PROTOC_PATH="${PROTOC_PATH:-protoc}"
 
-# Clean up previously generated files.
+# Clean up previously generated files
 rm -rf $PROTOC_OUT
 mkdir -p $PROTOC_OUT
 rm -rf $TEST_GEN_OUT
@@ -112,5 +118,3 @@ mvn verify
 # mvn verify -f samples/gcf
 # mvn verify -f samples/springboot
 # mvn verify -f samples/springboot-proto
-
-echo $(ls -R)
