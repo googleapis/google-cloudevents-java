@@ -112,3 +112,5 @@ mvn verify
 # mvn verify -f samples/gcf
 # mvn verify -f samples/springboot
 # mvn verify -f samples/springboot-proto
+
+echo $(ls -R)
