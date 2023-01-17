@@ -26,7 +26,7 @@ jobs:
       group: ${{ github.workflow }}
       cancel-in-progress: true
     env:
-      LIBRARY_CHECKOUT_PATH: library # sync with defaults.run.working-directory
+      LIBRARY_CHECKOUT_PATH: library
       DATA_SOURCE_CHECKOUT_PATH: google-cloudevents
 
     steps:
