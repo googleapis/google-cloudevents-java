@@ -19,16 +19,20 @@
 
 set -e # Must be set for script to fail
 
+if [[ -z "${DATA_SOURCE_PATH}" ]]
+then
+  echo "Use \$DATA_SOURCE_PATH to set the location of the google-cloudevents repo."
+  exit 1
+fi
+
+# Set Data Source Path ($DATA_SOURCE_PATH should be set to google-cloudevents repo)
+PROTOBUF_SRC="${DATA_SOURCE_PATH}/proto"
+THIRDPARTY="${DATA_SOURCE_PATH}/third_party/googleapis"
+
 # Set Library Path
 LIBRARY_SRC="google-cloudevent-types"
 PROTOC_OUT="${LIBRARY_SRC}/src/main/java/"
 TEST_GEN_OUT="${LIBRARY_SRC}/src/test/java/"
-
-# Set Data Source Path
-DATA_SOURCE_PATH="${GITHUB_WORKSPACE:-../}"  # Use GitHub Workspace or default to local path
-SOURCE_OF_TRUTH="${DATA_SOURCE_PATH}/google-cloudevents"
-PROTOBUF_SRC="${SOURCE_OF_TRUTH}/proto"
-THIRDPARTY="${SOURCE_OF_TRUTH}/third_party/googleapis"
 
 # Set protoc Path
 PROTOC_PATH="${PROTOC_PATH:-protoc}"
@@ -43,7 +47,7 @@ mkdir -p $TEST_GEN_OUT
 BUILD_LOCALLY="${BUILD_LOCALLY:-false}"
 if [[ "$BUILD_LOCALLY" == "true" ]]; then
     current=$(pwd)
-    cd $SOURCE_OF_TRUTH
+    cd $DATA_SOURCE_PATH
     git restore --staged $PROTOBUF_SRC $THIRDPARTY
     git restore $PROTOBUF_SRC $THIRDPARTY
     git clean -f

@@ -56,6 +56,7 @@ jobs:
         run: ./tools/build.sh
         env:
           PROTOC_PATH: tmp/protobuf/bin/protoc
+          DATA_SOURCE_PATH: ${{ env.GITHUB_WORKSPACE }}/${{ env.DATA_SOURCE_CHECKOUT_PATH }}
 
       - name: View generator output
         if: ${{ failure() }}
