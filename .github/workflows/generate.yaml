@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  create-pr:
+  run-generator:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}
@@ -57,7 +57,9 @@ jobs:
         env:
           PROTOC_PATH: tmp/protobuf/bin/protoc
 
-      - name: Generator output
+      - name: View generator output
+        if: ${{ failure() }}
+        working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
         run: git diff
 
       - name: Get source version
