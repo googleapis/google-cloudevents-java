@@ -90,7 +90,7 @@ _generate() {
     $PROTOC_PATH \
         --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
         --java-snowpea_out $TEST_GEN_OUT \
-        --java-snowpea_opt "MessagePublishedData,LogEntryData" \
+        --java-snowpea_opt "MessagePublishedData,LogEntryData#strict" \
         -I $PROTOBUF_SRC \
         -I $THIRDPARTY \
         --experimental_allow_proto3_optional \

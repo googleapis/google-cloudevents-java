@@ -29,13 +29,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-#if($skip)
+#if($skip || $skipStrict)
 import org.junit.Ignore;
 #end
 import org.junit.Test;
 
 public class ${className}Test {
-  #if($skip)
+  #if($skipStrict)
   @Ignore("This test is a known failure.")
   #end
   @Test
