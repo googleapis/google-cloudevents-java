@@ -108,7 +108,7 @@ echo
 echo "########################################################"
 echo "# Formatting generated code files..."
 # TODO: Update to use google-java-format
-mvn net.revelc.code.formatter:formatter-maven-plugin:2.19.0:format
+mvn net.revelc.code.formatter:formatter-maven-plugin:2.19.0:format -f google-cloudevent-types
 
 echo
 echo "########################################################"
