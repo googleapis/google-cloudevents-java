@@ -27,79 +27,49 @@ information on using pull requests.
 This project follows
 [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
 
+## Project Notes
+
+This library is generated from the protobuf source in [googleapis/google-cloudevents](https://github.com/googleapis/google-cloudevents).
+
+The `google-cloudevents-types/` directory is the generated library source code. It should not be manually modified as changes will be overwritten.
+
+The `protoc-gen-java-snowpea/` directory defines a protoc plugin to generate tests for the library.
+
+the `tools/` directory contains scripts for building the library.
+
 ## Building the project
+
+* Install [`protoc`](https://grpc.io/docs/protoc-installation/)
+
+* (Optional) set path to `protoc` executable: `export PROTOC_PATH=<LOCAL_PATH/bin/protoc>`
+
+* Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same directory as this repo.
+
+* Set local path to `google-cloudevents`: `export DATA_SOURCE_PATH=<LOCAL_PATH/google-cloudevents>`
+
+* (Optional) Set option for cleanup of temporary files: `export BUILD_LOCALLY=true`
 
 To build, package, and run all unit tests run the command
 
+```sh
+./tools/build.sh
 ```
+
+### Running tests
+
+Tests are ran during the project build. To run tests independently:
+
+```sh
 mvn clean verify
 ```
 
-### Running Integration tests
+### Install locally
 
-To include integration tests when building the project, you need access to
-a GCP Project with a valid service account. 
+To install a local version of the library:
 
-For instructions on how to generate a service account and corresponding
-credentials JSON see: [Creating a Service Account][1].
-
-Then run the following to build, package, run all unit tests and run all
-integration tests.
-
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service/account.json
-mvn -Penable-integration-tests clean verify
+```sh
+mvn install
 ```
-
-## Code Samples
-
-Code Samples must be bundled in separate Maven modules, and guarded by a
-Maven profile with the name `enable-samples`.
-
-The samples must be separate from the primary project for a few reasons:
-1. Primary projects have a minimum Java version of Java 7 whereas samples have
-   a minimum Java version of Java 8. Due to this we need the ability to
-   selectively exclude samples from a build run.
-2. Many code samples depend on external GCP services and need
-   credentials to access the service.
-3. Code samples are not released as Maven artifacts and must be excluded from 
-   release builds.
-   
-### Building
-
-```bash
-mvn -Penable-samples clean verify
-```
-
-Some samples require access to GCP services and require a service account:
-
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service/account.json
-mvn -Penable-samples clean verify
-```
-
-### Profile Config
-
-1. To add samples in a profile to your Maven project, add the following to your
-`pom.xml`
-
-    ```xml
-    <project>
-      [...]
-      <profiles>
-        <profile>
-          <id>enable-samples</id>
-          <modules>
-            <module>sample</module>
-          </modules>
-        </profile>
-      </profiles>
-      [...]
-    </project>
-    ```
-
-2. [Activate](#profile-activation) the profile.
-3. Define your samples in a normal Maven project in the `samples/` directory.
 
 ### Code Formatting
 
@@ -109,31 +79,3 @@ To run formatting on your project, you can run:
 ```
 mvn com.coveo:fmt-maven-plugin:format
 ```
-
-### Profile Activation
-
-To include code samples when building and testing the project, enable the 
-`enable-samples` Maven profile.
-
-#### Command line
-
-To activate the Maven profile on the command line add `-Penable-samples` to your
-Maven command.
-
-#### Maven `settings.xml`
-
-To activate the Maven profile in your `~/.m2/settings.xml` add an entry of
-`enable-samples` following the instructions in [Active Profiles][2].
-
-This method has the benefit of applying to all projects you build (and is
-respected by IntelliJ IDEA) and is recommended if you are going to be
-contributing samples to several projects.
-
-#### IntelliJ IDEA
-
-To activate the Maven Profile inside IntelliJ IDEA, follow the instructions in
-[Activate Maven profiles][3] to activate `enable-samples`.
-
-[1]: https://cloud.google.com/docs/authentication/getting-started#creating_a_service_account
-[2]: https://maven.apache.org/settings.html#Active_Profiles
-[3]: https://www.jetbrains.com/help/idea/work-with-maven-profiles.html#activate_maven_profiles

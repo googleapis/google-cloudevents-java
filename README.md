@@ -1,63 +1,97 @@
-# Google CloudEvents – Java
+# Google CloudEvents Types for Java
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://search.maven.org/artifact/com.google.cloud/google-cloudevent-types)
 
-This repository contains POJOs for CloudEvents issued by Google.
+* [Product Documentation](https://cloud.google.com/eventarc/docs/cloudevents)
+* [Client Library Documentation - TBA]()
 
-## Prerequisites
+**🚧 Note:** This library has been unstable. This repository previously contained POJOs for
+[Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events).
 
-- Java 7 (or higher)
+This library provides Java classes for [Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events)
+to support unmarshalling of event data into a Java object.
 
-## Installation
-
-To use Maven, add the following lines to your `pom.xml` file:
-
-```xml
-<project>
-  <dependencies>
-    <dependency>
-      <groupId>com.google.cloud</groupId>
-      <artifactId>google-cloudevent-types</artifactId>
-      <version>0.3.0</version>
-    </dependency>
-  </dependencies>
-</project>
-```
-
-## CloudEvent Types
-
-This repo contains these types:
+Example event classes:
 
 - [`com.google.events.cloud.pubsub.v1.MessagePublishedData`](google-cloudevent-types/src/main/java/com/google/events/cloud/pubsub/v1/MessagePublishedData.java)
 - [`com.google.events.cloud.audit.v1.LogEntryData`](google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/LogEntryData.java)
 
-> Note: This repo is generated from the Google CloudEvent schema sources in https://github.com/googleapis/google-cloudevents.
+> Note: This library is generated from the protobufs sourced from https://github.com/googleapis/google-cloudevents.
+
+## Supported Java Versions
+
+Java 11 or above is required.
+
+## Installation
+
+If you are using Maven, add this to your `pom.xml` file:
+
+```xml
+<dependency>
+  <groupId>com.google.cloud</groupId>
+  <artifactId>google-cloudevent-types</artifactId>
+  <version>0.5.0</version>
+</dependency>
+```
 
 ## Usage
 
-The event types can be used to transform a HTTP POST request's body to a Java object.
+CloudEvents are currently delivered to [targets](https://cloud.google.com/eventarc/docs/overview#targets)
+via [HTTP protocol binding](https://cloud.google.com/eventarc/docs/cloudevents)
+with a [JSON payload](https://cloud.google.com/eventarc/docs/workflows/cloudevents).
 
-For example, in the Spring Framework, this library can be used as such:
+Using the [JsonFormat](https://developers.google.com/protocol-buffers/docs/reference/java/com/google/protobuf/util/JsonFormat)
+the JSON payload can be converted into the specific event type object.
+
+Example usage in an [Event-driven Cloud Function](https://cloud.google.com/functions/docs/writing/write-event-driven-functions#cloudevent-example-java):
 
 ```java
-import com.google.events.cloud.pubsub.v1.MessagePublishedData;
-import com.google.events.cloud.pubsub.v1.PubsubMessage;
-//...
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+package functions;
 
-@RestController
-public class EventController {
-  @RequestMapping(value = "/", method = RequestMethod.POST)
-  public ResponseEntity<String> receiveMessage(
-      @RequestBody MessagePublishedData messagePublishedData, @RequestHeader Map<String, String> headers) {
-    // Get PubSub message from request body.
-    PubsubMessage message = messagePublishedData.getMessage();
-    // Use message data
+import com.google.cloud.functions.CloudEventsFunction;
+import com.google.events.cloud.audit.v1.LogEntryData;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.util.JsonFormat;
+import io.cloudevents.CloudEvent;
+import java.nio.charset.StandardCharsets;
+import java.util.logging.Logger;
+
+public class HelloProto implements CloudEventsFunction {
+  private static final Logger LOGGER = Logger.getLogger(HelloProto.class.getName());
+
+  @Override
+  public void accept(CloudEvent event) throws InvalidProtocolBufferException {
+    if (event.getData() != null) {
+      // Extract JSON from CloudEvent
+      String json = new String(event.getData().toBytes(), StandardCharsets.UTF_8);
+      // Convert data to LogEntryData object
+      LogEntryData.Builder builder = LogEntryData.newBuilder();
+      JsonFormat.parser().merge(json, builder);
+      LogEntryData data = builder.build();
+      
+      // Extract specific data from LogEntryData object
+      LOGGER.info("### CloudEvent Data ###");
+      LOGGER.info(data.getLogName());
+      LOGGER.info(data.getProtoPayload().getAuthenticationInfo().getPrincipalEmail());
+    }
   }
 }
 ```
+
+## Versioning
+
+This library follows [Semantic Versioning](http://semver.org/).
+
+## Contributing
+
+Contributions to this library are always welcome and highly encouraged.
+
+See [CONTRIBUTING][contributing] for more information how to get started.
+
+Please note that this project is released with a Contributor Code of Conduct. By participating in
+this project you agree to abide by its terms. See [Code of Conduct][code-of-conduct] for more
+information.
+
+## License
+
+Apache 2.0 - See [LICENSE][license] for more information.
