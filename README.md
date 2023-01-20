@@ -9,14 +9,12 @@
 [Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events).
 
 This library provides Java classes for [Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events)
-to support unmarshalling of event data into a Java object.
+to support unmarshalling of event data into a Java object. This library is generated from the protobufs sourced from https://github.com/googleapis/google-cloudevents.
 
 Example event classes:
 
 - [`com.google.events.cloud.pubsub.v1.MessagePublishedData`](google-cloudevent-types/src/main/java/com/google/events/cloud/pubsub/v1/MessagePublishedData.java)
 - [`com.google.events.cloud.audit.v1.LogEntryData`](google-cloudevent-types/src/main/java/com/google/events/cloud/audit/v1/LogEntryData.java)
-
-> Note: This library is generated from the protobufs sourced from https://github.com/googleapis/google-cloudevents.
 
 ## Supported Java Versions
 
@@ -86,12 +84,12 @@ This library follows [Semantic Versioning](http://semver.org/).
 
 Contributions to this library are always welcome and highly encouraged.
 
-See [CONTRIBUTING][contributing] for more information how to get started.
+See [CONTRIBUTING](CONTRIBUTING.md) for more information how to get started.
 
 Please note that this project is released with a Contributor Code of Conduct. By participating in
-this project you agree to abide by its terms. See [Code of Conduct][code-of-conduct] for more
+this project you agree to abide by its terms. See [Code of Conduct](CODE_OF_CONDUCT.md) for more
 information.
 
 ## License
 
-Apache 2.0 - See [LICENSE][license] for more information.
+Apache 2.0 - See [LICENSE](LICENSE) for more information.

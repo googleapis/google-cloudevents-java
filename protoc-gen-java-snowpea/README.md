@@ -26,7 +26,7 @@ To run the plugin, install:
 ## Installation
 
 Assemble the single distributable archive ([uber-jar](https://maven.apache.org/plugins/maven-assembly-plugin/descriptor-refs.html#jar-with-dependencies)):
-```
+```sh
 # Parent Project Directory
 mvn clean package assembly:single -f protoc-gen-java-snowpea/
 
@@ -36,7 +36,7 @@ mvn clean package assembly:single
 
 ## Running
 
-```
+```sh
 protoc \
     --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
     --java-snowpea_out <OUTPUT_PATH> \
@@ -46,10 +46,11 @@ protoc \
     <PROTOBUF_TO_GENERATE>
 ```
 
-Where
-    * `--plugin`: specifies path to plugin binary
-    * `--java-snowpea_out`: specifies path to output files
-    * `--java-snowpea_opt`: specifies plugin options
+Where:
+
+* `--plugin`: specifies path to plugin binary
+* `--java-snowpea_out`: specifies path to output files
+* `--java-snowpea_opt`: specifies plugin options
 
 **Plugin Options**
 * Specify the event type name (Test class) to skip, i.e. "MessagePublishedData"
@@ -59,20 +60,20 @@ Find more info about [protoc plugin configuration](https://developers.google.com
 
 ## Examples
 
-In the parent project directory, (`google-cloudevents-java`):
+In the parent project directory, `google-cloudevents-java`:
 
 * Set local path to `google-cloudevents` repo:
-```
+```sh
 export GOOGLE_CLOUDEVENTS=<LOCAL_PATH>
 ```
 
 * Create `tmp` directory:
-```
+```sh
 mkdir tmp
 ```
 
 * Run plugin:
-```
+```sh
 protoc \
     --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
     --java-snowpea_out ./tmp \

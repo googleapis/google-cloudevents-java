@@ -1,3 +1,4 @@
 releaseType: java-yoshi
 handleGHRelease: true
 bumpMinorPreMajor: true
+releaseLabel: "autorelease: published"
