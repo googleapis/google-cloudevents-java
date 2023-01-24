@@ -5,7 +5,7 @@ This plugin generates tests for Google Event Types Library for Java to ensure th
 ## Things to Know
 
 * This plugin generates a test file per "main" event type
-    * The "main" event type is determined by the protobuf's message "Data" suffix, i.e. generate MessagePublishedData and not PubSubMessage
+    * The "main" event type is determined by the protobuf's message "Data" suffix, i.e. generate "MessagePublishedData" and not "PubSubMessage"
     * These main event types are found in `data.proto`
     * Generate file name and path ensure the Java package and event type is used: `google/events/cloud/pubsub/v1/data.proto` is converted to `com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java`
 
@@ -14,6 +14,11 @@ This plugin generates tests for Google Event Types Library for Java to ensure th
 
 * The test read in test data from the `google-cloudevents` repo
     * Set path via `$TEST_DATA_PATH` (Default: `../../google-cloudevents/testdata/`)
+
+* Tests include a strict, `JsonFormat.parser().merge(json, builder);` and loose, 
+`JsonFormat.parser().ignoringUnknownFields().merge(json, builder);`, unmarshalling tests.
+    * "MessagePublishedData" and "LogEntryData" tests do not pass strict unmarshalling due to the "@type" field
+    * "MessagePublishedData" test does not pass loose unmarshalling due to duplicated fields. 
 
 
 ## Prerequisites
