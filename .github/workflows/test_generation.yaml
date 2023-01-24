@@ -1,0 +1,66 @@
+# Copyright 2021 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Test Library Generation
+on:
+  pull_request:
+    paths:
+      - "tools/**"
+      - ".github/workflows/test_generation.yaml"
+
+jobs:
+  run-generator:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+    env:
+      LIBRARY_CHECKOUT_PATH: library
+      DATA_SOURCE_CHECKOUT_PATH: google-cloudevents
+
+    steps:
+      - name: Java Library > Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          path: ${{ env.LIBRARY_CHECKOUT_PATH }}
+
+      - name: Proto Schemas > Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          repository: googleapis/google-cloudevents
+          path: ${{ env.DATA_SOURCE_CHECKOUT_PATH }}
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: temurin
+
+      - name: Setup Protoc
+        run: ${{ env.LIBRARY_CHECKOUT_PATH }}/tools/setup-protoc.sh
+
+      - name: Run the generator
+        working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
+        run: ./tools/build.sh
+        env:
+          PROTOC_PATH: ${{ github.workspace }}/tmp/protobuf/bin/protoc
+          DATA_SOURCE_PATH: ${{ github.workspace }}/${{ env.DATA_SOURCE_CHECKOUT_PATH }}
+
+      - name: View generator output
+        working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
+        run: |
+          git add -N . # Needed if files are untracked
+          git diff
