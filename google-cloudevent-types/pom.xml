@@ -14,7 +14,7 @@
   </description>
 
   <parent>
-    <groupId>com.google.events</groupId>
+    <groupId>com.google.cloud</groupId>
     <artifactId>google-cloudevent-types-parent</artifactId>
     <version>0.5.1-SNAPSHOT</version> <!-- {x-version-update:google-cloudevent-types:current} -->
   </parent>
