@@ -87,6 +87,7 @@ _generate() {
         $proto_src
 
     echo "# - validation tests"
+    # Note: --java-snowpea_opt is a list tests to skip due to imcompatibility 
     $PROTOC_PATH \
         --plugin=protoc-gen-java-snowpea=protoc-gen-java-snowpea/startup-script.sh \
         --java-snowpea_out $TEST_GEN_OUT \
