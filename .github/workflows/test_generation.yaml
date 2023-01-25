@@ -60,6 +60,7 @@ jobs:
           DATA_SOURCE_PATH: ${{ github.workspace }}/${{ env.DATA_SOURCE_CHECKOUT_PATH }}
 
       - name: View generator output
+        if: ${{ always() }}
         working-directory: ${{ env.LIBRARY_CHECKOUT_PATH }}
         run: |
           git add -N . # Needed if files are untracked

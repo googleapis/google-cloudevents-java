@@ -10,6 +10,12 @@
   <name>Google CloudEvents Types for Java Parent</name>
   <url>https://github.com/googleapis/google-cloudevents-java</url>
 
+  <parent>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-shared-config</artifactId>
+    <version>1.2.4</version>
+  </parent>
+
   <developers>
     <developer>
       <name>Averi Kitsch</name>
@@ -42,8 +48,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <github.global.server>github</github.global.server>
-    <site.installationModule>google-cloudevent-types-parent</site.installationModule>
+    <!-- Skip strict library tests -->
+    <enforcer.skip>true</enforcer.skip>
+    <clirr.skip>true</clirr.skip>
   </properties>
 
   <dependencyManagement>
@@ -68,7 +75,7 @@
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.9.0</version>
+        <version>2.10.1</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -106,44 +113,6 @@
           <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
           <artifactId>${site.installationModule}</artifactId>
           <packaging>jar</packaging>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
-        <reportSets>
-          <reportSet>
-            <id>html</id>
-            <reports>
-              <report>aggregate</report>
-              <report>javadoc</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-        <configuration>
-          <doclint>none</doclint>
-          <show>protected</show>
-          <nohelp>true</nohelp>
-          <outputDirectory>${project.build.directory}/javadoc</outputDirectory>
-          <groups>
-            <group>
-              <title>Test helpers packages</title>
-              <packages>com.google.cloud.testing</packages>
-            </group>
-            <group>
-              <title>SPI packages</title>
-              <packages>com.google.cloud.spi*</packages>
-            </group>
-          </groups>
-
-          <links>
-            <link>https://grpc.io/grpc-java/javadoc/</link>
-            <link>https://developers.google.com/protocol-buffers/docs/reference/java/</link>
-            <link>https://googleapis.dev/java/google-auth-library/latest/</link>
-            <link>https://googleapis.dev/java/gax/latest/</link>
-            <link>https://googleapis.github.io/api-common-java/</link>
-          </links>
         </configuration>
       </plugin>
     </plugins>
