@@ -1,9 +1,12 @@
 {
   "extends": [
     "config:base",
-    ":disableDependencyDashboard"
+    ":disableDependencyDashboard",
+    ":separateMajorReleases",
+    ":ignoreUnstable"
   ],
   "schedule": [
     "every 3 months on the first day of the month"
-  ]
+  ],
+  "semanticCommits": "enabled"
 }

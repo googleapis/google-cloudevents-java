@@ -38,4 +38,7 @@ hs_err_pid*
 .vscode/
 **/.settings/** 
 
-
+# Temp files created during generation
+*.bak
+PROTO_PACKAGE
+*.versionsBackup
