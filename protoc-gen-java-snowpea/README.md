@@ -20,7 +20,6 @@ This plugin generates tests for Google Event Types Library for Java to ensure th
     * "MessagePublishedData" and "LogEntryData" tests do not pass strict unmarshalling due to the "@type" field
     * "MessagePublishedData" test does not pass loose unmarshalling due to duplicated fields. 
 
-
 ## Prerequisites
 
 To run the plugin, install:
