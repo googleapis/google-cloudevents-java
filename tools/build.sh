@@ -46,6 +46,7 @@ mkdir -p $TEST_GEN_OUT
 # Ensure clean source for local builds
 BUILD_LOCALLY="${BUILD_LOCALLY:-false}"
 if [[ "$BUILD_LOCALLY" == "true" ]]; then
+    MACOS='.bak'
     current=$(pwd)
     cd $DATA_SOURCE_PATH
     git restore --staged $PROTOBUF_SRC $THIRDPARTY
@@ -70,13 +71,13 @@ _generate() {
     echo "# Generating from $proto_src"
 
     # Comment out preset Java options
-    sed -i 's/option java/\/\/option java/' $proto_src
+    sed -i $MACOS 's/option java/\/\/option java/' $proto_src
     # Set Java option: multiple files
     echo -en "\noption java_multiple_files = true;" >> $proto_src
     # Set Java option: package name
     awk '/^package/,/;/' $proto_src > PROTO_PACKAGE; # Ex. package google.events.cloud.pubsub.v1; => google.events.cloud.pubsub.v1
-    sed -i 's/package /option java_package = \"com./' PROTO_PACKAGE
-    sed -i 's/;/"/'  PROTO_PACKAGE
+    sed -i $MACOS 's/package /option java_package = \"com./' PROTO_PACKAGE
+    sed -i $MACOS 's/;/"/'  PROTO_PACKAGE
     echo -en "\n$(cat PROTO_PACKAGE);" >> $proto_src
 
     echo "# - proto bindings"
@@ -110,7 +111,7 @@ for i in $(find "${PROTOC_OUT}" -type f -name "*.java"); do
   echo
   echo "########################################################"
   echo "# Generating license header $i"
-  sed -i "s|$FILE_HEAD|$LICENSE\n$FILE_HEAD|" $i
+  sed -i $MACOS "s|$FILE_HEAD|$LICENSE\n$FILE_HEAD|" $i
 done
 
 echo
