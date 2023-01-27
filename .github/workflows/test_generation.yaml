@@ -20,7 +20,7 @@ on:
       - ".github/workflows/test_generation.yaml"
 
 jobs:
-  run-generator:
+  test-generator:
     runs-on: ubuntu-latest
     permissions:
       contents: read

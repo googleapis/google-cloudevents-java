@@ -5,9 +5,12 @@ branchProtectionRules:
 - pattern: main
   requiredStatusCheckContexts:
     - 'cla/google'
+    - 'test-generator'
   requiredApprovingReviewCount: 1
   requiresCodeOwnerReviews: true
   requiresStrictStatusChecks: true
 permissionRules:
   - team: cloudevents-admins
+    permission: admin
+  - team: torus-dpe
     permission: admin
