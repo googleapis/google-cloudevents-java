@@ -12,19 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-rebaseMergeAllowed: true
-squashMergeAllowed: true
-mergeCommitAllowed: false
-branchProtectionRules:
-- pattern: main
-  requiredStatusCheckContexts:
-    - 'cla/google'
-    - 'test-generator'
-  requiredApprovingReviewCount: 1
-  requiresCodeOwnerReviews: true
-  requiresStrictStatusChecks: true
-permissionRules:
-  - team: cloudevents-admins
-    permission: admin
-  - team: torus-dpe
-    permission: admin
+name: Test Library Generation
+on:
+  pull_request:
+    paths-ignore:
+      - "tools/**"
+      - ".github/workflows/test_generation.yaml"
+
+jobs:
+  test-generator:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: none
+
+    steps:
+      - run: echo "No build required."
