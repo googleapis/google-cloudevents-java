@@ -26,4 +26,4 @@ jobs:
       contents: none
 
     steps:
-      - run: 'echo "No build required"'
+      - run: echo "No build required."
