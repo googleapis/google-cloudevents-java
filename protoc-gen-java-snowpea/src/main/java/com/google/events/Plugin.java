@@ -16,21 +16,20 @@
 
 package com.google.events;
 
-import com.google.protobuf.Descriptors.DescriptorValidationException;
 import com.google.protobuf.compiler.PluginProtos.CodeGeneratorRequest;
 import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse;
 import java.io.IOException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Plugin {
   private static final Logger LOGGER = LoggerFactory.getLogger(Plugin.class);
 
-  public static void main(String[] args) throws IOException, DescriptorValidationException {
+  public static void main(String[] args) throws IOException {
     // An encoded CodeGeneratorRequest is written to the plugin's stdin
     CodeGeneratorRequest request = CodeGeneratorRequest.parseFrom(System.in);
-    LOGGER.debug("Plugin opt: " + request.getParameter());
-
+    LOGGER.info("Plugin opt: " + request.getParameter());
     // Generate test files from proto messages
     CodeGeneratorResponse response = Generator.generate(request);
     // Write to Plugin's stdout

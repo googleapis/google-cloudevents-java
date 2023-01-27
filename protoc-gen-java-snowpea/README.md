@@ -5,9 +5,9 @@ This plugin generates tests for Google Event Types Library for Java to ensure th
 ## Things to Know
 
 * This plugin generates a test file per "main" event type
-    * The "main" event type is determined by the protobuf's message "Data" suffix, i.e. generate "MessagePublishedData" and not "PubSubMessage"
-    * These main event types are found in `data.proto`
-    * Generate file name and path ensure the Java package and event type is used: `google/events/cloud/pubsub/v1/data.proto` is converted to `com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java`
+    * Main event types are determined by the data type of Event messages, i.e. "MessagePublishedEvent"
+    * These main event types are found in `events.proto`
+    * Generate file name and path ensure the Java package and event type is used: `google/events/cloud/pubsub/v1/events.proto` is converted to `com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java`
 
 * The binary is defined by the [startup-script.sh](./startup-script.sh) to run the uber-jar
     * It is designed to run from parent directory
@@ -88,5 +88,5 @@ protoc \
     -I $GOOGLE_CLOUDEVENTS/proto \
     -I $GOOGLE_CLOUDEVENTS/third_party \
     --experimental_allow_proto3_optional \
-    $GOOGLE_CLOUDEVENTS/proto/google/events/cloud/pubsub/v1/data.proto
+    $GOOGLE_CLOUDEVENTS/proto/google/events/cloud/pubsub/v1/events.proto
 ```
