@@ -77,5 +77,5 @@ Code in this repo is formatted with
 [google-java-format](https://github.com/google/google-java-format).
 To run formatting on your project, you can run:
 ```
-mvn com.coveo:fmt-maven-plugin:format
+mvn ccom.spotify.fmt:fmt-maven-plugin:format
 ```

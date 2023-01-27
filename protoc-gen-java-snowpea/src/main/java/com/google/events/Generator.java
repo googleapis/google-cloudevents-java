@@ -44,19 +44,20 @@ public class Generator {
   private static final Logger LOGGER = LoggerFactory.getLogger(Generator.class);
 
   public static CodeGeneratorResponse generate(CodeGeneratorRequest request) {
-
     // CodeGeneratorRequest contain FileDescriptorProtos for all the proto
     // files and associated dependencies.
-    List<FieldDescriptorProto> dataFields = new ArrayList<FieldDescriptorProto>();
+
+    // Initialize set for event types
     Set<FieldDescriptorProto> set = new HashSet<FieldDescriptorProto>();
     for (DescriptorProtos.FileDescriptorProto fp : request.getProtoFileList()) {
       String file = fp.getName();
       LOGGER.info("Input Protobuf: " + file);
       if (!file.endsWith("events.proto")) {
-        LOGGER.warn("Expected file: events.proto. Skipping file: " + file);
+        LOGGER.warn("Skipping... Expected file: events.proto.");
         continue;
       }
 
+      // Filter message types for data fields
       List<DescriptorProto> messageTypes = fp.getMessageTypeList();
       messageTypes.stream()
           .forEach(
@@ -65,7 +66,6 @@ public class Generator {
                     message.getFieldList().stream()
                         .filter(field -> field.getName().equalsIgnoreCase("data"))
                         .collect(Collectors.toList());
-                // dataFields.addAll(fields);
                 set.addAll(fields);
               });
     }
@@ -79,7 +79,7 @@ public class Generator {
       List<String> fieldPackage = getPackageName(dataField);
       LOGGER.info("Generating Test File for " + fieldPackage.get(1));
       // Generate file name and path
-      // google/events/cloud/pubsub/v1/data.proto -->
+      // com.google.events.cloud.pubsub.v1 -->
       // com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java
       String name =
           fieldPackage.get(0).replaceAll("\\.", "\\/") + "/" + fieldPackage.get(1) + "Test.java";

@@ -117,7 +117,7 @@ done
 echo
 echo "########################################################"
 echo "# Formatting generated code files..."
-mvn com.coveo:fmt-maven-plugin:format -f google-cloudevent-types
+mvn com.spotify.fmt:fmt-maven-plugin:format -f google-cloudevent-types
 
 echo
 echo "########################################################"

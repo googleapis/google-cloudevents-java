@@ -86,35 +86,25 @@
     <module>protoc-gen-java-snowpea</module>
   </modules>
 
-  <reporting>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.1</version>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>index</report>
-              <report>dependency-info</report>
-              <report>team</report>
-              <report>ci-management</report>
-              <report>issue-management</report>
-              <report>licenses</report>
-              <report>scm</report>
-              <report>dependency-management</report>
-              <report>distribution-management</report>
-              <report>summary</report>
-              <report>modules</report>
-            </reports>
-          </reportSet>
-        </reportSets>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.2.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>10.6.0</version>
+          </dependency>
+        </dependencies>
         <configuration>
-          <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
-          <artifactId>${site.installationModule}</artifactId>
-          <packaging>jar</packaging>
+          <configLocation>google_checks.xml</configLocation>
+          <encoding>UTF-8</encoding>
+          <consoleOutput>true</consoleOutput>
         </configuration>
       </plugin>
     </plugins>
-  </reporting>
+  </build>
 </project>
