@@ -73,7 +73,7 @@ for proto_src in $(find "${PROTOBUF_SRC}" -type f -name data.proto); do
   echo "# Generating proto bindings - ${proto_src}"
 
   # Comment out preset Java options
-  sed -i "$MACOS" 's/option java/\/\/option java/' "$proto_src"
+  sed -i "$MACOS" 's/option java///option java/' "$proto_src"
   # Set Java option: multiple files
   echo -en "\noption java_multiple_files = true;" >> "$proto_src"
   # Set Java option: package name
