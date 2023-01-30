@@ -43,17 +43,20 @@ mkdir -p $PROTOC_OUT
 rm -rf $TEST_GEN_OUT
 mkdir -p $TEST_GEN_OUT
 
+# Set sed options for Ubuntu vs MacOs
+SED="sed -i"
+
 # Ensure clean source for local builds
 BUILD_LOCALLY="${BUILD_LOCALLY:-false}"
 if [[ "$BUILD_LOCALLY" == "true" ]]; then
-    MACOS='.bak'
+    SED="sed -i .bak"
     current=$(pwd)
     cd "$DATA_SOURCE_PATH"
     git restore --staged "$PROTOBUF_SRC" "$THIRDPARTY"
     git restore "$PROTOBUF_SRC" "$THIRDPARTY"
     git clean -f
     cd "$current"
-fi 
+fi
 
 # Assemble protoc plugin to generate tests
 mvn clean package assembly:single -f protoc-gen-java-snowpea/
@@ -73,13 +76,13 @@ for proto_src in $(find "${PROTOBUF_SRC}" -type f -name data.proto); do
   echo "# Generating proto bindings - ${proto_src}"
 
   # Comment out preset Java options
-  sed -i "$MACOS" 's/option java///option java/' "$proto_src"
+  $SED 's/option java/\/\/option java/' "$proto_src"
   # Set Java option: multiple files
   echo -en "\noption java_multiple_files = true;" >> "$proto_src"
   # Set Java option: package name
   awk '/^package/,/;/' "$proto_src" > PROTO_PACKAGE; # Ex. package google.events.cloud.pubsub.v1; => google.events.cloud.pubsub.v1
-  sed -i "$MACOS" 's/package /option java_package = \"com./' PROTO_PACKAGE
-  sed -i "$MACOS" 's/;/"/'  PROTO_PACKAGE
+  $SED 's/package /option java_package = \"com./' PROTO_PACKAGE
+  $SED 's/;/"/'  PROTO_PACKAGE
   echo -en "\n$(cat PROTO_PACKAGE);" >> "$proto_src"
 
   $PROTOC_PATH \
@@ -113,7 +116,7 @@ echo
 echo "########################################################"
 for i in $(find "${PROTOC_OUT}" -type f -name "*.java"); do
   echo "# Generating license header - ${i}"
-  sed -i "$MACOS" "s|$FILE_HEAD|$LICENSE\n$FILE_HEAD|" "$i"
+  $SED "s|$FILE_HEAD|$LICENSE\n$FILE_HEAD|" "$i"
 done
 
 echo
