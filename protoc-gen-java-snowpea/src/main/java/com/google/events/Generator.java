@@ -19,18 +19,19 @@ package com.google.events;
 import static com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.Feature.FEATURE_PROTO3_OPTIONAL;
 
 import com.google.protobuf.DescriptorProtos;
-import com.google.protobuf.Descriptors;
-import com.google.protobuf.Descriptors.DescriptorValidationException;
+import com.google.protobuf.DescriptorProtos.DescriptorProto;
+import com.google.protobuf.DescriptorProtos.FieldDescriptorProto;
 import com.google.protobuf.compiler.PluginProtos.CodeGeneratorRequest;
 import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse;
 import java.io.StringWriter;
 import java.time.Year;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
-
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -42,29 +43,31 @@ import org.slf4j.LoggerFactory;
 public class Generator {
   private static final Logger LOGGER = LoggerFactory.getLogger(Generator.class);
 
-  public static CodeGeneratorResponse generate(CodeGeneratorRequest request)
-      throws DescriptorValidationException {
-
+  public static CodeGeneratorResponse generate(CodeGeneratorRequest request) {
     // CodeGeneratorRequest contain FileDescriptorProtos for all the proto
-    // files and associated dependencies. These FileDescriptorProtos will
-    // be converted into FileDescriptor instances and mapped to file names.
+    // files and associated dependencies.
 
-    // FileDescriptor describes a .proto file, including everything defined within.
-    // That includes descriptors for all the messages and file
-    // descriptors for all other imported .proto files (dependencies).
-    // https://cloud.google.com/java/docs/reference/protobuf/latest/com.google.protobuf.Descriptors.FileDescriptor
-    Map<String, Descriptors.FileDescriptor> filesByName = new HashMap<>();
+    // Initialize set for event types
+    Set<FieldDescriptorProto> set = new HashSet<FieldDescriptorProto>();
     for (DescriptorProtos.FileDescriptorProto fp : request.getProtoFileList()) {
-      LOGGER.debug("Preprocessing FileDescriptorProto: " + fp.getName());
-      // fp.getDependencyList() gets names of files imported by this file.
-      // Look up each dependency in filesByName Map
-      Descriptors.FileDescriptor dependencies[] =
-          fp.getDependencyList().stream()
-              .map(filesByName::get)
-              .toArray(Descriptors.FileDescriptor[]::new);
+      String file = fp.getName();
+      LOGGER.info("Input Protobuf: " + file);
+      if (!file.endsWith("events.proto")) {
+        LOGGER.warn("Skipping... Expected file: events.proto.");
+        continue;
+      }
 
-      Descriptors.FileDescriptor fd = Descriptors.FileDescriptor.buildFrom(fp, dependencies);
-      filesByName.put(fp.getName(), fd);
+      // Filter message types for data fields
+      List<DescriptorProto> messageTypes = fp.getMessageTypeList();
+      messageTypes.stream()
+          .forEach(
+              message -> {
+                List<FieldDescriptorProto> fields =
+                    message.getFieldList().stream()
+                        .filter(field -> field.getName().equalsIgnoreCase("data"))
+                        .collect(Collectors.toList());
+                set.addAll(fields);
+              });
     }
 
     // The plugin writes an encoded CodeGeneratorResponse to stdout.
@@ -72,36 +75,25 @@ public class Generator {
         CodeGeneratorResponse.newBuilder()
             .setSupportedFeatures(FEATURE_PROTO3_OPTIONAL.getNumber());
 
-    // Process the .proto files that were explicitly listed on the command-line.
-    for (String fileName : request.getFileToGenerateList()) {
-      // Process only data.proto
-      // Ignore events.protos, cloudevent.protos, and named 3P protos
-      if (fileName.endsWith("data.proto")) {
-        Descriptors.FileDescriptor fd = filesByName.get(fileName);
-        for (Descriptors.Descriptor messageType : fd.getMessageTypes()) {
-          // Process Top Level Messages ie message types ending in "Data"
-          if (messageType.getName().endsWith("Data")) {
-            LOGGER.info("Generating Test File for " + messageType.getName());
-            // Generate file name and path
-            // google/events/cloud/pubsub/v1/data.proto -->
-            // com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java
-            String name =
-                "com/"
-                    + fd.getFullName()
-                        .replaceAll("data.proto", messageType.getName() + "Test.java");
-            // Generate test file
-            String testFileContent = generateTestFile(fd, messageType, request.getParameter());
-            // Add test file to response
-            response.addFileBuilder().setName(name).setContent(testFileContent);
-          }
-        }
-      }
+    for (FieldDescriptorProto dataField : set) {
+      List<String> fieldPackage = getPackageName(dataField);
+      LOGGER.info("Generating Test File for " + fieldPackage.get(1));
+      // Generate file name and path
+      // com.google.events.cloud.pubsub.v1 -->
+      // com/google/events/cloud/pubsub/v1/MessagePublishedDataTest.java
+      String name =
+          fieldPackage.get(0).replaceAll("\\.", "\\/") + "/" + fieldPackage.get(1) + "Test.java";
+      LOGGER.info(name);
+      // Generate test file
+      String testFileContent = generateTestFile(dataField, request.getParameter());
+      // Add test file to response
+      response.addFileBuilder().setName(name).setContent(testFileContent);
     }
+
     return response.build();
   }
 
-  private static String generateTestFile(
-      Descriptors.FileDescriptor fd, Descriptors.Descriptor messageType, String opts) {
+  private static String generateTestFile(FieldDescriptorProto dataField, String opts) {
     // Instantiate Velocity Engine
     VelocityEngine velocityEngine = new VelocityEngine();
     // Set properties to locate template
@@ -110,11 +102,14 @@ public class Generator {
         "resource.loader.classpath.class", ClasspathResourceLoader.class.getName());
     velocityEngine.init();
     Template t = velocityEngine.getTemplate("classTemplate.vm");
+
     // Get template variable values
-    String packageName = fd.getPackage();
-    String className = messageType.getName();
+    String packageName = getPackageName(dataField).get(0);
+    String className = getPackageName(dataField).get(1);
     List<String> optList = Arrays.asList(opts.split("\\s*,\\s*"));
-    Boolean skipStrict = optList.stream().filter(opt -> opt.contains(className)).collect(Collectors.toList()).size() > 0;
+    Boolean skipStrict =
+        optList.stream().filter(opt -> opt.contains(className)).collect(Collectors.toList()).size()
+            > 0;
 
     // Add variables to template
     VelocityContext context = new VelocityContext();
@@ -128,5 +123,13 @@ public class Generator {
     t.merge(context, writer);
 
     return writer.toString();
+  }
+
+  private static List<String> getPackageName(FieldDescriptorProto dataField) {
+    List<String> typeName = new ArrayList<String>();
+    Collections.addAll(typeName, dataField.getTypeName().substring(1).split("\\."));
+    String className = typeName.remove(typeName.size() - 1);
+    String packageName = "com." + String.join(".", typeName);
+    return Arrays.asList(packageName, className);
   }
 }
