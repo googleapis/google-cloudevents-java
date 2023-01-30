@@ -33,5 +33,6 @@ jobs:
 
       - name: Lint Shell Scripts
         run: |
+          set +e
           shellcheck tools/*.sh # See all warnings
           shellcheck --severity error -f quiet tools/*.sh # Fail on errors only
