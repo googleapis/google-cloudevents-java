@@ -6,7 +6,7 @@
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloudevent-types-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.5.1-SNAPSHOT</version> <!-- {x-version-update:google-cloudevent-types:current} -->
+  <version>0.6.0</version> <!-- {x-version-update:google-cloudevent-types:current} -->
   <name>Google CloudEvents Types for Java Parent</name>
   <url>https://github.com/googleapis/google-cloudevents-java</url>
 
