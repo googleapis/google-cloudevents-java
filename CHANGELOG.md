@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.6.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.5.0...v0.6.0) (2023-01-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Generate library from protobufs ([#121](https://github.com/googleapis/google-cloudevents-java/issues/121))
+
+### Features
+
+* Add bash linting ([#134](https://github.com/googleapis/google-cloudevents-java/issues/134)) ([f1f3db8](https://github.com/googleapis/google-cloudevents-java/commit/f1f3db8de60fdecda63f9c6a86c194a980049fe8))
+* Add protoc plugin to generate tests ([#122](https://github.com/googleapis/google-cloudevents-java/issues/122)) ([0043e40](https://github.com/googleapis/google-cloudevents-java/commit/0043e407f29dc02285c31a22538b790e680bdaf9))
+* Delete old library code ([#135](https://github.com/googleapis/google-cloudevents-java/issues/135)) ([4145331](https://github.com/googleapis/google-cloudevents-java/commit/4145331c8d5378b1e794a86b8404b9ca0ff490f9))
+* Generate library from protobufs ([#121](https://github.com/googleapis/google-cloudevents-java/issues/121)) ([f6804d1](https://github.com/googleapis/google-cloudevents-java/commit/f6804d1d9e676bb13d8ba9337cdb3eff540990d2))
+* Run the code generator ([#125](https://github.com/googleapis/google-cloudevents-java/issues/125)) ([6b4fcf0](https://github.com/googleapis/google-cloudevents-java/commit/6b4fcf014c12b27dec8329037c6368d72f096b37))
+
+
+### Bug Fixes
+
+* Add license to generated files ([#127](https://github.com/googleapis/google-cloudevents-java/issues/127)) ([9b37aa7](https://github.com/googleapis/google-cloudevents-java/commit/9b37aa7046b2c254251e6be2b75d001db46ebbaf))
+* Get data types from events.proto ([#130](https://github.com/googleapis/google-cloudevents-java/issues/130)) ([5800af4](https://github.com/googleapis/google-cloudevents-java/commit/5800af41745ecf9586136eac3a9bdec37d15f076))
+
 ## [0.5.0](https://www.github.com/googleapis/google-cloudevents-java/compare/v0.4.0...v0.5.0) (2021-10-16)
 
 
