@@ -27,7 +27,7 @@ jobs:
       issues: write
       pull-requests: write
     concurrency:
-      group: ${{ github.workflow }}
+      group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     env:
       LIBRARY_CHECKOUT_PATH: library
@@ -70,6 +70,7 @@ jobs:
 
       - name: Get source version
         id: source-version
+        if: ${{ always() }}
         working-directory: ${{ env.DATA_SOURCE_CHECKOUT_PATH }}
         run: |
           rev=$(git rev-parse --short HEAD)
@@ -113,5 +114,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: 'Library generation failed (${{ steps.source-version.outputs.revision }})',
-              body: `See [failed job](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              body: `See [failed job](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
             });
