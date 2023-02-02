@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright 2019 Google Inc.
+# Copyright 2019 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,22 +24,17 @@ if [[ -z "${STAGING_BUCKET}" ]]; then
   exit 1
 fi
 
-if [[ -z "${STAGING_BUCKET_V2}" ]]; then
-  echo "Need to set STAGING_BUCKET_V2 environment variable"
-  exit 1
-fi
-
 # work from the git root directory
 pushd $(dirname "$0")/../../
 
 # install docuploader package
-python3 -m pip install gcp-docuploader
+python3 -m pip install --require-hashes -r .kokoro/requirements.txt
 
 # compile all packages
 mvn clean install -B -q -DskipTests=true
 
-NAME=google-cloudevent-types
-VERSION=$(grep ${NAME}: versions.txt | cut -d: -f3)
+export NAME={{ metadata['repo']['distribution_name'].split(':')|last }}
+export VERSION=$(grep ${NAME}: versions.txt | cut -d: -f3)
 
 # build the docs
 mvn site -B -q
@@ -56,21 +51,3 @@ python3 -m docuploader create-metadata \
 python3 -m docuploader upload . \
   --credentials ${CREDENTIALS} \
   --staging-bucket ${STAGING_BUCKET}
-
-popd
-
-# V2
-mvn clean site -B -q -Ddevsite.template="${KOKORO_GFILE_DIR}/java/"
-
-pushd target/devsite/reference
-
-# create metadata
-python3 -m docuploader create-metadata \
-  --name ${NAME} \
-  --version ${VERSION} \
-  --language java
-
-# upload docs
-python3 -m docuploader upload . \
-  --credentials ${CREDENTIALS} \
-  --staging-bucket ${STAGING_BUCKET_V2}
