@@ -9,3 +9,9 @@ sourceFileExtensions:
   - "sh"
   - "proto"
   - "java"
+ignoreFiles:
+  - ".github/release-please.yml"
+  - ".github/release-trigger.yml"
+  - ".github/header-checker-lint.yml"
+  - ".github/sync-repo-settings.yaml"
+  - ".kokoro/**"
