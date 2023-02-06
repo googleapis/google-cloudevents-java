@@ -27,7 +27,8 @@ public interface CertificateIssuanceConfigEventDataOrBuilder
    *
    *
    * <pre>
-   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion events.
+   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion
+   * events.
    * </pre>
    *
    * <code>
@@ -41,7 +42,8 @@ public interface CertificateIssuanceConfigEventDataOrBuilder
    *
    *
    * <pre>
-   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion events.
+   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion
+   * events.
    * </pre>
    *
    * <code>
@@ -55,7 +57,8 @@ public interface CertificateIssuanceConfigEventDataOrBuilder
    *
    *
    * <pre>
-   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion events.
+   * Optional. The CertificateIssuanceConfig event payload. Unset for deletion
+   * events.
    * </pre>
    *
    * <code>

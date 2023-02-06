@@ -93,7 +93,7 @@ public final class Data {
           + "ppConnectionH\000\210\001\001B\n\n\010_payloadBt\n4com.goo"
           + "gle.events.cloud.beyondcorp.appconnectio"
           + "ns.v1P\001\252\0029Google.Events.Protobuf.Cloud.B"
-          + "eyondcorp.Appconnections.V1b\006proto3"
+          + "eyondCorp.AppConnections.V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

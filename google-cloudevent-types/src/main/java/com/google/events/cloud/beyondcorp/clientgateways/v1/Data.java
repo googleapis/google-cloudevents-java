@@ -62,7 +62,7 @@ public final class Data {
           + "eways.v1.ClientGatewayH\000\210\001\001B\n\n\010_payloadB"
           + "t\n4com.google.events.cloud.beyondcorp.cl"
           + "ientgateways.v1P\001\252\0029Google.Events.Protob"
-          + "uf.Cloud.Beyondcorp.Clientgateways.V1b\006p"
+          + "uf.Cloud.BeyondCorp.ClientGateways.V1b\006p"
           + "roto3"
     };
     descriptor =

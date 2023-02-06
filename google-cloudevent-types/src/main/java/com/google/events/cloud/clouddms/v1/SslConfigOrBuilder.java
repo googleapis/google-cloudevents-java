@@ -27,8 +27,8 @@ public interface SslConfigOrBuilder
    *
    *
    * <pre>
-   * Output only. The ssl config type according to 'client_key', 'client_certificate' and
-   * 'ca_certificate'.
+   * Output only. The ssl config type according to 'client_key',
+   * 'client_certificate' and 'ca_certificate'.
    * </pre>
    *
    * <code>.google.events.cloud.clouddms.v1.SslConfig.SslType type = 1;</code>
@@ -40,8 +40,8 @@ public interface SslConfigOrBuilder
    *
    *
    * <pre>
-   * Output only. The ssl config type according to 'client_key', 'client_certificate' and
-   * 'ca_certificate'.
+   * Output only. The ssl config type according to 'client_key',
+   * 'client_certificate' and 'ca_certificate'.
    * </pre>
    *
    * <code>.google.events.cloud.clouddms.v1.SslConfig.SslType type = 1;</code>

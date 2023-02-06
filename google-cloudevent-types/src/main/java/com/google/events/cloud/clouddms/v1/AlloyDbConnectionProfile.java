@@ -76,7 +76,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
    *
    *
    * <pre>
-   * Required. The AlloyDB cluster ID that this connection profile is associated with.
+   * Required. The AlloyDB cluster ID that this connection profile is associated
+   * with.
    * </pre>
    *
    * <code>string cluster_id = 1;</code>
@@ -99,7 +100,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
    *
    *
    * <pre>
-   * Required. The AlloyDB cluster ID that this connection profile is associated with.
+   * Required. The AlloyDB cluster ID that this connection profile is associated
+   * with.
    * </pre>
    *
    * <code>string cluster_id = 1;</code>
@@ -552,7 +554,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The AlloyDB cluster ID that this connection profile is associated with.
+     * Required. The AlloyDB cluster ID that this connection profile is associated
+     * with.
      * </pre>
      *
      * <code>string cluster_id = 1;</code>
@@ -574,7 +577,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The AlloyDB cluster ID that this connection profile is associated with.
+     * Required. The AlloyDB cluster ID that this connection profile is associated
+     * with.
      * </pre>
      *
      * <code>string cluster_id = 1;</code>
@@ -596,7 +600,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The AlloyDB cluster ID that this connection profile is associated with.
+     * Required. The AlloyDB cluster ID that this connection profile is associated
+     * with.
      * </pre>
      *
      * <code>string cluster_id = 1;</code>
@@ -617,7 +622,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The AlloyDB cluster ID that this connection profile is associated with.
+     * Required. The AlloyDB cluster ID that this connection profile is associated
+     * with.
      * </pre>
      *
      * <code>string cluster_id = 1;</code>
@@ -634,7 +640,8 @@ public final class AlloyDbConnectionProfile extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The AlloyDB cluster ID that this connection profile is associated with.
+     * Required. The AlloyDB cluster ID that this connection profile is associated
+     * with.
      * </pre>
      *
      * <code>string cluster_id = 1;</code>

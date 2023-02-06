@@ -27,8 +27,8 @@ public interface ReverseSshConnectivityOrBuilder
    *
    *
    * <pre>
-   * Required. The IP of the virtual machine (Compute Engine) used as the bastion server
-   * for the SSH tunnel.
+   * Required. The IP of the virtual machine (Compute Engine) used as the
+   * bastion server for the SSH tunnel.
    * </pre>
    *
    * <code>string vm_ip = 1;</code>
@@ -40,8 +40,8 @@ public interface ReverseSshConnectivityOrBuilder
    *
    *
    * <pre>
-   * Required. The IP of the virtual machine (Compute Engine) used as the bastion server
-   * for the SSH tunnel.
+   * Required. The IP of the virtual machine (Compute Engine) used as the
+   * bastion server for the SSH tunnel.
    * </pre>
    *
    * <code>string vm_ip = 1;</code>
@@ -54,8 +54,8 @@ public interface ReverseSshConnectivityOrBuilder
    *
    *
    * <pre>
-   * Required. The forwarding port of the virtual machine (Compute Engine) used as the
-   * bastion server for the SSH tunnel.
+   * Required. The forwarding port of the virtual machine (Compute Engine) used
+   * as the bastion server for the SSH tunnel.
    * </pre>
    *
    * <code>int32 vm_port = 2;</code>

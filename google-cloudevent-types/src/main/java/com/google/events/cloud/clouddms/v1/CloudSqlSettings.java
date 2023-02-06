@@ -1598,9 +1598,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-   * instance is located. Used when the Cloud SQL database availability type is
-   * REGIONAL (i.e. multiple zones / highly available).
+   * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+   * database instance is located. Used when the Cloud SQL database availability
+   * type is REGIONAL (i.e. multiple zones / highly available).
    * </pre>
    *
    * <code>string secondary_zone = 18;</code>
@@ -1623,9 +1623,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-   * instance is located. Used when the Cloud SQL database availability type is
-   * REGIONAL (i.e. multiple zones / highly available).
+   * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+   * database instance is located. Used when the Cloud SQL database availability
+   * type is REGIONAL (i.e. multiple zones / highly available).
    * </pre>
    *
    * <code>string secondary_zone = 18;</code>
@@ -4451,9 +4451,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-     * instance is located. Used when the Cloud SQL database availability type is
-     * REGIONAL (i.e. multiple zones / highly available).
+     * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+     * database instance is located. Used when the Cloud SQL database availability
+     * type is REGIONAL (i.e. multiple zones / highly available).
      * </pre>
      *
      * <code>string secondary_zone = 18;</code>
@@ -4475,9 +4475,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-     * instance is located. Used when the Cloud SQL database availability type is
-     * REGIONAL (i.e. multiple zones / highly available).
+     * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+     * database instance is located. Used when the Cloud SQL database availability
+     * type is REGIONAL (i.e. multiple zones / highly available).
      * </pre>
      *
      * <code>string secondary_zone = 18;</code>
@@ -4499,9 +4499,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-     * instance is located. Used when the Cloud SQL database availability type is
-     * REGIONAL (i.e. multiple zones / highly available).
+     * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+     * database instance is located. Used when the Cloud SQL database availability
+     * type is REGIONAL (i.e. multiple zones / highly available).
      * </pre>
      *
      * <code>string secondary_zone = 18;</code>
@@ -4522,9 +4522,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-     * instance is located. Used when the Cloud SQL database availability type is
-     * REGIONAL (i.e. multiple zones / highly available).
+     * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+     * database instance is located. Used when the Cloud SQL database availability
+     * type is REGIONAL (i.e. multiple zones / highly available).
      * </pre>
      *
      * <code>string secondary_zone = 18;</code>
@@ -4541,9 +4541,9 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Optional. The Google Cloud Platform zone where the failover Cloud SQL database
-     * instance is located. Used when the Cloud SQL database availability type is
-     * REGIONAL (i.e. multiple zones / highly available).
+     * Optional. The Google Cloud Platform zone where the failover Cloud SQL
+     * database instance is located. Used when the Cloud SQL database availability
+     * type is REGIONAL (i.e. multiple zones / highly available).
      * </pre>
      *
      * <code>string secondary_zone = 18;</code>

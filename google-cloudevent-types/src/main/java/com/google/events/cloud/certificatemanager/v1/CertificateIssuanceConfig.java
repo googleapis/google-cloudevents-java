@@ -2306,8 +2306,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * Required. The CA that issues the workload certificate. It includes the CA address,
-   * type, authentication to CA service, etc.
+   * Required. The CA that issues the workload certificate. It includes the CA
+   * address, type, authentication to CA service, etc.
    * </pre>
    *
    * <code>
@@ -2324,8 +2324,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * Required. The CA that issues the workload certificate. It includes the CA address,
-   * type, authentication to CA service, etc.
+   * Required. The CA that issues the workload certificate. It includes the CA
+   * address, type, authentication to CA service, etc.
    * </pre>
    *
    * <code>
@@ -2347,8 +2347,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * Required. The CA that issues the workload certificate. It includes the CA address,
-   * type, authentication to CA service, etc.
+   * Required. The CA that issues the workload certificate. It includes the CA
+   * address, type, authentication to CA service, etc.
    * </pre>
    *
    * <code>
@@ -2417,9 +2417,9 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * Required. Specifies the percentage of elapsed time of the certificate lifetime to
-   * wait before renewing the certificate. Must be a number between 1-99,
-   * inclusive.
+   * Required. Specifies the percentage of elapsed time of the certificate
+   * lifetime to wait before renewing the certificate. Must be a number between
+   * 1-99, inclusive.
    * </pre>
    *
    * <code>int32 rotation_window_percentage = 8;</code>
@@ -3856,8 +3856,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -3873,8 +3873,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -3899,8 +3899,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -3927,8 +3927,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -3952,8 +3952,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -3985,8 +3985,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -4007,8 +4007,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -4026,8 +4026,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -4050,8 +4050,8 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. The CA that issues the workload certificate. It includes the CA address,
-     * type, authentication to CA service, etc.
+     * Required. The CA that issues the workload certificate. It includes the CA
+     * address, type, authentication to CA service, etc.
      * </pre>
      *
      * <code>
@@ -4265,9 +4265,9 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. Specifies the percentage of elapsed time of the certificate lifetime to
-     * wait before renewing the certificate. Must be a number between 1-99,
-     * inclusive.
+     * Required. Specifies the percentage of elapsed time of the certificate
+     * lifetime to wait before renewing the certificate. Must be a number between
+     * 1-99, inclusive.
      * </pre>
      *
      * <code>int32 rotation_window_percentage = 8;</code>
@@ -4282,9 +4282,9 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. Specifies the percentage of elapsed time of the certificate lifetime to
-     * wait before renewing the certificate. Must be a number between 1-99,
-     * inclusive.
+     * Required. Specifies the percentage of elapsed time of the certificate
+     * lifetime to wait before renewing the certificate. Must be a number between
+     * 1-99, inclusive.
      * </pre>
      *
      * <code>int32 rotation_window_percentage = 8;</code>
@@ -4303,9 +4303,9 @@ public final class CertificateIssuanceConfig extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * Required. Specifies the percentage of elapsed time of the certificate lifetime to
-     * wait before renewing the certificate. Must be a number between 1-99,
-     * inclusive.
+     * Required. Specifies the percentage of elapsed time of the certificate
+     * lifetime to wait before renewing the certificate. Must be a number between
+     * 1-99, inclusive.
      * </pre>
      *
      * <code>int32 rotation_window_percentage = 8;</code>

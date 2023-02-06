@@ -89,7 +89,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -102,7 +103,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -115,7 +117,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -129,7 +132,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -142,7 +146,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -155,7 +160,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -1313,7 +1319,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -1328,7 +1335,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -1356,7 +1364,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
      * </pre>
      *
@@ -1386,7 +1395,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -1401,7 +1411,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -1429,7 +1440,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. This field returns the resource name in the following format:
+     * Output only. This field returns the resource name in the following
+     * format:
      * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
      * </pre>
      *
@@ -2056,7 +2068,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2072,7 +2085,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2101,7 +2115,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2130,7 +2145,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2152,7 +2168,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2172,7 +2189,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetHttpsProxies/&#42;`.
        * </pre>
        *
@@ -2196,7 +2214,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *
@@ -2212,7 +2231,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *
@@ -2241,7 +2261,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *
@@ -2270,7 +2291,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *
@@ -2292,7 +2314,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *
@@ -2312,7 +2335,8 @@ public final class CertificateMap extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. This field returns the resource name in the following format:
+       * Output only. This field returns the resource name in the following
+       * format:
        * `//compute.googleapis.com/projects/&#42;&#47;global/targetSslProxies/&#42;`.
        * </pre>
        *

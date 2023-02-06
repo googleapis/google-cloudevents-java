@@ -27,7 +27,8 @@ public interface CloudSqlConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Output only. The Cloud SQL instance ID that this connection profile is associated with.
+   * Output only. The Cloud SQL instance ID that this connection profile is
+   * associated with.
    * </pre>
    *
    * <code>string cloud_sql_id = 1;</code>
@@ -39,7 +40,8 @@ public interface CloudSqlConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Output only. The Cloud SQL instance ID that this connection profile is associated with.
+   * Output only. The Cloud SQL instance ID that this connection profile is
+   * associated with.
    * </pre>
    *
    * <code>string cloud_sql_id = 1;</code>
@@ -137,9 +139,9 @@ public interface CloudSqlConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Output only. The Cloud SQL database instance's additional (outgoing) public IP. Used
-   * when the Cloud SQL database availability type is REGIONAL (i.e. multiple
-   * zones / highly available).
+   * Output only. The Cloud SQL database instance's additional (outgoing) public
+   * IP. Used when the Cloud SQL database availability type is REGIONAL (i.e.
+   * multiple zones / highly available).
    * </pre>
    *
    * <code>string additional_public_ip = 5;</code>
@@ -151,9 +153,9 @@ public interface CloudSqlConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Output only. The Cloud SQL database instance's additional (outgoing) public IP. Used
-   * when the Cloud SQL database availability type is REGIONAL (i.e. multiple
-   * zones / highly available).
+   * Output only. The Cloud SQL database instance's additional (outgoing) public
+   * IP. Used when the Cloud SQL database availability type is REGIONAL (i.e.
+   * multiple zones / highly available).
    * </pre>
    *
    * <code>string additional_public_ip = 5;</code>

@@ -2952,8 +2952,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The timestamp when the migration job resource was last updated.
-   * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+   * Output only. The timestamp when the migration job resource was last
+   * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
    * Example: "2014-10-02T15:01:23.045123456Z".
    * </pre>
    *
@@ -2969,8 +2969,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The timestamp when the migration job resource was last updated.
-   * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+   * Output only. The timestamp when the migration job resource was last
+   * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
    * Example: "2014-10-02T15:01:23.045123456Z".
    * </pre>
    *
@@ -2986,8 +2986,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The timestamp when the migration job resource was last updated.
-   * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+   * Output only. The timestamp when the migration job resource was last
+   * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
    * Example: "2014-10-02T15:01:23.045123456Z".
    * </pre>
    *
@@ -3659,8 +3659,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The duration of the migration job (in seconds). A duration in seconds
-   * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+   * Output only. The duration of the migration job (in seconds). A duration in
+   * seconds with up to nine fractional digits, terminated by 's'. Example:
+   * "3.5s".
    * </pre>
    *
    * <code>.google.protobuf.Duration duration = 12;</code>
@@ -3675,8 +3676,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The duration of the migration job (in seconds). A duration in seconds
-   * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+   * Output only. The duration of the migration job (in seconds). A duration in
+   * seconds with up to nine fractional digits, terminated by 's'. Example:
+   * "3.5s".
    * </pre>
    *
    * <code>.google.protobuf.Duration duration = 12;</code>
@@ -3691,8 +3693,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The duration of the migration job (in seconds). A duration in seconds
-   * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+   * Output only. The duration of the migration job (in seconds). A duration in
+   * seconds with up to nine fractional digits, terminated by 's'. Example:
+   * "3.5s".
    * </pre>
    *
    * <code>.google.protobuf.Duration duration = 12;</code>
@@ -3855,7 +3858,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. If the migration job is completed, the time when it was completed.
+   * Output only. If the migration job is completed, the time when it was
+   * completed.
    * </pre>
    *
    * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -3870,7 +3874,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. If the migration job is completed, the time when it was completed.
+   * Output only. If the migration job is completed, the time when it was
+   * completed.
    * </pre>
    *
    * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -3885,7 +3890,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. If the migration job is completed, the time when it was completed.
+   * Output only. If the migration job is completed, the time when it was
+   * completed.
    * </pre>
    *
    * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -5176,8 +5182,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5192,8 +5198,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5214,8 +5220,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5238,8 +5244,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5259,8 +5265,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5286,8 +5292,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5307,8 +5313,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5323,8 +5329,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -5343,8 +5349,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The timestamp when the migration job resource was last updated.
-     * A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+     * Output only. The timestamp when the migration job resource was last
+     * updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
      * Example: "2014-10-02T15:01:23.045123456Z".
      * </pre>
      *
@@ -7152,8 +7158,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7167,8 +7174,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7186,8 +7194,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7209,8 +7218,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7229,8 +7239,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7255,8 +7266,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7275,8 +7287,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7290,8 +7303,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7307,8 +7321,9 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The duration of the migration job (in seconds). A duration in seconds
-     * with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+     * Output only. The duration of the migration job (in seconds). A duration in
+     * seconds with up to nine fractional digits, terminated by 's'. Example:
+     * "3.5s".
      * </pre>
      *
      * <code>.google.protobuf.Duration duration = 12;</code>
@@ -7887,7 +7902,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -7901,7 +7917,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -7919,7 +7936,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -7941,7 +7959,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -7960,7 +7979,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -7985,7 +8005,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -8004,7 +8025,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -8018,7 +8040,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>
@@ -8034,7 +8057,8 @@ public final class MigrationJob extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. If the migration job is completed, the time when it was completed.
+     * Output only. If the migration job is completed, the time when it was
+     * completed.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp end_time = 16;</code>

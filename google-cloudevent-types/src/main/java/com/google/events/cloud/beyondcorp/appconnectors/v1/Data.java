@@ -98,7 +98,7 @@ public final class Data {
           + "\n\tUNHEALTHY\020\002\022\020\n\014UNRESPONSIVE\020\003\022\014\n\010DEGRA"
           + "DED\020\004Br\n3com.google.events.cloud.beyondc"
           + "orp.appconnectors.v1P\001\252\0028Google.Events.P"
-          + "rotobuf.Cloud.Beyondcorp.Appconnectors.V"
+          + "rotobuf.Cloud.BeyondCorp.AppConnectors.V"
           + "1b\006proto3"
     };
     descriptor =

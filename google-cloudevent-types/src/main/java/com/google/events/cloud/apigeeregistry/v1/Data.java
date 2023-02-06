@@ -196,7 +196,7 @@ public final class Data {
           + "google.events.cloud.apigeeregistry.v1.Ap"
           + "iH\000\210\001\001B\n\n\010_payloadB^\n)com.google.events."
           + "cloud.apigeeregistry.v1P\001\252\002.Google.Event"
-          + "s.Protobuf.Cloud.Apigeeregistry.V1b\006prot"
+          + "s.Protobuf.Cloud.ApigeeRegistry.V1b\006prot"
           + "o3"
     };
     descriptor =

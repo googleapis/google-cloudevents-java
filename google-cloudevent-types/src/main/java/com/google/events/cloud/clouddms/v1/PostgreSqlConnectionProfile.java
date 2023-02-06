@@ -148,8 +148,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
    *
    *
    * <pre>
-   * Required. The username that Database Migration Service will use to connect to the
-   * database. The value is encrypted when stored in Database Migration Service.
+   * Required. The username that Database Migration Service will use to connect
+   * to the database. The value is encrypted when stored in Database Migration
+   * Service.
    * </pre>
    *
    * <code>string username = 3;</code>
@@ -172,8 +173,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
    *
    *
    * <pre>
-   * Required. The username that Database Migration Service will use to connect to the
-   * database. The value is encrypted when stored in Database Migration Service.
+   * Required. The username that Database Migration Service will use to connect
+   * to the database. The value is encrypted when stored in Database Migration
+   * Service.
    * </pre>
    *
    * <code>string username = 3;</code>
@@ -316,8 +318,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
    *
    *
    * <pre>
-   * Output only. If the source is a Cloud SQL database, this field indicates the network
-   * architecture it's associated with.
+   * Output only. If the source is a Cloud SQL database, this field indicates
+   * the network architecture it's associated with.
    * </pre>
    *
    * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -332,8 +334,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
    *
    *
    * <pre>
-   * Output only. If the source is a Cloud SQL database, this field indicates the network
-   * architecture it's associated with.
+   * Output only. If the source is a Cloud SQL database, this field indicates
+   * the network architecture it's associated with.
    * </pre>
    *
    * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -1010,8 +1012,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Required. The username that Database Migration Service will use to connect to the
-     * database. The value is encrypted when stored in Database Migration Service.
+     * Required. The username that Database Migration Service will use to connect
+     * to the database. The value is encrypted when stored in Database Migration
+     * Service.
      * </pre>
      *
      * <code>string username = 3;</code>
@@ -1033,8 +1036,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Required. The username that Database Migration Service will use to connect to the
-     * database. The value is encrypted when stored in Database Migration Service.
+     * Required. The username that Database Migration Service will use to connect
+     * to the database. The value is encrypted when stored in Database Migration
+     * Service.
      * </pre>
      *
      * <code>string username = 3;</code>
@@ -1056,8 +1060,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Required. The username that Database Migration Service will use to connect to the
-     * database. The value is encrypted when stored in Database Migration Service.
+     * Required. The username that Database Migration Service will use to connect
+     * to the database. The value is encrypted when stored in Database Migration
+     * Service.
      * </pre>
      *
      * <code>string username = 3;</code>
@@ -1078,8 +1083,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Required. The username that Database Migration Service will use to connect to the
-     * database. The value is encrypted when stored in Database Migration Service.
+     * Required. The username that Database Migration Service will use to connect
+     * to the database. The value is encrypted when stored in Database Migration
+     * Service.
      * </pre>
      *
      * <code>string username = 3;</code>
@@ -1096,8 +1102,9 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Required. The username that Database Migration Service will use to connect to the
-     * database. The value is encrypted when stored in Database Migration Service.
+     * Required. The username that Database Migration Service will use to connect
+     * to the database. The value is encrypted when stored in Database Migration
+     * Service.
      * </pre>
      *
      * <code>string username = 3;</code>
@@ -1468,8 +1475,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Output only. If the source is a Cloud SQL database, this field indicates the network
-     * architecture it's associated with.
+     * Output only. If the source is a Cloud SQL database, this field indicates
+     * the network architecture it's associated with.
      * </pre>
      *
      * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -1484,8 +1491,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Output only. If the source is a Cloud SQL database, this field indicates the network
-     * architecture it's associated with.
+     * Output only. If the source is a Cloud SQL database, this field indicates
+     * the network architecture it's associated with.
      * </pre>
      *
      * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -1503,8 +1510,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Output only. If the source is a Cloud SQL database, this field indicates the network
-     * architecture it's associated with.
+     * Output only. If the source is a Cloud SQL database, this field indicates
+     * the network architecture it's associated with.
      * </pre>
      *
      * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -1523,8 +1530,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Output only. If the source is a Cloud SQL database, this field indicates the network
-     * architecture it's associated with.
+     * Output only. If the source is a Cloud SQL database, this field indicates
+     * the network architecture it's associated with.
      * </pre>
      *
      * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
@@ -1546,8 +1553,8 @@ public final class PostgreSqlConnectionProfile extends com.google.protobuf.Gener
      *
      *
      * <pre>
-     * Output only. If the source is a Cloud SQL database, this field indicates the network
-     * architecture it's associated with.
+     * Output only. If the source is a Cloud SQL database, this field indicates
+     * the network architecture it's associated with.
      * </pre>
      *
      * <code>.google.events.cloud.clouddms.v1.NetworkArchitecture network_architecture = 8;</code>
