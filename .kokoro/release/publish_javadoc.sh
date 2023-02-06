@@ -33,7 +33,7 @@ python3 -m pip install --require-hashes -r .kokoro/requirements.txt
 # compile all packages
 mvn clean install -B -q -DskipTests=true
 
-export NAME={{ metadata['repo']['distribution_name'].split(':')|last }}
+export NAME=google-cloudevent-types
 export VERSION=$(grep ${NAME}: versions.txt | cut -d: -f3)
 
 # build the docs
