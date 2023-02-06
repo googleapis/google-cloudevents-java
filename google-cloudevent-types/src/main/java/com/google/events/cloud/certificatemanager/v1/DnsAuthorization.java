@@ -1506,9 +1506,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-   * single domain and its wildcard, e.g. authorization for `example.com` can
-   * be used to issue certificates for `example.com` and `*.example.com`.
+   * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+   * resource covers a single domain and its wildcard, e.g. authorization for
+   * `example.com` can be used to issue certificates for `example.com` and
+   * `*.example.com`.
    * </pre>
    *
    * <code>string domain = 6;</code>
@@ -1531,9 +1532,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-   * single domain and its wildcard, e.g. authorization for `example.com` can
-   * be used to issue certificates for `example.com` and `*.example.com`.
+   * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+   * resource covers a single domain and its wildcard, e.g. authorization for
+   * `example.com` can be used to issue certificates for `example.com` and
+   * `*.example.com`.
    * </pre>
    *
    * <code>string domain = 6;</code>
@@ -1560,7 +1562,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Output only. DNS Resource Record that needs to be added to DNS configuration.
+   * Output only. DNS Resource Record that needs to be added to DNS
+   * configuration.
    * </pre>
    *
    * <code>
@@ -1577,7 +1580,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Output only. DNS Resource Record that needs to be added to DNS configuration.
+   * Output only. DNS Resource Record that needs to be added to DNS
+   * configuration.
    * </pre>
    *
    * <code>
@@ -1598,7 +1602,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Output only. DNS Resource Record that needs to be added to DNS configuration.
+   * Output only. DNS Resource Record that needs to be added to DNS
+   * configuration.
    * </pre>
    *
    * <code>
@@ -2918,9 +2923,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-     * single domain and its wildcard, e.g. authorization for `example.com` can
-     * be used to issue certificates for `example.com` and `*.example.com`.
+     * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+     * resource covers a single domain and its wildcard, e.g. authorization for
+     * `example.com` can be used to issue certificates for `example.com` and
+     * `*.example.com`.
      * </pre>
      *
      * <code>string domain = 6;</code>
@@ -2942,9 +2948,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-     * single domain and its wildcard, e.g. authorization for `example.com` can
-     * be used to issue certificates for `example.com` and `*.example.com`.
+     * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+     * resource covers a single domain and its wildcard, e.g. authorization for
+     * `example.com` can be used to issue certificates for `example.com` and
+     * `*.example.com`.
      * </pre>
      *
      * <code>string domain = 6;</code>
@@ -2966,9 +2973,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-     * single domain and its wildcard, e.g. authorization for `example.com` can
-     * be used to issue certificates for `example.com` and `*.example.com`.
+     * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+     * resource covers a single domain and its wildcard, e.g. authorization for
+     * `example.com` can be used to issue certificates for `example.com` and
+     * `*.example.com`.
      * </pre>
      *
      * <code>string domain = 6;</code>
@@ -2989,9 +2997,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-     * single domain and its wildcard, e.g. authorization for `example.com` can
-     * be used to issue certificates for `example.com` and `*.example.com`.
+     * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+     * resource covers a single domain and its wildcard, e.g. authorization for
+     * `example.com` can be used to issue certificates for `example.com` and
+     * `*.example.com`.
      * </pre>
      *
      * <code>string domain = 6;</code>
@@ -3008,9 +3017,10 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Required. Immutable. A domain that is being authorized. A DnsAuthorization resource covers a
-     * single domain and its wildcard, e.g. authorization for `example.com` can
-     * be used to issue certificates for `example.com` and `*.example.com`.
+     * Required. Immutable. A domain that is being authorized. A DnsAuthorization
+     * resource covers a single domain and its wildcard, e.g. authorization for
+     * `example.com` can be used to issue certificates for `example.com` and
+     * `*.example.com`.
      * </pre>
      *
      * <code>string domain = 6;</code>
@@ -3042,7 +3052,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3058,7 +3069,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3082,7 +3094,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3107,7 +3120,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3130,7 +3144,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3160,7 +3175,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3181,7 +3197,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3198,7 +3215,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>
@@ -3220,7 +3238,8 @@ public final class DnsAuthorization extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Output only. DNS Resource Record that needs to be added to DNS configuration.
+     * Output only. DNS Resource Record that needs to be added to DNS
+     * configuration.
      * </pre>
      *
      * <code>

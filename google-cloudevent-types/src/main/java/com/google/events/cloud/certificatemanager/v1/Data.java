@@ -270,7 +270,7 @@ public final class Data {
           + "ate\022\035\n\031SERVING_STATE_UNSPECIFIED\020\000\022\n\n\006AC"
           + "TIVE\020\001\022\013\n\007PENDING\020\002Bf\n-com.google.events"
           + ".cloud.certificatemanager.v1P\001\252\0022Google."
-          + "Events.Protobuf.Cloud.Certificatemanager"
+          + "Events.Protobuf.Cloud.CertificateManager"
           + ".V1b\006proto3"
     };
     descriptor =

@@ -108,7 +108,7 @@ public final class Data {
           + "\210\001\001B\n\n\010_payloadB\206\001\n=com.google.events.cl"
           + "oud.beyondcorp.clientconnectorservices.v"
           + "1P\001\252\002BGoogle.Events.Protobuf.Cloud.Beyon"
-          + "dcorp.Clientconnectorservices.V1b\006proto3"
+          + "dCorp.ClientConnectorServices.V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

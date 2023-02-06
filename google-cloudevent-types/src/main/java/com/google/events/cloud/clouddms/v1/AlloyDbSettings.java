@@ -853,8 +853,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-     * expression "[a-z0-9-]+".
+     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+     * regex expression "[a-z0-9-]+".
      * </pre>
      *
      * <code>string id = 1;</code>
@@ -866,8 +866,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-     * expression "[a-z0-9-]+".
+     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+     * regex expression "[a-z0-9-]+".
      * </pre>
      *
      * <code>string id = 1;</code>
@@ -1764,8 +1764,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-     * expression "[a-z0-9-]+".
+     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+     * regex expression "[a-z0-9-]+".
      * </pre>
      *
      * <code>string id = 1;</code>
@@ -1788,8 +1788,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-     * expression "[a-z0-9-]+".
+     * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+     * regex expression "[a-z0-9-]+".
      * </pre>
      *
      * <code>string id = 1;</code>
@@ -2669,8 +2669,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
        *
        *
        * <pre>
-       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-       * expression "[a-z0-9-]+".
+       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+       * regex expression "[a-z0-9-]+".
        * </pre>
        *
        * <code>string id = 1;</code>
@@ -2692,8 +2692,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
        *
        *
        * <pre>
-       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-       * expression "[a-z0-9-]+".
+       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+       * regex expression "[a-z0-9-]+".
        * </pre>
        *
        * <code>string id = 1;</code>
@@ -2715,8 +2715,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
        *
        *
        * <pre>
-       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-       * expression "[a-z0-9-]+".
+       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+       * regex expression "[a-z0-9-]+".
        * </pre>
        *
        * <code>string id = 1;</code>
@@ -2737,8 +2737,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
        *
        *
        * <pre>
-       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-       * expression "[a-z0-9-]+".
+       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+       * regex expression "[a-z0-9-]+".
        * </pre>
        *
        * <code>string id = 1;</code>
@@ -2755,8 +2755,8 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
        *
        *
        * <pre>
-       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the regex
-       * expression "[a-z0-9-]+".
+       * Required. The ID of the AlloyDB primary instance. The ID must satisfy the
+       * regex expression "[a-z0-9-]+".
        * </pre>
        *
        * <code>string id = 1;</code>
@@ -3551,11 +3551,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
    *
    *
    * <pre>
-   * Required. The resource link for the VPC network in which cluster resources are
-   * created and from which they are accessible via Private IP. The network must
-   * belong to the same project as the cluster. It is specified in the form:
-   * "projects/{project_number}/global/networks/{network_id}".
-   * This is required to create a cluster.
+   * Required. The resource link for the VPC network in which cluster resources
+   * are created and from which they are accessible via Private IP. The network
+   * must belong to the same project as the cluster. It is specified in the
+   * form: "projects/{project_number}/global/networks/{network_id}". This is
+   * required to create a cluster.
    * </pre>
    *
    * <code>string vpc_network = 2;</code>
@@ -3578,11 +3578,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
    *
    *
    * <pre>
-   * Required. The resource link for the VPC network in which cluster resources are
-   * created and from which they are accessible via Private IP. The network must
-   * belong to the same project as the cluster. It is specified in the form:
-   * "projects/{project_number}/global/networks/{network_id}".
-   * This is required to create a cluster.
+   * Required. The resource link for the VPC network in which cluster resources
+   * are created and from which they are accessible via Private IP. The network
+   * must belong to the same project as the cluster. It is specified in the
+   * form: "projects/{project_number}/global/networks/{network_id}". This is
+   * required to create a cluster.
    * </pre>
    *
    * <code>string vpc_network = 2;</code>
@@ -4190,11 +4190,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The resource link for the VPC network in which cluster resources are
-     * created and from which they are accessible via Private IP. The network must
-     * belong to the same project as the cluster. It is specified in the form:
-     * "projects/{project_number}/global/networks/{network_id}".
-     * This is required to create a cluster.
+     * Required. The resource link for the VPC network in which cluster resources
+     * are created and from which they are accessible via Private IP. The network
+     * must belong to the same project as the cluster. It is specified in the
+     * form: "projects/{project_number}/global/networks/{network_id}". This is
+     * required to create a cluster.
      * </pre>
      *
      * <code>string vpc_network = 2;</code>
@@ -4216,11 +4216,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The resource link for the VPC network in which cluster resources are
-     * created and from which they are accessible via Private IP. The network must
-     * belong to the same project as the cluster. It is specified in the form:
-     * "projects/{project_number}/global/networks/{network_id}".
-     * This is required to create a cluster.
+     * Required. The resource link for the VPC network in which cluster resources
+     * are created and from which they are accessible via Private IP. The network
+     * must belong to the same project as the cluster. It is specified in the
+     * form: "projects/{project_number}/global/networks/{network_id}". This is
+     * required to create a cluster.
      * </pre>
      *
      * <code>string vpc_network = 2;</code>
@@ -4242,11 +4242,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The resource link for the VPC network in which cluster resources are
-     * created and from which they are accessible via Private IP. The network must
-     * belong to the same project as the cluster. It is specified in the form:
-     * "projects/{project_number}/global/networks/{network_id}".
-     * This is required to create a cluster.
+     * Required. The resource link for the VPC network in which cluster resources
+     * are created and from which they are accessible via Private IP. The network
+     * must belong to the same project as the cluster. It is specified in the
+     * form: "projects/{project_number}/global/networks/{network_id}". This is
+     * required to create a cluster.
      * </pre>
      *
      * <code>string vpc_network = 2;</code>
@@ -4267,11 +4267,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The resource link for the VPC network in which cluster resources are
-     * created and from which they are accessible via Private IP. The network must
-     * belong to the same project as the cluster. It is specified in the form:
-     * "projects/{project_number}/global/networks/{network_id}".
-     * This is required to create a cluster.
+     * Required. The resource link for the VPC network in which cluster resources
+     * are created and from which they are accessible via Private IP. The network
+     * must belong to the same project as the cluster. It is specified in the
+     * form: "projects/{project_number}/global/networks/{network_id}". This is
+     * required to create a cluster.
      * </pre>
      *
      * <code>string vpc_network = 2;</code>
@@ -4288,11 +4288,11 @@ public final class AlloyDbSettings extends com.google.protobuf.GeneratedMessageV
      *
      *
      * <pre>
-     * Required. The resource link for the VPC network in which cluster resources are
-     * created and from which they are accessible via Private IP. The network must
-     * belong to the same project as the cluster. It is specified in the form:
-     * "projects/{project_number}/global/networks/{network_id}".
-     * This is required to create a cluster.
+     * Required. The resource link for the VPC network in which cluster resources
+     * are created and from which they are accessible via Private IP. The network
+     * must belong to the same project as the cluster. It is specified in the
+     * form: "projects/{project_number}/global/networks/{network_id}". This is
+     * required to create a cluster.
      * </pre>
      *
      * <code>string vpc_network = 2;</code>

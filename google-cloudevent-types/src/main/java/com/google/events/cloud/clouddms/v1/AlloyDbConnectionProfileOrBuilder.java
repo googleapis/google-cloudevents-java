@@ -27,7 +27,8 @@ public interface AlloyDbConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Required. The AlloyDB cluster ID that this connection profile is associated with.
+   * Required. The AlloyDB cluster ID that this connection profile is associated
+   * with.
    * </pre>
    *
    * <code>string cluster_id = 1;</code>
@@ -39,7 +40,8 @@ public interface AlloyDbConnectionProfileOrBuilder
    *
    *
    * <pre>
-   * Required. The AlloyDB cluster ID that this connection profile is associated with.
+   * Required. The AlloyDB cluster ID that this connection profile is associated
+   * with.
    * </pre>
    *
    * <code>string cluster_id = 1;</code>

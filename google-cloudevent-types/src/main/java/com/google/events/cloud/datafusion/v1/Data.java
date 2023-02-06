@@ -153,7 +153,7 @@ public final class Data {
           + "\n\007payload\030\001 \001(\0132-.google.events.cloud.da"
           + "tafusion.v1.DnsPeeringH\000\210\001\001B\n\n\010_payloadB"
           + "V\n%com.google.events.cloud.datafusion.v1"
-          + "P\001\252\002*Google.Events.Protobuf.Cloud.Datafu"
+          + "P\001\252\002*Google.Events.Protobuf.Cloud.DataFu"
           + "sion.V1b\006proto3"
     };
     descriptor =

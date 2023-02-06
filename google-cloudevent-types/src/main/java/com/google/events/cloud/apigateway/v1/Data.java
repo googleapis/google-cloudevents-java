@@ -143,7 +143,7 @@ public final class Data {
           + "<\n\007payload\030\001 \001(\0132&.google.events.cloud.a"
           + "pigateway.v1.ApiH\000\210\001\001B\n\n\010_payloadBV\n%com"
           + ".google.events.cloud.apigateway.v1P\001\252\002*G"
-          + "oogle.Events.Protobuf.Cloud.Apigateway.V"
+          + "oogle.Events.Protobuf.Cloud.ApiGateway.V"
           + "1b\006proto3"
     };
     descriptor =

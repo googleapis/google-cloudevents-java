@@ -83,8 +83,8 @@ public final class Data {
           + "nts.cloud.beyondcorp.appgateways.v1.AppG"
           + "atewayH\000\210\001\001B\n\n\010_payloadBn\n1com.google.ev"
           + "ents.cloud.beyondcorp.appgateways.v1P\001\252\002"
-          + "6Google.Events.Protobuf.Cloud.Beyondcorp"
-          + ".Appgateways.V1b\006proto3"
+          + "6Google.Events.Protobuf.Cloud.BeyondCorp"
+          + ".AppGateways.V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

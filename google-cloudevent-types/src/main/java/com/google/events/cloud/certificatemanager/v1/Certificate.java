@@ -697,8 +697,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -710,8 +711,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -723,8 +725,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -737,8 +740,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -752,7 +756,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -764,7 +769,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -776,7 +782,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -789,7 +796,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -803,8 +811,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-     * private PKI certificates in the format
+     * Immutable. The resource name for a
+     * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+     * used to configure private PKI certificates in the format
      * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
      * If this field is not set, the certificates will instead be publicly
      * signed as documented at
@@ -820,8 +829,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-     * private PKI certificates in the format
+     * Immutable. The resource name for a
+     * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+     * used to configure private PKI certificates in the format
      * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
      * If this field is not set, the certificates will instead be publicly
      * signed as documented at
@@ -867,7 +877,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -881,7 +892,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -896,7 +908,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -911,8 +924,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -927,8 +940,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -942,8 +955,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -955,8 +968,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -972,8 +985,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -1253,9 +1266,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation about the issue. Provided to help address
-       * the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use Reason enum.
+       * Output only. Human readable explanation about the issue. Provided to
+       * help address the configuration issues. Not guaranteed to be stable. For
+       * programmatic access use Reason enum.
        * </pre>
        *
        * <code>string details = 2;</code>
@@ -1267,9 +1280,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation about the issue. Provided to help address
-       * the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use Reason enum.
+       * Output only. Human readable explanation about the issue. Provided to
+       * help address the configuration issues. Not guaranteed to be stable. For
+       * programmatic access use Reason enum.
        * </pre>
        *
        * <code>string details = 2;</code>
@@ -1534,9 +1547,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation about the issue. Provided to help address
-       * the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use Reason enum.
+       * Output only. Human readable explanation about the issue. Provided to
+       * help address the configuration issues. Not guaranteed to be stable. For
+       * programmatic access use Reason enum.
        * </pre>
        *
        * <code>string details = 2;</code>
@@ -1559,9 +1572,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation about the issue. Provided to help address
-       * the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use Reason enum.
+       * Output only. Human readable explanation about the issue. Provided to
+       * help address the configuration issues. Not guaranteed to be stable. For
+       * programmatic access use Reason enum.
        * </pre>
        *
        * <code>string details = 2;</code>
@@ -2131,9 +2144,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation about the issue. Provided to help address
-         * the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use Reason enum.
+         * Output only. Human readable explanation about the issue. Provided to
+         * help address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
          * </pre>
          *
          * <code>string details = 2;</code>
@@ -2155,9 +2168,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation about the issue. Provided to help address
-         * the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use Reason enum.
+         * Output only. Human readable explanation about the issue. Provided to
+         * help address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
          * </pre>
          *
          * <code>string details = 2;</code>
@@ -2179,9 +2192,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation about the issue. Provided to help address
-         * the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use Reason enum.
+         * Output only. Human readable explanation about the issue. Provided to
+         * help address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
          * </pre>
          *
          * <code>string details = 2;</code>
@@ -2202,9 +2215,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation about the issue. Provided to help address
-         * the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use Reason enum.
+         * Output only. Human readable explanation about the issue. Provided to
+         * help address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
          * </pre>
          *
          * <code>string details = 2;</code>
@@ -2221,9 +2234,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation about the issue. Provided to help address
-         * the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use Reason enum.
+         * Output only. Human readable explanation about the issue. Provided to
+         * help address the configuration issues. Not guaranteed to be stable. For
+         * programmatic access use Reason enum.
          * </pre>
          *
          * <code>string details = 2;</code>
@@ -2379,7 +2392,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Reason for failure of the authorization attempt for the domain.
+       * Output only. Reason for failure of the authorization attempt for the
+       * domain.
        * </pre>
        *
        * <code>
@@ -2393,7 +2407,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Reason for failure of the authorization attempt for the domain.
+       * Output only. Reason for failure of the authorization attempt for the
+       * domain.
        * </pre>
        *
        * <code>
@@ -2410,10 +2425,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation for reaching the state. Provided to help
-       * address the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use FailureReason
-       * enum.
+       * Output only. Human readable explanation for reaching the state.
+       * Provided to help address the configuration issues. Not guaranteed to be
+       * stable. For programmatic access use FailureReason enum.
        * </pre>
        *
        * <code>string details = 4;</code>
@@ -2425,10 +2439,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation for reaching the state. Provided to help
-       * address the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use FailureReason
-       * enum.
+       * Output only. Human readable explanation for reaching the state.
+       * Provided to help address the configuration issues. Not guaranteed to be
+       * stable. For programmatic access use FailureReason enum.
        * </pre>
        *
        * <code>string details = 4;</code>
@@ -2937,7 +2950,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Reason for failure of the authorization attempt for the domain.
+       * Output only. Reason for failure of the authorization attempt for the
+       * domain.
        * </pre>
        *
        * <code>
@@ -2954,7 +2968,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Reason for failure of the authorization attempt for the domain.
+       * Output only. Reason for failure of the authorization attempt for the
+       * domain.
        * </pre>
        *
        * <code>
@@ -2986,10 +3001,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation for reaching the state. Provided to help
-       * address the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use FailureReason
-       * enum.
+       * Output only. Human readable explanation for reaching the state.
+       * Provided to help address the configuration issues. Not guaranteed to be
+       * stable. For programmatic access use FailureReason enum.
        * </pre>
        *
        * <code>string details = 4;</code>
@@ -3012,10 +3026,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Human readable explanation for reaching the state. Provided to help
-       * address the configuration issues.
-       * Not guaranteed to be stable. For programmatic access use FailureReason
-       * enum.
+       * Output only. Human readable explanation for reaching the state.
+       * Provided to help address the configuration issues. Not guaranteed to be
+       * stable. For programmatic access use FailureReason enum.
        * </pre>
        *
        * <code>string details = 4;</code>
@@ -3744,7 +3757,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Reason for failure of the authorization attempt for the domain.
+         * Output only. Reason for failure of the authorization attempt for the
+         * domain.
          * </pre>
          *
          * <code>
@@ -3761,7 +3775,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Reason for failure of the authorization attempt for the domain.
+         * Output only. Reason for failure of the authorization attempt for the
+         * domain.
          * </pre>
          *
          * <code>
@@ -3781,7 +3796,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Reason for failure of the authorization attempt for the domain.
+         * Output only. Reason for failure of the authorization attempt for the
+         * domain.
          * </pre>
          *
          * <code>
@@ -3808,7 +3824,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Reason for failure of the authorization attempt for the domain.
+         * Output only. Reason for failure of the authorization attempt for the
+         * domain.
          * </pre>
          *
          * <code>
@@ -3834,7 +3851,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Reason for failure of the authorization attempt for the domain.
+         * Output only. Reason for failure of the authorization attempt for the
+         * domain.
          * </pre>
          *
          * <code>
@@ -3855,10 +3873,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation for reaching the state. Provided to help
-         * address the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use FailureReason
-         * enum.
+         * Output only. Human readable explanation for reaching the state.
+         * Provided to help address the configuration issues. Not guaranteed to be
+         * stable. For programmatic access use FailureReason enum.
          * </pre>
          *
          * <code>string details = 4;</code>
@@ -3880,10 +3897,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation for reaching the state. Provided to help
-         * address the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use FailureReason
-         * enum.
+         * Output only. Human readable explanation for reaching the state.
+         * Provided to help address the configuration issues. Not guaranteed to be
+         * stable. For programmatic access use FailureReason enum.
          * </pre>
          *
          * <code>string details = 4;</code>
@@ -3905,10 +3921,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation for reaching the state. Provided to help
-         * address the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use FailureReason
-         * enum.
+         * Output only. Human readable explanation for reaching the state.
+         * Provided to help address the configuration issues. Not guaranteed to be
+         * stable. For programmatic access use FailureReason enum.
          * </pre>
          *
          * <code>string details = 4;</code>
@@ -3929,10 +3944,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation for reaching the state. Provided to help
-         * address the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use FailureReason
-         * enum.
+         * Output only. Human readable explanation for reaching the state.
+         * Provided to help address the configuration issues. Not guaranteed to be
+         * stable. For programmatic access use FailureReason enum.
          * </pre>
          *
          * <code>string details = 4;</code>
@@ -3949,10 +3963,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
          *
          *
          * <pre>
-         * Output only. Human readable explanation for reaching the state. Provided to help
-         * address the configuration issues.
-         * Not guaranteed to be stable. For programmatic access use FailureReason
-         * enum.
+         * Output only. Human readable explanation for reaching the state.
+         * Provided to help address the configuration issues. Not guaranteed to be
+         * stable. For programmatic access use FailureReason enum.
          * </pre>
          *
          * <code>string details = 4;</code>
@@ -4051,8 +4064,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -4066,8 +4080,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -4081,8 +4096,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -4097,8 +4113,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The domains for which a managed SSL certificate will be generated.
-     * Wildcard domains are only supported with DNS challenge resolution.
+     * Immutable. The domains for which a managed SSL certificate will be
+     * generated. Wildcard domains are only supported with DNS challenge
+     * resolution.
      * </pre>
      *
      * <code>repeated string domains = 1;</code>
@@ -4118,7 +4135,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -4132,7 +4150,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -4146,7 +4165,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -4161,7 +4181,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. Authorizations that will be used for performing domain authorization.
+     * Immutable. Authorizations that will be used for performing domain
+     * authorization.
      * </pre>
      *
      * <code>repeated string dns_authorizations = 2;</code>
@@ -4181,8 +4202,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-     * private PKI certificates in the format
+     * Immutable. The resource name for a
+     * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+     * used to configure private PKI certificates in the format
      * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
      * If this field is not set, the certificates will instead be publicly
      * signed as documented at
@@ -4209,8 +4231,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-     * private PKI certificates in the format
+     * Immutable. The resource name for a
+     * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+     * used to configure private PKI certificates in the format
      * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
      * If this field is not set, the certificates will instead be publicly
      * signed as documented at
@@ -4286,7 +4309,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -4303,7 +4327,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -4325,7 +4350,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Information about issues with provisioning a Managed Certificate.
+     * Output only. Information about issues with provisioning a Managed
+     * Certificate.
      * </pre>
      *
      * <code>
@@ -4353,8 +4379,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -4372,8 +4398,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -4392,8 +4418,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -4408,8 +4434,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -4426,8 +4452,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. Detailed state of the latest authorization attempt for each domain
-     * specified for managed certificate resource.
+     * Output only. Detailed state of the latest authorization attempt for each
+     * domain specified for managed certificate resource.
      * </pre>
      *
      * <code>
@@ -5047,8 +5073,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5062,8 +5089,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5077,8 +5105,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5093,8 +5122,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5109,8 +5139,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5132,8 +5163,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5154,8 +5186,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5173,8 +5206,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5191,8 +5225,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The domains for which a managed SSL certificate will be generated.
-       * Wildcard domains are only supported with DNS challenge resolution.
+       * Immutable. The domains for which a managed SSL certificate will be
+       * generated. Wildcard domains are only supported with DNS challenge
+       * resolution.
        * </pre>
        *
        * <code>repeated string domains = 1;</code>
@@ -5224,7 +5259,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5238,7 +5274,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5252,7 +5289,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5267,7 +5305,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5282,7 +5321,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5304,7 +5344,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5325,7 +5366,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5343,7 +5385,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5360,7 +5403,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. Authorizations that will be used for performing domain authorization.
+       * Immutable. Authorizations that will be used for performing domain
+       * authorization.
        * </pre>
        *
        * <code>repeated string dns_authorizations = 2;</code>
@@ -5384,8 +5428,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-       * private PKI certificates in the format
+       * Immutable. The resource name for a
+       * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+       * used to configure private PKI certificates in the format
        * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
        * If this field is not set, the certificates will instead be publicly
        * signed as documented at
@@ -5411,8 +5456,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-       * private PKI certificates in the format
+       * Immutable. The resource name for a
+       * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+       * used to configure private PKI certificates in the format
        * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
        * If this field is not set, the certificates will instead be publicly
        * signed as documented at
@@ -5438,8 +5484,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-       * private PKI certificates in the format
+       * Immutable. The resource name for a
+       * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+       * used to configure private PKI certificates in the format
        * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
        * If this field is not set, the certificates will instead be publicly
        * signed as documented at
@@ -5464,8 +5511,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-       * private PKI certificates in the format
+       * Immutable. The resource name for a
+       * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+       * used to configure private PKI certificates in the format
        * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
        * If this field is not set, the certificates will instead be publicly
        * signed as documented at
@@ -5486,8 +5534,9 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Immutable. The resource name for a [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig] used to configure
-       * private PKI certificates in the format
+       * Immutable. The resource name for a
+       * [CertificateIssuanceConfig][google.cloud.certificatemanager.v1.CertificateIssuanceConfig]
+       * used to configure private PKI certificates in the format
        * `projects/&#42;&#47;locations/&#42;&#47;certificateIssuanceConfigs/&#42;`.
        * If this field is not set, the certificates will instead be publicly
        * signed as documented at
@@ -5632,7 +5681,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5648,7 +5698,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5673,7 +5724,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5700,7 +5752,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5724,7 +5777,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5756,7 +5810,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5777,7 +5832,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5795,7 +5851,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5818,7 +5875,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Information about issues with provisioning a Managed Certificate.
+       * Output only. Information about issues with provisioning a Managed
+       * Certificate.
        * </pre>
        *
        * <code>
@@ -5876,8 +5934,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -5898,8 +5956,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -5917,8 +5975,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -5938,8 +5996,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -5967,8 +6025,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -5993,8 +6051,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6021,8 +6079,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6050,8 +6108,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6075,8 +6133,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6101,8 +6159,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6128,8 +6186,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6150,8 +6208,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6172,8 +6230,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6189,8 +6247,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6210,8 +6268,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6233,8 +6291,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6253,8 +6311,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6274,8 +6332,8 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
        *
        *
        * <pre>
-       * Output only. Detailed state of the latest authorization attempt for each domain
-       * specified for managed certificate resource.
+       * Output only. Detailed state of the latest authorization attempt for each
+       * domain specified for managed certificate resource.
        * </pre>
        *
        * <code>
@@ -6857,10 +6915,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The list of Subject Alternative Names of dnsName type defined in the
-   * certificate (see RFC 5280 4.2.1.6).
-   * Managed certificates that haven't been provisioned yet have this field
-   * populated with a value of the managed.domains field.
+   * Output only. The list of Subject Alternative Names of dnsName type defined
+   * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+   * haven't been provisioned yet have this field populated with a value of the
+   * managed.domains field.
    * </pre>
    *
    * <code>repeated string san_dnsnames = 6;</code>
@@ -6874,10 +6932,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The list of Subject Alternative Names of dnsName type defined in the
-   * certificate (see RFC 5280 4.2.1.6).
-   * Managed certificates that haven't been provisioned yet have this field
-   * populated with a value of the managed.domains field.
+   * Output only. The list of Subject Alternative Names of dnsName type defined
+   * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+   * haven't been provisioned yet have this field populated with a value of the
+   * managed.domains field.
    * </pre>
    *
    * <code>repeated string san_dnsnames = 6;</code>
@@ -6891,10 +6949,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The list of Subject Alternative Names of dnsName type defined in the
-   * certificate (see RFC 5280 4.2.1.6).
-   * Managed certificates that haven't been provisioned yet have this field
-   * populated with a value of the managed.domains field.
+   * Output only. The list of Subject Alternative Names of dnsName type defined
+   * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+   * haven't been provisioned yet have this field populated with a value of the
+   * managed.domains field.
    * </pre>
    *
    * <code>repeated string san_dnsnames = 6;</code>
@@ -6909,10 +6967,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
-   * Output only. The list of Subject Alternative Names of dnsName type defined in the
-   * certificate (see RFC 5280 4.2.1.6).
-   * Managed certificates that haven't been provisioned yet have this field
-   * populated with a value of the managed.domains field.
+   * Output only. The list of Subject Alternative Names of dnsName type defined
+   * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+   * haven't been provisioned yet have this field populated with a value of the
+   * managed.domains field.
    * </pre>
    *
    * <code>repeated string san_dnsnames = 6;</code>
@@ -9024,10 +9082,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9041,10 +9099,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9058,10 +9116,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9076,10 +9134,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9094,10 +9152,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9119,10 +9177,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9143,10 +9201,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9164,10 +9222,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
@@ -9184,10 +9242,10 @@ public final class Certificate extends com.google.protobuf.GeneratedMessageV3
      *
      *
      * <pre>
-     * Output only. The list of Subject Alternative Names of dnsName type defined in the
-     * certificate (see RFC 5280 4.2.1.6).
-     * Managed certificates that haven't been provisioned yet have this field
-     * populated with a value of the managed.domains field.
+     * Output only. The list of Subject Alternative Names of dnsName type defined
+     * in the certificate (see RFC 5280 4.2.1.6). Managed certificates that
+     * haven't been provisioned yet have this field populated with a value of the
+     * managed.domains field.
      * </pre>
      *
      * <code>repeated string san_dnsnames = 6;</code>
