@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.6.0...v0.7.0) (2023-02-06)
+
+
+### Features
+
+* Run the code generator (c2710d4) ([#145](https://github.com/googleapis/google-cloudevents-java/issues/145)) ([10003c2](https://github.com/googleapis/google-cloudevents-java/commit/10003c2add3204bef03247d65e4a1a0c65a09945))
+
+
+### Bug Fixes
+
+* Clean up workflows ([#140](https://github.com/googleapis/google-cloudevents-java/issues/140)) ([56626d6](https://github.com/googleapis/google-cloudevents-java/commit/56626d663d2d5b07bbc70f1136ff4a105551ffd3))
+* Update the release process ([#141](https://github.com/googleapis/google-cloudevents-java/issues/141)) ([427241d](https://github.com/googleapis/google-cloudevents-java/commit/427241d8bc29089d2161afa837984d2c63d204a3))
+
 ## [0.6.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.5.0...v0.6.0) (2023-01-31)
 
 

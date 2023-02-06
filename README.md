@@ -28,7 +28,7 @@ If you are using Maven, add this to your `pom.xml` file:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloudevent-types</artifactId>
-  <version>0.5.0</version>
+  <version>0.7.0</version>
 </dependency>
 ```
 
