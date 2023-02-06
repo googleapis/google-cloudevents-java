@@ -127,7 +127,7 @@ bash .kokoro/coerce_logs.sh
 if [[ "${ENABLE_FLAKYBOT}" == "true" ]]
 then
     chmod +x ${KOKORO_GFILE_DIR}/linux_amd64/flakybot
-    ${KOKORO_GFILE_DIR}/linux_amd64/flakybot -repo={{metadata['repo']['repo']}}
+    ${KOKORO_GFILE_DIR}/linux_amd64/flakybot -repo=googleapis/google-cloudevents-java
 fi
 
 echo "exiting with ${RETURN_CODE}"
