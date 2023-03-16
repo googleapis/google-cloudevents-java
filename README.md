@@ -5,9 +5,6 @@
 * [Product Documentation](https://cloud.google.com/eventarc/docs/cloudevents)
 * [Client Library Documentation - TBA]()
 
-**🚧 Note:** This library has been unstable. This repository previously contained POJOs for
-[Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events).
-
 This library provides Java classes for [Google CloudEvent data](https://cloud.google.com/eventarc/docs/reference/supported-events)
 to support unmarshalling of event data into a Java object. This library is generated from the protobufs sourced from https://github.com/googleapis/google-cloudevents.
 
