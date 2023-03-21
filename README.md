@@ -1,6 +1,6 @@
 # Google CloudEvents Types for Java
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://search.maven.org/artifact/com.google.cloud/google-cloudevent-types)
+[![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://central.sonatype.com/artifact/com.google.cloud/google-cloudevent-types/0.7.0)
 
 * [Product Documentation](https://cloud.google.com/eventarc/docs/cloudevents)
 * [Client Library Documentation - TBA]()
