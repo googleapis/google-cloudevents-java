@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.7.0...v0.8.0) (2023-03-23)
+
+
+### Features
+
+* Run the code generator (778716e) ([#158](https://github.com/googleapis/google-cloudevents-java/issues/158)) ([efef22d](https://github.com/googleapis/google-cloudevents-java/commit/efef22decf29531b5f65c037766bd2492d30917d))
+
+
+### Bug Fixes
+
+* Fix Kokoro configs ([#148](https://github.com/googleapis/google-cloudevents-java/issues/148)) ([c61c4d4](https://github.com/googleapis/google-cloudevents-java/commit/c61c4d4c8ecafc359a428e2374473ff52a53d634))
+
 ## [0.7.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.6.0...v0.7.0) (2023-02-06)
 
 
