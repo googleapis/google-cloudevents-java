@@ -17,6 +17,8 @@ on:
   pull_request:
     paths-ignore:
       - "tools/**"
+      - "protoc-gen-java-snowpea/**"
+      - "pom.xml"
       - ".github/workflows/test_generation.yaml"
 
 jobs:

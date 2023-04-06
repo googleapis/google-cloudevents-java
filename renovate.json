@@ -1,12 +1,14 @@
 {
   "extends": [
     "config:base",
-    ":disableDependencyDashboard",
     ":separateMajorReleases",
     ":ignoreUnstable"
   ],
   "schedule": [
     "every 3 months on the first day of the month"
+  ],
+  "ignorePaths": [
+    ".kokoro/**"
   ],
   "semanticCommits": "enabled"
 }
