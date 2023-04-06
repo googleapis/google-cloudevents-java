@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.8.1](https://github.com/googleapis/google-cloudevents-java/compare/v0.8.0...v0.8.1) (2023-04-06)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency com.google.cloud:google-cloud-shared-config to v1.5.5 ([#169](https://github.com/googleapis/google-cloudevents-java/issues/169)) ([888487e](https://github.com/googleapis/google-cloudevents-java/commit/888487e7521a5d739fd6c75ac94357a98cd3abbb))
+* **deps:** Update dependency org.slf4j:slf4j-api to v2.0.7 ([#170](https://github.com/googleapis/google-cloudevents-java/issues/170)) ([cbb444a](https://github.com/googleapis/google-cloudevents-java/commit/cbb444a8cac85d74751e65cc12850438cdc07af6))
+* **deps:** Update dependency org.slf4j:slf4j-simple to v2.0.7 ([#171](https://github.com/googleapis/google-cloudevents-java/issues/171)) ([7ce1d26](https://github.com/googleapis/google-cloudevents-java/commit/7ce1d266e1bd674da5c21364fac079bd328db47b))
+* Release process ([#161](https://github.com/googleapis/google-cloudevents-java/issues/161)) ([2dc2327](https://github.com/googleapis/google-cloudevents-java/commit/2dc2327c069dd994625a8c7a7614af584dd9a741))
+
 ## [0.8.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.7.0...v0.8.0) (2023-03-23)
 
 
