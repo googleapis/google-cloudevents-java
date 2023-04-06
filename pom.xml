@@ -83,7 +83,6 @@
 
   <modules>
     <module>google-cloudevent-types</module>
-    <module>protoc-gen-java-snowpea</module>
   </modules>
 
   <build>
