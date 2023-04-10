@@ -281,7 +281,7 @@ public interface ChannelOrBuilder
    *
    *
    * <pre>
-   * Optional. Resource name of a KMS crypto key (managed by the user) used to
+   * Resource name of a KMS crypto key (managed by the user) used to
    * encrypt/decrypt their event data.
    * It must match the pattern
    * `projects/&#42;&#47;locations/&#42;&#47;keyRings/&#42;&#47;cryptoKeys/&#42;`.
@@ -296,7 +296,7 @@ public interface ChannelOrBuilder
    *
    *
    * <pre>
-   * Optional. Resource name of a KMS crypto key (managed by the user) used to
+   * Resource name of a KMS crypto key (managed by the user) used to
    * encrypt/decrypt their event data.
    * It must match the pattern
    * `projects/&#42;&#47;locations/&#42;&#47;keyRings/&#42;&#47;cryptoKeys/&#42;`.

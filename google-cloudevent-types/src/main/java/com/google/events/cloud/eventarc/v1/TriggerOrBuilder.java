@@ -299,7 +299,7 @@ public interface TriggerOrBuilder
    *
    *
    * <pre>
-   * Optional. To deliver messages, Eventarc might use other GCP
+   * Optional. To deliver messages, Eventarc might use other Google Cloud
    * products as a transport intermediary. This field contains a reference to
    * that transport intermediary. This information can be used for debugging
    * purposes.
@@ -314,7 +314,7 @@ public interface TriggerOrBuilder
    *
    *
    * <pre>
-   * Optional. To deliver messages, Eventarc might use other GCP
+   * Optional. To deliver messages, Eventarc might use other Google Cloud
    * products as a transport intermediary. This field contains a reference to
    * that transport intermediary. This information can be used for debugging
    * purposes.
@@ -329,7 +329,7 @@ public interface TriggerOrBuilder
    *
    *
    * <pre>
-   * Optional. To deliver messages, Eventarc might use other GCP
+   * Optional. To deliver messages, Eventarc might use other Google Cloud
    * products as a transport intermediary. This field contains a reference to
    * that transport intermediary. This information can be used for debugging
    * purposes.
@@ -495,6 +495,35 @@ public interface TriggerOrBuilder
    * </code>
    */
   com.google.events.cloud.eventarc.v1.StateCondition getConditionsOrThrow(java.lang.String key);
+
+  /**
+   *
+   *
+   * <pre>
+   * Optional. EventDataContentType specifies the type of payload in MIME
+   * format that is expected from the CloudEvent data field. This is set to
+   * `application/json` if the value is not defined.
+   * </pre>
+   *
+   * <code>string event_data_content_type = 16;</code>
+   *
+   * @return The eventDataContentType.
+   */
+  java.lang.String getEventDataContentType();
+  /**
+   *
+   *
+   * <pre>
+   * Optional. EventDataContentType specifies the type of payload in MIME
+   * format that is expected from the CloudEvent data field. This is set to
+   * `application/json` if the value is not defined.
+   * </pre>
+   *
+   * <code>string event_data_content_type = 16;</code>
+   *
+   * @return The bytes for eventDataContentType.
+   */
+  com.google.protobuf.ByteString getEventDataContentTypeBytes();
 
   /**
    *
