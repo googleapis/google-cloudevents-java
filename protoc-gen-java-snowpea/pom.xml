@@ -13,7 +13,7 @@
   <parent>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloudevent-types-parent</artifactId>
-    <version>0.8.1</version> <!-- {x-version-update:google-cloudevent-types:current} -->
+    <version>0.8.2-SNAPSHOT</version> <!-- {x-version-update:google-cloudevent-types:current} -->
   </parent>
 
   <properties>
