@@ -1,6 +1,6 @@
 # Google CloudEvents Types for Java
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://central.sonatype.com/artifact/com.google.cloud/google-cloudevent-types/0.7.0)
+[![Maven Central](https://img.shields.io/maven-central/v/com.google.cloud/google-cloudevent-types.svg)](https://central.sonatype.com/artifact/com.google.cloud/google-cloudevent-types)
 
 * [Product Documentation](https://cloud.google.com/eventarc/docs/cloudevents)
 * [Client Library Documentation - TBA]()
@@ -25,7 +25,7 @@ If you are using Maven, add this to your `pom.xml` file:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloudevent-types</artifactId>
-  <version>0.7.0</version>
+  <version>0.8.1</version>
 </dependency>
 ```
 
