@@ -96,10 +96,12 @@ public final class Data {
           + "rH\000\210\001\001B\n\n\010_payload*i\n\014HealthStatus\022\035\n\031HE"
           + "ALTH_STATUS_UNSPECIFIED\020\000\022\013\n\007HEALTHY\020\001\022\r"
           + "\n\tUNHEALTHY\020\002\022\020\n\014UNRESPONSIVE\020\003\022\014\n\010DEGRA"
-          + "DED\020\004Br\n3com.google.events.cloud.beyondc"
-          + "orp.appconnectors.v1P\001\252\0028Google.Events.P"
-          + "rotobuf.Cloud.BeyondCorp.AppConnectors.V"
-          + "1b\006proto3"
+          + "DED\020\004B\333\001\n3com.google.events.cloud.beyond"
+          + "corp.appconnectors.v1P\001\252\0028Google.Events."
+          + "Protobuf.Cloud.BeyondCorp.AppConnectors."
+          + "V1\312\002/Google\\Events\\Cloud\\BeyondCorp\\AppC"
+          + "onnectors\\V1\352\0024Google::Events::Cloud::Be"
+          + "yondCorp::AppConnectors::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

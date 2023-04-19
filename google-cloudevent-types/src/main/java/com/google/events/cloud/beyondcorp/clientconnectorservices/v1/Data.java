@@ -105,10 +105,14 @@ public final class Data {
           + "orServiceEventData\022g\n\007payload\030\001 \001(\0132Q.go"
           + "ogle.events.cloud.beyondcorp.clientconne"
           + "ctorservices.v1.ClientConnectorServiceH\000"
-          + "\210\001\001B\n\n\010_payloadB\206\001\n=com.google.events.cl"
+          + "\210\001\001B\n\n\010_payloadB\203\002\n=com.google.events.cl"
           + "oud.beyondcorp.clientconnectorservices.v"
           + "1P\001\252\002BGoogle.Events.Protobuf.Cloud.Beyon"
-          + "dCorp.ClientConnectorServices.V1b\006proto3"
+          + "dCorp.ClientConnectorServices.V1\312\0029Googl"
+          + "e\\Events\\Cloud\\BeyondCorp\\ClientConnecto"
+          + "rServices\\V1\352\002>Google::Events::Cloud::Be"
+          + "yondCorp::ClientConnectorServices::V1b\006p"
+          + "roto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

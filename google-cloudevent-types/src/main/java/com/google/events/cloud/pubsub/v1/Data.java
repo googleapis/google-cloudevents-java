@@ -59,9 +59,11 @@ public final class Data {
           + "utesEntry\022\022\n\nmessage_id\030\003 \001(\t\0220\n\014publish"
           + "_time\030\004 \001(\0132\032.google.protobuf.Timestamp\022"
           + "\024\n\014ordering_key\030\005 \001(\t\0321\n\017AttributesEntry"
-          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001BN\n!com."
-          + "google.events.cloud.pubsub.v1P\001\252\002&Google"
-          + ".Events.Protobuf.Cloud.PubSub.V1b\006proto3"
+          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\222\001\n!com"
+          + ".google.events.cloud.pubsub.v1P\001\252\002&Googl"
+          + "e.Events.Protobuf.Cloud.PubSub.V1\312\002\035Goog"
+          + "le\\Events\\Cloud\\PubSub\\V1\352\002!Google::Even"
+          + "ts::Cloud::PubSub::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

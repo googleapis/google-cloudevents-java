@@ -66,9 +66,11 @@ public final class Data {
           + "IED\020\000\022\n\n\006ACTIVE\020\001B\r\n\013source_code\"a\n\021Work"
           + "flowEventData\022@\n\007payload\030\001 \001(\0132*.google."
           + "events.cloud.workflows.v1.WorkflowH\000\210\001\001B"
-          + "\n\n\010_payloadBT\n$com.google.events.cloud.w"
-          + "orkflows.v1P\001\252\002)Google.Events.Protobuf.C"
-          + "loud.Workflows.V1b\006proto3"
+          + "\n\n\010_payloadB\236\001\n$com.google.events.cloud."
+          + "workflows.v1P\001\252\002)Google.Events.Protobuf."
+          + "Cloud.Workflows.V1\312\002 Google\\Events\\Cloud"
+          + "\\Workflows\\V1\352\002$Google::Events::Cloud::W"
+          + "orkflows::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

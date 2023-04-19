@@ -201,9 +201,11 @@ public final class Data {
           + "TE_FORMAT\020\000\022\030\n\024X509_CERTIFICATE_PEM\020\001*v\n"
           + "\017PublicKeyFormat\022!\n\035UNSPECIFIED_PUBLIC_K"
           + "EY_FORMAT\020\000\022\013\n\007RSA_PEM\020\003\022\020\n\014RSA_X509_PEM"
-          + "\020\001\022\r\n\tES256_PEM\020\002\022\022\n\016ES256_X509_PEM\020\004BH\n"
-          + "\036com.google.events.cloud.iot.v1P\001\252\002#Goog"
-          + "le.Events.Protobuf.Cloud.Iot.V1b\006proto3"
+          + "\020\001\022\r\n\tES256_PEM\020\002\022\022\n\016ES256_X509_PEM\020\004B\206\001"
+          + "\n\036com.google.events.cloud.iot.v1P\001\252\002#Goo"
+          + "gle.Events.Protobuf.Cloud.Iot.V1\312\002\032Googl"
+          + "e\\Events\\Cloud\\Iot\\V1\352\002\036Google::Events::"
+          + "Cloud::Iot::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

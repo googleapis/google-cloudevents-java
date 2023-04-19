@@ -215,9 +215,11 @@ public final class Data {
           + "ogle.events.cloud.functions.v2.FunctionH"
           + "\000\210\001\001B\n\n\010_payload*@\n\013Environment\022\033\n\027ENVIR"
           + "ONMENT_UNSPECIFIED\020\000\022\t\n\005GEN_1\020\001\022\t\n\005GEN_2"
-          + "\020\002BT\n$com.google.events.cloud.functions."
-          + "v2P\001\252\002)Google.Events.Protobuf.Cloud.Func"
-          + "tions.V2b\006proto3"
+          + "\020\002B\236\001\n$com.google.events.cloud.functions"
+          + ".v2P\001\252\002)Google.Events.Protobuf.Cloud.Fun"
+          + "ctions.V2\312\002 Google\\Events\\Cloud\\Function"
+          + "s\\V2\352\002$Google::Events::Cloud::Functions:"
+          + ":V2b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

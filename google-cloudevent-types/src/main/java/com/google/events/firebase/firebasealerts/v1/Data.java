@@ -47,10 +47,12 @@ public final class Data {
           + "\001\n\tAlertData\022/\n\013create_time\030\001 \001(\0132\032.goog"
           + "le.protobuf.Timestamp\022,\n\010end_time\030\002 \001(\0132"
           + "\032.google.protobuf.Timestamp\022(\n\007payload\030\003"
-          + " \001(\0132\027.google.protobuf.StructBd\n,com.goo"
-          + "gle.events.firebase.firebasealerts.v1P\001\252"
-          + "\0021Google.Events.Protobuf.Firebase.Fireba"
-          + "seAlerts.V1b\006proto3"
+          + " \001(\0132\027.google.protobuf.StructB\276\001\n,com.go"
+          + "ogle.events.firebase.firebasealerts.v1P\001"
+          + "\252\0021Google.Events.Protobuf.Firebase.Fireb"
+          + "aseAlerts.V1\312\002(Google\\Events\\Firebase\\Fi"
+          + "rebaseAlerts\\V1\352\002,Google::Events::Fireba"
+          + "se::FirebaseAlerts::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

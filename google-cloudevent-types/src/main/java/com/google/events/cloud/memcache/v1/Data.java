@@ -148,9 +148,11 @@ public final class Data {
           + "ad\030\001 \001(\0132).google.events.cloud.memcache."
           + "v1.InstanceH\000\210\001\001B\n\n\010_payload*E\n\017Memcache"
           + "Version\022 \n\034MEMCACHE_VERSION_UNSPECIFIED\020"
-          + "\000\022\020\n\014MEMCACHE_1_5\020\001BR\n#com.google.events"
-          + ".cloud.memcache.v1P\001\252\002(Google.Events.Pro"
-          + "tobuf.Cloud.Memcache.V1b\006proto3"
+          + "\000\022\020\n\014MEMCACHE_1_5\020\001B\232\001\n#com.google.event"
+          + "s.cloud.memcache.v1P\001\252\002(Google.Events.Pr"
+          + "otobuf.Cloud.Memcache.V1\312\002\037Google\\Events"
+          + "\\Cloud\\Memcache\\V1\352\002#Google::Events::Clo"
+          + "ud::Memcache::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

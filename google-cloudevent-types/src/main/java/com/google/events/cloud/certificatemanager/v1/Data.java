@@ -268,10 +268,12 @@ public final class Data {
           + "gle.events.cloud.certificatemanager.v1.C"
           + "ertificateH\000\210\001\001B\n\n\010_payload*F\n\014ServingSt"
           + "ate\022\035\n\031SERVING_STATE_UNSPECIFIED\020\000\022\n\n\006AC"
-          + "TIVE\020\001\022\013\n\007PENDING\020\002Bf\n-com.google.events"
-          + ".cloud.certificatemanager.v1P\001\252\0022Google."
-          + "Events.Protobuf.Cloud.CertificateManager"
-          + ".V1b\006proto3"
+          + "TIVE\020\001\022\013\n\007PENDING\020\002B\302\001\n-com.google.event"
+          + "s.cloud.certificatemanager.v1P\001\252\0022Google"
+          + ".Events.Protobuf.Cloud.CertificateManage"
+          + "r.V1\312\002)Google\\Events\\Cloud\\CertificateMa"
+          + "nager\\V1\352\002-Google::Events::Cloud::Certif"
+          + "icateManager::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

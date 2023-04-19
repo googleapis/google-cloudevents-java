@@ -144,10 +144,12 @@ public final class Data {
           + "\031previous_timestamp_micros\030\005 \001(\003\022\024\n\014valu"
           + "e_in_usd\030\007 \001(\001\032b\n\013ParamsEntry\022\013\n\003key\030\001 \001"
           + "(\t\022B\n\005value\030\002 \001(\01323.google.events.fireba"
-          + "se.analytics.v1.AnalyticsValue:\0028\001BZ\n\'co"
-          + "m.google.events.firebase.analytics.v1P\001\252"
-          + "\002,Google.Events.Protobuf.Firebase.Analyt"
-          + "ics.V1b\006proto3"
+          + "se.analytics.v1.AnalyticsValue:\0028\001B\252\001\n\'c"
+          + "om.google.events.firebase.analytics.v1P\001"
+          + "\252\002,Google.Events.Protobuf.Firebase.Analy"
+          + "tics.V1\312\002#Google\\Events\\Firebase\\Analyti"
+          + "cs\\V1\352\002\'Google::Events::Firebase::Analyt"
+          + "ics::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

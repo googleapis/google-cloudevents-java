@@ -81,10 +81,13 @@ public final class Data {
           + "IED\020\000\022\024\n\020GCP_REGIONAL_MIG\020\001\"r\n\023AppGatewa"
           + "yEventData\022O\n\007payload\030\001 \001(\01329.google.eve"
           + "nts.cloud.beyondcorp.appgateways.v1.AppG"
-          + "atewayH\000\210\001\001B\n\n\010_payloadBn\n1com.google.ev"
-          + "ents.cloud.beyondcorp.appgateways.v1P\001\252\002"
-          + "6Google.Events.Protobuf.Cloud.BeyondCorp"
-          + ".AppGateways.V1b\006proto3"
+          + "atewayH\000\210\001\001B\n\n\010_payloadB\323\001\n1com.google.e"
+          + "vents.cloud.beyondcorp.appgateways.v1P\001\252"
+          + "\0026Google.Events.Protobuf.Cloud.BeyondCor"
+          + "p.AppGateways.V1\312\002-Google\\Events\\Cloud\\B"
+          + "eyondCorp\\AppGateways\\V1\352\0022Google::Event"
+          + "s::Cloud::BeyondCorp::AppGateways::V1b\006p"
+          + "roto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

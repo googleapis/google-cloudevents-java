@@ -60,10 +60,12 @@ public final class Data {
           + "ientGatewayEventData\022U\n\007payload\030\001 \001(\0132?."
           + "google.events.cloud.beyondcorp.clientgat"
           + "eways.v1.ClientGatewayH\000\210\001\001B\n\n\010_payloadB"
-          + "t\n4com.google.events.cloud.beyondcorp.cl"
-          + "ientgateways.v1P\001\252\0029Google.Events.Protob"
-          + "uf.Cloud.BeyondCorp.ClientGateways.V1b\006p"
-          + "roto3"
+          + "\337\001\n4com.google.events.cloud.beyondcorp.c"
+          + "lientgateways.v1P\001\252\0029Google.Events.Proto"
+          + "buf.Cloud.BeyondCorp.ClientGateways.V1\312\002"
+          + "0Google\\Events\\Cloud\\BeyondCorp\\ClientGa"
+          + "teways\\V1\352\0025Google::Events::Cloud::Beyon"
+          + "dCorp::ClientGateways::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

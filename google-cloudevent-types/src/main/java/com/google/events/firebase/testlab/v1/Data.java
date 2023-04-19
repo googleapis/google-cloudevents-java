@@ -77,9 +77,11 @@ public final class Data {
           + "\022\t\n\005ERROR\020\004\022\013\n\007INVALID\020\005*j\n\016OutcomeSumma"
           + "ry\022\037\n\033OUTCOME_SUMMARY_UNSPECIFIED\020\000\022\013\n\007S"
           + "UCCESS\020\001\022\013\n\007FAILURE\020\002\022\020\n\014INCONCLUSIVE\020\003\022"
-          + "\013\n\007SKIPPED\020\004BV\n%com.google.events.fireba"
-          + "se.testlab.v1P\001\252\002*Google.Events.Protobuf"
-          + ".Firebase.TestLab.V1b\006proto3"
+          + "\013\n\007SKIPPED\020\004B\242\001\n%com.google.events.fireb"
+          + "ase.testlab.v1P\001\252\002*Google.Events.Protobu"
+          + "f.Firebase.TestLab.V1\312\002!Google\\Events\\Fi"
+          + "rebase\\TestLab\\V1\352\002%Google::Events::Fire"
+          + "base::TestLab::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

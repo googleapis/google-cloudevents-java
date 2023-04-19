@@ -141,10 +141,12 @@ public final class Data {
           + "2,.google.events.cloud.apigateway.v1.Api"
           + "ConfigH\000\210\001\001B\n\n\010_payload\"X\n\014ApiEventData\022"
           + "<\n\007payload\030\001 \001(\0132&.google.events.cloud.a"
-          + "pigateway.v1.ApiH\000\210\001\001B\n\n\010_payloadBV\n%com"
-          + ".google.events.cloud.apigateway.v1P\001\252\002*G"
-          + "oogle.Events.Protobuf.Cloud.ApiGateway.V"
-          + "1b\006proto3"
+          + "pigateway.v1.ApiH\000\210\001\001B\n\n\010_payloadB\242\001\n%co"
+          + "m.google.events.cloud.apigateway.v1P\001\252\002*"
+          + "Google.Events.Protobuf.Cloud.ApiGateway."
+          + "V1\312\002!Google\\Events\\Cloud\\ApiGateway\\V1\352\002"
+          + "%Google::Events::Cloud::ApiGateway::V1b\006"
+          + "proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

@@ -45,9 +45,11 @@ public final class Data {
           + ".v1\032\034google/protobuf/struct.proto\"a\n\022Ref"
           + "erenceEventData\022$\n\004data\030\001 \001(\0132\026.google.p"
           + "rotobuf.Value\022%\n\005delta\030\002 \001(\0132\026.google.pr"
-          + "otobuf.ValueBX\n&com.google.events.fireba"
-          + "se.database.v1P\001\252\002+Google.Events.Protobu"
-          + "f.Firebase.Database.V1b\006proto3"
+          + "otobuf.ValueB\246\001\n&com.google.events.fireb"
+          + "ase.database.v1P\001\252\002+Google.Events.Protob"
+          + "uf.Firebase.Database.V1\312\002\"Google\\Events\\"
+          + "Firebase\\Database\\V1\352\002&Google::Events::F"
+          + "irebase::Database::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

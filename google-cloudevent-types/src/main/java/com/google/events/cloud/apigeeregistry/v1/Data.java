@@ -194,10 +194,12 @@ public final class Data {
           + "eeregistry.v1.ApiDeploymentH\000\210\001\001B\n\n\010_pay"
           + "load\"\\\n\014ApiEventData\022@\n\007payload\030\001 \001(\0132*."
           + "google.events.cloud.apigeeregistry.v1.Ap"
-          + "iH\000\210\001\001B\n\n\010_payloadB^\n)com.google.events."
-          + "cloud.apigeeregistry.v1P\001\252\002.Google.Event"
-          + "s.Protobuf.Cloud.ApigeeRegistry.V1b\006prot"
-          + "o3"
+          + "iH\000\210\001\001B\n\n\010_payloadB\262\001\n)com.google.events"
+          + ".cloud.apigeeregistry.v1P\001\252\002.Google.Even"
+          + "ts.Protobuf.Cloud.ApigeeRegistry.V1\312\002%Go"
+          + "ogle\\Events\\Cloud\\ApigeeRegistry\\V1\352\002)Go"
+          + "ogle::Events::Cloud::ApigeeRegistry::V1b"
+          + "\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

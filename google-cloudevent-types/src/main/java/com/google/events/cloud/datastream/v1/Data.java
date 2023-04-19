@@ -477,9 +477,11 @@ public final class Data {
           + "astream.v1.StreamH\000\210\001\001B\n\n\010_payload\"\\\n\016Ro"
           + "uteEventData\022>\n\007payload\030\001 \001(\0132(.google.e"
           + "vents.cloud.datastream.v1.RouteH\000\210\001\001B\n\n\010"
-          + "_payloadBV\n%com.google.events.cloud.data"
-          + "stream.v1P\001\252\002*Google.Events.Protobuf.Clo"
-          + "ud.Datastream.V1b\006proto3"
+          + "_payloadB\242\001\n%com.google.events.cloud.dat"
+          + "astream.v1P\001\252\002*Google.Events.Protobuf.Cl"
+          + "oud.Datastream.V1\312\002!Google\\Events\\Cloud\\"
+          + "Datastream\\V1\352\002%Google::Events::Cloud::D"
+          + "atastream::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

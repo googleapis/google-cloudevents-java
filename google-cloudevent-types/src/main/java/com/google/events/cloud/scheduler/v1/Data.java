@@ -43,9 +43,11 @@ public final class Data {
       "\n+google/events/cloud/scheduler/v1/data."
           + "proto\022 google.events.cloud.scheduler.v1\""
           + "\'\n\020SchedulerJobData\022\023\n\013custom_data\030\001 \001(\014"
-          + "BT\n$com.google.events.cloud.scheduler.v1"
-          + "P\001\252\002)Google.Events.Protobuf.Cloud.Schedu"
-          + "ler.V1b\006proto3"
+          + "B\236\001\n$com.google.events.cloud.scheduler.v"
+          + "1P\001\252\002)Google.Events.Protobuf.Cloud.Sched"
+          + "uler.V1\312\002 Google\\Events\\Cloud\\Scheduler\\"
+          + "V1\352\002$Google::Events::Cloud::Scheduler::V"
+          + "1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
