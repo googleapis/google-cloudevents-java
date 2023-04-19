@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.8.1...v0.9.0) (2023-04-19)
+
+
+### Features
+
+* Run the code generator (3b7685e) ([#178](https://github.com/googleapis/google-cloudevents-java/issues/178)) ([6b9633e](https://github.com/googleapis/google-cloudevents-java/commit/6b9633ee319945c83a26e47d4548f0381fa5dcbd))
+* Run the code generator (5c65bb4) ([#185](https://github.com/googleapis/google-cloudevents-java/issues/185)) ([a0900e4](https://github.com/googleapis/google-cloudevents-java/commit/a0900e40b4fae6fc87260faa7838b699b3e87db2))
+
 ## [0.8.1](https://github.com/googleapis/google-cloudevents-java/compare/v0.8.0...v0.8.1) (2023-04-06)
 
 
