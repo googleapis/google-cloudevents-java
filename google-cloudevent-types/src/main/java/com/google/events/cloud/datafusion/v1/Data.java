@@ -152,9 +152,11 @@ public final class Data {
           + "\210\001\001B\n\n\010_payload\"f\n\023DnsPeeringEventData\022C"
           + "\n\007payload\030\001 \001(\0132-.google.events.cloud.da"
           + "tafusion.v1.DnsPeeringH\000\210\001\001B\n\n\010_payloadB"
-          + "V\n%com.google.events.cloud.datafusion.v1"
-          + "P\001\252\002*Google.Events.Protobuf.Cloud.DataFu"
-          + "sion.V1b\006proto3"
+          + "\242\001\n%com.google.events.cloud.datafusion.v"
+          + "1P\001\252\002*Google.Events.Protobuf.Cloud.DataF"
+          + "usion.V1\312\002!Google\\Events\\Cloud\\DataFusio"
+          + "n\\V1\352\002%Google::Events::Cloud::DataFusion"
+          + "::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

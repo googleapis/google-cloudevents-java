@@ -335,9 +335,11 @@ public final class Data {
           + "\000\022\t\n\005MYSQL\020\001\022\016\n\nPOSTGRESQL\020\002*e\n\020Database"
           + "Provider\022!\n\035DATABASE_PROVIDER_UNSPECIFIE"
           + "D\020\000\022\014\n\010CLOUDSQL\020\001\022\007\n\003RDS\020\002\022\n\n\006AURORA\020\003\022\013"
-          + "\n\007ALLOYDB\020\004BR\n#com.google.events.cloud.c"
-          + "louddms.v1P\001\252\002(Google.Events.Protobuf.Cl"
-          + "oud.CloudDms.V1b\006proto3"
+          + "\n\007ALLOYDB\020\004B\232\001\n#com.google.events.cloud."
+          + "clouddms.v1P\001\252\002(Google.Events.Protobuf.C"
+          + "loud.CloudDms.V1\312\002\037Google\\Events\\Cloud\\C"
+          + "loudDms\\V1\352\002#Google::Events::Cloud::Clou"
+          + "dDMS::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

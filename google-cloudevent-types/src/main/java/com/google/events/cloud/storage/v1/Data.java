@@ -76,10 +76,11 @@ public final class Data {
           + "\n\tself_link\030e \001(\t\022\014\n\004kind\030f \001(\t\032F\n\022Custo"
           + "merEncryption\022\034\n\024encryption_algorithm\030\001 "
           + "\001(\t\022\022\n\nkey_sha256\030\002 \001(\t\032/\n\rMetadataEntry"
-          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001BP\n\"com."
-          + "google.events.cloud.storage.v1P\001\252\002\'Googl"
-          + "e.Events.Protobuf.Cloud.Storage.V1b\006prot"
-          + "o3"
+          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\226\001\n\"com"
+          + ".google.events.cloud.storage.v1P\001\252\002\'Goog"
+          + "le.Events.Protobuf.Cloud.Storage.V1\312\002\036Go"
+          + "ogle\\Events\\Cloud\\Storage\\V1\352\002\"Google::E"
+          + "vents::Cloud::Storage::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

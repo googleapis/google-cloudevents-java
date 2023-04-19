@@ -90,10 +90,13 @@ public final class Data {
           + "\022\014\n\010DELETING\020\004\022\010\n\004DOWN\020\005\"{\n\026AppConnectio"
           + "nEventData\022U\n\007payload\030\001 \001(\0132?.google.eve"
           + "nts.cloud.beyondcorp.appconnections.v1.A"
-          + "ppConnectionH\000\210\001\001B\n\n\010_payloadBt\n4com.goo"
-          + "gle.events.cloud.beyondcorp.appconnectio"
-          + "ns.v1P\001\252\0029Google.Events.Protobuf.Cloud.B"
-          + "eyondCorp.AppConnections.V1b\006proto3"
+          + "ppConnectionH\000\210\001\001B\n\n\010_payloadB\337\001\n4com.go"
+          + "ogle.events.cloud.beyondcorp.appconnecti"
+          + "ons.v1P\001\252\0029Google.Events.Protobuf.Cloud."
+          + "BeyondCorp.AppConnections.V1\312\0020Google\\Ev"
+          + "ents\\Cloud\\BeyondCorp\\AppConnections\\V1\352"
+          + "\0025Google::Events::Cloud::BeyondCorp::App"
+          + "Connections::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

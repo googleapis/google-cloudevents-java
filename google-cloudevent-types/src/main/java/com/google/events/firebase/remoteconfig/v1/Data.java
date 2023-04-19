@@ -64,10 +64,12 @@ public final class Data {
           + "REST_API\020\002\022\022\n\016ADMIN_SDK_NODE\020\003*|\n\026Remote"
           + "ConfigUpdateType\022)\n%REMOTE_CONFIG_UPDATE"
           + "_TYPE_UNSPECIFIED\020\000\022\026\n\022INCREMENTAL_UPDAT"
-          + "E\020\001\022\021\n\rFORCED_UPDATE\020\002\022\014\n\010ROLLBACK\020\003B`\n*"
-          + "com.google.events.firebase.remoteconfig."
-          + "v1P\001\252\002/Google.Events.Protobuf.Firebase.R"
-          + "emoteConfig.V1b\006proto3"
+          + "E\020\001\022\021\n\rFORCED_UPDATE\020\002\022\014\n\010ROLLBACK\020\003B\266\001\n"
+          + "*com.google.events.firebase.remoteconfig"
+          + ".v1P\001\252\002/Google.Events.Protobuf.Firebase."
+          + "RemoteConfig.V1\312\002&Google\\Events\\Firebase"
+          + "\\RemoteConfig\\V1\352\002*Google::Events::Fireb"
+          + "ase::RemoteConfig::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

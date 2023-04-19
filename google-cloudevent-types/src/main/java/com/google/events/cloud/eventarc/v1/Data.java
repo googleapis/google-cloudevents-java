@@ -152,9 +152,11 @@ public final class Data {
           + "\001(\0132(.google.events.cloud.eventarc.v1.Ch"
           + "annel\"a\n\032ChannelConnectionEventData\022C\n\007p"
           + "ayload\030\001 \001(\01322.google.events.cloud.event"
-          + "arc.v1.ChannelConnectionBR\n#com.google.e"
-          + "vents.cloud.eventarc.v1P\001\252\002(Google.Event"
-          + "s.Protobuf.Cloud.Eventarc.V1b\006proto3"
+          + "arc.v1.ChannelConnectionB\232\001\n#com.google."
+          + "events.cloud.eventarc.v1P\001\252\002(Google.Even"
+          + "ts.Protobuf.Cloud.Eventarc.V1\312\002\037Google\\E"
+          + "vents\\Cloud\\Eventarc\\V1\352\002#Google::Events"
+          + "::Cloud::Eventarc::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

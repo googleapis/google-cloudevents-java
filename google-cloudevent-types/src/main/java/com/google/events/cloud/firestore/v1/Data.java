@@ -103,9 +103,11 @@ public final class Data {
           + "loud.firestore.v1.MapValue.FieldsEntry\032V"
           + "\n\013FieldsEntry\022\013\n\003key\030\001 \001(\t\0226\n\005value\030\002 \001("
           + "\0132\'.google.events.cloud.firestore.v1.Val"
-          + "ue:\0028\001BT\n$com.google.events.cloud.firest"
-          + "ore.v1P\001\252\002)Google.Events.Protobuf.Cloud."
-          + "Firestore.V1b\006proto3"
+          + "ue:\0028\001B\236\001\n$com.google.events.cloud.fires"
+          + "tore.v1P\001\252\002)Google.Events.Protobuf.Cloud"
+          + ".Firestore.V1\312\002 Google\\Events\\Cloud\\Fire"
+          + "store\\V1\352\002$Google::Events::Cloud::Firest"
+          + "ore::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

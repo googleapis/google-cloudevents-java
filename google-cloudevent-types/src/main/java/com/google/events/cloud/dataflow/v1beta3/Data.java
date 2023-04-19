@@ -274,10 +274,12 @@ public final class Data {
           + "TATE_DRAINING\020\007\022\025\n\021JOB_STATE_DRAINED\020\010\022\025"
           + "\n\021JOB_STATE_PENDING\020\t\022\030\n\024JOB_STATE_CANCE"
           + "LLING\020\n\022\024\n\020JOB_STATE_QUEUED\020\013\022\"\n\036JOB_STA"
-          + "TE_RESOURCE_CLEANING_UP\020\014B\\\n(com.google."
-          + "events.cloud.dataflow.v1beta3P\001\252\002-Google"
-          + ".Events.Protobuf.Cloud.Dataflow.V1Beta3b"
-          + "\006proto3"
+          + "TE_RESOURCE_CLEANING_UP\020\014B\256\001\n(com.google"
+          + ".events.cloud.dataflow.v1beta3P\001\252\002-Googl"
+          + "e.Events.Protobuf.Cloud.Dataflow.V1Beta3"
+          + "\312\002$Google\\Events\\Cloud\\Dataflow\\V1beta3\352"
+          + "\002(Google::Events::Cloud::Dataflow::V1bet"
+          + "a3b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

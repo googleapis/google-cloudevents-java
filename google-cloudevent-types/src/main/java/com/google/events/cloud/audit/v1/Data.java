@@ -159,9 +159,11 @@ public final class Data {
           + "(\005*\202\001\n\013LogSeverity\022\013\n\007DEFAULT\020\000\022\t\n\005DEBUG"
           + "\020d\022\t\n\004INFO\020\310\001\022\013\n\006NOTICE\020\254\002\022\014\n\007WARNING\020\220\003"
           + "\022\n\n\005ERROR\020\364\003\022\r\n\010CRITICAL\020\330\004\022\n\n\005ALERT\020\274\005\022"
-          + "\016\n\tEMERGENCY\020\240\006BL\n com.google.events.clo"
-          + "ud.audit.v1P\001\252\002%Google.Events.Protobuf.C"
-          + "loud.Audit.V1b\006proto3"
+          + "\016\n\tEMERGENCY\020\240\006B\216\001\n com.google.events.cl"
+          + "oud.audit.v1P\001\252\002%Google.Events.Protobuf."
+          + "Cloud.Audit.V1\312\002\034Google\\Events\\Cloud\\Aud"
+          + "it\\V1\352\002 Google::Events::Cloud::Audit::V1"
+          + "b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

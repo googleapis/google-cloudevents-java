@@ -65,9 +65,11 @@ public final class Data {
           + ".google.protobuf.Timestamp\"d\n\010UserInfo\022\013"
           + "\n\003uid\030\001 \001(\t\022\r\n\005email\030\002 \001(\t\022\024\n\014display_na"
           + "me\030\003 \001(\t\022\021\n\tphoto_URL\030\004 \001(\t\022\023\n\013provider_"
-          + "id\030\005 \001(\tBP\n\"com.google.events.firebase.a"
-          + "uth.v1P\001\252\002\'Google.Events.Protobuf.Fireba"
-          + "se.Auth.V1b\006proto3"
+          + "id\030\005 \001(\tB\226\001\n\"com.google.events.firebase."
+          + "auth.v1P\001\252\002\'Google.Events.Protobuf.Fireb"
+          + "ase.Auth.V1\312\002\036Google\\Events\\Firebase\\Aut"
+          + "h\\V1\352\002\"Google::Events::Firebase::Auth::V"
+          + "1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(

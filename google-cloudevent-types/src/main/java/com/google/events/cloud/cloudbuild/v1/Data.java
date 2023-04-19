@@ -244,9 +244,11 @@ public final class Data {
           + "SE\020\001\"G\n\022LogStreamingOption\022\022\n\016STREAM_DEF"
           + "AULT\020\000\022\r\n\tSTREAM_ON\020\001\022\016\n\nSTREAM_OFF\020\002\"@\n"
           + "\013LoggingMode\022\027\n\023LOGGING_UNSPECIFIED\020\000\022\n\n"
-          + "\006LEGACY\020\001\022\014\n\010GCS_ONLY\020\002BV\n%com.google.ev"
-          + "ents.cloud.cloudbuild.v1P\001\252\002*Google.Even"
-          + "ts.Protobuf.Cloud.CloudBuild.V1b\006proto3"
+          + "\006LEGACY\020\001\022\014\n\010GCS_ONLY\020\002B\242\001\n%com.google.e"
+          + "vents.cloud.cloudbuild.v1P\001\252\002*Google.Eve"
+          + "nts.Protobuf.Cloud.CloudBuild.V1\312\002!Googl"
+          + "e\\Events\\Cloud\\CloudBuild\\V1\352\002%Google::E"
+          + "vents::Cloud::CloudBuild::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
