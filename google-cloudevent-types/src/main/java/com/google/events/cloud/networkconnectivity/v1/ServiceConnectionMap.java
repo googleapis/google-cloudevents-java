@@ -881,6 +881,38 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
      * @return The disableGlobalAccess.
      */
     boolean getDisableGlobalAccess();
+
+    /**
+     *
+     *
+     * <pre>
+     * Output only. Overall state of PSC Connections management for this
+     * consumer psc config.
+     * </pre>
+     *
+     * <code>
+     * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for state.
+     */
+    int getStateValue();
+    /**
+     *
+     *
+     * <pre>
+     * Output only. Overall state of PSC Connections management for this
+     * consumer psc config.
+     * </pre>
+     *
+     * <code>
+     * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+     * </code>
+     *
+     * @return The state.
+     */
+    com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State
+        getState();
   }
   /**
    *
@@ -905,6 +937,7 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
     private ConsumerPscConfig() {
       project_ = "";
       network_ = "";
+      state_ = 0;
     }
 
     @java.lang.Override
@@ -933,6 +966,173 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
                   .class,
               com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
                   .Builder.class);
+    }
+
+    /**
+     *
+     *
+     * <pre>
+     * PSC Consumer Config State.
+     * </pre>
+     *
+     * Protobuf enum {@code
+     * google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State}
+     */
+    public enum State implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       *
+       *
+       * <pre>
+       * Default state, when Connection Map is created initially.
+       * </pre>
+       *
+       * <code>STATE_UNSPECIFIED = 0;</code>
+       */
+      STATE_UNSPECIFIED(0),
+      /**
+       *
+       *
+       * <pre>
+       * Set when policy and map configuration is valid,
+       * and their matching can lead to allowing creation of PSC Connections
+       * subject to other constraints like connections limit.
+       * </pre>
+       *
+       * <code>VALID = 1;</code>
+       */
+      VALID(1),
+      /**
+       *
+       *
+       * <pre>
+       * No Service Connection Policy found for this network and Service
+       * Class
+       * </pre>
+       *
+       * <code>CONNECTION_POLICY_MISSING = 2;</code>
+       */
+      CONNECTION_POLICY_MISSING(2),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       *
+       *
+       * <pre>
+       * Default state, when Connection Map is created initially.
+       * </pre>
+       *
+       * <code>STATE_UNSPECIFIED = 0;</code>
+       */
+      public static final int STATE_UNSPECIFIED_VALUE = 0;
+      /**
+       *
+       *
+       * <pre>
+       * Set when policy and map configuration is valid,
+       * and their matching can lead to allowing creation of PSC Connections
+       * subject to other constraints like connections limit.
+       * </pre>
+       *
+       * <code>VALID = 1;</code>
+       */
+      public static final int VALID_VALUE = 1;
+      /**
+       *
+       *
+       * <pre>
+       * No Service Connection Policy found for this network and Service
+       * Class
+       * </pre>
+       *
+       * <code>CONNECTION_POLICY_MISSING = 2;</code>
+       */
+      public static final int CONNECTION_POLICY_MISSING_VALUE = 2;
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static State valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static State forNumber(int value) {
+        switch (value) {
+          case 0:
+            return STATE_UNSPECIFIED;
+          case 1:
+            return VALID;
+          case 2:
+            return CONNECTION_POLICY_MISSING;
+          default:
+            return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<State> internalGetValueMap() {
+        return internalValueMap;
+      }
+
+      private static final com.google.protobuf.Internal.EnumLiteMap<State> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<State>() {
+            public State findValueByNumber(int number) {
+              return State.forNumber(number);
+            }
+          };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+
+      public final com.google.protobuf.Descriptors.EnumDescriptor getDescriptorForType() {
+        return getDescriptor();
+      }
+
+      public static final com.google.protobuf.Descriptors.EnumDescriptor getDescriptor() {
+        return com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+            .getDescriptor()
+            .getEnumTypes()
+            .get(0);
+      }
+
+      private static final State[] VALUES = values();
+
+      public static State valueOf(com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException("EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private State(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State)
     }
 
     public static final int PROJECT_FIELD_NUMBER = 1;
@@ -1064,6 +1264,54 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       return disableGlobalAccess_;
     }
 
+    public static final int STATE_FIELD_NUMBER = 4;
+    private int state_ = 0;
+    /**
+     *
+     *
+     * <pre>
+     * Output only. Overall state of PSC Connections management for this
+     * consumer psc config.
+     * </pre>
+     *
+     * <code>
+     * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+     * </code>
+     *
+     * @return The enum numeric value on the wire for state.
+     */
+    @java.lang.Override
+    public int getStateValue() {
+      return state_;
+    }
+    /**
+     *
+     *
+     * <pre>
+     * Output only. Overall state of PSC Connections management for this
+     * consumer psc config.
+     * </pre>
+     *
+     * <code>
+     * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+     * </code>
+     *
+     * @return The state.
+     */
+    @java.lang.Override
+    public com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+            .State
+        getState() {
+      com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State
+          result =
+              com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+                  .State.forNumber(state_);
+      return result == null
+          ? com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+              .State.UNRECOGNIZED
+          : result;
+    }
+
     private byte memoizedIsInitialized = -1;
 
     @java.lang.Override
@@ -1087,6 +1335,12 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       if (disableGlobalAccess_ != false) {
         output.writeBool(3, disableGlobalAccess_);
       }
+      if (state_
+          != com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+              .State.STATE_UNSPECIFIED
+              .getNumber()) {
+        output.writeEnum(4, state_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -1104,6 +1358,12 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       }
       if (disableGlobalAccess_ != false) {
         size += com.google.protobuf.CodedOutputStream.computeBoolSize(3, disableGlobalAccess_);
+      }
+      if (state_
+          != com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+              .State.STATE_UNSPECIFIED
+              .getNumber()) {
+        size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, state_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -1127,6 +1387,7 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       if (!getProject().equals(other.getProject())) return false;
       if (!getNetwork().equals(other.getNetwork())) return false;
       if (getDisableGlobalAccess() != other.getDisableGlobalAccess()) return false;
+      if (state_ != other.state_) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -1144,6 +1405,8 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       hash = (53 * hash) + getNetwork().hashCode();
       hash = (37 * hash) + DISABLE_GLOBAL_ACCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(getDisableGlobalAccess());
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + state_;
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1313,6 +1576,7 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
         project_ = "";
         network_ = "";
         disableGlobalAccess_ = false;
+        state_ = 0;
         return this;
       }
 
@@ -1366,6 +1630,9 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.disableGlobalAccess_ = disableGlobalAccess_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.state_ = state_;
         }
       }
 
@@ -1438,6 +1705,9 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
         if (other.getDisableGlobalAccess() != false) {
           setDisableGlobalAccess(other.getDisableGlobalAccess());
         }
+        if (other.state_ != 0) {
+          setStateValue(other.getStateValue());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -1482,6 +1752,12 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
                   bitField0_ |= 0x00000004;
                   break;
                 } // case 24
+              case 32:
+                {
+                  state_ = input.readEnum();
+                  bitField0_ |= 0x00000008;
+                  break;
+                } // case 32
               default:
                 {
                   if (!super.parseUnknownField(input, extensionRegistry, tag)) {
@@ -1785,6 +2061,121 @@ public final class ServiceConnectionMap extends com.google.protobuf.GeneratedMes
       public Builder clearDisableGlobalAccess() {
         bitField0_ = (bitField0_ & ~0x00000004);
         disableGlobalAccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int state_ = 0;
+      /**
+       *
+       *
+       * <pre>
+       * Output only. Overall state of PSC Connections management for this
+       * consumer psc config.
+       * </pre>
+       *
+       * <code>
+       * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+       * </code>
+       *
+       * @return The enum numeric value on the wire for state.
+       */
+      @java.lang.Override
+      public int getStateValue() {
+        return state_;
+      }
+      /**
+       *
+       *
+       * <pre>
+       * Output only. Overall state of PSC Connections management for this
+       * consumer psc config.
+       * </pre>
+       *
+       * <code>
+       * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+       * </code>
+       *
+       * @param value The enum numeric value on the wire for state to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStateValue(int value) {
+        state_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       *
+       *
+       * <pre>
+       * Output only. Overall state of PSC Connections management for this
+       * consumer psc config.
+       * </pre>
+       *
+       * <code>
+       * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+       * </code>
+       *
+       * @return The state.
+       */
+      @java.lang.Override
+      public com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+              .State
+          getState() {
+        com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State
+            result =
+                com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap
+                    .ConsumerPscConfig.State.forNumber(state_);
+        return result == null
+            ? com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+                .State.UNRECOGNIZED
+            : result;
+      }
+      /**
+       *
+       *
+       * <pre>
+       * Output only. Overall state of PSC Connections management for this
+       * consumer psc config.
+       * </pre>
+       *
+       * <code>
+       * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+       * </code>
+       *
+       * @param value The state to set.
+       * @return This builder for chaining.
+       */
+      public Builder setState(
+          com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig
+                  .State
+              value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000008;
+        state_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       *
+       *
+       * <pre>
+       * Output only. Overall state of PSC Connections management for this
+       * consumer psc config.
+       * </pre>
+       *
+       * <code>
+       * .google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.ConsumerPscConfig.State state = 4;
+       * </code>
+       *
+       * @return This builder for chaining.
+       */
+      public Builder clearState() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        state_ = 0;
         onChanged();
         return this;
       }
