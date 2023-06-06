@@ -357,10 +357,22 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Max number of PSC connections for this policy.
+     * Optional. Max number of PSC connections for this policy.
      * </pre>
      *
-     * <code>int64 limit = 2;</code>
+     * <code>optional int64 limit = 2;</code>
+     *
+     * @return Whether the limit field is set.
+     */
+    boolean hasLimit();
+    /**
+     *
+     *
+     * <pre>
+     * Optional. Max number of PSC connections for this policy.
+     * </pre>
+     *
+     * <code>optional int64 limit = 2;</code>
      *
      * @return The limit.
      */
@@ -419,6 +431,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
                   .Builder.class);
     }
 
+    private int bitField0_;
     public static final int SUBNETWORKS_FIELD_NUMBER = 1;
 
     @SuppressWarnings("serial")
@@ -496,10 +509,25 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Max number of PSC connections for this policy.
+     * Optional. Max number of PSC connections for this policy.
      * </pre>
      *
-     * <code>int64 limit = 2;</code>
+     * <code>optional int64 limit = 2;</code>
+     *
+     * @return Whether the limit field is set.
+     */
+    @java.lang.Override
+    public boolean hasLimit() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     *
+     *
+     * <pre>
+     * Optional. Max number of PSC connections for this policy.
+     * </pre>
+     *
+     * <code>optional int64 limit = 2;</code>
      *
      * @return The limit.
      */
@@ -525,7 +553,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       for (int i = 0; i < subnetworks_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, subnetworks_.getRaw(i));
       }
-      if (limit_ != 0L) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         output.writeInt64(2, limit_);
       }
       getUnknownFields().writeTo(output);
@@ -545,7 +573,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         size += dataSize;
         size += 1 * getSubnetworksList().size();
       }
-      if (limit_ != 0L) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.CodedOutputStream.computeInt64Size(2, limit_);
       }
       size += getUnknownFields().getSerializedSize();
@@ -567,7 +595,10 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           (com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig) obj;
 
       if (!getSubnetworksList().equals(other.getSubnetworksList())) return false;
-      if (getLimit() != other.getLimit()) return false;
+      if (hasLimit() != other.hasLimit()) return false;
+      if (hasLimit()) {
+        if (getLimit() != other.getLimit()) return false;
+      }
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
@@ -583,8 +614,10 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         hash = (37 * hash) + SUBNETWORKS_FIELD_NUMBER;
         hash = (53 * hash) + getSubnetworksList().hashCode();
       }
-      hash = (37 * hash) + LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getLimit());
+      if (hasLimit()) {
+        hash = (37 * hash) + LIMIT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(getLimit());
+      }
       hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -795,9 +828,12 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       private void buildPartial0(
           com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig result) {
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.limit_ = limit_;
+          to_bitField0_ |= 0x00000001;
         }
+        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -864,7 +900,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           }
           onChanged();
         }
-        if (other.getLimit() != 0L) {
+        if (other.hasLimit()) {
           setLimit(other.getLimit());
         }
         this.mergeUnknownFields(other.getUnknownFields());
@@ -1116,10 +1152,25 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
        *
        *
        * <pre>
-       * Max number of PSC connections for this policy.
+       * Optional. Max number of PSC connections for this policy.
        * </pre>
        *
-       * <code>int64 limit = 2;</code>
+       * <code>optional int64 limit = 2;</code>
+       *
+       * @return Whether the limit field is set.
+       */
+      @java.lang.Override
+      public boolean hasLimit() {
+        return ((bitField0_ & 0x00000002) != 0);
+      }
+      /**
+       *
+       *
+       * <pre>
+       * Optional. Max number of PSC connections for this policy.
+       * </pre>
+       *
+       * <code>optional int64 limit = 2;</code>
        *
        * @return The limit.
        */
@@ -1131,10 +1182,10 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
        *
        *
        * <pre>
-       * Max number of PSC connections for this policy.
+       * Optional. Max number of PSC connections for this policy.
        * </pre>
        *
-       * <code>int64 limit = 2;</code>
+       * <code>optional int64 limit = 2;</code>
        *
        * @param value The limit to set.
        * @return This builder for chaining.
@@ -1150,10 +1201,10 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
        *
        *
        * <pre>
-       * Max number of PSC connections for this policy.
+       * Optional. Max number of PSC connections for this policy.
        * </pre>
        *
-       * <code>int64 limit = 2;</code>
+       * <code>optional int64 limit = 2;</code>
        *
        * @return This builder for chaining.
        */
