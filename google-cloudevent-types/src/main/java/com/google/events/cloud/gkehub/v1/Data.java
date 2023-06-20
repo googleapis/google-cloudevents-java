@@ -36,10 +36,6 @@ public final class Data {
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_events_cloud_gkehub_v1_Feature_LabelsEntry_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_descriptor;
-  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
       internal_static_google_events_cloud_gkehub_v1_Feature_MembershipStatesEntry_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_events_cloud_gkehub_v1_Feature_MembershipStatesEntry_fieldAccessorTable;
@@ -63,10 +59,6 @@ public final class Data {
       internal_static_google_events_cloud_gkehub_v1_ScopeFeatureState_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_events_cloud_gkehub_v1_ScopeFeatureState_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_google_events_cloud_gkehub_v1_MembershipFeatureSpec_descriptor;
-  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_google_events_cloud_gkehub_v1_MembershipFeatureSpec_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
       internal_static_google_events_cloud_gkehub_v1_MembershipFeatureState_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -170,151 +162,144 @@ public final class Data {
     java.lang.String[] descriptorData = {
       "\n(google/events/cloud/gkehub/v1/data.pro"
           + "to\022\035google.events.cloud.gkehub.v1\032\037googl"
-          + "e/protobuf/timestamp.proto\"\357\007\n\007Feature\022\014"
+          + "e/protobuf/timestamp.proto\"\252\006\n\007Feature\022\014"
           + "\n\004name\030\001 \001(\t\022B\n\006labels\030\002 \003(\01322.google.ev"
           + "ents.cloud.gkehub.v1.Feature.LabelsEntry"
           + "\022K\n\016resource_state\030\003 \001(\01323.google.events"
-          + ".cloud.gkehub.v1.FeatureResourceState\022U\n"
-          + "\020membership_specs\030\005 \003(\0132;.google.events."
-          + "cloud.gkehub.v1.Feature.MembershipSpecsE"
-          + "ntry\022@\n\005state\030\006 \001(\01321.google.events.clou"
-          + "d.gkehub.v1.CommonFeatureState\022W\n\021member"
-          + "ship_states\030\007 \003(\0132<.google.events.cloud."
-          + "gkehub.v1.Feature.MembershipStatesEntry\022"
-          + "/\n\013create_time\030\010 \001(\0132\032.google.protobuf.T"
-          + "imestamp\022/\n\013update_time\030\t \001(\0132\032.google.p"
-          + "rotobuf.Timestamp\022/\n\013delete_time\030\n \001(\0132\032"
-          + ".google.protobuf.Timestamp\022M\n\014scope_stat"
-          + "es\030\r \003(\01327.google.events.cloud.gkehub.v1"
-          + ".Feature.ScopeStatesEntry\032-\n\013LabelsEntry"
-          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032l\n\024Memb"
-          + "ershipSpecsEntry\022\013\n\003key\030\001 \001(\t\022C\n\005value\030\002"
-          + " \001(\01324.google.events.cloud.gkehub.v1.Mem"
-          + "bershipFeatureSpec:\0028\001\032n\n\025MembershipStat"
-          + "esEntry\022\013\n\003key\030\001 \001(\t\022D\n\005value\030\002 \001(\01325.go"
-          + "ogle.events.cloud.gkehub.v1.MembershipFe"
-          + "atureState:\0028\001\032d\n\020ScopeStatesEntry\022\013\n\003ke"
-          + "y\030\001 \001(\t\022?\n\005value\030\002 \001(\01320.google.events.c"
-          + "loud.gkehub.v1.ScopeFeatureState:\0028\001\"\315\001\n"
-          + "\024FeatureResourceState\022H\n\005state\030\001 \001(\01629.g"
-          + "oogle.events.cloud.gkehub.v1.FeatureReso"
-          + "urceState.State\"k\n\005State\022\025\n\021STATE_UNSPEC"
-          + "IFIED\020\000\022\014\n\010ENABLING\020\001\022\n\n\006ACTIVE\020\002\022\r\n\tDIS"
-          + "ABLING\020\003\022\014\n\010UPDATING\020\004\022\024\n\020SERVICE_UPDATI"
-          + "NG\020\005\"\322\001\n\014FeatureState\022>\n\004code\030\001 \001(\01620.go"
-          + "ogle.events.cloud.gkehub.v1.FeatureState"
-          + ".Code\022\023\n\013description\030\002 \001(\t\022/\n\013update_tim"
-          + "e\030\003 \001(\0132\032.google.protobuf.Timestamp\"<\n\004C"
-          + "ode\022\024\n\020CODE_UNSPECIFIED\020\000\022\006\n\002OK\020\001\022\013\n\007WAR"
-          + "NING\020\002\022\t\n\005ERROR\020\003\"P\n\022CommonFeatureState\022"
-          + ":\n\005state\030\001 \001(\0132+.google.events.cloud.gke"
-          + "hub.v1.FeatureState\"O\n\021ScopeFeatureState"
-          + "\022:\n\005state\030\001 \001(\0132+.google.events.cloud.gk"
-          + "ehub.v1.FeatureState\"0\n\025MembershipFeatur"
-          + "eSpec\022\027\n\017fleet_inherited\030\001 \001(\010\"T\n\026Member"
-          + "shipFeatureState\022:\n\005state\030\001 \001(\0132+.google"
-          + ".events.cloud.gkehub.v1.FeatureState\"\370\001\n"
-          + "\005Scope\022\014\n\004name\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022/\n\013cre"
-          + "ate_time\030\003 \001(\0132\032.google.protobuf.Timesta"
-          + "mp\022/\n\013update_time\030\004 \001(\0132\032.google.protobu"
-          + "f.Timestamp\022/\n\013delete_time\030\005 \001(\0132\032.googl"
-          + "e.protobuf.Timestamp\022A\n\005state\030\006 \001(\01322.go"
-          + "ogle.events.cloud.gkehub.v1.ScopeLifecyc"
-          + "leState\"\257\001\n\023ScopeLifecycleState\022E\n\004code\030"
-          + "\001 \001(\01627.google.events.cloud.gkehub.v1.Sc"
-          + "opeLifecycleState.Code\"Q\n\004Code\022\024\n\020CODE_U"
-          + "NSPECIFIED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022\014\n"
-          + "\010DELETING\020\003\022\014\n\010UPDATING\020\004\"\274\002\n\021Membership"
-          + "Binding\022\017\n\005scope\030\003 \001(\tH\000\022\017\n\005fleet\030\004 \001(\010H"
-          + "\000\022\014\n\004name\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022/\n\013create_t"
-          + "ime\030\005 \001(\0132\032.google.protobuf.Timestamp\022/\n"
-          + "\013update_time\030\006 \001(\0132\032.google.protobuf.Tim"
-          + "estamp\022/\n\013delete_time\030\007 \001(\0132\032.google.pro"
-          + "tobuf.Timestamp\022M\n\005state\030\010 \001(\0132>.google."
-          + "events.cloud.gkehub.v1.MembershipBinding"
-          + "LifecycleStateB\010\n\006target\"\307\001\n\037MembershipB"
-          + "indingLifecycleState\022Q\n\004code\030\001 \001(\0162C.goo"
-          + "gle.events.cloud.gkehub.v1.MembershipBin"
-          + "dingLifecycleState.Code\"Q\n\004Code\022\024\n\020CODE_"
-          + "UNSPECIFIED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022\014"
-          + "\n\010DELETING\020\003\022\014\n\010UPDATING\020\004\"\345\004\n\nMembershi"
-          + "p\022E\n\010endpoint\030\004 \001(\01321.google.events.clou"
-          + "d.gkehub.v1.MembershipEndpointH\000\022\014\n\004name"
-          + "\030\001 \001(\t\022E\n\006labels\030\002 \003(\01325.google.events.c"
-          + "loud.gkehub.v1.Membership.LabelsEntry\022\023\n"
-          + "\013description\030\003 \001(\t\022=\n\005state\030\005 \001(\0132..goog"
-          + "le.events.cloud.gkehub.v1.MembershipStat"
-          + "e\022/\n\013create_time\030\006 \001(\0132\032.google.protobuf"
-          + ".Timestamp\022/\n\013update_time\030\007 \001(\0132\032.google"
-          + ".protobuf.Timestamp\022/\n\013delete_time\030\010 \001(\013"
-          + "2\032.google.protobuf.Timestamp\022\023\n\013external"
-          + "_id\030\t \001(\t\0228\n\024last_connection_time\030\n \001(\0132"
-          + "\032.google.protobuf.Timestamp\022\021\n\tunique_id"
-          + "\030\013 \001(\t\022;\n\tauthority\030\014 \001(\0132(.google.event"
-          + "s.cloud.gkehub.v1.Authority\032-\n\013LabelsEnt"
-          + "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\006\n\004ty"
-          + "pe\"\302\004\n\022MembershipEndpoint\022@\n\013gke_cluster"
-          + "\030\001 \001(\0132).google.events.cloud.gkehub.v1.G"
-          + "keClusterH\000\022G\n\017on_prem_cluster\030\004 \001(\0132,.g"
-          + "oogle.events.cloud.gkehub.v1.OnPremClust"
-          + "erH\000\022O\n\023multi_cloud_cluster\030\005 \001(\01320.goog"
-          + "le.events.cloud.gkehub.v1.MultiCloudClus"
-          + "terH\000\022B\n\014edge_cluster\030\006 \001(\0132*.google.eve"
-          + "nts.cloud.gkehub.v1.EdgeClusterH\000\022L\n\021app"
-          + "liance_cluster\030\007 \001(\0132/.google.events.clo"
-          + "ud.gkehub.v1.ApplianceClusterH\000\022N\n\023kuber"
-          + "netes_metadata\030\002 \001(\01321.google.events.clo"
-          + "ud.gkehub.v1.KubernetesMetadata\022N\n\023kuber"
-          + "netes_resource\030\003 \001(\01321.google.events.clo"
-          + "ud.gkehub.v1.KubernetesResource\022\026\n\016googl"
-          + "e_managed\030\010 \001(\010B\006\n\004type\"\371\001\n\022KubernetesRe"
-          + "source\022M\n\024membership_resources\030\002 \003(\0132/.g"
-          + "oogle.events.cloud.gkehub.v1.ResourceMan"
-          + "ifest\022J\n\021connect_resources\030\003 \003(\0132/.googl"
-          + "e.events.cloud.gkehub.v1.ResourceManifes"
-          + "t\022H\n\020resource_options\030\004 \001(\0132..google.eve"
-          + "nts.cloud.gkehub.v1.ResourceOptions\"T\n\017R"
-          + "esourceOptions\022\027\n\017connect_version\030\001 \001(\t\022"
-          + "\023\n\013v1beta1_crd\030\002 \001(\010\022\023\n\013k8s_version\030\003 \001("
-          + "\t\"<\n\020ResourceManifest\022\020\n\010manifest\030\001 \001(\t\022"
-          + "\026\n\016cluster_scoped\030\002 \001(\010\"<\n\nGkeCluster\022\025\n"
-          + "\rresource_link\030\001 \001(\t\022\027\n\017cluster_missing\030"
-          + "\002 \001(\010\"\207\002\n\rOnPremCluster\022\025\n\rresource_link"
-          + "\030\001 \001(\t\022\027\n\017cluster_missing\030\002 \001(\010\022\025\n\radmin"
-          + "_cluster\030\003 \001(\010\022N\n\014cluster_type\030\004 \001(\01628.g"
-          + "oogle.events.cloud.gkehub.v1.OnPremClust"
-          + "er.ClusterType\"_\n\013ClusterType\022\033\n\027CLUSTER"
-          + "TYPE_UNSPECIFIED\020\000\022\r\n\tBOOTSTRAP\020\001\022\n\n\006HYB"
-          + "RID\020\002\022\016\n\nSTANDALONE\020\003\022\010\n\004USER\020\004\"C\n\021Multi"
-          + "CloudCluster\022\025\n\rresource_link\030\001 \001(\t\022\027\n\017c"
-          + "luster_missing\030\002 \001(\010\"$\n\013EdgeCluster\022\025\n\rr"
-          + "esource_link\030\001 \001(\t\")\n\020ApplianceCluster\022\025"
-          + "\n\rresource_link\030\001 \001(\t\"\301\001\n\022KubernetesMeta"
-          + "data\022%\n\035kubernetes_api_server_version\030\001 "
-          + "\001(\t\022\030\n\020node_provider_id\030\002 \001(\t\022\022\n\nnode_co"
-          + "unt\030\003 \001(\005\022\022\n\nvcpu_count\030\004 \001(\005\022\021\n\tmemory_"
-          + "mb\030\005 \001(\005\022/\n\013update_time\030d \001(\0132\032.google.p"
-          + "rotobuf.Timestamp\"\275\001\n\017MembershipState\022A\n"
-          + "\004code\030\001 \001(\01623.google.events.cloud.gkehub"
-          + ".v1.MembershipState.Code\"g\n\004Code\022\024\n\020CODE"
-          + "_UNSPECIFIED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022"
-          + "\014\n\010DELETING\020\003\022\014\n\010UPDATING\020\004\022\024\n\020SERVICE_U"
-          + "PDATING\020\005\"i\n\tAuthority\022\016\n\006issuer\030\001 \001(\t\022\036"
-          + "\n\026workload_identity_pool\030\002 \001(\t\022\031\n\021identi"
-          + "ty_provider\030\003 \001(\t\022\021\n\toidc_jwks\030\004 \001(\014\"X\n\016"
-          + "ScopeEventData\022:\n\007payload\030\001 \001(\0132$.google"
-          + ".events.cloud.gkehub.v1.ScopeH\000\210\001\001B\n\n\010_p"
-          + "ayload\"b\n\023MembershipEventData\022?\n\007payload"
-          + "\030\001 \001(\0132).google.events.cloud.gkehub.v1.M"
-          + "embershipH\000\210\001\001B\n\n\010_payload\"\\\n\020FeatureEve"
-          + "ntData\022<\n\007payload\030\001 \001(\0132&.google.events."
-          + "cloud.gkehub.v1.FeatureH\000\210\001\001B\n\n\010_payload"
-          + "\"p\n\032MembershipBindingEventData\022F\n\007payloa"
-          + "d\030\001 \001(\01320.google.events.cloud.gkehub.v1."
-          + "MembershipBindingH\000\210\001\001B\n\n\010_payloadBN\n!co"
-          + "m.google.events.cloud.gkehub.v1P\001\252\002&Goog"
-          + "le.Events.Protobuf.Cloud.GkeHub.V1b\006prot"
-          + "o3"
+          + ".cloud.gkehub.v1.FeatureResourceState\022@\n"
+          + "\005state\030\006 \001(\01321.google.events.cloud.gkehu"
+          + "b.v1.CommonFeatureState\022W\n\021membership_st"
+          + "ates\030\007 \003(\0132<.google.events.cloud.gkehub."
+          + "v1.Feature.MembershipStatesEntry\022/\n\013crea"
+          + "te_time\030\010 \001(\0132\032.google.protobuf.Timestam"
+          + "p\022/\n\013update_time\030\t \001(\0132\032.google.protobuf"
+          + ".Timestamp\022/\n\013delete_time\030\n \001(\0132\032.google"
+          + ".protobuf.Timestamp\022M\n\014scope_states\030\r \003("
+          + "\01327.google.events.cloud.gkehub.v1.Featur"
+          + "e.ScopeStatesEntry\032-\n\013LabelsEntry\022\013\n\003key"
+          + "\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032n\n\025MembershipS"
+          + "tatesEntry\022\013\n\003key\030\001 \001(\t\022D\n\005value\030\002 \001(\01325"
+          + ".google.events.cloud.gkehub.v1.Membershi"
+          + "pFeatureState:\0028\001\032d\n\020ScopeStatesEntry\022\013\n"
+          + "\003key\030\001 \001(\t\022?\n\005value\030\002 \001(\01320.google.event"
+          + "s.cloud.gkehub.v1.ScopeFeatureState:\0028\001\""
+          + "\315\001\n\024FeatureResourceState\022H\n\005state\030\001 \001(\0162"
+          + "9.google.events.cloud.gkehub.v1.FeatureR"
+          + "esourceState.State\"k\n\005State\022\025\n\021STATE_UNS"
+          + "PECIFIED\020\000\022\014\n\010ENABLING\020\001\022\n\n\006ACTIVE\020\002\022\r\n\t"
+          + "DISABLING\020\003\022\014\n\010UPDATING\020\004\022\024\n\020SERVICE_UPD"
+          + "ATING\020\005\"\322\001\n\014FeatureState\022>\n\004code\030\001 \001(\01620"
+          + ".google.events.cloud.gkehub.v1.FeatureSt"
+          + "ate.Code\022\023\n\013description\030\002 \001(\t\022/\n\013update_"
+          + "time\030\003 \001(\0132\032.google.protobuf.Timestamp\"<"
+          + "\n\004Code\022\024\n\020CODE_UNSPECIFIED\020\000\022\006\n\002OK\020\001\022\013\n\007"
+          + "WARNING\020\002\022\t\n\005ERROR\020\003\"P\n\022CommonFeatureSta"
+          + "te\022:\n\005state\030\001 \001(\0132+.google.events.cloud."
+          + "gkehub.v1.FeatureState\"O\n\021ScopeFeatureSt"
+          + "ate\022:\n\005state\030\001 \001(\0132+.google.events.cloud"
+          + ".gkehub.v1.FeatureState\"T\n\026MembershipFea"
+          + "tureState\022:\n\005state\030\001 \001(\0132+.google.events"
+          + ".cloud.gkehub.v1.FeatureState\"\370\001\n\005Scope\022"
+          + "\014\n\004name\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022/\n\013create_tim"
+          + "e\030\003 \001(\0132\032.google.protobuf.Timestamp\022/\n\013u"
+          + "pdate_time\030\004 \001(\0132\032.google.protobuf.Times"
+          + "tamp\022/\n\013delete_time\030\005 \001(\0132\032.google.proto"
+          + "buf.Timestamp\022A\n\005state\030\006 \001(\01322.google.ev"
+          + "ents.cloud.gkehub.v1.ScopeLifecycleState"
+          + "\"\257\001\n\023ScopeLifecycleState\022E\n\004code\030\001 \001(\01627"
+          + ".google.events.cloud.gkehub.v1.ScopeLife"
+          + "cycleState.Code\"Q\n\004Code\022\024\n\020CODE_UNSPECIF"
+          + "IED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022\014\n\010DELETI"
+          + "NG\020\003\022\014\n\010UPDATING\020\004\"\274\002\n\021MembershipBinding"
+          + "\022\017\n\005scope\030\003 \001(\tH\000\022\017\n\005fleet\030\004 \001(\010H\000\022\014\n\004na"
+          + "me\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022/\n\013create_time\030\005 \001"
+          + "(\0132\032.google.protobuf.Timestamp\022/\n\013update"
+          + "_time\030\006 \001(\0132\032.google.protobuf.Timestamp\022"
+          + "/\n\013delete_time\030\007 \001(\0132\032.google.protobuf.T"
+          + "imestamp\022M\n\005state\030\010 \001(\0132>.google.events."
+          + "cloud.gkehub.v1.MembershipBindingLifecyc"
+          + "leStateB\010\n\006target\"\307\001\n\037MembershipBindingL"
+          + "ifecycleState\022Q\n\004code\030\001 \001(\0162C.google.eve"
+          + "nts.cloud.gkehub.v1.MembershipBindingLif"
+          + "ecycleState.Code\"Q\n\004Code\022\024\n\020CODE_UNSPECI"
+          + "FIED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022\014\n\010DELET"
+          + "ING\020\003\022\014\n\010UPDATING\020\004\"\345\004\n\nMembership\022E\n\010en"
+          + "dpoint\030\004 \001(\01321.google.events.cloud.gkehu"
+          + "b.v1.MembershipEndpointH\000\022\014\n\004name\030\001 \001(\t\022"
+          + "E\n\006labels\030\002 \003(\01325.google.events.cloud.gk"
+          + "ehub.v1.Membership.LabelsEntry\022\023\n\013descri"
+          + "ption\030\003 \001(\t\022=\n\005state\030\005 \001(\0132..google.even"
+          + "ts.cloud.gkehub.v1.MembershipState\022/\n\013cr"
+          + "eate_time\030\006 \001(\0132\032.google.protobuf.Timest"
+          + "amp\022/\n\013update_time\030\007 \001(\0132\032.google.protob"
+          + "uf.Timestamp\022/\n\013delete_time\030\010 \001(\0132\032.goog"
+          + "le.protobuf.Timestamp\022\023\n\013external_id\030\t \001"
+          + "(\t\0228\n\024last_connection_time\030\n \001(\0132\032.googl"
+          + "e.protobuf.Timestamp\022\021\n\tunique_id\030\013 \001(\t\022"
+          + ";\n\tauthority\030\014 \001(\0132(.google.events.cloud"
+          + ".gkehub.v1.Authority\032-\n\013LabelsEntry\022\013\n\003k"
+          + "ey\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\006\n\004type\"\302\004\n\022"
+          + "MembershipEndpoint\022@\n\013gke_cluster\030\001 \001(\0132"
+          + ").google.events.cloud.gkehub.v1.GkeClust"
+          + "erH\000\022G\n\017on_prem_cluster\030\004 \001(\0132,.google.e"
+          + "vents.cloud.gkehub.v1.OnPremClusterH\000\022O\n"
+          + "\023multi_cloud_cluster\030\005 \001(\01320.google.even"
+          + "ts.cloud.gkehub.v1.MultiCloudClusterH\000\022B"
+          + "\n\014edge_cluster\030\006 \001(\0132*.google.events.clo"
+          + "ud.gkehub.v1.EdgeClusterH\000\022L\n\021appliance_"
+          + "cluster\030\007 \001(\0132/.google.events.cloud.gkeh"
+          + "ub.v1.ApplianceClusterH\000\022N\n\023kubernetes_m"
+          + "etadata\030\002 \001(\01321.google.events.cloud.gkeh"
+          + "ub.v1.KubernetesMetadata\022N\n\023kubernetes_r"
+          + "esource\030\003 \001(\01321.google.events.cloud.gkeh"
+          + "ub.v1.KubernetesResource\022\026\n\016google_manag"
+          + "ed\030\010 \001(\010B\006\n\004type\"\371\001\n\022KubernetesResource\022"
+          + "M\n\024membership_resources\030\002 \003(\0132/.google.e"
+          + "vents.cloud.gkehub.v1.ResourceManifest\022J"
+          + "\n\021connect_resources\030\003 \003(\0132/.google.event"
+          + "s.cloud.gkehub.v1.ResourceManifest\022H\n\020re"
+          + "source_options\030\004 \001(\0132..google.events.clo"
+          + "ud.gkehub.v1.ResourceOptions\"T\n\017Resource"
+          + "Options\022\027\n\017connect_version\030\001 \001(\t\022\023\n\013v1be"
+          + "ta1_crd\030\002 \001(\010\022\023\n\013k8s_version\030\003 \001(\t\"<\n\020Re"
+          + "sourceManifest\022\020\n\010manifest\030\001 \001(\t\022\026\n\016clus"
+          + "ter_scoped\030\002 \001(\010\"<\n\nGkeCluster\022\025\n\rresour"
+          + "ce_link\030\001 \001(\t\022\027\n\017cluster_missing\030\002 \001(\010\"\207"
+          + "\002\n\rOnPremCluster\022\025\n\rresource_link\030\001 \001(\t\022"
+          + "\027\n\017cluster_missing\030\002 \001(\010\022\025\n\radmin_cluste"
+          + "r\030\003 \001(\010\022N\n\014cluster_type\030\004 \001(\01628.google.e"
+          + "vents.cloud.gkehub.v1.OnPremCluster.Clus"
+          + "terType\"_\n\013ClusterType\022\033\n\027CLUSTERTYPE_UN"
+          + "SPECIFIED\020\000\022\r\n\tBOOTSTRAP\020\001\022\n\n\006HYBRID\020\002\022\016"
+          + "\n\nSTANDALONE\020\003\022\010\n\004USER\020\004\"C\n\021MultiCloudCl"
+          + "uster\022\025\n\rresource_link\030\001 \001(\t\022\027\n\017cluster_"
+          + "missing\030\002 \001(\010\"$\n\013EdgeCluster\022\025\n\rresource"
+          + "_link\030\001 \001(\t\")\n\020ApplianceCluster\022\025\n\rresou"
+          + "rce_link\030\001 \001(\t\"\301\001\n\022KubernetesMetadata\022%\n"
+          + "\035kubernetes_api_server_version\030\001 \001(\t\022\030\n\020"
+          + "node_provider_id\030\002 \001(\t\022\022\n\nnode_count\030\003 \001"
+          + "(\005\022\022\n\nvcpu_count\030\004 \001(\005\022\021\n\tmemory_mb\030\005 \001("
+          + "\005\022/\n\013update_time\030d \001(\0132\032.google.protobuf"
+          + ".Timestamp\"\275\001\n\017MembershipState\022A\n\004code\030\001"
+          + " \001(\01623.google.events.cloud.gkehub.v1.Mem"
+          + "bershipState.Code\"g\n\004Code\022\024\n\020CODE_UNSPEC"
+          + "IFIED\020\000\022\014\n\010CREATING\020\001\022\t\n\005READY\020\002\022\014\n\010DELE"
+          + "TING\020\003\022\014\n\010UPDATING\020\004\022\024\n\020SERVICE_UPDATING"
+          + "\020\005\"i\n\tAuthority\022\016\n\006issuer\030\001 \001(\t\022\036\n\026workl"
+          + "oad_identity_pool\030\002 \001(\t\022\031\n\021identity_prov"
+          + "ider\030\003 \001(\t\022\021\n\toidc_jwks\030\004 \001(\014\"X\n\016ScopeEv"
+          + "entData\022:\n\007payload\030\001 \001(\0132$.google.events"
+          + ".cloud.gkehub.v1.ScopeH\000\210\001\001B\n\n\010_payload\""
+          + "b\n\023MembershipEventData\022?\n\007payload\030\001 \001(\0132"
+          + ").google.events.cloud.gkehub.v1.Membersh"
+          + "ipH\000\210\001\001B\n\n\010_payload\"\\\n\020FeatureEventData\022"
+          + "<\n\007payload\030\001 \001(\0132&.google.events.cloud.g"
+          + "kehub.v1.FeatureH\000\210\001\001B\n\n\010_payload\"p\n\032Mem"
+          + "bershipBindingEventData\022F\n\007payload\030\001 \001(\013"
+          + "20.google.events.cloud.gkehub.v1.Members"
+          + "hipBindingH\000\210\001\001B\n\n\010_payloadBN\n!com.googl"
+          + "e.events.cloud.gkehub.v1P\001\252\002&Google.Even"
+          + "ts.Protobuf.Cloud.GkeHub.V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -331,7 +316,6 @@ public final class Data {
               "Name",
               "Labels",
               "ResourceState",
-              "MembershipSpecs",
               "State",
               "MembershipStates",
               "CreateTime",
@@ -347,16 +331,8 @@ public final class Data {
             new java.lang.String[] {
               "Key", "Value",
             });
-    internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_descriptor =
-        internal_static_google_events_cloud_gkehub_v1_Feature_descriptor.getNestedTypes().get(1);
-    internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_descriptor,
-            new java.lang.String[] {
-              "Key", "Value",
-            });
     internal_static_google_events_cloud_gkehub_v1_Feature_MembershipStatesEntry_descriptor =
-        internal_static_google_events_cloud_gkehub_v1_Feature_descriptor.getNestedTypes().get(2);
+        internal_static_google_events_cloud_gkehub_v1_Feature_descriptor.getNestedTypes().get(1);
     internal_static_google_events_cloud_gkehub_v1_Feature_MembershipStatesEntry_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_Feature_MembershipStatesEntry_descriptor,
@@ -364,7 +340,7 @@ public final class Data {
               "Key", "Value",
             });
     internal_static_google_events_cloud_gkehub_v1_Feature_ScopeStatesEntry_descriptor =
-        internal_static_google_events_cloud_gkehub_v1_Feature_descriptor.getNestedTypes().get(3);
+        internal_static_google_events_cloud_gkehub_v1_Feature_descriptor.getNestedTypes().get(2);
     internal_static_google_events_cloud_gkehub_v1_Feature_ScopeStatesEntry_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_Feature_ScopeStatesEntry_descriptor,
@@ -403,16 +379,8 @@ public final class Data {
             new java.lang.String[] {
               "State",
             });
-    internal_static_google_events_cloud_gkehub_v1_MembershipFeatureSpec_descriptor =
-        getDescriptor().getMessageTypes().get(5);
-    internal_static_google_events_cloud_gkehub_v1_MembershipFeatureSpec_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_google_events_cloud_gkehub_v1_MembershipFeatureSpec_descriptor,
-            new java.lang.String[] {
-              "FleetInherited",
-            });
     internal_static_google_events_cloud_gkehub_v1_MembershipFeatureState_descriptor =
-        getDescriptor().getMessageTypes().get(6);
+        getDescriptor().getMessageTypes().get(5);
     internal_static_google_events_cloud_gkehub_v1_MembershipFeatureState_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipFeatureState_descriptor,
@@ -420,7 +388,7 @@ public final class Data {
               "State",
             });
     internal_static_google_events_cloud_gkehub_v1_Scope_descriptor =
-        getDescriptor().getMessageTypes().get(7);
+        getDescriptor().getMessageTypes().get(6);
     internal_static_google_events_cloud_gkehub_v1_Scope_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_Scope_descriptor,
@@ -428,7 +396,7 @@ public final class Data {
               "Name", "Uid", "CreateTime", "UpdateTime", "DeleteTime", "State",
             });
     internal_static_google_events_cloud_gkehub_v1_ScopeLifecycleState_descriptor =
-        getDescriptor().getMessageTypes().get(8);
+        getDescriptor().getMessageTypes().get(7);
     internal_static_google_events_cloud_gkehub_v1_ScopeLifecycleState_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_ScopeLifecycleState_descriptor,
@@ -436,7 +404,7 @@ public final class Data {
               "Code",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipBinding_descriptor =
-        getDescriptor().getMessageTypes().get(9);
+        getDescriptor().getMessageTypes().get(8);
     internal_static_google_events_cloud_gkehub_v1_MembershipBinding_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipBinding_descriptor,
@@ -452,7 +420,7 @@ public final class Data {
               "Target",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipBindingLifecycleState_descriptor =
-        getDescriptor().getMessageTypes().get(10);
+        getDescriptor().getMessageTypes().get(9);
     internal_static_google_events_cloud_gkehub_v1_MembershipBindingLifecycleState_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipBindingLifecycleState_descriptor,
@@ -460,7 +428,7 @@ public final class Data {
               "Code",
             });
     internal_static_google_events_cloud_gkehub_v1_Membership_descriptor =
-        getDescriptor().getMessageTypes().get(11);
+        getDescriptor().getMessageTypes().get(10);
     internal_static_google_events_cloud_gkehub_v1_Membership_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_Membership_descriptor,
@@ -488,7 +456,7 @@ public final class Data {
               "Key", "Value",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipEndpoint_descriptor =
-        getDescriptor().getMessageTypes().get(12);
+        getDescriptor().getMessageTypes().get(11);
     internal_static_google_events_cloud_gkehub_v1_MembershipEndpoint_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipEndpoint_descriptor,
@@ -504,7 +472,7 @@ public final class Data {
               "Type",
             });
     internal_static_google_events_cloud_gkehub_v1_KubernetesResource_descriptor =
-        getDescriptor().getMessageTypes().get(13);
+        getDescriptor().getMessageTypes().get(12);
     internal_static_google_events_cloud_gkehub_v1_KubernetesResource_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_KubernetesResource_descriptor,
@@ -512,7 +480,7 @@ public final class Data {
               "MembershipResources", "ConnectResources", "ResourceOptions",
             });
     internal_static_google_events_cloud_gkehub_v1_ResourceOptions_descriptor =
-        getDescriptor().getMessageTypes().get(14);
+        getDescriptor().getMessageTypes().get(13);
     internal_static_google_events_cloud_gkehub_v1_ResourceOptions_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_ResourceOptions_descriptor,
@@ -520,7 +488,7 @@ public final class Data {
               "ConnectVersion", "V1Beta1Crd", "K8SVersion",
             });
     internal_static_google_events_cloud_gkehub_v1_ResourceManifest_descriptor =
-        getDescriptor().getMessageTypes().get(15);
+        getDescriptor().getMessageTypes().get(14);
     internal_static_google_events_cloud_gkehub_v1_ResourceManifest_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_ResourceManifest_descriptor,
@@ -528,7 +496,7 @@ public final class Data {
               "Manifest", "ClusterScoped",
             });
     internal_static_google_events_cloud_gkehub_v1_GkeCluster_descriptor =
-        getDescriptor().getMessageTypes().get(16);
+        getDescriptor().getMessageTypes().get(15);
     internal_static_google_events_cloud_gkehub_v1_GkeCluster_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_GkeCluster_descriptor,
@@ -536,7 +504,7 @@ public final class Data {
               "ResourceLink", "ClusterMissing",
             });
     internal_static_google_events_cloud_gkehub_v1_OnPremCluster_descriptor =
-        getDescriptor().getMessageTypes().get(17);
+        getDescriptor().getMessageTypes().get(16);
     internal_static_google_events_cloud_gkehub_v1_OnPremCluster_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_OnPremCluster_descriptor,
@@ -544,7 +512,7 @@ public final class Data {
               "ResourceLink", "ClusterMissing", "AdminCluster", "ClusterType",
             });
     internal_static_google_events_cloud_gkehub_v1_MultiCloudCluster_descriptor =
-        getDescriptor().getMessageTypes().get(18);
+        getDescriptor().getMessageTypes().get(17);
     internal_static_google_events_cloud_gkehub_v1_MultiCloudCluster_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MultiCloudCluster_descriptor,
@@ -552,7 +520,7 @@ public final class Data {
               "ResourceLink", "ClusterMissing",
             });
     internal_static_google_events_cloud_gkehub_v1_EdgeCluster_descriptor =
-        getDescriptor().getMessageTypes().get(19);
+        getDescriptor().getMessageTypes().get(18);
     internal_static_google_events_cloud_gkehub_v1_EdgeCluster_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_EdgeCluster_descriptor,
@@ -560,7 +528,7 @@ public final class Data {
               "ResourceLink",
             });
     internal_static_google_events_cloud_gkehub_v1_ApplianceCluster_descriptor =
-        getDescriptor().getMessageTypes().get(20);
+        getDescriptor().getMessageTypes().get(19);
     internal_static_google_events_cloud_gkehub_v1_ApplianceCluster_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_ApplianceCluster_descriptor,
@@ -568,7 +536,7 @@ public final class Data {
               "ResourceLink",
             });
     internal_static_google_events_cloud_gkehub_v1_KubernetesMetadata_descriptor =
-        getDescriptor().getMessageTypes().get(21);
+        getDescriptor().getMessageTypes().get(20);
     internal_static_google_events_cloud_gkehub_v1_KubernetesMetadata_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_KubernetesMetadata_descriptor,
@@ -581,7 +549,7 @@ public final class Data {
               "UpdateTime",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipState_descriptor =
-        getDescriptor().getMessageTypes().get(22);
+        getDescriptor().getMessageTypes().get(21);
     internal_static_google_events_cloud_gkehub_v1_MembershipState_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipState_descriptor,
@@ -589,7 +557,7 @@ public final class Data {
               "Code",
             });
     internal_static_google_events_cloud_gkehub_v1_Authority_descriptor =
-        getDescriptor().getMessageTypes().get(23);
+        getDescriptor().getMessageTypes().get(22);
     internal_static_google_events_cloud_gkehub_v1_Authority_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_Authority_descriptor,
@@ -597,7 +565,7 @@ public final class Data {
               "Issuer", "WorkloadIdentityPool", "IdentityProvider", "OidcJwks",
             });
     internal_static_google_events_cloud_gkehub_v1_ScopeEventData_descriptor =
-        getDescriptor().getMessageTypes().get(24);
+        getDescriptor().getMessageTypes().get(23);
     internal_static_google_events_cloud_gkehub_v1_ScopeEventData_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_ScopeEventData_descriptor,
@@ -605,7 +573,7 @@ public final class Data {
               "Payload", "Payload",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipEventData_descriptor =
-        getDescriptor().getMessageTypes().get(25);
+        getDescriptor().getMessageTypes().get(24);
     internal_static_google_events_cloud_gkehub_v1_MembershipEventData_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipEventData_descriptor,
@@ -613,7 +581,7 @@ public final class Data {
               "Payload", "Payload",
             });
     internal_static_google_events_cloud_gkehub_v1_FeatureEventData_descriptor =
-        getDescriptor().getMessageTypes().get(26);
+        getDescriptor().getMessageTypes().get(25);
     internal_static_google_events_cloud_gkehub_v1_FeatureEventData_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_FeatureEventData_descriptor,
@@ -621,7 +589,7 @@ public final class Data {
               "Payload", "Payload",
             });
     internal_static_google_events_cloud_gkehub_v1_MembershipBindingEventData_descriptor =
-        getDescriptor().getMessageTypes().get(27);
+        getDescriptor().getMessageTypes().get(26);
     internal_static_google_events_cloud_gkehub_v1_MembershipBindingEventData_fieldAccessorTable =
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_gkehub_v1_MembershipBindingEventData_descriptor,

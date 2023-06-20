@@ -63,8 +63,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     switch (number) {
       case 2:
         return internalGetLabels();
-      case 5:
-        return internalGetMembershipSpecs();
       case 7:
         return internalGetMembershipStates();
       case 13:
@@ -288,184 +286,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     return resourceState_ == null
         ? com.google.events.cloud.gkehub.v1.FeatureResourceState.getDefaultInstance()
         : resourceState_;
-  }
-
-  public static final int MEMBERSHIP_SPECS_FIELD_NUMBER = 5;
-
-  private static final class MembershipSpecsDefaultEntryHolder {
-    static final com.google.protobuf.MapEntry<
-            java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        defaultEntry =
-            com.google.protobuf.MapEntry
-                .<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-                    newDefaultInstance(
-                        com.google.events.cloud.gkehub.v1.Data
-                            .internal_static_google_events_cloud_gkehub_v1_Feature_MembershipSpecsEntry_descriptor,
-                        com.google.protobuf.WireFormat.FieldType.STRING,
-                        "",
-                        com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                        com.google.events.cloud.gkehub.v1.MembershipFeatureSpec
-                            .getDefaultInstance());
-  }
-
-  @SuppressWarnings("serial")
-  private com.google.protobuf.MapField<
-          java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-      membershipSpecs_;
-
-  private com.google.protobuf.MapField<
-          java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-      internalGetMembershipSpecs() {
-    if (membershipSpecs_ == null) {
-      return com.google.protobuf.MapField.emptyMapField(
-          MembershipSpecsDefaultEntryHolder.defaultEntry);
-    }
-    return membershipSpecs_;
-  }
-
-  public int getMembershipSpecsCount() {
-    return internalGetMembershipSpecs().getMap().size();
-  }
-  /**
-   *
-   *
-   * <pre>
-   * Optional. Membership-specific configuration for this Feature. If this
-   * Feature does not support any per-Membership configuration, this field may
-   * be unused.
-   * The keys indicate which Membership the configuration is for, in the form:
-   * `projects/{p}/locations/{l}/memberships/{m}`
-   * Where {p} is the project, {l} is a valid location and {m} is a valid
-   * Membership in this project at that location. {p} WILL match the Feature's
-   * project.
-   * {p} will always be returned as the project number, but the project ID is
-   * also accepted during input. If the same Membership is specified in the map
-   * twice (using the project ID form, and the project number form), exactly
-   * ONE of the entries will be saved, with no guarantees as to which. For this
-   * reason, it is recommended the same format be used for all entries when
-   * mutating a Feature.
-   * </pre>
-   *
-   * <code>
-   * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-   * </code>
-   */
-  @java.lang.Override
-  public boolean containsMembershipSpecs(java.lang.String key) {
-    if (key == null) {
-      throw new NullPointerException("map key");
-    }
-    return internalGetMembershipSpecs().getMap().containsKey(key);
-  }
-  /** Use {@link #getMembershipSpecsMap()} instead. */
-  @java.lang.Override
-  @java.lang.Deprecated
-  public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-      getMembershipSpecs() {
-    return getMembershipSpecsMap();
-  }
-  /**
-   *
-   *
-   * <pre>
-   * Optional. Membership-specific configuration for this Feature. If this
-   * Feature does not support any per-Membership configuration, this field may
-   * be unused.
-   * The keys indicate which Membership the configuration is for, in the form:
-   * `projects/{p}/locations/{l}/memberships/{m}`
-   * Where {p} is the project, {l} is a valid location and {m} is a valid
-   * Membership in this project at that location. {p} WILL match the Feature's
-   * project.
-   * {p} will always be returned as the project number, but the project ID is
-   * also accepted during input. If the same Membership is specified in the map
-   * twice (using the project ID form, and the project number form), exactly
-   * ONE of the entries will be saved, with no guarantees as to which. For this
-   * reason, it is recommended the same format be used for all entries when
-   * mutating a Feature.
-   * </pre>
-   *
-   * <code>
-   * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-   * </code>
-   */
-  @java.lang.Override
-  public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-      getMembershipSpecsMap() {
-    return internalGetMembershipSpecs().getMap();
-  }
-  /**
-   *
-   *
-   * <pre>
-   * Optional. Membership-specific configuration for this Feature. If this
-   * Feature does not support any per-Membership configuration, this field may
-   * be unused.
-   * The keys indicate which Membership the configuration is for, in the form:
-   * `projects/{p}/locations/{l}/memberships/{m}`
-   * Where {p} is the project, {l} is a valid location and {m} is a valid
-   * Membership in this project at that location. {p} WILL match the Feature's
-   * project.
-   * {p} will always be returned as the project number, but the project ID is
-   * also accepted during input. If the same Membership is specified in the map
-   * twice (using the project ID form, and the project number form), exactly
-   * ONE of the entries will be saved, with no guarantees as to which. For this
-   * reason, it is recommended the same format be used for all entries when
-   * mutating a Feature.
-   * </pre>
-   *
-   * <code>
-   * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-   * </code>
-   */
-  @java.lang.Override
-  public /* nullable */ com.google.events.cloud.gkehub.v1.MembershipFeatureSpec
-      getMembershipSpecsOrDefault(
-          java.lang.String key,
-          /* nullable */
-          com.google.events.cloud.gkehub.v1.MembershipFeatureSpec defaultValue) {
-    if (key == null) {
-      throw new NullPointerException("map key");
-    }
-    java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec> map =
-        internalGetMembershipSpecs().getMap();
-    return map.containsKey(key) ? map.get(key) : defaultValue;
-  }
-  /**
-   *
-   *
-   * <pre>
-   * Optional. Membership-specific configuration for this Feature. If this
-   * Feature does not support any per-Membership configuration, this field may
-   * be unused.
-   * The keys indicate which Membership the configuration is for, in the form:
-   * `projects/{p}/locations/{l}/memberships/{m}`
-   * Where {p} is the project, {l} is a valid location and {m} is a valid
-   * Membership in this project at that location. {p} WILL match the Feature's
-   * project.
-   * {p} will always be returned as the project number, but the project ID is
-   * also accepted during input. If the same Membership is specified in the map
-   * twice (using the project ID form, and the project number form), exactly
-   * ONE of the entries will be saved, with no guarantees as to which. For this
-   * reason, it is recommended the same format be used for all entries when
-   * mutating a Feature.
-   * </pre>
-   *
-   * <code>
-   * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-   * </code>
-   */
-  @java.lang.Override
-  public com.google.events.cloud.gkehub.v1.MembershipFeatureSpec getMembershipSpecsOrThrow(
-      java.lang.String key) {
-    if (key == null) {
-      throw new NullPointerException("map key");
-    }
-    java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec> map =
-        internalGetMembershipSpecs().getMap();
-    if (!map.containsKey(key)) {
-      throw new java.lang.IllegalArgumentException();
-    }
-    return map.get(key);
   }
 
   public static final int STATE_FIELD_NUMBER = 6;
@@ -967,8 +787,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     if (resourceState_ != null) {
       output.writeMessage(3, getResourceState());
     }
-    com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
-        output, internalGetMembershipSpecs(), MembershipSpecsDefaultEntryHolder.defaultEntry, 5);
     if (state_ != null) {
       output.writeMessage(6, getState());
     }
@@ -1009,19 +827,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     }
     if (resourceState_ != null) {
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(3, getResourceState());
-    }
-    for (java.util.Map.Entry<
-            java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        entry : internalGetMembershipSpecs().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<
-              java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-          membershipSpecs__ =
-              MembershipSpecsDefaultEntryHolder.defaultEntry
-                  .newBuilderForType()
-                  .setKey(entry.getKey())
-                  .setValue(entry.getValue())
-                  .build();
-      size += com.google.protobuf.CodedOutputStream.computeMessageSize(5, membershipSpecs__);
     }
     if (state_ != null) {
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(6, getState());
@@ -1082,7 +887,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     if (hasResourceState()) {
       if (!getResourceState().equals(other.getResourceState())) return false;
     }
-    if (!internalGetMembershipSpecs().equals(other.internalGetMembershipSpecs())) return false;
     if (hasState() != other.hasState()) return false;
     if (hasState()) {
       if (!getState().equals(other.getState())) return false;
@@ -1121,10 +925,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     if (hasResourceState()) {
       hash = (37 * hash) + RESOURCE_STATE_FIELD_NUMBER;
       hash = (53 * hash) + getResourceState().hashCode();
-    }
-    if (!internalGetMembershipSpecs().getMap().isEmpty()) {
-      hash = (37 * hash) + MEMBERSHIP_SPECS_FIELD_NUMBER;
-      hash = (53 * hash) + internalGetMembershipSpecs().hashCode();
     }
     if (hasState()) {
       hash = (37 * hash) + STATE_FIELD_NUMBER;
@@ -1273,8 +1073,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       switch (number) {
         case 2:
           return internalGetLabels();
-        case 5:
-          return internalGetMembershipSpecs();
         case 7:
           return internalGetMembershipStates();
         case 13:
@@ -1289,8 +1087,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       switch (number) {
         case 2:
           return internalGetMutableLabels();
-        case 5:
-          return internalGetMutableMembershipSpecs();
         case 7:
           return internalGetMutableMembershipStates();
         case 13:
@@ -1328,7 +1124,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         resourceStateBuilder_.dispose();
         resourceStateBuilder_ = null;
       }
-      internalGetMutableMembershipSpecs().clear();
       state_ = null;
       if (stateBuilder_ != null) {
         stateBuilder_.dispose();
@@ -1399,26 +1194,22 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
             resourceStateBuilder_ == null ? resourceState_ : resourceStateBuilder_.build();
       }
       if (((from_bitField0_ & 0x00000008) != 0)) {
-        result.membershipSpecs_ = internalGetMembershipSpecs();
-        result.membershipSpecs_.makeImmutable();
-      }
-      if (((from_bitField0_ & 0x00000010) != 0)) {
         result.state_ = stateBuilder_ == null ? state_ : stateBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000020) != 0)) {
+      if (((from_bitField0_ & 0x00000010) != 0)) {
         result.membershipStates_ = internalGetMembershipStates();
         result.membershipStates_.makeImmutable();
       }
-      if (((from_bitField0_ & 0x00000040) != 0)) {
+      if (((from_bitField0_ & 0x00000020) != 0)) {
         result.createTime_ = createTimeBuilder_ == null ? createTime_ : createTimeBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000080) != 0)) {
+      if (((from_bitField0_ & 0x00000040) != 0)) {
         result.updateTime_ = updateTimeBuilder_ == null ? updateTime_ : updateTimeBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000100) != 0)) {
+      if (((from_bitField0_ & 0x00000080) != 0)) {
         result.deleteTime_ = deleteTimeBuilder_ == null ? deleteTime_ : deleteTimeBuilder_.build();
       }
-      if (((from_bitField0_ & 0x00000200) != 0)) {
+      if (((from_bitField0_ & 0x00000100) != 0)) {
         result.scopeStates_ = internalGetScopeStates();
         result.scopeStates_.makeImmutable();
       }
@@ -1479,13 +1270,11 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       if (other.hasResourceState()) {
         mergeResourceState(other.getResourceState());
       }
-      internalGetMutableMembershipSpecs().mergeFrom(other.internalGetMembershipSpecs());
-      bitField0_ |= 0x00000008;
       if (other.hasState()) {
         mergeState(other.getState());
       }
       internalGetMutableMembershipStates().mergeFrom(other.internalGetMembershipStates());
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       if (other.hasCreateTime()) {
         mergeCreateTime(other.getCreateTime());
       }
@@ -1496,7 +1285,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         mergeDeleteTime(other.getDeleteTime());
       }
       internalGetMutableScopeStates().mergeFrom(other.internalGetScopeStates());
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
@@ -1547,24 +1336,10 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
                 bitField0_ |= 0x00000004;
                 break;
               } // case 26
-            case 42:
-              {
-                com.google.protobuf.MapEntry<
-                        java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-                    membershipSpecs__ =
-                        input.readMessage(
-                            MembershipSpecsDefaultEntryHolder.defaultEntry.getParserForType(),
-                            extensionRegistry);
-                internalGetMutableMembershipSpecs()
-                    .getMutableMap()
-                    .put(membershipSpecs__.getKey(), membershipSpecs__.getValue());
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 42
             case 50:
               {
                 input.readMessage(getStateFieldBuilder().getBuilder(), extensionRegistry);
-                bitField0_ |= 0x00000010;
+                bitField0_ |= 0x00000008;
                 break;
               } // case 50
             case 58:
@@ -1578,25 +1353,25 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
                 internalGetMutableMembershipStates()
                     .getMutableMap()
                     .put(membershipStates__.getKey(), membershipStates__.getValue());
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000010;
                 break;
               } // case 58
             case 66:
               {
                 input.readMessage(getCreateTimeFieldBuilder().getBuilder(), extensionRegistry);
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000020;
                 break;
               } // case 66
             case 74:
               {
                 input.readMessage(getUpdateTimeFieldBuilder().getBuilder(), extensionRegistry);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000040;
                 break;
               } // case 74
             case 82:
               {
                 input.readMessage(getDeleteTimeFieldBuilder().getBuilder(), extensionRegistry);
-                bitField0_ |= 0x00000100;
+                bitField0_ |= 0x00000080;
                 break;
               } // case 82
             case 106:
@@ -1610,7 +1385,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
                 internalGetMutableScopeStates()
                     .getMutableMap()
                     .put(scopeStates__.getKey(), scopeStates__.getValue());
-                bitField0_ |= 0x00000200;
+                bitField0_ |= 0x00000100;
                 break;
               } // case 106
             default:
@@ -2094,292 +1869,6 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       return resourceStateBuilder_;
     }
 
-    private com.google.protobuf.MapField<
-            java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        membershipSpecs_;
-
-    private com.google.protobuf.MapField<
-            java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        internalGetMembershipSpecs() {
-      if (membershipSpecs_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            MembershipSpecsDefaultEntryHolder.defaultEntry);
-      }
-      return membershipSpecs_;
-    }
-
-    private com.google.protobuf.MapField<
-            java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        internalGetMutableMembershipSpecs() {
-      if (membershipSpecs_ == null) {
-        membershipSpecs_ =
-            com.google.protobuf.MapField.newMapField(
-                MembershipSpecsDefaultEntryHolder.defaultEntry);
-      }
-      if (!membershipSpecs_.isMutable()) {
-        membershipSpecs_ = membershipSpecs_.copy();
-      }
-      bitField0_ |= 0x00000008;
-      onChanged();
-      return membershipSpecs_;
-    }
-
-    public int getMembershipSpecsCount() {
-      return internalGetMembershipSpecs().getMap().size();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    @java.lang.Override
-    public boolean containsMembershipSpecs(java.lang.String key) {
-      if (key == null) {
-        throw new NullPointerException("map key");
-      }
-      return internalGetMembershipSpecs().getMap().containsKey(key);
-    }
-    /** Use {@link #getMembershipSpecsMap()} instead. */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        getMembershipSpecs() {
-      return getMembershipSpecsMap();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    @java.lang.Override
-    public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        getMembershipSpecsMap() {
-      return internalGetMembershipSpecs().getMap();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    @java.lang.Override
-    public /* nullable */ com.google.events.cloud.gkehub.v1.MembershipFeatureSpec
-        getMembershipSpecsOrDefault(
-            java.lang.String key,
-            /* nullable */
-            com.google.events.cloud.gkehub.v1.MembershipFeatureSpec defaultValue) {
-      if (key == null) {
-        throw new NullPointerException("map key");
-      }
-      java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec> map =
-          internalGetMembershipSpecs().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    @java.lang.Override
-    public com.google.events.cloud.gkehub.v1.MembershipFeatureSpec getMembershipSpecsOrThrow(
-        java.lang.String key) {
-      if (key == null) {
-        throw new NullPointerException("map key");
-      }
-      java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec> map =
-          internalGetMembershipSpecs().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public Builder clearMembershipSpecs() {
-      bitField0_ = (bitField0_ & ~0x00000008);
-      internalGetMutableMembershipSpecs().getMutableMap().clear();
-      return this;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    public Builder removeMembershipSpecs(java.lang.String key) {
-      if (key == null) {
-        throw new NullPointerException("map key");
-      }
-      internalGetMutableMembershipSpecs().getMutableMap().remove(key);
-      return this;
-    }
-    /** Use alternate mutation accessors instead. */
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-        getMutableMembershipSpecs() {
-      bitField0_ |= 0x00000008;
-      return internalGetMutableMembershipSpecs().getMutableMap();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    public Builder putMembershipSpecs(
-        java.lang.String key, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec value) {
-      if (key == null) {
-        throw new NullPointerException("map key");
-      }
-      if (value == null) {
-        throw new NullPointerException("map value");
-      }
-      internalGetMutableMembershipSpecs().getMutableMap().put(key, value);
-      bitField0_ |= 0x00000008;
-      return this;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Optional. Membership-specific configuration for this Feature. If this
-     * Feature does not support any per-Membership configuration, this field may
-     * be unused.
-     * The keys indicate which Membership the configuration is for, in the form:
-     * `projects/{p}/locations/{l}/memberships/{m}`
-     * Where {p} is the project, {l} is a valid location and {m} is a valid
-     * Membership in this project at that location. {p} WILL match the Feature's
-     * project.
-     * {p} will always be returned as the project number, but the project ID is
-     * also accepted during input. If the same Membership is specified in the map
-     * twice (using the project ID form, and the project number form), exactly
-     * ONE of the entries will be saved, with no guarantees as to which. For this
-     * reason, it is recommended the same format be used for all entries when
-     * mutating a Feature.
-     * </pre>
-     *
-     * <code>
-     * map&lt;string, .google.events.cloud.gkehub.v1.MembershipFeatureSpec&gt; membership_specs = 5;
-     * </code>
-     */
-    public Builder putAllMembershipSpecs(
-        java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureSpec>
-            values) {
-      internalGetMutableMembershipSpecs().getMutableMap().putAll(values);
-      bitField0_ |= 0x00000008;
-      return this;
-    }
-
     private com.google.events.cloud.gkehub.v1.CommonFeatureState state_;
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.events.cloud.gkehub.v1.CommonFeatureState,
@@ -2398,7 +1887,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the state field is set.
      */
     public boolean hasState() {
-      return ((bitField0_ & 0x00000010) != 0);
+      return ((bitField0_ & 0x00000008) != 0);
     }
     /**
      *
@@ -2438,7 +1927,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         stateBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -2458,7 +1947,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         stateBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -2473,7 +1962,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder mergeState(com.google.events.cloud.gkehub.v1.CommonFeatureState value) {
       if (stateBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0)
+        if (((bitField0_ & 0x00000008) != 0)
             && state_ != null
             && state_
                 != com.google.events.cloud.gkehub.v1.CommonFeatureState.getDefaultInstance()) {
@@ -2484,7 +1973,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         stateBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       onChanged();
       return this;
     }
@@ -2498,7 +1987,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.events.cloud.gkehub.v1.CommonFeatureState state = 6;</code>
      */
     public Builder clearState() {
-      bitField0_ = (bitField0_ & ~0x00000010);
+      bitField0_ = (bitField0_ & ~0x00000008);
       state_ = null;
       if (stateBuilder_ != null) {
         stateBuilder_.dispose();
@@ -2517,7 +2006,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.events.cloud.gkehub.v1.CommonFeatureState state = 6;</code>
      */
     public com.google.events.cloud.gkehub.v1.CommonFeatureState.Builder getStateBuilder() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000008;
       onChanged();
       return getStateFieldBuilder().getBuilder();
     }
@@ -2590,7 +2079,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       if (!membershipStates_.isMutable()) {
         membershipStates_ = membershipStates_.copy();
       }
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       onChanged();
       return membershipStates_;
     }
@@ -2713,7 +2202,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     }
 
     public Builder clearMembershipStates() {
-      bitField0_ = (bitField0_ & ~0x00000020);
+      bitField0_ = (bitField0_ & ~0x00000010);
       internalGetMutableMembershipStates().getMutableMap().clear();
       return this;
     }
@@ -2745,7 +2234,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureState>
         getMutableMembershipStates() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       return internalGetMutableMembershipStates().getMutableMap();
     }
     /**
@@ -2774,7 +2263,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         throw new NullPointerException("map value");
       }
       internalGetMutableMembershipStates().getMutableMap().put(key, value);
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       return this;
     }
     /**
@@ -2798,7 +2287,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureState>
             values) {
       internalGetMutableMembershipStates().getMutableMap().putAll(values);
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000010;
       return this;
     }
 
@@ -2820,7 +2309,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the createTime field is set.
      */
     public boolean hasCreateTime() {
-      return ((bitField0_ & 0x00000040) != 0);
+      return ((bitField0_ & 0x00000020) != 0);
     }
     /**
      *
@@ -2860,7 +2349,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         createTimeBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -2879,7 +2368,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         createTimeBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -2894,7 +2383,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder mergeCreateTime(com.google.protobuf.Timestamp value) {
       if (createTimeBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0)
+        if (((bitField0_ & 0x00000020) != 0)
             && createTime_ != null
             && createTime_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
           getCreateTimeBuilder().mergeFrom(value);
@@ -2904,7 +2393,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         createTimeBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       onChanged();
       return this;
     }
@@ -2918,7 +2407,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp create_time = 8;</code>
      */
     public Builder clearCreateTime() {
-      bitField0_ = (bitField0_ & ~0x00000040);
+      bitField0_ = (bitField0_ & ~0x00000020);
       createTime_ = null;
       if (createTimeBuilder_ != null) {
         createTimeBuilder_.dispose();
@@ -2937,7 +2426,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp create_time = 8;</code>
      */
     public com.google.protobuf.Timestamp.Builder getCreateTimeBuilder() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000020;
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
@@ -3003,7 +2492,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the updateTime field is set.
      */
     public boolean hasUpdateTime() {
-      return ((bitField0_ & 0x00000080) != 0);
+      return ((bitField0_ & 0x00000040) != 0);
     }
     /**
      *
@@ -3043,7 +2532,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         updateTimeBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -3062,7 +2551,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         updateTimeBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -3077,7 +2566,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder mergeUpdateTime(com.google.protobuf.Timestamp value) {
       if (updateTimeBuilder_ == null) {
-        if (((bitField0_ & 0x00000080) != 0)
+        if (((bitField0_ & 0x00000040) != 0)
             && updateTime_ != null
             && updateTime_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
           getUpdateTimeBuilder().mergeFrom(value);
@@ -3087,7 +2576,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         updateTimeBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       onChanged();
       return this;
     }
@@ -3101,7 +2590,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp update_time = 9;</code>
      */
     public Builder clearUpdateTime() {
-      bitField0_ = (bitField0_ & ~0x00000080);
+      bitField0_ = (bitField0_ & ~0x00000040);
       updateTime_ = null;
       if (updateTimeBuilder_ != null) {
         updateTimeBuilder_.dispose();
@@ -3120,7 +2609,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp update_time = 9;</code>
      */
     public com.google.protobuf.Timestamp.Builder getUpdateTimeBuilder() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
@@ -3186,7 +2675,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the deleteTime field is set.
      */
     public boolean hasDeleteTime() {
-      return ((bitField0_ & 0x00000100) != 0);
+      return ((bitField0_ & 0x00000080) != 0);
     }
     /**
      *
@@ -3226,7 +2715,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         deleteTimeBuilder_.setMessage(value);
       }
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -3245,7 +2734,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         deleteTimeBuilder_.setMessage(builderForValue.build());
       }
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -3260,7 +2749,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder mergeDeleteTime(com.google.protobuf.Timestamp value) {
       if (deleteTimeBuilder_ == null) {
-        if (((bitField0_ & 0x00000100) != 0)
+        if (((bitField0_ & 0x00000080) != 0)
             && deleteTime_ != null
             && deleteTime_ != com.google.protobuf.Timestamp.getDefaultInstance()) {
           getDeleteTimeBuilder().mergeFrom(value);
@@ -3270,7 +2759,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       } else {
         deleteTimeBuilder_.mergeFrom(value);
       }
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       onChanged();
       return this;
     }
@@ -3284,7 +2773,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp delete_time = 10;</code>
      */
     public Builder clearDeleteTime() {
-      bitField0_ = (bitField0_ & ~0x00000100);
+      bitField0_ = (bitField0_ & ~0x00000080);
       deleteTime_ = null;
       if (deleteTimeBuilder_ != null) {
         deleteTimeBuilder_.dispose();
@@ -3303,7 +2792,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
      * <code>.google.protobuf.Timestamp delete_time = 10;</code>
      */
     public com.google.protobuf.Timestamp.Builder getDeleteTimeBuilder() {
-      bitField0_ |= 0x00000100;
+      bitField0_ |= 0x00000080;
       onChanged();
       return getDeleteTimeFieldBuilder().getBuilder();
     }
@@ -3375,7 +2864,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
       if (!scopeStates_.isMutable()) {
         scopeStates_ = scopeStates_.copy();
       }
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       onChanged();
       return scopeStates_;
     }
@@ -3490,7 +2979,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     }
 
     public Builder clearScopeStates() {
-      bitField0_ = (bitField0_ & ~0x00000200);
+      bitField0_ = (bitField0_ & ~0x00000100);
       internalGetMutableScopeStates().getMutableMap().clear();
       return this;
     }
@@ -3520,7 +3009,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.ScopeFeatureState>
         getMutableScopeStates() {
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       return internalGetMutableScopeStates().getMutableMap();
     }
     /**
@@ -3547,7 +3036,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         throw new NullPointerException("map value");
       }
       internalGetMutableScopeStates().getMutableMap().put(key, value);
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       return this;
     }
     /**
@@ -3569,7 +3058,7 @@ public final class Feature extends com.google.protobuf.GeneratedMessageV3
         java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.ScopeFeatureState>
             values) {
       internalGetMutableScopeStates().getMutableMap().putAll(values);
-      bitField0_ |= 0x00000200;
+      bitField0_ |= 0x00000100;
       return this;
     }
 
