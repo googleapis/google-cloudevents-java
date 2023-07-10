@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.14.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.13.0...v0.14.0) (2023-07-10)
+
+
+### Features
+
+* Run the code generator (0f27e75) ([#216](https://github.com/googleapis/google-cloudevents-java/issues/216)) ([4627783](https://github.com/googleapis/google-cloudevents-java/commit/4627783301e73e42013ff90c9e51ef80a97e8df6))
+
+
+### Bug Fixes
+
+* **deps:** Update dependency com.google.api.grpc:proto-google-common-protos to v2.21.0 ([#212](https://github.com/googleapis/google-cloudevents-java/issues/212)) ([f4e47be](https://github.com/googleapis/google-cloudevents-java/commit/f4e47bee35f5d17b24ee943535bc64f621f10653))
+* **deps:** Update dependency com.google.cloud:google-cloud-shared-config to v1.5.6 ([#208](https://github.com/googleapis/google-cloudevents-java/issues/208)) ([3734348](https://github.com/googleapis/google-cloudevents-java/commit/373434865eb5966c05dd4258d49d9e176d45a764))
+* **deps:** Update dependency com.google.protobuf:protobuf-java to v3.23.3 ([#213](https://github.com/googleapis/google-cloudevents-java/issues/213)) ([c2f288e](https://github.com/googleapis/google-cloudevents-java/commit/c2f288ef997961f457f6b8528a138d4a44123a6e))
+* **deps:** Update dependency com.google.protobuf:protobuf-java-util to v3.23.3 ([#214](https://github.com/googleapis/google-cloudevents-java/issues/214)) ([91ae455](https://github.com/googleapis/google-cloudevents-java/commit/91ae455c308438315ed2829e4fbe834f91c94c56))
+
 ## [0.13.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.12.0...v0.13.0) (2023-06-20)
 
 
