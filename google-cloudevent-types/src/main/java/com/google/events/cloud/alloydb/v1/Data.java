@@ -337,7 +337,7 @@ public final class Data {
           + "s.cloud.alloydb.v1P\001\252\002\'Google.Events.Pro"
           + "tobuf.Cloud.AlloyDb.V1\312\002\036Google\\Events\\C"
           + "loud\\AlloyDb\\V1\352\002\"Google::Events::Cloud:"
-          + ":AlloyDb::V1b\006proto3"
+          + ":AlloyDB::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
