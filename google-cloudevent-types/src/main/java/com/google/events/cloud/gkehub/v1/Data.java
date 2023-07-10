@@ -297,9 +297,11 @@ public final class Data {
           + "kehub.v1.FeatureH\000\210\001\001B\n\n\010_payload\"p\n\032Mem"
           + "bershipBindingEventData\022F\n\007payload\030\001 \001(\013"
           + "20.google.events.cloud.gkehub.v1.Members"
-          + "hipBindingH\000\210\001\001B\n\n\010_payloadBN\n!com.googl"
-          + "e.events.cloud.gkehub.v1P\001\252\002&Google.Even"
-          + "ts.Protobuf.Cloud.GkeHub.V1b\006proto3"
+          + "hipBindingH\000\210\001\001B\n\n\010_payloadB\222\001\n!com.goog"
+          + "le.events.cloud.gkehub.v1P\001\252\002&Google.Eve"
+          + "nts.Protobuf.Cloud.GkeHub.V1\312\002\035Google\\Ev"
+          + "ents\\Cloud\\GkeHub\\V1\352\002!Google::Events::C"
+          + "loud::GkeHub::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
