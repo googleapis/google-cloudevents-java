@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.MigrationWarning)
     MigrationWarningOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MigrationWarning.newBuilder() to construct.
   private MigrationWarning(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -113,6 +114,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
      * <code>WARNING_CODE_UNSPECIFIED = 0;</code>
      */
     public static final int WARNING_CODE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -209,6 +211,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
 
   public static final int CODE_FIELD_NUMBER = 1;
   private int code_ = 0;
+
   /**
    *
    *
@@ -224,6 +227,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public int getCodeValue() {
     return code_;
   }
+
   /**
    *
    *
@@ -246,6 +250,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
 
   public static final int WARNING_MESSAGE_FIELD_NUMBER = 2;
   private com.google.rpc.LocalizedMessage warningMessage_;
+
   /**
    *
    *
@@ -261,6 +266,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public boolean hasWarningMessage() {
     return warningMessage_ != null;
   }
+
   /**
    *
    *
@@ -278,6 +284,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         ? com.google.rpc.LocalizedMessage.getDefaultInstance()
         : warningMessage_;
   }
+
   /**
    *
    *
@@ -296,6 +303,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
 
   public static final int ACTION_ITEM_FIELD_NUMBER = 3;
   private com.google.rpc.LocalizedMessage actionItem_;
+
   /**
    *
    *
@@ -311,6 +319,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public boolean hasActionItem() {
     return actionItem_ != null;
   }
+
   /**
    *
    *
@@ -326,6 +335,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public com.google.rpc.LocalizedMessage getActionItem() {
     return actionItem_ == null ? com.google.rpc.LocalizedMessage.getDefaultInstance() : actionItem_;
   }
+
   /**
    *
    *
@@ -344,6 +354,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.rpc.Help.Link> helpLinks_;
+
   /**
    *
    *
@@ -357,6 +368,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public java.util.List<com.google.rpc.Help.Link> getHelpLinksList() {
     return helpLinks_;
   }
+
   /**
    *
    *
@@ -370,6 +382,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public java.util.List<? extends com.google.rpc.Help.LinkOrBuilder> getHelpLinksOrBuilderList() {
     return helpLinks_;
   }
+
   /**
    *
    *
@@ -383,6 +396,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public int getHelpLinksCount() {
     return helpLinks_.size();
   }
+
   /**
    *
    *
@@ -396,6 +410,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public com.google.rpc.Help.Link getHelpLinks(int index) {
     return helpLinks_.get(index);
   }
+
   /**
    *
    *
@@ -412,6 +427,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
 
   public static final int WARNING_TIME_FIELD_NUMBER = 5;
   private com.google.protobuf.Timestamp warningTime_;
+
   /**
    *
    *
@@ -427,6 +443,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public boolean hasWarningTime() {
     return warningTime_ != null;
   }
+
   /**
    *
    *
@@ -442,6 +459,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
   public com.google.protobuf.Timestamp getWarningTime() {
     return warningTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : warningTime_;
   }
+
   /**
    *
    *
@@ -675,6 +693,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -972,6 +991,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     private int bitField0_;
 
     private int code_ = 0;
+
     /**
      *
      *
@@ -987,6 +1007,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public int getCodeValue() {
       return code_;
     }
+
     /**
      *
      *
@@ -1005,6 +1026,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1024,6 +1046,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.vmmigration.v1.MigrationWarning.WarningCode.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1046,6 +1069,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1070,6 +1094,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             com.google.rpc.LocalizedMessage.Builder,
             com.google.rpc.LocalizedMessageOrBuilder>
         warningMessageBuilder_;
+
     /**
      *
      *
@@ -1084,6 +1109,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public boolean hasWarningMessage() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -1104,6 +1130,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return warningMessageBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1126,6 +1153,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1145,6 +1173,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1170,6 +1199,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1189,6 +1219,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1203,6 +1234,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getWarningMessageFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1221,6 +1253,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             : warningMessage_;
       }
     }
+
     /**
      *
      *
@@ -1253,6 +1286,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             com.google.rpc.LocalizedMessage.Builder,
             com.google.rpc.LocalizedMessageOrBuilder>
         actionItemBuilder_;
+
     /**
      *
      *
@@ -1267,6 +1301,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public boolean hasActionItem() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1287,6 +1322,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return actionItemBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1309,6 +1345,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1328,6 +1365,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1353,6 +1391,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1372,6 +1411,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1386,6 +1426,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getActionItemFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1404,6 +1445,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             : actionItem_;
       }
     }
+
     /**
      *
      *
@@ -1461,6 +1503,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return helpLinksBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -1477,6 +1520,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return helpLinksBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -1493,6 +1537,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return helpLinksBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -1515,6 +1560,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1534,6 +1580,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1556,6 +1603,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1578,6 +1626,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1597,6 +1646,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1616,6 +1666,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1635,6 +1686,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1654,6 +1706,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1673,6 +1726,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1685,6 +1739,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public com.google.rpc.Help.Link.Builder getHelpLinksBuilder(int index) {
       return getHelpLinksFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1701,6 +1756,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return helpLinksBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1717,6 +1773,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return java.util.Collections.unmodifiableList(helpLinks_);
       }
     }
+
     /**
      *
      *
@@ -1729,6 +1786,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public com.google.rpc.Help.Link.Builder addHelpLinksBuilder() {
       return getHelpLinksFieldBuilder().addBuilder(com.google.rpc.Help.Link.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1742,6 +1800,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       return getHelpLinksFieldBuilder()
           .addBuilder(index, com.google.rpc.Help.Link.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1778,6 +1837,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         warningTimeBuilder_;
+
     /**
      *
      *
@@ -1792,6 +1852,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
     public boolean hasWarningTime() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1812,6 +1873,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
         return warningTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1834,6 +1896,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1853,6 +1916,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1878,6 +1942,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1897,6 +1962,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1911,6 +1977,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getWarningTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1929,6 +1996,7 @@ public final class MigrationWarning extends com.google.protobuf.GeneratedMessage
             : warningTime_;
       }
     }
+
     /**
      *
      *

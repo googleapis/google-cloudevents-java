@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface AwsSourceVmDetailsOrBuilder
    * @return The enum numeric value on the wire for firmware.
    */
   int getFirmwareValue();
+
   /**
    *
    *
@@ -73,6 +74,7 @@ public interface AwsSourceVmDetailsOrBuilder
    */
   java.util.List<com.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.AwsDiskDetails>
       getDisksList();
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public interface AwsSourceVmDetailsOrBuilder
    * </code>
    */
   com.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.AwsDiskDetails getDisks(int index);
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface AwsSourceVmDetailsOrBuilder
    * </code>
    */
   int getDisksCount();
+
   /**
    *
    *
@@ -109,6 +113,7 @@ public interface AwsSourceVmDetailsOrBuilder
           ? extends
               com.google.events.cloud.vmmigration.v1.AwsSourceVmDetails.AwsDiskDetailsOrBuilder>
       getDisksOrBuilderList();
+
   /**
    *
    *

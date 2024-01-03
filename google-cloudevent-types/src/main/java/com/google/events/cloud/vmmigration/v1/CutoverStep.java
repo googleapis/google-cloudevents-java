@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.CutoverStep)
     CutoverStepOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CutoverStep.newBuilder() to construct.
   private CutoverStep(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -83,6 +84,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     private StepCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -122,6 +124,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int PREVIOUS_REPLICATION_CYCLE_FIELD_NUMBER = 3;
+
   /**
    *
    *
@@ -138,6 +141,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPreviousReplicationCycle() {
     return stepCase_ == 3;
   }
+
   /**
    *
    *
@@ -157,6 +161,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -177,6 +182,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int SHUTTING_DOWN_SOURCE_VM_FIELD_NUMBER = 4;
+
   /**
    *
    *
@@ -193,6 +199,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasShuttingDownSourceVm() {
     return stepCase_ == 4;
   }
+
   /**
    *
    *
@@ -212,6 +219,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -232,6 +240,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int FINAL_SYNC_FIELD_NUMBER = 5;
+
   /**
    *
    *
@@ -247,6 +256,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasFinalSync() {
     return stepCase_ == 5;
   }
+
   /**
    *
    *
@@ -265,6 +275,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -283,6 +294,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int PREPARING_VM_DISKS_FIELD_NUMBER = 6;
+
   /**
    *
    *
@@ -298,6 +310,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPreparingVmDisks() {
     return stepCase_ == 6;
   }
+
   /**
    *
    *
@@ -316,6 +329,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.PreparingVMDisksStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -335,6 +349,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int INSTANTIATING_MIGRATED_VM_FIELD_NUMBER = 7;
+
   /**
    *
    *
@@ -352,6 +367,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasInstantiatingMigratedVm() {
     return stepCase_ == 7;
   }
+
   /**
    *
    *
@@ -373,6 +389,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -395,6 +412,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
 
   public static final int START_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp startTime_;
+
   /**
    *
    *
@@ -410,6 +428,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStartTime() {
     return startTime_ != null;
   }
+
   /**
    *
    *
@@ -425,6 +444,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getStartTime() {
     return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
   }
+
   /**
    *
    *
@@ -441,6 +461,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
 
   public static final int END_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp endTime_;
+
   /**
    *
    *
@@ -456,6 +477,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasEndTime() {
     return endTime_ != null;
   }
+
   /**
    *
    *
@@ -471,6 +493,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getEndTime() {
     return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
   }
+
   /**
    *
    *
@@ -750,6 +773,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1074,6 +1098,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.ReplicationCycle.Builder,
             com.google.events.cloud.vmmigration.v1.ReplicationCycleOrBuilder>
         previousReplicationCycleBuilder_;
+
     /**
      *
      *
@@ -1090,6 +1115,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPreviousReplicationCycle() {
       return stepCase_ == 3;
     }
+
     /**
      *
      *
@@ -1116,6 +1142,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1140,6 +1167,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -1161,6 +1189,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -1196,6 +1225,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -1222,6 +1252,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1236,6 +1267,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         getPreviousReplicationCycleBuilder() {
       return getPreviousReplicationCycleFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1258,6 +1290,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1297,6 +1330,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep.Builder,
             com.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStepOrBuilder>
         shuttingDownSourceVmBuilder_;
+
     /**
      *
      *
@@ -1314,6 +1348,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasShuttingDownSourceVm() {
       return stepCase_ == 4;
     }
+
     /**
      *
      *
@@ -1342,6 +1377,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1367,6 +1403,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1389,6 +1426,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1426,6 +1464,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1453,6 +1492,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1468,6 +1508,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         getShuttingDownSourceVmBuilder() {
       return getShuttingDownSourceVmFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1491,6 +1532,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1532,6 +1574,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.ReplicationCycle.Builder,
             com.google.events.cloud.vmmigration.v1.ReplicationCycleOrBuilder>
         finalSyncBuilder_;
+
     /**
      *
      *
@@ -1547,6 +1590,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasFinalSync() {
       return stepCase_ == 5;
     }
+
     /**
      *
      *
@@ -1572,6 +1616,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1594,6 +1639,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1614,6 +1660,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1647,6 +1694,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1672,6 +1720,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1684,6 +1733,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.vmmigration.v1.ReplicationCycle.Builder getFinalSyncBuilder() {
       return getFinalSyncFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1705,6 +1755,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicationCycle.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1743,6 +1794,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.PreparingVMDisksStep.Builder,
             com.google.events.cloud.vmmigration.v1.PreparingVMDisksStepOrBuilder>
         preparingVmDisksBuilder_;
+
     /**
      *
      *
@@ -1758,6 +1810,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPreparingVmDisks() {
       return stepCase_ == 6;
     }
+
     /**
      *
      *
@@ -1783,6 +1836,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.PreparingVMDisksStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1806,6 +1860,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1826,6 +1881,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1861,6 +1917,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1886,6 +1943,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1899,6 +1957,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         getPreparingVmDisksBuilder() {
       return getPreparingVmDisksFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1920,6 +1979,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.PreparingVMDisksStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1958,6 +2018,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep.Builder,
             com.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStepOrBuilder>
         instantiatingMigratedVmBuilder_;
+
     /**
      *
      *
@@ -1975,6 +2036,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasInstantiatingMigratedVm() {
       return stepCase_ == 7;
     }
+
     /**
      *
      *
@@ -2005,6 +2067,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2030,6 +2093,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 7;
       return this;
     }
+
     /**
      *
      *
@@ -2053,6 +2117,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 7;
       return this;
     }
+
     /**
      *
      *
@@ -2090,6 +2155,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 7;
       return this;
     }
+
     /**
      *
      *
@@ -2117,6 +2183,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2132,6 +2199,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         getInstantiatingMigratedVmBuilder() {
       return getInstantiatingMigratedVmFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2156,6 +2224,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2199,6 +2268,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         startTimeBuilder_;
+
     /**
      *
      *
@@ -2213,6 +2283,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStartTime() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -2231,6 +2302,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return startTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2253,6 +2325,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2272,6 +2345,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2297,6 +2371,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2316,6 +2391,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2330,6 +2406,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStartTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2346,6 +2423,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
       }
     }
+
     /**
      *
      *
@@ -2378,6 +2456,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         endTimeBuilder_;
+
     /**
      *
      *
@@ -2392,6 +2471,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasEndTime() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -2410,6 +2490,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return endTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2432,6 +2513,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2451,6 +2533,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2476,6 +2559,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2495,6 +2579,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2509,6 +2594,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getEndTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2525,6 +2611,7 @@ public final class CutoverStep extends com.google.protobuf.GeneratedMessageV3
         return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
       }
     }
+
     /**
      *
      *

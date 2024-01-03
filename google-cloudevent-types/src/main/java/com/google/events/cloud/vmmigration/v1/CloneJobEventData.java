@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.CloneJobEventData)
     CloneJobEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CloneJobEventData.newBuilder() to construct.
   private CloneJobEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
 
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.vmmigration.v1.CloneJob payload_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
   public boolean hasPayload() {
     return payload_ != null;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.vmmigration.v1.CloneJob.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -471,6 +476,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.vmmigration.v1.CloneJob.Builder,
             com.google.events.cloud.vmmigration.v1.CloneJobOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -485,6 +491,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -505,6 +512,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -527,6 +535,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -547,6 +556,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -572,6 +582,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -591,6 +602,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -605,6 +617,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -623,6 +636,7 @@ public final class CloneJobEventData extends com.google.protobuf.GeneratedMessag
             : payload_;
       }
     }
+
     /**
      *
      *

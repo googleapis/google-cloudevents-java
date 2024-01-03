@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.ReplicationSync)
     ReplicationSyncOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ReplicationSync.newBuilder() to construct.
   private ReplicationSync(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
 
   public static final int LAST_SYNC_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp lastSyncTime_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
   public boolean hasLastSyncTime() {
     return lastSyncTime_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : lastSyncTime_;
   }
+
   /**
    *
    *
@@ -283,6 +287,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -475,6 +480,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         lastSyncTimeBuilder_;
+
     /**
      *
      *
@@ -490,6 +496,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
     public boolean hasLastSyncTime() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -511,6 +518,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
         return lastSyncTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -534,6 +542,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -554,6 +563,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -580,6 +590,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -600,6 +611,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -615,6 +627,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getLastSyncTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -634,6 +647,7 @@ public final class ReplicationSync extends com.google.protobuf.GeneratedMessageV
             : lastSyncTime_;
       }
     }
+
     /**
      *
      *

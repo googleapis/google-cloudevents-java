@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.UtilizationReport)
     UtilizationReportOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use UtilizationReport.newBuilder() to construct.
   private UtilizationReport(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -135,6 +136,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -145,6 +147,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>CREATING = 1;</code>
      */
     public static final int CREATING_VALUE = 1;
+
     /**
      *
      *
@@ -155,6 +158,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>SUCCEEDED = 2;</code>
      */
     public static final int SUCCEEDED_VALUE = 2;
+
     /**
      *
      *
@@ -316,6 +320,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>TIME_FRAME_UNSPECIFIED = 0;</code>
      */
     public static final int TIME_FRAME_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -326,6 +331,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>WEEK = 1;</code>
      */
     public static final int WEEK_VALUE = 1;
+
     /**
      *
      *
@@ -336,6 +342,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
      * <code>MONTH = 2;</code>
      */
     public static final int MONTH_VALUE = 2;
+
     /**
      *
      *
@@ -438,6 +445,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -461,6 +469,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -489,6 +498,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -512,6 +522,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -538,6 +549,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int STATE_FIELD_NUMBER = 3;
   private int state_ = 0;
+
   /**
    *
    *
@@ -553,6 +565,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -575,6 +588,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int STATE_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp stateTime_;
+
   /**
    *
    *
@@ -590,6 +604,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public boolean hasStateTime() {
     return stateTime_ != null;
   }
+
   /**
    *
    *
@@ -605,6 +620,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getStateTime() {
     return stateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : stateTime_;
   }
+
   /**
    *
    *
@@ -621,6 +637,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int ERROR_FIELD_NUMBER = 5;
   private com.google.rpc.Status error_;
+
   /**
    *
    *
@@ -637,6 +654,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public boolean hasError() {
     return error_ != null;
   }
+
   /**
    *
    *
@@ -653,6 +671,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public com.google.rpc.Status getError() {
     return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
   }
+
   /**
    *
    *
@@ -670,6 +689,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int CREATE_TIME_FIELD_NUMBER = 6;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -686,6 +706,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -702,6 +723,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -719,6 +741,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int TIME_FRAME_FIELD_NUMBER = 7;
   private int timeFrame_ = 0;
+
   /**
    *
    *
@@ -734,6 +757,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public int getTimeFrameValue() {
     return timeFrame_;
   }
+
   /**
    *
    *
@@ -756,6 +780,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int FRAME_END_TIME_FIELD_NUMBER = 8;
   private com.google.protobuf.Timestamp frameEndTime_;
+
   /**
    *
    *
@@ -774,6 +799,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public boolean hasFrameEndTime() {
     return frameEndTime_ != null;
   }
+
   /**
    *
    *
@@ -794,6 +820,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : frameEndTime_;
   }
+
   /**
    *
    *
@@ -815,6 +842,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   public static final int VM_COUNT_FIELD_NUMBER = 9;
   private int vmCount_ = 0;
+
   /**
    *
    *
@@ -835,6 +863,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.vmmigration.v1.VmUtilizationInfo> vms_;
+
   /**
    *
    *
@@ -851,6 +880,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public java.util.List<com.google.events.cloud.vmmigration.v1.VmUtilizationInfo> getVmsList() {
     return vms_;
   }
+
   /**
    *
    *
@@ -868,6 +898,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       getVmsOrBuilderList() {
     return vms_;
   }
+
   /**
    *
    *
@@ -884,6 +915,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public int getVmsCount() {
     return vms_.size();
   }
+
   /**
    *
    *
@@ -900,6 +932,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
   public com.google.events.cloud.vmmigration.v1.VmUtilizationInfo getVms(int index) {
     return vms_.get(index);
   }
+
   /**
    *
    *
@@ -1189,6 +1222,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1559,6 +1593,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1581,6 +1616,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1603,6 +1639,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1624,6 +1661,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1641,6 +1679,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1665,6 +1704,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -1687,6 +1727,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1709,6 +1750,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1730,6 +1772,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1747,6 +1790,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1771,6 +1815,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -1786,6 +1831,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -1804,6 +1850,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1823,6 +1870,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
           ? com.google.events.cloud.vmmigration.v1.UtilizationReport.State.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1844,6 +1892,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1868,6 +1917,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         stateTimeBuilder_;
+
     /**
      *
      *
@@ -1882,6 +1932,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public boolean hasStateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1900,6 +1951,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return stateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1922,6 +1974,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1941,6 +1994,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1966,6 +2020,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1985,6 +2040,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1999,6 +2055,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getStateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2015,6 +2072,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return stateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : stateTime_;
       }
     }
+
     /**
      *
      *
@@ -2045,6 +2103,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.rpc.Status, com.google.rpc.Status.Builder, com.google.rpc.StatusOrBuilder>
         errorBuilder_;
+
     /**
      *
      *
@@ -2060,6 +2119,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public boolean hasError() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -2079,6 +2139,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return errorBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2102,6 +2163,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2122,6 +2184,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2148,6 +2211,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2168,6 +2232,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2183,6 +2248,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getErrorFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2200,6 +2266,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
       }
     }
+
     /**
      *
      *
@@ -2230,6 +2297,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -2245,6 +2313,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -2266,6 +2335,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2289,6 +2359,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2309,6 +2380,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2335,6 +2407,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2355,6 +2428,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2370,6 +2444,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2389,6 +2464,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -2417,6 +2493,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     }
 
     private int timeFrame_ = 0;
+
     /**
      *
      *
@@ -2432,6 +2509,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public int getTimeFrameValue() {
       return timeFrame_;
     }
+
     /**
      *
      *
@@ -2450,6 +2528,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2469,6 +2548,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
           ? com.google.events.cloud.vmmigration.v1.UtilizationReport.TimeFrame.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -2491,6 +2571,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2515,6 +2596,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         frameEndTimeBuilder_;
+
     /**
      *
      *
@@ -2532,6 +2614,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public boolean hasFrameEndTime() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2555,6 +2638,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return frameEndTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2580,6 +2664,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2602,6 +2687,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2630,6 +2716,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2652,6 +2739,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2669,6 +2757,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getFrameEndTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2690,6 +2779,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
             : frameEndTime_;
       }
     }
+
     /**
      *
      *
@@ -2720,6 +2810,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     }
 
     private int vmCount_;
+
     /**
      *
      *
@@ -2735,6 +2826,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
     public int getVmCount() {
       return vmCount_;
     }
+
     /**
      *
      *
@@ -2754,6 +2846,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2808,6 +2901,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return vmsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -2827,6 +2921,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return vmsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -2846,6 +2941,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return vmsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -2872,6 +2968,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -2896,6 +2993,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -2921,6 +3019,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -2947,6 +3046,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -2970,6 +3070,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -2994,6 +3095,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -3018,6 +3120,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -3040,6 +3143,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -3062,6 +3166,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -3078,6 +3183,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         int index) {
       return getVmsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -3098,6 +3204,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return vmsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -3119,6 +3226,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
         return java.util.Collections.unmodifiableList(vms_);
       }
     }
+
     /**
      *
      *
@@ -3136,6 +3244,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
           .addBuilder(
               com.google.events.cloud.vmmigration.v1.VmUtilizationInfo.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -3154,6 +3263,7 @@ public final class UtilizationReport extends com.google.protobuf.GeneratedMessag
           .addBuilder(
               index, com.google.events.cloud.vmmigration.v1.VmUtilizationInfo.getDefaultInstance());
     }
+
     /**
      *
      *

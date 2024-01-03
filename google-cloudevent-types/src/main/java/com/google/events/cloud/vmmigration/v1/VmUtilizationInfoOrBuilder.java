@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface VmUtilizationInfoOrBuilder
    * @return Whether the vmwareVmDetails field is set.
    */
   boolean hasVmwareVmDetails();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface VmUtilizationInfoOrBuilder
    * @return The vmwareVmDetails.
    */
   com.google.events.cloud.vmmigration.v1.VmwareVmDetails getVmwareVmDetails();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface VmUtilizationInfoOrBuilder
    * @return The vmId.
    */
   java.lang.String getVmId();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface VmUtilizationInfoOrBuilder
    * @return Whether the utilization field is set.
    */
   boolean hasUtilization();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface VmUtilizationInfoOrBuilder
    * @return The utilization.
    */
   com.google.events.cloud.vmmigration.v1.VmUtilizationMetrics getUtilization();
+
   /**
    *
    *

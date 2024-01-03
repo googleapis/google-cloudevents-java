@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class InstantiatingMigratedVMStep extends com.google.protobuf.Gener
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep)
     InstantiatingMigratedVMStepOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use InstantiatingMigratedVMStep.newBuilder() to construct.
   private InstantiatingMigratedVMStep(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -217,6 +218,7 @@ public final class InstantiatingMigratedVMStep extends com.google.protobuf.Gener
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *

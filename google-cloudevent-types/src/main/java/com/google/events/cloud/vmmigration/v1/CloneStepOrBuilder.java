@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface CloneStepOrBuilder
    * @return Whether the adaptingOs field is set.
    */
   boolean hasAdaptingOs();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface CloneStepOrBuilder
    * @return The adaptingOs.
    */
   com.google.events.cloud.vmmigration.v1.AdaptingOSStep getAdaptingOs();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface CloneStepOrBuilder
    * @return Whether the preparingVmDisks field is set.
    */
   boolean hasPreparingVmDisks();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface CloneStepOrBuilder
    * @return The preparingVmDisks.
    */
   com.google.events.cloud.vmmigration.v1.PreparingVMDisksStep getPreparingVmDisks();
+
   /**
    *
    *
@@ -108,6 +112,7 @@ public interface CloneStepOrBuilder
    * @return Whether the instantiatingMigratedVm field is set.
    */
   boolean hasInstantiatingMigratedVm();
+
   /**
    *
    *
@@ -122,6 +127,7 @@ public interface CloneStepOrBuilder
    * @return The instantiatingMigratedVm.
    */
   com.google.events.cloud.vmmigration.v1.InstantiatingMigratedVMStep getInstantiatingMigratedVm();
+
   /**
    *
    *
@@ -148,6 +154,7 @@ public interface CloneStepOrBuilder
    * @return Whether the startTime field is set.
    */
   boolean hasStartTime();
+
   /**
    *
    *
@@ -160,6 +167,7 @@ public interface CloneStepOrBuilder
    * @return The startTime.
    */
   com.google.protobuf.Timestamp getStartTime();
+
   /**
    *
    *
@@ -183,6 +191,7 @@ public interface CloneStepOrBuilder
    * @return Whether the endTime field is set.
    */
   boolean hasEndTime();
+
   /**
    *
    *
@@ -195,6 +204,7 @@ public interface CloneStepOrBuilder
    * @return The endTime.
    */
   com.google.protobuf.Timestamp getEndTime();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.AnalyticsLogData)
     AnalyticsLogDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AnalyticsLogData.newBuilder() to construct.
   private AnalyticsLogData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
 
   public static final int USER_DIM_FIELD_NUMBER = 1;
   private com.google.events.firebase.analytics.v1.UserDimensions userDim_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
   public boolean hasUserDim() {
     return userDim_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         ? com.google.events.firebase.analytics.v1.UserDimensions.getDefaultInstance()
         : userDim_;
   }
+
   /**
    *
    *
@@ -121,6 +125,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.firebase.analytics.v1.EventDimensions> eventDim_;
+
   /**
    *
    *
@@ -134,6 +139,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
   public java.util.List<com.google.events.firebase.analytics.v1.EventDimensions> getEventDimList() {
     return eventDim_;
   }
+
   /**
    *
    *
@@ -148,6 +154,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       getEventDimOrBuilderList() {
     return eventDim_;
   }
+
   /**
    *
    *
@@ -161,6 +168,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
   public int getEventDimCount() {
     return eventDim_.size();
   }
+
   /**
    *
    *
@@ -174,6 +182,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
   public com.google.events.firebase.analytics.v1.EventDimensions getEventDim(int index) {
     return eventDim_.get(index);
   }
+
   /**
    *
    *
@@ -365,6 +374,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -618,6 +628,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
             com.google.events.firebase.analytics.v1.UserDimensions.Builder,
             com.google.events.firebase.analytics.v1.UserDimensionsOrBuilder>
         userDimBuilder_;
+
     /**
      *
      *
@@ -632,6 +643,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
     public boolean hasUserDim() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -652,6 +664,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return userDimBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -674,6 +687,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -694,6 +708,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -720,6 +735,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -739,6 +755,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -753,6 +770,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getUserDimFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -771,6 +789,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
             : userDim_;
       }
     }
+
     /**
      *
      *
@@ -832,6 +851,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return eventDimBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -848,6 +868,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return eventDimBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -864,6 +885,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return eventDimBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -887,6 +909,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -908,6 +931,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -930,6 +954,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -953,6 +978,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -973,6 +999,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -994,6 +1021,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1015,6 +1043,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1034,6 +1063,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1053,6 +1083,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1066,6 +1097,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         int index) {
       return getEventDimFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1083,6 +1115,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return eventDimBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1101,6 +1134,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
         return java.util.Collections.unmodifiableList(eventDim_);
       }
     }
+
     /**
      *
      *
@@ -1114,6 +1148,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
       return getEventDimFieldBuilder()
           .addBuilder(com.google.events.firebase.analytics.v1.EventDimensions.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1129,6 +1164,7 @@ public final class AnalyticsLogData extends com.google.protobuf.GeneratedMessage
           .addBuilder(
               index, com.google.events.firebase.analytics.v1.EventDimensions.getDefaultInstance());
     }
+
     /**
      *
      *

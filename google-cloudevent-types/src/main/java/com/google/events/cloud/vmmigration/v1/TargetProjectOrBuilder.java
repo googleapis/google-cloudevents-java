@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface TargetProjectOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface TargetProjectOrBuilder
    * @return The project.
    */
   java.lang.String getProject();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface TargetProjectOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -111,6 +114,7 @@ public interface TargetProjectOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public interface TargetProjectOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -148,6 +153,7 @@ public interface TargetProjectOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -160,6 +166,7 @@ public interface TargetProjectOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *

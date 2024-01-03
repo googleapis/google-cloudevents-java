@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.AvailableUpdates)
     AvailableUpdatesOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AvailableUpdates.newBuilder() to construct.
   private AvailableUpdates(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
 
   public static final int NEW_DEPLOYABLE_APPLIANCE_FIELD_NUMBER = 1;
   private com.google.events.cloud.vmmigration.v1.ApplianceVersion newDeployableAppliance_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
   public boolean hasNewDeployableAppliance() {
     return newDeployableAppliance_ != null;
   }
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.vmmigration.v1.ApplianceVersion.getDefaultInstance()
         : newDeployableAppliance_;
   }
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
 
   public static final int IN_PLACE_UPDATE_FIELD_NUMBER = 2;
   private com.google.events.cloud.vmmigration.v1.ApplianceVersion inPlaceUpdate_;
+
   /**
    *
    *
@@ -141,6 +146,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
   public boolean hasInPlaceUpdate() {
     return inPlaceUpdate_ != null;
   }
+
   /**
    *
    *
@@ -160,6 +166,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.vmmigration.v1.ApplianceVersion.getDefaultInstance()
         : inPlaceUpdate_;
   }
+
   /**
    *
    *
@@ -359,6 +366,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -572,6 +580,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.vmmigration.v1.ApplianceVersion.Builder,
             com.google.events.cloud.vmmigration.v1.ApplianceVersionOrBuilder>
         newDeployableApplianceBuilder_;
+
     /**
      *
      *
@@ -589,6 +598,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
     public boolean hasNewDeployableAppliance() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -612,6 +622,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
         return newDeployableApplianceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -638,6 +649,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -661,6 +673,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -691,6 +704,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -713,6 +727,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -731,6 +746,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getNewDeployableApplianceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -753,6 +769,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
             : newDeployableAppliance_;
       }
     }
+
     /**
      *
      *
@@ -788,6 +805,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.vmmigration.v1.ApplianceVersion.Builder,
             com.google.events.cloud.vmmigration.v1.ApplianceVersionOrBuilder>
         inPlaceUpdateBuilder_;
+
     /**
      *
      *
@@ -804,6 +822,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
     public boolean hasInPlaceUpdate() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -826,6 +845,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
         return inPlaceUpdateBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -850,6 +870,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -872,6 +893,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -901,6 +923,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -922,6 +945,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -939,6 +963,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getInPlaceUpdateFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -960,6 +985,7 @@ public final class AvailableUpdates extends com.google.protobuf.GeneratedMessage
             : inPlaceUpdate_;
       }
     }
+
     /**
      *
      *
