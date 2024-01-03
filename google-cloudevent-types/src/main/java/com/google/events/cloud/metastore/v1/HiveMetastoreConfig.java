@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.metastore.v1.HiveMetastoreConfig)
     HiveMetastoreConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use HiveMetastoreConfig.newBuilder() to construct.
   private HiveMetastoreConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -85,6 +86,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object version_ = "";
+
   /**
    *
    *
@@ -108,6 +110,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -160,6 +163,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
   public int getConfigOverridesCount() {
     return internalGetConfigOverrides().getMap().size();
   }
+
   /**
    *
    *
@@ -180,12 +184,14 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     }
     return internalGetConfigOverrides().getMap().containsKey(key);
   }
+
   /** Use {@link #getConfigOverridesMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getConfigOverrides() {
     return getConfigOverridesMap();
   }
+
   /**
    *
    *
@@ -203,6 +209,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
   public java.util.Map<java.lang.String, java.lang.String> getConfigOverridesMap() {
     return internalGetConfigOverrides().getMap();
   }
+
   /**
    *
    *
@@ -227,6 +234,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     java.util.Map<java.lang.String, java.lang.String> map = internalGetConfigOverrides().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -254,6 +262,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
 
   public static final int KERBEROS_CONFIG_FIELD_NUMBER = 3;
   private com.google.events.cloud.metastore.v1.KerberosConfig kerberosConfig_;
+
   /**
    *
    *
@@ -273,6 +282,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
   public boolean hasKerberosConfig() {
     return kerberosConfig_ != null;
   }
+
   /**
    *
    *
@@ -294,6 +304,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         ? com.google.events.cloud.metastore.v1.KerberosConfig.getDefaultInstance()
         : kerberosConfig_;
   }
+
   /**
    *
    *
@@ -350,6 +361,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
   public int getAuxiliaryVersionsCount() {
     return internalGetAuxiliaryVersions().getMap().size();
   }
+
   /**
    *
    *
@@ -375,6 +387,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     }
     return internalGetAuxiliaryVersions().getMap().containsKey(key);
   }
+
   /** Use {@link #getAuxiliaryVersionsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -383,6 +396,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       getAuxiliaryVersions() {
     return getAuxiliaryVersionsMap();
   }
+
   /**
    *
    *
@@ -407,6 +421,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       getAuxiliaryVersionsMap() {
     return internalGetAuxiliaryVersions().getMap();
   }
+
   /**
    *
    *
@@ -438,6 +453,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         map = internalGetAuxiliaryVersions().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -684,6 +700,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -952,6 +969,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     private int bitField0_;
 
     private java.lang.Object version_ = "";
+
     /**
      *
      *
@@ -974,6 +992,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -996,6 +1015,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1017,6 +1037,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1034,6 +1055,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1086,6 +1108,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     public int getConfigOverridesCount() {
       return internalGetConfigOverrides().getMap().size();
     }
+
     /**
      *
      *
@@ -1106,12 +1129,14 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       }
       return internalGetConfigOverrides().getMap().containsKey(key);
     }
+
     /** Use {@link #getConfigOverridesMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getConfigOverrides() {
       return getConfigOverridesMap();
     }
+
     /**
      *
      *
@@ -1129,6 +1154,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     public java.util.Map<java.lang.String, java.lang.String> getConfigOverridesMap() {
       return internalGetConfigOverrides().getMap();
     }
+
     /**
      *
      *
@@ -1153,6 +1179,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       java.util.Map<java.lang.String, java.lang.String> map = internalGetConfigOverrides().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -1183,6 +1210,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       internalGetMutableConfigOverrides().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -1203,12 +1231,14 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       internalGetMutableConfigOverrides().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableConfigOverrides() {
       bitField0_ |= 0x00000002;
       return internalGetMutableConfigOverrides().getMutableMap();
     }
+
     /**
      *
      *
@@ -1233,6 +1263,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       bitField0_ |= 0x00000002;
       return this;
     }
+
     /**
      *
      *
@@ -1258,6 +1289,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
             com.google.events.cloud.metastore.v1.KerberosConfig.Builder,
             com.google.events.cloud.metastore.v1.KerberosConfigOrBuilder>
         kerberosConfigBuilder_;
+
     /**
      *
      *
@@ -1276,6 +1308,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     public boolean hasKerberosConfig() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1300,6 +1333,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         return kerberosConfigBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1326,6 +1360,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1350,6 +1385,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1380,6 +1416,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1403,6 +1440,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1421,6 +1459,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return getKerberosConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1444,6 +1483,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
             : kerberosConfig_;
       }
     }
+
     /**
      *
      *
@@ -1507,6 +1547,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
     public int getAuxiliaryVersionsCount() {
       return internalGetAuxiliaryVersions().getMap().size();
     }
+
     /**
      *
      *
@@ -1532,6 +1573,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       }
       return internalGetAuxiliaryVersions().getMap().containsKey(key);
     }
+
     /** Use {@link #getAuxiliaryVersionsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -1540,6 +1582,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         getAuxiliaryVersions() {
       return getAuxiliaryVersionsMap();
     }
+
     /**
      *
      *
@@ -1564,6 +1607,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
         getAuxiliaryVersionsMap() {
       return internalGetAuxiliaryVersions().getMap();
     }
+
     /**
      *
      *
@@ -1595,6 +1639,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
           map = internalGetAuxiliaryVersions().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -1632,6 +1677,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       internalGetMutableAuxiliaryVersions().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -1657,6 +1703,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       internalGetMutableAuxiliaryVersions().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<
@@ -1665,6 +1712,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       bitField0_ |= 0x00000008;
       return internalGetMutableAuxiliaryVersions().getMutableMap();
     }
+
     /**
      *
      *
@@ -1695,6 +1743,7 @@ public final class HiveMetastoreConfig extends com.google.protobuf.GeneratedMess
       bitField0_ |= 0x00000008;
       return this;
     }
+
     /**
      *
      *

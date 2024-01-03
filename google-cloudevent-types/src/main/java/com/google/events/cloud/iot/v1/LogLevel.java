@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -96,6 +96,7 @@ public enum LogLevel implements com.google.protobuf.ProtocolMessageEnum {
    * <code>LOG_LEVEL_UNSPECIFIED = 0;</code>
    */
   public static final int LOG_LEVEL_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -106,6 +107,7 @@ public enum LogLevel implements com.google.protobuf.ProtocolMessageEnum {
    * <code>NONE = 10;</code>
    */
   public static final int NONE_VALUE = 10;
+
   /**
    *
    *
@@ -116,6 +118,7 @@ public enum LogLevel implements com.google.protobuf.ProtocolMessageEnum {
    * <code>ERROR = 20;</code>
    */
   public static final int ERROR_VALUE = 20;
+
   /**
    *
    *
@@ -127,6 +130,7 @@ public enum LogLevel implements com.google.protobuf.ProtocolMessageEnum {
    * <code>INFO = 30;</code>
    */
   public static final int INFO_VALUE = 30;
+
   /**
    *
    *

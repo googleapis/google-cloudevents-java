@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,6 +65,7 @@ public enum PublicKeyCertificateFormat implements com.google.protobuf.ProtocolMe
    * <code>UNSPECIFIED_PUBLIC_KEY_CERTIFICATE_FORMAT = 0;</code>
    */
   public static final int UNSPECIFIED_PUBLIC_KEY_CERTIFICATE_FORMAT_VALUE = 0;
+
   /**
    *
    *

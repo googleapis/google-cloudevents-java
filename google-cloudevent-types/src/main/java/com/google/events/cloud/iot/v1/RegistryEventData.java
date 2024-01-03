@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.iot.v1.RegistryEventData)
     RegistryEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use RegistryEventData.newBuilder() to construct.
   private RegistryEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.iot.v1.DeviceRegistry payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.iot.v1.DeviceRegistry.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -483,6 +488,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.iot.v1.DeviceRegistry.Builder,
             com.google.events.cloud.iot.v1.DeviceRegistryOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -497,6 +503,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -517,6 +524,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -539,6 +547,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -559,6 +568,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -584,6 +594,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -603,6 +614,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -617,6 +629,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -635,6 +648,7 @@ public final class RegistryEventData extends com.google.protobuf.GeneratedMessag
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface AuxiliaryVersionConfigOrBuilder
    * @return The version.
    */
   java.lang.String getVersion();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface AuxiliaryVersionConfigOrBuilder
    * <code>map&lt;string, string&gt; config_overrides = 2;</code>
    */
   int getConfigOverridesCount();
+
   /**
    *
    *
@@ -78,9 +80,11 @@ public interface AuxiliaryVersionConfigOrBuilder
    * <code>map&lt;string, string&gt; config_overrides = 2;</code>
    */
   boolean containsConfigOverrides(java.lang.String key);
+
   /** Use {@link #getConfigOverridesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getConfigOverrides();
+
   /**
    *
    *
@@ -95,6 +99,7 @@ public interface AuxiliaryVersionConfigOrBuilder
    * <code>map&lt;string, string&gt; config_overrides = 2;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getConfigOverridesMap();
+
   /**
    *
    *
@@ -113,6 +118,7 @@ public interface AuxiliaryVersionConfigOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -141,6 +147,7 @@ public interface AuxiliaryVersionConfigOrBuilder
    * @return Whether the networkConfig field is set.
    */
   boolean hasNetworkConfig();
+
   /**
    *
    *
@@ -154,6 +161,7 @@ public interface AuxiliaryVersionConfigOrBuilder
    * @return The networkConfig.
    */
   com.google.events.cloud.metastore.v1.NetworkConfig getNetworkConfig();
+
   /**
    *
    *

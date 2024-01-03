@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface PublicKeyCertificateOrBuilder
    * @return The enum numeric value on the wire for format.
    */
   int getFormatValue();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface PublicKeyCertificateOrBuilder
    * @return The certificate.
    */
   java.lang.String getCertificate();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface PublicKeyCertificateOrBuilder
    * @return Whether the x509Details field is set.
    */
   boolean hasX509Details();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface PublicKeyCertificateOrBuilder
    * @return The x509Details.
    */
   com.google.events.cloud.iot.v1.X509CertificateDetails getX509Details();
+
   /**
    *
    *

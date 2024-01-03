@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,7 @@ public interface BackendMetastoreOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -73,6 +74,7 @@ public interface BackendMetastoreOrBuilder
    * @return The enum numeric value on the wire for metastoreType.
    */
   int getMetastoreTypeValue();
+
   /**
    *
    *

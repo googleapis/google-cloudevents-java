@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MaintenanceWindowOrBuilder
    * @return Whether the hourOfDay field is set.
    */
   boolean hasHourOfDay();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface MaintenanceWindowOrBuilder
    * @return The hourOfDay.
    */
   com.google.protobuf.Int32Value getHourOfDay();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface MaintenanceWindowOrBuilder
    * @return The enum numeric value on the wire for dayOfWeek.
    */
   int getDayOfWeekValue();
+
   /**
    *
    *

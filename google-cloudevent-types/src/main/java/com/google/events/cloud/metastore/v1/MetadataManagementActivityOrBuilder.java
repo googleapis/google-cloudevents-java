@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.MetadataExport metadata_exports = 1;</code>
    */
   java.util.List<com.google.events.cloud.metastore.v1.MetadataExport> getMetadataExportsList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.MetadataExport metadata_exports = 1;</code>
    */
   com.google.events.cloud.metastore.v1.MetadataExport getMetadataExports(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.MetadataExport metadata_exports = 1;</code>
    */
   int getMetadataExportsCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface MetadataManagementActivityOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.metastore.v1.MetadataExportOrBuilder>
       getMetadataExportsOrBuilderList();
+
   /**
    *
    *
@@ -86,6 +90,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.Restore restores = 2;</code>
    */
   java.util.List<com.google.events.cloud.metastore.v1.Restore> getRestoresList();
+
   /**
    *
    *
@@ -96,6 +101,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.Restore restores = 2;</code>
    */
   com.google.events.cloud.metastore.v1.Restore getRestores(int index);
+
   /**
    *
    *
@@ -106,6 +112,7 @@ public interface MetadataManagementActivityOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.Restore restores = 2;</code>
    */
   int getRestoresCount();
+
   /**
    *
    *
@@ -117,6 +124,7 @@ public interface MetadataManagementActivityOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.metastore.v1.RestoreOrBuilder>
       getRestoresOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.iot.v1.RegistryCredential)
     RegistryCredentialOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use RegistryCredential.newBuilder() to construct.
   private RegistryCredential(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -79,6 +80,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
     private CredentialCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -110,6 +112,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
   }
 
   public static final int PUBLIC_KEY_CERTIFICATE_FIELD_NUMBER = 1;
+
   /**
    *
    *
@@ -125,6 +128,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
   public boolean hasPublicKeyCertificate() {
     return credentialCase_ == 1;
   }
+
   /**
    *
    *
@@ -143,6 +147,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
     }
     return com.google.events.cloud.iot.v1.PublicKeyCertificate.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -335,6 +340,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -554,6 +560,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.iot.v1.PublicKeyCertificate.Builder,
             com.google.events.cloud.iot.v1.PublicKeyCertificateOrBuilder>
         publicKeyCertificateBuilder_;
+
     /**
      *
      *
@@ -569,6 +576,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
     public boolean hasPublicKeyCertificate() {
       return credentialCase_ == 1;
     }
+
     /**
      *
      *
@@ -594,6 +602,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
         return com.google.events.cloud.iot.v1.PublicKeyCertificate.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -617,6 +626,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
       credentialCase_ = 1;
       return this;
     }
+
     /**
      *
      *
@@ -637,6 +647,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
       credentialCase_ = 1;
       return this;
     }
+
     /**
      *
      *
@@ -671,6 +682,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
       credentialCase_ = 1;
       return this;
     }
+
     /**
      *
      *
@@ -696,6 +708,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -709,6 +722,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
         getPublicKeyCertificateBuilder() {
       return getPublicKeyCertificateFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -730,6 +744,7 @@ public final class RegistryCredential extends com.google.protobuf.GeneratedMessa
         return com.google.events.cloud.iot.v1.PublicKeyCertificate.getDefaultInstance();
       }
     }
+
     /**
      *
      *

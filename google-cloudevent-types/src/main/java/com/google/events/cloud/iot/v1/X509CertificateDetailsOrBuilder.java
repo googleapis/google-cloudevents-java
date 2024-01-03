@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The issuer.
    */
   java.lang.String getIssuer();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The subject.
    */
   java.lang.String getSubject();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return Whether the startTime field is set.
    */
   boolean hasStartTime();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The startTime.
    */
   com.google.protobuf.Timestamp getStartTime();
+
   /**
    *
    *
@@ -120,6 +124,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return Whether the expiryTime field is set.
    */
   boolean hasExpiryTime();
+
   /**
    *
    *
@@ -132,6 +137,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The expiryTime.
    */
   com.google.protobuf.Timestamp getExpiryTime();
+
   /**
    *
    *
@@ -155,6 +161,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The signatureAlgorithm.
    */
   java.lang.String getSignatureAlgorithm();
+
   /**
    *
    *
@@ -180,6 +187,7 @@ public interface X509CertificateDetailsOrBuilder
    * @return The publicKeyType.
    */
   java.lang.String getPublicKeyType();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface LinkedRouterApplianceInstancesOrBuilder
    */
   java.util.List<com.google.events.cloud.networkconnectivity.v1.RouterApplianceInstance>
       getInstancesList();
+
   /**
    *
    *
@@ -48,6 +49,7 @@ public interface LinkedRouterApplianceInstancesOrBuilder
    * </code>
    */
   com.google.events.cloud.networkconnectivity.v1.RouterApplianceInstance getInstances(int index);
+
   /**
    *
    *
@@ -60,6 +62,7 @@ public interface LinkedRouterApplianceInstancesOrBuilder
    * </code>
    */
   int getInstancesCount();
+
   /**
    *
    *
@@ -74,6 +77,7 @@ public interface LinkedRouterApplianceInstancesOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.networkconnectivity.v1.RouterApplianceInstanceOrBuilder>
       getInstancesOrBuilderList();
+
   /**
    *
    *
@@ -116,6 +120,7 @@ public interface LinkedRouterApplianceInstancesOrBuilder
    * @return The vpcNetwork.
    */
   java.lang.String getVpcNetwork();
+
   /**
    *
    *

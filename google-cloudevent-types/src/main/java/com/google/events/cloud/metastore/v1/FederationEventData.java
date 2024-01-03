@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.metastore.v1.FederationEventData)
     FederationEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use FederationEventData.newBuilder() to construct.
   private FederationEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.metastore.v1.Federation payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
         ? com.google.events.cloud.metastore.v1.Federation.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -281,6 +285,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -484,6 +489,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
             com.google.events.cloud.metastore.v1.Federation.Builder,
             com.google.events.cloud.metastore.v1.FederationOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -498,6 +504,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -518,6 +525,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -540,6 +548,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -560,6 +569,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -585,6 +595,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -604,6 +615,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -618,6 +630,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -636,6 +649,7 @@ public final class FederationEventData extends com.google.protobuf.GeneratedMess
             : payload_;
       }
     }
+
     /**
      *
      *
