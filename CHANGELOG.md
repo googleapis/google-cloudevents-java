@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.1](https://github.com/googleapis/google-cloudevents-java/compare/v0.14.0...v0.14.1) (2024-01-03)
+
+
+### Bug Fixes
+
+* **deps:** Update java [protobuf] (non-major) ([#237](https://github.com/googleapis/google-cloudevents-java/issues/237)) ([a5a10c9](https://github.com/googleapis/google-cloudevents-java/commit/a5a10c9c24564514de7dd43cf1e776290f61ac8f))
+
 ## [0.14.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.13.0...v0.14.0) (2023-07-10)
 
 
