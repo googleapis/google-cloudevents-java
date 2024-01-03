@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface RestoreOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface RestoreOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface RestoreOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface RestoreOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -125,6 +129,7 @@ public interface RestoreOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public interface RestoreOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -162,6 +168,7 @@ public interface RestoreOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -192,6 +199,7 @@ public interface RestoreOrBuilder
    * @return The backup.
    */
   java.lang.String getBackup();
+
   /**
    *
    *
@@ -227,6 +235,7 @@ public interface RestoreOrBuilder
    * @return The cluster.
    */
   java.lang.String getCluster();
+
   /**
    *
    *
@@ -259,6 +268,7 @@ public interface RestoreOrBuilder
    * @return Whether the restoreConfig field is set.
    */
   boolean hasRestoreConfig();
+
   /**
    *
    *
@@ -273,6 +283,7 @@ public interface RestoreOrBuilder
    * @return The restoreConfig.
    */
   com.google.events.cloud.gkebackup.v1.RestoreConfig getRestoreConfig();
+
   /**
    *
    *
@@ -296,6 +307,7 @@ public interface RestoreOrBuilder
    * <code>map&lt;string, string&gt; labels = 9;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -306,9 +318,11 @@ public interface RestoreOrBuilder
    * <code>map&lt;string, string&gt; labels = 9;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -319,6 +333,7 @@ public interface RestoreOrBuilder
    * <code>map&lt;string, string&gt; labels = 9;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -333,6 +348,7 @@ public interface RestoreOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -356,6 +372,7 @@ public interface RestoreOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -382,6 +399,7 @@ public interface RestoreOrBuilder
    * @return The stateReason.
    */
   java.lang.String getStateReason();
+
   /**
    *
    *
@@ -408,6 +426,7 @@ public interface RestoreOrBuilder
    * @return Whether the completeTime field is set.
    */
   boolean hasCompleteTime();
+
   /**
    *
    *
@@ -420,6 +439,7 @@ public interface RestoreOrBuilder
    * @return The completeTime.
    */
   com.google.protobuf.Timestamp getCompleteTime();
+
   /**
    *
    *
@@ -503,6 +523,7 @@ public interface RestoreOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *

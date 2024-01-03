@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ public interface RestoreConfigOrBuilder
    * @return The enum numeric value on the wire for volumeDataRestorePolicy.
    */
   int getVolumeDataRestorePolicyValue();
+
   /**
    *
    *
@@ -75,6 +76,7 @@ public interface RestoreConfigOrBuilder
    * @return The enum numeric value on the wire for clusterResourceConflictPolicy.
    */
   int getClusterResourceConflictPolicyValue();
+
   /**
    *
    *
@@ -111,6 +113,7 @@ public interface RestoreConfigOrBuilder
    * @return The enum numeric value on the wire for namespacedResourceRestoreMode.
    */
   int getNamespacedResourceRestoreModeValue();
+
   /**
    *
    *
@@ -144,6 +147,7 @@ public interface RestoreConfigOrBuilder
    * @return Whether the clusterResourceRestoreScope field is set.
    */
   boolean hasClusterResourceRestoreScope();
+
   /**
    *
    *
@@ -160,6 +164,7 @@ public interface RestoreConfigOrBuilder
    */
   com.google.events.cloud.gkebackup.v1.RestoreConfig.ClusterResourceRestoreScope
       getClusterResourceRestoreScope();
+
   /**
    *
    *
@@ -188,6 +193,7 @@ public interface RestoreConfigOrBuilder
    * @return Whether the allNamespaces field is set.
    */
   boolean hasAllNamespaces();
+
   /**
    *
    *
@@ -215,6 +221,7 @@ public interface RestoreConfigOrBuilder
    * @return Whether the selectedNamespaces field is set.
    */
   boolean hasSelectedNamespaces();
+
   /**
    *
    *
@@ -228,6 +235,7 @@ public interface RestoreConfigOrBuilder
    * @return The selectedNamespaces.
    */
   com.google.events.cloud.gkebackup.v1.Namespaces getSelectedNamespaces();
+
   /**
    *
    *
@@ -254,6 +262,7 @@ public interface RestoreConfigOrBuilder
    * @return Whether the selectedApplications field is set.
    */
   boolean hasSelectedApplications();
+
   /**
    *
    *
@@ -268,6 +277,7 @@ public interface RestoreConfigOrBuilder
    * @return The selectedApplications.
    */
   com.google.events.cloud.gkebackup.v1.NamespacedNames getSelectedApplications();
+
   /**
    *
    *
@@ -298,6 +308,7 @@ public interface RestoreConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.gkebackup.v1.RestoreConfig.SubstitutionRule>
       getSubstitutionRulesList();
+
   /**
    *
    *
@@ -315,6 +326,7 @@ public interface RestoreConfigOrBuilder
    */
   com.google.events.cloud.gkebackup.v1.RestoreConfig.SubstitutionRule getSubstitutionRules(
       int index);
+
   /**
    *
    *
@@ -331,6 +343,7 @@ public interface RestoreConfigOrBuilder
    * </code>
    */
   int getSubstitutionRulesCount();
+
   /**
    *
    *
@@ -349,6 +362,7 @@ public interface RestoreConfigOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.gkebackup.v1.RestoreConfig.SubstitutionRuleOrBuilder>
       getSubstitutionRulesOrBuilderList();
+
   /**
    *
    *

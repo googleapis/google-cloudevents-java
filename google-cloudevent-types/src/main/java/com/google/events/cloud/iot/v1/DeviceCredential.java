@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.iot.v1.DeviceCredential)
     DeviceCredentialOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DeviceCredential.newBuilder() to construct.
   private DeviceCredential(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -79,6 +80,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     private CredentialCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -110,6 +112,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
   }
 
   public static final int PUBLIC_KEY_FIELD_NUMBER = 2;
+
   /**
    *
    *
@@ -135,6 +138,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
   public boolean hasPublicKey() {
     return credentialCase_ == 2;
   }
+
   /**
    *
    *
@@ -163,6 +167,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     }
     return com.google.events.cloud.iot.v1.PublicKeyCredential.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -192,6 +197,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
 
   public static final int EXPIRATION_TIME_FIELD_NUMBER = 6;
   private com.google.protobuf.Timestamp expirationTime_;
+
   /**
    *
    *
@@ -209,6 +215,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
   public boolean hasExpirationTime() {
     return expirationTime_ != null;
   }
+
   /**
    *
    *
@@ -228,6 +235,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : expirationTime_;
   }
+
   /**
    *
    *
@@ -434,6 +442,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -670,6 +679,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.iot.v1.PublicKeyCredential.Builder,
             com.google.events.cloud.iot.v1.PublicKeyCredentialOrBuilder>
         publicKeyBuilder_;
+
     /**
      *
      *
@@ -695,6 +705,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     public boolean hasPublicKey() {
       return credentialCase_ == 2;
     }
+
     /**
      *
      *
@@ -730,6 +741,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.iot.v1.PublicKeyCredential.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -762,6 +774,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       credentialCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -792,6 +805,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       credentialCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -835,6 +849,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       credentialCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -870,6 +885,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -892,6 +908,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     public com.google.events.cloud.iot.v1.PublicKeyCredential.Builder getPublicKeyBuilder() {
       return getPublicKeyFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -922,6 +939,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.iot.v1.PublicKeyCredential.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -971,6 +989,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         expirationTimeBuilder_;
+
     /**
      *
      *
@@ -987,6 +1006,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
     public boolean hasExpirationTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -1009,6 +1029,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
         return expirationTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1033,6 +1054,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1054,6 +1076,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1081,6 +1104,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1102,6 +1126,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1118,6 +1143,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getExpirationTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1138,6 +1164,7 @@ public final class DeviceCredential extends com.google.protobuf.GeneratedMessage
             : expirationTime_;
       }
     }
+
     /**
      *
      *

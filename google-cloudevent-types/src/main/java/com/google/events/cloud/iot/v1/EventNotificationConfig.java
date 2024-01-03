@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
     // @@protoc_insertion_point(message_implements:google.events.cloud.iot.v1.EventNotificationConfig)
     EventNotificationConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EventNotificationConfig.newBuilder() to construct.
   private EventNotificationConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object subfolderMatches_ = "";
+
   /**
    *
    *
@@ -98,6 +100,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -129,6 +132,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object pubsubTopicName_ = "";
+
   /**
    *
    *
@@ -153,6 +157,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -347,6 +352,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -546,6 +552,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
     private int bitField0_;
 
     private java.lang.Object subfolderMatches_ = "";
+
     /**
      *
      *
@@ -571,6 +578,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -596,6 +604,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -620,6 +629,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -640,6 +650,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -667,6 +678,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
     }
 
     private java.lang.Object pubsubTopicName_ = "";
+
     /**
      *
      *
@@ -690,6 +702,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -713,6 +726,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -735,6 +749,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -753,6 +768,7 @@ public final class EventNotificationConfig extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *

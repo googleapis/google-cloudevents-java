@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkehub.v1.OnPremCluster)
     OnPremClusterOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use OnPremCluster.newBuilder() to construct.
   private OnPremCluster(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -141,6 +142,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
      * <code>CLUSTERTYPE_UNSPECIFIED = 0;</code>
      */
     public static final int CLUSTERTYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -151,6 +153,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
      * <code>BOOTSTRAP = 1;</code>
      */
     public static final int BOOTSTRAP_VALUE = 1;
+
     /**
      *
      *
@@ -161,6 +164,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
      * <code>HYBRID = 2;</code>
      */
     public static final int HYBRID_VALUE = 2;
+
     /**
      *
      *
@@ -171,6 +175,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
      * <code>STANDALONE = 3;</code>
      */
     public static final int STANDALONE_VALUE = 3;
+
     /**
      *
      *
@@ -273,6 +278,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object resourceLink_ = "";
+
   /**
    *
    *
@@ -299,6 +305,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -328,6 +335,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CLUSTER_MISSING_FIELD_NUMBER = 2;
   private boolean clusterMissing_ = false;
+
   /**
    *
    *
@@ -348,6 +356,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ADMIN_CLUSTER_FIELD_NUMBER = 3;
   private boolean adminCluster_ = false;
+
   /**
    *
    *
@@ -366,6 +375,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CLUSTER_TYPE_FIELD_NUMBER = 4;
   private int clusterType_ = 0;
+
   /**
    *
    *
@@ -381,6 +391,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
   public int getClusterTypeValue() {
     return clusterType_;
   }
+
   /**
    *
    *
@@ -591,6 +602,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -814,6 +826,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object resourceLink_ = "";
+
     /**
      *
      *
@@ -839,6 +852,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -864,6 +878,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -888,6 +903,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -908,6 +924,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -935,6 +952,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     }
 
     private boolean clusterMissing_;
+
     /**
      *
      *
@@ -952,6 +970,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     public boolean getClusterMissing() {
       return clusterMissing_;
     }
+
     /**
      *
      *
@@ -973,6 +992,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -994,6 +1014,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     }
 
     private boolean adminCluster_;
+
     /**
      *
      *
@@ -1009,6 +1030,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     public boolean getAdminCluster() {
       return adminCluster_;
     }
+
     /**
      *
      *
@@ -1028,6 +1050,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1047,6 +1070,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int clusterType_ = 0;
+
     /**
      *
      *
@@ -1062,6 +1086,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
     public int getClusterTypeValue() {
       return clusterType_;
     }
+
     /**
      *
      *
@@ -1080,6 +1105,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1099,6 +1125,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.gkehub.v1.OnPremCluster.ClusterType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1121,6 +1148,7 @@ public final class OnPremCluster extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest membership_resources = 2;</code>
    */
   java.util.List<com.google.events.cloud.gkehub.v1.ResourceManifest> getMembershipResourcesList();
+
   /**
    *
    *
@@ -55,6 +56,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest membership_resources = 2;</code>
    */
   com.google.events.cloud.gkehub.v1.ResourceManifest getMembershipResources(int index);
+
   /**
    *
    *
@@ -71,6 +73,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest membership_resources = 2;</code>
    */
   int getMembershipResourcesCount();
+
   /**
    *
    *
@@ -88,6 +91,7 @@ public interface KubernetesResourceOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.gkehub.v1.ResourceManifestOrBuilder>
       getMembershipResourcesOrBuilderList();
+
   /**
    *
    *
@@ -121,6 +125,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest connect_resources = 3;</code>
    */
   java.util.List<com.google.events.cloud.gkehub.v1.ResourceManifest> getConnectResourcesList();
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest connect_resources = 3;</code>
    */
   com.google.events.cloud.gkehub.v1.ResourceManifest getConnectResources(int index);
+
   /**
    *
    *
@@ -151,6 +157,7 @@ public interface KubernetesResourceOrBuilder
    * <code>repeated .google.events.cloud.gkehub.v1.ResourceManifest connect_resources = 3;</code>
    */
   int getConnectResourcesCount();
+
   /**
    *
    *
@@ -167,6 +174,7 @@ public interface KubernetesResourceOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.gkehub.v1.ResourceManifestOrBuilder>
       getConnectResourcesOrBuilderList();
+
   /**
    *
    *
@@ -196,6 +204,7 @@ public interface KubernetesResourceOrBuilder
    * @return Whether the resourceOptions field is set.
    */
   boolean hasResourceOptions();
+
   /**
    *
    *
@@ -208,6 +217,7 @@ public interface KubernetesResourceOrBuilder
    * @return The resourceOptions.
    */
   com.google.events.cloud.gkehub.v1.ResourceOptions getResourceOptions();
+
   /**
    *
    *

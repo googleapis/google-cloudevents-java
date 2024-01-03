@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkehub.v1.Scope)
     ScopeOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Scope.newBuilder() to construct.
   private Scope(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -125,6 +128,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -150,6 +154,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -178,6 +183,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -193,6 +199,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -208,6 +215,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -224,6 +232,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -239,6 +248,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -254,6 +264,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -270,6 +281,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   public static final int DELETE_TIME_FIELD_NUMBER = 5;
   private com.google.protobuf.Timestamp deleteTime_;
+
   /**
    *
    *
@@ -285,6 +297,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public boolean hasDeleteTime() {
     return deleteTime_ != null;
   }
+
   /**
    *
    *
@@ -300,6 +313,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getDeleteTime() {
     return deleteTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : deleteTime_;
   }
+
   /**
    *
    *
@@ -316,6 +330,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATE_FIELD_NUMBER = 6;
   private com.google.events.cloud.gkehub.v1.ScopeLifecycleState state_;
+
   /**
    *
    *
@@ -331,6 +346,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
   public boolean hasState() {
     return state_ != null;
   }
+
   /**
    *
    *
@@ -348,6 +364,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.gkehub.v1.ScopeLifecycleState.getDefaultInstance()
         : state_;
   }
+
   /**
    *
    *
@@ -587,6 +604,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -853,6 +871,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -876,6 +895,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -899,6 +919,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -921,6 +942,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -939,6 +961,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -964,6 +987,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -988,6 +1012,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1012,6 +1037,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1035,6 +1061,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1054,6 +1081,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1085,6 +1113,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -1099,6 +1128,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1119,6 +1149,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1141,6 +1172,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1160,6 +1192,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1185,6 +1218,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1204,6 +1238,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1218,6 +1253,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1236,6 +1272,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -1268,6 +1305,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -1282,6 +1320,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1302,6 +1341,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1324,6 +1364,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1343,6 +1384,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1368,6 +1410,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1387,6 +1430,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1401,6 +1445,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1419,6 +1464,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -1451,6 +1497,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         deleteTimeBuilder_;
+
     /**
      *
      *
@@ -1465,6 +1512,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     public boolean hasDeleteTime() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1485,6 +1533,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return deleteTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1507,6 +1556,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1526,6 +1576,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1551,6 +1602,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1570,6 +1622,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1584,6 +1637,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getDeleteTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1602,6 +1656,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             : deleteTime_;
       }
     }
+
     /**
      *
      *
@@ -1634,6 +1689,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.gkehub.v1.ScopeLifecycleState.Builder,
             com.google.events.cloud.gkehub.v1.ScopeLifecycleStateOrBuilder>
         stateBuilder_;
+
     /**
      *
      *
@@ -1648,6 +1704,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
     public boolean hasState() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -1668,6 +1725,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
         return stateBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1690,6 +1748,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1710,6 +1769,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1736,6 +1796,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1755,6 +1816,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1769,6 +1831,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStateFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1787,6 +1850,7 @@ public final class Scope extends com.google.protobuf.GeneratedMessageV3
             : state_;
       }
     }
+
     /**
      *
      *

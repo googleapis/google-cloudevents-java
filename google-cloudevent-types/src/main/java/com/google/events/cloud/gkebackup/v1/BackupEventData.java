@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkebackup.v1.BackupEventData)
     BackupEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use BackupEventData.newBuilder() to construct.
   private BackupEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.gkebackup.v1.Backup payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
         ? com.google.events.cloud.gkebackup.v1.Backup.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -483,6 +488,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.gkebackup.v1.Backup.Builder,
             com.google.events.cloud.gkebackup.v1.BackupOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -497,6 +503,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -517,6 +524,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -539,6 +547,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -558,6 +567,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -583,6 +593,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -602,6 +613,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -616,6 +628,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -634,6 +647,7 @@ public final class BackupEventData extends com.google.protobuf.GeneratedMessageV
             : payload_;
       }
     }
+
     /**
      *
      *

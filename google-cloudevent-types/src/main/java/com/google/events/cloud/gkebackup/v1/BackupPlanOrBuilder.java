@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface BackupPlanOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface BackupPlanOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface BackupPlanOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface BackupPlanOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -125,6 +129,7 @@ public interface BackupPlanOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public interface BackupPlanOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -162,6 +168,7 @@ public interface BackupPlanOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -190,6 +197,7 @@ public interface BackupPlanOrBuilder
    * @return The cluster.
    */
   java.lang.String getCluster();
+
   /**
    *
    *
@@ -218,6 +226,7 @@ public interface BackupPlanOrBuilder
    * @return Whether the retentionPolicy field is set.
    */
   boolean hasRetentionPolicy();
+
   /**
    *
    *
@@ -230,6 +239,7 @@ public interface BackupPlanOrBuilder
    * @return The retentionPolicy.
    */
   com.google.events.cloud.gkebackup.v1.BackupPlan.RetentionPolicy getRetentionPolicy();
+
   /**
    *
    *
@@ -252,6 +262,7 @@ public interface BackupPlanOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -262,9 +273,11 @@ public interface BackupPlanOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -275,6 +288,7 @@ public interface BackupPlanOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -289,6 +303,7 @@ public interface BackupPlanOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -312,6 +327,7 @@ public interface BackupPlanOrBuilder
    * @return Whether the backupSchedule field is set.
    */
   boolean hasBackupSchedule();
+
   /**
    *
    *
@@ -324,6 +340,7 @@ public interface BackupPlanOrBuilder
    * @return The backupSchedule.
    */
   com.google.events.cloud.gkebackup.v1.BackupPlan.Schedule getBackupSchedule();
+
   /**
    *
    *
@@ -354,6 +371,7 @@ public interface BackupPlanOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *
@@ -404,6 +422,7 @@ public interface BackupPlanOrBuilder
    * @return Whether the backupConfig field is set.
    */
   boolean hasBackupConfig();
+
   /**
    *
    *
@@ -416,6 +435,7 @@ public interface BackupPlanOrBuilder
    * @return The backupConfig.
    */
   com.google.events.cloud.gkebackup.v1.BackupPlan.BackupConfig getBackupConfig();
+
   /**
    *
    *

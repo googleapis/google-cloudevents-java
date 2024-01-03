@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkebackup.v1.Restore)
     RestoreOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Restore.newBuilder() to construct.
   private Restore(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -173,6 +174,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -184,6 +186,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
      * <code>CREATING = 1;</code>
      */
     public static final int CREATING_VALUE = 1;
+
     /**
      *
      *
@@ -195,6 +198,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
      * <code>IN_PROGRESS = 2;</code>
      */
     public static final int IN_PROGRESS_VALUE = 2;
+
     /**
      *
      *
@@ -206,6 +210,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
      * <code>SUCCEEDED = 3;</code>
      */
     public static final int SUCCEEDED_VALUE = 3;
+
     /**
      *
      *
@@ -216,6 +221,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
      * <code>FAILED = 4;</code>
      */
     public static final int FAILED_VALUE = 4;
+
     /**
      *
      *
@@ -320,6 +326,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -344,6 +351,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -373,6 +381,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -397,6 +406,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -424,6 +434,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -439,6 +450,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -454,6 +466,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -470,6 +483,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -486,6 +500,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -502,6 +517,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -521,6 +537,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -544,6 +561,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -572,6 +590,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object backup_ = "";
+
   /**
    *
    *
@@ -600,6 +619,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -633,6 +653,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object cluster_ = "";
+
   /**
    *
    *
@@ -661,6 +682,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -692,6 +714,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESTORE_CONFIG_FIELD_NUMBER = 8;
   private com.google.events.cloud.gkebackup.v1.RestoreConfig restoreConfig_;
+
   /**
    *
    *
@@ -709,6 +732,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public boolean hasRestoreConfig() {
     return restoreConfig_ != null;
   }
+
   /**
    *
    *
@@ -728,6 +752,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.gkebackup.v1.RestoreConfig.getDefaultInstance()
         : restoreConfig_;
   }
+
   /**
    *
    *
@@ -772,6 +797,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -788,12 +814,14 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -807,6 +835,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -827,6 +856,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -850,6 +880,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATE_FIELD_NUMBER = 10;
   private int state_ = 0;
+
   /**
    *
    *
@@ -865,6 +896,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -889,6 +921,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object stateReason_ = "";
+
   /**
    *
    *
@@ -913,6 +946,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -940,6 +974,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int COMPLETE_TIME_FIELD_NUMBER = 12;
   private com.google.protobuf.Timestamp completeTime_;
+
   /**
    *
    *
@@ -955,6 +990,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCompleteTime() {
     return completeTime_ != null;
   }
+
   /**
    *
    *
@@ -972,6 +1008,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : completeTime_;
   }
+
   /**
    *
    *
@@ -990,6 +1027,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCES_RESTORED_COUNT_FIELD_NUMBER = 13;
   private int resourcesRestoredCount_ = 0;
+
   /**
    *
    *
@@ -1008,6 +1046,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCES_EXCLUDED_COUNT_FIELD_NUMBER = 14;
   private int resourcesExcludedCount_ = 0;
+
   /**
    *
    *
@@ -1026,6 +1065,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCES_FAILED_COUNT_FIELD_NUMBER = 15;
   private int resourcesFailedCount_ = 0;
+
   /**
    *
    *
@@ -1045,6 +1085,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   public static final int VOLUMES_RESTORED_COUNT_FIELD_NUMBER = 16;
   private int volumesRestoredCount_ = 0;
+
   /**
    *
    *
@@ -1065,6 +1106,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object etag_ = "";
+
   /**
    *
    *
@@ -1095,6 +1137,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1459,6 +1502,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1908,6 +1952,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1931,6 +1976,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1954,6 +2000,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1976,6 +2023,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1994,6 +2042,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2019,6 +2068,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -2042,6 +2092,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2065,6 +2116,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2087,6 +2139,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2105,6 +2158,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2135,6 +2189,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -2149,6 +2204,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -2169,6 +2225,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2191,6 +2248,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2210,6 +2268,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2235,6 +2294,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2254,6 +2314,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2268,6 +2329,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2286,6 +2348,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -2318,6 +2381,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -2333,6 +2397,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -2354,6 +2419,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2377,6 +2443,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2397,6 +2464,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2423,6 +2491,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2443,6 +2512,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2458,6 +2528,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2477,6 +2548,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -2505,6 +2577,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -2527,6 +2600,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2549,6 +2623,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2570,6 +2645,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2587,6 +2663,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2611,6 +2688,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object backup_ = "";
+
     /**
      *
      *
@@ -2638,6 +2716,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2665,6 +2744,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2691,6 +2771,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2713,6 +2794,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2742,6 +2824,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object cluster_ = "";
+
     /**
      *
      *
@@ -2769,6 +2852,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2796,6 +2880,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2822,6 +2907,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2844,6 +2930,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2878,6 +2965,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.gkebackup.v1.RestoreConfig.Builder,
             com.google.events.cloud.gkebackup.v1.RestoreConfigOrBuilder>
         restoreConfigBuilder_;
+
     /**
      *
      *
@@ -2894,6 +2982,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public boolean hasRestoreConfig() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2916,6 +3005,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return restoreConfigBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2940,6 +3030,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2962,6 +3053,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2990,6 +3082,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3011,6 +3104,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3027,6 +3121,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getRestoreConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3047,6 +3142,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             : restoreConfig_;
       }
     }
+
     /**
      *
      *
@@ -3100,6 +3196,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -3116,12 +3213,14 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -3135,6 +3234,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -3155,6 +3255,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3181,6 +3282,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3197,12 +3299,14 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000100;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -3223,6 +3327,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000100;
       return this;
     }
+
     /**
      *
      *
@@ -3239,6 +3344,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -3254,6 +3360,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -3272,6 +3379,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3291,6 +3399,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.gkebackup.v1.Restore.State.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -3312,6 +3421,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3331,6 +3441,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object stateReason_ = "";
+
     /**
      *
      *
@@ -3354,6 +3465,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3377,6 +3489,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3399,6 +3512,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3417,6 +3531,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3447,6 +3562,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         completeTimeBuilder_;
+
     /**
      *
      *
@@ -3461,6 +3577,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCompleteTime() {
       return ((bitField0_ & 0x00000800) != 0);
     }
+
     /**
      *
      *
@@ -3481,6 +3598,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return completeTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3503,6 +3621,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3522,6 +3641,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3547,6 +3667,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3566,6 +3687,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3580,6 +3702,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCompleteTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3598,6 +3721,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
             : completeTime_;
       }
     }
+
     /**
      *
      *
@@ -3625,6 +3749,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int resourcesRestoredCount_;
+
     /**
      *
      *
@@ -3640,6 +3765,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getResourcesRestoredCount() {
       return resourcesRestoredCount_;
     }
+
     /**
      *
      *
@@ -3659,6 +3785,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3678,6 +3805,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int resourcesExcludedCount_;
+
     /**
      *
      *
@@ -3693,6 +3821,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getResourcesExcludedCount() {
       return resourcesExcludedCount_;
     }
+
     /**
      *
      *
@@ -3712,6 +3841,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3731,6 +3861,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int resourcesFailedCount_;
+
     /**
      *
      *
@@ -3747,6 +3878,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getResourcesFailedCount() {
       return resourcesFailedCount_;
     }
+
     /**
      *
      *
@@ -3767,6 +3899,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3787,6 +3920,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int volumesRestoredCount_;
+
     /**
      *
      *
@@ -3802,6 +3936,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     public int getVolumesRestoredCount() {
       return volumesRestoredCount_;
     }
+
     /**
      *
      *
@@ -3821,6 +3956,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3840,6 +3976,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object etag_ = "";
+
     /**
      *
      *
@@ -3869,6 +4006,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3898,6 +4036,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3926,6 +4065,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3950,6 +4090,7 @@ public final class Restore extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

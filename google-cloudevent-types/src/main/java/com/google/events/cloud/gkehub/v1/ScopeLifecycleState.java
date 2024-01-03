@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkehub.v1.ScopeLifecycleState)
     ScopeLifecycleStateOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ScopeLifecycleState.newBuilder() to construct.
   private ScopeLifecycleState(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -140,6 +141,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
      * <code>CODE_UNSPECIFIED = 0;</code>
      */
     public static final int CODE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -150,6 +152,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
      * <code>CREATING = 1;</code>
      */
     public static final int CREATING_VALUE = 1;
+
     /**
      *
      *
@@ -160,6 +163,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
      * <code>READY = 2;</code>
      */
     public static final int READY_VALUE = 2;
+
     /**
      *
      *
@@ -170,6 +174,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
      * <code>DELETING = 3;</code>
      */
     public static final int DELETING_VALUE = 3;
+
     /**
      *
      *
@@ -272,6 +277,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
 
   public static final int CODE_FIELD_NUMBER = 1;
   private int code_ = 0;
+
   /**
    *
    *
@@ -287,6 +293,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
   public int getCodeValue() {
     return code_;
   }
+
   /**
    *
    *
@@ -471,6 +478,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -653,6 +661,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
     private int bitField0_;
 
     private int code_ = 0;
+
     /**
      *
      *
@@ -668,6 +677,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
     public int getCodeValue() {
       return code_;
     }
+
     /**
      *
      *
@@ -686,6 +696,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -705,6 +716,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
           ? com.google.events.cloud.gkehub.v1.ScopeLifecycleState.Code.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -726,6 +738,7 @@ public final class ScopeLifecycleState extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *

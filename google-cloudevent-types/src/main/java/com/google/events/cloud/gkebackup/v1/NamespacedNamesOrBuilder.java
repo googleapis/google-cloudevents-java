@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface NamespacedNamesOrBuilder
    * <code>repeated .google.events.cloud.gkebackup.v1.NamespacedName namespaced_names = 1;</code>
    */
   java.util.List<com.google.events.cloud.gkebackup.v1.NamespacedName> getNamespacedNamesList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface NamespacedNamesOrBuilder
    * <code>repeated .google.events.cloud.gkebackup.v1.NamespacedName namespaced_names = 1;</code>
    */
   com.google.events.cloud.gkebackup.v1.NamespacedName getNamespacedNames(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface NamespacedNamesOrBuilder
    * <code>repeated .google.events.cloud.gkebackup.v1.NamespacedName namespaced_names = 1;</code>
    */
   int getNamespacedNamesCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface NamespacedNamesOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.gkebackup.v1.NamespacedNameOrBuilder>
       getNamespacedNamesOrBuilderList();
+
   /**
    *
    *

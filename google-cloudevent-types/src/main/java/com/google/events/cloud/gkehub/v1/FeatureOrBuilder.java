@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface FeatureOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface FeatureOrBuilder
    * <code>map&lt;string, string&gt; labels = 2;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -70,9 +72,11 @@ public interface FeatureOrBuilder
    * <code>map&lt;string, string&gt; labels = 2;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -83,6 +87,7 @@ public interface FeatureOrBuilder
    * <code>map&lt;string, string&gt; labels = 2;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -97,6 +102,7 @@ public interface FeatureOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -120,6 +126,7 @@ public interface FeatureOrBuilder
    * @return Whether the resourceState field is set.
    */
   boolean hasResourceState();
+
   /**
    *
    *
@@ -132,6 +139,7 @@ public interface FeatureOrBuilder
    * @return The resourceState.
    */
   com.google.events.cloud.gkehub.v1.FeatureResourceState getResourceState();
+
   /**
    *
    *
@@ -155,6 +163,7 @@ public interface FeatureOrBuilder
    * @return Whether the state field is set.
    */
   boolean hasState();
+
   /**
    *
    *
@@ -167,6 +176,7 @@ public interface FeatureOrBuilder
    * @return The state.
    */
   com.google.events.cloud.gkehub.v1.CommonFeatureState getState();
+
   /**
    *
    *
@@ -196,6 +206,7 @@ public interface FeatureOrBuilder
    * </code>
    */
   int getMembershipStatesCount();
+
   /**
    *
    *
@@ -214,10 +225,12 @@ public interface FeatureOrBuilder
    * </code>
    */
   boolean containsMembershipStates(java.lang.String key);
+
   /** Use {@link #getMembershipStatesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureState>
       getMembershipStates();
+
   /**
    *
    *
@@ -237,6 +250,7 @@ public interface FeatureOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.MembershipFeatureState>
       getMembershipStatesMap();
+
   /**
    *
    *
@@ -259,6 +273,7 @@ public interface FeatureOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.gkehub.v1.MembershipFeatureState defaultValue);
+
   /**
    *
    *
@@ -291,6 +306,7 @@ public interface FeatureOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -303,6 +319,7 @@ public interface FeatureOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -326,6 +343,7 @@ public interface FeatureOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -338,6 +356,7 @@ public interface FeatureOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -361,6 +380,7 @@ public interface FeatureOrBuilder
    * @return Whether the deleteTime field is set.
    */
   boolean hasDeleteTime();
+
   /**
    *
    *
@@ -373,6 +393,7 @@ public interface FeatureOrBuilder
    * @return The deleteTime.
    */
   com.google.protobuf.Timestamp getDeleteTime();
+
   /**
    *
    *
@@ -400,6 +421,7 @@ public interface FeatureOrBuilder
    * </code>
    */
   int getScopeStatesCount();
+
   /**
    *
    *
@@ -416,10 +438,12 @@ public interface FeatureOrBuilder
    * </code>
    */
   boolean containsScopeStates(java.lang.String key);
+
   /** Use {@link #getScopeStatesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.ScopeFeatureState>
       getScopeStates();
+
   /**
    *
    *
@@ -437,6 +461,7 @@ public interface FeatureOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.cloud.gkehub.v1.ScopeFeatureState>
       getScopeStatesMap();
+
   /**
    *
    *
@@ -457,6 +482,7 @@ public interface FeatureOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.gkehub.v1.ScopeFeatureState defaultValue);
+
   /**
    *
    *

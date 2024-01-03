@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the scope field is set.
    */
   boolean hasScope();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface MembershipBindingOrBuilder
    * @return The scope.
    */
   java.lang.String getScope();
+
   /**
    *
    *
@@ -76,6 +78,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the fleet field is set.
    */
   boolean hasFleet();
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public interface MembershipBindingOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -132,6 +136,7 @@ public interface MembershipBindingOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -160,6 +165,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -172,6 +178,7 @@ public interface MembershipBindingOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -195,6 +202,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -207,6 +215,7 @@ public interface MembershipBindingOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -230,6 +239,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the deleteTime field is set.
    */
   boolean hasDeleteTime();
+
   /**
    *
    *
@@ -242,6 +252,7 @@ public interface MembershipBindingOrBuilder
    * @return The deleteTime.
    */
   com.google.protobuf.Timestamp getDeleteTime();
+
   /**
    *
    *
@@ -265,6 +276,7 @@ public interface MembershipBindingOrBuilder
    * @return Whether the state field is set.
    */
   boolean hasState();
+
   /**
    *
    *
@@ -277,6 +289,7 @@ public interface MembershipBindingOrBuilder
    * @return The state.
    */
   com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState getState();
+
   /**
    *
    *
