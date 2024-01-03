@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -91,6 +91,7 @@ public enum DatabaseProvider implements com.google.protobuf.ProtocolMessageEnum 
    * <code>DATABASE_PROVIDER_UNSPECIFIED = 0;</code>
    */
   public static final int DATABASE_PROVIDER_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -101,6 +102,7 @@ public enum DatabaseProvider implements com.google.protobuf.ProtocolMessageEnum 
    * <code>CLOUDSQL = 1;</code>
    */
   public static final int CLOUDSQL_VALUE = 1;
+
   /**
    *
    *
@@ -111,6 +113,7 @@ public enum DatabaseProvider implements com.google.protobuf.ProtocolMessageEnum 
    * <code>RDS = 2;</code>
    */
   public static final int RDS_VALUE = 2;
+
   /**
    *
    *
@@ -121,6 +124,7 @@ public enum DatabaseProvider implements com.google.protobuf.ProtocolMessageEnum 
    * <code>AURORA = 3;</code>
    */
   public static final int AURORA_VALUE = 3;
+
   /**
    *
    *

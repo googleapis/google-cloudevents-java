@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,6 +47,7 @@ public enum NetworkArchitecture implements com.google.protobuf.ProtocolMessageEn
 
   /** <code>NETWORK_ARCHITECTURE_UNSPECIFIED = 0;</code> */
   public static final int NETWORK_ARCHITECTURE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -57,6 +58,7 @@ public enum NetworkArchitecture implements com.google.protobuf.ProtocolMessageEn
    * <code>NETWORK_ARCHITECTURE_OLD_CSQL_PRODUCER = 1;</code>
    */
   public static final int NETWORK_ARCHITECTURE_OLD_CSQL_PRODUCER_VALUE = 1;
+
   /**
    *
    *

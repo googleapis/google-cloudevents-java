@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     // @@protoc_insertion_point(message_implements:google.events.cloud.clouddms.v1.CloudSqlConnectionProfile)
     CloudSqlConnectionProfileOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CloudSqlConnectionProfile.newBuilder() to construct.
   private CloudSqlConnectionProfile(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -75,6 +76,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object cloudSqlId_ = "";
+
   /**
    *
    *
@@ -99,6 +101,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       return s;
     }
   }
+
   /**
    *
    *
@@ -126,6 +129,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
 
   public static final int SETTINGS_FIELD_NUMBER = 2;
   private com.google.events.cloud.clouddms.v1.CloudSqlSettings settings_;
+
   /**
    *
    *
@@ -141,6 +145,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
   public boolean hasSettings() {
     return settings_ != null;
   }
+
   /**
    *
    *
@@ -158,6 +163,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         ? com.google.events.cloud.clouddms.v1.CloudSqlSettings.getDefaultInstance()
         : settings_;
   }
+
   /**
    *
    *
@@ -178,6 +184,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object privateIp_ = "";
+
   /**
    *
    *
@@ -201,6 +208,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       return s;
     }
   }
+
   /**
    *
    *
@@ -229,6 +237,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object publicIp_ = "";
+
   /**
    *
    *
@@ -252,6 +261,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       return s;
     }
   }
+
   /**
    *
    *
@@ -280,6 +290,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object additionalPublicIp_ = "";
+
   /**
    *
    *
@@ -305,6 +316,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       return s;
     }
   }
+
   /**
    *
    *
@@ -532,6 +544,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -782,6 +795,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     private int bitField0_;
 
     private java.lang.Object cloudSqlId_ = "";
+
     /**
      *
      *
@@ -805,6 +819,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -828,6 +843,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -850,6 +866,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -868,6 +885,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -898,6 +916,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
             com.google.events.cloud.clouddms.v1.CloudSqlSettings.Builder,
             com.google.events.cloud.clouddms.v1.CloudSqlSettingsOrBuilder>
         settingsBuilder_;
+
     /**
      *
      *
@@ -912,6 +931,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     public boolean hasSettings() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -932,6 +952,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return settingsBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -954,6 +975,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -974,6 +996,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1000,6 +1023,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1019,6 +1043,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1033,6 +1058,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return getSettingsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1051,6 +1077,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
             : settings_;
       }
     }
+
     /**
      *
      *
@@ -1078,6 +1105,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     }
 
     private java.lang.Object privateIp_ = "";
+
     /**
      *
      *
@@ -1100,6 +1128,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1122,6 +1151,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1143,6 +1173,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1160,6 +1191,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1184,6 +1216,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     }
 
     private java.lang.Object publicIp_ = "";
+
     /**
      *
      *
@@ -1206,6 +1239,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1228,6 +1262,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1249,6 +1284,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1266,6 +1302,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1290,6 +1327,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
     }
 
     private java.lang.Object additionalPublicIp_ = "";
+
     /**
      *
      *
@@ -1314,6 +1352,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1338,6 +1377,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1361,6 +1401,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1380,6 +1421,7 @@ public final class CloudSqlConnectionProfile extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *

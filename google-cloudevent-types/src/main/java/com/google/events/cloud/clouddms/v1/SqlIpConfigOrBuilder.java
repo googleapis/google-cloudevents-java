@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface SqlIpConfigOrBuilder
    * @return Whether the enableIpv4 field is set.
    */
   boolean hasEnableIpv4();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface SqlIpConfigOrBuilder
    * @return The enableIpv4.
    */
   com.google.protobuf.BoolValue getEnableIpv4();
+
   /**
    *
    *
@@ -73,6 +75,7 @@ public interface SqlIpConfigOrBuilder
    * @return The privateNetwork.
    */
   java.lang.String getPrivateNetwork();
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface SqlIpConfigOrBuilder
    * @return Whether the requireSsl field is set.
    */
   boolean hasRequireSsl();
+
   /**
    *
    *
@@ -113,6 +117,7 @@ public interface SqlIpConfigOrBuilder
    * @return The requireSsl.
    */
   com.google.protobuf.BoolValue getRequireSsl();
+
   /**
    *
    *
@@ -137,6 +142,7 @@ public interface SqlIpConfigOrBuilder
    * <code>repeated .google.events.cloud.clouddms.v1.SqlAclEntry authorized_networks = 4;</code>
    */
   java.util.List<com.google.events.cloud.clouddms.v1.SqlAclEntry> getAuthorizedNetworksList();
+
   /**
    *
    *
@@ -150,6 +156,7 @@ public interface SqlIpConfigOrBuilder
    * <code>repeated .google.events.cloud.clouddms.v1.SqlAclEntry authorized_networks = 4;</code>
    */
   com.google.events.cloud.clouddms.v1.SqlAclEntry getAuthorizedNetworks(int index);
+
   /**
    *
    *
@@ -163,6 +170,7 @@ public interface SqlIpConfigOrBuilder
    * <code>repeated .google.events.cloud.clouddms.v1.SqlAclEntry authorized_networks = 4;</code>
    */
   int getAuthorizedNetworksCount();
+
   /**
    *
    *
@@ -177,6 +185,7 @@ public interface SqlIpConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.clouddms.v1.SqlAclEntryOrBuilder>
       getAuthorizedNetworksOrBuilderList();
+
   /**
    *
    *

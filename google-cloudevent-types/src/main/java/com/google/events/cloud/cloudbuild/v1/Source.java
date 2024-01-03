@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.Source)
     SourceOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Source.newBuilder() to construct.
   private Source(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     private SourceCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -105,6 +107,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int STORAGE_SOURCE_FIELD_NUMBER = 2;
+
   /**
    *
    *
@@ -120,6 +123,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStorageSource() {
     return sourceCase_ == 2;
   }
+
   /**
    *
    *
@@ -138,6 +142,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.cloudbuild.v1.StorageSource.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -156,6 +161,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int REPO_SOURCE_FIELD_NUMBER = 3;
+
   /**
    *
    *
@@ -172,6 +178,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
   public boolean hasRepoSource() {
     return sourceCase_ == 3;
   }
+
   /**
    *
    *
@@ -191,6 +198,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.cloudbuild.v1.RepoSource.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -398,6 +406,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /** Protobuf type {@code google.events.cloud.cloudbuild.v1.Source} */
   public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
       implements
@@ -624,6 +633,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.cloudbuild.v1.StorageSource.Builder,
             com.google.events.cloud.cloudbuild.v1.StorageSourceOrBuilder>
         storageSourceBuilder_;
+
     /**
      *
      *
@@ -639,6 +649,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStorageSource() {
       return sourceCase_ == 2;
     }
+
     /**
      *
      *
@@ -664,6 +675,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.cloudbuild.v1.StorageSource.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -686,6 +698,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -706,6 +719,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -739,6 +753,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 2;
       return this;
     }
+
     /**
      *
      *
@@ -764,6 +779,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -776,6 +792,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.cloudbuild.v1.StorageSource.Builder getStorageSourceBuilder() {
       return getStorageSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -797,6 +814,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.cloudbuild.v1.StorageSource.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -835,6 +853,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.cloudbuild.v1.RepoSource.Builder,
             com.google.events.cloud.cloudbuild.v1.RepoSourceOrBuilder>
         repoSourceBuilder_;
+
     /**
      *
      *
@@ -851,6 +870,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     public boolean hasRepoSource() {
       return sourceCase_ == 3;
     }
+
     /**
      *
      *
@@ -877,6 +897,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.cloudbuild.v1.RepoSource.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -900,6 +921,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -921,6 +943,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -954,6 +977,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       sourceCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -980,6 +1004,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -993,6 +1018,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.cloudbuild.v1.RepoSource.Builder getRepoSourceBuilder() {
       return getRepoSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1014,6 +1040,7 @@ public final class Source extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.cloudbuild.v1.RepoSource.getDefaultInstance();
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
     // @@protoc_insertion_point(message_implements:google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigEventData)
     CertificateIssuanceConfigEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CertificateIssuanceConfigEventData.newBuilder() to construct.
   private CertificateIssuanceConfigEventData(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -71,6 +72,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig payload_;
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
             .getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -304,6 +308,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -524,6 +529,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
             com.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfig.Builder,
             com.google.events.cloud.certificatemanager.v1.CertificateIssuanceConfigOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -541,6 +547,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -565,6 +572,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -591,6 +599,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -615,6 +624,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -646,6 +656,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -668,6 +679,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -686,6 +698,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -709,6 +722,7 @@ public final class CertificateIssuanceConfigEventData extends com.google.protobu
             : payload_;
       }
     }
+
     /**
      *
      *

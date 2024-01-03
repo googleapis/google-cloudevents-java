@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.Results)
     ResultsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Results.newBuilder() to construct.
   private Results(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -74,6 +75,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.cloudbuild.v1.BuiltImage> images_;
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.cloudbuild.v1.BuiltImage> getImagesList() {
     return images_;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       getImagesOrBuilderList() {
     return images_;
   }
+
   /**
    *
    *
@@ -114,6 +118,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public int getImagesCount() {
     return images_.size();
   }
+
   /**
    *
    *
@@ -127,6 +132,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.cloudbuild.v1.BuiltImage getImages(int index) {
     return images_.get(index);
   }
+
   /**
    *
    *
@@ -145,6 +151,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList buildStepImages_;
+
   /**
    *
    *
@@ -160,6 +167,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getBuildStepImagesList() {
     return buildStepImages_;
   }
+
   /**
    *
    *
@@ -175,6 +183,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public int getBuildStepImagesCount() {
     return buildStepImages_.size();
   }
+
   /**
    *
    *
@@ -191,6 +200,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getBuildStepImages(int index) {
     return buildStepImages_.get(index);
   }
+
   /**
    *
    *
@@ -212,6 +222,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object artifactManifest_ = "";
+
   /**
    *
    *
@@ -235,6 +246,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -261,6 +273,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   public static final int NUM_ARTIFACTS_FIELD_NUMBER = 5;
   private long numArtifacts_ = 0L;
+
   /**
    *
    *
@@ -281,6 +294,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.protobuf.ByteString> buildStepOutputs_;
+
   /**
    *
    *
@@ -300,6 +314,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.protobuf.ByteString> getBuildStepOutputsList() {
     return buildStepOutputs_;
   }
+
   /**
    *
    *
@@ -318,6 +333,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public int getBuildStepOutputsCount() {
     return buildStepOutputs_.size();
   }
+
   /**
    *
    *
@@ -340,6 +356,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ARTIFACT_TIMING_FIELD_NUMBER = 7;
   private com.google.events.cloud.cloudbuild.v1.TimeSpan artifactTiming_;
+
   /**
    *
    *
@@ -355,6 +372,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
   public boolean hasArtifactTiming() {
     return artifactTiming_ != null;
   }
+
   /**
    *
    *
@@ -372,6 +390,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.cloudbuild.v1.TimeSpan.getDefaultInstance()
         : artifactTiming_;
   }
+
   /**
    *
    *
@@ -614,6 +633,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -968,6 +988,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return imagesBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -984,6 +1005,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return imagesBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -1000,6 +1022,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return imagesBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -1022,6 +1045,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1042,6 +1066,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1064,6 +1089,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1086,6 +1112,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1106,6 +1133,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1126,6 +1154,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1146,6 +1175,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1165,6 +1195,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1184,6 +1215,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1196,6 +1228,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.cloudbuild.v1.BuiltImage.Builder getImagesBuilder(int index) {
       return getImagesFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1212,6 +1245,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return imagesBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1229,6 +1263,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(images_);
       }
     }
+
     /**
      *
      *
@@ -1242,6 +1277,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       return getImagesFieldBuilder()
           .addBuilder(com.google.events.cloud.cloudbuild.v1.BuiltImage.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1255,6 +1291,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       return getImagesFieldBuilder()
           .addBuilder(index, com.google.events.cloud.cloudbuild.v1.BuiltImage.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1295,6 +1332,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000002;
       }
     }
+
     /**
      *
      *
@@ -1310,6 +1348,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getBuildStepImagesList() {
       return buildStepImages_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -1325,6 +1364,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public int getBuildStepImagesCount() {
       return buildStepImages_.size();
     }
+
     /**
      *
      *
@@ -1341,6 +1381,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getBuildStepImages(int index) {
       return buildStepImages_.get(index);
     }
+
     /**
      *
      *
@@ -1357,6 +1398,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getBuildStepImagesBytes(int index) {
       return buildStepImages_.getByteString(index);
     }
+
     /**
      *
      *
@@ -1380,6 +1422,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1402,6 +1445,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1421,6 +1465,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1439,6 +1484,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1464,6 +1510,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object artifactManifest_ = "";
+
     /**
      *
      *
@@ -1486,6 +1533,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1508,6 +1556,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1529,6 +1578,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1546,6 +1596,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1570,6 +1621,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     }
 
     private long numArtifacts_;
+
     /**
      *
      *
@@ -1585,6 +1637,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public long getNumArtifacts() {
       return numArtifacts_;
     }
+
     /**
      *
      *
@@ -1604,6 +1657,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1632,6 +1686,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000010;
       }
     }
+
     /**
      *
      *
@@ -1652,6 +1707,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
           ? java.util.Collections.unmodifiableList(buildStepOutputs_)
           : buildStepOutputs_;
     }
+
     /**
      *
      *
@@ -1670,6 +1726,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public int getBuildStepOutputsCount() {
       return buildStepOutputs_.size();
     }
+
     /**
      *
      *
@@ -1689,6 +1746,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getBuildStepOutputs(int index) {
       return buildStepOutputs_.get(index);
     }
+
     /**
      *
      *
@@ -1715,6 +1773,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1740,6 +1799,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1763,6 +1823,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1791,6 +1852,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.cloudbuild.v1.TimeSpan.Builder,
             com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder>
         artifactTimingBuilder_;
+
     /**
      *
      *
@@ -1805,6 +1867,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
     public boolean hasArtifactTiming() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -1825,6 +1888,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
         return artifactTimingBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1847,6 +1911,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1867,6 +1932,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1893,6 +1959,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1912,6 +1979,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1926,6 +1994,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getArtifactTimingFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1944,6 +2013,7 @@ public final class Results extends com.google.protobuf.GeneratedMessageV3
             : artifactTiming_;
       }
     }
+
     /**
      *
      *

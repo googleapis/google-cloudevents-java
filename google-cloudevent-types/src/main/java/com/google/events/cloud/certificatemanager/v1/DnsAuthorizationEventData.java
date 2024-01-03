@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
     // @@protoc_insertion_point(message_implements:google.events.cloud.certificatemanager.v1.DnsAuthorizationEventData)
     DnsAuthorizationEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DnsAuthorizationEventData.newBuilder() to construct.
   private DnsAuthorizationEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.certificatemanager.v1.DnsAuthorization payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
         ? com.google.events.cloud.certificatemanager.v1.DnsAuthorization.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -283,6 +287,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -496,6 +501,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
             com.google.events.cloud.certificatemanager.v1.DnsAuthorization.Builder,
             com.google.events.cloud.certificatemanager.v1.DnsAuthorizationOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -511,6 +517,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -532,6 +539,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -556,6 +564,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -577,6 +586,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -606,6 +616,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -626,6 +637,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -642,6 +654,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -662,6 +675,7 @@ public final class DnsAuthorizationEventData extends com.google.protobuf.Generat
             : payload_;
       }
     }
+
     /**
      *
      *

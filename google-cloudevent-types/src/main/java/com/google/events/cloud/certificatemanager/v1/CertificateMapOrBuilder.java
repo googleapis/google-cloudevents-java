@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface CertificateMapOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface CertificateMapOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface CertificateMapOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface CertificateMapOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public interface CertificateMapOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public interface CertificateMapOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -157,6 +163,7 @@ public interface CertificateMapOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -167,9 +174,11 @@ public interface CertificateMapOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -180,6 +189,7 @@ public interface CertificateMapOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -194,6 +204,7 @@ public interface CertificateMapOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -220,6 +231,7 @@ public interface CertificateMapOrBuilder
    */
   java.util.List<com.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget>
       getGclbTargetsList();
+
   /**
    *
    *
@@ -234,6 +246,7 @@ public interface CertificateMapOrBuilder
    * </code>
    */
   com.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTarget getGclbTargets(int index);
+
   /**
    *
    *
@@ -248,6 +261,7 @@ public interface CertificateMapOrBuilder
    * </code>
    */
   int getGclbTargetsCount();
+
   /**
    *
    *
@@ -265,6 +279,7 @@ public interface CertificateMapOrBuilder
           ? extends
               com.google.events.cloud.certificatemanager.v1.CertificateMap.GclbTargetOrBuilder>
       getGclbTargetsOrBuilderList();
+
   /**
    *
    *

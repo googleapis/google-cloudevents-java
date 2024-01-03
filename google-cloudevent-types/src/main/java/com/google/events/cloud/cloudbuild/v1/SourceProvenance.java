@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.SourceProvenance)
     SourceProvenanceOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SourceProvenance.newBuilder() to construct.
   private SourceProvenance(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -79,6 +80,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
 
   public static final int RESOLVED_STORAGE_SOURCE_FIELD_NUMBER = 3;
   private com.google.events.cloud.cloudbuild.v1.StorageSource resolvedStorageSource_;
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
   public boolean hasResolvedStorageSource() {
     return resolvedStorageSource_ != null;
   }
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.cloudbuild.v1.StorageSource.getDefaultInstance()
         : resolvedStorageSource_;
   }
+
   /**
    *
    *
@@ -133,6 +137,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
 
   public static final int RESOLVED_REPO_SOURCE_FIELD_NUMBER = 6;
   private com.google.events.cloud.cloudbuild.v1.RepoSource resolvedRepoSource_;
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
   public boolean hasResolvedRepoSource() {
     return resolvedRepoSource_ != null;
   }
+
   /**
    *
    *
@@ -167,6 +173,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.cloudbuild.v1.RepoSource.getDefaultInstance()
         : resolvedRepoSource_;
   }
+
   /**
    *
    *
@@ -219,6 +226,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
   public int getFileHashesCount() {
     return internalGetFileHashes().getMap().size();
   }
+
   /**
    *
    *
@@ -242,6 +250,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     }
     return internalGetFileHashes().getMap().containsKey(key);
   }
+
   /** Use {@link #getFileHashesMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -249,6 +258,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       getFileHashes() {
     return getFileHashesMap();
   }
+
   /**
    *
    *
@@ -270,6 +280,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       getFileHashesMap() {
     return internalGetFileHashes().getMap();
   }
+
   /**
    *
    *
@@ -298,6 +309,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         internalGetFileHashes().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -527,6 +539,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -785,6 +798,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.cloudbuild.v1.StorageSource.Builder,
             com.google.events.cloud.cloudbuild.v1.StorageSourceOrBuilder>
         resolvedStorageSourceBuilder_;
+
     /**
      *
      *
@@ -800,6 +814,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     public boolean hasResolvedStorageSource() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -821,6 +836,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         return resolvedStorageSourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -845,6 +861,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -866,6 +883,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -894,6 +912,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -914,6 +933,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -930,6 +950,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getResolvedStorageSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -950,6 +971,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             : resolvedStorageSource_;
       }
     }
+
     /**
      *
      *
@@ -983,6 +1005,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.cloudbuild.v1.RepoSource.Builder,
             com.google.events.cloud.cloudbuild.v1.RepoSourceOrBuilder>
         resolvedRepoSourceBuilder_;
+
     /**
      *
      *
@@ -998,6 +1021,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     public boolean hasResolvedRepoSource() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -1019,6 +1043,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         return resolvedRepoSourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1042,6 +1067,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1063,6 +1089,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1090,6 +1117,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1110,6 +1138,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1125,6 +1154,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getResolvedRepoSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1145,6 +1175,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             : resolvedRepoSource_;
       }
     }
+
     /**
      *
      *
@@ -1204,6 +1235,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     public int getFileHashesCount() {
       return internalGetFileHashes().getMap().size();
     }
+
     /**
      *
      *
@@ -1228,6 +1260,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       }
       return internalGetFileHashes().getMap().containsKey(key);
     }
+
     /** Use {@link #getFileHashesMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -1235,6 +1268,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         getFileHashes() {
       return getFileHashesMap();
     }
+
     /**
      *
      *
@@ -1257,6 +1291,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         getFileHashesMap() {
       return internalGetFileHashes().getMap();
     }
+
     /**
      *
      *
@@ -1286,6 +1321,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
           internalGetFileHashes().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -1322,6 +1358,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       internalGetMutableFileHashes().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -1346,6 +1383,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       internalGetMutableFileHashes().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.cloudbuild.v1.FileHashes>
@@ -1353,6 +1391,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000004;
       return internalGetMutableFileHashes().getMutableMap();
     }
+
     /**
      *
      *
@@ -1382,6 +1421,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000004;
       return this;
     }
+
     /**
      *
      *
