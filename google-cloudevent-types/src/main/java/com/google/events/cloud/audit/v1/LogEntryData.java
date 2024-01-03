@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.audit.v1.LogEntryData)
     LogEntryDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use LogEntryData.newBuilder() to construct.
   private LogEntryData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -86,6 +87,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object logName_ = "";
+
   /**
    *
    *
@@ -109,6 +111,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -135,6 +138,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCE_FIELD_NUMBER = 8;
   private com.google.api.MonitoredResource resource_;
+
   /**
    *
    *
@@ -153,6 +157,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasResource() {
     return resource_ != null;
   }
+
   /**
    *
    *
@@ -171,6 +176,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public com.google.api.MonitoredResource getResource() {
     return resource_ == null ? com.google.api.MonitoredResource.getDefaultInstance() : resource_;
   }
+
   /**
    *
    *
@@ -190,6 +196,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PROTO_PAYLOAD_FIELD_NUMBER = 2;
   private com.google.events.cloud.audit.v1.AuditLog protoPayload_;
+
   /**
    *
    *
@@ -206,6 +213,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasProtoPayload() {
     return protoPayload_ != null;
   }
+
   /**
    *
    *
@@ -224,6 +232,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.audit.v1.AuditLog.getDefaultInstance()
         : protoPayload_;
   }
+
   /**
    *
    *
@@ -245,6 +254,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object insertId_ = "";
+
   /**
    *
    *
@@ -268,6 +278,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -318,6 +329,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -335,12 +347,14 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -355,6 +369,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -376,6 +391,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -400,6 +416,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int OPERATION_FIELD_NUMBER = 15;
   private com.google.events.cloud.audit.v1.LogEntryOperation operation_;
+
   /**
    *
    *
@@ -416,6 +433,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasOperation() {
     return operation_ != null;
   }
+
   /**
    *
    *
@@ -434,6 +452,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.audit.v1.LogEntryOperation.getDefaultInstance()
         : operation_;
   }
+
   /**
    *
    *
@@ -453,6 +472,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TIMESTAMP_FIELD_NUMBER = 9;
   private com.google.protobuf.Timestamp timestamp_;
+
   /**
    *
    *
@@ -468,6 +488,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasTimestamp() {
     return timestamp_ != null;
   }
+
   /**
    *
    *
@@ -483,6 +504,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getTimestamp() {
     return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
   }
+
   /**
    *
    *
@@ -499,6 +521,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RECEIVE_TIMESTAMP_FIELD_NUMBER = 24;
   private com.google.protobuf.Timestamp receiveTimestamp_;
+
   /**
    *
    *
@@ -514,6 +537,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasReceiveTimestamp() {
     return receiveTimestamp_ != null;
   }
+
   /**
    *
    *
@@ -531,6 +555,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : receiveTimestamp_;
   }
+
   /**
    *
    *
@@ -549,6 +574,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int SEVERITY_FIELD_NUMBER = 10;
   private int severity_ = 0;
+
   /**
    *
    *
@@ -564,6 +590,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public int getSeverityValue() {
     return severity_;
   }
+
   /**
    *
    *
@@ -586,6 +613,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object trace_ = "";
+
   /**
    *
    *
@@ -612,6 +640,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -643,6 +672,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object spanId_ = "";
+
   /**
    *
    *
@@ -669,6 +699,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -698,6 +729,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int SPLIT_FIELD_NUMBER = 35;
   private com.google.events.cloud.audit.v1.LogSplit split_;
+
   /**
    *
    *
@@ -714,6 +746,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasSplit() {
     return split_ != null;
   }
+
   /**
    *
    *
@@ -730,6 +763,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.audit.v1.LogSplit getSplit() {
     return split_ == null ? com.google.events.cloud.audit.v1.LogSplit.getDefaultInstance() : split_;
   }
+
   /**
    *
    *
@@ -1041,6 +1075,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1426,6 +1461,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object logName_ = "";
+
     /**
      *
      *
@@ -1448,6 +1484,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1470,6 +1507,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1491,6 +1529,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1508,6 +1547,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1537,6 +1577,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.api.MonitoredResource.Builder,
             com.google.api.MonitoredResourceOrBuilder>
         resourceBuilder_;
+
     /**
      *
      *
@@ -1554,6 +1595,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasResource() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -1577,6 +1619,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return resourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1602,6 +1645,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1624,6 +1668,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1652,6 +1697,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1674,6 +1720,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1691,6 +1738,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getResourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1712,6 +1760,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             : resource_;
       }
     }
+
     /**
      *
      *
@@ -1747,6 +1796,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.AuditLog.Builder,
             com.google.events.cloud.audit.v1.AuditLogOrBuilder>
         protoPayloadBuilder_;
+
     /**
      *
      *
@@ -1762,6 +1812,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasProtoPayload() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1783,6 +1834,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return protoPayloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1806,6 +1858,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1827,6 +1880,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1853,6 +1907,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1873,6 +1928,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1888,6 +1944,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getProtoPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1907,6 +1964,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             : protoPayload_;
       }
     }
+
     /**
      *
      *
@@ -1935,6 +1993,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object insertId_ = "";
+
     /**
      *
      *
@@ -1957,6 +2016,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1979,6 +2039,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2000,6 +2061,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2017,6 +2079,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2065,6 +2128,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -2082,12 +2146,14 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -2102,6 +2168,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -2123,6 +2190,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -2150,6 +2218,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -2167,12 +2236,14 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000010;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -2194,6 +2265,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000010;
       return this;
     }
+
     /**
      *
      *
@@ -2216,6 +2288,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.LogEntryOperation.Builder,
             com.google.events.cloud.audit.v1.LogEntryOperationOrBuilder>
         operationBuilder_;
+
     /**
      *
      *
@@ -2231,6 +2304,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasOperation() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -2252,6 +2326,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return operationBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2275,6 +2350,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2296,6 +2372,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2323,6 +2400,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2343,6 +2421,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2358,6 +2437,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getOperationFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2377,6 +2457,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             : operation_;
       }
     }
+
     /**
      *
      *
@@ -2410,6 +2491,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         timestampBuilder_;
+
     /**
      *
      *
@@ -2424,6 +2506,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasTimestamp() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -2442,6 +2525,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return timestampBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2464,6 +2548,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2483,6 +2568,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2508,6 +2594,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2527,6 +2614,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2541,6 +2629,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getTimestampFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2557,6 +2646,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return timestamp_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timestamp_;
       }
     }
+
     /**
      *
      *
@@ -2589,6 +2679,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         receiveTimestampBuilder_;
+
     /**
      *
      *
@@ -2603,6 +2694,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasReceiveTimestamp() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2623,6 +2715,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return receiveTimestampBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2645,6 +2738,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2664,6 +2758,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2689,6 +2784,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2708,6 +2804,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2722,6 +2819,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getReceiveTimestampFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2740,6 +2838,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             : receiveTimestamp_;
       }
     }
+
     /**
      *
      *
@@ -2767,6 +2866,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int severity_ = 0;
+
     /**
      *
      *
@@ -2782,6 +2882,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public int getSeverityValue() {
       return severity_;
     }
+
     /**
      *
      *
@@ -2800,6 +2901,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2817,6 +2919,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
           com.google.events.cloud.audit.v1.LogSeverity.forNumber(severity_);
       return result == null ? com.google.events.cloud.audit.v1.LogSeverity.UNRECOGNIZED : result;
     }
+
     /**
      *
      *
@@ -2838,6 +2941,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2857,6 +2961,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object trace_ = "";
+
     /**
      *
      *
@@ -2882,6 +2987,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2907,6 +3013,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2931,6 +3038,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2951,6 +3059,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2978,6 +3087,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object spanId_ = "";
+
     /**
      *
      *
@@ -3003,6 +3113,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3028,6 +3139,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3052,6 +3164,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3072,6 +3185,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3104,6 +3218,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.LogSplit.Builder,
             com.google.events.cloud.audit.v1.LogSplitOrBuilder>
         splitBuilder_;
+
     /**
      *
      *
@@ -3119,6 +3234,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasSplit() {
       return ((bitField0_ & 0x00000800) != 0);
     }
+
     /**
      *
      *
@@ -3140,6 +3256,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
         return splitBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3163,6 +3280,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3183,6 +3301,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3209,6 +3328,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3229,6 +3349,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3244,6 +3365,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getSplitFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3263,6 +3385,7 @@ public final class LogEntryData extends com.google.protobuf.GeneratedMessageV3
             : split_;
       }
     }
+
     /**
      *
      *

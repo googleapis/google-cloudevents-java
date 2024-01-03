@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -137,6 +137,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>DEFAULT = 0;</code>
    */
   public static final int DEFAULT_VALUE = 0;
+
   /**
    *
    *
@@ -147,6 +148,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>DEBUG = 100;</code>
    */
   public static final int DEBUG_VALUE = 100;
+
   /**
    *
    *
@@ -157,6 +159,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>INFO = 200;</code>
    */
   public static final int INFO_VALUE = 200;
+
   /**
    *
    *
@@ -168,6 +171,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>NOTICE = 300;</code>
    */
   public static final int NOTICE_VALUE = 300;
+
   /**
    *
    *
@@ -178,6 +182,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>WARNING = 400;</code>
    */
   public static final int WARNING_VALUE = 400;
+
   /**
    *
    *
@@ -188,6 +193,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>ERROR = 500;</code>
    */
   public static final int ERROR_VALUE = 500;
+
   /**
    *
    *
@@ -198,6 +204,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>CRITICAL = 600;</code>
    */
   public static final int CRITICAL_VALUE = 600;
+
   /**
    *
    *
@@ -208,6 +215,7 @@ public enum LogSeverity implements com.google.protobuf.ProtocolMessageEnum {
    * <code>ALERT = 700;</code>
    */
   public static final int ALERT_VALUE = 700;
+
   /**
    *
    *

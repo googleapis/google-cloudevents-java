@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.alloydb.v1.ClusterEventData)
     ClusterEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ClusterEventData.newBuilder() to construct.
   private ClusterEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.alloydb.v1.Cluster payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.alloydb.v1.Cluster.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -483,6 +488,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.alloydb.v1.Cluster.Builder,
             com.google.events.cloud.alloydb.v1.ClusterOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -497,6 +503,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -517,6 +524,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -539,6 +547,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -558,6 +567,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -583,6 +593,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -602,6 +613,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -616,6 +628,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -634,6 +647,7 @@ public final class ClusterEventData extends com.google.protobuf.GeneratedMessage
             : payload_;
       }
     }
+
     /**
      *
      *

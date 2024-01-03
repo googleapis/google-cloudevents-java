@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +40,7 @@ public interface AuthenticationInfoOrBuilder
    * @return The principalEmail.
    */
   java.lang.String getPrincipalEmail();
+
   /**
    *
    *
@@ -71,6 +72,7 @@ public interface AuthenticationInfoOrBuilder
    * @return The authoritySelector.
    */
   java.lang.String getAuthoritySelector();
+
   /**
    *
    *
@@ -100,6 +102,7 @@ public interface AuthenticationInfoOrBuilder
    * @return Whether the thirdPartyPrincipal field is set.
    */
   boolean hasThirdPartyPrincipal();
+
   /**
    *
    *
@@ -115,6 +118,7 @@ public interface AuthenticationInfoOrBuilder
    * @return The thirdPartyPrincipal.
    */
   com.google.protobuf.Struct getThirdPartyPrincipal();
+
   /**
    *
    *
@@ -144,6 +148,7 @@ public interface AuthenticationInfoOrBuilder
    * @return The serviceAccountKeyName.
    */
   java.lang.String getServiceAccountKeyName();
+
   /**
    *
    *
@@ -177,6 +182,7 @@ public interface AuthenticationInfoOrBuilder
    */
   java.util.List<com.google.events.cloud.audit.v1.ServiceAccountDelegationInfo>
       getServiceAccountDelegationInfoList();
+
   /**
    *
    *
@@ -194,6 +200,7 @@ public interface AuthenticationInfoOrBuilder
    */
   com.google.events.cloud.audit.v1.ServiceAccountDelegationInfo getServiceAccountDelegationInfo(
       int index);
+
   /**
    *
    *
@@ -210,6 +217,7 @@ public interface AuthenticationInfoOrBuilder
    * </code>
    */
   int getServiceAccountDelegationInfoCount();
+
   /**
    *
    *
@@ -227,6 +235,7 @@ public interface AuthenticationInfoOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.audit.v1.ServiceAccountDelegationInfoOrBuilder>
       getServiceAccountDelegationInfoOrBuilderList();
+
   /**
    *
    *
@@ -258,6 +267,7 @@ public interface AuthenticationInfoOrBuilder
    * @return The principalSubject.
    */
   java.lang.String getPrincipalSubject();
+
   /**
    *
    *

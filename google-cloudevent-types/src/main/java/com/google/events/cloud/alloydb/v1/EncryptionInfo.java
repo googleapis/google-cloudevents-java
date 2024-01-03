@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.alloydb.v1.EncryptionInfo)
     EncryptionInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EncryptionInfo.newBuilder() to construct.
   private EncryptionInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -123,6 +124,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -134,6 +136,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GOOGLE_DEFAULT_ENCRYPTION = 1;</code>
      */
     public static final int GOOGLE_DEFAULT_ENCRYPTION_VALUE = 1;
+
     /**
      *
      *
@@ -233,6 +236,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ENCRYPTION_TYPE_FIELD_NUMBER = 1;
   private int encryptionType_ = 0;
+
   /**
    *
    *
@@ -248,6 +252,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
   public int getEncryptionTypeValue() {
     return encryptionType_;
   }
+
   /**
    *
    *
@@ -272,6 +277,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList kmsKeyVersions_;
+
   /**
    *
    *
@@ -287,6 +293,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getKmsKeyVersionsList() {
     return kmsKeyVersions_;
   }
+
   /**
    *
    *
@@ -302,6 +309,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
   public int getKmsKeyVersionsCount() {
     return kmsKeyVersions_.size();
   }
+
   /**
    *
    *
@@ -318,6 +326,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getKmsKeyVersions(int index) {
     return kmsKeyVersions_.get(index);
   }
+
   /**
    *
    *
@@ -512,6 +521,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -723,6 +733,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private int encryptionType_ = 0;
+
     /**
      *
      *
@@ -738,6 +749,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     public int getEncryptionTypeValue() {
       return encryptionType_;
     }
+
     /**
      *
      *
@@ -756,6 +768,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -775,6 +788,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.alloydb.v1.EncryptionInfo.Type.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -796,6 +810,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -823,6 +838,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000002;
       }
     }
+
     /**
      *
      *
@@ -838,6 +854,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getKmsKeyVersionsList() {
       return kmsKeyVersions_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -853,6 +870,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     public int getKmsKeyVersionsCount() {
       return kmsKeyVersions_.size();
     }
+
     /**
      *
      *
@@ -869,6 +887,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getKmsKeyVersions(int index) {
       return kmsKeyVersions_.get(index);
     }
+
     /**
      *
      *
@@ -885,6 +904,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getKmsKeyVersionsBytes(int index) {
       return kmsKeyVersions_.getByteString(index);
     }
+
     /**
      *
      *
@@ -908,6 +928,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -930,6 +951,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -949,6 +971,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -967,6 +990,7 @@ public final class EncryptionInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

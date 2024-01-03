@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.beyondcorp.appconnectors.v1.AppConnector)
     AppConnectorOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AppConnector.newBuilder() to construct.
   private AppConnector(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -169,6 +170,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -179,6 +181,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * <code>CREATING = 1;</code>
      */
     public static final int CREATING_VALUE = 1;
+
     /**
      *
      *
@@ -189,6 +192,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * <code>CREATED = 2;</code>
      */
     public static final int CREATED_VALUE = 2;
+
     /**
      *
      *
@@ -199,6 +203,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * <code>UPDATING = 3;</code>
      */
     public static final int UPDATING_VALUE = 3;
+
     /**
      *
      *
@@ -209,6 +214,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * <code>DELETING = 4;</code>
      */
     public static final int DELETING_VALUE = 4;
+
     /**
      *
      *
@@ -331,6 +337,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the serviceAccount field is set.
      */
     boolean hasServiceAccount();
+
     /**
      *
      *
@@ -346,6 +353,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.ServiceAccount
         getServiceAccount();
+
     /**
      *
      *
@@ -364,6 +372,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.TypeCase
         getTypeCase();
   }
+
   /**
    *
    *
@@ -379,6 +388,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo)
       PrincipalInfoOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use PrincipalInfo.newBuilder() to construct.
     private PrincipalInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -430,6 +440,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
        * @return The email.
        */
       java.lang.String getEmail();
+
       /**
        *
        *
@@ -443,6 +454,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
        */
       com.google.protobuf.ByteString getEmailBytes();
     }
+
     /**
      *
      *
@@ -458,6 +470,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         // @@protoc_insertion_point(message_implements:google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.ServiceAccount)
         ServiceAccountOrBuilder {
       private static final long serialVersionUID = 0L;
+
       // Use ServiceAccount.newBuilder() to construct.
       private ServiceAccount(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -499,6 +512,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
       @SuppressWarnings("serial")
       private volatile java.lang.Object email_ = "";
+
       /**
        *
        *
@@ -522,6 +536,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
           return s;
         }
       }
+
       /**
        *
        *
@@ -736,6 +751,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         Builder builder = new Builder(parent);
         return builder;
       }
+
       /**
        *
        *
@@ -953,6 +969,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         private int bitField0_;
 
         private java.lang.Object email_ = "";
+
         /**
          *
          *
@@ -975,6 +992,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             return (java.lang.String) ref;
           }
         }
+
         /**
          *
          *
@@ -997,6 +1015,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             return (com.google.protobuf.ByteString) ref;
           }
         }
+
         /**
          *
          *
@@ -1018,6 +1037,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -1035,6 +1055,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -1144,6 +1165,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       private TypeCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -1175,6 +1197,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int SERVICE_ACCOUNT_FIELD_NUMBER = 1;
+
     /**
      *
      *
@@ -1192,6 +1215,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public boolean hasServiceAccount() {
       return typeCase_ == 1;
     }
+
     /**
      *
      *
@@ -1217,6 +1241,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       return com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo
           .ServiceAccount.getDefaultInstance();
     }
+
     /**
      *
      *
@@ -1432,6 +1457,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -1675,6 +1701,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo
                   .ServiceAccountOrBuilder>
           serviceAccountBuilder_;
+
       /**
        *
        *
@@ -1692,6 +1719,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       public boolean hasServiceAccount() {
         return typeCase_ == 1;
       }
+
       /**
        *
        *
@@ -1725,6 +1753,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
               .ServiceAccount.getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -1752,6 +1781,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         typeCase_ = 1;
         return this;
       }
+
       /**
        *
        *
@@ -1776,6 +1806,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         typeCase_ = 1;
         return this;
       }
+
       /**
        *
        *
@@ -1818,6 +1849,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         typeCase_ = 1;
         return this;
       }
+
       /**
        *
        *
@@ -1845,6 +1877,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -1861,6 +1894,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
           getServiceAccountBuilder() {
         return getServiceAccountFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -1888,6 +1922,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
               .ServiceAccount.getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -2006,6 +2041,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -2030,6 +2066,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -2057,6 +2094,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -2072,6 +2110,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -2087,6 +2126,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -2103,6 +2143,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -2118,6 +2159,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -2133,6 +2175,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -2173,6 +2216,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -2189,12 +2233,14 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -2208,6 +2254,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -2228,6 +2275,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -2253,6 +2301,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -2277,6 +2326,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -2306,6 +2356,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -2330,6 +2381,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -2357,6 +2409,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATE_FIELD_NUMBER = 7;
   private int state_ = 0;
+
   /**
    *
    *
@@ -2372,6 +2425,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -2395,6 +2449,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public static final int PRINCIPAL_INFO_FIELD_NUMBER = 8;
   private com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo
       principalInfo_;
+
   /**
    *
    *
@@ -2412,6 +2467,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPrincipalInfo() {
     return principalInfo_ != null;
   }
+
   /**
    *
    *
@@ -2433,6 +2489,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             .getDefaultInstance()
         : principalInfo_;
   }
+
   /**
    *
    *
@@ -2455,6 +2512,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCE_INFO_FIELD_NUMBER = 11;
   private com.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo resourceInfo_;
+
   /**
    *
    *
@@ -2470,6 +2528,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
   public boolean hasResourceInfo() {
     return resourceInfo_ != null;
   }
+
   /**
    *
    *
@@ -2487,6 +2546,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo.getDefaultInstance()
         : resourceInfo_;
   }
+
   /**
    *
    *
@@ -2768,6 +2828,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -3112,6 +3173,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -3135,6 +3197,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3158,6 +3221,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3180,6 +3244,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3198,6 +3263,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3228,6 +3294,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -3242,6 +3309,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -3262,6 +3330,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3284,6 +3353,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3303,6 +3373,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3328,6 +3399,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3347,6 +3419,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3361,6 +3434,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3379,6 +3453,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -3411,6 +3486,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -3425,6 +3501,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -3445,6 +3522,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3467,6 +3545,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3486,6 +3565,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3511,6 +3591,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3530,6 +3611,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3544,6 +3626,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3562,6 +3645,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -3613,6 +3697,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -3629,12 +3714,14 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -3648,6 +3735,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -3668,6 +3756,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3694,6 +3783,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3710,12 +3800,14 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000008;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -3736,6 +3828,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000008;
       return this;
     }
+
     /**
      *
      *
@@ -3752,6 +3845,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -3775,6 +3869,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3798,6 +3893,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3820,6 +3916,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3838,6 +3935,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3863,6 +3961,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -3886,6 +3985,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3909,6 +4009,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3931,6 +4032,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3949,6 +4051,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3974,6 +4077,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -3989,6 +4093,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -4007,6 +4112,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4026,6 +4132,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.State.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -4048,6 +4155,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4073,6 +4181,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfo.Builder,
             com.google.events.cloud.beyondcorp.appconnectors.v1.AppConnector.PrincipalInfoOrBuilder>
         principalInfoBuilder_;
+
     /**
      *
      *
@@ -4089,6 +4198,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPrincipalInfo() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -4113,6 +4223,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return principalInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4138,6 +4249,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4161,6 +4273,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4191,6 +4304,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4212,6 +4326,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4229,6 +4344,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPrincipalInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4251,6 +4367,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             : principalInfo_;
       }
     }
+
     /**
      *
      *
@@ -4286,6 +4403,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfo.Builder,
             com.google.events.cloud.beyondcorp.appconnectors.v1.ResourceInfoOrBuilder>
         resourceInfoBuilder_;
+
     /**
      *
      *
@@ -4301,6 +4419,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
     public boolean hasResourceInfo() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -4322,6 +4441,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
         return resourceInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4346,6 +4466,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4367,6 +4488,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4396,6 +4518,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4416,6 +4539,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4432,6 +4556,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getResourceInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4452,6 +4577,7 @@ public final class AppConnector extends com.google.protobuf.GeneratedMessageV3
             : resourceInfo_;
       }
     }
+
     /**
      *
      *

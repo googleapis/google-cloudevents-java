@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ApiConfigOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface ApiConfigOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface ApiConfigOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface ApiConfigOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -109,6 +113,7 @@ public interface ApiConfigOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -132,6 +137,7 @@ public interface ApiConfigOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -144,9 +150,11 @@ public interface ApiConfigOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -159,6 +167,7 @@ public interface ApiConfigOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -175,6 +184,7 @@ public interface ApiConfigOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -200,6 +210,7 @@ public interface ApiConfigOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -231,6 +242,7 @@ public interface ApiConfigOrBuilder
    * @return The gatewayServiceAccount.
    */
   java.lang.String getGatewayServiceAccount();
+
   /**
    *
    *
@@ -263,6 +275,7 @@ public interface ApiConfigOrBuilder
    * @return The serviceConfigId.
    */
   java.lang.String getServiceConfigId();
+
   /**
    *
    *
@@ -289,6 +302,7 @@ public interface ApiConfigOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -316,6 +330,7 @@ public interface ApiConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.apigateway.v1.ApiConfig.OpenApiDocument>
       getOpenapiDocumentsList();
+
   /**
    *
    *
@@ -329,6 +344,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   com.google.events.cloud.apigateway.v1.ApiConfig.OpenApiDocument getOpenapiDocuments(int index);
+
   /**
    *
    *
@@ -342,6 +358,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   int getOpenapiDocumentsCount();
+
   /**
    *
    *
@@ -356,6 +373,7 @@ public interface ApiConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.apigateway.v1.ApiConfig.OpenApiDocumentOrBuilder>
       getOpenapiDocumentsOrBuilderList();
+
   /**
    *
    *
@@ -385,6 +403,7 @@ public interface ApiConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.apigateway.v1.ApiConfig.GrpcServiceDefinition>
       getGrpcServicesList();
+
   /**
    *
    *
@@ -398,6 +417,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   com.google.events.cloud.apigateway.v1.ApiConfig.GrpcServiceDefinition getGrpcServices(int index);
+
   /**
    *
    *
@@ -411,6 +431,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   int getGrpcServicesCount();
+
   /**
    *
    *
@@ -426,6 +447,7 @@ public interface ApiConfigOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.apigateway.v1.ApiConfig.GrpcServiceDefinitionOrBuilder>
       getGrpcServicesOrBuilderList();
+
   /**
    *
    *
@@ -463,6 +485,7 @@ public interface ApiConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.apigateway.v1.ApiConfig.File>
       getManagedServiceConfigsList();
+
   /**
    *
    *
@@ -484,6 +507,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   com.google.events.cloud.apigateway.v1.ApiConfig.File getManagedServiceConfigs(int index);
+
   /**
    *
    *
@@ -505,6 +529,7 @@ public interface ApiConfigOrBuilder
    * </code>
    */
   int getManagedServiceConfigsCount();
+
   /**
    *
    *
@@ -527,6 +552,7 @@ public interface ApiConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.apigateway.v1.ApiConfig.FileOrBuilder>
       getManagedServiceConfigsOrBuilderList();
+
   /**
    *
    *

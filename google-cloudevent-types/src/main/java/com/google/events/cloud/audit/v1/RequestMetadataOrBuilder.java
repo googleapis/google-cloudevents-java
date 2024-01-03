@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +43,7 @@ public interface RequestMetadataOrBuilder
    * @return The callerIp.
    */
   java.lang.String getCallerIp();
+
   /**
    *
    *
@@ -85,6 +86,7 @@ public interface RequestMetadataOrBuilder
    * @return The callerSuppliedUserAgent.
    */
   java.lang.String getCallerSuppliedUserAgent();
+
   /**
    *
    *
@@ -124,6 +126,7 @@ public interface RequestMetadataOrBuilder
    * @return The callerNetwork.
    */
   java.lang.String getCallerNetwork();
+
   /**
    *
    *
@@ -159,6 +162,7 @@ public interface RequestMetadataOrBuilder
    * @return Whether the requestAttributes field is set.
    */
   boolean hasRequestAttributes();
+
   /**
    *
    *
@@ -176,6 +180,7 @@ public interface RequestMetadataOrBuilder
    * @return The requestAttributes.
    */
   com.google.rpc.context.AttributeContext.Request getRequestAttributes();
+
   /**
    *
    *
@@ -208,6 +213,7 @@ public interface RequestMetadataOrBuilder
    * @return Whether the destinationAttributes field is set.
    */
   boolean hasDestinationAttributes();
+
   /**
    *
    *
@@ -224,6 +230,7 @@ public interface RequestMetadataOrBuilder
    * @return The destinationAttributes.
    */
   com.google.rpc.context.AttributeContext.Peer getDestinationAttributes();
+
   /**
    *
    *

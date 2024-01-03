@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ApiSpecOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ApiSpecOrBuilder
    * @return The filename.
    */
   java.lang.String getFilename();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface ApiSpecOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -112,6 +115,7 @@ public interface ApiSpecOrBuilder
    * @return The revisionId.
    */
   java.lang.String getRevisionId();
+
   /**
    *
    *
@@ -139,6 +143,7 @@ public interface ApiSpecOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -151,6 +156,7 @@ public interface ApiSpecOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -175,6 +181,7 @@ public interface ApiSpecOrBuilder
    * @return Whether the revisionCreateTime field is set.
    */
   boolean hasRevisionCreateTime();
+
   /**
    *
    *
@@ -188,6 +195,7 @@ public interface ApiSpecOrBuilder
    * @return The revisionCreateTime.
    */
   com.google.protobuf.Timestamp getRevisionCreateTime();
+
   /**
    *
    *
@@ -213,6 +221,7 @@ public interface ApiSpecOrBuilder
    * @return Whether the revisionUpdateTime field is set.
    */
   boolean hasRevisionUpdateTime();
+
   /**
    *
    *
@@ -226,6 +235,7 @@ public interface ApiSpecOrBuilder
    * @return The revisionUpdateTime.
    */
   com.google.protobuf.Timestamp getRevisionUpdateTime();
+
   /**
    *
    *
@@ -257,6 +267,7 @@ public interface ApiSpecOrBuilder
    * @return The mimeType.
    */
   java.lang.String getMimeType();
+
   /**
    *
    *
@@ -304,6 +315,7 @@ public interface ApiSpecOrBuilder
    * @return The hash.
    */
   java.lang.String getHash();
+
   /**
    *
    *
@@ -333,6 +345,7 @@ public interface ApiSpecOrBuilder
    * @return The sourceUri.
    */
   java.lang.String getSourceUri();
+
   /**
    *
    *
@@ -368,6 +381,7 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; labels = 14;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -387,9 +401,11 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; labels = 14;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -409,6 +425,7 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; labels = 14;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -432,6 +449,7 @@ public interface ApiSpecOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -465,6 +483,7 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; annotations = 15;</code>
    */
   int getAnnotationsCount();
+
   /**
    *
    *
@@ -478,9 +497,11 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; annotations = 15;</code>
    */
   boolean containsAnnotations(java.lang.String key);
+
   /** Use {@link #getAnnotationsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getAnnotations();
+
   /**
    *
    *
@@ -494,6 +515,7 @@ public interface ApiSpecOrBuilder
    * <code>map&lt;string, string&gt; annotations = 15;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getAnnotationsMap();
+
   /**
    *
    *
@@ -511,6 +533,7 @@ public interface ApiSpecOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *

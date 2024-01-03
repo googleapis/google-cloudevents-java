@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.audit.v1.RequestMetadata)
     RequestMetadataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use RequestMetadata.newBuilder() to construct.
   private RequestMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -73,6 +74,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object callerIp_ = "";
+
   /**
    *
    *
@@ -104,6 +106,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       return s;
     }
   }
+
   /**
    *
    *
@@ -140,6 +143,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object callerSuppliedUserAgent_ = "";
+
   /**
    *
    *
@@ -172,6 +176,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       return s;
     }
   }
+
   /**
    *
    *
@@ -209,6 +214,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object callerNetwork_ = "";
+
   /**
    *
    *
@@ -237,6 +243,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       return s;
     }
   }
+
   /**
    *
    *
@@ -268,6 +275,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
 
   public static final int REQUEST_ATTRIBUTES_FIELD_NUMBER = 7;
   private com.google.rpc.context.AttributeContext.Request requestAttributes_;
+
   /**
    *
    *
@@ -288,6 +296,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
   public boolean hasRequestAttributes() {
     return requestAttributes_ != null;
   }
+
   /**
    *
    *
@@ -310,6 +319,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         ? com.google.rpc.context.AttributeContext.Request.getDefaultInstance()
         : requestAttributes_;
   }
+
   /**
    *
    *
@@ -333,6 +343,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
 
   public static final int DESTINATION_ATTRIBUTES_FIELD_NUMBER = 8;
   private com.google.rpc.context.AttributeContext.Peer destinationAttributes_;
+
   /**
    *
    *
@@ -352,6 +363,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
   public boolean hasDestinationAttributes() {
     return destinationAttributes_ != null;
   }
+
   /**
    *
    *
@@ -373,6 +385,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         ? com.google.rpc.context.AttributeContext.Peer.getDefaultInstance()
         : destinationAttributes_;
   }
+
   /**
    *
    *
@@ -599,6 +612,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -855,6 +869,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     private int bitField0_;
 
     private java.lang.Object callerIp_ = "";
+
     /**
      *
      *
@@ -885,6 +900,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -915,6 +931,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -944,6 +961,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -969,6 +987,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1001,6 +1020,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     }
 
     private java.lang.Object callerSuppliedUserAgent_ = "";
+
     /**
      *
      *
@@ -1032,6 +1052,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1063,6 +1084,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1093,6 +1115,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1119,6 +1142,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1152,6 +1176,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     }
 
     private java.lang.Object callerNetwork_ = "";
+
     /**
      *
      *
@@ -1179,6 +1204,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1206,6 +1232,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1232,6 +1259,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1254,6 +1282,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1288,6 +1317,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
             com.google.rpc.context.AttributeContext.Request.Builder,
             com.google.rpc.context.AttributeContext.RequestOrBuilder>
         requestAttributesBuilder_;
+
     /**
      *
      *
@@ -1307,6 +1337,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     public boolean hasRequestAttributes() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1332,6 +1363,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return requestAttributesBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1359,6 +1391,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1384,6 +1417,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1415,6 +1449,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1439,6 +1474,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1458,6 +1494,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getRequestAttributesFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1482,6 +1519,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
             : requestAttributes_;
       }
     }
+
     /**
      *
      *
@@ -1519,6 +1557,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
             com.google.rpc.context.AttributeContext.Peer.Builder,
             com.google.rpc.context.AttributeContext.PeerOrBuilder>
         destinationAttributesBuilder_;
+
     /**
      *
      *
@@ -1537,6 +1576,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
     public boolean hasDestinationAttributes() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1561,6 +1601,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
         return destinationAttributesBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1587,6 +1628,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1611,6 +1653,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1641,6 +1684,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1664,6 +1708,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1682,6 +1727,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getDestinationAttributesFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1705,6 +1751,7 @@ public final class RequestMetadata extends com.google.protobuf.GeneratedMessageV
             : destinationAttributes_;
       }
     }
+
     /**
      *
      *
