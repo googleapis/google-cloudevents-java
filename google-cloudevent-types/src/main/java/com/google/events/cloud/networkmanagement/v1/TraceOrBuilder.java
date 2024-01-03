@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ public interface TraceOrBuilder
    * @return Whether the endpointInfo field is set.
    */
   boolean hasEndpointInfo();
+
   /**
    *
    *
@@ -53,6 +54,7 @@ public interface TraceOrBuilder
    * @return The endpointInfo.
    */
   com.google.events.cloud.networkmanagement.v1.EndpointInfo getEndpointInfo();
+
   /**
    *
    *
@@ -81,6 +83,7 @@ public interface TraceOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Step steps = 2;</code>
    */
   java.util.List<com.google.events.cloud.networkmanagement.v1.Step> getStepsList();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface TraceOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Step steps = 2;</code>
    */
   com.google.events.cloud.networkmanagement.v1.Step getSteps(int index);
+
   /**
    *
    *
@@ -109,6 +113,7 @@ public interface TraceOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Step steps = 2;</code>
    */
   int getStepsCount();
+
   /**
    *
    *
@@ -124,6 +129,7 @@ public interface TraceOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.networkmanagement.v1.StepOrBuilder>
       getStepsOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The uri.
    */
   java.lang.String getUri();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The networkUri.
    */
   java.lang.String getNetworkUri();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The ipAddress.
    */
   java.lang.String getIpAddress();
+
   /**
    *
    *
@@ -137,6 +141,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The vpnTunnelUri.
    */
   java.lang.String getVpnTunnelUri();
+
   /**
    *
    *
@@ -164,6 +169,7 @@ public interface VpnGatewayInfoOrBuilder
    * @return The region.
    */
   java.lang.String getRegion();
+
   /**
    *
    *

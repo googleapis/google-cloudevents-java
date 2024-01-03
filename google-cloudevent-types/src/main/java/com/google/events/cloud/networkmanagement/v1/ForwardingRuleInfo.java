@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkmanagement.v1.ForwardingRuleInfo)
     ForwardingRuleInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ForwardingRuleInfo.newBuilder() to construct.
   private ForwardingRuleInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -77,6 +78,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -100,6 +102,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -128,6 +131,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uri_ = "";
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -179,6 +184,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object matchedProtocol_ = "";
+
   /**
    *
    *
@@ -202,6 +208,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -230,6 +237,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object matchedPortRange_ = "";
+
   /**
    *
    *
@@ -253,6 +261,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -281,6 +290,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object vip_ = "";
+
   /**
    *
    *
@@ -304,6 +314,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -332,6 +343,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object target_ = "";
+
   /**
    *
    *
@@ -355,6 +367,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -383,6 +396,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object networkUri_ = "";
+
   /**
    *
    *
@@ -406,6 +420,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -644,6 +659,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -922,6 +938,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     private int bitField0_;
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -944,6 +961,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -966,6 +984,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -987,6 +1006,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1004,6 +1024,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1028,6 +1049,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object uri_ = "";
+
     /**
      *
      *
@@ -1050,6 +1072,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1072,6 +1095,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1093,6 +1117,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1110,6 +1135,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1134,6 +1160,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object matchedProtocol_ = "";
+
     /**
      *
      *
@@ -1156,6 +1183,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1178,6 +1206,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1199,6 +1228,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1216,6 +1246,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1240,6 +1271,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object matchedPortRange_ = "";
+
     /**
      *
      *
@@ -1262,6 +1294,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1284,6 +1317,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1305,6 +1339,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1322,6 +1357,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1346,6 +1382,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object vip_ = "";
+
     /**
      *
      *
@@ -1368,6 +1405,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1390,6 +1428,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1411,6 +1450,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1428,6 +1468,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1452,6 +1493,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object target_ = "";
+
     /**
      *
      *
@@ -1474,6 +1516,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1496,6 +1539,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1517,6 +1561,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1534,6 +1579,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1558,6 +1604,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object networkUri_ = "";
+
     /**
      *
      *
@@ -1580,6 +1627,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1602,6 +1650,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1623,6 +1672,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1640,6 +1690,7 @@ public final class ForwardingRuleInfo extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *

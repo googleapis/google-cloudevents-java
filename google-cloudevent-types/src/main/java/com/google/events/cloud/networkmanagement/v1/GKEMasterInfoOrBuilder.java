@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface GKEMasterInfoOrBuilder
    * @return The clusterUri.
    */
   java.lang.String getClusterUri();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface GKEMasterInfoOrBuilder
    * @return The clusterNetworkUri.
    */
   java.lang.String getClusterNetworkUri();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface GKEMasterInfoOrBuilder
    * @return The internalIp.
    */
   java.lang.String getInternalIp();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface GKEMasterInfoOrBuilder
    * @return The externalIp.
    */
   java.lang.String getExternalIp();
+
   /**
    *
    *

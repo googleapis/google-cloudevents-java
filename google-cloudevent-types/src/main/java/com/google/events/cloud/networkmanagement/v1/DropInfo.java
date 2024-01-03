@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkmanagement.v1.DropInfo)
     DropInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DropInfo.newBuilder() to construct.
   private DropInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -532,6 +533,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CAUSE_UNSPECIFIED = 0;</code>
      */
     public static final int CAUSE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -544,6 +546,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>UNKNOWN_EXTERNAL_ADDRESS = 1;</code>
      */
     public static final int UNKNOWN_EXTERNAL_ADDRESS_VALUE = 1;
+
     /**
      *
      *
@@ -555,6 +558,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FOREIGN_IP_DISALLOWED = 2;</code>
      */
     public static final int FOREIGN_IP_DISALLOWED_VALUE = 2;
+
     /**
      *
      *
@@ -566,6 +570,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FIREWALL_RULE = 3;</code>
      */
     public static final int FIREWALL_RULE_VALUE = 3;
+
     /**
      *
      *
@@ -576,6 +581,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>NO_ROUTE = 4;</code>
      */
     public static final int NO_ROUTE_VALUE = 4;
+
     /**
      *
      *
@@ -586,6 +592,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>ROUTE_BLACKHOLE = 5;</code>
      */
     public static final int ROUTE_BLACKHOLE_VALUE = 5;
+
     /**
      *
      *
@@ -598,6 +605,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>ROUTE_WRONG_NETWORK = 6;</code>
      */
     public static final int ROUTE_WRONG_NETWORK_VALUE = 6;
+
     /**
      *
      *
@@ -608,6 +616,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>PRIVATE_TRAFFIC_TO_INTERNET = 7;</code>
      */
     public static final int PRIVATE_TRAFFIC_TO_INTERNET_VALUE = 7;
+
     /**
      *
      *
@@ -619,6 +628,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>PRIVATE_GOOGLE_ACCESS_DISALLOWED = 8;</code>
      */
     public static final int PRIVATE_GOOGLE_ACCESS_DISALLOWED_VALUE = 8;
+
     /**
      *
      *
@@ -631,6 +641,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>NO_EXTERNAL_ADDRESS = 9;</code>
      */
     public static final int NO_EXTERNAL_ADDRESS_VALUE = 9;
+
     /**
      *
      *
@@ -644,6 +655,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>UNKNOWN_INTERNAL_ADDRESS = 10;</code>
      */
     public static final int UNKNOWN_INTERNAL_ADDRESS_VALUE = 10;
+
     /**
      *
      *
@@ -654,6 +666,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FORWARDING_RULE_MISMATCH = 11;</code>
      */
     public static final int FORWARDING_RULE_MISMATCH_VALUE = 11;
+
     /**
      *
      *
@@ -665,6 +678,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FORWARDING_RULE_REGION_MISMATCH = 25;</code>
      */
     public static final int FORWARDING_RULE_REGION_MISMATCH_VALUE = 25;
+
     /**
      *
      *
@@ -675,6 +689,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FORWARDING_RULE_NO_INSTANCES = 12;</code>
      */
     public static final int FORWARDING_RULE_NO_INSTANCES_VALUE = 12;
+
     /**
      *
      *
@@ -688,6 +703,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>FIREWALL_BLOCKING_LOAD_BALANCER_BACKEND_HEALTH_CHECK = 13;</code>
      */
     public static final int FIREWALL_BLOCKING_LOAD_BALANCER_BACKEND_HEALTH_CHECK_VALUE = 13;
+
     /**
      *
      *
@@ -699,6 +715,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>INSTANCE_NOT_RUNNING = 14;</code>
      */
     public static final int INSTANCE_NOT_RUNNING_VALUE = 14;
+
     /**
      *
      *
@@ -709,6 +726,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GKE_CLUSTER_NOT_RUNNING = 27;</code>
      */
     public static final int GKE_CLUSTER_NOT_RUNNING_VALUE = 27;
+
     /**
      *
      *
@@ -719,6 +737,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_SQL_INSTANCE_NOT_RUNNING = 28;</code>
      */
     public static final int CLOUD_SQL_INSTANCE_NOT_RUNNING_VALUE = 28;
+
     /**
      *
      *
@@ -732,6 +751,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>TRAFFIC_TYPE_BLOCKED = 15;</code>
      */
     public static final int TRAFFIC_TYPE_BLOCKED_VALUE = 15;
+
     /**
      *
      *
@@ -745,6 +765,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GKE_MASTER_UNAUTHORIZED_ACCESS = 16;</code>
      */
     public static final int GKE_MASTER_UNAUTHORIZED_ACCESS_VALUE = 16;
+
     /**
      *
      *
@@ -758,6 +779,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_SQL_INSTANCE_UNAUTHORIZED_ACCESS = 17;</code>
      */
     public static final int CLOUD_SQL_INSTANCE_UNAUTHORIZED_ACCESS_VALUE = 17;
+
     /**
      *
      *
@@ -768,6 +790,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>DROPPED_INSIDE_GKE_SERVICE = 18;</code>
      */
     public static final int DROPPED_INSIDE_GKE_SERVICE_VALUE = 18;
+
     /**
      *
      *
@@ -778,6 +801,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>DROPPED_INSIDE_CLOUD_SQL_SERVICE = 19;</code>
      */
     public static final int DROPPED_INSIDE_CLOUD_SQL_SERVICE_VALUE = 19;
+
     /**
      *
      *
@@ -789,6 +813,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GOOGLE_MANAGED_SERVICE_NO_PEERING = 20;</code>
      */
     public static final int GOOGLE_MANAGED_SERVICE_NO_PEERING_VALUE = 20;
+
     /**
      *
      *
@@ -800,6 +825,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GOOGLE_MANAGED_SERVICE_NO_PSC_ENDPOINT = 38;</code>
      */
     public static final int GOOGLE_MANAGED_SERVICE_NO_PSC_ENDPOINT_VALUE = 38;
+
     /**
      *
      *
@@ -811,6 +837,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GKE_PSC_ENDPOINT_MISSING = 36;</code>
      */
     public static final int GKE_PSC_ENDPOINT_MISSING_VALUE = 36;
+
     /**
      *
      *
@@ -822,6 +849,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_SQL_INSTANCE_NO_IP_ADDRESS = 21;</code>
      */
     public static final int CLOUD_SQL_INSTANCE_NO_IP_ADDRESS_VALUE = 21;
+
     /**
      *
      *
@@ -833,6 +861,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GKE_CONTROL_PLANE_REGION_MISMATCH = 30;</code>
      */
     public static final int GKE_CONTROL_PLANE_REGION_MISMATCH_VALUE = 30;
+
     /**
      *
      *
@@ -844,6 +873,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>PUBLIC_GKE_CONTROL_PLANE_TO_PRIVATE_DESTINATION = 31;</code>
      */
     public static final int PUBLIC_GKE_CONTROL_PLANE_TO_PRIVATE_DESTINATION_VALUE = 31;
+
     /**
      *
      *
@@ -855,6 +885,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>GKE_CONTROL_PLANE_NO_ROUTE = 32;</code>
      */
     public static final int GKE_CONTROL_PLANE_NO_ROUTE_VALUE = 32;
+
     /**
      *
      *
@@ -867,6 +898,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_SQL_INSTANCE_NOT_CONFIGURED_FOR_EXTERNAL_TRAFFIC = 33;</code>
      */
     public static final int CLOUD_SQL_INSTANCE_NOT_CONFIGURED_FOR_EXTERNAL_TRAFFIC_VALUE = 33;
+
     /**
      *
      *
@@ -878,6 +910,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>PUBLIC_CLOUD_SQL_INSTANCE_TO_PRIVATE_DESTINATION = 34;</code>
      */
     public static final int PUBLIC_CLOUD_SQL_INSTANCE_TO_PRIVATE_DESTINATION_VALUE = 34;
+
     /**
      *
      *
@@ -889,6 +922,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_SQL_INSTANCE_NO_ROUTE = 35;</code>
      */
     public static final int CLOUD_SQL_INSTANCE_NO_ROUTE_VALUE = 35;
+
     /**
      *
      *
@@ -900,6 +934,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_FUNCTION_NOT_ACTIVE = 22;</code>
      */
     public static final int CLOUD_FUNCTION_NOT_ACTIVE_VALUE = 22;
+
     /**
      *
      *
@@ -910,6 +945,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>VPC_CONNECTOR_NOT_SET = 23;</code>
      */
     public static final int VPC_CONNECTOR_NOT_SET_VALUE = 23;
+
     /**
      *
      *
@@ -921,6 +957,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>VPC_CONNECTOR_NOT_RUNNING = 24;</code>
      */
     public static final int VPC_CONNECTOR_NOT_RUNNING_VALUE = 24;
+
     /**
      *
      *
@@ -932,6 +969,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>PSC_CONNECTION_NOT_ACCEPTED = 26;</code>
      */
     public static final int PSC_CONNECTION_NOT_ACCEPTED_VALUE = 26;
+
     /**
      *
      *
@@ -942,6 +980,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>CLOUD_RUN_REVISION_NOT_READY = 29;</code>
      */
     public static final int CLOUD_RUN_REVISION_NOT_READY_VALUE = 29;
+
     /**
      *
      *
@@ -952,6 +991,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
      * <code>DROPPED_INSIDE_PSC_SERVICE_PRODUCER = 37;</code>
      */
     public static final int DROPPED_INSIDE_PSC_SERVICE_PRODUCER_VALUE = 37;
+
     /**
      *
      *
@@ -1125,6 +1165,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CAUSE_FIELD_NUMBER = 1;
   private int cause_ = 0;
+
   /**
    *
    *
@@ -1140,6 +1181,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
   public int getCauseValue() {
     return cause_;
   }
+
   /**
    *
    *
@@ -1164,6 +1206,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object resourceUri_ = "";
+
   /**
    *
    *
@@ -1187,6 +1230,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1384,6 +1428,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1581,6 +1626,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private int cause_ = 0;
+
     /**
      *
      *
@@ -1596,6 +1642,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
     public int getCauseValue() {
       return cause_;
     }
+
     /**
      *
      *
@@ -1614,6 +1661,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1633,6 +1681,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.networkmanagement.v1.DropInfo.Cause.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1654,6 +1703,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1673,6 +1723,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object resourceUri_ = "";
+
     /**
      *
      *
@@ -1695,6 +1746,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1717,6 +1769,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1738,6 +1791,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1755,6 +1809,7 @@ public final class DropInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

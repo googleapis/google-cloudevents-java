@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface EndpointOrBuilder
    * @return The ipAddress.
    */
   java.lang.String getIpAddress();
+
   /**
    *
    *
@@ -78,6 +79,7 @@ public interface EndpointOrBuilder
    * @return The instance.
    */
   java.lang.String getInstance();
+
   /**
    *
    *
@@ -104,6 +106,7 @@ public interface EndpointOrBuilder
    * @return The gkeMasterCluster.
    */
   java.lang.String getGkeMasterCluster();
+
   /**
    *
    *
@@ -130,6 +133,7 @@ public interface EndpointOrBuilder
    * @return The cloudSqlInstance.
    */
   java.lang.String getCloudSqlInstance();
+
   /**
    *
    *
@@ -157,6 +161,7 @@ public interface EndpointOrBuilder
    * @return Whether the cloudFunction field is set.
    */
   boolean hasCloudFunction();
+
   /**
    *
    *
@@ -171,6 +176,7 @@ public interface EndpointOrBuilder
    * @return The cloudFunction.
    */
   com.google.events.cloud.networkmanagement.v1.Endpoint.CloudFunctionEndpoint getCloudFunction();
+
   /**
    *
    *
@@ -200,6 +206,7 @@ public interface EndpointOrBuilder
    * @return Whether the appEngineVersion field is set.
    */
   boolean hasAppEngineVersion();
+
   /**
    *
    *
@@ -216,6 +223,7 @@ public interface EndpointOrBuilder
    */
   com.google.events.cloud.networkmanagement.v1.Endpoint.AppEngineVersionEndpoint
       getAppEngineVersion();
+
   /**
    *
    *
@@ -246,6 +254,7 @@ public interface EndpointOrBuilder
    * @return Whether the cloudRunRevision field is set.
    */
   boolean hasCloudRunRevision();
+
   /**
    *
    *
@@ -262,6 +271,7 @@ public interface EndpointOrBuilder
    */
   com.google.events.cloud.networkmanagement.v1.Endpoint.CloudRunRevisionEndpoint
       getCloudRunRevision();
+
   /**
    *
    *
@@ -289,6 +299,7 @@ public interface EndpointOrBuilder
    * @return The network.
    */
   java.lang.String getNetwork();
+
   /**
    *
    *
@@ -316,6 +327,7 @@ public interface EndpointOrBuilder
    * @return The enum numeric value on the wire for networkType.
    */
   int getNetworkTypeValue();
+
   /**
    *
    *
@@ -351,6 +363,7 @@ public interface EndpointOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *

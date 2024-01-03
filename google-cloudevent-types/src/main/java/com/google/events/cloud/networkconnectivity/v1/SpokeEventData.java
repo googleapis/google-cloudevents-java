@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.SpokeEventData)
     SpokeEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SpokeEventData.newBuilder() to construct.
   private SpokeEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkconnectivity.v1.Spoke payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.networkconnectivity.v1.Spoke.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -281,6 +285,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -487,6 +492,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.networkconnectivity.v1.Spoke.Builder,
             com.google.events.cloud.networkconnectivity.v1.SpokeOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -501,6 +507,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -521,6 +528,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -543,6 +551,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -563,6 +572,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -589,6 +599,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -608,6 +619,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -622,6 +634,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -640,6 +653,7 @@ public final class SpokeEventData extends com.google.protobuf.GeneratedMessageV3
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkmanagement.v1.ConnectivityTestEventData)
     ConnectivityTestEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ConnectivityTestEventData.newBuilder() to construct.
   private ConnectivityTestEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkmanagement.v1.ConnectivityTest payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
         ? com.google.events.cloud.networkmanagement.v1.ConnectivityTest.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -283,6 +287,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -494,6 +499,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
             com.google.events.cloud.networkmanagement.v1.ConnectivityTest.Builder,
             com.google.events.cloud.networkmanagement.v1.ConnectivityTestOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -508,6 +514,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -528,6 +535,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -550,6 +558,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -570,6 +579,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -598,6 +608,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -617,6 +628,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -632,6 +644,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -651,6 +664,7 @@ public final class ConnectivityTestEventData extends com.google.protobuf.Generat
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ConnectivityTestOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface ConnectivityTestOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -105,6 +107,7 @@ public interface ConnectivityTestOrBuilder
    * @return Whether the source field is set.
    */
   boolean hasSource();
+
   /**
    *
    *
@@ -133,6 +136,7 @@ public interface ConnectivityTestOrBuilder
    * @return The source.
    */
   com.google.events.cloud.networkmanagement.v1.Endpoint getSource();
+
   /**
    *
    *
@@ -185,6 +189,7 @@ public interface ConnectivityTestOrBuilder
    * @return Whether the destination field is set.
    */
   boolean hasDestination();
+
   /**
    *
    *
@@ -210,6 +215,7 @@ public interface ConnectivityTestOrBuilder
    * @return The destination.
    */
   com.google.events.cloud.networkmanagement.v1.Endpoint getDestination();
+
   /**
    *
    *
@@ -246,6 +252,7 @@ public interface ConnectivityTestOrBuilder
    * @return The protocol.
    */
   java.lang.String getProtocol();
+
   /**
    *
    *
@@ -272,6 +279,7 @@ public interface ConnectivityTestOrBuilder
    * @return A list containing the relatedProjects.
    */
   java.util.List<java.lang.String> getRelatedProjectsList();
+
   /**
    *
    *
@@ -285,6 +293,7 @@ public interface ConnectivityTestOrBuilder
    * @return The count of relatedProjects.
    */
   int getRelatedProjectsCount();
+
   /**
    *
    *
@@ -299,6 +308,7 @@ public interface ConnectivityTestOrBuilder
    * @return The relatedProjects at the given index.
    */
   java.lang.String getRelatedProjects(int index);
+
   /**
    *
    *
@@ -326,6 +336,7 @@ public interface ConnectivityTestOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -349,6 +360,7 @@ public interface ConnectivityTestOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -359,9 +371,11 @@ public interface ConnectivityTestOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -372,6 +386,7 @@ public interface ConnectivityTestOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -386,6 +401,7 @@ public interface ConnectivityTestOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -409,6 +425,7 @@ public interface ConnectivityTestOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -421,6 +438,7 @@ public interface ConnectivityTestOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -444,6 +462,7 @@ public interface ConnectivityTestOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -456,6 +475,7 @@ public interface ConnectivityTestOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -482,6 +502,7 @@ public interface ConnectivityTestOrBuilder
    * @return Whether the reachabilityDetails field is set.
    */
   boolean hasReachabilityDetails();
+
   /**
    *
    *
@@ -497,6 +518,7 @@ public interface ConnectivityTestOrBuilder
    * @return The reachabilityDetails.
    */
   com.google.events.cloud.networkmanagement.v1.ReachabilityDetails getReachabilityDetails();
+
   /**
    *
    *
