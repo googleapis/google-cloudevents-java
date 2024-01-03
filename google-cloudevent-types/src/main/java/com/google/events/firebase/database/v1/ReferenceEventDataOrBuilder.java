@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ReferenceEventDataOrBuilder
    * @return Whether the data field is set.
    */
   boolean hasData();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface ReferenceEventDataOrBuilder
    * @return The data.
    */
   com.google.protobuf.Value getData();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface ReferenceEventDataOrBuilder
    * @return Whether the delta field is set.
    */
   boolean hasDelta();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface ReferenceEventDataOrBuilder
    * @return The delta.
    */
   com.google.protobuf.Value getDelta();
+
   /**
    *
    *

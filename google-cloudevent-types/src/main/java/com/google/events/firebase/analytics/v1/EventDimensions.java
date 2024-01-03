@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.EventDimensions)
     EventDimensionsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EventDimensions.newBuilder() to construct.
   private EventDimensions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -83,6 +84,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object date_ = "";
+
   /**
    *
    *
@@ -107,6 +109,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       return s;
     }
   }
+
   /**
    *
    *
@@ -136,6 +139,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -159,6 +163,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       return s;
     }
   }
+
   /**
    *
    *
@@ -218,6 +223,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
   public int getParamsCount() {
     return internalGetParams().getMap().size();
   }
+
   /**
    *
    *
@@ -234,6 +240,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     }
     return internalGetParams().getMap().containsKey(key);
   }
+
   /** Use {@link #getParamsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -241,6 +248,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       getParams() {
     return getParamsMap();
   }
+
   /**
    *
    *
@@ -255,6 +263,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       getParamsMap() {
     return internalGetParams().getMap();
   }
+
   /**
    *
    *
@@ -276,6 +285,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         internalGetParams().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -301,6 +311,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
 
   public static final int TIMESTAMP_MICROS_FIELD_NUMBER = 4;
   private long timestampMicros_ = 0L;
+
   /**
    *
    *
@@ -319,6 +330,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
 
   public static final int PREVIOUS_TIMESTAMP_MICROS_FIELD_NUMBER = 5;
   private long previousTimestampMicros_ = 0L;
+
   /**
    *
    *
@@ -337,6 +349,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
 
   public static final int VALUE_IN_USD_FIELD_NUMBER = 7;
   private double valueInUsd_ = 0D;
+
   /**
    *
    *
@@ -573,6 +586,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -852,6 +866,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     private int bitField0_;
 
     private java.lang.Object date_ = "";
+
     /**
      *
      *
@@ -875,6 +890,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -898,6 +914,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -920,6 +937,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -938,6 +956,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -963,6 +982,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     }
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -985,6 +1005,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1007,6 +1028,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1028,6 +1050,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1045,6 +1068,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1098,6 +1122,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     public int getParamsCount() {
       return internalGetParams().getMap().size();
     }
+
     /**
      *
      *
@@ -1115,6 +1140,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       }
       return internalGetParams().getMap().containsKey(key);
     }
+
     /** Use {@link #getParamsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -1122,6 +1148,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         getParams() {
       return getParamsMap();
     }
+
     /**
      *
      *
@@ -1137,6 +1164,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
         getParamsMap() {
       return internalGetParams().getMap();
     }
+
     /**
      *
      *
@@ -1159,6 +1187,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
           internalGetParams().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -1188,6 +1217,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       internalGetMutableParams().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -1205,6 +1235,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       internalGetMutableParams().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.AnalyticsValue>
@@ -1212,6 +1243,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       bitField0_ |= 0x00000004;
       return internalGetMutableParams().getMutableMap();
     }
+
     /**
      *
      *
@@ -1234,6 +1266,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       bitField0_ |= 0x00000004;
       return this;
     }
+
     /**
      *
      *
@@ -1253,6 +1286,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     }
 
     private long timestampMicros_;
+
     /**
      *
      *
@@ -1268,6 +1302,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     public long getTimestampMicros() {
       return timestampMicros_;
     }
+
     /**
      *
      *
@@ -1287,6 +1322,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1306,6 +1342,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     }
 
     private long previousTimestampMicros_;
+
     /**
      *
      *
@@ -1321,6 +1358,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     public long getPreviousTimestampMicros() {
       return previousTimestampMicros_;
     }
+
     /**
      *
      *
@@ -1340,6 +1378,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1359,6 +1398,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     }
 
     private double valueInUsd_;
+
     /**
      *
      *
@@ -1374,6 +1414,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
     public double getValueInUsd() {
       return valueInUsd_;
     }
+
     /**
      *
      *
@@ -1393,6 +1434,7 @@ public final class EventDimensions extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *

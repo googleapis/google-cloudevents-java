@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface GeoInfoOrBuilder
    * @return The continent.
    */
   java.lang.String getContinent();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface GeoInfoOrBuilder
    * @return The country.
    */
   java.lang.String getCountry();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface GeoInfoOrBuilder
    * @return The region.
    */
   java.lang.String getRegion();
+
   /**
    *
    *
@@ -117,6 +120,7 @@ public interface GeoInfoOrBuilder
    * @return The city.
    */
   java.lang.String getCity();
+
   /**
    *
    *

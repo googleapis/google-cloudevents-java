@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface TrafficSourceOrBuilder
    * @return The userAcquiredCampaign.
    */
   java.lang.String getUserAcquiredCampaign();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface TrafficSourceOrBuilder
    * @return The userAcquiredSource.
    */
   java.lang.String getUserAcquiredSource();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface TrafficSourceOrBuilder
    * @return The userAcquiredMedium.
    */
   java.lang.String getUserAcquiredMedium();
+
   /**
    *
    *

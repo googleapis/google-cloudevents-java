@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DeviceInfoOrBuilder
    * @return The deviceCategory.
    */
   java.lang.String getDeviceCategory();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface DeviceInfoOrBuilder
    * @return The mobileBrandName.
    */
   java.lang.String getMobileBrandName();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface DeviceInfoOrBuilder
    * @return The mobileModelName.
    */
   java.lang.String getMobileModelName();
+
   /**
    *
    *
@@ -117,6 +120,7 @@ public interface DeviceInfoOrBuilder
    * @return The mobileMarketingName.
    */
   java.lang.String getMobileMarketingName();
+
   /**
    *
    *
@@ -144,6 +148,7 @@ public interface DeviceInfoOrBuilder
    * @return The deviceModel.
    */
   java.lang.String getDeviceModel();
+
   /**
    *
    *
@@ -171,6 +176,7 @@ public interface DeviceInfoOrBuilder
    * @return The platformVersion.
    */
   java.lang.String getPlatformVersion();
+
   /**
    *
    *
@@ -199,6 +205,7 @@ public interface DeviceInfoOrBuilder
    * @return The deviceId.
    */
   java.lang.String getDeviceId();
+
   /**
    *
    *
@@ -228,6 +235,7 @@ public interface DeviceInfoOrBuilder
    * @return The resettableDeviceId.
    */
   java.lang.String getResettableDeviceId();
+
   /**
    *
    *
@@ -256,6 +264,7 @@ public interface DeviceInfoOrBuilder
    * @return The userDefaultLanguage.
    */
   java.lang.String getUserDefaultLanguage();
+
   /**
    *
    *

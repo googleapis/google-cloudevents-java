@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ClientInfoOrBuilder
    * @return The client.
    */
   java.lang.String getClient();
+
   /**
    *
    *
@@ -58,6 +59,7 @@ public interface ClientInfoOrBuilder
    * <code>map&lt;string, string&gt; details = 2;</code>
    */
   int getDetailsCount();
+
   /**
    *
    *
@@ -68,9 +70,11 @@ public interface ClientInfoOrBuilder
    * <code>map&lt;string, string&gt; details = 2;</code>
    */
   boolean containsDetails(java.lang.String key);
+
   /** Use {@link #getDetailsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getDetails();
+
   /**
    *
    *
@@ -81,6 +85,7 @@ public interface ClientInfoOrBuilder
    * <code>map&lt;string, string&gt; details = 2;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getDetailsMap();
+
   /**
    *
    *
@@ -95,6 +100,7 @@ public interface ClientInfoOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *

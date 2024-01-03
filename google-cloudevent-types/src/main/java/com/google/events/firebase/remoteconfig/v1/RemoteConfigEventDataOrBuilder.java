@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,6 +48,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return Whether the updateUser field is set.
    */
   boolean hasUpdateUser();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return The updateUser.
    */
   com.google.events.firebase.remoteconfig.v1.RemoteConfigUser getUpdateUser();
+
   /**
    *
    *
@@ -121,6 +125,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -147,6 +152,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return The enum numeric value on the wire for updateOrigin.
    */
   int getUpdateOriginValue();
+
   /**
    *
    *
@@ -173,6 +179,7 @@ public interface RemoteConfigEventDataOrBuilder
    * @return The enum numeric value on the wire for updateType.
    */
   int getUpdateTypeValue();
+
   /**
    *
    *

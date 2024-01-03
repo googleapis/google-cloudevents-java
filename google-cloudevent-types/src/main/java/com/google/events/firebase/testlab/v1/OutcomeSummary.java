@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -98,6 +98,7 @@ public enum OutcomeSummary implements com.google.protobuf.ProtocolMessageEnum {
    * <code>OUTCOME_SUMMARY_UNSPECIFIED = 0;</code>
    */
   public static final int OUTCOME_SUMMARY_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -110,6 +111,7 @@ public enum OutcomeSummary implements com.google.protobuf.ProtocolMessageEnum {
    * <code>SUCCESS = 1;</code>
    */
   public static final int SUCCESS_VALUE = 1;
+
   /**
    *
    *
@@ -123,6 +125,7 @@ public enum OutcomeSummary implements com.google.protobuf.ProtocolMessageEnum {
    * <code>FAILURE = 2;</code>
    */
   public static final int FAILURE_VALUE = 2;
+
   /**
    *
    *
@@ -135,6 +138,7 @@ public enum OutcomeSummary implements com.google.protobuf.ProtocolMessageEnum {
    * <code>INCONCLUSIVE = 3;</code>
    */
   public static final int INCONCLUSIVE_VALUE = 3;
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.DeviceInfo)
     DeviceInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DeviceInfo.newBuilder() to construct.
   private DeviceInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -79,6 +80,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object deviceCategory_ = "";
+
   /**
    *
    *
@@ -103,6 +105,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -132,6 +135,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object mobileBrandName_ = "";
+
   /**
    *
    *
@@ -156,6 +160,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -185,6 +190,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object mobileModelName_ = "";
+
   /**
    *
    *
@@ -209,6 +215,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -238,6 +245,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object mobileMarketingName_ = "";
+
   /**
    *
    *
@@ -262,6 +270,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -291,6 +300,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object deviceModel_ = "";
+
   /**
    *
    *
@@ -315,6 +325,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -344,6 +355,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object platformVersion_ = "";
+
   /**
    *
    *
@@ -368,6 +380,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -397,6 +410,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object deviceId_ = "";
+
   /**
    *
    *
@@ -422,6 +436,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -452,6 +467,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object resettableDeviceId_ = "";
+
   /**
    *
    *
@@ -477,6 +493,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -507,6 +524,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object userDefaultLanguage_ = "";
+
   /**
    *
    *
@@ -531,6 +549,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -558,6 +577,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   public static final int DEVICE_TIME_ZONE_OFFSET_SECONDS_FIELD_NUMBER = 10;
   private int deviceTimeZoneOffsetSeconds_ = 0;
+
   /**
    *
    *
@@ -576,6 +596,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
 
   public static final int LIMITED_AD_TRACKING_FIELD_NUMBER = 11;
   private boolean limitedAdTracking_ = false;
+
   /**
    *
    *
@@ -845,6 +866,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1175,6 +1197,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object deviceCategory_ = "";
+
     /**
      *
      *
@@ -1198,6 +1221,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1221,6 +1245,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1243,6 +1268,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1261,6 +1287,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1286,6 +1313,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object mobileBrandName_ = "";
+
     /**
      *
      *
@@ -1309,6 +1337,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1332,6 +1361,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1354,6 +1384,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1372,6 +1403,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1397,6 +1429,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object mobileModelName_ = "";
+
     /**
      *
      *
@@ -1420,6 +1453,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1443,6 +1477,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1465,6 +1500,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1483,6 +1519,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1508,6 +1545,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object mobileMarketingName_ = "";
+
     /**
      *
      *
@@ -1531,6 +1569,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1554,6 +1593,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1576,6 +1616,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1594,6 +1635,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1619,6 +1661,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object deviceModel_ = "";
+
     /**
      *
      *
@@ -1642,6 +1685,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1665,6 +1709,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1687,6 +1732,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1705,6 +1751,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1730,6 +1777,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object platformVersion_ = "";
+
     /**
      *
      *
@@ -1753,6 +1801,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1776,6 +1825,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1798,6 +1848,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1816,6 +1867,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1841,6 +1893,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object deviceId_ = "";
+
     /**
      *
      *
@@ -1865,6 +1918,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1889,6 +1943,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1912,6 +1967,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1931,6 +1987,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1957,6 +2014,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object resettableDeviceId_ = "";
+
     /**
      *
      *
@@ -1981,6 +2039,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2005,6 +2064,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2028,6 +2088,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2047,6 +2108,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2073,6 +2135,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object userDefaultLanguage_ = "";
+
     /**
      *
      *
@@ -2096,6 +2159,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2119,6 +2183,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2141,6 +2206,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2159,6 +2225,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2184,6 +2251,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int deviceTimeZoneOffsetSeconds_;
+
     /**
      *
      *
@@ -2199,6 +2267,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     public int getDeviceTimeZoneOffsetSeconds() {
       return deviceTimeZoneOffsetSeconds_;
     }
+
     /**
      *
      *
@@ -2218,6 +2287,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2237,6 +2307,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private boolean limitedAdTracking_;
+
     /**
      *
      *
@@ -2255,6 +2326,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
     public boolean getLimitedAdTracking() {
       return limitedAdTracking_;
     }
+
     /**
      *
      *
@@ -2277,6 +2349,7 @@ public final class DeviceInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

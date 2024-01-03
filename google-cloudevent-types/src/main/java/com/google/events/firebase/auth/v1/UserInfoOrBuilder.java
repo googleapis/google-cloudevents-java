@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface UserInfoOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface UserInfoOrBuilder
    * @return The email.
    */
   java.lang.String getEmail();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface UserInfoOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface UserInfoOrBuilder
    * @return The photoURL.
    */
   java.lang.String getPhotoURL();
+
   /**
    *
    *
@@ -135,6 +139,7 @@ public interface UserInfoOrBuilder
    * @return The providerId.
    */
   java.lang.String getProviderId();
+
   /**
    *
    *

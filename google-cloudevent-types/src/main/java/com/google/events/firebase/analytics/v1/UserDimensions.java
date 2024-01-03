@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.UserDimensions)
     UserDimensionsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use UserDimensions.newBuilder() to construct.
   private UserDimensions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -82,6 +83,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object userId_ = "";
+
   /**
    *
    *
@@ -105,6 +107,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -131,6 +134,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int FIRST_OPEN_TIMESTAMP_MICROS_FIELD_NUMBER = 2;
   private long firstOpenTimestampMicros_ = 0L;
+
   /**
    *
    *
@@ -183,6 +187,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public int getUserPropertiesCount() {
     return internalGetUserProperties().getMap().size();
   }
+
   /**
    *
    *
@@ -202,6 +207,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetUserProperties().getMap().containsKey(key);
   }
+
   /** Use {@link #getUserPropertiesMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -209,6 +215,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       getUserProperties() {
     return getUserPropertiesMap();
   }
+
   /**
    *
    *
@@ -226,6 +233,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       getUserPropertiesMap() {
     return internalGetUserProperties().getMap();
   }
+
   /**
    *
    *
@@ -251,6 +259,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         internalGetUserProperties().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -279,6 +288,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int DEVICE_INFO_FIELD_NUMBER = 4;
   private com.google.events.firebase.analytics.v1.DeviceInfo deviceInfo_;
+
   /**
    *
    *
@@ -294,6 +304,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasDeviceInfo() {
     return deviceInfo_ != null;
   }
+
   /**
    *
    *
@@ -311,6 +322,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.DeviceInfo.getDefaultInstance()
         : deviceInfo_;
   }
+
   /**
    *
    *
@@ -329,6 +341,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int GEO_INFO_FIELD_NUMBER = 5;
   private com.google.events.firebase.analytics.v1.GeoInfo geoInfo_;
+
   /**
    *
    *
@@ -344,6 +357,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasGeoInfo() {
     return geoInfo_ != null;
   }
+
   /**
    *
    *
@@ -361,6 +375,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.GeoInfo.getDefaultInstance()
         : geoInfo_;
   }
+
   /**
    *
    *
@@ -379,6 +394,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int APP_INFO_FIELD_NUMBER = 6;
   private com.google.events.firebase.analytics.v1.AppInfo appInfo_;
+
   /**
    *
    *
@@ -394,6 +410,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasAppInfo() {
     return appInfo_ != null;
   }
+
   /**
    *
    *
@@ -411,6 +428,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.AppInfo.getDefaultInstance()
         : appInfo_;
   }
+
   /**
    *
    *
@@ -429,6 +447,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TRAFFIC_SOURCE_FIELD_NUMBER = 7;
   private com.google.events.firebase.analytics.v1.TrafficSource trafficSource_;
+
   /**
    *
    *
@@ -444,6 +463,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasTrafficSource() {
     return trafficSource_ != null;
   }
+
   /**
    *
    *
@@ -461,6 +481,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.TrafficSource.getDefaultInstance()
         : trafficSource_;
   }
+
   /**
    *
    *
@@ -480,6 +501,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int BUNDLE_INFO_FIELD_NUMBER = 8;
   private com.google.events.firebase.analytics.v1.ExportBundleInfo bundleInfo_;
+
   /**
    *
    *
@@ -495,6 +517,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasBundleInfo() {
     return bundleInfo_ != null;
   }
+
   /**
    *
    *
@@ -512,6 +535,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.ExportBundleInfo.getDefaultInstance()
         : bundleInfo_;
   }
+
   /**
    *
    *
@@ -531,6 +555,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
 
   public static final int LTV_INFO_FIELD_NUMBER = 9;
   private com.google.events.firebase.analytics.v1.LtvInfo ltvInfo_;
+
   /**
    *
    *
@@ -546,6 +571,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
   public boolean hasLtvInfo() {
     return ltvInfo_ != null;
   }
+
   /**
    *
    *
@@ -563,6 +589,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.firebase.analytics.v1.LtvInfo.getDefaultInstance()
         : ltvInfo_;
   }
+
   /**
    *
    *
@@ -852,6 +879,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1193,6 +1221,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object userId_ = "";
+
     /**
      *
      *
@@ -1215,6 +1244,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1237,6 +1267,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1258,6 +1289,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1275,6 +1307,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1299,6 +1332,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     }
 
     private long firstOpenTimestampMicros_;
+
     /**
      *
      *
@@ -1314,6 +1348,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public long getFirstOpenTimestampMicros() {
       return firstOpenTimestampMicros_;
     }
+
     /**
      *
      *
@@ -1333,6 +1368,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1383,6 +1419,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public int getUserPropertiesCount() {
       return internalGetUserProperties().getMap().size();
     }
+
     /**
      *
      *
@@ -1402,6 +1439,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetUserProperties().getMap().containsKey(key);
     }
+
     /** Use {@link #getUserPropertiesMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -1410,6 +1448,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         getUserProperties() {
       return getUserPropertiesMap();
     }
+
     /**
      *
      *
@@ -1428,6 +1467,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         getUserPropertiesMap() {
       return internalGetUserProperties().getMap();
     }
+
     /**
      *
      *
@@ -1453,6 +1493,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
           map = internalGetUserProperties().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -1484,6 +1525,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableUserProperties().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -1503,6 +1545,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableUserProperties().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<
@@ -1511,6 +1554,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000004;
       return internalGetMutableUserProperties().getMutableMap();
     }
+
     /**
      *
      *
@@ -1535,6 +1579,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000004;
       return this;
     }
+
     /**
      *
      *
@@ -1561,6 +1606,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.DeviceInfo.Builder,
             com.google.events.firebase.analytics.v1.DeviceInfoOrBuilder>
         deviceInfoBuilder_;
+
     /**
      *
      *
@@ -1575,6 +1621,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasDeviceInfo() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1595,6 +1642,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return deviceInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1617,6 +1665,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1637,6 +1686,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1663,6 +1713,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1682,6 +1733,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1696,6 +1748,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getDeviceInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1714,6 +1767,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : deviceInfo_;
       }
     }
+
     /**
      *
      *
@@ -1746,6 +1800,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.GeoInfo.Builder,
             com.google.events.firebase.analytics.v1.GeoInfoOrBuilder>
         geoInfoBuilder_;
+
     /**
      *
      *
@@ -1760,6 +1815,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasGeoInfo() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1780,6 +1836,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return geoInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1802,6 +1859,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1822,6 +1880,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1847,6 +1906,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1866,6 +1926,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1880,6 +1941,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getGeoInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1898,6 +1960,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : geoInfo_;
       }
     }
+
     /**
      *
      *
@@ -1930,6 +1993,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.AppInfo.Builder,
             com.google.events.firebase.analytics.v1.AppInfoOrBuilder>
         appInfoBuilder_;
+
     /**
      *
      *
@@ -1944,6 +2008,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasAppInfo() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -1964,6 +2029,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return appInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1986,6 +2052,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2006,6 +2073,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2031,6 +2099,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2050,6 +2119,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2064,6 +2134,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getAppInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2082,6 +2153,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : appInfo_;
       }
     }
+
     /**
      *
      *
@@ -2114,6 +2186,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.TrafficSource.Builder,
             com.google.events.firebase.analytics.v1.TrafficSourceOrBuilder>
         trafficSourceBuilder_;
+
     /**
      *
      *
@@ -2128,6 +2201,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasTrafficSource() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -2148,6 +2222,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return trafficSourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2170,6 +2245,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2190,6 +2266,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2216,6 +2293,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2235,6 +2313,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2249,6 +2328,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getTrafficSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2268,6 +2348,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : trafficSource_;
       }
     }
+
     /**
      *
      *
@@ -2300,6 +2381,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.ExportBundleInfo.Builder,
             com.google.events.firebase.analytics.v1.ExportBundleInfoOrBuilder>
         bundleInfoBuilder_;
+
     /**
      *
      *
@@ -2314,6 +2396,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasBundleInfo() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2334,6 +2417,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return bundleInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2356,6 +2440,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2376,6 +2461,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2402,6 +2488,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2421,6 +2508,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2435,6 +2523,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getBundleInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2454,6 +2543,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : bundleInfo_;
       }
     }
+
     /**
      *
      *
@@ -2486,6 +2576,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             com.google.events.firebase.analytics.v1.LtvInfo.Builder,
             com.google.events.firebase.analytics.v1.LtvInfoOrBuilder>
         ltvInfoBuilder_;
+
     /**
      *
      *
@@ -2500,6 +2591,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
     public boolean hasLtvInfo() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -2520,6 +2612,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
         return ltvInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2542,6 +2635,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2562,6 +2656,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2587,6 +2682,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2606,6 +2702,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2620,6 +2717,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getLtvInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2638,6 +2736,7 @@ public final class UserDimensions extends com.google.protobuf.GeneratedMessageV3
             : ltvInfo_;
       }
     }
+
     /**
      *
      *

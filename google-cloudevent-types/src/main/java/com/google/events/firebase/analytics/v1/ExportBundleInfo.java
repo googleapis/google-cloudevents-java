@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.ExportBundleInfo)
     ExportBundleInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ExportBundleInfo.newBuilder() to construct.
   private ExportBundleInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
 
   public static final int BUNDLE_SEQUENCE_ID_FIELD_NUMBER = 1;
   private int bundleSequenceId_ = 0;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
 
   public static final int SERVER_TIMESTAMP_OFFSET_MICROS_FIELD_NUMBER = 2;
   private long serverTimestampOffsetMicros_ = 0L;
+
   /**
    *
    *
@@ -272,6 +275,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -468,6 +472,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     private int bitField0_;
 
     private int bundleSequenceId_;
+
     /**
      *
      *
@@ -483,6 +488,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     public int getBundleSequenceId() {
       return bundleSequenceId_;
     }
+
     /**
      *
      *
@@ -502,6 +508,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -521,6 +528,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     }
 
     private long serverTimestampOffsetMicros_;
+
     /**
      *
      *
@@ -536,6 +544,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
     public long getServerTimestampOffsetMicros() {
       return serverTimestampOffsetMicros_;
     }
+
     /**
      *
      *
@@ -555,6 +564,7 @@ public final class ExportBundleInfo extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *

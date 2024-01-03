@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface AppInfoOrBuilder
    * @return The appVersion.
    */
   java.lang.String getAppVersion();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface AppInfoOrBuilder
    * @return The appInstanceId.
    */
   java.lang.String getAppInstanceId();
+
   /**
    *
    *
@@ -91,6 +93,7 @@ public interface AppInfoOrBuilder
    * @return The appStore.
    */
   java.lang.String getAppStore();
+
   /**
    *
    *
@@ -119,6 +122,7 @@ public interface AppInfoOrBuilder
    * @return The appPlatform.
    */
   java.lang.String getAppPlatform();
+
   /**
    *
    *
@@ -145,6 +149,7 @@ public interface AppInfoOrBuilder
    * @return The appId.
    */
   java.lang.String getAppId();
+
   /**
    *
    *
