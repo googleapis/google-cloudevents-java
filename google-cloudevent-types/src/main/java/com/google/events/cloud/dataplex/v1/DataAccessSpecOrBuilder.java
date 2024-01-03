@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ public interface DataAccessSpecOrBuilder
    * @return A list containing the readers.
    */
   java.util.List<java.lang.String> getReadersList();
+
   /**
    *
    *
@@ -53,6 +54,7 @@ public interface DataAccessSpecOrBuilder
    * @return The count of readers.
    */
   int getReadersCount();
+
   /**
    *
    *
@@ -69,6 +71,7 @@ public interface DataAccessSpecOrBuilder
    * @return The readers at the given index.
    */
   java.lang.String getReaders(int index);
+
   /**
    *
    *

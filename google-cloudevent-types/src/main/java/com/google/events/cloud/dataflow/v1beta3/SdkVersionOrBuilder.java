@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface SdkVersionOrBuilder
    * @return The version.
    */
   java.lang.String getVersion();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface SdkVersionOrBuilder
    * @return The versionDisplayName.
    */
   java.lang.String getVersionDisplayName();
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public interface SdkVersionOrBuilder
    * @return The enum numeric value on the wire for sdkSupportStatus.
    */
   int getSdkSupportStatusValue();
+
   /**
    *
    *

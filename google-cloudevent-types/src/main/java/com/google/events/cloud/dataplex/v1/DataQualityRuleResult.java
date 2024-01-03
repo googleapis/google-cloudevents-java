@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataQualityRuleResult)
     DataQualityRuleResultOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataQualityRuleResult.newBuilder() to construct.
   private DataQualityRuleResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int RULE_FIELD_NUMBER = 1;
   private com.google.events.cloud.dataplex.v1.DataQualityRule rule_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
   public boolean hasRule() {
     return rule_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
         ? com.google.events.cloud.dataplex.v1.DataQualityRule.getDefaultInstance()
         : rule_;
   }
+
   /**
    *
    *
@@ -119,6 +123,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int PASSED_FIELD_NUMBER = 7;
   private boolean passed_ = false;
+
   /**
    *
    *
@@ -137,6 +142,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int EVALUATED_COUNT_FIELD_NUMBER = 9;
   private long evaluatedCount_ = 0L;
+
   /**
    *
    *
@@ -161,6 +167,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int PASSED_COUNT_FIELD_NUMBER = 8;
   private long passedCount_ = 0L;
+
   /**
    *
    *
@@ -180,6 +187,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int NULL_COUNT_FIELD_NUMBER = 5;
   private long nullCount_ = 0L;
+
   /**
    *
    *
@@ -198,6 +206,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   public static final int PASS_RATIO_FIELD_NUMBER = 6;
   private double passRatio_ = 0D;
+
   /**
    *
    *
@@ -219,6 +228,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object failingRowsQuery_ = "";
+
   /**
    *
    *
@@ -243,6 +253,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       return s;
     }
   }
+
   /**
    *
    *
@@ -491,6 +502,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -762,6 +774,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
             com.google.events.cloud.dataplex.v1.DataQualityRule.Builder,
             com.google.events.cloud.dataplex.v1.DataQualityRuleOrBuilder>
         ruleBuilder_;
+
     /**
      *
      *
@@ -776,6 +789,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public boolean hasRule() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -796,6 +810,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
         return ruleBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -818,6 +833,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -838,6 +854,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -863,6 +880,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -882,6 +900,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -896,6 +915,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return getRuleFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -914,6 +934,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
             : rule_;
       }
     }
+
     /**
      *
      *
@@ -941,6 +962,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private boolean passed_;
+
     /**
      *
      *
@@ -956,6 +978,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public boolean getPassed() {
       return passed_;
     }
+
     /**
      *
      *
@@ -975,6 +998,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -994,6 +1018,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private long evaluatedCount_;
+
     /**
      *
      *
@@ -1015,6 +1040,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public long getEvaluatedCount() {
       return evaluatedCount_;
     }
+
     /**
      *
      *
@@ -1040,6 +1066,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1065,6 +1092,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private long passedCount_;
+
     /**
      *
      *
@@ -1081,6 +1109,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public long getPassedCount() {
       return passedCount_;
     }
+
     /**
      *
      *
@@ -1101,6 +1130,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1121,6 +1151,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private long nullCount_;
+
     /**
      *
      *
@@ -1136,6 +1167,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public long getNullCount() {
       return nullCount_;
     }
+
     /**
      *
      *
@@ -1155,6 +1187,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1174,6 +1207,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private double passRatio_;
+
     /**
      *
      *
@@ -1190,6 +1224,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     public double getPassRatio() {
       return passRatio_;
     }
+
     /**
      *
      *
@@ -1210,6 +1245,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1230,6 +1266,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
     }
 
     private java.lang.Object failingRowsQuery_ = "";
+
     /**
      *
      *
@@ -1253,6 +1290,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1276,6 +1314,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1298,6 +1337,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1316,6 +1356,7 @@ public final class DataQualityRuleResult extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *

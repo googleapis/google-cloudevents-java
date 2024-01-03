@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,6 +48,7 @@ public interface DataQualityResultOrBuilder
    */
   java.util.List<com.google.events.cloud.dataplex.v1.DataQualityDimensionResult>
       getDimensionsList();
+
   /**
    *
    *
@@ -59,6 +60,7 @@ public interface DataQualityResultOrBuilder
    * </code>
    */
   com.google.events.cloud.dataplex.v1.DataQualityDimensionResult getDimensions(int index);
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface DataQualityResultOrBuilder
    * </code>
    */
   int getDimensionsCount();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface DataQualityResultOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataplex.v1.DataQualityDimensionResultOrBuilder>
       getDimensionsOrBuilderList();
+
   /**
    *
    *
@@ -105,6 +109,7 @@ public interface DataQualityResultOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRuleResult rules = 3;</code>
    */
   java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRuleResult> getRulesList();
+
   /**
    *
    *
@@ -115,6 +120,7 @@ public interface DataQualityResultOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRuleResult rules = 3;</code>
    */
   com.google.events.cloud.dataplex.v1.DataQualityRuleResult getRules(int index);
+
   /**
    *
    *
@@ -125,6 +131,7 @@ public interface DataQualityResultOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRuleResult rules = 3;</code>
    */
   int getRulesCount();
+
   /**
    *
    *
@@ -136,6 +143,7 @@ public interface DataQualityResultOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataplex.v1.DataQualityRuleResultOrBuilder>
       getRulesOrBuilderList();
+
   /**
    *
    *
@@ -172,6 +180,7 @@ public interface DataQualityResultOrBuilder
    * @return Whether the scannedData field is set.
    */
   boolean hasScannedData();
+
   /**
    *
    *
@@ -184,6 +193,7 @@ public interface DataQualityResultOrBuilder
    * @return The scannedData.
    */
   com.google.events.cloud.dataplex.v1.ScannedData getScannedData();
+
   /**
    *
    *

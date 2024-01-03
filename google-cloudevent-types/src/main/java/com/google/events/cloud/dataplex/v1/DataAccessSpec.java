@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataAccessSpec)
     DataAccessSpecOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataAccessSpec.newBuilder() to construct.
   private DataAccessSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -75,6 +76,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList readers_;
+
   /**
    *
    *
@@ -92,6 +94,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getReadersList() {
     return readers_;
   }
+
   /**
    *
    *
@@ -109,6 +112,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
   public int getReadersCount() {
     return readers_.size();
   }
+
   /**
    *
    *
@@ -127,6 +131,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getReaders(int index) {
     return readers_.get(index);
   }
+
   /**
    *
    *
@@ -312,6 +317,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -522,6 +528,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -539,6 +546,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getReadersList() {
       return readers_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -556,6 +564,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     public int getReadersCount() {
       return readers_.size();
     }
+
     /**
      *
      *
@@ -574,6 +583,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getReaders(int index) {
       return readers_.get(index);
     }
+
     /**
      *
      *
@@ -592,6 +602,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getReadersBytes(int index) {
       return readers_.getByteString(index);
     }
+
     /**
      *
      *
@@ -617,6 +628,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -641,6 +653,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -662,6 +675,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -682,6 +696,7 @@ public final class DataAccessSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

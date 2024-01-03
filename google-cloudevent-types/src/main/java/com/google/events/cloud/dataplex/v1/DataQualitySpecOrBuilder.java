@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public interface DataQualitySpecOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRule rules = 1;</code>
    */
   java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRule> getRulesList();
+
   /**
    *
    *
@@ -45,6 +46,7 @@ public interface DataQualitySpecOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRule rules = 1;</code>
    */
   com.google.events.cloud.dataplex.v1.DataQualityRule getRules(int index);
+
   /**
    *
    *
@@ -56,6 +58,7 @@ public interface DataQualitySpecOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataQualityRule rules = 1;</code>
    */
   int getRulesCount();
+
   /**
    *
    *
@@ -68,6 +71,7 @@ public interface DataQualitySpecOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataplex.v1.DataQualityRuleOrBuilder>
       getRulesOrBuilderList();
+
   /**
    *
    *

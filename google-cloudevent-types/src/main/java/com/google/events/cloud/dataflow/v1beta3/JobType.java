@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -76,6 +76,7 @@ public enum JobType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>JOB_TYPE_UNKNOWN = 0;</code>
    */
   public static final int JOB_TYPE_UNKNOWN_VALUE = 0;
+
   /**
    *
    *
@@ -87,6 +88,7 @@ public enum JobType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>JOB_TYPE_BATCH = 1;</code>
    */
   public static final int JOB_TYPE_BATCH_VALUE = 1;
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface JobEventDataOrBuilder
    * @return Whether the payload field is set.
    */
   boolean hasPayload();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface JobEventDataOrBuilder
    * @return The payload.
    */
   com.google.events.cloud.dataflow.v1beta3.Job getPayload();
+
   /**
    *
    *

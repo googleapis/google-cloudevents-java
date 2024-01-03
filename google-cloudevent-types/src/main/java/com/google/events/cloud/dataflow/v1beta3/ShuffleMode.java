@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,6 +74,7 @@ public enum ShuffleMode implements com.google.protobuf.ProtocolMessageEnum {
    * <code>SHUFFLE_MODE_UNSPECIFIED = 0;</code>
    */
   public static final int SHUFFLE_MODE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -84,6 +85,7 @@ public enum ShuffleMode implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VM_BASED = 1;</code>
    */
   public static final int VM_BASED_VALUE = 1;
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -71,6 +71,7 @@ public enum FlexResourceSchedulingGoal implements com.google.protobuf.ProtocolMe
    * <code>FLEXRS_UNSPECIFIED = 0;</code>
    */
   public static final int FLEXRS_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -81,6 +82,7 @@ public enum FlexResourceSchedulingGoal implements com.google.protobuf.ProtocolMe
    * <code>FLEXRS_SPEED_OPTIMIZED = 1;</code>
    */
   public static final int FLEXRS_SPEED_OPTIMIZED_VALUE = 1;
+
   /**
    *
    *
