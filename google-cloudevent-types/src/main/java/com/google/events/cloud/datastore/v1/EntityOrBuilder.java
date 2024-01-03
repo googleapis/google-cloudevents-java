@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ public interface EntityOrBuilder
    * @return Whether the key field is set.
    */
   boolean hasKey();
+
   /**
    *
    *
@@ -55,6 +56,7 @@ public interface EntityOrBuilder
    * @return The key.
    */
   com.google.events.cloud.datastore.v1.Key getKey();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface EntityOrBuilder
    * <code>map&lt;string, .google.events.cloud.datastore.v1.Value&gt; properties = 3;</code>
    */
   int getPropertiesCount();
+
   /**
    *
    *
@@ -100,9 +103,11 @@ public interface EntityOrBuilder
    * <code>map&lt;string, .google.events.cloud.datastore.v1.Value&gt; properties = 3;</code>
    */
   boolean containsProperties(java.lang.String key);
+
   /** Use {@link #getPropertiesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.datastore.v1.Value> getProperties();
+
   /**
    *
    *
@@ -118,6 +123,7 @@ public interface EntityOrBuilder
    * <code>map&lt;string, .google.events.cloud.datastore.v1.Value&gt; properties = 3;</code>
    */
   java.util.Map<java.lang.String, com.google.events.cloud.datastore.v1.Value> getPropertiesMap();
+
   /**
    *
    *
@@ -137,6 +143,7 @@ public interface EntityOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.datastore.v1.Value defaultValue);
+
   /**
    *
    *

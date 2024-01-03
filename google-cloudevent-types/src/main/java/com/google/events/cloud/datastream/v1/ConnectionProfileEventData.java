@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.ConnectionProfileEventData)
     ConnectionProfileEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ConnectionProfileEventData.newBuilder() to construct.
   private ConnectionProfileEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.datastream.v1.ConnectionProfile payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
         ? com.google.events.cloud.datastream.v1.ConnectionProfile.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -281,6 +285,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -488,6 +493,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
             com.google.events.cloud.datastream.v1.ConnectionProfile.Builder,
             com.google.events.cloud.datastream.v1.ConnectionProfileOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -502,6 +508,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -522,6 +529,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -544,6 +552,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -564,6 +573,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -590,6 +600,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -609,6 +620,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -623,6 +635,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -641,6 +654,7 @@ public final class ConnectionProfileEventData extends com.google.protobuf.Genera
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return The path.
    */
   java.lang.String getPath();
+
   /**
    *
    *
@@ -74,6 +75,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return Whether the fileRotationInterval field is set.
    */
   boolean hasFileRotationInterval();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return The fileRotationInterval.
    */
   com.google.protobuf.Duration getFileRotationInterval();
+
   /**
    *
    *
@@ -111,6 +114,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return Whether the avroFileFormat field is set.
    */
   boolean hasAvroFileFormat();
+
   /**
    *
    *
@@ -123,6 +127,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return The avroFileFormat.
    */
   com.google.events.cloud.datastream.v1.AvroFileFormat getAvroFileFormat();
+
   /**
    *
    *
@@ -146,6 +151,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return Whether the jsonFileFormat field is set.
    */
   boolean hasJsonFileFormat();
+
   /**
    *
    *
@@ -158,6 +164,7 @@ public interface GcsDestinationConfigOrBuilder
    * @return The jsonFileFormat.
    */
   com.google.events.cloud.datastream.v1.JsonFileFormat getJsonFileFormat();
+
   /**
    *
    *

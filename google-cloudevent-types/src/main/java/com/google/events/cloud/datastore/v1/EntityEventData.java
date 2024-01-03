@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastore.v1.EntityEventData)
     EntityEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EntityEventData.newBuilder() to construct.
   private EntityEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
 
   public static final int VALUE_FIELD_NUMBER = 1;
   private com.google.events.cloud.datastore.v1.EntityResult value_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
   public boolean hasValue() {
     return value_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         ? com.google.events.cloud.datastore.v1.EntityResult.getDefaultInstance()
         : value_;
   }
+
   /**
    *
    *
@@ -120,6 +124,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
 
   public static final int OLD_VALUE_FIELD_NUMBER = 2;
   private com.google.events.cloud.datastore.v1.EntityResult oldValue_;
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
   public boolean hasOldValue() {
     return oldValue_ != null;
   }
+
   /**
    *
    *
@@ -154,6 +160,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         ? com.google.events.cloud.datastore.v1.EntityResult.getDefaultInstance()
         : oldValue_;
   }
+
   /**
    *
    *
@@ -173,6 +180,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
 
   public static final int UPDATE_MASK_FIELD_NUMBER = 3;
   private com.google.events.cloud.datastore.v1.PropertyMask updateMask_;
+
   /**
    *
    *
@@ -189,6 +197,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
+
   /**
    *
    *
@@ -207,6 +216,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         ? com.google.events.cloud.datastore.v1.PropertyMask.getDefaultInstance()
         : updateMask_;
   }
+
   /**
    *
    *
@@ -416,6 +426,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -641,6 +652,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.datastore.v1.EntityResult.Builder,
             com.google.events.cloud.datastore.v1.EntityResultOrBuilder>
         valueBuilder_;
+
     /**
      *
      *
@@ -656,6 +668,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
     public boolean hasValue() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -677,6 +690,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         return valueBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -700,6 +714,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -721,6 +736,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -747,6 +763,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -767,6 +784,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -782,6 +800,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getValueFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -801,6 +820,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             : value_;
       }
     }
+
     /**
      *
      *
@@ -834,6 +854,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.datastore.v1.EntityResult.Builder,
             com.google.events.cloud.datastore.v1.EntityResultOrBuilder>
         oldValueBuilder_;
+
     /**
      *
      *
@@ -849,6 +870,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
     public boolean hasOldValue() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -870,6 +892,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         return oldValueBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -893,6 +916,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -914,6 +938,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -941,6 +966,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -961,6 +987,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -976,6 +1003,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getOldValueFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -995,6 +1023,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             : oldValue_;
       }
     }
+
     /**
      *
      *
@@ -1028,6 +1057,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.datastore.v1.PropertyMask.Builder,
             com.google.events.cloud.datastore.v1.PropertyMaskOrBuilder>
         updateMaskBuilder_;
+
     /**
      *
      *
@@ -1043,6 +1073,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
     public boolean hasUpdateMask() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1064,6 +1095,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
         return updateMaskBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1087,6 +1119,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1108,6 +1141,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1135,6 +1169,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1155,6 +1190,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1170,6 +1206,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getUpdateMaskFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1189,6 +1226,7 @@ public final class EntityEventData extends com.google.protobuf.GeneratedMessageV
             : updateMask_;
       }
     }
+
     /**
      *
      *

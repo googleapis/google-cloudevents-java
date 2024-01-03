@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.OracleSourceConfig)
     OracleSourceConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use OracleSourceConfig.newBuilder() to construct.
   private OracleSourceConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       extends
       // @@protoc_insertion_point(interface_extends:google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects)
       com.google.protobuf.MessageOrBuilder {}
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects)
       DropLargeObjectsOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use DropLargeObjects.newBuilder() to construct.
     private DropLargeObjects(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -276,6 +279,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -519,6 +523,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       extends
       // @@protoc_insertion_point(interface_extends:google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects)
       com.google.protobuf.MessageOrBuilder {}
+
   /**
    *
    *
@@ -533,6 +538,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects)
       StreamLargeObjectsOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use StreamLargeObjects.newBuilder() to construct.
     private StreamLargeObjects(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -726,6 +732,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -981,6 +988,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     private LargeObjectsHandlingCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -1015,6 +1023,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int INCLUDE_OBJECTS_FIELD_NUMBER = 1;
   private com.google.events.cloud.datastream.v1.OracleRdbms includeObjects_;
+
   /**
    *
    *
@@ -1030,6 +1039,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   public boolean hasIncludeObjects() {
     return includeObjects_ != null;
   }
+
   /**
    *
    *
@@ -1047,6 +1057,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         ? com.google.events.cloud.datastream.v1.OracleRdbms.getDefaultInstance()
         : includeObjects_;
   }
+
   /**
    *
    *
@@ -1065,6 +1076,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int EXCLUDE_OBJECTS_FIELD_NUMBER = 2;
   private com.google.events.cloud.datastream.v1.OracleRdbms excludeObjects_;
+
   /**
    *
    *
@@ -1080,6 +1092,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   public boolean hasExcludeObjects() {
     return excludeObjects_ != null;
   }
+
   /**
    *
    *
@@ -1097,6 +1110,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         ? com.google.events.cloud.datastream.v1.OracleRdbms.getDefaultInstance()
         : excludeObjects_;
   }
+
   /**
    *
    *
@@ -1115,6 +1129,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int MAX_CONCURRENT_CDC_TASKS_FIELD_NUMBER = 3;
   private int maxConcurrentCdcTasks_ = 0;
+
   /**
    *
    *
@@ -1133,6 +1148,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   }
 
   public static final int DROP_LARGE_OBJECTS_FIELD_NUMBER = 100;
+
   /**
    *
    *
@@ -1150,6 +1166,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   public boolean hasDropLargeObjects() {
     return largeObjectsHandlingCase_ == 100;
   }
+
   /**
    *
    *
@@ -1173,6 +1190,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     return com.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects
         .getDefaultInstance();
   }
+
   /**
    *
    *
@@ -1196,6 +1214,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   }
 
   public static final int STREAM_LARGE_OBJECTS_FIELD_NUMBER = 102;
+
   /**
    *
    *
@@ -1213,6 +1232,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
   public boolean hasStreamLargeObjects() {
     return largeObjectsHandlingCase_ == 102;
   }
+
   /**
    *
    *
@@ -1236,6 +1256,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     return com.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects
         .getDefaultInstance();
   }
+
   /**
    *
    *
@@ -1495,6 +1516,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1783,6 +1805,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.datastream.v1.OracleRdbms.Builder,
             com.google.events.cloud.datastream.v1.OracleRdbmsOrBuilder>
         includeObjectsBuilder_;
+
     /**
      *
      *
@@ -1797,6 +1820,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     public boolean hasIncludeObjects() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -1817,6 +1841,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         return includeObjectsBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1839,6 +1864,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1859,6 +1885,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1885,6 +1912,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1904,6 +1932,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1918,6 +1947,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return getIncludeObjectsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1936,6 +1966,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             : includeObjects_;
       }
     }
+
     /**
      *
      *
@@ -1968,6 +1999,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.datastream.v1.OracleRdbms.Builder,
             com.google.events.cloud.datastream.v1.OracleRdbmsOrBuilder>
         excludeObjectsBuilder_;
+
     /**
      *
      *
@@ -1982,6 +2014,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     public boolean hasExcludeObjects() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -2002,6 +2035,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         return excludeObjectsBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2024,6 +2058,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2044,6 +2079,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2070,6 +2106,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2089,6 +2126,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2103,6 +2141,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return getExcludeObjectsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2121,6 +2160,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             : excludeObjects_;
       }
     }
+
     /**
      *
      *
@@ -2148,6 +2188,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     }
 
     private int maxConcurrentCdcTasks_;
+
     /**
      *
      *
@@ -2164,6 +2205,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     public int getMaxConcurrentCdcTasks() {
       return maxConcurrentCdcTasks_;
     }
+
     /**
      *
      *
@@ -2184,6 +2226,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2208,6 +2251,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects.Builder,
             com.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjectsOrBuilder>
         dropLargeObjectsBuilder_;
+
     /**
      *
      *
@@ -2225,6 +2269,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     public boolean hasDropLargeObjects() {
       return largeObjectsHandlingCase_ == 100;
     }
+
     /**
      *
      *
@@ -2256,6 +2301,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2281,6 +2327,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 100;
       return this;
     }
+
     /**
      *
      *
@@ -2304,6 +2351,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 100;
       return this;
     }
+
     /**
      *
      *
@@ -2342,6 +2390,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 100;
       return this;
     }
+
     /**
      *
      *
@@ -2369,6 +2418,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -2384,6 +2434,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         getDropLargeObjectsBuilder() {
       return getDropLargeObjectsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2409,6 +2460,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2452,6 +2504,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects.Builder,
             com.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjectsOrBuilder>
         streamLargeObjectsBuilder_;
+
     /**
      *
      *
@@ -2469,6 +2522,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
     public boolean hasStreamLargeObjects() {
       return largeObjectsHandlingCase_ == 102;
     }
+
     /**
      *
      *
@@ -2500,6 +2554,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2525,6 +2580,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 102;
       return this;
     }
+
     /**
      *
      *
@@ -2548,6 +2604,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 102;
       return this;
     }
+
     /**
      *
      *
@@ -2587,6 +2644,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       largeObjectsHandlingCase_ = 102;
       return this;
     }
+
     /**
      *
      *
@@ -2614,6 +2672,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -2629,6 +2688,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
         getStreamLargeObjectsBuilder() {
       return getStreamLargeObjectsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2654,6 +2714,7 @@ public final class OracleSourceConfig extends com.google.protobuf.GeneratedMessa
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *

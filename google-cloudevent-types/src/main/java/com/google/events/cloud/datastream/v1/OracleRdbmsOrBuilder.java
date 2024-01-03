@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface OracleRdbmsOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.OracleSchema oracle_schemas = 1;</code>
    */
   java.util.List<com.google.events.cloud.datastream.v1.OracleSchema> getOracleSchemasList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface OracleRdbmsOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.OracleSchema oracle_schemas = 1;</code>
    */
   com.google.events.cloud.datastream.v1.OracleSchema getOracleSchemas(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface OracleRdbmsOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.OracleSchema oracle_schemas = 1;</code>
    */
   int getOracleSchemasCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface OracleRdbmsOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastream.v1.OracleSchemaOrBuilder>
       getOracleSchemasOrBuilderList();
+
   /**
    *
    *

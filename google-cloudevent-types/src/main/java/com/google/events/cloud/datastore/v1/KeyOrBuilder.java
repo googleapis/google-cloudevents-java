@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface KeyOrBuilder
    * @return Whether the partitionId field is set.
    */
   boolean hasPartitionId();
+
   /**
    *
    *
@@ -51,6 +52,7 @@ public interface KeyOrBuilder
    * @return The partitionId.
    */
   com.google.events.cloud.datastore.v1.PartitionId getPartitionId();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface KeyOrBuilder
    * <code>repeated .google.events.cloud.datastore.v1.Key.PathElement path = 2;</code>
    */
   java.util.List<com.google.events.cloud.datastore.v1.Key.PathElement> getPathList();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface KeyOrBuilder
    * <code>repeated .google.events.cloud.datastore.v1.Key.PathElement path = 2;</code>
    */
   com.google.events.cloud.datastore.v1.Key.PathElement getPath(int index);
+
   /**
    *
    *
@@ -133,6 +137,7 @@ public interface KeyOrBuilder
    * <code>repeated .google.events.cloud.datastore.v1.Key.PathElement path = 2;</code>
    */
   int getPathCount();
+
   /**
    *
    *
@@ -157,6 +162,7 @@ public interface KeyOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastore.v1.Key.PathElementOrBuilder>
       getPathOrBuilderList();
+
   /**
    *
    *

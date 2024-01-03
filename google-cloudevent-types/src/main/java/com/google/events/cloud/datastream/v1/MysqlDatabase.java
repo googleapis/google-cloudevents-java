@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.MysqlDatabase)
     MysqlDatabaseOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MysqlDatabase.newBuilder() to construct.
   private MysqlDatabase(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object database_ = "";
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.datastream.v1.MysqlTable> mysqlTables_;
+
   /**
    *
    *
@@ -136,6 +140,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.datastream.v1.MysqlTable> getMysqlTablesList() {
     return mysqlTables_;
   }
+
   /**
    *
    *
@@ -150,6 +155,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       getMysqlTablesOrBuilderList() {
     return mysqlTables_;
   }
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
   public int getMysqlTablesCount() {
     return mysqlTables_.size();
   }
+
   /**
    *
    *
@@ -176,6 +183,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.datastream.v1.MysqlTable getMysqlTables(int index) {
     return mysqlTables_.get(index);
   }
+
   /**
    *
    *
@@ -361,6 +369,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -607,6 +616,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object database_ = "";
+
     /**
      *
      *
@@ -629,6 +639,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -651,6 +662,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -672,6 +684,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -689,6 +702,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -745,6 +759,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return mysqlTablesBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -761,6 +776,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return mysqlTablesBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -777,6 +793,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return mysqlTablesBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -800,6 +817,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -820,6 +838,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -842,6 +861,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -865,6 +885,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -885,6 +906,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -905,6 +927,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -925,6 +948,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -944,6 +968,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -963,6 +988,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -976,6 +1002,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         int index) {
       return getMysqlTablesFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -993,6 +1020,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return mysqlTablesBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1010,6 +1038,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(mysqlTables_);
       }
     }
+
     /**
      *
      *
@@ -1023,6 +1052,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       return getMysqlTablesFieldBuilder()
           .addBuilder(com.google.events.cloud.datastream.v1.MysqlTable.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1037,6 +1067,7 @@ public final class MysqlDatabase extends com.google.protobuf.GeneratedMessageV3
       return getMysqlTablesFieldBuilder()
           .addBuilder(index, com.google.events.cloud.datastream.v1.MysqlTable.getDefaultInstance());
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface OracleSourceConfigOrBuilder
    * @return Whether the includeObjects field is set.
    */
   boolean hasIncludeObjects();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface OracleSourceConfigOrBuilder
    * @return The includeObjects.
    */
   com.google.events.cloud.datastream.v1.OracleRdbms getIncludeObjects();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface OracleSourceConfigOrBuilder
    * @return Whether the excludeObjects field is set.
    */
   boolean hasExcludeObjects();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface OracleSourceConfigOrBuilder
    * @return The excludeObjects.
    */
   com.google.events.cloud.datastream.v1.OracleRdbms getExcludeObjects();
+
   /**
    *
    *
@@ -121,6 +125,7 @@ public interface OracleSourceConfigOrBuilder
    * @return Whether the dropLargeObjects field is set.
    */
   boolean hasDropLargeObjects();
+
   /**
    *
    *
@@ -135,6 +140,7 @@ public interface OracleSourceConfigOrBuilder
    * @return The dropLargeObjects.
    */
   com.google.events.cloud.datastream.v1.OracleSourceConfig.DropLargeObjects getDropLargeObjects();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface OracleSourceConfigOrBuilder
    * @return Whether the streamLargeObjects field is set.
    */
   boolean hasStreamLargeObjects();
+
   /**
    *
    *
@@ -178,6 +185,7 @@ public interface OracleSourceConfigOrBuilder
    */
   com.google.events.cloud.datastream.v1.OracleSourceConfig.StreamLargeObjects
       getStreamLargeObjects();
+
   /**
    *
    *
