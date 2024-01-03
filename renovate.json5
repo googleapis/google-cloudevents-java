@@ -35,7 +35,7 @@
     "type: process",
   ],
 
-  "labels": [
+  "addLabels": [
     "automerge",
   ],
 
@@ -54,16 +54,16 @@
     {
       "matchUpdateTypes": ["patch"],
       "extends": ["schedule:monthly"],
-      "labels": ["semver: patch"],
+      "addLabels": ["semver: patch"],
     },
     {
       "matchUpdateTypes": ["minor"],
       "extends": ["schedule:quarterly"],
-      "labels": ["semver: minor"],
+      "addLabels": ["semver: minor"],
     },
     {
       "matchUpdateTypes": ["major"],
-      "labels": ["semver: major"],
+      "addLabels": ["semver: major"],
     },
 
     // Tooling & Runtime behaviors.
