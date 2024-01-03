@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * @return Whether the vertexModel field is set.
    */
   boolean hasVertexModel();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * @return The vertexModel.
    */
   java.lang.String getVertexModel();
+
   /**
    *
    *
@@ -73,6 +75,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * @return The enum numeric value on the wire for sourceType.
    */
   int getSourceTypeValue();
+
   /**
    *
    *
@@ -98,6 +101,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * <code>map&lt;string, string&gt; additional_info = 4;</code>
    */
   int getAdditionalInfoCount();
+
   /**
    *
    *
@@ -109,9 +113,11 @@ public interface CustomProcessorSourceInfoOrBuilder
    * <code>map&lt;string, string&gt; additional_info = 4;</code>
    */
   boolean containsAdditionalInfo(java.lang.String key);
+
   /** Use {@link #getAdditionalInfoMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getAdditionalInfo();
+
   /**
    *
    *
@@ -123,6 +129,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * <code>map&lt;string, string&gt; additional_info = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getAdditionalInfoMap();
+
   /**
    *
    *
@@ -138,6 +145,7 @@ public interface CustomProcessorSourceInfoOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -167,6 +175,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * @return Whether the modelSchema field is set.
    */
   boolean hasModelSchema();
+
   /**
    *
    *
@@ -184,6 +193,7 @@ public interface CustomProcessorSourceInfoOrBuilder
    * @return The modelSchema.
    */
   com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema getModelSchema();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface AnalyzerDefinitionOrBuilder
    * @return The analyzer.
    */
   java.lang.String getAnalyzer();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface AnalyzerDefinitionOrBuilder
    * @return The operator.
    */
   java.lang.String getOperator();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface AnalyzerDefinitionOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.AnalyzerDefinition.StreamInput>
       getInputsList();
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public interface AnalyzerDefinitionOrBuilder
    * </code>
    */
   com.google.events.cloud.visionai.v1.AnalyzerDefinition.StreamInput getInputs(int index);
+
   /**
    *
    *
@@ -111,6 +115,7 @@ public interface AnalyzerDefinitionOrBuilder
    * </code>
    */
   int getInputsCount();
+
   /**
    *
    *
@@ -124,6 +129,7 @@ public interface AnalyzerDefinitionOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.visionai.v1.AnalyzerDefinition.StreamInputOrBuilder>
       getInputsOrBuilderList();
+
   /**
    *
    *
@@ -150,6 +156,7 @@ public interface AnalyzerDefinitionOrBuilder
    * <code>map&lt;string, .google.events.cloud.visionai.v1.AttributeValue&gt; attrs = 4;</code>
    */
   int getAttrsCount();
+
   /**
    *
    *
@@ -163,9 +170,11 @@ public interface AnalyzerDefinitionOrBuilder
    * <code>map&lt;string, .google.events.cloud.visionai.v1.AttributeValue&gt; attrs = 4;</code>
    */
   boolean containsAttrs(java.lang.String key);
+
   /** Use {@link #getAttrsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.visionai.v1.AttributeValue> getAttrs();
+
   /**
    *
    *
@@ -179,6 +188,7 @@ public interface AnalyzerDefinitionOrBuilder
    * <code>map&lt;string, .google.events.cloud.visionai.v1.AttributeValue&gt; attrs = 4;</code>
    */
   java.util.Map<java.lang.String, com.google.events.cloud.visionai.v1.AttributeValue> getAttrsMap();
+
   /**
    *
    *
@@ -196,6 +206,7 @@ public interface AnalyzerDefinitionOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.visionai.v1.AttributeValue defaultValue);
+
   /**
    *
    *
@@ -223,6 +234,7 @@ public interface AnalyzerDefinitionOrBuilder
    * @return Whether the debugOptions field is set.
    */
   boolean hasDebugOptions();
+
   /**
    *
    *
@@ -236,6 +248,7 @@ public interface AnalyzerDefinitionOrBuilder
    * @return The debugOptions.
    */
   com.google.events.cloud.visionai.v1.AnalyzerDefinition.DebugOptions getDebugOptions();
+
   /**
    *
    *

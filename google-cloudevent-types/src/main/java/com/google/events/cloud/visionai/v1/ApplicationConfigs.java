@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ApplicationConfigs)
     ApplicationConfigsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ApplicationConfigs.newBuilder() to construct.
   private ApplicationConfigs(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.visionai.v1.Node> nodes_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
   public java.util.List<com.google.events.cloud.visionai.v1.Node> getNodesList() {
     return nodes_;
   }
+
   /**
    *
    *
@@ -98,6 +101,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       getNodesOrBuilderList() {
     return nodes_;
   }
+
   /**
    *
    *
@@ -111,6 +115,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
   public int getNodesCount() {
     return nodes_.size();
   }
+
   /**
    *
    *
@@ -124,6 +129,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
   public com.google.events.cloud.visionai.v1.Node getNodes(int index) {
     return nodes_.get(index);
   }
+
   /**
    *
    *
@@ -300,6 +306,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -561,6 +568,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
         return nodesBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -577,6 +585,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
         return nodesBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -593,6 +602,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
         return nodesBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -615,6 +625,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -635,6 +646,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -657,6 +669,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -679,6 +692,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -698,6 +712,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -718,6 +733,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -738,6 +754,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -757,6 +774,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -776,6 +794,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -788,6 +807,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
     public com.google.events.cloud.visionai.v1.Node.Builder getNodesBuilder(int index) {
       return getNodesFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -804,6 +824,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
         return nodesBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -821,6 +842,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
         return java.util.Collections.unmodifiableList(nodes_);
       }
     }
+
     /**
      *
      *
@@ -834,6 +856,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       return getNodesFieldBuilder()
           .addBuilder(com.google.events.cloud.visionai.v1.Node.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -847,6 +870,7 @@ public final class ApplicationConfigs extends com.google.protobuf.GeneratedMessa
       return getNodesFieldBuilder()
           .addBuilder(index, com.google.events.cloud.visionai.v1.Node.getDefaultInstance());
     }
+
     /**
      *
      *

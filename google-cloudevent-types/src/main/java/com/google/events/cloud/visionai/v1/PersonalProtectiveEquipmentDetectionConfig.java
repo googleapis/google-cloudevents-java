@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfig)
     PersonalProtectiveEquipmentDetectionConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use PersonalProtectiveEquipmentDetectionConfig.newBuilder() to construct.
   private PersonalProtectiveEquipmentDetectionConfig(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -70,6 +71,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
 
   public static final int ENABLE_FACE_COVERAGE_DETECTION_FIELD_NUMBER = 1;
   private boolean enableFaceCoverageDetection_ = false;
+
   /**
    *
    *
@@ -88,6 +90,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
 
   public static final int ENABLE_HEAD_COVERAGE_DETECTION_FIELD_NUMBER = 2;
   private boolean enableHeadCoverageDetection_ = false;
+
   /**
    *
    *
@@ -106,6 +109,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
 
   public static final int ENABLE_HANDS_COVERAGE_DETECTION_FIELD_NUMBER = 3;
   private boolean enableHandsCoverageDetection_ = false;
+
   /**
    *
    *
@@ -312,6 +316,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -533,6 +538,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     private int bitField0_;
 
     private boolean enableFaceCoverageDetection_;
+
     /**
      *
      *
@@ -548,6 +554,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     public boolean getEnableFaceCoverageDetection() {
       return enableFaceCoverageDetection_;
     }
+
     /**
      *
      *
@@ -567,6 +574,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -586,6 +594,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     }
 
     private boolean enableHeadCoverageDetection_;
+
     /**
      *
      *
@@ -601,6 +610,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     public boolean getEnableHeadCoverageDetection() {
       return enableHeadCoverageDetection_;
     }
+
     /**
      *
      *
@@ -620,6 +630,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -639,6 +650,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     }
 
     private boolean enableHandsCoverageDetection_;
+
     /**
      *
      *
@@ -654,6 +666,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
     public boolean getEnableHandsCoverageDetection() {
       return enableHandsCoverageDetection_;
     }
+
     /**
      *
      *
@@ -673,6 +686,7 @@ public final class PersonalProtectiveEquipmentDetectionConfig
       onChanged();
       return this;
     }
+
     /**
      *
      *

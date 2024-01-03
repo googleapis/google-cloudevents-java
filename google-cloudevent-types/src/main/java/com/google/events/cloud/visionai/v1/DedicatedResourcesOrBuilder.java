@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DedicatedResourcesOrBuilder
    * @return Whether the machineSpec field is set.
    */
   boolean hasMachineSpec();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface DedicatedResourcesOrBuilder
    * @return The machineSpec.
    */
   com.google.events.cloud.visionai.v1.MachineSpec getMachineSpec();
+
   /**
    *
    *
@@ -136,6 +138,7 @@ public interface DedicatedResourcesOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.AutoscalingMetricSpec>
       getAutoscalingMetricSpecsList();
+
   /**
    *
    *
@@ -167,6 +170,7 @@ public interface DedicatedResourcesOrBuilder
    * </code>
    */
   com.google.events.cloud.visionai.v1.AutoscalingMetricSpec getAutoscalingMetricSpecs(int index);
+
   /**
    *
    *
@@ -198,6 +202,7 @@ public interface DedicatedResourcesOrBuilder
    * </code>
    */
   int getAutoscalingMetricSpecsCount();
+
   /**
    *
    *
@@ -230,6 +235,7 @@ public interface DedicatedResourcesOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.visionai.v1.AutoscalingMetricSpecOrBuilder>
       getAutoscalingMetricSpecsOrBuilderList();
+
   /**
    *
    *

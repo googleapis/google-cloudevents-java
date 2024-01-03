@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,6 +49,7 @@ public interface NodeOrBuilder
    * @return Whether the outputAllOutputChannelsToStream field is set.
    */
   boolean hasOutputAllOutputChannelsToStream();
+
   /**
    *
    *
@@ -88,6 +89,7 @@ public interface NodeOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -113,6 +115,7 @@ public interface NodeOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -138,6 +141,7 @@ public interface NodeOrBuilder
    * @return Whether the nodeConfig field is set.
    */
   boolean hasNodeConfig();
+
   /**
    *
    *
@@ -150,6 +154,7 @@ public interface NodeOrBuilder
    * @return The nodeConfig.
    */
   com.google.events.cloud.visionai.v1.ProcessorConfig getNodeConfig();
+
   /**
    *
    *
@@ -173,6 +178,7 @@ public interface NodeOrBuilder
    * @return The processor.
    */
   java.lang.String getProcessor();
+
   /**
    *
    *
@@ -198,6 +204,7 @@ public interface NodeOrBuilder
    * <code>repeated .google.events.cloud.visionai.v1.Node.InputEdge parents = 5;</code>
    */
   java.util.List<com.google.events.cloud.visionai.v1.Node.InputEdge> getParentsList();
+
   /**
    *
    *
@@ -210,6 +217,7 @@ public interface NodeOrBuilder
    * <code>repeated .google.events.cloud.visionai.v1.Node.InputEdge parents = 5;</code>
    */
   com.google.events.cloud.visionai.v1.Node.InputEdge getParents(int index);
+
   /**
    *
    *
@@ -222,6 +230,7 @@ public interface NodeOrBuilder
    * <code>repeated .google.events.cloud.visionai.v1.Node.InputEdge parents = 5;</code>
    */
   int getParentsCount();
+
   /**
    *
    *
@@ -235,6 +244,7 @@ public interface NodeOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.visionai.v1.Node.InputEdgeOrBuilder>
       getParentsOrBuilderList();
+
   /**
    *
    *

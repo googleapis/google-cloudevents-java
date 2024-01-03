@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface BigQueryConfigOrBuilder
    * @return The table.
    */
   java.lang.String getTable();
+
   /**
    *
    *
@@ -85,6 +86,7 @@ public interface BigQueryConfigOrBuilder
    * <code>map&lt;string, string&gt; cloud_function_mapping = 2;</code>
    */
   int getCloudFunctionMappingCount();
+
   /**
    *
    *
@@ -122,9 +124,11 @@ public interface BigQueryConfigOrBuilder
    * <code>map&lt;string, string&gt; cloud_function_mapping = 2;</code>
    */
   boolean containsCloudFunctionMapping(java.lang.String key);
+
   /** Use {@link #getCloudFunctionMappingMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getCloudFunctionMapping();
+
   /**
    *
    *
@@ -162,6 +166,7 @@ public interface BigQueryConfigOrBuilder
    * <code>map&lt;string, string&gt; cloud_function_mapping = 2;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getCloudFunctionMappingMap();
+
   /**
    *
    *
@@ -203,6 +208,7 @@ public interface BigQueryConfigOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *

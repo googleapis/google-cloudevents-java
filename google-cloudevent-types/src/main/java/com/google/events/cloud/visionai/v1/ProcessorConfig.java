@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorConfig)
     ProcessorConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ProcessorConfig.newBuilder() to construct.
   private ProcessorConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -90,6 +91,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     private ProcessorConfigCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -143,6 +145,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int VIDEO_STREAM_INPUT_CONFIG_FIELD_NUMBER = 9;
+
   /**
    *
    *
@@ -159,6 +162,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasVideoStreamInputConfig() {
     return processorConfigCase_ == 9;
   }
+
   /**
    *
    *
@@ -178,6 +182,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.VideoStreamInputConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -198,6 +203,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int AI_ENABLED_DEVICES_INPUT_CONFIG_FIELD_NUMBER = 20;
+
   /**
    *
    *
@@ -215,6 +221,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasAiEnabledDevicesInputConfig() {
     return processorConfigCase_ == 20;
   }
+
   /**
    *
    *
@@ -236,6 +243,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -257,6 +265,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int MEDIA_WAREHOUSE_CONFIG_FIELD_NUMBER = 10;
+
   /**
    *
    *
@@ -272,6 +281,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasMediaWarehouseConfig() {
     return processorConfigCase_ == 10;
   }
+
   /**
    *
    *
@@ -290,6 +300,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.MediaWarehouseConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -309,6 +320,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int PERSON_BLUR_CONFIG_FIELD_NUMBER = 11;
+
   /**
    *
    *
@@ -324,6 +336,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasPersonBlurConfig() {
     return processorConfigCase_ == 11;
   }
+
   /**
    *
    *
@@ -342,6 +355,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.PersonBlurConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -361,6 +375,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int OCCUPANCY_COUNT_CONFIG_FIELD_NUMBER = 12;
+
   /**
    *
    *
@@ -376,6 +391,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasOccupancyCountConfig() {
     return processorConfigCase_ == 12;
   }
+
   /**
    *
    *
@@ -394,6 +410,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.OccupancyCountConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -413,6 +430,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int PERSON_VEHICLE_DETECTION_CONFIG_FIELD_NUMBER = 15;
+
   /**
    *
    *
@@ -430,6 +448,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasPersonVehicleDetectionConfig() {
     return processorConfigCase_ == 15;
   }
+
   /**
    *
    *
@@ -451,6 +470,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.PersonVehicleDetectionConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -472,6 +492,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int VERTEX_AUTOML_VISION_CONFIG_FIELD_NUMBER = 13;
+
   /**
    *
    *
@@ -489,6 +510,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasVertexAutomlVisionConfig() {
     return processorConfigCase_ == 13;
   }
+
   /**
    *
    *
@@ -510,6 +532,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -531,6 +554,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int VERTEX_AUTOML_VIDEO_CONFIG_FIELD_NUMBER = 14;
+
   /**
    *
    *
@@ -547,6 +571,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasVertexAutomlVideoConfig() {
     return processorConfigCase_ == 14;
   }
+
   /**
    *
    *
@@ -566,6 +591,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -586,6 +612,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int VERTEX_CUSTOM_CONFIG_FIELD_NUMBER = 17;
+
   /**
    *
    *
@@ -601,6 +628,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasVertexCustomConfig() {
     return processorConfigCase_ == 17;
   }
+
   /**
    *
    *
@@ -619,6 +647,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.VertexCustomConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -638,6 +667,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int GENERAL_OBJECT_DETECTION_CONFIG_FIELD_NUMBER = 18;
+
   /**
    *
    *
@@ -655,6 +685,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasGeneralObjectDetectionConfig() {
     return processorConfigCase_ == 18;
   }
+
   /**
    *
    *
@@ -676,6 +707,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.GeneralObjectDetectionConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -697,6 +729,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int BIG_QUERY_CONFIG_FIELD_NUMBER = 19;
+
   /**
    *
    *
@@ -712,6 +745,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasBigQueryConfig() {
     return processorConfigCase_ == 19;
   }
+
   /**
    *
    *
@@ -730,6 +764,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     }
     return com.google.events.cloud.visionai.v1.BigQueryConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -748,6 +783,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   }
 
   public static final int PERSONAL_PROTECTIVE_EQUIPMENT_DETECTION_CONFIG_FIELD_NUMBER = 22;
+
   /**
    *
    *
@@ -765,6 +801,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
   public boolean hasPersonalProtectiveEquipmentDetectionConfig() {
     return processorConfigCase_ == 22;
   }
+
   /**
    *
    *
@@ -788,6 +825,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     return com.google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfig
         .getDefaultInstance();
   }
+
   /**
    *
    *
@@ -1173,6 +1211,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1592,6 +1631,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.VideoStreamInputConfig.Builder,
             com.google.events.cloud.visionai.v1.VideoStreamInputConfigOrBuilder>
         videoStreamInputConfigBuilder_;
+
     /**
      *
      *
@@ -1608,6 +1648,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasVideoStreamInputConfig() {
       return processorConfigCase_ == 9;
     }
+
     /**
      *
      *
@@ -1634,6 +1675,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VideoStreamInputConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1658,6 +1700,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 9;
       return this;
     }
+
     /**
      *
      *
@@ -1679,6 +1722,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 9;
       return this;
     }
+
     /**
      *
      *
@@ -1715,6 +1759,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 9;
       return this;
     }
+
     /**
      *
      *
@@ -1741,6 +1786,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -1755,6 +1801,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getVideoStreamInputConfigBuilder() {
       return getVideoStreamInputConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1777,6 +1824,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VideoStreamInputConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1817,6 +1865,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig.Builder,
             com.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfigOrBuilder>
         aiEnabledDevicesInputConfigBuilder_;
+
     /**
      *
      *
@@ -1834,6 +1883,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasAiEnabledDevicesInputConfig() {
       return processorConfigCase_ == 20;
     }
+
     /**
      *
      *
@@ -1862,6 +1912,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1887,6 +1938,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 20;
       return this;
     }
+
     /**
      *
      *
@@ -1909,6 +1961,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 20;
       return this;
     }
+
     /**
      *
      *
@@ -1947,6 +2000,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 20;
       return this;
     }
+
     /**
      *
      *
@@ -1974,6 +2028,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -1989,6 +2044,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getAiEnabledDevicesInputConfigBuilder() {
       return getAiEnabledDevicesInputConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2012,6 +2068,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.AIEnabledDevicesInputConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2053,6 +2110,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.MediaWarehouseConfig.Builder,
             com.google.events.cloud.visionai.v1.MediaWarehouseConfigOrBuilder>
         mediaWarehouseConfigBuilder_;
+
     /**
      *
      *
@@ -2069,6 +2127,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasMediaWarehouseConfig() {
       return processorConfigCase_ == 10;
     }
+
     /**
      *
      *
@@ -2095,6 +2154,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.MediaWarehouseConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2119,6 +2179,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 10;
       return this;
     }
+
     /**
      *
      *
@@ -2140,6 +2201,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 10;
       return this;
     }
+
     /**
      *
      *
@@ -2175,6 +2237,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 10;
       return this;
     }
+
     /**
      *
      *
@@ -2201,6 +2264,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -2215,6 +2279,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getMediaWarehouseConfigBuilder() {
       return getMediaWarehouseConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2237,6 +2302,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.MediaWarehouseConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2277,6 +2343,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.PersonBlurConfig.Builder,
             com.google.events.cloud.visionai.v1.PersonBlurConfigOrBuilder>
         personBlurConfigBuilder_;
+
     /**
      *
      *
@@ -2292,6 +2359,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasPersonBlurConfig() {
       return processorConfigCase_ == 11;
     }
+
     /**
      *
      *
@@ -2317,6 +2385,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.PersonBlurConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2339,6 +2408,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 11;
       return this;
     }
+
     /**
      *
      *
@@ -2359,6 +2429,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 11;
       return this;
     }
+
     /**
      *
      *
@@ -2393,6 +2464,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 11;
       return this;
     }
+
     /**
      *
      *
@@ -2418,6 +2490,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -2431,6 +2504,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getPersonBlurConfigBuilder() {
       return getPersonBlurConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2452,6 +2526,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.PersonBlurConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2491,6 +2566,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.OccupancyCountConfig.Builder,
             com.google.events.cloud.visionai.v1.OccupancyCountConfigOrBuilder>
         occupancyCountConfigBuilder_;
+
     /**
      *
      *
@@ -2507,6 +2583,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasOccupancyCountConfig() {
       return processorConfigCase_ == 12;
     }
+
     /**
      *
      *
@@ -2533,6 +2610,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.OccupancyCountConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2557,6 +2635,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 12;
       return this;
     }
+
     /**
      *
      *
@@ -2578,6 +2657,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 12;
       return this;
     }
+
     /**
      *
      *
@@ -2613,6 +2693,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 12;
       return this;
     }
+
     /**
      *
      *
@@ -2639,6 +2720,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -2653,6 +2735,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getOccupancyCountConfigBuilder() {
       return getOccupancyCountConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2675,6 +2758,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.OccupancyCountConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2715,6 +2799,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.PersonVehicleDetectionConfig.Builder,
             com.google.events.cloud.visionai.v1.PersonVehicleDetectionConfigOrBuilder>
         personVehicleDetectionConfigBuilder_;
+
     /**
      *
      *
@@ -2732,6 +2817,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasPersonVehicleDetectionConfig() {
       return processorConfigCase_ == 15;
     }
+
     /**
      *
      *
@@ -2763,6 +2849,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2788,6 +2875,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 15;
       return this;
     }
+
     /**
      *
      *
@@ -2810,6 +2898,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 15;
       return this;
     }
+
     /**
      *
      *
@@ -2848,6 +2937,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 15;
       return this;
     }
+
     /**
      *
      *
@@ -2875,6 +2965,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -2890,6 +2981,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getPersonVehicleDetectionConfigBuilder() {
       return getPersonVehicleDetectionConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2915,6 +3007,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -2956,6 +3049,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig.Builder,
             com.google.events.cloud.visionai.v1.VertexAutoMLVisionConfigOrBuilder>
         vertexAutomlVisionConfigBuilder_;
+
     /**
      *
      *
@@ -2973,6 +3067,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasVertexAutomlVisionConfig() {
       return processorConfigCase_ == 13;
     }
+
     /**
      *
      *
@@ -3001,6 +3096,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3026,6 +3122,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 13;
       return this;
     }
+
     /**
      *
      *
@@ -3048,6 +3145,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 13;
       return this;
     }
+
     /**
      *
      *
@@ -3086,6 +3184,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 13;
       return this;
     }
+
     /**
      *
      *
@@ -3113,6 +3212,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -3128,6 +3228,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getVertexAutomlVisionConfigBuilder() {
       return getVertexAutomlVisionConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3151,6 +3252,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexAutoMLVisionConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3192,6 +3294,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig.Builder,
             com.google.events.cloud.visionai.v1.VertexAutoMLVideoConfigOrBuilder>
         vertexAutomlVideoConfigBuilder_;
+
     /**
      *
      *
@@ -3209,6 +3312,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasVertexAutomlVideoConfig() {
       return processorConfigCase_ == 14;
     }
+
     /**
      *
      *
@@ -3237,6 +3341,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3262,6 +3367,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 14;
       return this;
     }
+
     /**
      *
      *
@@ -3284,6 +3390,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 14;
       return this;
     }
+
     /**
      *
      *
@@ -3322,6 +3429,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 14;
       return this;
     }
+
     /**
      *
      *
@@ -3349,6 +3457,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -3364,6 +3473,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getVertexAutomlVideoConfigBuilder() {
       return getVertexAutomlVideoConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3387,6 +3497,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexAutoMLVideoConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3428,6 +3539,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.VertexCustomConfig.Builder,
             com.google.events.cloud.visionai.v1.VertexCustomConfigOrBuilder>
         vertexCustomConfigBuilder_;
+
     /**
      *
      *
@@ -3443,6 +3555,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasVertexCustomConfig() {
       return processorConfigCase_ == 17;
     }
+
     /**
      *
      *
@@ -3468,6 +3581,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexCustomConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3491,6 +3605,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 17;
       return this;
     }
+
     /**
      *
      *
@@ -3511,6 +3626,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 17;
       return this;
     }
+
     /**
      *
      *
@@ -3545,6 +3661,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 17;
       return this;
     }
+
     /**
      *
      *
@@ -3570,6 +3687,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -3583,6 +3701,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getVertexCustomConfigBuilder() {
       return getVertexCustomConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3604,6 +3723,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.VertexCustomConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3643,6 +3763,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.GeneralObjectDetectionConfig.Builder,
             com.google.events.cloud.visionai.v1.GeneralObjectDetectionConfigOrBuilder>
         generalObjectDetectionConfigBuilder_;
+
     /**
      *
      *
@@ -3660,6 +3781,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasGeneralObjectDetectionConfig() {
       return processorConfigCase_ == 18;
     }
+
     /**
      *
      *
@@ -3691,6 +3813,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3716,6 +3839,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 18;
       return this;
     }
+
     /**
      *
      *
@@ -3738,6 +3862,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 18;
       return this;
     }
+
     /**
      *
      *
@@ -3776,6 +3901,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 18;
       return this;
     }
+
     /**
      *
      *
@@ -3803,6 +3929,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -3818,6 +3945,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getGeneralObjectDetectionConfigBuilder() {
       return getGeneralObjectDetectionConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3843,6 +3971,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3884,6 +4013,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.BigQueryConfig.Builder,
             com.google.events.cloud.visionai.v1.BigQueryConfigOrBuilder>
         bigQueryConfigBuilder_;
+
     /**
      *
      *
@@ -3899,6 +4029,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasBigQueryConfig() {
       return processorConfigCase_ == 19;
     }
+
     /**
      *
      *
@@ -3924,6 +4055,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.BigQueryConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -3946,6 +4078,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 19;
       return this;
     }
+
     /**
      *
      *
@@ -3966,6 +4099,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 19;
       return this;
     }
+
     /**
      *
      *
@@ -3999,6 +4133,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 19;
       return this;
     }
+
     /**
      *
      *
@@ -4024,6 +4159,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -4036,6 +4172,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public com.google.events.cloud.visionai.v1.BigQueryConfig.Builder getBigQueryConfigBuilder() {
       return getBigQueryConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4057,6 +4194,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         return com.google.events.cloud.visionai.v1.BigQueryConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -4096,6 +4234,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfig.Builder,
             com.google.events.cloud.visionai.v1.PersonalProtectiveEquipmentDetectionConfigOrBuilder>
         personalProtectiveEquipmentDetectionConfigBuilder_;
+
     /**
      *
      *
@@ -4113,6 +4252,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
     public boolean hasPersonalProtectiveEquipmentDetectionConfig() {
       return processorConfigCase_ == 22;
     }
+
     /**
      *
      *
@@ -4144,6 +4284,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -4169,6 +4310,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 22;
       return this;
     }
+
     /**
      *
      *
@@ -4192,6 +4334,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 22;
       return this;
     }
+
     /**
      *
      *
@@ -4232,6 +4375,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       processorConfigCase_ = 22;
       return this;
     }
+
     /**
      *
      *
@@ -4259,6 +4403,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -4274,6 +4419,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
         getPersonalProtectiveEquipmentDetectionConfigBuilder() {
       return getPersonalProtectiveEquipmentDetectionConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4300,6 +4446,7 @@ public final class ProcessorConfig extends com.google.protobuf.GeneratedMessageV
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *

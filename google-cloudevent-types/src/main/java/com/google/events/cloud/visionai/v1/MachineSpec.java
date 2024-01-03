@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.MachineSpec)
     MachineSpecOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MachineSpec.newBuilder() to construct.
   private MachineSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object machineType_ = "";
+
   /**
    *
    *
@@ -102,6 +104,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -135,6 +138,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ACCELERATOR_TYPE_FIELD_NUMBER = 2;
   private int acceleratorType_ = 0;
+
   /**
    *
    *
@@ -152,6 +156,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
   public int getAcceleratorTypeValue() {
     return acceleratorType_;
   }
+
   /**
    *
    *
@@ -176,6 +181,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ACCELERATOR_COUNT_FIELD_NUMBER = 3;
   private int acceleratorCount_ = 0;
+
   /**
    *
    *
@@ -373,6 +379,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -583,6 +590,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object machineType_ = "";
+
     /**
      *
      *
@@ -612,6 +620,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -641,6 +650,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -669,6 +679,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -693,6 +704,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -724,6 +736,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int acceleratorType_ = 0;
+
     /**
      *
      *
@@ -741,6 +754,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     public int getAcceleratorTypeValue() {
       return acceleratorType_;
     }
+
     /**
      *
      *
@@ -761,6 +775,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -782,6 +797,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.visionai.v1.AcceleratorType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -805,6 +821,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -826,6 +843,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int acceleratorCount_;
+
     /**
      *
      *
@@ -841,6 +859,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
     public int getAcceleratorCount() {
       return acceleratorCount_;
     }
+
     /**
      *
      *
@@ -860,6 +879,7 @@ public final class MachineSpec extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

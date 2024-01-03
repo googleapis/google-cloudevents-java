@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface StreamWithAnnotationOrBuilder
    * @return The stream.
    */
   java.lang.String getStream();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface StreamWithAnnotationOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.StreamAnnotation>
       getApplicationAnnotationsList();
+
   /**
    *
    *
@@ -71,6 +73,7 @@ public interface StreamWithAnnotationOrBuilder
    * </code>
    */
   com.google.events.cloud.visionai.v1.StreamAnnotation getApplicationAnnotations(int index);
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface StreamWithAnnotationOrBuilder
    * </code>
    */
   int getApplicationAnnotationsCount();
+
   /**
    *
    *
@@ -94,6 +98,7 @@ public interface StreamWithAnnotationOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.visionai.v1.StreamAnnotationOrBuilder>
       getApplicationAnnotationsOrBuilderList();
+
   /**
    *
    *
@@ -127,6 +132,7 @@ public interface StreamWithAnnotationOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.StreamWithAnnotation.NodeAnnotation>
       getNodeAnnotationsList();
+
   /**
    *
    *
@@ -147,6 +153,7 @@ public interface StreamWithAnnotationOrBuilder
    */
   com.google.events.cloud.visionai.v1.StreamWithAnnotation.NodeAnnotation getNodeAnnotations(
       int index);
+
   /**
    *
    *
@@ -166,6 +173,7 @@ public interface StreamWithAnnotationOrBuilder
    * </code>
    */
   int getNodeAnnotationsCount();
+
   /**
    *
    *
@@ -188,6 +196,7 @@ public interface StreamWithAnnotationOrBuilder
           ? extends
               com.google.events.cloud.visionai.v1.StreamWithAnnotation.NodeAnnotationOrBuilder>
       getNodeAnnotationsOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,12 +29,14 @@ public interface VideoStreamInputConfigOrBuilder
    * @return A list containing the streams.
    */
   java.util.List<java.lang.String> getStreamsList();
+
   /**
    * <code>repeated string streams = 1;</code>
    *
    * @return The count of streams.
    */
   int getStreamsCount();
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -42,6 +44,7 @@ public interface VideoStreamInputConfigOrBuilder
    * @return The streams at the given index.
    */
   java.lang.String getStreams(int index);
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -57,18 +60,21 @@ public interface VideoStreamInputConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.StreamWithAnnotation>
       getStreamsWithAnnotationList();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
    * </code>
    */
   com.google.events.cloud.visionai.v1.StreamWithAnnotation getStreamsWithAnnotation(int index);
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
    * </code>
    */
   int getStreamsWithAnnotationCount();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -76,6 +82,7 @@ public interface VideoStreamInputConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.visionai.v1.StreamWithAnnotationOrBuilder>
       getStreamsWithAnnotationOrBuilderList();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;

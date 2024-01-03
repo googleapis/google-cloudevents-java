@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ProcessorOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ProcessorOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface ProcessorOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface ProcessorOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface ProcessorOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public interface ProcessorOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -138,9 +144,11 @@ public interface ProcessorOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -151,6 +159,7 @@ public interface ProcessorOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -165,6 +174,7 @@ public interface ProcessorOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -188,6 +198,7 @@ public interface ProcessorOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -213,6 +224,7 @@ public interface ProcessorOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -238,6 +250,7 @@ public interface ProcessorOrBuilder
    * @return The enum numeric value on the wire for processorType.
    */
   int getProcessorTypeValue();
+
   /**
    *
    *
@@ -263,6 +276,7 @@ public interface ProcessorOrBuilder
    * @return The enum numeric value on the wire for modelType.
    */
   int getModelTypeValue();
+
   /**
    *
    *
@@ -290,6 +304,7 @@ public interface ProcessorOrBuilder
    * @return Whether the customProcessorSourceInfo field is set.
    */
   boolean hasCustomProcessorSourceInfo();
+
   /**
    *
    *
@@ -304,6 +319,7 @@ public interface ProcessorOrBuilder
    * @return The customProcessorSourceInfo.
    */
   com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo getCustomProcessorSourceInfo();
+
   /**
    *
    *
@@ -330,6 +346,7 @@ public interface ProcessorOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -357,6 +374,7 @@ public interface ProcessorOrBuilder
    * @return Whether the processorIoSpec field is set.
    */
   boolean hasProcessorIoSpec();
+
   /**
    *
    *
@@ -371,6 +389,7 @@ public interface ProcessorOrBuilder
    * @return The processorIoSpec.
    */
   com.google.events.cloud.visionai.v1.ProcessorIOSpec getProcessorIoSpec();
+
   /**
    *
    *
@@ -397,6 +416,7 @@ public interface ProcessorOrBuilder
    * @return The configurationTypeurl.
    */
   java.lang.String getConfigurationTypeurl();
+
   /**
    *
    *
@@ -420,6 +440,7 @@ public interface ProcessorOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.StreamAnnotationType>
       getSupportedAnnotationTypesList();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamAnnotationType supported_annotation_types = 15;
@@ -428,6 +449,7 @@ public interface ProcessorOrBuilder
    * @return The count of supportedAnnotationTypes.
    */
   int getSupportedAnnotationTypesCount();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamAnnotationType supported_annotation_types = 15;
@@ -437,6 +459,7 @@ public interface ProcessorOrBuilder
    * @return The supportedAnnotationTypes at the given index.
    */
   com.google.events.cloud.visionai.v1.StreamAnnotationType getSupportedAnnotationTypes(int index);
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamAnnotationType supported_annotation_types = 15;
@@ -445,6 +468,7 @@ public interface ProcessorOrBuilder
    * @return A list containing the enum numeric values on the wire for supportedAnnotationTypes.
    */
   java.util.List<java.lang.Integer> getSupportedAnnotationTypesValueList();
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamAnnotationType supported_annotation_types = 15;

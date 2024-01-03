@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -81,6 +81,7 @@ public enum DataType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>DATA_TYPE_UNSPECIFIED = 0;</code>
    */
   public static final int DATA_TYPE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -91,6 +92,7 @@ public enum DataType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VIDEO = 1;</code>
    */
   public static final int VIDEO_VALUE = 1;
+
   /**
    *
    *
@@ -101,6 +103,7 @@ public enum DataType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>IMAGE = 3;</code>
    */
   public static final int IMAGE_VALUE = 3;
+
   /**
    *
    *

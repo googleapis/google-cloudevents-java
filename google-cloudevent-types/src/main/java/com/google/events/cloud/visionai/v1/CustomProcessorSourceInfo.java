@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.CustomProcessorSourceInfo)
     CustomProcessorSourceInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CustomProcessorSourceInfo.newBuilder() to construct.
   private CustomProcessorSourceInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -141,6 +142,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * <code>SOURCE_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int SOURCE_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -151,6 +153,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * <code>VERTEX_AUTOML = 1;</code>
      */
     public static final int VERTEX_AUTOML_VALUE = 1;
+
     /**
      *
      *
@@ -161,6 +164,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * <code>VERTEX_CUSTOM = 2;</code>
      */
     public static final int VERTEX_CUSTOM_VALUE = 2;
+
     /**
      *
      *
@@ -277,6 +281,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return Whether the instancesSchema field is set.
      */
     boolean hasInstancesSchema();
+
     /**
      *
      *
@@ -290,6 +295,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return The instancesSchema.
      */
     com.google.events.cloud.visionai.v1.GcsSource getInstancesSchema();
+
     /**
      *
      *
@@ -315,6 +321,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return Whether the parametersSchema field is set.
      */
     boolean hasParametersSchema();
+
     /**
      *
      *
@@ -328,6 +335,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return The parametersSchema.
      */
     com.google.events.cloud.visionai.v1.GcsSource getParametersSchema();
+
     /**
      *
      *
@@ -353,6 +361,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return Whether the predictionsSchema field is set.
      */
     boolean hasPredictionsSchema();
+
     /**
      *
      *
@@ -366,6 +375,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      * @return The predictionsSchema.
      */
     com.google.events.cloud.visionai.v1.GcsSource getPredictionsSchema();
+
     /**
      *
      *
@@ -378,6 +388,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
      */
     com.google.events.cloud.visionai.v1.GcsSourceOrBuilder getPredictionsSchemaOrBuilder();
   }
+
   /**
    *
    *
@@ -393,6 +404,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema)
       ModelSchemaOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use ModelSchema.newBuilder() to construct.
     private ModelSchema(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -429,6 +441,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
 
     public static final int INSTANCES_SCHEMA_FIELD_NUMBER = 1;
     private com.google.events.cloud.visionai.v1.GcsSource instancesSchema_;
+
     /**
      *
      *
@@ -445,6 +458,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public boolean hasInstancesSchema() {
       return instancesSchema_ != null;
     }
+
     /**
      *
      *
@@ -463,6 +477,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           ? com.google.events.cloud.visionai.v1.GcsSource.getDefaultInstance()
           : instancesSchema_;
     }
+
     /**
      *
      *
@@ -482,6 +497,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
 
     public static final int PARAMETERS_SCHEMA_FIELD_NUMBER = 2;
     private com.google.events.cloud.visionai.v1.GcsSource parametersSchema_;
+
     /**
      *
      *
@@ -498,6 +514,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public boolean hasParametersSchema() {
       return parametersSchema_ != null;
     }
+
     /**
      *
      *
@@ -516,6 +533,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           ? com.google.events.cloud.visionai.v1.GcsSource.getDefaultInstance()
           : parametersSchema_;
     }
+
     /**
      *
      *
@@ -535,6 +553,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
 
     public static final int PREDICTIONS_SCHEMA_FIELD_NUMBER = 3;
     private com.google.events.cloud.visionai.v1.GcsSource predictionsSchema_;
+
     /**
      *
      *
@@ -551,6 +570,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public boolean hasPredictionsSchema() {
       return predictionsSchema_ != null;
     }
+
     /**
      *
      *
@@ -569,6 +589,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           ? com.google.events.cloud.visionai.v1.GcsSource.getDefaultInstance()
           : predictionsSchema_;
     }
+
     /**
      *
      *
@@ -787,6 +808,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -1037,6 +1059,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               com.google.events.cloud.visionai.v1.GcsSource.Builder,
               com.google.events.cloud.visionai.v1.GcsSourceOrBuilder>
           instancesSchemaBuilder_;
+
       /**
        *
        *
@@ -1052,6 +1075,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       public boolean hasInstancesSchema() {
         return ((bitField0_ & 0x00000001) != 0);
       }
+
       /**
        *
        *
@@ -1073,6 +1097,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           return instancesSchemaBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -1096,6 +1121,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1117,6 +1143,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1144,6 +1171,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1164,6 +1192,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1179,6 +1208,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return getInstancesSchemaFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -1198,6 +1228,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               : instancesSchema_;
         }
       }
+
       /**
        *
        *
@@ -1231,6 +1262,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               com.google.events.cloud.visionai.v1.GcsSource.Builder,
               com.google.events.cloud.visionai.v1.GcsSourceOrBuilder>
           parametersSchemaBuilder_;
+
       /**
        *
        *
@@ -1246,6 +1278,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       public boolean hasParametersSchema() {
         return ((bitField0_ & 0x00000002) != 0);
       }
+
       /**
        *
        *
@@ -1267,6 +1300,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           return parametersSchemaBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -1290,6 +1324,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1311,6 +1346,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1338,6 +1374,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1358,6 +1395,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1373,6 +1411,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return getParametersSchemaFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -1392,6 +1431,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               : parametersSchema_;
         }
       }
+
       /**
        *
        *
@@ -1425,6 +1465,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               com.google.events.cloud.visionai.v1.GcsSource.Builder,
               com.google.events.cloud.visionai.v1.GcsSourceOrBuilder>
           predictionsSchemaBuilder_;
+
       /**
        *
        *
@@ -1440,6 +1481,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       public boolean hasPredictionsSchema() {
         return ((bitField0_ & 0x00000004) != 0);
       }
+
       /**
        *
        *
@@ -1461,6 +1503,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           return predictionsSchemaBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -1484,6 +1527,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1505,6 +1549,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1532,6 +1577,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1552,6 +1598,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1567,6 +1614,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         onChanged();
         return getPredictionsSchemaFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -1587,6 +1635,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
               : predictionsSchema_;
         }
       }
+
       /**
        *
        *
@@ -1696,6 +1745,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     private ArtifactPathCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -1727,6 +1777,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   }
 
   public static final int VERTEX_MODEL_FIELD_NUMBER = 2;
+
   /**
    *
    *
@@ -1741,6 +1792,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   public boolean hasVertexModel() {
     return artifactPathCase_ == 2;
   }
+
   /**
    *
    *
@@ -1768,6 +1820,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       return s;
     }
   }
+
   /**
    *
    *
@@ -1798,6 +1851,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
 
   public static final int SOURCE_TYPE_FIELD_NUMBER = 1;
   private int sourceType_ = 0;
+
   /**
    *
    *
@@ -1814,6 +1868,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   public int getSourceTypeValue() {
     return sourceType_;
   }
+
   /**
    *
    *
@@ -1864,6 +1919,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   public int getAdditionalInfoCount() {
     return internalGetAdditionalInfo().getMap().size();
   }
+
   /**
    *
    *
@@ -1881,12 +1937,14 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     }
     return internalGetAdditionalInfo().getMap().containsKey(key);
   }
+
   /** Use {@link #getAdditionalInfoMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getAdditionalInfo() {
     return getAdditionalInfoMap();
   }
+
   /**
    *
    *
@@ -1901,6 +1959,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   public java.util.Map<java.lang.String, java.lang.String> getAdditionalInfoMap() {
     return internalGetAdditionalInfo().getMap();
   }
+
   /**
    *
    *
@@ -1922,6 +1981,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     java.util.Map<java.lang.String, java.lang.String> map = internalGetAdditionalInfo().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -1946,6 +2006,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
 
   public static final int MODEL_SCHEMA_FIELD_NUMBER = 5;
   private com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema modelSchema_;
+
   /**
    *
    *
@@ -1966,6 +2027,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
   public boolean hasModelSchema() {
     return modelSchema_ != null;
   }
+
   /**
    *
    *
@@ -1990,6 +2052,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
             .getDefaultInstance()
         : modelSchema_;
   }
+
   /**
    *
    *
@@ -2232,6 +2295,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -2531,6 +2595,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public boolean hasVertexModel() {
       return artifactPathCase_ == 2;
     }
+
     /**
      *
      *
@@ -2559,6 +2624,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2587,6 +2653,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2608,6 +2675,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2627,6 +2695,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       }
       return this;
     }
+
     /**
      *
      *
@@ -2651,6 +2720,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     }
 
     private int sourceType_ = 0;
+
     /**
      *
      *
@@ -2667,6 +2737,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public int getSourceTypeValue() {
       return sourceType_;
     }
+
     /**
      *
      *
@@ -2686,6 +2757,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2708,6 +2780,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
           ? com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.SourceType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -2731,6 +2804,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2778,6 +2852,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public int getAdditionalInfoCount() {
       return internalGetAdditionalInfo().getMap().size();
     }
+
     /**
      *
      *
@@ -2795,12 +2870,14 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       }
       return internalGetAdditionalInfo().getMap().containsKey(key);
     }
+
     /** Use {@link #getAdditionalInfoMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getAdditionalInfo() {
       return getAdditionalInfoMap();
     }
+
     /**
      *
      *
@@ -2815,6 +2892,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public java.util.Map<java.lang.String, java.lang.String> getAdditionalInfoMap() {
       return internalGetAdditionalInfo().getMap();
     }
+
     /**
      *
      *
@@ -2836,6 +2914,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       java.util.Map<java.lang.String, java.lang.String> map = internalGetAdditionalInfo().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -2863,6 +2942,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       internalGetMutableAdditionalInfo().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -2880,12 +2960,14 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       internalGetMutableAdditionalInfo().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableAdditionalInfo() {
       bitField0_ |= 0x00000004;
       return internalGetMutableAdditionalInfo().getMutableMap();
     }
+
     /**
      *
      *
@@ -2907,6 +2989,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       bitField0_ |= 0x00000004;
       return this;
     }
+
     /**
      *
      *
@@ -2929,6 +3012,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
             com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchema.Builder,
             com.google.events.cloud.visionai.v1.CustomProcessorSourceInfo.ModelSchemaOrBuilder>
         modelSchemaBuilder_;
+
     /**
      *
      *
@@ -2949,6 +3033,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
     public boolean hasModelSchema() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -2977,6 +3062,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
         return modelSchemaBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3006,6 +3092,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3033,6 +3120,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3067,6 +3155,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3092,6 +3181,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3113,6 +3203,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
       onChanged();
       return getModelSchemaFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3139,6 +3230,7 @@ public final class CustomProcessorSourceInfo extends com.google.protobuf.Generat
             : modelSchema_;
       }
     }
+
     /**
      *
      *

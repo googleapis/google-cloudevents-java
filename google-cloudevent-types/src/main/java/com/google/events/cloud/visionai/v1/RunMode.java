@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -73,6 +73,7 @@ public enum RunMode implements com.google.protobuf.ProtocolMessageEnum {
    * <code>RUN_MODE_UNSPECIFIED = 0;</code>
    */
   public static final int RUN_MODE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -84,6 +85,7 @@ public enum RunMode implements com.google.protobuf.ProtocolMessageEnum {
    * <code>LIVE = 1;</code>
    */
   public static final int LIVE_VALUE = 1;
+
   /**
    *
    *

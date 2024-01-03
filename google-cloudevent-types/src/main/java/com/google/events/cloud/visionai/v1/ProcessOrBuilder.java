@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ProcessOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ProcessOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface ProcessOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface ProcessOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface ProcessOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -130,6 +135,7 @@ public interface ProcessOrBuilder
    * @return The analysis.
    */
   java.lang.String getAnalysis();
+
   /**
    *
    *
@@ -157,6 +163,7 @@ public interface ProcessOrBuilder
    * @return A list containing the attributeOverrides.
    */
   java.util.List<java.lang.String> getAttributeOverridesList();
+
   /**
    *
    *
@@ -171,6 +178,7 @@ public interface ProcessOrBuilder
    * @return The count of attributeOverrides.
    */
   int getAttributeOverridesCount();
+
   /**
    *
    *
@@ -186,6 +194,7 @@ public interface ProcessOrBuilder
    * @return The attributeOverrides at the given index.
    */
   java.lang.String getAttributeOverrides(int index);
+
   /**
    *
    *
@@ -214,6 +223,7 @@ public interface ProcessOrBuilder
    * @return Whether the runStatus field is set.
    */
   boolean hasRunStatus();
+
   /**
    *
    *
@@ -226,6 +236,7 @@ public interface ProcessOrBuilder
    * @return The runStatus.
    */
   com.google.events.cloud.visionai.v1.RunStatus getRunStatus();
+
   /**
    *
    *
@@ -249,6 +260,7 @@ public interface ProcessOrBuilder
    * @return The enum numeric value on the wire for runMode.
    */
   int getRunModeValue();
+
   /**
    *
    *
@@ -276,6 +288,7 @@ public interface ProcessOrBuilder
    * @return The eventId.
    */
   java.lang.String getEventId();
+
   /**
    *
    *
@@ -303,6 +316,7 @@ public interface ProcessOrBuilder
    * @return The batchId.
    */
   java.lang.String getBatchId();
+
   /**
    *
    *
