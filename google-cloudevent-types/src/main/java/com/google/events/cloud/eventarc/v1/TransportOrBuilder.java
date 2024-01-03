@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface TransportOrBuilder
    * @return Whether the pubsub field is set.
    */
   boolean hasPubsub();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface TransportOrBuilder
    * @return The pubsub.
    */
   com.google.events.cloud.eventarc.v1.Pubsub getPubsub();
+
   /**
    *
    *

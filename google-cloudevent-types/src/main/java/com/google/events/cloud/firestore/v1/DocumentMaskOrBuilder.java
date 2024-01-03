@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface DocumentMaskOrBuilder
    * @return A list containing the fieldPaths.
    */
   java.util.List<java.lang.String> getFieldPathsList();
+
   /**
    *
    *
@@ -51,6 +52,7 @@ public interface DocumentMaskOrBuilder
    * @return The count of fieldPaths.
    */
   int getFieldPathsCount();
+
   /**
    *
    *
@@ -66,6 +68,7 @@ public interface DocumentMaskOrBuilder
    * @return The fieldPaths at the given index.
    */
   java.lang.String getFieldPaths(int index);
+
   /**
    *
    *

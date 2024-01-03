@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface SourceConfigOrBuilder
    * @return The sourceConnectionProfile.
    */
   java.lang.String getSourceConnectionProfile();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface SourceConfigOrBuilder
    * @return Whether the oracleSourceConfig field is set.
    */
   boolean hasOracleSourceConfig();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface SourceConfigOrBuilder
    * @return The oracleSourceConfig.
    */
   com.google.events.cloud.datastream.v1.OracleSourceConfig getOracleSourceConfig();
+
   /**
    *
    *
@@ -98,6 +101,7 @@ public interface SourceConfigOrBuilder
    * @return Whether the mysqlSourceConfig field is set.
    */
   boolean hasMysqlSourceConfig();
+
   /**
    *
    *
@@ -110,6 +114,7 @@ public interface SourceConfigOrBuilder
    * @return The mysqlSourceConfig.
    */
   com.google.events.cloud.datastream.v1.MysqlSourceConfig getMysqlSourceConfig();
+
   /**
    *
    *
@@ -134,6 +139,7 @@ public interface SourceConfigOrBuilder
    * @return Whether the postgresqlSourceConfig field is set.
    */
   boolean hasPostgresqlSourceConfig();
+
   /**
    *
    *
@@ -147,6 +153,7 @@ public interface SourceConfigOrBuilder
    * @return The postgresqlSourceConfig.
    */
   com.google.events.cloud.datastream.v1.PostgresqlSourceConfig getPostgresqlSourceConfig();
+
   /**
    *
    *

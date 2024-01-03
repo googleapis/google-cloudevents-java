@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ public interface SecretVolumeOrBuilder
    * @return The mountPath.
    */
   java.lang.String getMountPath();
+
   /**
    *
    *
@@ -70,6 +71,7 @@ public interface SecretVolumeOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *
@@ -97,6 +99,7 @@ public interface SecretVolumeOrBuilder
    * @return The secret.
    */
   java.lang.String getSecret();
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public interface SecretVolumeOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.functions.v2.SecretVolume.SecretVersion> getVersionsList();
+
   /**
    *
    *
@@ -136,6 +140,7 @@ public interface SecretVolumeOrBuilder
    * </code>
    */
   com.google.events.cloud.functions.v2.SecretVolume.SecretVersion getVersions(int index);
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public interface SecretVolumeOrBuilder
    * </code>
    */
   int getVersionsCount();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface SecretVolumeOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.functions.v2.SecretVolume.SecretVersionOrBuilder>
       getVersionsOrBuilderList();
+
   /**
    *
    *

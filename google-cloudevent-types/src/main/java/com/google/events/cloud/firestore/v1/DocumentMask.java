@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.firestore.v1.DocumentMask)
     DocumentMaskOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DocumentMask.newBuilder() to construct.
   private DocumentMask(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList fieldPaths_;
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getFieldPathsList() {
     return fieldPaths_;
   }
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
   public int getFieldPathsCount() {
     return fieldPaths_.size();
   }
+
   /**
    *
    *
@@ -120,6 +124,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getFieldPaths(int index) {
     return fieldPaths_.get(index);
   }
+
   /**
    *
    *
@@ -304,6 +309,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -510,6 +516,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -526,6 +533,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getFieldPathsList() {
       return fieldPaths_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -542,6 +550,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     public int getFieldPathsCount() {
       return fieldPaths_.size();
     }
+
     /**
      *
      *
@@ -559,6 +568,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getFieldPaths(int index) {
       return fieldPaths_.get(index);
     }
+
     /**
      *
      *
@@ -576,6 +586,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getFieldPathsBytes(int index) {
       return fieldPaths_.getByteString(index);
     }
+
     /**
      *
      *
@@ -600,6 +611,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -623,6 +635,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -643,6 +656,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -662,6 +676,7 @@ public final class DocumentMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

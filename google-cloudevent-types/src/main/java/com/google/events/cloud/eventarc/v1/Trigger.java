@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.eventarc.v1.Trigger)
     TriggerOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Trigger.newBuilder() to construct.
   private Trigger(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -90,6 +91,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -115,6 +117,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -145,6 +148,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -170,6 +174,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -198,6 +203,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 5;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -213,6 +219,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -228,6 +235,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -244,6 +252,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 6;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -259,6 +268,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -274,6 +284,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -292,6 +303,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.eventarc.v1.EventFilter> eventFilters_;
+
   /**
    *
    *
@@ -307,6 +319,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.eventarc.v1.EventFilter> getEventFiltersList() {
     return eventFilters_;
   }
+
   /**
    *
    *
@@ -323,6 +336,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       getEventFiltersOrBuilderList() {
     return eventFilters_;
   }
+
   /**
    *
    *
@@ -338,6 +352,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public int getEventFiltersCount() {
     return eventFilters_.size();
   }
+
   /**
    *
    *
@@ -353,6 +368,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.eventarc.v1.EventFilter getEventFilters(int index) {
     return eventFilters_.get(index);
   }
+
   /**
    *
    *
@@ -374,6 +390,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object serviceAccount_ = "";
+
   /**
    *
    *
@@ -408,6 +425,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -445,6 +463,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   public static final int DESTINATION_FIELD_NUMBER = 10;
   private com.google.events.cloud.eventarc.v1.Destination destination_;
+
   /**
    *
    *
@@ -460,6 +479,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public boolean hasDestination() {
     return destination_ != null;
   }
+
   /**
    *
    *
@@ -477,6 +497,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.eventarc.v1.Destination.getDefaultInstance()
         : destination_;
   }
+
   /**
    *
    *
@@ -495,6 +516,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TRANSPORT_FIELD_NUMBER = 11;
   private com.google.events.cloud.eventarc.v1.Transport transport_;
+
   /**
    *
    *
@@ -513,6 +535,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public boolean hasTransport() {
     return transport_ != null;
   }
+
   /**
    *
    *
@@ -533,6 +556,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.eventarc.v1.Transport.getDefaultInstance()
         : transport_;
   }
+
   /**
    *
    *
@@ -578,6 +602,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -595,12 +620,14 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -615,6 +642,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -636,6 +664,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -662,6 +691,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object channel_ = "";
+
   /**
    *
    *
@@ -687,6 +717,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -747,6 +778,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
   public int getConditionsCount() {
     return internalGetConditions().getMap().size();
   }
+
   /**
    *
    *
@@ -764,6 +796,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetConditions().getMap().containsKey(key);
   }
+
   /** Use {@link #getConditionsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -771,6 +804,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       getConditions() {
     return getConditionsMap();
   }
+
   /**
    *
    *
@@ -786,6 +820,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       getConditionsMap() {
     return internalGetConditions().getMap();
   }
+
   /**
    *
    *
@@ -808,6 +843,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         internalGetConditions().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -836,6 +872,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object eventDataContentType_ = "";
+
   /**
    *
    *
@@ -861,6 +898,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -891,6 +929,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object etag_ = "";
+
   /**
    *
    *
@@ -916,6 +955,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1249,6 +1289,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1701,6 +1742,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1725,6 +1767,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1749,6 +1792,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1772,6 +1816,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1791,6 +1836,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1817,6 +1863,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -1841,6 +1888,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1865,6 +1913,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1888,6 +1937,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1907,6 +1957,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1938,6 +1989,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -1952,6 +2004,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1972,6 +2025,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1994,6 +2048,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2013,6 +2068,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2038,6 +2094,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2057,6 +2114,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2071,6 +2129,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2089,6 +2148,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -2121,6 +2181,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -2135,6 +2196,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -2155,6 +2217,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2177,6 +2240,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2196,6 +2260,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2221,6 +2286,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2240,6 +2306,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2254,6 +2321,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2272,6 +2340,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -2333,6 +2402,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return eventFiltersBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -2351,6 +2421,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return eventFiltersBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -2369,6 +2440,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return eventFiltersBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -2394,6 +2466,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2416,6 +2489,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2440,6 +2514,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2465,6 +2540,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2487,6 +2563,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2509,6 +2586,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2531,6 +2609,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2552,6 +2631,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2573,6 +2653,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2588,6 +2669,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         int index) {
       return getEventFiltersFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -2607,6 +2689,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return eventFiltersBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -2626,6 +2709,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(eventFilters_);
       }
     }
+
     /**
      *
      *
@@ -2641,6 +2725,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return getEventFiltersFieldBuilder()
           .addBuilder(com.google.events.cloud.eventarc.v1.EventFilter.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -2657,6 +2742,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       return getEventFiltersFieldBuilder()
           .addBuilder(index, com.google.events.cloud.eventarc.v1.EventFilter.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -2691,6 +2777,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object serviceAccount_ = "";
+
     /**
      *
      *
@@ -2724,6 +2811,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2757,6 +2845,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2789,6 +2878,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2817,6 +2907,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2857,6 +2948,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.eventarc.v1.Destination.Builder,
             com.google.events.cloud.eventarc.v1.DestinationOrBuilder>
         destinationBuilder_;
+
     /**
      *
      *
@@ -2871,6 +2963,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public boolean hasDestination() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -2891,6 +2984,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return destinationBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2913,6 +3007,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2933,6 +3028,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2959,6 +3055,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2978,6 +3075,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2992,6 +3090,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getDestinationFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3010,6 +3109,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             : destination_;
       }
     }
+
     /**
      *
      *
@@ -3042,6 +3142,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.eventarc.v1.Transport.Builder,
             com.google.events.cloud.eventarc.v1.TransportOrBuilder>
         transportBuilder_;
+
     /**
      *
      *
@@ -3059,6 +3160,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public boolean hasTransport() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -3082,6 +3184,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return transportBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3107,6 +3210,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3130,6 +3234,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3158,6 +3263,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3180,6 +3286,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3197,6 +3304,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getTransportFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3218,6 +3326,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
             : transport_;
       }
     }
+
     /**
      *
      *
@@ -3272,6 +3381,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -3289,12 +3399,14 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -3309,6 +3421,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -3330,6 +3443,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3357,6 +3471,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3374,12 +3489,14 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000100;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -3401,6 +3518,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000100;
       return this;
     }
+
     /**
      *
      *
@@ -3418,6 +3536,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object channel_ = "";
+
     /**
      *
      *
@@ -3442,6 +3561,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3466,6 +3586,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3489,6 +3610,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3508,6 +3630,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3565,6 +3688,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     public int getConditionsCount() {
       return internalGetConditions().getMap().size();
     }
+
     /**
      *
      *
@@ -3582,6 +3706,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetConditions().getMap().containsKey(key);
     }
+
     /** Use {@link #getConditionsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -3589,6 +3714,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         getConditions() {
       return getConditionsMap();
     }
+
     /**
      *
      *
@@ -3604,6 +3730,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         getConditionsMap() {
       return internalGetConditions().getMap();
     }
+
     /**
      *
      *
@@ -3626,6 +3753,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
           internalGetConditions().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3655,6 +3783,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableConditions().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3672,6 +3801,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableConditions().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.eventarc.v1.StateCondition>
@@ -3679,6 +3809,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000400;
       return internalGetMutableConditions().getMutableMap();
     }
+
     /**
      *
      *
@@ -3701,6 +3832,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000400;
       return this;
     }
+
     /**
      *
      *
@@ -3720,6 +3852,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object eventDataContentType_ = "";
+
     /**
      *
      *
@@ -3744,6 +3877,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3768,6 +3902,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3791,6 +3926,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3810,6 +3946,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3836,6 +3973,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object etag_ = "";
+
     /**
      *
      *
@@ -3860,6 +3998,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3884,6 +4023,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3907,6 +4047,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3926,6 +4067,7 @@ public final class Trigger extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

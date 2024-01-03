@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface MapValueOrBuilder
    * <code>map&lt;string, .google.events.cloud.firestore.v1.Value&gt; fields = 1;</code>
    */
   int getFieldsCount();
+
   /**
    *
    *
@@ -51,9 +52,11 @@ public interface MapValueOrBuilder
    * <code>map&lt;string, .google.events.cloud.firestore.v1.Value&gt; fields = 1;</code>
    */
   boolean containsFields(java.lang.String key);
+
   /** Use {@link #getFieldsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.firestore.v1.Value> getFields();
+
   /**
    *
    *
@@ -68,6 +71,7 @@ public interface MapValueOrBuilder
    * <code>map&lt;string, .google.events.cloud.firestore.v1.Value&gt; fields = 1;</code>
    */
   java.util.Map<java.lang.String, com.google.events.cloud.firestore.v1.Value> getFieldsMap();
+
   /**
    *
    *
@@ -86,6 +90,7 @@ public interface MapValueOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.firestore.v1.Value defaultValue);
+
   /**
    *
    *

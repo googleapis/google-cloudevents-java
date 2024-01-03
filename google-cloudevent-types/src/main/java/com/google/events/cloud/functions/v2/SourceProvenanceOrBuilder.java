@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface SourceProvenanceOrBuilder
    * @return Whether the resolvedStorageSource field is set.
    */
   boolean hasResolvedStorageSource();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface SourceProvenanceOrBuilder
    * @return The resolvedStorageSource.
    */
   com.google.events.cloud.functions.v2.StorageSource getResolvedStorageSource();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface SourceProvenanceOrBuilder
    * @return Whether the resolvedRepoSource field is set.
    */
   boolean hasResolvedRepoSource();
+
   /**
    *
    *
@@ -87,6 +90,7 @@ public interface SourceProvenanceOrBuilder
    * @return The resolvedRepoSource.
    */
   com.google.events.cloud.functions.v2.RepoSource getResolvedRepoSource();
+
   /**
    *
    *

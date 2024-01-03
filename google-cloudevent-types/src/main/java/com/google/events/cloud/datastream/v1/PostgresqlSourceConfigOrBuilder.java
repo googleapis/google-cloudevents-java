@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return Whether the includeObjects field is set.
    */
   boolean hasIncludeObjects();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return The includeObjects.
    */
   com.google.events.cloud.datastream.v1.PostgresqlRdbms getIncludeObjects();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return Whether the excludeObjects field is set.
    */
   boolean hasExcludeObjects();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return The excludeObjects.
    */
   com.google.events.cloud.datastream.v1.PostgresqlRdbms getExcludeObjects();
+
   /**
    *
    *
@@ -106,6 +110,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return The replicationSlot.
    */
   java.lang.String getReplicationSlot();
+
   /**
    *
    *
@@ -133,6 +138,7 @@ public interface PostgresqlSourceConfigOrBuilder
    * @return The publication.
    */
   java.lang.String getPublication();
+
   /**
    *
    *

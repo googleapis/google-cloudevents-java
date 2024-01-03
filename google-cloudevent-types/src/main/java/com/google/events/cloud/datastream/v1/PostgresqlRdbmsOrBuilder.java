@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public interface PostgresqlRdbmsOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.datastream.v1.PostgresqlSchema> getPostgresqlSchemasList();
+
   /**
    *
    *
@@ -45,6 +46,7 @@ public interface PostgresqlRdbmsOrBuilder
    * </code>
    */
   com.google.events.cloud.datastream.v1.PostgresqlSchema getPostgresqlSchemas(int index);
+
   /**
    *
    *
@@ -56,6 +58,7 @@ public interface PostgresqlRdbmsOrBuilder
    * </code>
    */
   int getPostgresqlSchemasCount();
+
   /**
    *
    *
@@ -68,6 +71,7 @@ public interface PostgresqlRdbmsOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastream.v1.PostgresqlSchemaOrBuilder>
       getPostgresqlSchemasOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.eventarc.v1.EventFilter)
     EventFilterOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EventFilter.newBuilder() to construct.
   private EventFilter(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -73,6 +74,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object attribute_ = "";
+
   /**
    *
    *
@@ -98,6 +100,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -128,6 +131,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object value_ = "";
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -179,6 +184,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object operator_ = "";
+
   /**
    *
    *
@@ -205,6 +211,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -409,6 +416,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -623,6 +631,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object attribute_ = "";
+
     /**
      *
      *
@@ -647,6 +656,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -671,6 +681,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -694,6 +705,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -713,6 +725,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -739,6 +752,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object value_ = "";
+
     /**
      *
      *
@@ -761,6 +775,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -783,6 +798,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -804,6 +820,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -821,6 +838,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -845,6 +863,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object operator_ = "";
+
     /**
      *
      *
@@ -870,6 +889,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -895,6 +915,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -919,6 +940,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -939,6 +961,7 @@ public final class EventFilter extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

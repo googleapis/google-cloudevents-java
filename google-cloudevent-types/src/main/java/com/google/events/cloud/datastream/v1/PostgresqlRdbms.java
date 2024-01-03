@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.PostgresqlRdbms)
     PostgresqlRdbmsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use PostgresqlRdbms.newBuilder() to construct.
   private PostgresqlRdbms(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.datastream.v1.PostgresqlSchema> postgresqlSchemas_;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       getPostgresqlSchemasList() {
     return postgresqlSchemas_;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       getPostgresqlSchemasOrBuilderList() {
     return postgresqlSchemas_;
   }
+
   /**
    *
    *
@@ -115,6 +119,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
   public int getPostgresqlSchemasCount() {
     return postgresqlSchemas_.size();
   }
+
   /**
    *
    *
@@ -129,6 +134,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
   public com.google.events.cloud.datastream.v1.PostgresqlSchema getPostgresqlSchemas(int index) {
     return postgresqlSchemas_.get(index);
   }
+
   /**
    *
    *
@@ -308,6 +314,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -574,6 +581,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         return postgresqlSchemasBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -591,6 +599,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         return postgresqlSchemasBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -608,6 +617,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         return postgresqlSchemasBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -632,6 +642,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -653,6 +664,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -677,6 +689,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -701,6 +714,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -722,6 +736,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -743,6 +758,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -765,6 +781,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -785,6 +802,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -805,6 +823,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -819,6 +838,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         getPostgresqlSchemasBuilder(int index) {
       return getPostgresqlSchemasFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -837,6 +857,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         return postgresqlSchemasBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -855,6 +876,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(postgresqlSchemas_);
       }
     }
+
     /**
      *
      *
@@ -870,6 +892,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
       return getPostgresqlSchemasFieldBuilder()
           .addBuilder(com.google.events.cloud.datastream.v1.PostgresqlSchema.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -886,6 +909,7 @@ public final class PostgresqlRdbms extends com.google.protobuf.GeneratedMessageV
           .addBuilder(
               index, com.google.events.cloud.datastream.v1.PostgresqlSchema.getDefaultInstance());
     }
+
     /**
      *
      *
