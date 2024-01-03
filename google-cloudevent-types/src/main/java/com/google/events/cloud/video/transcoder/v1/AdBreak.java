@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.video.transcoder.v1.AdBreak)
     AdBreakOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AdBreak.newBuilder() to construct.
   private AdBreak(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
 
   public static final int START_TIME_OFFSET_FIELD_NUMBER = 1;
   private com.google.protobuf.Duration startTimeOffset_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStartTimeOffset() {
     return startTimeOffset_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
         ? com.google.protobuf.Duration.getDefaultInstance()
         : startTimeOffset_;
   }
+
   /**
    *
    *
@@ -282,6 +286,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -474,6 +479,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Duration.Builder,
             com.google.protobuf.DurationOrBuilder>
         startTimeOffsetBuilder_;
+
     /**
      *
      *
@@ -489,6 +495,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStartTimeOffset() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -510,6 +517,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
         return startTimeOffsetBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -533,6 +541,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -553,6 +562,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -579,6 +589,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -599,6 +610,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -614,6 +626,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStartTimeOffsetFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -633,6 +646,7 @@ public final class AdBreak extends com.google.protobuf.GeneratedMessageV3
             : startTimeOffset_;
       }
     }
+
     /**
      *
      *

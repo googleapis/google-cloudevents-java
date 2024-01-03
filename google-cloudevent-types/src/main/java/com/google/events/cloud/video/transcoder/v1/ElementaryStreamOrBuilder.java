@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ElementaryStreamOrBuilder
    * @return The key.
    */
   java.lang.String getKey();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ElementaryStreamOrBuilder
    * @return Whether the videoStream field is set.
    */
   boolean hasVideoStream();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface ElementaryStreamOrBuilder
    * @return The videoStream.
    */
   com.google.events.cloud.video.transcoder.v1.VideoStream getVideoStream();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface ElementaryStreamOrBuilder
    * @return Whether the audioStream field is set.
    */
   boolean hasAudioStream();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface ElementaryStreamOrBuilder
    * @return The audioStream.
    */
   com.google.events.cloud.video.transcoder.v1.AudioStream getAudioStream();
+
   /**
    *
    *
@@ -130,6 +135,7 @@ public interface ElementaryStreamOrBuilder
    * @return Whether the textStream field is set.
    */
   boolean hasTextStream();
+
   /**
    *
    *
@@ -142,6 +148,7 @@ public interface ElementaryStreamOrBuilder
    * @return The textStream.
    */
   com.google.events.cloud.video.transcoder.v1.TextStream getTextStream();
+
   /**
    *
    *

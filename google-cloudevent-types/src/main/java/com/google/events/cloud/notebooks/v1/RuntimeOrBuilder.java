@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface RuntimeOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface RuntimeOrBuilder
    * @return Whether the virtualMachine field is set.
    */
   boolean hasVirtualMachine();
+
   /**
    *
    *
@@ -76,6 +78,7 @@ public interface RuntimeOrBuilder
    * @return The virtualMachine.
    */
   com.google.events.cloud.notebooks.v1.VirtualMachine getVirtualMachine();
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public interface RuntimeOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public interface RuntimeOrBuilder
    * @return The enum numeric value on the wire for healthState.
    */
   int getHealthStateValue();
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public interface RuntimeOrBuilder
    * @return Whether the accessConfig field is set.
    */
   boolean hasAccessConfig();
+
   /**
    *
    *
@@ -161,6 +167,7 @@ public interface RuntimeOrBuilder
    * @return The accessConfig.
    */
   com.google.events.cloud.notebooks.v1.RuntimeAccessConfig getAccessConfig();
+
   /**
    *
    *
@@ -184,6 +191,7 @@ public interface RuntimeOrBuilder
    * @return Whether the softwareConfig field is set.
    */
   boolean hasSoftwareConfig();
+
   /**
    *
    *
@@ -196,6 +204,7 @@ public interface RuntimeOrBuilder
    * @return The softwareConfig.
    */
   com.google.events.cloud.notebooks.v1.RuntimeSoftwareConfig getSoftwareConfig();
+
   /**
    *
    *
@@ -220,6 +229,7 @@ public interface RuntimeOrBuilder
    * @return Whether the metrics field is set.
    */
   boolean hasMetrics();
+
   /**
    *
    *
@@ -233,6 +243,7 @@ public interface RuntimeOrBuilder
    * @return The metrics.
    */
   com.google.events.cloud.notebooks.v1.RuntimeMetrics getMetrics();
+
   /**
    *
    *
@@ -257,6 +268,7 @@ public interface RuntimeOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -269,6 +281,7 @@ public interface RuntimeOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -292,6 +305,7 @@ public interface RuntimeOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -304,6 +318,7 @@ public interface RuntimeOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -331,6 +346,7 @@ public interface RuntimeOrBuilder
    * <code>map&lt;string, string&gt; labels = 23;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -347,9 +363,11 @@ public interface RuntimeOrBuilder
    * <code>map&lt;string, string&gt; labels = 23;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -366,6 +384,7 @@ public interface RuntimeOrBuilder
    * <code>map&lt;string, string&gt; labels = 23;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -386,6 +405,7 @@ public interface RuntimeOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *

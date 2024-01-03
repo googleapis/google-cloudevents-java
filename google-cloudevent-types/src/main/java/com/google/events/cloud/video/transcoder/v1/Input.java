@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.video.transcoder.v1.Input)
     InputOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Input.newBuilder() to construct.
   private Input(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object key_ = "";
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -125,6 +128,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uri_ = "";
+
   /**
    *
    *
@@ -152,6 +156,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -182,6 +187,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PREPROCESSING_CONFIG_FIELD_NUMBER = 3;
   private com.google.events.cloud.video.transcoder.v1.PreprocessingConfig preprocessingConfig_;
+
   /**
    *
    *
@@ -198,6 +204,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPreprocessingConfig() {
     return preprocessingConfig_ != null;
   }
+
   /**
    *
    *
@@ -216,6 +223,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.video.transcoder.v1.PreprocessingConfig.getDefaultInstance()
         : preprocessingConfig_;
   }
+
   /**
    *
    *
@@ -416,6 +424,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -636,6 +645,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object key_ = "";
+
     /**
      *
      *
@@ -659,6 +669,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -682,6 +693,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -704,6 +716,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -722,6 +735,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -747,6 +761,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uri_ = "";
+
     /**
      *
      *
@@ -773,6 +788,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -799,6 +815,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -824,6 +841,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -845,6 +863,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -878,6 +897,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.video.transcoder.v1.PreprocessingConfig.Builder,
             com.google.events.cloud.video.transcoder.v1.PreprocessingConfigOrBuilder>
         preprocessingConfigBuilder_;
+
     /**
      *
      *
@@ -893,6 +913,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPreprocessingConfig() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -915,6 +936,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
         return preprocessingConfigBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -939,6 +961,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -960,6 +983,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -989,6 +1013,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1009,6 +1034,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1025,6 +1051,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPreprocessingConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1045,6 +1072,7 @@ public final class Input extends com.google.protobuf.GeneratedMessageV3
             : preprocessingConfig_;
       }
     }
+
     /**
      *
      *

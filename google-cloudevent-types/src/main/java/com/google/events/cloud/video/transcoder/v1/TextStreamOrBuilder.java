@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,7 @@ public interface TextStreamOrBuilder
    * @return The codec.
    */
   java.lang.String getCodec();
+
   /**
    *
    *
@@ -75,6 +76,7 @@ public interface TextStreamOrBuilder
    * @return The languageCode.
    */
   java.lang.String getLanguageCode();
+
   /**
    *
    *
@@ -103,6 +105,7 @@ public interface TextStreamOrBuilder
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping>
       getMappingList();
+
   /**
    *
    *
@@ -114,6 +117,7 @@ public interface TextStreamOrBuilder
    * </code>
    */
   com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping getMapping(int index);
+
   /**
    *
    *
@@ -125,6 +129,7 @@ public interface TextStreamOrBuilder
    * </code>
    */
   int getMappingCount();
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public interface TextStreamOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.video.transcoder.v1.TextStream.TextMappingOrBuilder>
       getMappingOrBuilderList();
+
   /**
    *
    *
@@ -164,6 +170,7 @@ public interface TextStreamOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *

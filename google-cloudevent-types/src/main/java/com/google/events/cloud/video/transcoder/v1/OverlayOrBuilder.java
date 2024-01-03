@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface OverlayOrBuilder
    * @return Whether the image field is set.
    */
   boolean hasImage();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface OverlayOrBuilder
    * @return The image.
    */
   com.google.events.cloud.video.transcoder.v1.Overlay.Image getImage();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface OverlayOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.Overlay.Animation> getAnimationsList();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface OverlayOrBuilder
    * </code>
    */
   com.google.events.cloud.video.transcoder.v1.Overlay.Animation getAnimations(int index);
+
   /**
    *
    *
@@ -94,6 +98,7 @@ public interface OverlayOrBuilder
    * </code>
    */
   int getAnimationsCount();
+
   /**
    *
    *
@@ -107,6 +112,7 @@ public interface OverlayOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.Overlay.AnimationOrBuilder>
       getAnimationsOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface VirtualMachineOrBuilder
    * @return The instanceName.
    */
   java.lang.String getInstanceName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface VirtualMachineOrBuilder
    * @return The instanceId.
    */
   java.lang.String getInstanceId();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface VirtualMachineOrBuilder
    * @return Whether the virtualMachineConfig field is set.
    */
   boolean hasVirtualMachineConfig();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface VirtualMachineOrBuilder
    * @return The virtualMachineConfig.
    */
   com.google.events.cloud.notebooks.v1.VirtualMachineConfig getVirtualMachineConfig();
+
   /**
    *
    *

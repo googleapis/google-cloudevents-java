@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface VideoStreamOrBuilder
    * @return Whether the h264 field is set.
    */
   boolean hasH264();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface VideoStreamOrBuilder
    * @return The h264.
    */
   com.google.events.cloud.video.transcoder.v1.VideoStream.H264CodecSettings getH264();
+
   /**
    *
    *
@@ -71,6 +73,7 @@ public interface VideoStreamOrBuilder
    * @return Whether the h265 field is set.
    */
   boolean hasH265();
+
   /**
    *
    *
@@ -83,6 +86,7 @@ public interface VideoStreamOrBuilder
    * @return The h265.
    */
   com.google.events.cloud.video.transcoder.v1.VideoStream.H265CodecSettings getH265();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface VideoStreamOrBuilder
    * @return Whether the vp9 field is set.
    */
   boolean hasVp9();
+
   /**
    *
    *
@@ -119,6 +124,7 @@ public interface VideoStreamOrBuilder
    * @return The vp9.
    */
   com.google.events.cloud.video.transcoder.v1.VideoStream.Vp9CodecSettings getVp9();
+
   /**
    *
    *

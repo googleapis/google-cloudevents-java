@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.scheduler.v1.SchedulerJobData)
     SchedulerJobDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SchedulerJobData.newBuilder() to construct.
   private SchedulerJobData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
 
   public static final int CUSTOM_DATA_FIELD_NUMBER = 1;
   private com.google.protobuf.ByteString customData_ = com.google.protobuf.ByteString.EMPTY;
+
   /**
    *
    *
@@ -245,6 +247,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -427,6 +430,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
     private int bitField0_;
 
     private com.google.protobuf.ByteString customData_ = com.google.protobuf.ByteString.EMPTY;
+
     /**
      *
      *
@@ -442,6 +446,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ByteString getCustomData() {
       return customData_;
     }
+
     /**
      *
      *
@@ -463,6 +468,7 @@ public final class SchedulerJobData extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *

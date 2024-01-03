@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     // @@protoc_insertion_point(message_implements:google.events.cloud.pubsub.v1.MessagePublishedData)
     MessagePublishedDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MessagePublishedData.newBuilder() to construct.
   private MessagePublishedData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
 
   public static final int MESSAGE_FIELD_NUMBER = 1;
   private com.google.events.cloud.pubsub.v1.PubsubMessage message_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
   public boolean hasMessage() {
     return message_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         ? com.google.events.cloud.pubsub.v1.PubsubMessage.getDefaultInstance()
         : message_;
   }
+
   /**
    *
    *
@@ -121,6 +125,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object subscription_ = "";
+
   /**
    *
    *
@@ -146,6 +151,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -346,6 +352,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -552,6 +559,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
             com.google.events.cloud.pubsub.v1.PubsubMessage.Builder,
             com.google.events.cloud.pubsub.v1.PubsubMessageOrBuilder>
         messageBuilder_;
+
     /**
      *
      *
@@ -566,6 +574,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -586,6 +595,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         return messageBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -608,6 +618,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -628,6 +639,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -653,6 +665,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -672,6 +685,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -686,6 +700,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return getMessageFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -704,6 +719,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
             : message_;
       }
     }
+
     /**
      *
      *
@@ -731,6 +747,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     }
 
     private java.lang.Object subscription_ = "";
+
     /**
      *
      *
@@ -755,6 +772,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -779,6 +797,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -802,6 +821,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -821,6 +841,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
