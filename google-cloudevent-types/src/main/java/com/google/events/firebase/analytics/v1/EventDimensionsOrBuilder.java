@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface EventDimensionsOrBuilder
    * @return The date.
    */
   java.lang.String getDate();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface EventDimensionsOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface EventDimensionsOrBuilder
    * <code>map&lt;string, .google.events.firebase.analytics.v1.AnalyticsValue&gt; params = 2;</code>
    */
   int getParamsCount();
+
   /**
    *
    *
@@ -95,10 +98,12 @@ public interface EventDimensionsOrBuilder
    * <code>map&lt;string, .google.events.firebase.analytics.v1.AnalyticsValue&gt; params = 2;</code>
    */
   boolean containsParams(java.lang.String key);
+
   /** Use {@link #getParamsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.AnalyticsValue>
       getParams();
+
   /**
    *
    *
@@ -110,6 +115,7 @@ public interface EventDimensionsOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.AnalyticsValue>
       getParamsMap();
+
   /**
    *
    *
@@ -124,6 +130,7 @@ public interface EventDimensionsOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.firebase.analytics.v1.AnalyticsValue defaultValue);
+
   /**
    *
    *

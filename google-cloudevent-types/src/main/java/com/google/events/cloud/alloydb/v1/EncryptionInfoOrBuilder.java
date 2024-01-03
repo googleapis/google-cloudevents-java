@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface EncryptionInfoOrBuilder
    * @return The enum numeric value on the wire for encryptionType.
    */
   int getEncryptionTypeValue();
+
   /**
    *
    *
@@ -61,6 +62,7 @@ public interface EncryptionInfoOrBuilder
    * @return A list containing the kmsKeyVersions.
    */
   java.util.List<java.lang.String> getKmsKeyVersionsList();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface EncryptionInfoOrBuilder
    * @return The count of kmsKeyVersions.
    */
   int getKmsKeyVersionsCount();
+
   /**
    *
    *
@@ -88,6 +91,7 @@ public interface EncryptionInfoOrBuilder
    * @return The kmsKeyVersions at the given index.
    */
   java.lang.String getKmsKeyVersions(int index);
+
   /**
    *
    *

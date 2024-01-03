@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataflow.v1beta3.JobExecutionInfo)
     JobExecutionInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use JobExecutionInfo.newBuilder() to construct.
   private JobExecutionInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -112,6 +113,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
   public int getStagesCount() {
     return internalGetStages().getMap().size();
   }
+
   /**
    *
    *
@@ -130,6 +132,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
     }
     return internalGetStages().getMap().containsKey(key);
   }
+
   /** Use {@link #getStagesMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
@@ -138,6 +141,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       getStages() {
     return getStagesMap();
   }
+
   /**
    *
    *
@@ -155,6 +159,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       getStagesMap() {
     return internalGetStages().getMap();
   }
+
   /**
    *
    *
@@ -179,6 +184,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
         map = internalGetStages().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -375,6 +381,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -616,6 +623,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
     public int getStagesCount() {
       return internalGetStages().getMap().size();
     }
+
     /**
      *
      *
@@ -634,6 +642,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       }
       return internalGetStages().getMap().containsKey(key);
     }
+
     /** Use {@link #getStagesMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
@@ -642,6 +651,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
         getStages() {
       return getStagesMap();
     }
+
     /**
      *
      *
@@ -659,6 +669,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
         getStagesMap() {
       return internalGetStages().getMap();
     }
+
     /**
      *
      *
@@ -684,6 +695,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
           map = internalGetStages().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -715,6 +727,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       internalGetMutableStages().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -733,6 +746,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       internalGetMutableStages().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<
@@ -741,6 +755,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000001;
       return internalGetMutableStages().getMutableMap();
     }
+
     /**
      *
      *
@@ -765,6 +780,7 @@ public final class JobExecutionInfo extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000001;
       return this;
     }
+
     /**
      *
      *

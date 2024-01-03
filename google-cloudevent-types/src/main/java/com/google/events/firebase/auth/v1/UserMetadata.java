@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.auth.v1.UserMetadata)
     UserMetadataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use UserMetadata.newBuilder() to construct.
   private UserMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -113,6 +117,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
 
   public static final int LAST_SIGN_IN_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp lastSignInTime_;
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
   public boolean hasLastSignInTime() {
     return lastSignInTime_ != null;
   }
+
   /**
    *
    *
@@ -145,6 +151,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : lastSignInTime_;
   }
+
   /**
    *
    *
@@ -339,6 +346,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -548,6 +556,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -562,6 +571,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -582,6 +592,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -604,6 +615,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -623,6 +635,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -648,6 +661,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -667,6 +681,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -681,6 +696,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -699,6 +715,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -731,6 +748,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         lastSignInTimeBuilder_;
+
     /**
      *
      *
@@ -745,6 +763,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
     public boolean hasLastSignInTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -765,6 +784,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
         return lastSignInTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -787,6 +807,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -806,6 +827,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -831,6 +853,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -850,6 +873,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -864,6 +888,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getLastSignInTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -882,6 +907,7 @@ public final class UserMetadata extends com.google.protobuf.GeneratedMessageV3
             : lastSignInTime_;
       }
     }
+
     /**
      *
      *

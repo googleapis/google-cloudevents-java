@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface JobMetadataOrBuilder
    * @return Whether the sdkVersion field is set.
    */
   boolean hasSdkVersion();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface JobMetadataOrBuilder
    * @return The sdkVersion.
    */
   com.google.events.cloud.dataflow.v1beta3.SdkVersion getSdkVersion();
+
   /**
    *
    *
@@ -69,6 +71,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.SpannerIODetails> getSpannerDetailsList();
+
   /**
    *
    *
@@ -80,6 +83,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   com.google.events.cloud.dataflow.v1beta3.SpannerIODetails getSpannerDetails(int index);
+
   /**
    *
    *
@@ -91,6 +95,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   int getSpannerDetailsCount();
+
   /**
    *
    *
@@ -103,6 +108,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.SpannerIODetailsOrBuilder>
       getSpannerDetailsOrBuilderList();
+
   /**
    *
    *
@@ -128,6 +134,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.BigQueryIODetails>
       getBigqueryDetailsList();
+
   /**
    *
    *
@@ -139,6 +146,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   com.google.events.cloud.dataflow.v1beta3.BigQueryIODetails getBigqueryDetails(int index);
+
   /**
    *
    *
@@ -150,6 +158,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   int getBigqueryDetailsCount();
+
   /**
    *
    *
@@ -162,6 +171,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.BigQueryIODetailsOrBuilder>
       getBigqueryDetailsOrBuilderList();
+
   /**
    *
    *
@@ -187,6 +197,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.BigTableIODetails>
       getBigTableDetailsList();
+
   /**
    *
    *
@@ -198,6 +209,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   com.google.events.cloud.dataflow.v1beta3.BigTableIODetails getBigTableDetails(int index);
+
   /**
    *
    *
@@ -209,6 +221,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   int getBigTableDetailsCount();
+
   /**
    *
    *
@@ -221,6 +234,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.BigTableIODetailsOrBuilder>
       getBigTableDetailsOrBuilderList();
+
   /**
    *
    *
@@ -244,6 +258,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.PubSubIODetails pubsub_details = 5;</code>
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.PubSubIODetails> getPubsubDetailsList();
+
   /**
    *
    *
@@ -254,6 +269,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.PubSubIODetails pubsub_details = 5;</code>
    */
   com.google.events.cloud.dataflow.v1beta3.PubSubIODetails getPubsubDetails(int index);
+
   /**
    *
    *
@@ -264,6 +280,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.PubSubIODetails pubsub_details = 5;</code>
    */
   int getPubsubDetailsCount();
+
   /**
    *
    *
@@ -275,6 +292,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.PubSubIODetailsOrBuilder>
       getPubsubDetailsOrBuilderList();
+
   /**
    *
    *
@@ -297,6 +315,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.FileIODetails file_details = 6;</code>
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.FileIODetails> getFileDetailsList();
+
   /**
    *
    *
@@ -307,6 +326,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.FileIODetails file_details = 6;</code>
    */
   com.google.events.cloud.dataflow.v1beta3.FileIODetails getFileDetails(int index);
+
   /**
    *
    *
@@ -317,6 +337,7 @@ public interface JobMetadataOrBuilder
    * <code>repeated .google.events.cloud.dataflow.v1beta3.FileIODetails file_details = 6;</code>
    */
   int getFileDetailsCount();
+
   /**
    *
    *
@@ -328,6 +349,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.FileIODetailsOrBuilder>
       getFileDetailsOrBuilderList();
+
   /**
    *
    *
@@ -352,6 +374,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<com.google.events.cloud.dataflow.v1beta3.DatastoreIODetails>
       getDatastoreDetailsList();
+
   /**
    *
    *
@@ -363,6 +386,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   com.google.events.cloud.dataflow.v1beta3.DatastoreIODetails getDatastoreDetails(int index);
+
   /**
    *
    *
@@ -374,6 +398,7 @@ public interface JobMetadataOrBuilder
    * </code>
    */
   int getDatastoreDetailsCount();
+
   /**
    *
    *
@@ -386,6 +411,7 @@ public interface JobMetadataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataflow.v1beta3.DatastoreIODetailsOrBuilder>
       getDatastoreDetailsOrBuilderList();
+
   /**
    *
    *

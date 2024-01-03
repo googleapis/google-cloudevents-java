@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -71,6 +71,7 @@ public enum DatabaseVersion implements com.google.protobuf.ProtocolMessageEnum {
    * <code>DATABASE_VERSION_UNSPECIFIED = 0;</code>
    */
   public static final int DATABASE_VERSION_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -81,6 +82,7 @@ public enum DatabaseVersion implements com.google.protobuf.ProtocolMessageEnum {
    * <code>POSTGRES_13 = 1;</code>
    */
   public static final int POSTGRES_13_VALUE = 1;
+
   /**
    *
    *

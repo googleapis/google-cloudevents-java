@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ public interface ClientConnectorServiceEventDataOrBuilder
    * @return Whether the payload field is set.
    */
   boolean hasPayload();
+
   /**
    *
    *
@@ -53,6 +54,7 @@ public interface ClientConnectorServiceEventDataOrBuilder
    * @return The payload.
    */
   com.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService getPayload();
+
   /**
    *
    *

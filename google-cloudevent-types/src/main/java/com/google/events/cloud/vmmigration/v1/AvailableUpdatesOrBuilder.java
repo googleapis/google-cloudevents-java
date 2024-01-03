@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface AvailableUpdatesOrBuilder
    * @return Whether the newDeployableAppliance field is set.
    */
   boolean hasNewDeployableAppliance();
+
   /**
    *
    *
@@ -51,6 +52,7 @@ public interface AvailableUpdatesOrBuilder
    * @return The newDeployableAppliance.
    */
   com.google.events.cloud.vmmigration.v1.ApplianceVersion getNewDeployableAppliance();
+
   /**
    *
    *
@@ -79,6 +81,7 @@ public interface AvailableUpdatesOrBuilder
    * @return Whether the inPlaceUpdate field is set.
    */
   boolean hasInPlaceUpdate();
+
   /**
    *
    *
@@ -93,6 +96,7 @@ public interface AvailableUpdatesOrBuilder
    * @return The inPlaceUpdate.
    */
   com.google.events.cloud.vmmigration.v1.ApplianceVersion getInPlaceUpdate();
+
   /**
    *
    *

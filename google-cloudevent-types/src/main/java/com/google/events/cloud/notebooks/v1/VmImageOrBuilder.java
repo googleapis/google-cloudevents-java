@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface VmImageOrBuilder
    * @return The project.
    */
   java.lang.String getProject();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface VmImageOrBuilder
    * @return Whether the imageName field is set.
    */
   boolean hasImageName();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface VmImageOrBuilder
    * @return The imageName.
    */
   java.lang.String getImageName();
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public interface VmImageOrBuilder
    * @return Whether the imageFamily field is set.
    */
   boolean hasImageFamily();
+
   /**
    *
    *
@@ -113,6 +117,7 @@ public interface VmImageOrBuilder
    * @return The imageFamily.
    */
   java.lang.String getImageFamily();
+
   /**
    *
    *

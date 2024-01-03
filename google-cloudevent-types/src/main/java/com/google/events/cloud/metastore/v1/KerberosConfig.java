@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.metastore.v1.KerberosConfig)
     KerberosConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use KerberosConfig.newBuilder() to construct.
   private KerberosConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -70,6 +71,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
 
   public static final int KEYTAB_FIELD_NUMBER = 1;
   private com.google.events.cloud.metastore.v1.Secret keytab_;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
   public boolean hasKeytab() {
     return keytab_ != null;
   }
+
   /**
    *
    *
@@ -104,6 +107,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.metastore.v1.Secret.getDefaultInstance()
         : keytab_;
   }
+
   /**
    *
    *
@@ -125,6 +129,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object principal_ = "";
+
   /**
    *
    *
@@ -150,6 +155,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -180,6 +186,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object krb5ConfigGcsUri_ = "";
+
   /**
    *
    *
@@ -205,6 +212,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -413,6 +421,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -634,6 +643,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.metastore.v1.Secret.Builder,
             com.google.events.cloud.metastore.v1.SecretOrBuilder>
         keytabBuilder_;
+
     /**
      *
      *
@@ -649,6 +659,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
     public boolean hasKeytab() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -670,6 +681,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         return keytabBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -693,6 +705,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -713,6 +726,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -739,6 +753,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -759,6 +774,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -774,6 +790,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getKeytabFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -793,6 +810,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
             : keytab_;
       }
     }
+
     /**
      *
      *
@@ -821,6 +839,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object principal_ = "";
+
     /**
      *
      *
@@ -845,6 +864,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -869,6 +889,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -892,6 +913,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -911,6 +933,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -937,6 +960,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object krb5ConfigGcsUri_ = "";
+
     /**
      *
      *
@@ -961,6 +985,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -985,6 +1010,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1008,6 +1034,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1027,6 +1054,7 @@ public final class KerberosConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

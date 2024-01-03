@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface TriggerOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface TriggerOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -93,6 +95,7 @@ public interface TriggerOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -105,6 +108,7 @@ public interface TriggerOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -128,6 +132,7 @@ public interface TriggerOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -140,6 +145,7 @@ public interface TriggerOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface TriggerOrBuilder
    * <code>repeated .google.events.cloud.eventarc.v1.EventFilter event_filters = 8;</code>
    */
   java.util.List<com.google.events.cloud.eventarc.v1.EventFilter> getEventFiltersList();
+
   /**
    *
    *
@@ -175,6 +182,7 @@ public interface TriggerOrBuilder
    * <code>repeated .google.events.cloud.eventarc.v1.EventFilter event_filters = 8;</code>
    */
   com.google.events.cloud.eventarc.v1.EventFilter getEventFilters(int index);
+
   /**
    *
    *
@@ -187,6 +195,7 @@ public interface TriggerOrBuilder
    * <code>repeated .google.events.cloud.eventarc.v1.EventFilter event_filters = 8;</code>
    */
   int getEventFiltersCount();
+
   /**
    *
    *
@@ -200,6 +209,7 @@ public interface TriggerOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.eventarc.v1.EventFilterOrBuilder>
       getEventFiltersOrBuilderList();
+
   /**
    *
    *
@@ -236,6 +246,7 @@ public interface TriggerOrBuilder
    * @return The serviceAccount.
    */
   java.lang.String getServiceAccount();
+
   /**
    *
    *
@@ -272,6 +283,7 @@ public interface TriggerOrBuilder
    * @return Whether the destination field is set.
    */
   boolean hasDestination();
+
   /**
    *
    *
@@ -284,6 +296,7 @@ public interface TriggerOrBuilder
    * @return The destination.
    */
   com.google.events.cloud.eventarc.v1.Destination getDestination();
+
   /**
    *
    *
@@ -310,6 +323,7 @@ public interface TriggerOrBuilder
    * @return Whether the transport field is set.
    */
   boolean hasTransport();
+
   /**
    *
    *
@@ -325,6 +339,7 @@ public interface TriggerOrBuilder
    * @return The transport.
    */
   com.google.events.cloud.eventarc.v1.Transport getTransport();
+
   /**
    *
    *
@@ -350,6 +365,7 @@ public interface TriggerOrBuilder
    * <code>map&lt;string, string&gt; labels = 12;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -361,9 +377,11 @@ public interface TriggerOrBuilder
    * <code>map&lt;string, string&gt; labels = 12;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -375,6 +393,7 @@ public interface TriggerOrBuilder
    * <code>map&lt;string, string&gt; labels = 12;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -390,6 +409,7 @@ public interface TriggerOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -416,6 +436,7 @@ public interface TriggerOrBuilder
    * @return The channel.
    */
   java.lang.String getChannel();
+
   /**
    *
    *
@@ -442,6 +463,7 @@ public interface TriggerOrBuilder
    * </code>
    */
   int getConditionsCount();
+
   /**
    *
    *
@@ -453,10 +475,12 @@ public interface TriggerOrBuilder
    * </code>
    */
   boolean containsConditions(java.lang.String key);
+
   /** Use {@link #getConditionsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.eventarc.v1.StateCondition>
       getConditions();
+
   /**
    *
    *
@@ -469,6 +493,7 @@ public interface TriggerOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.cloud.eventarc.v1.StateCondition>
       getConditionsMap();
+
   /**
    *
    *
@@ -484,6 +509,7 @@ public interface TriggerOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.eventarc.v1.StateCondition defaultValue);
+
   /**
    *
    *
@@ -510,6 +536,7 @@ public interface TriggerOrBuilder
    * @return The eventDataContentType.
    */
   java.lang.String getEventDataContentType();
+
   /**
    *
    *
@@ -539,6 +566,7 @@ public interface TriggerOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *

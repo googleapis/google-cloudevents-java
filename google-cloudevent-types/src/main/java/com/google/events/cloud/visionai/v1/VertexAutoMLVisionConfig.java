@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.VertexAutoMLVisionConfig)
     VertexAutoMLVisionConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use VertexAutoMLVisionConfig.newBuilder() to construct.
   private VertexAutoMLVisionConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
 
   public static final int CONFIDENCE_THRESHOLD_FIELD_NUMBER = 1;
   private float confidenceThreshold_ = 0F;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
 
   public static final int MAX_PREDICTIONS_FIELD_NUMBER = 2;
   private int maxPredictions_ = 0;
+
   /**
    *
    *
@@ -273,6 +276,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -471,6 +475,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     private int bitField0_;
 
     private float confidenceThreshold_;
+
     /**
      *
      *
@@ -487,6 +492,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     public float getConfidenceThreshold() {
       return confidenceThreshold_;
     }
+
     /**
      *
      *
@@ -507,6 +513,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -527,6 +534,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     }
 
     private int maxPredictions_;
+
     /**
      *
      *
@@ -543,6 +551,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
     public int getMaxPredictions() {
       return maxPredictions_;
     }
+
     /**
      *
      *
@@ -563,6 +572,7 @@ public final class VertexAutoMLVisionConfig extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *

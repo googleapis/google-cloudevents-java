@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,6 +72,7 @@ public enum MqttState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>MQTT_STATE_UNSPECIFIED = 0;</code>
    */
   public static final int MQTT_STATE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -82,6 +83,7 @@ public enum MqttState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>MQTT_ENABLED = 1;</code>
    */
   public static final int MQTT_ENABLED_VALUE = 1;
+
   /**
    *
    *

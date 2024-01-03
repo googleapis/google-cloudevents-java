@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface ChannelOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface ChannelOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -93,6 +95,7 @@ public interface ChannelOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -105,6 +108,7 @@ public interface ChannelOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -128,6 +132,7 @@ public interface ChannelOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -140,6 +145,7 @@ public interface ChannelOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -166,6 +172,7 @@ public interface ChannelOrBuilder
    * @return The provider.
    */
   java.lang.String getProvider();
+
   /**
    *
    *
@@ -196,6 +203,7 @@ public interface ChannelOrBuilder
    * @return Whether the pubsubTopic field is set.
    */
   boolean hasPubsubTopic();
+
   /**
    *
    *
@@ -210,6 +218,7 @@ public interface ChannelOrBuilder
    * @return The pubsubTopic.
    */
   java.lang.String getPubsubTopic();
+
   /**
    *
    *
@@ -237,6 +246,7 @@ public interface ChannelOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -263,6 +273,7 @@ public interface ChannelOrBuilder
    * @return The activationToken.
    */
   java.lang.String getActivationToken();
+
   /**
    *
    *
@@ -292,6 +303,7 @@ public interface ChannelOrBuilder
    * @return The cryptoKeyName.
    */
   java.lang.String getCryptoKeyName();
+
   /**
    *
    *

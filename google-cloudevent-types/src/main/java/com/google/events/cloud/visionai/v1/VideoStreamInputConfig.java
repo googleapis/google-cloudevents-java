@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.VideoStreamInputConfig)
     VideoStreamInputConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use VideoStreamInputConfig.newBuilder() to construct.
   private VideoStreamInputConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -75,6 +76,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList streams_;
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -83,6 +85,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
   public com.google.protobuf.ProtocolStringList getStreamsList() {
     return streams_;
   }
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -91,6 +94,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
   public int getStreamsCount() {
     return streams_.size();
   }
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -100,6 +104,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
   public java.lang.String getStreams(int index) {
     return streams_.get(index);
   }
+
   /**
    * <code>repeated string streams = 1;</code>
    *
@@ -115,6 +120,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.visionai.v1.StreamWithAnnotation>
       streamsWithAnnotation_;
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -125,6 +131,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       getStreamsWithAnnotationList() {
     return streamsWithAnnotation_;
   }
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -135,6 +142,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       getStreamsWithAnnotationOrBuilderList() {
     return streamsWithAnnotation_;
   }
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -144,6 +152,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
   public int getStreamsWithAnnotationCount() {
     return streamsWithAnnotation_.size();
   }
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -154,6 +163,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       int index) {
     return streamsWithAnnotation_.get(index);
   }
+
   /**
    * <code>
    * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -345,6 +355,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -611,6 +622,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -619,6 +631,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     public com.google.protobuf.ProtocolStringList getStreamsList() {
       return streams_.getUnmodifiableView();
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -627,6 +640,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     public int getStreamsCount() {
       return streams_.size();
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -636,6 +650,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     public java.lang.String getStreams(int index) {
       return streams_.get(index);
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -645,6 +660,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
     public com.google.protobuf.ByteString getStreamsBytes(int index) {
       return streams_.getByteString(index);
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -661,6 +677,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -676,6 +693,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -688,6 +706,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -699,6 +718,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      * <code>repeated string streams = 1;</code>
      *
@@ -747,6 +767,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         return streamsWithAnnotationBuilder_.getMessageList();
       }
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -759,6 +780,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         return streamsWithAnnotationBuilder_.getCount();
       }
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -772,6 +794,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         return streamsWithAnnotationBuilder_.getMessage(index);
       }
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -791,6 +814,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -808,6 +832,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -827,6 +852,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -846,6 +872,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -862,6 +889,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -879,6 +907,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -896,6 +925,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -911,6 +941,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -926,6 +957,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
       }
       return this;
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -935,6 +967,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         getStreamsWithAnnotationBuilder(int index) {
       return getStreamsWithAnnotationFieldBuilder().getBuilder(index);
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -948,6 +981,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         return streamsWithAnnotationBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -962,6 +996,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
         return java.util.Collections.unmodifiableList(streamsWithAnnotation_);
       }
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -973,6 +1008,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
           .addBuilder(
               com.google.events.cloud.visionai.v1.StreamWithAnnotation.getDefaultInstance());
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;
@@ -984,6 +1020,7 @@ public final class VideoStreamInputConfig extends com.google.protobuf.GeneratedM
           .addBuilder(
               index, com.google.events.cloud.visionai.v1.StreamWithAnnotation.getDefaultInstance());
     }
+
     /**
      * <code>
      * repeated .google.events.cloud.visionai.v1.StreamWithAnnotation streams_with_annotation = 2;

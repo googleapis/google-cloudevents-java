@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface PersistenceConfigOrBuilder
    * @return The enum numeric value on the wire for persistenceMode.
    */
   int getPersistenceModeValue();
+
   /**
    *
    *
@@ -70,6 +71,7 @@ public interface PersistenceConfigOrBuilder
    * @return The enum numeric value on the wire for rdbSnapshotPeriod.
    */
   int getRdbSnapshotPeriodValue();
+
   /**
    *
    *
@@ -101,6 +103,7 @@ public interface PersistenceConfigOrBuilder
    * @return Whether the rdbNextSnapshotTime field is set.
    */
   boolean hasRdbNextSnapshotTime();
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public interface PersistenceConfigOrBuilder
    * @return The rdbNextSnapshotTime.
    */
   com.google.protobuf.Timestamp getRdbNextSnapshotTime();
+
   /**
    *
    *
@@ -138,6 +142,7 @@ public interface PersistenceConfigOrBuilder
    * @return Whether the rdbSnapshotStartTime field is set.
    */
   boolean hasRdbSnapshotStartTime();
+
   /**
    *
    *
@@ -152,6 +157,7 @@ public interface PersistenceConfigOrBuilder
    * @return The rdbSnapshotStartTime.
    */
   com.google.protobuf.Timestamp getRdbSnapshotStartTime();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
     // @@protoc_insertion_point(message_implements:google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorServiceEventData)
     ClientConnectorServiceEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ClientConnectorServiceEventData.newBuilder() to construct.
   private ClientConnectorServiceEventData(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -73,6 +74,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.beyondcorp.clientconnectorservices.v1.ClientConnectorService
       payload_;
+
   /**
    *
    *
@@ -91,6 +93,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
             .getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -325,6 +329,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -559,6 +564,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
             com.google.events.cloud.beyondcorp.clientconnectorservices.v1
                 .ClientConnectorServiceOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -576,6 +582,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -601,6 +608,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -628,6 +636,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -652,6 +661,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -684,6 +694,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -706,6 +717,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -725,6 +737,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -749,6 +762,7 @@ public final class ClientConnectorServiceEventData extends com.google.protobuf.G
             : payload_;
       }
     }
+
     /**
      *
      *

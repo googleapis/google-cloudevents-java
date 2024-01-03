@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.firebasealerts.v1.AlertData)
     AlertDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AlertData.newBuilder() to construct.
   private AlertData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -113,6 +117,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int END_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp endTime_;
+
   /**
    *
    *
@@ -129,6 +134,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasEndTime() {
     return endTime_ != null;
   }
+
   /**
    *
    *
@@ -145,6 +151,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getEndTime() {
     return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
   }
+
   /**
    *
    *
@@ -162,6 +169,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PAYLOAD_FIELD_NUMBER = 3;
   private com.google.protobuf.Struct payload_;
+
   /**
    *
    *
@@ -178,6 +186,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPayload() {
     return payload_ != null;
   }
+
   /**
    *
    *
@@ -194,6 +203,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Struct getPayload() {
     return payload_ == null ? com.google.protobuf.Struct.getDefaultInstance() : payload_;
   }
+
   /**
    *
    *
@@ -402,6 +412,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -627,6 +638,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -641,6 +653,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -661,6 +674,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -683,6 +697,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -702,6 +717,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -727,6 +743,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -746,6 +763,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -760,6 +778,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -778,6 +797,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -810,6 +830,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         endTimeBuilder_;
+
     /**
      *
      *
@@ -825,6 +846,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasEndTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -844,6 +866,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
         return endTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -867,6 +890,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -887,6 +911,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -913,6 +938,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -933,6 +959,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -948,6 +975,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getEndTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -965,6 +993,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
         return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
       }
     }
+
     /**
      *
      *
@@ -998,6 +1027,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -1013,6 +1043,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1032,6 +1063,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1055,6 +1087,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1075,6 +1108,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1101,6 +1135,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1121,6 +1156,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1136,6 +1172,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1153,6 +1190,7 @@ public final class AlertData extends com.google.protobuf.GeneratedMessageV3
         return payload_ == null ? com.google.protobuf.Struct.getDefaultInstance() : payload_;
       }
     }
+
     /**
      *
      *

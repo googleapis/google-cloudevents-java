@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,6 +42,7 @@ public interface AudioStreamOrBuilder
    * @return The codec.
    */
   java.lang.String getCodec();
+
   /**
    *
    *
@@ -110,6 +111,7 @@ public interface AudioStreamOrBuilder
    * @return A list containing the channelLayout.
    */
   java.util.List<java.lang.String> getChannelLayoutList();
+
   /**
    *
    *
@@ -131,6 +133,7 @@ public interface AudioStreamOrBuilder
    * @return The count of channelLayout.
    */
   int getChannelLayoutCount();
+
   /**
    *
    *
@@ -153,6 +156,7 @@ public interface AudioStreamOrBuilder
    * @return The channelLayout at the given index.
    */
   java.lang.String getChannelLayout(int index);
+
   /**
    *
    *
@@ -188,6 +192,7 @@ public interface AudioStreamOrBuilder
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.AudioStream.AudioMapping>
       getMappingList();
+
   /**
    *
    *
@@ -199,6 +204,7 @@ public interface AudioStreamOrBuilder
    * </code>
    */
   com.google.events.cloud.video.transcoder.v1.AudioStream.AudioMapping getMapping(int index);
+
   /**
    *
    *
@@ -210,6 +216,7 @@ public interface AudioStreamOrBuilder
    * </code>
    */
   int getMappingCount();
+
   /**
    *
    *
@@ -223,6 +230,7 @@ public interface AudioStreamOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.video.transcoder.v1.AudioStream.AudioMappingOrBuilder>
       getMappingOrBuilderList();
+
   /**
    *
    *
@@ -264,6 +272,7 @@ public interface AudioStreamOrBuilder
    * @return The languageCode.
    */
   java.lang.String getLanguageCode();
+
   /**
    *
    *
@@ -293,6 +302,7 @@ public interface AudioStreamOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *

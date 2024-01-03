@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DataAttributeOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface DataAttributeOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -91,6 +93,7 @@ public interface DataAttributeOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public interface DataAttributeOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -126,6 +130,7 @@ public interface DataAttributeOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public interface DataAttributeOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -161,6 +167,7 @@ public interface DataAttributeOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -186,6 +193,7 @@ public interface DataAttributeOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -209,6 +217,7 @@ public interface DataAttributeOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -219,9 +228,11 @@ public interface DataAttributeOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -232,6 +243,7 @@ public interface DataAttributeOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -246,6 +258,7 @@ public interface DataAttributeOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -272,6 +285,7 @@ public interface DataAttributeOrBuilder
    * @return The parentId.
    */
   java.lang.String getParentId();
+
   /**
    *
    *
@@ -315,6 +329,7 @@ public interface DataAttributeOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *
@@ -343,6 +358,7 @@ public interface DataAttributeOrBuilder
    * @return Whether the resourceAccessSpec field is set.
    */
   boolean hasResourceAccessSpec();
+
   /**
    *
    *
@@ -356,6 +372,7 @@ public interface DataAttributeOrBuilder
    * @return The resourceAccessSpec.
    */
   com.google.events.cloud.dataplex.v1.ResourceAccessSpec getResourceAccessSpec();
+
   /**
    *
    *
@@ -381,6 +398,7 @@ public interface DataAttributeOrBuilder
    * @return Whether the dataAccessSpec field is set.
    */
   boolean hasDataAccessSpec();
+
   /**
    *
    *
@@ -394,6 +412,7 @@ public interface DataAttributeOrBuilder
    * @return The dataAccessSpec.
    */
   com.google.events.cloud.dataplex.v1.DataAccessSpec getDataAccessSpec();
+
   /**
    *
    *

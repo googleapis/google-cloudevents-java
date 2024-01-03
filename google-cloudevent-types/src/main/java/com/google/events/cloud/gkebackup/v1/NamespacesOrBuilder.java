@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface NamespacesOrBuilder
    * @return A list containing the namespaces.
    */
   java.util.List<java.lang.String> getNamespacesList();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface NamespacesOrBuilder
    * @return The count of namespaces.
    */
   int getNamespacesCount();
+
   /**
    *
    *
@@ -60,6 +62,7 @@ public interface NamespacesOrBuilder
    * @return The namespaces at the given index.
    */
   java.lang.String getNamespaces(int index);
+
   /**
    *
    *

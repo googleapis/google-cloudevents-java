@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.audit.v1.ResourceLocation)
     ResourceLocationOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ResourceLocation.newBuilder() to construct.
   private ResourceLocation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList currentLocations_;
+
   /**
    *
    *
@@ -92,6 +94,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public com.google.protobuf.ProtocolStringList getCurrentLocationsList() {
     return currentLocations_;
   }
+
   /**
    *
    *
@@ -112,6 +115,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public int getCurrentLocationsCount() {
     return currentLocations_.size();
   }
+
   /**
    *
    *
@@ -133,6 +137,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public java.lang.String getCurrentLocations(int index) {
     return currentLocations_.get(index);
   }
+
   /**
    *
    *
@@ -159,6 +164,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList originalLocations_;
+
   /**
    *
    *
@@ -179,6 +185,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public com.google.protobuf.ProtocolStringList getOriginalLocationsList() {
     return originalLocations_;
   }
+
   /**
    *
    *
@@ -199,6 +206,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public int getOriginalLocationsCount() {
     return originalLocations_.size();
   }
+
   /**
    *
    *
@@ -220,6 +228,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
   public java.lang.String getOriginalLocations(int index) {
     return originalLocations_.get(index);
   }
+
   /**
    *
    *
@@ -424,6 +433,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -654,6 +664,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -674,6 +685,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ProtocolStringList getCurrentLocationsList() {
       return currentLocations_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -694,6 +706,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public int getCurrentLocationsCount() {
       return currentLocations_.size();
     }
+
     /**
      *
      *
@@ -715,6 +728,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public java.lang.String getCurrentLocations(int index) {
       return currentLocations_.get(index);
     }
+
     /**
      *
      *
@@ -736,6 +750,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ByteString getCurrentLocationsBytes(int index) {
       return currentLocations_.getByteString(index);
     }
+
     /**
      *
      *
@@ -764,6 +779,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -791,6 +807,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -815,6 +832,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -838,6 +856,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -876,6 +895,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
         bitField0_ |= 0x00000002;
       }
     }
+
     /**
      *
      *
@@ -896,6 +916,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ProtocolStringList getOriginalLocationsList() {
       return originalLocations_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -916,6 +937,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public int getOriginalLocationsCount() {
       return originalLocations_.size();
     }
+
     /**
      *
      *
@@ -937,6 +959,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public java.lang.String getOriginalLocations(int index) {
       return originalLocations_.get(index);
     }
+
     /**
      *
      *
@@ -958,6 +981,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
     public com.google.protobuf.ByteString getOriginalLocationsBytes(int index) {
       return originalLocations_.getByteString(index);
     }
+
     /**
      *
      *
@@ -986,6 +1010,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1013,6 +1038,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1037,6 +1063,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1060,6 +1087,7 @@ public final class ResourceLocation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *

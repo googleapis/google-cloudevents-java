@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.OracleTable)
     OracleTableOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use OracleTable.newBuilder() to construct.
   private OracleTable(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object table_ = "";
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.datastream.v1.OracleColumn> oracleColumns_;
+
   /**
    *
    *
@@ -138,6 +142,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.datastream.v1.OracleColumn> getOracleColumnsList() {
     return oracleColumns_;
   }
+
   /**
    *
    *
@@ -154,6 +159,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       getOracleColumnsOrBuilderList() {
     return oracleColumns_;
   }
+
   /**
    *
    *
@@ -169,6 +175,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
   public int getOracleColumnsCount() {
     return oracleColumns_.size();
   }
+
   /**
    *
    *
@@ -184,6 +191,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.datastream.v1.OracleColumn getOracleColumns(int index) {
     return oracleColumns_.get(index);
   }
+
   /**
    *
    *
@@ -371,6 +379,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -617,6 +626,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object table_ = "";
+
     /**
      *
      *
@@ -639,6 +649,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -661,6 +672,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -682,6 +694,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -699,6 +712,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -759,6 +773,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return oracleColumnsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -777,6 +792,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return oracleColumnsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -795,6 +811,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return oracleColumnsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -820,6 +837,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -842,6 +860,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -866,6 +885,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -891,6 +911,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -913,6 +934,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -935,6 +957,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -957,6 +980,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -978,6 +1002,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -999,6 +1024,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1014,6 +1040,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         int index) {
       return getOracleColumnsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1033,6 +1060,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return oracleColumnsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1052,6 +1080,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(oracleColumns_);
       }
     }
+
     /**
      *
      *
@@ -1067,6 +1096,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
       return getOracleColumnsFieldBuilder()
           .addBuilder(com.google.events.cloud.datastream.v1.OracleColumn.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1084,6 +1114,7 @@ public final class OracleTable extends com.google.protobuf.GeneratedMessageV3
           .addBuilder(
               index, com.google.events.cloud.datastream.v1.OracleColumn.getDefaultInstance());
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -101,6 +101,7 @@ public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>TEST_STATE_UNSPECIFIED = 0;</code>
    */
   public static final int TEST_STATE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -111,6 +112,7 @@ public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VALIDATING = 1;</code>
    */
   public static final int VALIDATING_VALUE = 1;
+
   /**
    *
    *
@@ -121,6 +123,7 @@ public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>PENDING = 2;</code>
    */
   public static final int PENDING_VALUE = 2;
+
   /**
    *
    *
@@ -131,6 +134,7 @@ public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>FINISHED = 3;</code>
    */
   public static final int FINISHED_VALUE = 3;
+
   /**
    *
    *
@@ -141,6 +145,7 @@ public enum TestState implements com.google.protobuf.ProtocolMessageEnum {
    * <code>ERROR = 4;</code>
    */
   public static final int ERROR_VALUE = 4;
+
   /**
    *
    *

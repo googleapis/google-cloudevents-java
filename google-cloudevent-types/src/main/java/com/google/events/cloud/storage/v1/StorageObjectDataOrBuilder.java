@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface StorageObjectDataOrBuilder
    * @return The contentEncoding.
    */
   java.lang.String getContentEncoding();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface StorageObjectDataOrBuilder
    * @return The contentDisposition.
    */
   java.lang.String getContentDisposition();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface StorageObjectDataOrBuilder
    * @return The cacheControl.
    */
   java.lang.String getCacheControl();
+
   /**
    *
    *
@@ -117,6 +120,7 @@ public interface StorageObjectDataOrBuilder
    * @return The contentLanguage.
    */
   java.lang.String getContentLanguage();
+
   /**
    *
    *
@@ -160,6 +164,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the timeDeleted field is set.
    */
   boolean hasTimeDeleted();
+
   /**
    *
    *
@@ -173,6 +178,7 @@ public interface StorageObjectDataOrBuilder
    * @return The timeDeleted.
    */
   com.google.protobuf.Timestamp getTimeDeleted();
+
   /**
    *
    *
@@ -200,6 +206,7 @@ public interface StorageObjectDataOrBuilder
    * @return The contentType.
    */
   java.lang.String getContentType();
+
   /**
    *
    *
@@ -243,6 +250,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the timeCreated field is set.
    */
   boolean hasTimeCreated();
+
   /**
    *
    *
@@ -256,6 +264,7 @@ public interface StorageObjectDataOrBuilder
    * @return The timeCreated.
    */
   com.google.protobuf.Timestamp getTimeCreated();
+
   /**
    *
    *
@@ -283,6 +292,7 @@ public interface StorageObjectDataOrBuilder
    * @return The crc32c.
    */
   java.lang.String getCrc32C();
+
   /**
    *
    *
@@ -330,6 +340,7 @@ public interface StorageObjectDataOrBuilder
    * @return The md5Hash.
    */
   java.lang.String getMd5Hash();
+
   /**
    *
    *
@@ -360,6 +371,7 @@ public interface StorageObjectDataOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *
@@ -386,6 +398,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the updated field is set.
    */
   boolean hasUpdated();
+
   /**
    *
    *
@@ -398,6 +411,7 @@ public interface StorageObjectDataOrBuilder
    * @return The updated.
    */
   com.google.protobuf.Timestamp getUpdated();
+
   /**
    *
    *
@@ -421,6 +435,7 @@ public interface StorageObjectDataOrBuilder
    * @return The storageClass.
    */
   java.lang.String getStorageClass();
+
   /**
    *
    *
@@ -447,6 +462,7 @@ public interface StorageObjectDataOrBuilder
    * @return The kmsKeyName.
    */
   java.lang.String getKmsKeyName();
+
   /**
    *
    *
@@ -473,6 +489,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the timeStorageClassUpdated field is set.
    */
   boolean hasTimeStorageClassUpdated();
+
   /**
    *
    *
@@ -485,6 +502,7 @@ public interface StorageObjectDataOrBuilder
    * @return The timeStorageClassUpdated.
    */
   com.google.protobuf.Timestamp getTimeStorageClassUpdated();
+
   /**
    *
    *
@@ -522,6 +540,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the retentionExpirationTime field is set.
    */
   boolean hasRetentionExpirationTime();
+
   /**
    *
    *
@@ -535,6 +554,7 @@ public interface StorageObjectDataOrBuilder
    * @return The retentionExpirationTime.
    */
   com.google.protobuf.Timestamp getRetentionExpirationTime();
+
   /**
    *
    *
@@ -557,6 +577,7 @@ public interface StorageObjectDataOrBuilder
    * <code>map&lt;string, string&gt; metadata = 21;</code>
    */
   int getMetadataCount();
+
   /**
    *
    *
@@ -567,9 +588,11 @@ public interface StorageObjectDataOrBuilder
    * <code>map&lt;string, string&gt; metadata = 21;</code>
    */
   boolean containsMetadata(java.lang.String key);
+
   /** Use {@link #getMetadataMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getMetadata();
+
   /**
    *
    *
@@ -580,6 +603,7 @@ public interface StorageObjectDataOrBuilder
    * <code>map&lt;string, string&gt; metadata = 21;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getMetadataMap();
+
   /**
    *
    *
@@ -594,6 +618,7 @@ public interface StorageObjectDataOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -630,6 +655,7 @@ public interface StorageObjectDataOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -656,6 +682,7 @@ public interface StorageObjectDataOrBuilder
    * @return The id.
    */
   java.lang.String getId();
+
   /**
    *
    *
@@ -682,6 +709,7 @@ public interface StorageObjectDataOrBuilder
    * @return The bucket.
    */
   java.lang.String getBucket();
+
   /**
    *
    *
@@ -724,6 +752,7 @@ public interface StorageObjectDataOrBuilder
    * @return Whether the customerEncryption field is set.
    */
   boolean hasCustomerEncryption();
+
   /**
    *
    *
@@ -739,6 +768,7 @@ public interface StorageObjectDataOrBuilder
    * @return The customerEncryption.
    */
   com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption getCustomerEncryption();
+
   /**
    *
    *
@@ -766,6 +796,7 @@ public interface StorageObjectDataOrBuilder
    * @return The mediaLink.
    */
   java.lang.String getMediaLink();
+
   /**
    *
    *
@@ -791,6 +822,7 @@ public interface StorageObjectDataOrBuilder
    * @return The selfLink.
    */
   java.lang.String getSelfLink();
+
   /**
    *
    *
@@ -816,6 +848,7 @@ public interface StorageObjectDataOrBuilder
    * @return The kind.
    */
   java.lang.String getKind();
+
   /**
    *
    *

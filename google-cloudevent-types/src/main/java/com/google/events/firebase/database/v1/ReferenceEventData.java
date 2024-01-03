@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.firebase.database.v1.ReferenceEventData)
     ReferenceEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ReferenceEventData.newBuilder() to construct.
   private ReferenceEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
 
   public static final int DATA_FIELD_NUMBER = 1;
   private com.google.protobuf.Value data_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
   public boolean hasData() {
     return data_ != null;
   }
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
   public com.google.protobuf.Value getData() {
     return data_ == null ? com.google.protobuf.Value.getDefaultInstance() : data_;
   }
+
   /**
    *
    *
@@ -113,6 +117,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
 
   public static final int DELTA_FIELD_NUMBER = 2;
   private com.google.protobuf.Value delta_;
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
   public boolean hasDelta() {
     return delta_ != null;
   }
+
   /**
    *
    *
@@ -143,6 +149,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
   public com.google.protobuf.Value getDelta() {
     return delta_ == null ? com.google.protobuf.Value.getDefaultInstance() : delta_;
   }
+
   /**
    *
    *
@@ -336,6 +343,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -544,6 +552,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
             com.google.protobuf.Value.Builder,
             com.google.protobuf.ValueOrBuilder>
         dataBuilder_;
+
     /**
      *
      *
@@ -558,6 +567,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
     public boolean hasData() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -576,6 +586,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
         return dataBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -598,6 +609,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -617,6 +629,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -642,6 +655,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -661,6 +675,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -675,6 +690,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return getDataFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -691,6 +707,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
         return data_ == null ? com.google.protobuf.Value.getDefaultInstance() : data_;
       }
     }
+
     /**
      *
      *
@@ -722,6 +739,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
             com.google.protobuf.Value.Builder,
             com.google.protobuf.ValueOrBuilder>
         deltaBuilder_;
+
     /**
      *
      *
@@ -736,6 +754,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
     public boolean hasDelta() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -754,6 +773,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
         return deltaBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -776,6 +796,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -795,6 +816,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -820,6 +842,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -839,6 +862,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -853,6 +877,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
       onChanged();
       return getDeltaFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -869,6 +894,7 @@ public final class ReferenceEventData extends com.google.protobuf.GeneratedMessa
         return delta_ == null ? com.google.protobuf.Value.getDefaultInstance() : delta_;
       }
     }
+
     /**
      *
      *

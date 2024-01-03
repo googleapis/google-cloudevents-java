@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,6 +74,7 @@ public enum AutoscalingAlgorithm implements com.google.protobuf.ProtocolMessageE
    * <code>AUTOSCALING_ALGORITHM_UNKNOWN = 0;</code>
    */
   public static final int AUTOSCALING_ALGORITHM_UNKNOWN_VALUE = 0;
+
   /**
    *
    *
@@ -84,6 +85,7 @@ public enum AutoscalingAlgorithm implements com.google.protobuf.ProtocolMessageE
    * <code>AUTOSCALING_ALGORITHM_NONE = 1;</code>
    */
   public static final int AUTOSCALING_ALGORITHM_NONE_VALUE = 1;
+
   /**
    *
    *

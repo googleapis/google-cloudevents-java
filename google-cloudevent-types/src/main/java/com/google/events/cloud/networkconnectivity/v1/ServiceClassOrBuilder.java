@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ public interface ServiceClassOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -68,6 +69,7 @@ public interface ServiceClassOrBuilder
    * @return The serviceClass.
    */
   java.lang.String getServiceClass();
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public interface ServiceClassOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -107,6 +110,7 @@ public interface ServiceClassOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -130,6 +134,7 @@ public interface ServiceClassOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -142,6 +147,7 @@ public interface ServiceClassOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface ServiceClassOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -173,9 +180,11 @@ public interface ServiceClassOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -186,6 +195,7 @@ public interface ServiceClassOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -200,6 +210,7 @@ public interface ServiceClassOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -223,6 +234,7 @@ public interface ServiceClassOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -248,6 +260,7 @@ public interface ServiceClassOrBuilder
    * @return A list containing the serviceConnectionMaps.
    */
   java.util.List<java.lang.String> getServiceConnectionMapsList();
+
   /**
    *
    *
@@ -260,6 +273,7 @@ public interface ServiceClassOrBuilder
    * @return The count of serviceConnectionMaps.
    */
   int getServiceConnectionMapsCount();
+
   /**
    *
    *
@@ -273,6 +287,7 @@ public interface ServiceClassOrBuilder
    * @return The serviceConnectionMaps at the given index.
    */
   java.lang.String getServiceConnectionMaps(int index);
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface BackupSourceOrBuilder
    * @return The backupUid.
    */
   java.lang.String getBackupUid();
+
   /**
    *
    *
@@ -65,6 +66,7 @@ public interface BackupSourceOrBuilder
    * @return The backupName.
    */
   java.lang.String getBackupName();
+
   /**
    *
    *

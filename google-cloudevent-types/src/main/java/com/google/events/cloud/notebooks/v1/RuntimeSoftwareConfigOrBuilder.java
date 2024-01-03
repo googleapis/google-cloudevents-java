@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return The notebookUpgradeSchedule.
    */
   java.lang.String getNotebookUpgradeSchedule();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the enableHealthMonitoring field is set.
    */
   boolean hasEnableHealthMonitoring();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the idleShutdown field is set.
    */
   boolean hasIdleShutdown();
+
   /**
    *
    *
@@ -144,6 +147,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return The customGpuDriverPath.
    */
   java.lang.String getCustomGpuDriverPath();
+
   /**
    *
    *
@@ -172,6 +176,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return The postStartupScript.
    */
   java.lang.String getPostStartupScript();
+
   /**
    *
    *
@@ -198,6 +203,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.ContainerImage kernels = 8;</code>
    */
   java.util.List<com.google.events.cloud.notebooks.v1.ContainerImage> getKernelsList();
+
   /**
    *
    *
@@ -209,6 +215,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.ContainerImage kernels = 8;</code>
    */
   com.google.events.cloud.notebooks.v1.ContainerImage getKernels(int index);
+
   /**
    *
    *
@@ -220,6 +227,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.ContainerImage kernels = 8;</code>
    */
   int getKernelsCount();
+
   /**
    *
    *
@@ -232,6 +240,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.notebooks.v1.ContainerImageOrBuilder>
       getKernelsOrBuilderList();
+
   /**
    *
    *
@@ -257,6 +266,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the upgradeable field is set.
    */
   boolean hasUpgradeable();
+
   /**
    *
    *
@@ -285,6 +295,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return The enum numeric value on the wire for postStartupScriptBehavior.
    */
   int getPostStartupScriptBehaviorValue();
+
   /**
    *
    *
@@ -314,6 +325,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the disableTerminal field is set.
    */
   boolean hasDisableTerminal();
+
   /**
    *
    *
@@ -341,6 +353,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the version field is set.
    */
   boolean hasVersion();
+
   /**
    *
    *
@@ -354,6 +367,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return The version.
    */
   java.lang.String getVersion();
+
   /**
    *
    *
@@ -381,6 +395,7 @@ public interface RuntimeSoftwareConfigOrBuilder
    * @return Whether the mixerDisabled field is set.
    */
   boolean hasMixerDisabled();
+
   /**
    *
    *

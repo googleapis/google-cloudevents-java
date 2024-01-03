@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface EventOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface EventOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface EventOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface EventOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface EventOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -138,9 +144,11 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -151,6 +159,7 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -165,6 +174,7 @@ public interface EventOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -186,6 +196,7 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; annotations = 5;</code>
    */
   int getAnnotationsCount();
+
   /**
    *
    *
@@ -196,9 +207,11 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; annotations = 5;</code>
    */
   boolean containsAnnotations(java.lang.String key);
+
   /** Use {@link #getAnnotationsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getAnnotations();
+
   /**
    *
    *
@@ -209,6 +222,7 @@ public interface EventOrBuilder
    * <code>map&lt;string, string&gt; annotations = 5;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getAnnotationsMap();
+
   /**
    *
    *
@@ -223,6 +237,7 @@ public interface EventOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -246,6 +261,7 @@ public interface EventOrBuilder
    * @return The enum numeric value on the wire for alignmentClock.
    */
   int getAlignmentClockValue();
+
   /**
    *
    *
@@ -274,6 +290,7 @@ public interface EventOrBuilder
    * @return Whether the gracePeriod field is set.
    */
   boolean hasGracePeriod();
+
   /**
    *
    *
@@ -289,6 +306,7 @@ public interface EventOrBuilder
    * @return The gracePeriod.
    */
   com.google.protobuf.Duration getGracePeriod();
+
   /**
    *
    *

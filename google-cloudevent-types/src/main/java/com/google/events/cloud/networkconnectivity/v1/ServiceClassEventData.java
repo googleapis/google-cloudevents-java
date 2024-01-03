@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceClassEventData)
     ServiceClassEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ServiceClassEventData.newBuilder() to construct.
   private ServiceClassEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkconnectivity.v1.ServiceClass payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
         ? com.google.events.cloud.networkconnectivity.v1.ServiceClass.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -283,6 +287,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -493,6 +498,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
             com.google.events.cloud.networkconnectivity.v1.ServiceClass.Builder,
             com.google.events.cloud.networkconnectivity.v1.ServiceClassOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -507,6 +513,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -527,6 +534,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -549,6 +557,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -569,6 +578,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -596,6 +606,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -615,6 +626,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -629,6 +641,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -648,6 +661,7 @@ public final class ServiceClassEventData extends com.google.protobuf.GeneratedMe
             : payload_;
       }
     }
+
     /**
      *
      *

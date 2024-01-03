@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface SecretEnvVarOrBuilder
    * @return The key.
    */
   java.lang.String getKey();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface SecretEnvVarOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface SecretEnvVarOrBuilder
    * @return The secret.
    */
   java.lang.String getSecret();
+
   /**
    *
    *
@@ -117,6 +120,7 @@ public interface SecretEnvVarOrBuilder
    * @return The version.
    */
   java.lang.String getVersion();
+
   /**
    *
    *

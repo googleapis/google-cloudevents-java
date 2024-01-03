@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastream.v1.ForwardSshTunnelConnectivity)
     ForwardSshTunnelConnectivityOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ForwardSshTunnelConnectivity.newBuilder() to construct.
   private ForwardSshTunnelConnectivity(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object hostname_ = "";
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       return s;
     }
   }
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object username_ = "";
+
   /**
    *
    *
@@ -146,6 +150,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       return s;
     }
   }
+
   /**
    *
    *
@@ -172,6 +177,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
 
   public static final int PORT_FIELD_NUMBER = 3;
   private int port_ = 0;
+
   /**
    *
    *
@@ -367,6 +373,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -586,6 +593,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     private int bitField0_;
 
     private java.lang.Object hostname_ = "";
+
     /**
      *
      *
@@ -608,6 +616,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -630,6 +639,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -651,6 +661,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -668,6 +679,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -692,6 +704,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     }
 
     private java.lang.Object username_ = "";
+
     /**
      *
      *
@@ -714,6 +727,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -736,6 +750,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -757,6 +772,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -774,6 +790,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -798,6 +815,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     }
 
     private int port_;
+
     /**
      *
      *
@@ -813,6 +831,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
     public int getPort() {
       return port_;
     }
+
     /**
      *
      *
@@ -832,6 +851,7 @@ public final class ForwardSshTunnelConnectivity extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *

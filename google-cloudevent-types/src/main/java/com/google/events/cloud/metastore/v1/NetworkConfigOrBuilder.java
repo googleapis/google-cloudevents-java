@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public interface NetworkConfigOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.NetworkConfig.Consumer consumers = 1;</code>
    */
   java.util.List<com.google.events.cloud.metastore.v1.NetworkConfig.Consumer> getConsumersList();
+
   /**
    *
    *
@@ -45,6 +46,7 @@ public interface NetworkConfigOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.NetworkConfig.Consumer consumers = 1;</code>
    */
   com.google.events.cloud.metastore.v1.NetworkConfig.Consumer getConsumers(int index);
+
   /**
    *
    *
@@ -56,6 +58,7 @@ public interface NetworkConfigOrBuilder
    * <code>repeated .google.events.cloud.metastore.v1.NetworkConfig.Consumer consumers = 1;</code>
    */
   int getConsumersCount();
+
   /**
    *
    *
@@ -68,6 +71,7 @@ public interface NetworkConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.metastore.v1.NetworkConfig.ConsumerOrBuilder>
       getConsumersOrBuilderList();
+
   /**
    *
    *

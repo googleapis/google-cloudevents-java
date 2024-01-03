@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.notebooks.v1.RuntimeAccessConfig)
     RuntimeAccessConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use RuntimeAccessConfig.newBuilder() to construct.
   private RuntimeAccessConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -126,6 +127,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
      * <code>RUNTIME_ACCESS_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int RUNTIME_ACCESS_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -136,6 +138,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
      * <code>SINGLE_USER = 1;</code>
      */
     public static final int SINGLE_USER_VALUE = 1;
+
     /**
      *
      *
@@ -240,6 +243,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
 
   public static final int ACCESS_TYPE_FIELD_NUMBER = 1;
   private int accessType_ = 0;
+
   /**
    *
    *
@@ -256,6 +260,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
   public int getAccessTypeValue() {
     return accessType_;
   }
+
   /**
    *
    *
@@ -283,6 +288,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object runtimeOwner_ = "";
+
   /**
    *
    *
@@ -307,6 +313,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -336,6 +343,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object proxyUri_ = "";
+
   /**
    *
    *
@@ -359,6 +367,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -567,6 +576,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -779,6 +789,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     private int bitField0_;
 
     private int accessType_ = 0;
+
     /**
      *
      *
@@ -796,6 +807,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     public int getAccessTypeValue() {
       return accessType_;
     }
+
     /**
      *
      *
@@ -816,6 +828,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -839,6 +852,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
           ? com.google.events.cloud.notebooks.v1.RuntimeAccessConfig.RuntimeAccessType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -863,6 +877,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -884,6 +899,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object runtimeOwner_ = "";
+
     /**
      *
      *
@@ -907,6 +923,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -930,6 +947,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -952,6 +970,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -970,6 +989,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -995,6 +1015,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object proxyUri_ = "";
+
     /**
      *
      *
@@ -1017,6 +1038,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1039,6 +1061,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1060,6 +1083,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1077,6 +1101,7 @@ public final class RuntimeAccessConfig extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *

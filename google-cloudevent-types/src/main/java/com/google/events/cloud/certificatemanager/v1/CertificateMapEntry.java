@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.certificatemanager.v1.CertificateMapEntry)
     CertificateMapEntryOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CertificateMapEntry.newBuilder() to construct.
   private CertificateMapEntry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -126,6 +127,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
      * <code>MATCHER_UNSPECIFIED = 0;</code>
      */
     public static final int MATCHER_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -236,6 +238,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     private MatchCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -272,6 +275,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -297,6 +301,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -327,6 +332,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -350,6 +356,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -376,6 +383,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   public static final int CREATE_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -391,6 +399,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -406,6 +415,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -422,6 +432,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -437,6 +448,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -452,6 +464,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -492,6 +505,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -508,12 +522,14 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -527,6 +543,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -547,6 +564,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -569,6 +587,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   }
 
   public static final int HOSTNAME_FIELD_NUMBER = 5;
+
   /**
    *
    *
@@ -585,6 +604,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public boolean hasHostname() {
     return matchCase_ == 5;
   }
+
   /**
    *
    *
@@ -614,6 +634,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -645,6 +666,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   }
 
   public static final int MATCHER_FIELD_NUMBER = 10;
+
   /**
    *
    *
@@ -660,6 +682,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public boolean hasMatcher() {
     return matchCase_ == 10;
   }
+
   /**
    *
    *
@@ -678,6 +701,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     }
     return 0;
   }
+
   /**
    *
    *
@@ -707,6 +731,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList certificates_;
+
   /**
    *
    *
@@ -723,6 +748,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.ProtocolStringList getCertificatesList() {
     return certificates_;
   }
+
   /**
    *
    *
@@ -739,6 +765,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public int getCertificatesCount() {
     return certificates_.size();
   }
+
   /**
    *
    *
@@ -756,6 +783,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public java.lang.String getCertificates(int index) {
     return certificates_.get(index);
   }
+
   /**
    *
    *
@@ -776,6 +804,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
 
   public static final int STATE_FIELD_NUMBER = 8;
   private int state_ = 0;
+
   /**
    *
    *
@@ -791,6 +820,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -1091,6 +1121,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1465,6 +1496,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1489,6 +1521,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1513,6 +1546,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1536,6 +1570,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1555,6 +1590,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1581,6 +1617,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -1603,6 +1640,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1625,6 +1663,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1646,6 +1685,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1663,6 +1703,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1692,6 +1733,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -1706,6 +1748,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1726,6 +1769,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1748,6 +1792,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1767,6 +1812,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1792,6 +1838,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1811,6 +1858,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1825,6 +1873,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1843,6 +1892,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -1875,6 +1925,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -1889,6 +1940,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1909,6 +1961,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1931,6 +1984,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1950,6 +2004,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1975,6 +2030,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1994,6 +2050,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2008,6 +2065,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2026,6 +2084,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -2077,6 +2136,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -2093,12 +2153,14 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -2112,6 +2174,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -2132,6 +2195,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -2158,6 +2222,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -2174,12 +2239,14 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000010;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -2200,6 +2267,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       bitField0_ |= 0x00000010;
       return this;
     }
+
     /**
      *
      *
@@ -2232,6 +2300,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public boolean hasHostname() {
       return matchCase_ == 5;
     }
+
     /**
      *
      *
@@ -2262,6 +2331,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2292,6 +2362,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2315,6 +2386,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2336,6 +2408,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       }
       return this;
     }
+
     /**
      *
      *
@@ -2377,6 +2450,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public boolean hasMatcher() {
       return matchCase_ == 10;
     }
+
     /**
      *
      *
@@ -2396,6 +2470,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       }
       return 0;
     }
+
     /**
      *
      *
@@ -2415,6 +2490,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2440,6 +2516,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       return com.google.events.cloud.certificatemanager.v1.CertificateMapEntry.Matcher
           .MATCHER_UNSPECIFIED;
     }
+
     /**
      *
      *
@@ -2463,6 +2540,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2493,6 +2571,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
         bitField0_ |= 0x00000080;
       }
     }
+
     /**
      *
      *
@@ -2509,6 +2588,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public com.google.protobuf.ProtocolStringList getCertificatesList() {
       return certificates_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -2525,6 +2605,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public int getCertificatesCount() {
       return certificates_.size();
     }
+
     /**
      *
      *
@@ -2542,6 +2623,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public java.lang.String getCertificates(int index) {
       return certificates_.get(index);
     }
+
     /**
      *
      *
@@ -2559,6 +2641,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public com.google.protobuf.ByteString getCertificatesBytes(int index) {
       return certificates_.getByteString(index);
     }
+
     /**
      *
      *
@@ -2583,6 +2666,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2606,6 +2690,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2626,6 +2711,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2645,6 +2731,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2671,6 +2758,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -2686,6 +2774,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -2704,6 +2793,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2723,6 +2813,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
           ? com.google.events.cloud.certificatemanager.v1.ServingState.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -2744,6 +2835,7 @@ public final class CertificateMapEntry extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *

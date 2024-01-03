@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface EnvironmentOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface EnvironmentOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface EnvironmentOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -114,6 +117,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the vmImage field is set.
    */
   boolean hasVmImage();
+
   /**
    *
    *
@@ -126,6 +130,7 @@ public interface EnvironmentOrBuilder
    * @return The vmImage.
    */
   com.google.events.cloud.notebooks.v1.VmImage getVmImage();
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the containerImage field is set.
    */
   boolean hasContainerImage();
+
   /**
    *
    *
@@ -161,6 +167,7 @@ public interface EnvironmentOrBuilder
    * @return The containerImage.
    */
   com.google.events.cloud.notebooks.v1.ContainerImage getContainerImage();
+
   /**
    *
    *
@@ -186,6 +193,7 @@ public interface EnvironmentOrBuilder
    * @return The postStartupScript.
    */
   java.lang.String getPostStartupScript();
+
   /**
    *
    *
@@ -213,6 +221,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -225,6 +234,7 @@ public interface EnvironmentOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *

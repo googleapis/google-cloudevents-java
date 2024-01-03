@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface LinkedInterconnectAttachmentsOrBuilder
    * @return A list containing the uris.
    */
   java.util.List<java.lang.String> getUrisList();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface LinkedInterconnectAttachmentsOrBuilder
    * @return The count of uris.
    */
   int getUrisCount();
+
   /**
    *
    *
@@ -60,6 +62,7 @@ public interface LinkedInterconnectAttachmentsOrBuilder
    * @return The uris at the given index.
    */
   java.lang.String getUris(int index);
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface LinkedInterconnectAttachmentsOrBuilder
    * @return The vpcNetwork.
    */
   java.lang.String getVpcNetwork();
+
   /**
    *
    *

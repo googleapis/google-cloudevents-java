@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MysqlTableOrBuilder
    * @return The table.
    */
   java.lang.String getTable();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface MysqlTableOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.MysqlColumn mysql_columns = 2;</code>
    */
   java.util.List<com.google.events.cloud.datastream.v1.MysqlColumn> getMysqlColumnsList();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface MysqlTableOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.MysqlColumn mysql_columns = 2;</code>
    */
   com.google.events.cloud.datastream.v1.MysqlColumn getMysqlColumns(int index);
+
   /**
    *
    *
@@ -84,6 +87,7 @@ public interface MysqlTableOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.MysqlColumn mysql_columns = 2;</code>
    */
   int getMysqlColumnsCount();
+
   /**
    *
    *
@@ -97,6 +101,7 @@ public interface MysqlTableOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastream.v1.MysqlColumnOrBuilder>
       getMysqlColumnsOrBuilderList();
+
   /**
    *
    *

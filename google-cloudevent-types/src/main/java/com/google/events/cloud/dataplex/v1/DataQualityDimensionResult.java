@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataQualityDimensionResult)
     DataQualityDimensionResultOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataQualityDimensionResult.newBuilder() to construct.
   private DataQualityDimensionResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
 
   public static final int PASSED_FIELD_NUMBER = 3;
   private boolean passed_ = false;
+
   /**
    *
    *
@@ -244,6 +246,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -430,6 +433,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
     private int bitField0_;
 
     private boolean passed_;
+
     /**
      *
      *
@@ -445,6 +449,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
     public boolean getPassed() {
       return passed_;
     }
+
     /**
      *
      *
@@ -464,6 +469,7 @@ public final class DataQualityDimensionResult extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *

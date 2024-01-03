@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.iot.v1.DeviceEventData)
     DeviceEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DeviceEventData.newBuilder() to construct.
   private DeviceEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.iot.v1.Device payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -98,6 +101,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
   public com.google.events.cloud.iot.v1.Device getPayload() {
     return payload_ == null ? com.google.events.cloud.iot.v1.Device.getDefaultInstance() : payload_;
   }
+
   /**
    *
    *
@@ -276,6 +280,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -478,6 +483,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.iot.v1.Device.Builder,
             com.google.events.cloud.iot.v1.DeviceOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -492,6 +498,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -512,6 +519,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -534,6 +542,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -553,6 +562,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -578,6 +588,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -597,6 +608,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -611,6 +623,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -629,6 +642,7 @@ public final class DeviceEventData extends com.google.protobuf.GeneratedMessageV
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface GatewayConfigOrBuilder
    * @return The enum numeric value on the wire for gatewayType.
    */
   int getGatewayTypeValue();
+
   /**
    *
    *
@@ -61,6 +62,7 @@ public interface GatewayConfigOrBuilder
    * @return The enum numeric value on the wire for gatewayAuthMethod.
    */
   int getGatewayAuthMethodValue();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface GatewayConfigOrBuilder
    * @return The lastAccessedGatewayId.
    */
   java.lang.String getLastAccessedGatewayId();
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public interface GatewayConfigOrBuilder
    * @return Whether the lastAccessedGatewayTime field is set.
    */
   boolean hasLastAccessedGatewayTime();
+
   /**
    *
    *
@@ -126,6 +130,7 @@ public interface GatewayConfigOrBuilder
    * @return The lastAccessedGatewayTime.
    */
   com.google.protobuf.Timestamp getLastAccessedGatewayTime();
+
   /**
    *
    *

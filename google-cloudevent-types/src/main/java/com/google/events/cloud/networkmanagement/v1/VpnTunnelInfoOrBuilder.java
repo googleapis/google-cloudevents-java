@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The uri.
    */
   java.lang.String getUri();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The sourceGateway.
    */
   java.lang.String getSourceGateway();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The remoteGateway.
    */
   java.lang.String getRemoteGateway();
+
   /**
    *
    *
@@ -135,6 +139,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The remoteGatewayIp.
    */
   java.lang.String getRemoteGatewayIp();
+
   /**
    *
    *
@@ -160,6 +165,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The sourceGatewayIp.
    */
   java.lang.String getSourceGatewayIp();
+
   /**
    *
    *
@@ -185,6 +191,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The networkUri.
    */
   java.lang.String getNetworkUri();
+
   /**
    *
    *
@@ -210,6 +217,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The region.
    */
   java.lang.String getRegion();
+
   /**
    *
    *
@@ -236,6 +244,7 @@ public interface VpnTunnelInfoOrBuilder
    * @return The enum numeric value on the wire for routingType.
    */
   int getRoutingTypeValue();
+
   /**
    *
    *

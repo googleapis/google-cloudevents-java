@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ReachabilityDetailsOrBuilder
    * @return The enum numeric value on the wire for result.
    */
   int getResultValue();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ReachabilityDetailsOrBuilder
    * @return Whether the verifyTime field is set.
    */
   boolean hasVerifyTime();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface ReachabilityDetailsOrBuilder
    * @return The verifyTime.
    */
   com.google.protobuf.Timestamp getVerifyTime();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface ReachabilityDetailsOrBuilder
    * @return Whether the error field is set.
    */
   boolean hasError();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface ReachabilityDetailsOrBuilder
    * @return The error.
    */
   com.google.rpc.Status getError();
+
   /**
    *
    *
@@ -130,6 +135,7 @@ public interface ReachabilityDetailsOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Trace traces = 5;</code>
    */
   java.util.List<com.google.events.cloud.networkmanagement.v1.Trace> getTracesList();
+
   /**
    *
    *
@@ -142,6 +148,7 @@ public interface ReachabilityDetailsOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Trace traces = 5;</code>
    */
   com.google.events.cloud.networkmanagement.v1.Trace getTraces(int index);
+
   /**
    *
    *
@@ -154,6 +161,7 @@ public interface ReachabilityDetailsOrBuilder
    * <code>repeated .google.events.cloud.networkmanagement.v1.Trace traces = 5;</code>
    */
   int getTracesCount();
+
   /**
    *
    *
@@ -167,6 +175,7 @@ public interface ReachabilityDetailsOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.networkmanagement.v1.TraceOrBuilder>
       getTracesOrBuilderList();
+
   /**
    *
    *

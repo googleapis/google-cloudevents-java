@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface AuthorizationInfoOrBuilder
    * @return The resource.
    */
   java.lang.String getResource();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface AuthorizationInfoOrBuilder
    * @return The permission.
    */
   java.lang.String getPermission();
+
   /**
    *
    *
@@ -105,6 +107,7 @@ public interface AuthorizationInfoOrBuilder
    * @return Whether the resourceAttributes field is set.
    */
   boolean hasResourceAttributes();
+
   /**
    *
    *
@@ -121,6 +124,7 @@ public interface AuthorizationInfoOrBuilder
    * @return The resourceAttributes.
    */
   com.google.rpc.context.AttributeContext.Resource getResourceAttributes();
+
   /**
    *
    *

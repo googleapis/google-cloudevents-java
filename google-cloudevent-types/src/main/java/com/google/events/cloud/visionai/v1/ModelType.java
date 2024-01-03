@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -131,6 +131,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>MODEL_TYPE_UNSPECIFIED = 0;</code>
    */
   public static final int MODEL_TYPE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -141,6 +142,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>IMAGE_CLASSIFICATION = 1;</code>
    */
   public static final int IMAGE_CLASSIFICATION_VALUE = 1;
+
   /**
    *
    *
@@ -151,6 +153,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>OBJECT_DETECTION = 2;</code>
    */
   public static final int OBJECT_DETECTION_VALUE = 2;
+
   /**
    *
    *
@@ -161,6 +164,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VIDEO_CLASSIFICATION = 3;</code>
    */
   public static final int VIDEO_CLASSIFICATION_VALUE = 3;
+
   /**
    *
    *
@@ -171,6 +175,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VIDEO_OBJECT_TRACKING = 4;</code>
    */
   public static final int VIDEO_OBJECT_TRACKING_VALUE = 4;
+
   /**
    *
    *
@@ -181,6 +186,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>VIDEO_ACTION_RECOGNITION = 5;</code>
    */
   public static final int VIDEO_ACTION_RECOGNITION_VALUE = 5;
+
   /**
    *
    *
@@ -191,6 +197,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>OCCUPANCY_COUNTING = 6;</code>
    */
   public static final int OCCUPANCY_COUNTING_VALUE = 6;
+
   /**
    *
    *
@@ -201,6 +208,7 @@ public enum ModelType implements com.google.protobuf.ProtocolMessageEnum {
    * <code>PERSON_BLUR = 7;</code>
    */
   public static final int PERSON_BLUR_VALUE = 7;
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface LoadBalancerInfoOrBuilder
    * @return The enum numeric value on the wire for loadBalancerType.
    */
   int getLoadBalancerTypeValue();
+
   /**
    *
    *
@@ -65,6 +66,7 @@ public interface LoadBalancerInfoOrBuilder
    * @return The healthCheckUri.
    */
   java.lang.String getHealthCheckUri();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface LoadBalancerInfoOrBuilder
    */
   java.util.List<com.google.events.cloud.networkmanagement.v1.LoadBalancerBackend>
       getBackendsList();
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public interface LoadBalancerInfoOrBuilder
    * </code>
    */
   com.google.events.cloud.networkmanagement.v1.LoadBalancerBackend getBackends(int index);
+
   /**
    *
    *
@@ -112,6 +116,7 @@ public interface LoadBalancerInfoOrBuilder
    * </code>
    */
   int getBackendsCount();
+
   /**
    *
    *
@@ -125,6 +130,7 @@ public interface LoadBalancerInfoOrBuilder
   java.util.List<
           ? extends com.google.events.cloud.networkmanagement.v1.LoadBalancerBackendOrBuilder>
       getBackendsOrBuilderList();
+
   /**
    *
    *
@@ -151,6 +157,7 @@ public interface LoadBalancerInfoOrBuilder
    * @return The enum numeric value on the wire for backendType.
    */
   int getBackendTypeValue();
+
   /**
    *
    *
@@ -177,6 +184,7 @@ public interface LoadBalancerInfoOrBuilder
    * @return The backendUri.
    */
   java.lang.String getBackendUri();
+
   /**
    *
    *

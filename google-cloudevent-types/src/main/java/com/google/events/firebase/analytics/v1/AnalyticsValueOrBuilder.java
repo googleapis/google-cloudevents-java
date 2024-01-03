@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,12 +29,14 @@ public interface AnalyticsValueOrBuilder
    * @return Whether the stringValue field is set.
    */
   boolean hasStringValue();
+
   /**
    * <code>string string_value = 1;</code>
    *
    * @return The stringValue.
    */
   java.lang.String getStringValue();
+
   /**
    * <code>string string_value = 1;</code>
    *
@@ -48,6 +50,7 @@ public interface AnalyticsValueOrBuilder
    * @return Whether the intValue field is set.
    */
   boolean hasIntValue();
+
   /**
    * <code>int64 int_value = 2;</code>
    *
@@ -61,6 +64,7 @@ public interface AnalyticsValueOrBuilder
    * @return Whether the floatValue field is set.
    */
   boolean hasFloatValue();
+
   /**
    * <code>float float_value = 3;</code>
    *
@@ -74,6 +78,7 @@ public interface AnalyticsValueOrBuilder
    * @return Whether the doubleValue field is set.
    */
   boolean hasDoubleValue();
+
   /**
    * <code>double double_value = 4;</code>
    *

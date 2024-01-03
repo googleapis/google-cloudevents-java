@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataflow.v1beta3.JobEventData)
     JobEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use JobEventData.newBuilder() to construct.
   private JobEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.dataflow.v1beta3.Job payload_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPayload() {
     return payload_ != null;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.dataflow.v1beta3.Job.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -471,6 +476,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataflow.v1beta3.Job.Builder,
             com.google.events.cloud.dataflow.v1beta3.JobOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -485,6 +491,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -505,6 +512,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -527,6 +535,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -547,6 +556,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -572,6 +582,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -591,6 +602,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -605,6 +617,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -623,6 +636,7 @@ public final class JobEventData extends com.google.protobuf.GeneratedMessageV3
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.DatacenterConnector)
     DatacenterConnectorOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DatacenterConnector.newBuilder() to construct.
   private DatacenterConnector(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -154,6 +155,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -164,6 +166,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
      * <code>PENDING = 1;</code>
      */
     public static final int PENDING_VALUE = 1;
+
     /**
      *
      *
@@ -174,6 +177,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
      * <code>OFFLINE = 2;</code>
      */
     public static final int OFFLINE_VALUE = 2;
+
     /**
      *
      *
@@ -186,6 +190,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
      * <code>FAILED = 3;</code>
      */
     public static final int FAILED_VALUE = 3;
+
     /**
      *
      *
@@ -288,6 +293,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int CREATE_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -304,6 +310,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -320,6 +327,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -337,6 +345,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -352,6 +361,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -367,6 +377,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -385,6 +396,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -408,6 +420,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -436,6 +449,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object registrationId_ = "";
+
   /**
    *
    *
@@ -461,6 +475,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -491,6 +506,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object serviceAccount_ = "";
+
   /**
    *
    *
@@ -515,6 +531,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -544,6 +561,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object version_ = "";
+
   /**
    *
    *
@@ -568,6 +586,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -597,6 +616,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object bucket_ = "";
+
   /**
    *
    *
@@ -621,6 +641,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -648,6 +669,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int STATE_FIELD_NUMBER = 7;
   private int state_ = 0;
+
   /**
    *
    *
@@ -664,6 +686,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -687,6 +710,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int STATE_TIME_FIELD_NUMBER = 8;
   private com.google.protobuf.Timestamp stateTime_;
+
   /**
    *
    *
@@ -702,6 +726,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasStateTime() {
     return stateTime_ != null;
   }
+
   /**
    *
    *
@@ -717,6 +742,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public com.google.protobuf.Timestamp getStateTime() {
     return stateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : stateTime_;
   }
+
   /**
    *
    *
@@ -733,6 +759,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int ERROR_FIELD_NUMBER = 11;
   private com.google.rpc.Status error_;
+
   /**
    *
    *
@@ -749,6 +776,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasError() {
     return error_ != null;
   }
+
   /**
    *
    *
@@ -765,6 +793,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public com.google.rpc.Status getError() {
     return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
   }
+
   /**
    *
    *
@@ -784,6 +813,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object applianceInfrastructureVersion_ = "";
+
   /**
    *
    *
@@ -809,6 +839,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -839,6 +870,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object applianceSoftwareVersion_ = "";
+
   /**
    *
    *
@@ -864,6 +896,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       return s;
     }
   }
+
   /**
    *
    *
@@ -892,6 +925,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int AVAILABLE_VERSIONS_FIELD_NUMBER = 15;
   private com.google.events.cloud.vmmigration.v1.AvailableUpdates availableVersions_;
+
   /**
    *
    *
@@ -907,6 +941,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasAvailableVersions() {
     return availableVersions_ != null;
   }
+
   /**
    *
    *
@@ -924,6 +959,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         ? com.google.events.cloud.vmmigration.v1.AvailableUpdates.getDefaultInstance()
         : availableVersions_;
   }
+
   /**
    *
    *
@@ -943,6 +979,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
 
   public static final int UPGRADE_STATUS_FIELD_NUMBER = 16;
   private com.google.events.cloud.vmmigration.v1.UpgradeStatus upgradeStatus_;
+
   /**
    *
    *
@@ -958,6 +995,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
   public boolean hasUpgradeStatus() {
     return upgradeStatus_ != null;
   }
+
   /**
    *
    *
@@ -975,6 +1013,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         ? com.google.events.cloud.vmmigration.v1.UpgradeStatus.getDefaultInstance()
         : upgradeStatus_;
   }
+
   /**
    *
    *
@@ -1307,6 +1346,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1709,6 +1749,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -1724,6 +1765,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -1745,6 +1787,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1768,6 +1811,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1788,6 +1832,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1814,6 +1859,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1834,6 +1880,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1849,6 +1896,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1868,6 +1916,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -1901,6 +1950,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -1915,6 +1965,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -1935,6 +1986,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1957,6 +2009,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1976,6 +2029,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2001,6 +2055,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2020,6 +2075,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2034,6 +2090,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2052,6 +2109,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -2079,6 +2137,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -2101,6 +2160,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2123,6 +2183,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2144,6 +2205,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2161,6 +2223,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2185,6 +2248,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object registrationId_ = "";
+
     /**
      *
      *
@@ -2209,6 +2273,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2233,6 +2298,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2256,6 +2322,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2275,6 +2342,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2301,6 +2369,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object serviceAccount_ = "";
+
     /**
      *
      *
@@ -2324,6 +2393,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2347,6 +2417,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2369,6 +2440,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2387,6 +2459,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2412,6 +2485,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object version_ = "";
+
     /**
      *
      *
@@ -2435,6 +2509,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2458,6 +2533,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2480,6 +2556,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2498,6 +2575,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2523,6 +2601,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object bucket_ = "";
+
     /**
      *
      *
@@ -2546,6 +2625,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2569,6 +2649,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2591,6 +2672,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2609,6 +2691,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2634,6 +2717,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -2650,6 +2734,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -2669,6 +2754,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2689,6 +2775,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
           ? com.google.events.cloud.vmmigration.v1.DatacenterConnector.State.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -2712,6 +2799,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2737,6 +2825,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         stateTimeBuilder_;
+
     /**
      *
      *
@@ -2751,6 +2840,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasStateTime() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -2769,6 +2859,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return stateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2791,6 +2882,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2810,6 +2902,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2835,6 +2928,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2854,6 +2948,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2868,6 +2963,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getStateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2884,6 +2980,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return stateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : stateTime_;
       }
     }
+
     /**
      *
      *
@@ -2914,6 +3011,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.rpc.Status, com.google.rpc.Status.Builder, com.google.rpc.StatusOrBuilder>
         errorBuilder_;
+
     /**
      *
      *
@@ -2929,6 +3027,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasError() {
       return ((bitField0_ & 0x00000200) != 0);
     }
+
     /**
      *
      *
@@ -2948,6 +3047,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return errorBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2971,6 +3071,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2991,6 +3092,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3017,6 +3119,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3037,6 +3140,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3052,6 +3156,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getErrorFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3069,6 +3174,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
       }
     }
+
     /**
      *
      *
@@ -3094,6 +3200,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object applianceInfrastructureVersion_ = "";
+
     /**
      *
      *
@@ -3118,6 +3225,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3142,6 +3250,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3165,6 +3274,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3184,6 +3294,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3210,6 +3321,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     }
 
     private java.lang.Object applianceSoftwareVersion_ = "";
+
     /**
      *
      *
@@ -3234,6 +3346,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3258,6 +3371,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3281,6 +3395,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3300,6 +3415,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3331,6 +3447,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             com.google.events.cloud.vmmigration.v1.AvailableUpdates.Builder,
             com.google.events.cloud.vmmigration.v1.AvailableUpdatesOrBuilder>
         availableVersionsBuilder_;
+
     /**
      *
      *
@@ -3345,6 +3462,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasAvailableVersions() {
       return ((bitField0_ & 0x00001000) != 0);
     }
+
     /**
      *
      *
@@ -3365,6 +3483,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return availableVersionsBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3388,6 +3507,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3408,6 +3528,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3435,6 +3556,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3454,6 +3576,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3469,6 +3592,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getAvailableVersionsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3488,6 +3612,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             : availableVersions_;
       }
     }
+
     /**
      *
      *
@@ -3520,6 +3645,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             com.google.events.cloud.vmmigration.v1.UpgradeStatus.Builder,
             com.google.events.cloud.vmmigration.v1.UpgradeStatusOrBuilder>
         upgradeStatusBuilder_;
+
     /**
      *
      *
@@ -3534,6 +3660,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
     public boolean hasUpgradeStatus() {
       return ((bitField0_ & 0x00002000) != 0);
     }
+
     /**
      *
      *
@@ -3554,6 +3681,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
         return upgradeStatusBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3576,6 +3704,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3596,6 +3725,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3622,6 +3752,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3641,6 +3772,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3655,6 +3787,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
       onChanged();
       return getUpgradeStatusFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3674,6 +3807,7 @@ public final class DatacenterConnector extends com.google.protobuf.GeneratedMess
             : upgradeStatus_;
       }
     }
+
     /**
      *
      *

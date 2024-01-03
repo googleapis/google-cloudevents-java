@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MaintenancePolicyOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface MaintenancePolicyOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface MaintenancePolicyOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface MaintenancePolicyOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -106,6 +110,7 @@ public interface MaintenancePolicyOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -135,6 +140,7 @@ public interface MaintenancePolicyOrBuilder
    */
   java.util.List<com.google.events.cloud.memcache.v1.WeeklyMaintenanceWindow>
       getWeeklyMaintenanceWindowList();
+
   /**
    *
    *
@@ -149,6 +155,7 @@ public interface MaintenancePolicyOrBuilder
    * </code>
    */
   com.google.events.cloud.memcache.v1.WeeklyMaintenanceWindow getWeeklyMaintenanceWindow(int index);
+
   /**
    *
    *
@@ -163,6 +170,7 @@ public interface MaintenancePolicyOrBuilder
    * </code>
    */
   int getWeeklyMaintenanceWindowCount();
+
   /**
    *
    *
@@ -178,6 +186,7 @@ public interface MaintenancePolicyOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.memcache.v1.WeeklyMaintenanceWindowOrBuilder>
       getWeeklyMaintenanceWindowOrBuilderList();
+
   /**
    *
    *

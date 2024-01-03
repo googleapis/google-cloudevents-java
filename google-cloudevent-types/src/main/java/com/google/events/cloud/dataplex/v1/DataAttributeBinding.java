@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataAttributeBinding)
     DataAttributeBindingOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataAttributeBinding.newBuilder() to construct.
   private DataAttributeBinding(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -103,6 +104,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -131,6 +133,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
      * @return A list containing the attributes.
      */
     java.util.List<java.lang.String> getAttributesList();
+
     /**
      *
      *
@@ -145,6 +148,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
      * @return The count of attributes.
      */
     int getAttributesCount();
+
     /**
      *
      *
@@ -160,6 +164,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
      * @return The attributes at the given index.
      */
     java.lang.String getAttributes(int index);
+
     /**
      *
      *
@@ -176,6 +181,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
      */
     com.google.protobuf.ByteString getAttributesBytes(int index);
   }
+
   /**
    *
    *
@@ -191,6 +197,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataAttributeBinding.Path)
       PathOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use Path.newBuilder() to construct.
     private Path(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -231,6 +238,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -255,6 +263,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return s;
       }
     }
+
     /**
      *
      *
@@ -284,6 +293,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList attributes_;
+
     /**
      *
      *
@@ -300,6 +310,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public com.google.protobuf.ProtocolStringList getAttributesList() {
       return attributes_;
     }
+
     /**
      *
      *
@@ -316,6 +327,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public int getAttributesCount() {
       return attributes_.size();
     }
+
     /**
      *
      *
@@ -333,6 +345,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public java.lang.String getAttributes(int index) {
       return attributes_.get(index);
     }
+
     /**
      *
      *
@@ -528,6 +541,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -749,6 +763,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       private int bitField0_;
 
       private java.lang.Object name_ = "";
+
       /**
        *
        *
@@ -772,6 +787,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -795,6 +811,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -817,6 +834,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -835,6 +853,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -868,6 +887,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
           bitField0_ |= 0x00000002;
         }
       }
+
       /**
        *
        *
@@ -884,6 +904,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       public com.google.protobuf.ProtocolStringList getAttributesList() {
         return attributes_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -900,6 +921,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       public int getAttributesCount() {
         return attributes_.size();
       }
+
       /**
        *
        *
@@ -917,6 +939,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       public java.lang.String getAttributes(int index) {
         return attributes_.get(index);
       }
+
       /**
        *
        *
@@ -934,6 +957,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       public com.google.protobuf.ByteString getAttributesBytes(int index) {
         return attributes_.getByteString(index);
       }
+
       /**
        *
        *
@@ -958,6 +982,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -981,6 +1006,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1001,6 +1027,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1020,6 +1047,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1126,6 +1154,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     private ResourceReferenceCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -1160,6 +1189,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -1185,6 +1215,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1215,6 +1246,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -1240,6 +1272,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1268,6 +1301,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   public static final int CREATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -1283,6 +1317,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -1298,6 +1333,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -1314,6 +1350,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -1329,6 +1366,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -1344,6 +1382,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -1362,6 +1401,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -1385,6 +1425,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1413,6 +1454,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -1436,6 +1478,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1486,6 +1529,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -1502,12 +1546,14 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -1521,6 +1567,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -1541,6 +1588,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -1566,6 +1614,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object etag_ = "";
+
   /**
    *
    *
@@ -1593,6 +1642,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1622,6 +1672,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   }
 
   public static final int RESOURCE_FIELD_NUMBER = 100;
+
   /**
    *
    *
@@ -1640,6 +1691,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public boolean hasResource() {
     return resourceReferenceCase_ == 100;
   }
+
   /**
    *
    *
@@ -1671,6 +1723,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       return s;
     }
   }
+
   /**
    *
    *
@@ -1707,6 +1760,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList attributes_;
+
   /**
    *
    *
@@ -1723,6 +1777,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public com.google.protobuf.ProtocolStringList getAttributesList() {
     return attributes_;
   }
+
   /**
    *
    *
@@ -1739,6 +1794,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public int getAttributesCount() {
     return attributes_.size();
   }
+
   /**
    *
    *
@@ -1756,6 +1812,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public java.lang.String getAttributes(int index) {
     return attributes_.get(index);
   }
+
   /**
    *
    *
@@ -1778,6 +1835,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path> paths_;
+
   /**
    *
    *
@@ -1793,6 +1851,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       getPathsList() {
     return paths_;
   }
+
   /**
    *
    *
@@ -1809,6 +1868,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       getPathsOrBuilderList() {
     return paths_;
   }
+
   /**
    *
    *
@@ -1823,6 +1883,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public int getPathsCount() {
     return paths_.size();
   }
+
   /**
    *
    *
@@ -1837,6 +1898,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
   public com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path getPaths(int index) {
     return paths_.get(index);
   }
+
   /**
    *
    *
@@ -2143,6 +2205,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -2590,6 +2653,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -2614,6 +2678,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2638,6 +2703,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2661,6 +2727,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2680,6 +2747,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2706,6 +2774,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -2730,6 +2799,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2754,6 +2824,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2777,6 +2848,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2796,6 +2868,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2827,6 +2900,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -2841,6 +2915,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -2861,6 +2936,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2883,6 +2959,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2902,6 +2979,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2927,6 +3005,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2946,6 +3025,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2960,6 +3040,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2978,6 +3059,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -3010,6 +3092,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -3024,6 +3107,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -3044,6 +3128,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3066,6 +3151,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3085,6 +3171,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3110,6 +3197,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3129,6 +3217,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3143,6 +3232,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3161,6 +3251,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -3188,6 +3279,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -3210,6 +3302,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3232,6 +3325,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3253,6 +3347,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3270,6 +3365,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3294,6 +3390,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -3316,6 +3413,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3338,6 +3436,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3359,6 +3458,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3376,6 +3476,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3424,6 +3525,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -3440,12 +3542,14 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -3459,6 +3563,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -3479,6 +3584,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3505,6 +3611,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3521,12 +3628,14 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000040;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -3547,6 +3656,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       bitField0_ |= 0x00000040;
       return this;
     }
+
     /**
      *
      *
@@ -3563,6 +3673,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     }
 
     private java.lang.Object etag_ = "";
+
     /**
      *
      *
@@ -3589,6 +3700,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3615,6 +3727,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3640,6 +3753,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3661,6 +3775,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3707,6 +3822,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public boolean hasResource() {
       return resourceReferenceCase_ == 100;
     }
+
     /**
      *
      *
@@ -3739,6 +3855,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3771,6 +3888,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3796,6 +3914,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3819,6 +3938,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -3855,6 +3975,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         bitField0_ |= 0x00000200;
       }
     }
+
     /**
      *
      *
@@ -3871,6 +3992,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public com.google.protobuf.ProtocolStringList getAttributesList() {
       return attributes_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -3887,6 +4009,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public int getAttributesCount() {
       return attributes_.size();
     }
+
     /**
      *
      *
@@ -3904,6 +4027,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public java.lang.String getAttributes(int index) {
       return attributes_.get(index);
     }
+
     /**
      *
      *
@@ -3921,6 +4045,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
     public com.google.protobuf.ByteString getAttributesBytes(int index) {
       return attributes_.getByteString(index);
     }
+
     /**
      *
      *
@@ -3945,6 +4070,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3968,6 +4094,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3988,6 +4115,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4007,6 +4135,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4068,6 +4197,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return pathsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -4085,6 +4215,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return pathsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -4102,6 +4233,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return pathsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -4126,6 +4258,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4148,6 +4281,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4171,6 +4305,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4195,6 +4330,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4216,6 +4352,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4238,6 +4375,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4260,6 +4398,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4280,6 +4419,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4300,6 +4440,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
       }
       return this;
     }
+
     /**
      *
      *
@@ -4314,6 +4455,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         int index) {
       return getPathsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -4332,6 +4474,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return pathsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -4351,6 +4494,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
         return java.util.Collections.unmodifiableList(paths_);
       }
     }
+
     /**
      *
      *
@@ -4366,6 +4510,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
           .addBuilder(
               com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -4383,6 +4528,7 @@ public final class DataAttributeBinding extends com.google.protobuf.GeneratedMes
               index,
               com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path.getDefaultInstance());
     }
+
     /**
      *
      *

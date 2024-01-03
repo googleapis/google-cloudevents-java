@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MySqlConnectionProfileOrBuilder
    * @return The host.
    */
   java.lang.String getHost();
+
   /**
    *
    *
@@ -75,6 +76,7 @@ public interface MySqlConnectionProfileOrBuilder
    * @return The username.
    */
   java.lang.String getUsername();
+
   /**
    *
    *
@@ -115,6 +117,7 @@ public interface MySqlConnectionProfileOrBuilder
    * @return Whether the ssl field is set.
    */
   boolean hasSsl();
+
   /**
    *
    *
@@ -127,6 +130,7 @@ public interface MySqlConnectionProfileOrBuilder
    * @return The ssl.
    */
   com.google.events.cloud.clouddms.v1.SslConfig getSsl();
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public interface MySqlConnectionProfileOrBuilder
    * @return The cloudSqlId.
    */
   java.lang.String getCloudSqlId();
+
   /**
    *
    *

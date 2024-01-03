@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MessagePublishedDataOrBuilder
    * @return Whether the message field is set.
    */
   boolean hasMessage();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface MessagePublishedDataOrBuilder
    * @return The message.
    */
   com.google.events.cloud.pubsub.v1.PubsubMessage getMessage();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface MessagePublishedDataOrBuilder
    * @return The subscription.
    */
   java.lang.String getSubscription();
+
   /**
    *
    *

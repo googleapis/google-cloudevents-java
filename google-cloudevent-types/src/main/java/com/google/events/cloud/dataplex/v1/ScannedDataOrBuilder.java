@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ScannedDataOrBuilder
    * @return Whether the incrementalField field is set.
    */
   boolean hasIncrementalField();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface ScannedDataOrBuilder
    * @return The incrementalField.
    */
   com.google.events.cloud.dataplex.v1.ScannedData.IncrementalField getIncrementalField();
+
   /**
    *
    *

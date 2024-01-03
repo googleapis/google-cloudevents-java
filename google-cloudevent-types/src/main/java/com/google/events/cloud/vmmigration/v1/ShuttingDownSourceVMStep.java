@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ShuttingDownSourceVMStep extends com.google.protobuf.Generate
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.ShuttingDownSourceVMStep)
     ShuttingDownSourceVMStepOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ShuttingDownSourceVMStep.newBuilder() to construct.
   private ShuttingDownSourceVMStep(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -216,6 +217,7 @@ public final class ShuttingDownSourceVMStep extends com.google.protobuf.Generate
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *

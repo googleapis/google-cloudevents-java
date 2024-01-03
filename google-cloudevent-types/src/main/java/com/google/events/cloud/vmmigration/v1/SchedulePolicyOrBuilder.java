@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface SchedulePolicyOrBuilder
    * @return Whether the idleDuration field is set.
    */
   boolean hasIdleDuration();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface SchedulePolicyOrBuilder
    * @return The idleDuration.
    */
   com.google.protobuf.Duration getIdleDuration();
+
   /**
    *
    *

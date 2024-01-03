@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorIOSpec)
     ProcessorIOSpecOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ProcessorIOSpec.newBuilder() to construct.
   private ProcessorIOSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -87,6 +88,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -114,6 +116,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The enum numeric value on the wire for dataType.
      */
     int getDataTypeValue();
+
     /**
      *
      *
@@ -143,6 +146,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return A list containing the acceptedDataTypeUris.
      */
     java.util.List<java.lang.String> getAcceptedDataTypeUrisList();
+
     /**
      *
      *
@@ -157,6 +161,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The count of acceptedDataTypeUris.
      */
     int getAcceptedDataTypeUrisCount();
+
     /**
      *
      *
@@ -172,6 +177,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The acceptedDataTypeUris at the given index.
      */
     java.lang.String getAcceptedDataTypeUris(int index);
+
     /**
      *
      *
@@ -218,6 +224,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      */
     long getMaxConnectionAllowed();
   }
+
   /**
    *
    *
@@ -232,6 +239,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec)
       GraphInputChannelSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use GraphInputChannelSpec.newBuilder() to construct.
     private GraphInputChannelSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -274,6 +282,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -297,6 +306,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -323,6 +333,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     public static final int DATA_TYPE_FIELD_NUMBER = 2;
     private int dataType_ = 0;
+
     /**
      *
      *
@@ -340,6 +351,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public int getDataTypeValue() {
       return dataType_;
     }
+
     /**
      *
      *
@@ -364,6 +376,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList acceptedDataTypeUris_;
+
     /**
      *
      *
@@ -380,6 +393,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public com.google.protobuf.ProtocolStringList getAcceptedDataTypeUrisList() {
       return acceptedDataTypeUris_;
     }
+
     /**
      *
      *
@@ -396,6 +410,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public int getAcceptedDataTypeUrisCount() {
       return acceptedDataTypeUris_.size();
     }
+
     /**
      *
      *
@@ -413,6 +428,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public java.lang.String getAcceptedDataTypeUris(int index) {
       return acceptedDataTypeUris_.get(index);
     }
+
     /**
      *
      *
@@ -433,6 +449,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     public static final int REQUIRED_FIELD_NUMBER = 3;
     private boolean required_ = false;
+
     /**
      *
      *
@@ -454,6 +471,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     public static final int MAX_CONNECTION_ALLOWED_FIELD_NUMBER = 4;
     private long maxConnectionAllowed_ = 0L;
+
     /**
      *
      *
@@ -685,6 +703,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -951,6 +970,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       private int bitField0_;
 
       private java.lang.Object name_ = "";
+
       /**
        *
        *
@@ -973,6 +993,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -995,6 +1016,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -1016,6 +1038,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1033,6 +1056,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1057,6 +1081,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private int dataType_ = 0;
+
       /**
        *
        *
@@ -1074,6 +1099,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public int getDataTypeValue() {
         return dataType_;
       }
+
       /**
        *
        *
@@ -1094,6 +1120,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1113,6 +1140,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.DataType.forNumber(dataType_);
         return result == null ? com.google.events.cloud.visionai.v1.DataType.UNRECOGNIZED : result;
       }
+
       /**
        *
        *
@@ -1136,6 +1164,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1166,6 +1195,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           bitField0_ |= 0x00000004;
         }
       }
+
       /**
        *
        *
@@ -1182,6 +1212,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public com.google.protobuf.ProtocolStringList getAcceptedDataTypeUrisList() {
         return acceptedDataTypeUris_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -1198,6 +1229,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public int getAcceptedDataTypeUrisCount() {
         return acceptedDataTypeUris_.size();
       }
+
       /**
        *
        *
@@ -1215,6 +1247,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public java.lang.String getAcceptedDataTypeUris(int index) {
         return acceptedDataTypeUris_.get(index);
       }
+
       /**
        *
        *
@@ -1232,6 +1265,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public com.google.protobuf.ByteString getAcceptedDataTypeUrisBytes(int index) {
         return acceptedDataTypeUris_.getByteString(index);
       }
+
       /**
        *
        *
@@ -1256,6 +1290,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1279,6 +1314,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1299,6 +1335,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1318,6 +1355,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1344,6 +1382,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private boolean required_;
+
       /**
        *
        *
@@ -1362,6 +1401,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public boolean getRequired() {
         return required_;
       }
+
       /**
        *
        *
@@ -1384,6 +1424,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1406,6 +1447,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private long maxConnectionAllowed_;
+
       /**
        *
        *
@@ -1422,6 +1464,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public long getMaxConnectionAllowed() {
         return maxConnectionAllowed_;
       }
+
       /**
        *
        *
@@ -1442,6 +1485,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1546,6 +1590,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -1571,6 +1616,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The enum numeric value on the wire for dataType.
      */
     int getDataTypeValue();
+
     /**
      *
      *
@@ -1590,6 +1636,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The dataTypeUri.
      */
     java.lang.String getDataTypeUri();
+
     /**
      * <code>string data_type_uri = 3;</code>
      *
@@ -1597,6 +1644,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      */
     com.google.protobuf.ByteString getDataTypeUriBytes();
   }
+
   /**
    *
    *
@@ -1611,6 +1659,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec)
       GraphOutputChannelSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use GraphOutputChannelSpec.newBuilder() to construct.
     private GraphOutputChannelSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -1653,6 +1702,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1676,6 +1726,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -1702,6 +1753,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     public static final int DATA_TYPE_FIELD_NUMBER = 2;
     private int dataType_ = 0;
+
     /**
      *
      *
@@ -1717,6 +1769,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public int getDataTypeValue() {
       return dataType_;
     }
+
     /**
      *
      *
@@ -1739,6 +1792,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object dataTypeUri_ = "";
+
     /**
      * <code>string data_type_uri = 3;</code>
      *
@@ -1756,6 +1810,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      * <code>string data_type_uri = 3;</code>
      *
@@ -1962,6 +2017,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -2188,6 +2244,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       private int bitField0_;
 
       private java.lang.Object name_ = "";
+
       /**
        *
        *
@@ -2210,6 +2267,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -2232,6 +2290,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -2253,6 +2312,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2270,6 +2330,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2294,6 +2355,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private int dataType_ = 0;
+
       /**
        *
        *
@@ -2309,6 +2371,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public int getDataTypeValue() {
         return dataType_;
       }
+
       /**
        *
        *
@@ -2327,6 +2390,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2344,6 +2408,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
             com.google.events.cloud.visionai.v1.DataType.forNumber(dataType_);
         return result == null ? com.google.events.cloud.visionai.v1.DataType.UNRECOGNIZED : result;
       }
+
       /**
        *
        *
@@ -2365,6 +2430,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2384,6 +2450,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private java.lang.Object dataTypeUri_ = "";
+
       /**
        * <code>string data_type_uri = 3;</code>
        *
@@ -2400,6 +2467,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        * <code>string data_type_uri = 3;</code>
        *
@@ -2416,6 +2484,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        * <code>string data_type_uri = 3;</code>
        *
@@ -2431,6 +2500,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        * <code>string data_type_uri = 3;</code>
        *
@@ -2442,6 +2512,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        * <code>string data_type_uri = 3;</code>
        *
@@ -2545,6 +2616,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return Whether the configTypeUri field is set.
      */
     boolean hasConfigTypeUri();
+
     /**
      *
      *
@@ -2558,6 +2630,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The configTypeUri.
      */
     java.lang.String getConfigTypeUri();
+
     /**
      *
      *
@@ -2585,6 +2658,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return Whether the resourceTypeUri field is set.
      */
     boolean hasResourceTypeUri();
+
     /**
      *
      *
@@ -2598,6 +2672,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The resourceTypeUri.
      */
     java.lang.String getResourceTypeUri();
+
     /**
      *
      *
@@ -2624,6 +2699,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -2641,6 +2717,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
             .ResourceTypeCase
         getResourceTypeCase();
   }
+
   /**
    *
    *
@@ -2660,6 +2737,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec)
       InstanceResourceInputBindingSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use InstanceResourceInputBindingSpec.newBuilder() to construct.
     private InstanceResourceInputBindingSpec(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2713,6 +2791,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       private ResourceTypeCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -2746,6 +2825,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     }
 
     public static final int CONFIG_TYPE_URI_FIELD_NUMBER = 2;
+
     /**
      *
      *
@@ -2761,6 +2841,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public boolean hasConfigTypeUri() {
       return resourceTypeCase_ == 2;
     }
+
     /**
      *
      *
@@ -2789,6 +2870,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -2819,6 +2901,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     }
 
     public static final int RESOURCE_TYPE_URI_FIELD_NUMBER = 3;
+
     /**
      *
      *
@@ -2834,6 +2917,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     public boolean hasResourceTypeUri() {
       return resourceTypeCase_ == 3;
     }
+
     /**
      *
      *
@@ -2862,6 +2946,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -2895,6 +2980,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -2918,6 +3004,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -3160,6 +3247,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -3444,6 +3532,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public boolean hasConfigTypeUri() {
         return resourceTypeCase_ == 2;
       }
+
       /**
        *
        *
@@ -3473,6 +3562,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3502,6 +3592,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3524,6 +3615,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3544,6 +3636,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         }
         return this;
       }
+
       /**
        *
        *
@@ -3584,6 +3677,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public boolean hasResourceTypeUri() {
         return resourceTypeCase_ == 3;
       }
+
       /**
        *
        *
@@ -3613,6 +3707,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3642,6 +3737,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3664,6 +3760,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3684,6 +3781,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         }
         return this;
       }
+
       /**
        *
        *
@@ -3709,6 +3807,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private java.lang.Object name_ = "";
+
       /**
        *
        *
@@ -3731,6 +3830,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3753,6 +3853,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3774,6 +3875,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3791,6 +3893,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3902,6 +4005,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -3927,6 +4031,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      * @return The resourceTypeUri.
      */
     java.lang.String getResourceTypeUri();
+
     /**
      *
      *
@@ -3954,6 +4059,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
      */
     boolean getExplicit();
   }
+
   /**
    * Protobuf type {@code
    * google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec}
@@ -3964,6 +4070,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec)
       InstanceResourceOutputBindingSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use InstanceResourceOutputBindingSpec.newBuilder() to construct.
     private InstanceResourceOutputBindingSpec(
         com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -4007,6 +4114,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -4030,6 +4138,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -4058,6 +4167,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object resourceTypeUri_ = "";
+
     /**
      *
      *
@@ -4081,6 +4191,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return s;
       }
     }
+
     /**
      *
      *
@@ -4107,6 +4218,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
 
     public static final int EXPLICIT_FIELD_NUMBER = 3;
     private boolean explicit_ = false;
+
     /**
      *
      *
@@ -4325,6 +4437,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      * Protobuf type {@code
      * google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec}
@@ -4556,6 +4669,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       private int bitField0_;
 
       private java.lang.Object name_ = "";
+
       /**
        *
        *
@@ -4578,6 +4692,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -4600,6 +4715,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -4621,6 +4737,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -4638,6 +4755,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -4662,6 +4780,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private java.lang.Object resourceTypeUri_ = "";
+
       /**
        *
        *
@@ -4684,6 +4803,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -4706,6 +4826,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -4727,6 +4848,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -4744,6 +4866,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -4768,6 +4891,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
 
       private boolean explicit_;
+
       /**
        *
        *
@@ -4784,6 +4908,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       public boolean getExplicit() {
         return explicit_;
       }
+
       /**
        *
        *
@@ -4804,6 +4929,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -4899,6 +5025,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec>
       graphInputChannelSpecs_;
+
   /**
    *
    *
@@ -4916,6 +5043,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphInputChannelSpecsList() {
     return graphInputChannelSpecs_;
   }
+
   /**
    *
    *
@@ -4935,6 +5063,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphInputChannelSpecsOrBuilderList() {
     return graphInputChannelSpecs_;
   }
+
   /**
    *
    *
@@ -4951,6 +5080,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   public int getGraphInputChannelSpecsCount() {
     return graphInputChannelSpecs_.size();
   }
+
   /**
    *
    *
@@ -4968,6 +5098,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphInputChannelSpecs(int index) {
     return graphInputChannelSpecs_.get(index);
   }
+
   /**
    *
    *
@@ -4991,6 +5122,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec>
       graphOutputChannelSpecs_;
+
   /**
    *
    *
@@ -5007,6 +5139,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphOutputChannelSpecsList() {
     return graphOutputChannelSpecs_;
   }
+
   /**
    *
    *
@@ -5025,6 +5158,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphOutputChannelSpecsOrBuilderList() {
     return graphOutputChannelSpecs_;
   }
+
   /**
    *
    *
@@ -5040,6 +5174,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   public int getGraphOutputChannelSpecsCount() {
     return graphOutputChannelSpecs_.size();
   }
+
   /**
    *
    *
@@ -5056,6 +5191,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getGraphOutputChannelSpecs(int index) {
     return graphOutputChannelSpecs_.get(index);
   }
+
   /**
    *
    *
@@ -5079,6 +5215,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   private java.util.List<
           com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec>
       instanceResourceInputBindingSpecs_;
+
   /**
    *
    *
@@ -5096,6 +5233,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceInputBindingSpecsList() {
     return instanceResourceInputBindingSpecs_;
   }
+
   /**
    *
    *
@@ -5115,6 +5253,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceInputBindingSpecsOrBuilderList() {
     return instanceResourceInputBindingSpecs_;
   }
+
   /**
    *
    *
@@ -5130,6 +5269,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   public int getInstanceResourceInputBindingSpecsCount() {
     return instanceResourceInputBindingSpecs_.size();
   }
+
   /**
    *
    *
@@ -5146,6 +5286,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceInputBindingSpecs(int index) {
     return instanceResourceInputBindingSpecs_.get(index);
   }
+
   /**
    *
    *
@@ -5170,6 +5311,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   private java.util.List<
           com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec>
       instanceResourceOutputBindingSpecs_;
+
   /**
    *
    *
@@ -5190,6 +5332,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceOutputBindingSpecsList() {
     return instanceResourceOutputBindingSpecs_;
   }
+
   /**
    *
    *
@@ -5212,6 +5355,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceOutputBindingSpecsOrBuilderList() {
     return instanceResourceOutputBindingSpecs_;
   }
+
   /**
    *
    *
@@ -5230,6 +5374,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
   public int getInstanceResourceOutputBindingSpecsCount() {
     return instanceResourceOutputBindingSpecs_.size();
   }
+
   /**
    *
    *
@@ -5249,6 +5394,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       getInstanceResourceOutputBindingSpecs(int index) {
     return instanceResourceOutputBindingSpecs_.get(index);
   }
+
   /**
    *
    *
@@ -5476,6 +5622,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -5931,6 +6078,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphInputChannelSpecsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -5950,6 +6098,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphInputChannelSpecsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -5970,6 +6119,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphInputChannelSpecsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -5997,6 +6147,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6022,6 +6173,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6048,6 +6200,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6075,6 +6228,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6099,6 +6253,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6124,6 +6279,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6149,6 +6305,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6171,6 +6328,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6193,6 +6351,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6209,6 +6368,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         getGraphInputChannelSpecsBuilder(int index) {
       return getGraphInputChannelSpecsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -6229,6 +6389,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphInputChannelSpecsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -6251,6 +6412,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(graphInputChannelSpecs_);
       }
     }
+
     /**
      *
      *
@@ -6270,6 +6432,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -6290,6 +6453,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -6368,6 +6532,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphOutputChannelSpecsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -6386,6 +6551,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphOutputChannelSpecsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -6405,6 +6571,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphOutputChannelSpecsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -6431,6 +6598,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6455,6 +6623,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6480,6 +6649,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6506,6 +6676,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6529,6 +6700,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6553,6 +6725,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6578,6 +6751,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6599,6 +6773,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6620,6 +6795,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6635,6 +6811,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         getGraphOutputChannelSpecsBuilder(int index) {
       return getGraphOutputChannelSpecsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -6654,6 +6831,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return graphOutputChannelSpecsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -6675,6 +6853,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(graphOutputChannelSpecs_);
       }
     }
+
     /**
      *
      *
@@ -6693,6 +6872,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -6712,6 +6892,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -6792,6 +6973,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceInputBindingSpecsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -6810,6 +6992,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceInputBindingSpecsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -6829,6 +7012,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceInputBindingSpecsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -6856,6 +7040,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6880,6 +7065,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6906,6 +7092,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6933,6 +7120,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6956,6 +7144,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -6980,6 +7169,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7007,6 +7197,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7028,6 +7219,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7049,6 +7241,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7065,6 +7258,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         getInstanceResourceInputBindingSpecsBuilder(int index) {
       return getInstanceResourceInputBindingSpecsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -7085,6 +7279,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceInputBindingSpecsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -7107,6 +7302,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(instanceResourceInputBindingSpecs_);
       }
     }
+
     /**
      *
      *
@@ -7126,6 +7322,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -7146,6 +7343,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -7234,6 +7432,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceOutputBindingSpecsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -7255,6 +7454,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceOutputBindingSpecsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -7277,6 +7477,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceOutputBindingSpecsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -7307,6 +7508,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7335,6 +7537,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7364,6 +7567,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7394,6 +7598,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7421,6 +7626,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7449,6 +7655,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7479,6 +7686,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7503,6 +7711,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7527,6 +7736,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -7546,6 +7756,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         getInstanceResourceOutputBindingSpecsBuilder(int index) {
       return getInstanceResourceOutputBindingSpecsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -7569,6 +7780,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return instanceResourceOutputBindingSpecsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -7594,6 +7806,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(instanceResourceOutputBindingSpecs_);
       }
     }
+
     /**
      *
      *
@@ -7616,6 +7829,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -7639,6 +7853,7 @@ public final class ProcessorIOSpec extends com.google.protobuf.GeneratedMessageV
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec
                   .getDefaultInstance());
     }
+
     /**
      *
      *

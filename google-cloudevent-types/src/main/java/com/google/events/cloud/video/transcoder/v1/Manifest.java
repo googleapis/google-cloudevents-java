@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.video.transcoder.v1.Manifest)
     ManifestOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Manifest.newBuilder() to construct.
   private Manifest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -122,6 +123,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
      * <code>MANIFEST_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int MANIFEST_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -132,6 +134,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
      * <code>HLS = 1;</code>
      */
     public static final int HLS_VALUE = 1;
+
     /**
      *
      *
@@ -232,6 +235,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object fileName_ = "";
+
   /**
    *
    *
@@ -256,6 +260,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -283,6 +288,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TYPE_FIELD_NUMBER = 2;
   private int type_ = 0;
+
   /**
    *
    *
@@ -298,6 +304,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
   public int getTypeValue() {
     return type_;
   }
+
   /**
    *
    *
@@ -322,6 +329,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList muxStreams_;
+
   /**
    *
    *
@@ -340,6 +348,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getMuxStreamsList() {
     return muxStreams_;
   }
+
   /**
    *
    *
@@ -358,6 +367,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
   public int getMuxStreamsCount() {
     return muxStreams_.size();
   }
+
   /**
    *
    *
@@ -377,6 +387,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getMuxStreams(int index) {
     return muxStreams_.get(index);
   }
+
   /**
    *
    *
@@ -587,6 +598,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -813,6 +825,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object fileName_ = "";
+
     /**
      *
      *
@@ -836,6 +849,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -859,6 +873,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -881,6 +896,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -899,6 +915,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -924,6 +941,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int type_ = 0;
+
     /**
      *
      *
@@ -939,6 +957,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     public int getTypeValue() {
       return type_;
     }
+
     /**
      *
      *
@@ -957,6 +976,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -976,6 +996,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.video.transcoder.v1.Manifest.ManifestType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -998,6 +1019,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1025,6 +1047,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000004;
       }
     }
+
     /**
      *
      *
@@ -1043,6 +1066,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getMuxStreamsList() {
       return muxStreams_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -1061,6 +1085,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     public int getMuxStreamsCount() {
       return muxStreams_.size();
     }
+
     /**
      *
      *
@@ -1080,6 +1105,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getMuxStreams(int index) {
       return muxStreams_.get(index);
     }
+
     /**
      *
      *
@@ -1099,6 +1125,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getMuxStreamsBytes(int index) {
       return muxStreams_.getByteString(index);
     }
+
     /**
      *
      *
@@ -1125,6 +1152,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1150,6 +1178,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1172,6 +1201,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1193,6 +1223,7 @@ public final class Manifest extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

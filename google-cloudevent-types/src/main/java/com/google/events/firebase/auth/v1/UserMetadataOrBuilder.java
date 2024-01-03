@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface UserMetadataOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface UserMetadataOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface UserMetadataOrBuilder
    * @return Whether the lastSignInTime field is set.
    */
   boolean hasLastSignInTime();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface UserMetadataOrBuilder
    * @return The lastSignInTime.
    */
   com.google.protobuf.Timestamp getLastSignInTime();
+
   /**
    *
    *

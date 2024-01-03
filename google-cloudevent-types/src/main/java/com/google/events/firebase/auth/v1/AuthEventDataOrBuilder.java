@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface AuthEventDataOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface AuthEventDataOrBuilder
    * @return The email.
    */
   java.lang.String getEmail();
+
   /**
    *
    *
@@ -98,6 +100,7 @@ public interface AuthEventDataOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public interface AuthEventDataOrBuilder
    * @return The photoURL.
    */
   java.lang.String getPhotoURL();
+
   /**
    *
    *
@@ -161,6 +165,7 @@ public interface AuthEventDataOrBuilder
    * @return Whether the metadata field is set.
    */
   boolean hasMetadata();
+
   /**
    *
    *
@@ -173,6 +178,7 @@ public interface AuthEventDataOrBuilder
    * @return The metadata.
    */
   com.google.events.firebase.auth.v1.UserMetadata getMetadata();
+
   /**
    *
    *
@@ -194,6 +200,7 @@ public interface AuthEventDataOrBuilder
    * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
    */
   java.util.List<com.google.events.firebase.auth.v1.UserInfo> getProviderDataList();
+
   /**
    *
    *
@@ -204,6 +211,7 @@ public interface AuthEventDataOrBuilder
    * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
    */
   com.google.events.firebase.auth.v1.UserInfo getProviderData(int index);
+
   /**
    *
    *
@@ -214,6 +222,7 @@ public interface AuthEventDataOrBuilder
    * <code>repeated .google.events.firebase.auth.v1.UserInfo provider_data = 8;</code>
    */
   int getProviderDataCount();
+
   /**
    *
    *
@@ -225,6 +234,7 @@ public interface AuthEventDataOrBuilder
    */
   java.util.List<? extends com.google.events.firebase.auth.v1.UserInfoOrBuilder>
       getProviderDataOrBuilderList();
+
   /**
    *
    *
@@ -248,6 +258,7 @@ public interface AuthEventDataOrBuilder
    * @return The phoneNumber.
    */
   java.lang.String getPhoneNumber();
+
   /**
    *
    *
@@ -274,6 +285,7 @@ public interface AuthEventDataOrBuilder
    * @return Whether the customClaims field is set.
    */
   boolean hasCustomClaims();
+
   /**
    *
    *
@@ -287,6 +299,7 @@ public interface AuthEventDataOrBuilder
    * @return The customClaims.
    */
   com.google.protobuf.Struct getCustomClaims();
+
   /**
    *
    *

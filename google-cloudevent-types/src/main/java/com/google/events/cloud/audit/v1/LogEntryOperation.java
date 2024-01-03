@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.audit.v1.LogEntryOperation)
     LogEntryOperationOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use LogEntryOperation.newBuilder() to construct.
   private LogEntryOperation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -73,6 +74,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object id_ = "";
+
   /**
    *
    *
@@ -97,6 +99,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -126,6 +129,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object producer_ = "";
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -179,6 +184,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
 
   public static final int FIRST_FIELD_NUMBER = 3;
   private boolean first_ = false;
+
   /**
    *
    *
@@ -197,6 +203,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
 
   public static final int LAST_FIELD_NUMBER = 4;
   private boolean last_ = false;
+
   /**
    *
    *
@@ -399,6 +406,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -625,6 +633,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     private int bitField0_;
 
     private java.lang.Object id_ = "";
+
     /**
      *
      *
@@ -648,6 +657,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -671,6 +681,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -693,6 +704,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -711,6 +723,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -736,6 +749,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object producer_ = "";
+
     /**
      *
      *
@@ -760,6 +774,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -784,6 +799,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -807,6 +823,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -826,6 +843,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -852,6 +870,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     }
 
     private boolean first_;
+
     /**
      *
      *
@@ -867,6 +886,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     public boolean getFirst() {
       return first_;
     }
+
     /**
      *
      *
@@ -886,6 +906,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -905,6 +926,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     }
 
     private boolean last_;
+
     /**
      *
      *
@@ -920,6 +942,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
     public boolean getLast() {
       return last_;
     }
+
     /**
      *
      *
@@ -939,6 +962,7 @@ public final class LogEntryOperation extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *

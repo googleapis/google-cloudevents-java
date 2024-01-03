@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface SpriteSheetOrBuilder
    * @return The format.
    */
   java.lang.String getFormat();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface SpriteSheetOrBuilder
    * @return The filePrefix.
    */
   java.lang.String getFilePrefix();
+
   /**
    *
    *
@@ -169,6 +171,7 @@ public interface SpriteSheetOrBuilder
    * @return Whether the startTimeOffset field is set.
    */
   boolean hasStartTimeOffset();
+
   /**
    *
    *
@@ -182,6 +185,7 @@ public interface SpriteSheetOrBuilder
    * @return The startTimeOffset.
    */
   com.google.protobuf.Duration getStartTimeOffset();
+
   /**
    *
    *
@@ -208,6 +212,7 @@ public interface SpriteSheetOrBuilder
    * @return Whether the endTimeOffset field is set.
    */
   boolean hasEndTimeOffset();
+
   /**
    *
    *
@@ -222,6 +227,7 @@ public interface SpriteSheetOrBuilder
    * @return The endTimeOffset.
    */
   com.google.protobuf.Duration getEndTimeOffset();
+
   /**
    *
    *
@@ -249,6 +255,7 @@ public interface SpriteSheetOrBuilder
    * @return Whether the totalCount field is set.
    */
   boolean hasTotalCount();
+
   /**
    *
    *
@@ -277,6 +284,7 @@ public interface SpriteSheetOrBuilder
    * @return Whether the interval field is set.
    */
   boolean hasInterval();
+
   /**
    *
    *
@@ -290,6 +298,7 @@ public interface SpriteSheetOrBuilder
    * @return The interval.
    */
   com.google.protobuf.Duration getInterval();
+
   /**
    *
    *

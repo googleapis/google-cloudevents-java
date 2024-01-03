@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.video.transcoder.v1.TextStream)
     TextStreamOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use TextStream.newBuilder() to construct.
   private TextStream(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -88,6 +89,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
      * @return The atomKey.
      */
     java.lang.String getAtomKey();
+
     /**
      *
      *
@@ -114,6 +116,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
      * @return The inputKey.
      */
     java.lang.String getInputKey();
+
     /**
      *
      *
@@ -140,6 +143,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
      */
     int getInputTrack();
   }
+
   /**
    *
    *
@@ -154,6 +158,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.video.transcoder.v1.TextStream.TextMapping)
       TextMappingOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use TextMapping.newBuilder() to construct.
     private TextMapping(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -194,6 +199,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object atomKey_ = "";
+
     /**
      *
      *
@@ -218,6 +224,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -247,6 +254,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object inputKey_ = "";
+
     /**
      *
      *
@@ -270,6 +278,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -296,6 +305,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
     public static final int INPUT_TRACK_FIELD_NUMBER = 3;
     private int inputTrack_ = 0;
+
     /**
      *
      *
@@ -492,6 +502,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -714,6 +725,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       private int bitField0_;
 
       private java.lang.Object atomKey_ = "";
+
       /**
        *
        *
@@ -737,6 +749,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -760,6 +773,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -782,6 +796,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -800,6 +815,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -825,6 +841,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
 
       private java.lang.Object inputKey_ = "";
+
       /**
        *
        *
@@ -847,6 +864,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -869,6 +887,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -890,6 +909,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -907,6 +927,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -931,6 +952,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
 
       private int inputTrack_;
+
       /**
        *
        *
@@ -946,6 +968,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       public int getInputTrack() {
         return inputTrack_;
       }
+
       /**
        *
        *
@@ -965,6 +988,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1054,6 +1078,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object codec_ = "";
+
   /**
    *
    *
@@ -1083,6 +1108,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1117,6 +1143,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object languageCode_ = "";
+
   /**
    *
    *
@@ -1143,6 +1170,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1175,6 +1203,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping>
       mapping_;
+
   /**
    *
    *
@@ -1190,6 +1219,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       getMappingList() {
     return mapping_;
   }
+
   /**
    *
    *
@@ -1206,6 +1236,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       getMappingOrBuilderList() {
     return mapping_;
   }
+
   /**
    *
    *
@@ -1220,6 +1251,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
   public int getMappingCount() {
     return mapping_.size();
   }
+
   /**
    *
    *
@@ -1234,6 +1266,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping getMapping(int index) {
     return mapping_.get(index);
   }
+
   /**
    *
    *
@@ -1254,6 +1287,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -1278,6 +1312,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -1492,6 +1527,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1768,6 +1804,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object codec_ = "";
+
     /**
      *
      *
@@ -1796,6 +1833,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1824,6 +1862,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1851,6 +1890,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1874,6 +1914,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1904,6 +1945,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object languageCode_ = "";
+
     /**
      *
      *
@@ -1929,6 +1971,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1954,6 +1997,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1978,6 +2022,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1998,6 +2043,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2060,6 +2106,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return mappingBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -2077,6 +2124,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return mappingBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -2095,6 +2143,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return mappingBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -2119,6 +2168,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2142,6 +2192,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2166,6 +2217,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2190,6 +2242,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2212,6 +2265,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2235,6 +2289,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2258,6 +2313,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2278,6 +2334,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2298,6 +2355,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2312,6 +2370,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         getMappingBuilder(int index) {
       return getMappingFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -2330,6 +2389,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return mappingBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -2349,6 +2409,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(mapping_);
       }
     }
+
     /**
      *
      *
@@ -2366,6 +2427,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -2384,6 +2446,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.video.transcoder.v1.TextStream.TextMapping
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -2418,6 +2481,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -2441,6 +2505,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -2464,6 +2529,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -2486,6 +2552,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2504,6 +2571,7 @@ public final class TextStream extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -83,6 +83,7 @@ public enum RemoteConfigUpdateType implements com.google.protobuf.ProtocolMessag
    * <code>REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED = 0;</code>
    */
   public static final int REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -93,6 +94,7 @@ public enum RemoteConfigUpdateType implements com.google.protobuf.ProtocolMessag
    * <code>INCREMENTAL_UPDATE = 1;</code>
    */
   public static final int INCREMENTAL_UPDATE_VALUE = 1;
+
   /**
    *
    *
@@ -105,6 +107,7 @@ public enum RemoteConfigUpdateType implements com.google.protobuf.ProtocolMessag
    * <code>FORCED_UPDATE = 2;</code>
    */
   public static final int FORCED_UPDATE_VALUE = 2;
+
   /**
    *
    *

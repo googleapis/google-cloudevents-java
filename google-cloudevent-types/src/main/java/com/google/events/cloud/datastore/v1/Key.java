@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastore.v1.Key)
     KeyOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Key.newBuilder() to construct.
   private Key(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -93,6 +94,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
      * @return The kind.
      */
     java.lang.String getKind();
+
     /**
      *
      *
@@ -126,6 +128,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the id field is set.
      */
     boolean hasId();
+
     /**
      *
      *
@@ -159,6 +162,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the name field is set.
      */
     boolean hasName();
+
     /**
      *
      *
@@ -177,6 +181,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
      * @return The name.
      */
     java.lang.String getName();
+
     /**
      *
      *
@@ -198,6 +203,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
 
     public com.google.events.cloud.datastore.v1.Key.PathElement.IdTypeCase getIdTypeCase();
   }
+
   /**
    *
    *
@@ -214,6 +220,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.datastore.v1.Key.PathElement)
       PathElementOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use PathElement.newBuilder() to construct.
     private PathElement(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -264,6 +271,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       private IdTypeCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -300,6 +308,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object kind_ = "";
+
     /**
      *
      *
@@ -329,6 +338,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -360,6 +370,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int ID_FIELD_NUMBER = 2;
+
     /**
      *
      *
@@ -377,6 +388,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     public boolean hasId() {
       return idTypeCase_ == 2;
     }
+
     /**
      *
      *
@@ -399,6 +411,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int NAME_FIELD_NUMBER = 3;
+
     /**
      *
      *
@@ -419,6 +432,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     public boolean hasName() {
       return idTypeCase_ == 3;
     }
+
     /**
      *
      *
@@ -452,6 +466,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -684,6 +699,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -926,6 +942,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       private int bitField0_;
 
       private java.lang.Object kind_ = "";
+
       /**
        *
        *
@@ -954,6 +971,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -982,6 +1000,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -1009,6 +1028,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1032,6 +1052,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1077,6 +1098,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       public boolean hasId() {
         return idTypeCase_ == 2;
       }
+
       /**
        *
        *
@@ -1096,6 +1118,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         }
         return 0L;
       }
+
       /**
        *
        *
@@ -1117,6 +1140,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1160,6 +1184,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       public boolean hasName() {
         return idTypeCase_ == 3;
       }
+
       /**
        *
        *
@@ -1194,6 +1219,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -1228,6 +1254,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -1255,6 +1282,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1280,6 +1308,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -1375,6 +1404,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PARTITION_ID_FIELD_NUMBER = 1;
   private com.google.events.cloud.datastore.v1.PartitionId partitionId_;
+
   /**
    *
    *
@@ -1392,6 +1422,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPartitionId() {
     return partitionId_ != null;
   }
+
   /**
    *
    *
@@ -1411,6 +1442,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.datastore.v1.PartitionId.getDefaultInstance()
         : partitionId_;
   }
+
   /**
    *
    *
@@ -1433,6 +1465,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.datastore.v1.Key.PathElement> path_;
+
   /**
    *
    *
@@ -1459,6 +1492,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.datastore.v1.Key.PathElement> getPathList() {
     return path_;
   }
+
   /**
    *
    *
@@ -1486,6 +1520,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       getPathOrBuilderList() {
     return path_;
   }
+
   /**
    *
    *
@@ -1512,6 +1547,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
   public int getPathCount() {
     return path_.size();
   }
+
   /**
    *
    *
@@ -1538,6 +1574,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.datastore.v1.Key.PathElement getPath(int index) {
     return path_.get(index);
   }
+
   /**
    *
    *
@@ -1739,6 +1776,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1994,6 +2032,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.datastore.v1.PartitionId.Builder,
             com.google.events.cloud.datastore.v1.PartitionIdOrBuilder>
         partitionIdBuilder_;
+
     /**
      *
      *
@@ -2010,6 +2049,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPartitionId() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -2032,6 +2072,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return partitionIdBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2056,6 +2097,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2078,6 +2120,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2106,6 +2149,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2127,6 +2171,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2143,6 +2188,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPartitionIdFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2163,6 +2209,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
             : partitionId_;
       }
     }
+
     /**
      *
      *
@@ -2237,6 +2284,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return pathBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -2266,6 +2314,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return pathBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -2295,6 +2344,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return pathBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -2330,6 +2380,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2363,6 +2414,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2398,6 +2450,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2433,6 +2486,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2466,6 +2520,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2499,6 +2554,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2532,6 +2588,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2564,6 +2621,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2596,6 +2654,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2621,6 +2680,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.datastore.v1.Key.PathElement.Builder getPathBuilder(int index) {
       return getPathFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -2651,6 +2711,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return pathBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -2681,6 +2742,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(path_);
       }
     }
+
     /**
      *
      *
@@ -2707,6 +2769,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
       return getPathFieldBuilder()
           .addBuilder(com.google.events.cloud.datastore.v1.Key.PathElement.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -2734,6 +2797,7 @@ public final class Key extends com.google.protobuf.GeneratedMessageV3
           .addBuilder(
               index, com.google.events.cloud.datastore.v1.Key.PathElement.getDefaultInstance());
     }
+
     /**
      *
      *

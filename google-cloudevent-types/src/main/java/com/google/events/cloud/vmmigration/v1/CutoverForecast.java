@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.CutoverForecast)
     CutoverForecastOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CutoverForecast.newBuilder() to construct.
   private CutoverForecast(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
 
   public static final int ESTIMATED_CUTOVER_JOB_DURATION_FIELD_NUMBER = 1;
   private com.google.protobuf.Duration estimatedCutoverJobDuration_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
   public boolean hasEstimatedCutoverJobDuration() {
     return estimatedCutoverJobDuration_ != null;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
         ? com.google.protobuf.Duration.getDefaultInstance()
         : estimatedCutoverJobDuration_;
   }
+
   /**
    *
    *
@@ -283,6 +287,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -478,6 +483,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
             com.google.protobuf.Duration.Builder,
             com.google.protobuf.DurationOrBuilder>
         estimatedCutoverJobDurationBuilder_;
+
     /**
      *
      *
@@ -492,6 +498,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
     public boolean hasEstimatedCutoverJobDuration() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -512,6 +519,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
         return estimatedCutoverJobDurationBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -534,6 +542,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -554,6 +563,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -579,6 +589,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -598,6 +609,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -612,6 +624,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
       onChanged();
       return getEstimatedCutoverJobDurationFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -630,6 +643,7 @@ public final class CutoverForecast extends com.google.protobuf.GeneratedMessageV
             : estimatedCutoverJobDuration_;
       }
     }
+
     /**
      *
      *

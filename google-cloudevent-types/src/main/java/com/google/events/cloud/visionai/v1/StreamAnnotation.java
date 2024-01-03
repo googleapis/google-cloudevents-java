@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.StreamAnnotation)
     StreamAnnotationOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use StreamAnnotation.newBuilder() to construct.
   private StreamAnnotation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -85,6 +86,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     private AnnotationPayloadCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -118,6 +120,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
   }
 
   public static final int ACTIVE_ZONE_FIELD_NUMBER = 5;
+
   /**
    *
    *
@@ -133,6 +136,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
   public boolean hasActiveZone() {
     return annotationPayloadCase_ == 5;
   }
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
     return com.google.events.cloud.visionai.v1.NormalizedPolygon.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -169,6 +174,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
   }
 
   public static final int CROSSING_LINE_FIELD_NUMBER = 6;
+
   /**
    *
    *
@@ -184,6 +190,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
   public boolean hasCrossingLine() {
     return annotationPayloadCase_ == 6;
   }
+
   /**
    *
    *
@@ -202,6 +209,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
     return com.google.events.cloud.visionai.v1.NormalizedPolyline.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -224,6 +232,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object id_ = "";
+
   /**
    *
    *
@@ -249,6 +258,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -279,6 +289,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -302,6 +313,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -330,6 +342,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object sourceStream_ = "";
+
   /**
    *
    *
@@ -353,6 +366,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -379,6 +393,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
 
   public static final int TYPE_FIELD_NUMBER = 4;
   private int type_ = 0;
+
   /**
    *
    *
@@ -394,6 +409,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
   public int getTypeValue() {
     return type_;
   }
+
   /**
    *
    *
@@ -647,6 +663,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -940,6 +957,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.visionai.v1.NormalizedPolygon.Builder,
             com.google.events.cloud.visionai.v1.NormalizedPolygonOrBuilder>
         activeZoneBuilder_;
+
     /**
      *
      *
@@ -955,6 +973,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     public boolean hasActiveZone() {
       return annotationPayloadCase_ == 5;
     }
+
     /**
      *
      *
@@ -980,6 +999,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.visionai.v1.NormalizedPolygon.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1002,6 +1022,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1022,6 +1043,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1055,6 +1077,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1080,6 +1103,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1092,6 +1116,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     public com.google.events.cloud.visionai.v1.NormalizedPolygon.Builder getActiveZoneBuilder() {
       return getActiveZoneFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1112,6 +1137,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.visionai.v1.NormalizedPolygon.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1151,6 +1177,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.visionai.v1.NormalizedPolyline.Builder,
             com.google.events.cloud.visionai.v1.NormalizedPolylineOrBuilder>
         crossingLineBuilder_;
+
     /**
      *
      *
@@ -1166,6 +1193,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     public boolean hasCrossingLine() {
       return annotationPayloadCase_ == 6;
     }
+
     /**
      *
      *
@@ -1191,6 +1219,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.visionai.v1.NormalizedPolyline.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1213,6 +1242,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1233,6 +1263,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1266,6 +1297,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       annotationPayloadCase_ = 6;
       return this;
     }
+
     /**
      *
      *
@@ -1291,6 +1323,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       }
       return this;
     }
+
     /**
      *
      *
@@ -1303,6 +1336,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     public com.google.events.cloud.visionai.v1.NormalizedPolyline.Builder getCrossingLineBuilder() {
       return getCrossingLineFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1324,6 +1358,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return com.google.events.cloud.visionai.v1.NormalizedPolyline.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1359,6 +1394,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object id_ = "";
+
     /**
      *
      *
@@ -1383,6 +1419,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1407,6 +1444,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1430,6 +1468,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1449,6 +1488,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1475,6 +1515,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -1497,6 +1538,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1519,6 +1561,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1540,6 +1583,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1557,6 +1601,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1581,6 +1626,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object sourceStream_ = "";
+
     /**
      *
      *
@@ -1603,6 +1649,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1625,6 +1672,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1646,6 +1694,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1663,6 +1712,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1687,6 +1737,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     }
 
     private int type_ = 0;
+
     /**
      *
      *
@@ -1702,6 +1753,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
     public int getTypeValue() {
       return type_;
     }
+
     /**
      *
      *
@@ -1720,6 +1772,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1739,6 +1792,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.visionai.v1.StreamAnnotationType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1760,6 +1814,7 @@ public final class StreamAnnotation extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *

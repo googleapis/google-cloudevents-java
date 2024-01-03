@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.firestore.v1.MapValue)
     MapValueOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MapValue.newBuilder() to construct.
   private MapValue(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -107,6 +108,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
   public int getFieldsCount() {
     return internalGetFields().getMap().size();
   }
+
   /**
    *
    *
@@ -127,12 +129,14 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetFields().getMap().containsKey(key);
   }
+
   /** Use {@link #getFieldsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, com.google.events.cloud.firestore.v1.Value> getFields() {
     return getFieldsMap();
   }
+
   /**
    *
    *
@@ -151,6 +155,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       getFieldsMap() {
     return internalGetFields().getMap();
   }
+
   /**
    *
    *
@@ -176,6 +181,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
         internalGetFields().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -370,6 +376,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -608,6 +615,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
     public int getFieldsCount() {
       return internalGetFields().getMap().size();
     }
+
     /**
      *
      *
@@ -628,12 +636,14 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetFields().getMap().containsKey(key);
     }
+
     /** Use {@link #getFieldsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.firestore.v1.Value> getFields() {
       return getFieldsMap();
     }
+
     /**
      *
      *
@@ -652,6 +662,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
         getFieldsMap() {
       return internalGetFields().getMap();
     }
+
     /**
      *
      *
@@ -677,6 +688,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
           internalGetFields().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -708,6 +720,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableFields().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -728,6 +741,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableFields().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, com.google.events.cloud.firestore.v1.Value>
@@ -735,6 +749,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000001;
       return internalGetMutableFields().getMutableMap();
     }
+
     /**
      *
      *
@@ -760,6 +775,7 @@ public final class MapValue extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000001;
       return this;
     }
+
     /**
      *
      *

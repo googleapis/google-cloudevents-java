@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the gkeCluster field is set.
    */
   boolean hasGkeCluster();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface MembershipEndpointOrBuilder
    * @return The gkeCluster.
    */
   com.google.events.cloud.gkehub.v1.GkeCluster getGkeCluster();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the onPremCluster field is set.
    */
   boolean hasOnPremCluster();
+
   /**
    *
    *
@@ -86,6 +89,7 @@ public interface MembershipEndpointOrBuilder
    * @return The onPremCluster.
    */
   com.google.events.cloud.gkehub.v1.OnPremCluster getOnPremCluster();
+
   /**
    *
    *
@@ -111,6 +115,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the multiCloudCluster field is set.
    */
   boolean hasMultiCloudCluster();
+
   /**
    *
    *
@@ -123,6 +128,7 @@ public interface MembershipEndpointOrBuilder
    * @return The multiCloudCluster.
    */
   com.google.events.cloud.gkehub.v1.MultiCloudCluster getMultiCloudCluster();
+
   /**
    *
    *
@@ -146,6 +152,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the edgeCluster field is set.
    */
   boolean hasEdgeCluster();
+
   /**
    *
    *
@@ -158,6 +165,7 @@ public interface MembershipEndpointOrBuilder
    * @return The edgeCluster.
    */
   com.google.events.cloud.gkehub.v1.EdgeCluster getEdgeCluster();
+
   /**
    *
    *
@@ -181,6 +189,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the applianceCluster field is set.
    */
   boolean hasApplianceCluster();
+
   /**
    *
    *
@@ -193,6 +202,7 @@ public interface MembershipEndpointOrBuilder
    * @return The applianceCluster.
    */
   com.google.events.cloud.gkehub.v1.ApplianceCluster getApplianceCluster();
+
   /**
    *
    *
@@ -216,6 +226,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the kubernetesMetadata field is set.
    */
   boolean hasKubernetesMetadata();
+
   /**
    *
    *
@@ -228,6 +239,7 @@ public interface MembershipEndpointOrBuilder
    * @return The kubernetesMetadata.
    */
   com.google.events.cloud.gkehub.v1.KubernetesMetadata getKubernetesMetadata();
+
   /**
    *
    *
@@ -257,6 +269,7 @@ public interface MembershipEndpointOrBuilder
    * @return Whether the kubernetesResource field is set.
    */
   boolean hasKubernetesResource();
+
   /**
    *
    *
@@ -275,6 +288,7 @@ public interface MembershipEndpointOrBuilder
    * @return The kubernetesResource.
    */
   com.google.events.cloud.gkehub.v1.KubernetesResource getKubernetesResource();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface MigrationSourceOrBuilder
    * @return The hostPort.
    */
   java.lang.String getHostPort();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface MigrationSourceOrBuilder
    * @return The referenceId.
    */
   java.lang.String getReferenceId();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface MigrationSourceOrBuilder
    * @return The enum numeric value on the wire for sourceType.
    */
   int getSourceTypeValue();
+
   /**
    *
    *

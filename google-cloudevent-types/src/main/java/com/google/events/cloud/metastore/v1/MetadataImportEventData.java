@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
     // @@protoc_insertion_point(message_implements:google.events.cloud.metastore.v1.MetadataImportEventData)
     MetadataImportEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MetadataImportEventData.newBuilder() to construct.
   private MetadataImportEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
 
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.metastore.v1.MetadataImport payload_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
   public boolean hasPayload() {
     return payload_ != null;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
         ? com.google.events.cloud.metastore.v1.MetadataImport.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -474,6 +479,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
             com.google.events.cloud.metastore.v1.MetadataImport.Builder,
             com.google.events.cloud.metastore.v1.MetadataImportOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -488,6 +494,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -508,6 +515,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -530,6 +538,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -550,6 +559,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -576,6 +586,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -595,6 +606,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -609,6 +621,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -627,6 +640,7 @@ public final class MetadataImportEventData extends com.google.protobuf.Generated
             : payload_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -96,6 +99,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The invalidMatrixDetails.
    */
   java.lang.String getInvalidMatrixDetails();
+
   /**
    *
    *
@@ -122,6 +126,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The enum numeric value on the wire for outcomeSummary.
    */
   int getOutcomeSummaryValue();
+
   /**
    *
    *
@@ -147,6 +152,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return Whether the resultStorage field is set.
    */
   boolean hasResultStorage();
+
   /**
    *
    *
@@ -159,6 +165,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The resultStorage.
    */
   com.google.events.firebase.testlab.v1.ResultStorage getResultStorage();
+
   /**
    *
    *
@@ -182,6 +189,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return Whether the clientInfo field is set.
    */
   boolean hasClientInfo();
+
   /**
    *
    *
@@ -194,6 +202,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The clientInfo.
    */
   com.google.events.firebase.testlab.v1.ClientInfo getClientInfo();
+
   /**
    *
    *
@@ -217,6 +226,7 @@ public interface TestMatrixEventDataOrBuilder
    * @return The testMatrixId.
    */
   java.lang.String getTestMatrixId();
+
   /**
    *
    *

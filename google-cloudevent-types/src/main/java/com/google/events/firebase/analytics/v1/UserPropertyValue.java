@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.UserPropertyValue)
     UserPropertyValueOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use UserPropertyValue.newBuilder() to construct.
   private UserPropertyValue(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
 
   public static final int VALUE_FIELD_NUMBER = 1;
   private com.google.events.firebase.analytics.v1.AnalyticsValue value_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
   public boolean hasValue() {
     return value_ != null;
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
         ? com.google.events.firebase.analytics.v1.AnalyticsValue.getDefaultInstance()
         : value_;
   }
+
   /**
    *
    *
@@ -118,6 +122,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
 
   public static final int SET_TIMESTAMP_USEC_FIELD_NUMBER = 2;
   private long setTimestampUsec_ = 0L;
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
 
   public static final int INDEX_FIELD_NUMBER = 3;
   private int index_ = 0;
+
   /**
    *
    *
@@ -335,6 +341,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -553,6 +560,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
             com.google.events.firebase.analytics.v1.AnalyticsValue.Builder,
             com.google.events.firebase.analytics.v1.AnalyticsValueOrBuilder>
         valueBuilder_;
+
     /**
      *
      *
@@ -567,6 +575,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     public boolean hasValue() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -587,6 +596,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
         return valueBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -609,6 +619,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -629,6 +640,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -655,6 +667,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -674,6 +687,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -688,6 +702,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getValueFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -706,6 +721,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
             : value_;
       }
     }
+
     /**
      *
      *
@@ -733,6 +749,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     }
 
     private long setTimestampUsec_;
+
     /**
      *
      *
@@ -748,6 +765,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     public long getSetTimestampUsec() {
       return setTimestampUsec_;
     }
+
     /**
      *
      *
@@ -767,6 +785,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -786,6 +805,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     }
 
     private int index_;
+
     /**
      *
      *
@@ -801,6 +821,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
     public int getIndex() {
       return index_;
     }
+
     /**
      *
      *
@@ -820,6 +841,7 @@ public final class UserPropertyValue extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *

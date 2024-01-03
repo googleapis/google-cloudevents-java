@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface InputOrBuilder
    * @return The key.
    */
   java.lang.String getKey();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface InputOrBuilder
    * @return The uri.
    */
   java.lang.String getUri();
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public interface InputOrBuilder
    * @return Whether the preprocessingConfig field is set.
    */
   boolean hasPreprocessingConfig();
+
   /**
    *
    *
@@ -109,6 +112,7 @@ public interface InputOrBuilder
    * @return The preprocessingConfig.
    */
   com.google.events.cloud.video.transcoder.v1.PreprocessingConfig getPreprocessingConfig();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
     // @@protoc_insertion_point(message_implements:google.events.cloud.apigeeregistry.v1.ApiDeploymentEventData)
     ApiDeploymentEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ApiDeploymentEventData.newBuilder() to construct.
   private ApiDeploymentEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.apigeeregistry.v1.ApiDeployment payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
         ? com.google.events.cloud.apigeeregistry.v1.ApiDeployment.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -281,6 +285,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -488,6 +493,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
             com.google.events.cloud.apigeeregistry.v1.ApiDeployment.Builder,
             com.google.events.cloud.apigeeregistry.v1.ApiDeploymentOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -502,6 +508,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -522,6 +529,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -544,6 +552,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -564,6 +573,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -590,6 +600,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -609,6 +620,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -623,6 +635,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -641,6 +654,7 @@ public final class ApiDeploymentEventData extends com.google.protobuf.GeneratedM
             : payload_;
       }
     }
+
     /**
      *
      *

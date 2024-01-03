@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface MigrationWarningOrBuilder
    * @return The enum numeric value on the wire for code.
    */
   int getCodeValue();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface MigrationWarningOrBuilder
    * @return Whether the warningMessage field is set.
    */
   boolean hasWarningMessage();
+
   /**
    *
    *
@@ -72,6 +74,7 @@ public interface MigrationWarningOrBuilder
    * @return The warningMessage.
    */
   com.google.rpc.LocalizedMessage getWarningMessage();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface MigrationWarningOrBuilder
    * @return Whether the actionItem field is set.
    */
   boolean hasActionItem();
+
   /**
    *
    *
@@ -107,6 +111,7 @@ public interface MigrationWarningOrBuilder
    * @return The actionItem.
    */
   com.google.rpc.LocalizedMessage getActionItem();
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public interface MigrationWarningOrBuilder
    * <code>repeated .google.rpc.Help.Link help_links = 4;</code>
    */
   java.util.List<com.google.rpc.Help.Link> getHelpLinksList();
+
   /**
    *
    *
@@ -138,6 +144,7 @@ public interface MigrationWarningOrBuilder
    * <code>repeated .google.rpc.Help.Link help_links = 4;</code>
    */
   com.google.rpc.Help.Link getHelpLinks(int index);
+
   /**
    *
    *
@@ -148,6 +155,7 @@ public interface MigrationWarningOrBuilder
    * <code>repeated .google.rpc.Help.Link help_links = 4;</code>
    */
   int getHelpLinksCount();
+
   /**
    *
    *
@@ -158,6 +166,7 @@ public interface MigrationWarningOrBuilder
    * <code>repeated .google.rpc.Help.Link help_links = 4;</code>
    */
   java.util.List<? extends com.google.rpc.Help.LinkOrBuilder> getHelpLinksOrBuilderList();
+
   /**
    *
    *
@@ -181,6 +190,7 @@ public interface MigrationWarningOrBuilder
    * @return Whether the warningTime field is set.
    */
   boolean hasWarningTime();
+
   /**
    *
    *
@@ -193,6 +203,7 @@ public interface MigrationWarningOrBuilder
    * @return The warningTime.
    */
   com.google.protobuf.Timestamp getWarningTime();
+
   /**
    *
    *

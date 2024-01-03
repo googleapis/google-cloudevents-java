@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyEventData)
     ServiceConnectionPolicyEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ServiceConnectionPolicyEventData.newBuilder() to construct.
   private ServiceConnectionPolicyEventData(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -70,6 +71,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy payload_;
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -107,6 +110,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
             .getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -300,6 +304,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -517,6 +522,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.Builder,
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicyOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -534,6 +540,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -558,6 +565,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -584,6 +592,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -608,6 +617,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -639,6 +649,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -661,6 +672,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -679,6 +691,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -702,6 +715,7 @@ public final class ServiceConnectionPolicyEventData extends com.google.protobuf.
             : payload_;
       }
     }
+
     /**
      *
      *

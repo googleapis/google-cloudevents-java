@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     // @@protoc_insertion_point(message_implements:google.events.cloud.clouddms.v1.MySqlConnectionProfile)
     MySqlConnectionProfileOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MySqlConnectionProfile.newBuilder() to construct.
   private MySqlConnectionProfile(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -73,6 +74,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object host_ = "";
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       return s;
     }
   }
+
   /**
    *
    *
@@ -122,6 +125,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   public static final int PORT_FIELD_NUMBER = 2;
   private int port_ = 0;
+
   /**
    *
    *
@@ -142,6 +146,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object username_ = "";
+
   /**
    *
    *
@@ -167,6 +172,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       return s;
     }
   }
+
   /**
    *
    *
@@ -195,6 +201,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   public static final int PASSWORD_SET_FIELD_NUMBER = 5;
   private boolean passwordSet_ = false;
+
   /**
    *
    *
@@ -213,6 +220,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   public static final int SSL_FIELD_NUMBER = 6;
   private com.google.events.cloud.clouddms.v1.SslConfig ssl_;
+
   /**
    *
    *
@@ -228,6 +236,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
   public boolean hasSsl() {
     return ssl_ != null;
   }
+
   /**
    *
    *
@@ -243,6 +252,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
   public com.google.events.cloud.clouddms.v1.SslConfig getSsl() {
     return ssl_ == null ? com.google.events.cloud.clouddms.v1.SslConfig.getDefaultInstance() : ssl_;
   }
+
   /**
    *
    *
@@ -261,6 +271,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object cloudSqlId_ = "";
+
   /**
    *
    *
@@ -285,6 +296,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       return s;
     }
   }
+
   /**
    *
    *
@@ -520,6 +532,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -777,6 +790,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     private int bitField0_;
 
     private java.lang.Object host_ = "";
+
     /**
      *
      *
@@ -799,6 +813,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -821,6 +836,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -842,6 +858,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -859,6 +876,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -883,6 +901,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     }
 
     private int port_;
+
     /**
      *
      *
@@ -898,6 +917,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     public int getPort() {
       return port_;
     }
+
     /**
      *
      *
@@ -917,6 +937,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -936,6 +957,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     }
 
     private java.lang.Object username_ = "";
+
     /**
      *
      *
@@ -960,6 +982,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -984,6 +1007,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1007,6 +1031,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1026,6 +1051,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1052,6 +1078,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     }
 
     private boolean passwordSet_;
+
     /**
      *
      *
@@ -1067,6 +1094,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     public boolean getPasswordSet() {
       return passwordSet_;
     }
+
     /**
      *
      *
@@ -1086,6 +1114,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1110,6 +1139,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
             com.google.events.cloud.clouddms.v1.SslConfig.Builder,
             com.google.events.cloud.clouddms.v1.SslConfigOrBuilder>
         sslBuilder_;
+
     /**
      *
      *
@@ -1124,6 +1154,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     public boolean hasSsl() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1144,6 +1175,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return sslBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1166,6 +1198,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1185,6 +1218,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1210,6 +1244,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1229,6 +1264,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1243,6 +1279,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return getSslFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1261,6 +1298,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
             : ssl_;
       }
     }
+
     /**
      *
      *
@@ -1288,6 +1326,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
     }
 
     private java.lang.Object cloudSqlId_ = "";
+
     /**
      *
      *
@@ -1311,6 +1350,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1334,6 +1374,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1356,6 +1397,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1374,6 +1416,7 @@ public final class MySqlConnectionProfile extends com.google.protobuf.GeneratedM
       onChanged();
       return this;
     }
+
     /**
      *
      *

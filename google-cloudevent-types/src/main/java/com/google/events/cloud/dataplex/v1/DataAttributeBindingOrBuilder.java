@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -93,6 +95,7 @@ public interface DataAttributeBindingOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -105,6 +108,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -128,6 +132,7 @@ public interface DataAttributeBindingOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -140,6 +145,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -188,6 +195,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -211,6 +219,7 @@ public interface DataAttributeBindingOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -221,9 +230,11 @@ public interface DataAttributeBindingOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -234,6 +245,7 @@ public interface DataAttributeBindingOrBuilder
    * <code>map&lt;string, string&gt; labels = 7;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -248,6 +260,7 @@ public interface DataAttributeBindingOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -275,6 +288,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The etag.
    */
   java.lang.String getEtag();
+
   /**
    *
    *
@@ -308,6 +322,7 @@ public interface DataAttributeBindingOrBuilder
    * @return Whether the resource field is set.
    */
   boolean hasResource();
+
   /**
    *
    *
@@ -324,6 +339,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The resource.
    */
   java.lang.String getResource();
+
   /**
    *
    *
@@ -355,6 +371,7 @@ public interface DataAttributeBindingOrBuilder
    * @return A list containing the attributes.
    */
   java.util.List<java.lang.String> getAttributesList();
+
   /**
    *
    *
@@ -369,6 +386,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The count of attributes.
    */
   int getAttributesCount();
+
   /**
    *
    *
@@ -384,6 +402,7 @@ public interface DataAttributeBindingOrBuilder
    * @return The attributes at the given index.
    */
   java.lang.String getAttributes(int index);
+
   /**
    *
    *
@@ -411,6 +430,7 @@ public interface DataAttributeBindingOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataAttributeBinding.Path paths = 120;</code>
    */
   java.util.List<com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path> getPathsList();
+
   /**
    *
    *
@@ -422,6 +442,7 @@ public interface DataAttributeBindingOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataAttributeBinding.Path paths = 120;</code>
    */
   com.google.events.cloud.dataplex.v1.DataAttributeBinding.Path getPaths(int index);
+
   /**
    *
    *
@@ -433,6 +454,7 @@ public interface DataAttributeBindingOrBuilder
    * <code>repeated .google.events.cloud.dataplex.v1.DataAttributeBinding.Path paths = 120;</code>
    */
   int getPathsCount();
+
   /**
    *
    *
@@ -445,6 +467,7 @@ public interface DataAttributeBindingOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.dataplex.v1.DataAttributeBinding.PathOrBuilder>
       getPathsOrBuilderList();
+
   /**
    *
    *

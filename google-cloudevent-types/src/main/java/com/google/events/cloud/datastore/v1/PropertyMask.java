@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.datastore.v1.PropertyMask)
     PropertyMaskOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use PropertyMask.newBuilder() to construct.
   private PropertyMask(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList propertyPaths_;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getPropertyPathsList() {
     return propertyPaths_;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
   public int getPropertyPathsCount() {
     return propertyPaths_.size();
   }
+
   /**
    *
    *
@@ -117,6 +121,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getPropertyPaths(int index) {
     return propertyPaths_.get(index);
   }
+
   /**
    *
    *
@@ -300,6 +305,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -506,6 +512,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -521,6 +528,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getPropertyPathsList() {
       return propertyPaths_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -536,6 +544,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     public int getPropertyPathsCount() {
       return propertyPaths_.size();
     }
+
     /**
      *
      *
@@ -552,6 +561,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getPropertyPaths(int index) {
       return propertyPaths_.get(index);
     }
+
     /**
      *
      *
@@ -568,6 +578,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getPropertyPathsBytes(int index) {
       return propertyPaths_.getByteString(index);
     }
+
     /**
      *
      *
@@ -591,6 +602,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -613,6 +625,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -632,6 +645,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -650,6 +664,7 @@ public final class PropertyMask extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

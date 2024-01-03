@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -71,6 +71,7 @@ public enum ComputeEngineBootOption implements com.google.protobuf.ProtocolMessa
    * <code>COMPUTE_ENGINE_BOOT_OPTION_UNSPECIFIED = 0;</code>
    */
   public static final int COMPUTE_ENGINE_BOOT_OPTION_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -81,6 +82,7 @@ public enum ComputeEngineBootOption implements com.google.protobuf.ProtocolMessa
    * <code>COMPUTE_ENGINE_BOOT_OPTION_EFI = 1;</code>
    */
   public static final int COMPUTE_ENGINE_BOOT_OPTION_EFI_VALUE = 1;
+
   /**
    *
    *

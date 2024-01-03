@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface StepOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface StepOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -98,6 +100,7 @@ public interface StepOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *
@@ -123,6 +126,7 @@ public interface StepOrBuilder
    * @return Whether the instance field is set.
    */
   boolean hasInstance();
+
   /**
    *
    *
@@ -135,6 +139,7 @@ public interface StepOrBuilder
    * @return The instance.
    */
   com.google.events.cloud.networkmanagement.v1.InstanceInfo getInstance();
+
   /**
    *
    *
@@ -158,6 +163,7 @@ public interface StepOrBuilder
    * @return Whether the firewall field is set.
    */
   boolean hasFirewall();
+
   /**
    *
    *
@@ -170,6 +176,7 @@ public interface StepOrBuilder
    * @return The firewall.
    */
   com.google.events.cloud.networkmanagement.v1.FirewallInfo getFirewall();
+
   /**
    *
    *
@@ -193,6 +200,7 @@ public interface StepOrBuilder
    * @return Whether the route field is set.
    */
   boolean hasRoute();
+
   /**
    *
    *
@@ -205,6 +213,7 @@ public interface StepOrBuilder
    * @return The route.
    */
   com.google.events.cloud.networkmanagement.v1.RouteInfo getRoute();
+
   /**
    *
    *
@@ -231,6 +240,7 @@ public interface StepOrBuilder
    * @return Whether the endpoint field is set.
    */
   boolean hasEndpoint();
+
   /**
    *
    *
@@ -246,6 +256,7 @@ public interface StepOrBuilder
    * @return The endpoint.
    */
   com.google.events.cloud.networkmanagement.v1.EndpointInfo getEndpoint();
+
   /**
    *
    *
@@ -272,6 +283,7 @@ public interface StepOrBuilder
    * @return Whether the googleService field is set.
    */
   boolean hasGoogleService();
+
   /**
    *
    *
@@ -284,6 +296,7 @@ public interface StepOrBuilder
    * @return The googleService.
    */
   com.google.events.cloud.networkmanagement.v1.GoogleServiceInfo getGoogleService();
+
   /**
    *
    *
@@ -308,6 +321,7 @@ public interface StepOrBuilder
    * @return Whether the forwardingRule field is set.
    */
   boolean hasForwardingRule();
+
   /**
    *
    *
@@ -320,6 +334,7 @@ public interface StepOrBuilder
    * @return The forwardingRule.
    */
   com.google.events.cloud.networkmanagement.v1.ForwardingRuleInfo getForwardingRule();
+
   /**
    *
    *
@@ -344,6 +359,7 @@ public interface StepOrBuilder
    * @return Whether the vpnGateway field is set.
    */
   boolean hasVpnGateway();
+
   /**
    *
    *
@@ -356,6 +372,7 @@ public interface StepOrBuilder
    * @return The vpnGateway.
    */
   com.google.events.cloud.networkmanagement.v1.VpnGatewayInfo getVpnGateway();
+
   /**
    *
    *
@@ -379,6 +396,7 @@ public interface StepOrBuilder
    * @return Whether the vpnTunnel field is set.
    */
   boolean hasVpnTunnel();
+
   /**
    *
    *
@@ -391,6 +409,7 @@ public interface StepOrBuilder
    * @return The vpnTunnel.
    */
   com.google.events.cloud.networkmanagement.v1.VpnTunnelInfo getVpnTunnel();
+
   /**
    *
    *
@@ -414,6 +433,7 @@ public interface StepOrBuilder
    * @return Whether the vpcConnector field is set.
    */
   boolean hasVpcConnector();
+
   /**
    *
    *
@@ -426,6 +446,7 @@ public interface StepOrBuilder
    * @return The vpcConnector.
    */
   com.google.events.cloud.networkmanagement.v1.VpcConnectorInfo getVpcConnector();
+
   /**
    *
    *
@@ -449,6 +470,7 @@ public interface StepOrBuilder
    * @return Whether the deliver field is set.
    */
   boolean hasDeliver();
+
   /**
    *
    *
@@ -461,6 +483,7 @@ public interface StepOrBuilder
    * @return The deliver.
    */
   com.google.events.cloud.networkmanagement.v1.DeliverInfo getDeliver();
+
   /**
    *
    *
@@ -484,6 +507,7 @@ public interface StepOrBuilder
    * @return Whether the forward field is set.
    */
   boolean hasForward();
+
   /**
    *
    *
@@ -496,6 +520,7 @@ public interface StepOrBuilder
    * @return The forward.
    */
   com.google.events.cloud.networkmanagement.v1.ForwardInfo getForward();
+
   /**
    *
    *
@@ -519,6 +544,7 @@ public interface StepOrBuilder
    * @return Whether the abort field is set.
    */
   boolean hasAbort();
+
   /**
    *
    *
@@ -531,6 +557,7 @@ public interface StepOrBuilder
    * @return The abort.
    */
   com.google.events.cloud.networkmanagement.v1.AbortInfo getAbort();
+
   /**
    *
    *
@@ -554,6 +581,7 @@ public interface StepOrBuilder
    * @return Whether the drop field is set.
    */
   boolean hasDrop();
+
   /**
    *
    *
@@ -566,6 +594,7 @@ public interface StepOrBuilder
    * @return The drop.
    */
   com.google.events.cloud.networkmanagement.v1.DropInfo getDrop();
+
   /**
    *
    *
@@ -589,6 +618,7 @@ public interface StepOrBuilder
    * @return Whether the loadBalancer field is set.
    */
   boolean hasLoadBalancer();
+
   /**
    *
    *
@@ -601,6 +631,7 @@ public interface StepOrBuilder
    * @return The loadBalancer.
    */
   com.google.events.cloud.networkmanagement.v1.LoadBalancerInfo getLoadBalancer();
+
   /**
    *
    *
@@ -624,6 +655,7 @@ public interface StepOrBuilder
    * @return Whether the network field is set.
    */
   boolean hasNetwork();
+
   /**
    *
    *
@@ -636,6 +668,7 @@ public interface StepOrBuilder
    * @return The network.
    */
   com.google.events.cloud.networkmanagement.v1.NetworkInfo getNetwork();
+
   /**
    *
    *
@@ -659,6 +692,7 @@ public interface StepOrBuilder
    * @return Whether the gkeMaster field is set.
    */
   boolean hasGkeMaster();
+
   /**
    *
    *
@@ -671,6 +705,7 @@ public interface StepOrBuilder
    * @return The gkeMaster.
    */
   com.google.events.cloud.networkmanagement.v1.GKEMasterInfo getGkeMaster();
+
   /**
    *
    *
@@ -695,6 +730,7 @@ public interface StepOrBuilder
    * @return Whether the cloudSqlInstance field is set.
    */
   boolean hasCloudSqlInstance();
+
   /**
    *
    *
@@ -708,6 +744,7 @@ public interface StepOrBuilder
    * @return The cloudSqlInstance.
    */
   com.google.events.cloud.networkmanagement.v1.CloudSQLInstanceInfo getCloudSqlInstance();
+
   /**
    *
    *
@@ -733,6 +770,7 @@ public interface StepOrBuilder
    * @return Whether the cloudFunction field is set.
    */
   boolean hasCloudFunction();
+
   /**
    *
    *
@@ -745,6 +783,7 @@ public interface StepOrBuilder
    * @return The cloudFunction.
    */
   com.google.events.cloud.networkmanagement.v1.CloudFunctionInfo getCloudFunction();
+
   /**
    *
    *
@@ -770,6 +809,7 @@ public interface StepOrBuilder
    * @return Whether the appEngineVersion field is set.
    */
   boolean hasAppEngineVersion();
+
   /**
    *
    *
@@ -783,6 +823,7 @@ public interface StepOrBuilder
    * @return The appEngineVersion.
    */
   com.google.events.cloud.networkmanagement.v1.AppEngineVersionInfo getAppEngineVersion();
+
   /**
    *
    *
@@ -809,6 +850,7 @@ public interface StepOrBuilder
    * @return Whether the cloudRunRevision field is set.
    */
   boolean hasCloudRunRevision();
+
   /**
    *
    *
@@ -822,6 +864,7 @@ public interface StepOrBuilder
    * @return The cloudRunRevision.
    */
   com.google.events.cloud.networkmanagement.v1.CloudRunRevisionInfo getCloudRunRevision();
+
   /**
    *
    *

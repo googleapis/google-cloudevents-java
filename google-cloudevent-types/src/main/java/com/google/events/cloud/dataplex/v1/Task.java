@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task)
     TaskOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Task.newBuilder() to construct.
   private Task(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -101,6 +102,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the batch field is set.
      */
     boolean hasBatch();
+
     /**
      *
      *
@@ -115,6 +117,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The batch.
      */
     com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.BatchComputeResources getBatch();
+
     /**
      *
      *
@@ -143,6 +146,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the containerImage field is set.
      */
     boolean hasContainerImage();
+
     /**
      *
      *
@@ -158,6 +162,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime
         getContainerImage();
+
     /**
      *
      *
@@ -185,6 +190,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the vpcNetwork field is set.
      */
     boolean hasVpcNetwork();
+
     /**
      *
      *
@@ -198,6 +204,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The vpcNetwork.
      */
     com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork getVpcNetwork();
+
     /**
      *
      *
@@ -218,6 +225,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.NetworkCase getNetworkCase();
   }
+
   /**
    *
    *
@@ -232,6 +240,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.InfrastructureSpec)
       InfrastructureSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use InfrastructureSpec.newBuilder() to construct.
     private InfrastructureSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -299,6 +308,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        */
       int getMaxExecutorsCount();
     }
+
     /**
      *
      *
@@ -314,6 +324,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.InfrastructureSpec.BatchComputeResources)
         BatchComputeResourcesOrBuilder {
       private static final long serialVersionUID = 0L;
+
       // Use BatchComputeResources.newBuilder() to construct.
       private BatchComputeResources(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -351,6 +362,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       public static final int EXECUTORS_COUNT_FIELD_NUMBER = 1;
       private int executorsCount_ = 0;
+
       /**
        *
        *
@@ -370,6 +382,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       public static final int MAX_EXECUTORS_COUNT_FIELD_NUMBER = 2;
       private int maxExecutorsCount_ = 0;
+
       /**
        *
        *
@@ -581,6 +594,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         Builder builder = new Builder(parent);
         return builder;
       }
+
       /**
        *
        *
@@ -799,6 +813,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         private int bitField0_;
 
         private int executorsCount_;
+
         /**
          *
          *
@@ -815,6 +830,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getExecutorsCount() {
           return executorsCount_;
         }
+
         /**
          *
          *
@@ -835,6 +851,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -855,6 +872,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
 
         private int maxExecutorsCount_;
+
         /**
          *
          *
@@ -872,6 +890,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getMaxExecutorsCount() {
           return maxExecutorsCount_;
         }
+
         /**
          *
          *
@@ -893,6 +912,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -1000,6 +1020,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The image.
        */
       java.lang.String getImage();
+
       /**
        *
        *
@@ -1027,6 +1048,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return A list containing the javaJars.
        */
       java.util.List<java.lang.String> getJavaJarsList();
+
       /**
        *
        *
@@ -1041,6 +1063,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The count of javaJars.
        */
       int getJavaJarsCount();
+
       /**
        *
        *
@@ -1056,6 +1079,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The javaJars at the given index.
        */
       java.lang.String getJavaJars(int index);
+
       /**
        *
        *
@@ -1086,6 +1110,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return A list containing the pythonPackages.
        */
       java.util.List<java.lang.String> getPythonPackagesList();
+
       /**
        *
        *
@@ -1100,6 +1125,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The count of pythonPackages.
        */
       int getPythonPackagesCount();
+
       /**
        *
        *
@@ -1115,6 +1141,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The pythonPackages at the given index.
        */
       java.lang.String getPythonPackages(int index);
+
       /**
        *
        *
@@ -1145,6 +1172,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * <code>map&lt;string, string&gt; properties = 4;</code>
        */
       int getPropertiesCount();
+
       /**
        *
        *
@@ -1159,9 +1187,11 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * <code>map&lt;string, string&gt; properties = 4;</code>
        */
       boolean containsProperties(java.lang.String key);
+
       /** Use {@link #getPropertiesMap()} instead. */
       @java.lang.Deprecated
       java.util.Map<java.lang.String, java.lang.String> getProperties();
+
       /**
        *
        *
@@ -1176,6 +1206,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * <code>map&lt;string, string&gt; properties = 4;</code>
        */
       java.util.Map<java.lang.String, java.lang.String> getPropertiesMap();
+
       /**
        *
        *
@@ -1194,6 +1225,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           java.lang.String key,
           /* nullable */
           java.lang.String defaultValue);
+
       /**
        *
        *
@@ -1209,6 +1241,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        */
       java.lang.String getPropertiesOrThrow(java.lang.String key);
     }
+
     /**
      *
      *
@@ -1224,6 +1257,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime)
         ContainerImageRuntimeOrBuilder {
       private static final long serialVersionUID = 0L;
+
       // Use ContainerImageRuntime.newBuilder() to construct.
       private ContainerImageRuntime(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -1278,6 +1312,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       @SuppressWarnings("serial")
       private volatile java.lang.Object image_ = "";
+
       /**
        *
        *
@@ -1301,6 +1336,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return s;
         }
       }
+
       /**
        *
        *
@@ -1329,6 +1365,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       @SuppressWarnings("serial")
       private com.google.protobuf.LazyStringList javaJars_;
+
       /**
        *
        *
@@ -1345,6 +1382,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getJavaJarsList() {
         return javaJars_;
       }
+
       /**
        *
        *
@@ -1361,6 +1399,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getJavaJarsCount() {
         return javaJars_.size();
       }
+
       /**
        *
        *
@@ -1378,6 +1417,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getJavaJars(int index) {
         return javaJars_.get(index);
       }
+
       /**
        *
        *
@@ -1400,6 +1440,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       @SuppressWarnings("serial")
       private com.google.protobuf.LazyStringList pythonPackages_;
+
       /**
        *
        *
@@ -1416,6 +1457,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getPythonPackagesList() {
         return pythonPackages_;
       }
+
       /**
        *
        *
@@ -1432,6 +1474,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getPythonPackagesCount() {
         return pythonPackages_.size();
       }
+
       /**
        *
        *
@@ -1449,6 +1492,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getPythonPackages(int index) {
         return pythonPackages_.get(index);
       }
+
       /**
        *
        *
@@ -1495,6 +1539,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getPropertiesCount() {
         return internalGetProperties().getMap().size();
       }
+
       /**
        *
        *
@@ -1515,12 +1560,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return internalGetProperties().getMap().containsKey(key);
       }
+
       /** Use {@link #getPropertiesMap()} instead. */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.String> getProperties() {
         return getPropertiesMap();
       }
+
       /**
        *
        *
@@ -1538,6 +1585,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.util.Map<java.lang.String, java.lang.String> getPropertiesMap() {
         return internalGetProperties().getMap();
       }
+
       /**
        *
        *
@@ -1562,6 +1610,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         java.util.Map<java.lang.String, java.lang.String> map = internalGetProperties().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
+
       /**
        *
        *
@@ -1820,6 +1869,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         Builder builder = new Builder(parent);
         return builder;
       }
+
       /**
        *
        *
@@ -2120,6 +2170,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         private int bitField0_;
 
         private java.lang.Object image_ = "";
+
         /**
          *
          *
@@ -2142,6 +2193,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (java.lang.String) ref;
           }
         }
+
         /**
          *
          *
@@ -2164,6 +2216,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (com.google.protobuf.ByteString) ref;
           }
         }
+
         /**
          *
          *
@@ -2185,6 +2238,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2202,6 +2256,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2234,6 +2289,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             bitField0_ |= 0x00000002;
           }
         }
+
         /**
          *
          *
@@ -2250,6 +2306,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ProtocolStringList getJavaJarsList() {
           return javaJars_.getUnmodifiableView();
         }
+
         /**
          *
          *
@@ -2266,6 +2323,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getJavaJarsCount() {
           return javaJars_.size();
         }
+
         /**
          *
          *
@@ -2283,6 +2341,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public java.lang.String getJavaJars(int index) {
           return javaJars_.get(index);
         }
+
         /**
          *
          *
@@ -2300,6 +2359,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ByteString getJavaJarsBytes(int index) {
           return javaJars_.getByteString(index);
         }
+
         /**
          *
          *
@@ -2324,6 +2384,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2347,6 +2408,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2367,6 +2429,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2386,6 +2449,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2420,6 +2484,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             bitField0_ |= 0x00000004;
           }
         }
+
         /**
          *
          *
@@ -2436,6 +2501,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ProtocolStringList getPythonPackagesList() {
           return pythonPackages_.getUnmodifiableView();
         }
+
         /**
          *
          *
@@ -2452,6 +2518,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getPythonPackagesCount() {
           return pythonPackages_.size();
         }
+
         /**
          *
          *
@@ -2469,6 +2536,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public java.lang.String getPythonPackages(int index) {
           return pythonPackages_.get(index);
         }
+
         /**
          *
          *
@@ -2486,6 +2554,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ByteString getPythonPackagesBytes(int index) {
           return pythonPackages_.getByteString(index);
         }
+
         /**
          *
          *
@@ -2510,6 +2579,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2533,6 +2603,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2553,6 +2624,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2572,6 +2644,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -2625,6 +2698,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getPropertiesCount() {
           return internalGetProperties().getMap().size();
         }
+
         /**
          *
          *
@@ -2645,12 +2719,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           }
           return internalGetProperties().getMap().containsKey(key);
         }
+
         /** Use {@link #getPropertiesMap()} instead. */
         @java.lang.Override
         @java.lang.Deprecated
         public java.util.Map<java.lang.String, java.lang.String> getProperties() {
           return getPropertiesMap();
         }
+
         /**
          *
          *
@@ -2668,6 +2744,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public java.util.Map<java.lang.String, java.lang.String> getPropertiesMap() {
           return internalGetProperties().getMap();
         }
+
         /**
          *
          *
@@ -2692,6 +2769,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           java.util.Map<java.lang.String, java.lang.String> map = internalGetProperties().getMap();
           return map.containsKey(key) ? map.get(key) : defaultValue;
         }
+
         /**
          *
          *
@@ -2722,6 +2800,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           internalGetMutableProperties().getMutableMap().clear();
           return this;
         }
+
         /**
          *
          *
@@ -2742,12 +2821,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           internalGetMutableProperties().getMutableMap().remove(key);
           return this;
         }
+
         /** Use alternate mutation accessors instead. */
         @java.lang.Deprecated
         public java.util.Map<java.lang.String, java.lang.String> getMutableProperties() {
           bitField0_ |= 0x00000008;
           return internalGetMutableProperties().getMutableMap();
         }
+
         /**
          *
          *
@@ -2772,6 +2853,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000008;
           return this;
         }
+
         /**
          *
          *
@@ -2879,6 +2961,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return Whether the network field is set.
        */
       boolean hasNetwork();
+
       /**
        *
        *
@@ -2892,6 +2975,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The network.
        */
       java.lang.String getNetwork();
+
       /**
        *
        *
@@ -2918,6 +3002,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return Whether the subNetwork field is set.
        */
       boolean hasSubNetwork();
+
       /**
        *
        *
@@ -2930,6 +3015,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The subNetwork.
        */
       java.lang.String getSubNetwork();
+
       /**
        *
        *
@@ -2955,6 +3041,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return A list containing the networkTags.
        */
       java.util.List<java.lang.String> getNetworkTagsList();
+
       /**
        *
        *
@@ -2967,6 +3054,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The count of networkTags.
        */
       int getNetworkTagsCount();
+
       /**
        *
        *
@@ -2980,6 +3068,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * @return The networkTags at the given index.
        */
       java.lang.String getNetworkTags(int index);
+
       /**
        *
        *
@@ -2997,6 +3086,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork.NetworkNameCase
           getNetworkNameCase();
     }
+
     /**
      *
      *
@@ -3011,6 +3101,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork)
         VpcNetworkOrBuilder {
       private static final long serialVersionUID = 0L;
+
       // Use VpcNetwork.newBuilder() to construct.
       private VpcNetwork(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
         super(builder);
@@ -3062,6 +3153,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         private NetworkNameCase(int value) {
           this.value = value;
         }
+
         /**
          * @param value The number of the enum to look for.
          * @return The enum associated with the given number.
@@ -3095,6 +3187,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       public static final int NETWORK_FIELD_NUMBER = 1;
+
       /**
        *
        *
@@ -3110,6 +3203,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasNetwork() {
         return networkNameCase_ == 1;
       }
+
       /**
        *
        *
@@ -3138,6 +3232,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return s;
         }
       }
+
       /**
        *
        *
@@ -3168,6 +3263,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       public static final int SUB_NETWORK_FIELD_NUMBER = 2;
+
       /**
        *
        *
@@ -3182,6 +3278,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasSubNetwork() {
         return networkNameCase_ == 2;
       }
+
       /**
        *
        *
@@ -3209,6 +3306,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return s;
         }
       }
+
       /**
        *
        *
@@ -3241,6 +3339,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
       @SuppressWarnings("serial")
       private com.google.protobuf.LazyStringList networkTags_;
+
       /**
        *
        *
@@ -3255,6 +3354,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getNetworkTagsList() {
         return networkTags_;
       }
+
       /**
        *
        *
@@ -3269,6 +3369,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getNetworkTagsCount() {
         return networkTags_.size();
       }
+
       /**
        *
        *
@@ -3284,6 +3385,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getNetworkTags(int index) {
         return networkTags_.get(index);
       }
+
       /**
        *
        *
@@ -3512,6 +3614,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         Builder builder = new Builder(parent);
         return builder;
       }
+
       /**
        *
        *
@@ -3796,6 +3899,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public boolean hasNetwork() {
           return networkNameCase_ == 1;
         }
+
         /**
          *
          *
@@ -3825,6 +3929,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (java.lang.String) ref;
           }
         }
+
         /**
          *
          *
@@ -3854,6 +3959,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (com.google.protobuf.ByteString) ref;
           }
         }
+
         /**
          *
          *
@@ -3876,6 +3982,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -3896,6 +4003,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           }
           return this;
         }
+
         /**
          *
          *
@@ -3935,6 +4043,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public boolean hasSubNetwork() {
           return networkNameCase_ == 2;
         }
+
         /**
          *
          *
@@ -3963,6 +4072,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (java.lang.String) ref;
           }
         }
+
         /**
          *
          *
@@ -3991,6 +4101,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             return (com.google.protobuf.ByteString) ref;
           }
         }
+
         /**
          *
          *
@@ -4012,6 +4123,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -4031,6 +4143,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           }
           return this;
         }
+
         /**
          *
          *
@@ -4063,6 +4176,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             bitField0_ |= 0x00000004;
           }
         }
+
         /**
          *
          *
@@ -4077,6 +4191,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ProtocolStringList getNetworkTagsList() {
           return networkTags_.getUnmodifiableView();
         }
+
         /**
          *
          *
@@ -4091,6 +4206,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public int getNetworkTagsCount() {
           return networkTags_.size();
         }
+
         /**
          *
          *
@@ -4106,6 +4222,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public java.lang.String getNetworkTags(int index) {
           return networkTags_.get(index);
         }
+
         /**
          *
          *
@@ -4121,6 +4238,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         public com.google.protobuf.ByteString getNetworkTagsBytes(int index) {
           return networkTags_.getByteString(index);
         }
+
         /**
          *
          *
@@ -4143,6 +4261,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -4164,6 +4283,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -4182,6 +4302,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -4199,6 +4320,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           onChanged();
           return this;
         }
+
         /**
          *
          *
@@ -4304,6 +4426,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private ResourcesCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -4348,6 +4471,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private RuntimeCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -4392,6 +4516,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private NetworkCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -4423,6 +4548,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int BATCH_FIELD_NUMBER = 52;
+
     /**
      *
      *
@@ -4440,6 +4566,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasBatch() {
       return resourcesCase_ == 52;
     }
+
     /**
      *
      *
@@ -4463,6 +4590,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.BatchComputeResources
           .getDefaultInstance();
     }
+
     /**
      *
      *
@@ -4487,6 +4615,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int CONTAINER_IMAGE_FIELD_NUMBER = 101;
+
     /**
      *
      *
@@ -4504,6 +4633,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasContainerImage() {
       return runtimeCase_ == 101;
     }
+
     /**
      *
      *
@@ -4527,6 +4657,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.ContainerImageRuntime
           .getDefaultInstance();
     }
+
     /**
      *
      *
@@ -4551,6 +4682,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int VPC_NETWORK_FIELD_NUMBER = 150;
+
     /**
      *
      *
@@ -4567,6 +4699,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasVpcNetwork() {
       return networkCase_ == 150;
     }
+
     /**
      *
      *
@@ -4587,6 +4720,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork
           .getDefaultInstance();
     }
+
     /**
      *
      *
@@ -4843,6 +4977,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -5153,6 +5288,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec
                   .BatchComputeResourcesOrBuilder>
           batchBuilder_;
+
       /**
        *
        *
@@ -5170,6 +5306,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasBatch() {
         return resourcesCase_ == 52;
       }
+
       /**
        *
        *
@@ -5202,6 +5339,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5227,6 +5365,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         resourcesCase_ = 52;
         return this;
       }
+
       /**
        *
        *
@@ -5250,6 +5389,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         resourcesCase_ = 52;
         return this;
       }
+
       /**
        *
        *
@@ -5290,6 +5430,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         resourcesCase_ = 52;
         return this;
       }
+
       /**
        *
        *
@@ -5317,6 +5458,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -5333,6 +5475,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           getBatchBuilder() {
         return getBatchFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -5360,6 +5503,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5410,6 +5554,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec
                   .ContainerImageRuntimeOrBuilder>
           containerImageBuilder_;
+
       /**
        *
        *
@@ -5427,6 +5572,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasContainerImage() {
         return runtimeCase_ == 101;
       }
+
       /**
        *
        *
@@ -5459,6 +5605,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5484,6 +5631,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         runtimeCase_ = 101;
         return this;
       }
+
       /**
        *
        *
@@ -5507,6 +5655,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         runtimeCase_ = 101;
         return this;
       }
+
       /**
        *
        *
@@ -5547,6 +5696,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         runtimeCase_ = 101;
         return this;
       }
+
       /**
        *
        *
@@ -5574,6 +5724,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -5590,6 +5741,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           getContainerImageBuilder() {
         return getContainerImageFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -5617,6 +5769,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5665,6 +5818,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetwork.Builder,
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.VpcNetworkOrBuilder>
           vpcNetworkBuilder_;
+
       /**
        *
        *
@@ -5682,6 +5836,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasVpcNetwork() {
         return networkCase_ == 150;
       }
+
       /**
        *
        *
@@ -5713,6 +5868,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5738,6 +5894,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         networkCase_ = 150;
         return this;
       }
+
       /**
        *
        *
@@ -5761,6 +5918,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         networkCase_ = 150;
         return this;
       }
+
       /**
        *
        *
@@ -5799,6 +5957,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         networkCase_ = 150;
         return this;
       }
+
       /**
        *
        *
@@ -5826,6 +5985,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -5841,6 +6001,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           getVpcNetworkBuilder() {
         return getVpcNetworkFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -5866,6 +6027,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               .getDefaultInstance();
         }
       }
+
       /**
        *
        *
@@ -5985,6 +6147,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
+
     /**
      *
      *
@@ -6012,6 +6175,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the startTime field is set.
      */
     boolean hasStartTime();
+
     /**
      *
      *
@@ -6026,6 +6190,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The startTime.
      */
     com.google.protobuf.Timestamp getStartTime();
+
     /**
      *
      *
@@ -6086,6 +6251,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the schedule field is set.
      */
     boolean hasSchedule();
+
     /**
      *
      *
@@ -6104,6 +6270,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The schedule.
      */
     java.lang.String getSchedule();
+
     /**
      *
      *
@@ -6125,6 +6292,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public com.google.events.cloud.dataplex.v1.Task.TriggerSpec.TriggerCase getTriggerCase();
   }
+
   /**
    *
    *
@@ -6139,6 +6307,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.TriggerSpec)
       TriggerSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use TriggerSpec.newBuilder() to construct.
     private TriggerSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -6227,6 +6396,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * <code>TYPE_UNSPECIFIED = 0;</code>
        */
       public static final int TYPE_UNSPECIFIED_VALUE = 0;
+
       /**
        *
        *
@@ -6237,6 +6407,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
        * <code>ON_DEMAND = 1;</code>
        */
       public static final int ON_DEMAND_VALUE = 1;
+
       /**
        *
        *
@@ -6347,6 +6518,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private TriggerCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -6379,6 +6551,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int TYPE_FIELD_NUMBER = 5;
     private int type_ = 0;
+
     /**
      *
      *
@@ -6394,6 +6567,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getTypeValue() {
       return type_;
     }
+
     /**
      *
      *
@@ -6416,6 +6590,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int START_TIME_FIELD_NUMBER = 6;
     private com.google.protobuf.Timestamp startTime_;
+
     /**
      *
      *
@@ -6433,6 +6608,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStartTime() {
       return startTime_ != null;
     }
+
     /**
      *
      *
@@ -6450,6 +6626,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.Timestamp getStartTime() {
       return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
     }
+
     /**
      *
      *
@@ -6468,6 +6645,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int DISABLED_FIELD_NUMBER = 4;
     private boolean disabled_ = false;
+
     /**
      *
      *
@@ -6488,6 +6666,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int MAX_RETRIES_FIELD_NUMBER = 7;
     private int maxRetries_ = 0;
+
     /**
      *
      *
@@ -6506,6 +6685,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int SCHEDULE_FIELD_NUMBER = 100;
+
     /**
      *
      *
@@ -6526,6 +6706,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasSchedule() {
       return triggerCase_ == 100;
     }
+
     /**
      *
      *
@@ -6559,6 +6740,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -6812,6 +6994,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -7082,6 +7265,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private int bitField0_;
 
       private int type_ = 0;
+
       /**
        *
        *
@@ -7097,6 +7281,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getTypeValue() {
         return type_;
       }
+
       /**
        *
        *
@@ -7115,6 +7300,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7134,6 +7320,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             ? com.google.events.cloud.dataplex.v1.Task.TriggerSpec.Type.UNRECOGNIZED
             : result;
       }
+
       /**
        *
        *
@@ -7155,6 +7342,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7179,6 +7367,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.protobuf.Timestamp.Builder,
               com.google.protobuf.TimestampOrBuilder>
           startTimeBuilder_;
+
       /**
        *
        *
@@ -7195,6 +7384,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasStartTime() {
         return ((bitField0_ & 0x00000002) != 0);
       }
+
       /**
        *
        *
@@ -7217,6 +7407,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return startTimeBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -7241,6 +7432,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7262,6 +7454,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7289,6 +7482,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7310,6 +7504,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7326,6 +7521,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getStartTimeFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -7346,6 +7542,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : startTime_;
         }
       }
+
       /**
        *
        *
@@ -7375,6 +7572,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       private boolean disabled_;
+
       /**
        *
        *
@@ -7392,6 +7590,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean getDisabled() {
         return disabled_;
       }
+
       /**
        *
        *
@@ -7413,6 +7612,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7434,6 +7634,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       private int maxRetries_;
+
       /**
        *
        *
@@ -7450,6 +7651,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getMaxRetries() {
         return maxRetries_;
       }
+
       /**
        *
        *
@@ -7470,6 +7672,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7510,6 +7713,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasSchedule() {
         return triggerCase_ == 100;
       }
+
       /**
        *
        *
@@ -7544,6 +7748,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -7578,6 +7783,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -7605,6 +7811,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -7630,6 +7837,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -7749,6 +7957,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * <code>map&lt;string, string&gt; args = 4;</code>
      */
     int getArgsCount();
+
     /**
      *
      *
@@ -7770,9 +7979,11 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * <code>map&lt;string, string&gt; args = 4;</code>
      */
     boolean containsArgs(java.lang.String key);
+
     /** Use {@link #getArgsMap()} instead. */
     @java.lang.Deprecated
     java.util.Map<java.lang.String, java.lang.String> getArgs();
+
     /**
      *
      *
@@ -7794,6 +8005,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * <code>map&lt;string, string&gt; args = 4;</code>
      */
     java.util.Map<java.lang.String, java.lang.String> getArgsMap();
+
     /**
      *
      *
@@ -7819,6 +8031,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         java.lang.String key,
         /* nullable */
         java.lang.String defaultValue);
+
     /**
      *
      *
@@ -7855,6 +8068,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The serviceAccount.
      */
     java.lang.String getServiceAccount();
+
     /**
      *
      *
@@ -7885,6 +8099,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The project.
      */
     java.lang.String getProject();
+
     /**
      *
      *
@@ -7913,6 +8128,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the maxJobExecutionLifetime field is set.
      */
     boolean hasMaxJobExecutionLifetime();
+
     /**
      *
      *
@@ -7925,6 +8141,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The maxJobExecutionLifetime.
      */
     com.google.protobuf.Duration getMaxJobExecutionLifetime();
+
     /**
      *
      *
@@ -7949,6 +8166,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The kmsKey.
      */
     java.lang.String getKmsKey();
+
     /**
      *
      *
@@ -7963,6 +8181,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.protobuf.ByteString getKmsKeyBytes();
   }
+
   /**
    *
    *
@@ -7977,6 +8196,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.ExecutionSpec)
       ExecutionSpecOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use ExecutionSpec.newBuilder() to construct.
     private ExecutionSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -8051,6 +8271,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getArgsCount() {
       return internalGetArgs().getMap().size();
     }
+
     /**
      *
      *
@@ -8078,12 +8299,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetArgs().getMap().containsKey(key);
     }
+
     /** Use {@link #getArgsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getArgs() {
       return getArgsMap();
     }
+
     /**
      *
      *
@@ -8108,6 +8331,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getArgsMap() {
       return internalGetArgs().getMap();
     }
+
     /**
      *
      *
@@ -8139,6 +8363,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetArgs().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -8175,6 +8400,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object serviceAccount_ = "";
+
     /**
      *
      *
@@ -8200,6 +8426,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -8230,6 +8457,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object project_ = "";
+
     /**
      *
      *
@@ -8256,6 +8484,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -8285,6 +8514,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int MAX_JOB_EXECUTION_LIFETIME_FIELD_NUMBER = 8;
     private com.google.protobuf.Duration maxJobExecutionLifetime_;
+
     /**
      *
      *
@@ -8300,6 +8530,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasMaxJobExecutionLifetime() {
       return maxJobExecutionLifetime_ != null;
     }
+
     /**
      *
      *
@@ -8317,6 +8548,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           ? com.google.protobuf.Duration.getDefaultInstance()
           : maxJobExecutionLifetime_;
     }
+
     /**
      *
      *
@@ -8337,6 +8569,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object kmsKey_ = "";
+
     /**
      *
      *
@@ -8361,6 +8594,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -8598,6 +8832,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -8897,6 +9132,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getArgsCount() {
         return internalGetArgs().getMap().size();
       }
+
       /**
        *
        *
@@ -8924,12 +9160,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return internalGetArgs().getMap().containsKey(key);
       }
+
       /** Use {@link #getArgsMap()} instead. */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.String> getArgs() {
         return getArgsMap();
       }
+
       /**
        *
        *
@@ -8954,6 +9192,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.util.Map<java.lang.String, java.lang.String> getArgsMap() {
         return internalGetArgs().getMap();
       }
+
       /**
        *
        *
@@ -8985,6 +9224,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         java.util.Map<java.lang.String, java.lang.String> map = internalGetArgs().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
+
       /**
        *
        *
@@ -9022,6 +9262,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         internalGetMutableArgs().getMutableMap().clear();
         return this;
       }
+
       /**
        *
        *
@@ -9049,12 +9290,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         internalGetMutableArgs().getMutableMap().remove(key);
         return this;
       }
+
       /** Use alternate mutation accessors instead. */
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.String> getMutableArgs() {
         bitField0_ |= 0x00000001;
         return internalGetMutableArgs().getMutableMap();
       }
+
       /**
        *
        *
@@ -9086,6 +9329,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
         return this;
       }
+
       /**
        *
        *
@@ -9113,6 +9357,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       private java.lang.Object serviceAccount_ = "";
+
       /**
        *
        *
@@ -9137,6 +9382,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -9161,6 +9407,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -9184,6 +9431,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9203,6 +9451,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9229,6 +9478,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       private java.lang.Object project_ = "";
+
       /**
        *
        *
@@ -9254,6 +9504,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -9279,6 +9530,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -9303,6 +9555,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9323,6 +9576,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9355,6 +9609,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.protobuf.Duration.Builder,
               com.google.protobuf.DurationOrBuilder>
           maxJobExecutionLifetimeBuilder_;
+
       /**
        *
        *
@@ -9369,6 +9624,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasMaxJobExecutionLifetime() {
         return ((bitField0_ & 0x00000008) != 0);
       }
+
       /**
        *
        *
@@ -9389,6 +9645,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return maxJobExecutionLifetimeBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -9411,6 +9668,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9431,6 +9689,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9456,6 +9715,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9475,6 +9735,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9489,6 +9750,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getMaxJobExecutionLifetimeFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -9507,6 +9769,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : maxJobExecutionLifetime_;
         }
       }
+
       /**
        *
        *
@@ -9534,6 +9797,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
 
       private java.lang.Object kmsKey_ = "";
+
       /**
        *
        *
@@ -9557,6 +9821,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -9580,6 +9845,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -9602,6 +9868,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9620,6 +9887,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -9727,6 +9995,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the mainJarFileUri field is set.
      */
     boolean hasMainJarFileUri();
+
     /**
      *
      *
@@ -9741,6 +10010,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The mainJarFileUri.
      */
     java.lang.String getMainJarFileUri();
+
     /**
      *
      *
@@ -9772,6 +10042,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the mainClass field is set.
      */
     boolean hasMainClass();
+
     /**
      *
      *
@@ -9788,6 +10059,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The mainClass.
      */
     java.lang.String getMainClass();
+
     /**
      *
      *
@@ -9819,6 +10091,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the pythonScriptFile field is set.
      */
     boolean hasPythonScriptFile();
+
     /**
      *
      *
@@ -9833,6 +10106,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The pythonScriptFile.
      */
     java.lang.String getPythonScriptFile();
+
     /**
      *
      *
@@ -9863,6 +10137,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the sqlScriptFile field is set.
      */
     boolean hasSqlScriptFile();
+
     /**
      *
      *
@@ -9878,6 +10153,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The sqlScriptFile.
      */
     java.lang.String getSqlScriptFile();
+
     /**
      *
      *
@@ -9908,6 +10184,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the sqlScript field is set.
      */
     boolean hasSqlScript();
+
     /**
      *
      *
@@ -9922,6 +10199,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The sqlScript.
      */
     java.lang.String getSqlScript();
+
     /**
      *
      *
@@ -9950,6 +10228,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return A list containing the fileUris.
      */
     java.util.List<java.lang.String> getFileUrisList();
+
     /**
      *
      *
@@ -9963,6 +10242,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The count of fileUris.
      */
     int getFileUrisCount();
+
     /**
      *
      *
@@ -9977,6 +10257,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The fileUris at the given index.
      */
     java.lang.String getFileUris(int index);
+
     /**
      *
      *
@@ -10006,6 +10287,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return A list containing the archiveUris.
      */
     java.util.List<java.lang.String> getArchiveUrisList();
+
     /**
      *
      *
@@ -10020,6 +10302,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The count of archiveUris.
      */
     int getArchiveUrisCount();
+
     /**
      *
      *
@@ -10035,6 +10318,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The archiveUris at the given index.
      */
     java.lang.String getArchiveUris(int index);
+
     /**
      *
      *
@@ -10064,6 +10348,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the infrastructureSpec field is set.
      */
     boolean hasInfrastructureSpec();
+
     /**
      *
      *
@@ -10077,6 +10362,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The infrastructureSpec.
      */
     com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec getInfrastructureSpec();
+
     /**
      *
      *
@@ -10092,6 +10378,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.DriverCase getDriverCase();
   }
+
   /**
    *
    *
@@ -10106,6 +10393,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.SparkTaskConfig)
       SparkTaskConfigOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use SparkTaskConfig.newBuilder() to construct.
     private SparkTaskConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -10160,6 +10448,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private DriverCase(int value) {
         this.value = value;
       }
+
       /**
        * @param value The number of the enum to look for.
        * @return The enum associated with the given number.
@@ -10199,6 +10488,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int MAIN_JAR_FILE_URI_FIELD_NUMBER = 100;
+
     /**
      *
      *
@@ -10215,6 +10505,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasMainJarFileUri() {
       return driverCase_ == 100;
     }
+
     /**
      *
      *
@@ -10244,6 +10535,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -10275,6 +10567,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int MAIN_CLASS_FIELD_NUMBER = 101;
+
     /**
      *
      *
@@ -10293,6 +10586,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasMainClass() {
       return driverCase_ == 101;
     }
+
     /**
      *
      *
@@ -10324,6 +10618,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -10357,6 +10652,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int PYTHON_SCRIPT_FILE_FIELD_NUMBER = 102;
+
     /**
      *
      *
@@ -10373,6 +10669,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPythonScriptFile() {
       return driverCase_ == 102;
     }
+
     /**
      *
      *
@@ -10402,6 +10699,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -10433,6 +10731,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int SQL_SCRIPT_FILE_FIELD_NUMBER = 104;
+
     /**
      *
      *
@@ -10450,6 +10749,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasSqlScriptFile() {
       return driverCase_ == 104;
     }
+
     /**
      *
      *
@@ -10480,6 +10780,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -10512,6 +10813,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     public static final int SQL_SCRIPT_FIELD_NUMBER = 105;
+
     /**
      *
      *
@@ -10528,6 +10830,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasSqlScript() {
       return driverCase_ == 105;
     }
+
     /**
      *
      *
@@ -10557,6 +10860,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -10591,6 +10895,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList fileUris_;
+
     /**
      *
      *
@@ -10606,6 +10911,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getFileUrisList() {
       return fileUris_;
     }
+
     /**
      *
      *
@@ -10621,6 +10927,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getFileUrisCount() {
       return fileUris_.size();
     }
+
     /**
      *
      *
@@ -10637,6 +10944,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getFileUris(int index) {
       return fileUris_.get(index);
     }
+
     /**
      *
      *
@@ -10658,6 +10966,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList archiveUris_;
+
     /**
      *
      *
@@ -10674,6 +10983,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getArchiveUrisList() {
       return archiveUris_;
     }
+
     /**
      *
      *
@@ -10690,6 +11000,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getArchiveUrisCount() {
       return archiveUris_.size();
     }
+
     /**
      *
      *
@@ -10707,6 +11018,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getArchiveUris(int index) {
       return archiveUris_.get(index);
     }
+
     /**
      *
      *
@@ -10727,6 +11039,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int INFRASTRUCTURE_SPEC_FIELD_NUMBER = 6;
     private com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec infrastructureSpec_;
+
     /**
      *
      *
@@ -10743,6 +11056,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasInfrastructureSpec() {
       return infrastructureSpec_ != null;
     }
+
     /**
      *
      *
@@ -10761,6 +11075,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.getDefaultInstance()
           : infrastructureSpec_;
     }
+
     /**
      *
      *
@@ -11052,6 +11367,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -11413,6 +11729,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasMainJarFileUri() {
         return driverCase_ == 100;
       }
+
       /**
        *
        *
@@ -11443,6 +11760,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -11473,6 +11791,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -11496,6 +11815,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -11517,6 +11837,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -11561,6 +11882,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasMainClass() {
         return driverCase_ == 101;
       }
+
       /**
        *
        *
@@ -11593,6 +11915,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -11625,6 +11948,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -11650,6 +11974,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -11673,6 +11998,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -11717,6 +12043,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasPythonScriptFile() {
         return driverCase_ == 102;
       }
+
       /**
        *
        *
@@ -11747,6 +12074,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -11777,6 +12105,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -11800,6 +12129,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -11821,6 +12151,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -11864,6 +12195,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasSqlScriptFile() {
         return driverCase_ == 104;
       }
+
       /**
        *
        *
@@ -11895,6 +12227,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -11926,6 +12259,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -11950,6 +12284,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -11972,6 +12307,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -12015,6 +12351,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasSqlScript() {
         return driverCase_ == 105;
       }
+
       /**
        *
        *
@@ -12045,6 +12382,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -12075,6 +12413,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -12098,6 +12437,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12119,6 +12459,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         }
         return this;
       }
+
       /**
        *
        *
@@ -12153,6 +12494,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000020;
         }
       }
+
       /**
        *
        *
@@ -12168,6 +12510,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getFileUrisList() {
         return fileUris_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -12183,6 +12526,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getFileUrisCount() {
         return fileUris_.size();
       }
+
       /**
        *
        *
@@ -12199,6 +12543,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getFileUris(int index) {
         return fileUris_.get(index);
       }
+
       /**
        *
        *
@@ -12215,6 +12560,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ByteString getFileUrisBytes(int index) {
         return fileUris_.getByteString(index);
       }
+
       /**
        *
        *
@@ -12238,6 +12584,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12260,6 +12607,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12279,6 +12627,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12297,6 +12646,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12330,6 +12680,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000040;
         }
       }
+
       /**
        *
        *
@@ -12346,6 +12697,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getArchiveUrisList() {
         return archiveUris_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -12362,6 +12714,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getArchiveUrisCount() {
         return archiveUris_.size();
       }
+
       /**
        *
        *
@@ -12379,6 +12732,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getArchiveUris(int index) {
         return archiveUris_.get(index);
       }
+
       /**
        *
        *
@@ -12396,6 +12750,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ByteString getArchiveUrisBytes(int index) {
         return archiveUris_.getByteString(index);
       }
+
       /**
        *
        *
@@ -12420,6 +12775,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12443,6 +12799,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12463,6 +12820,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12482,6 +12840,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12513,6 +12872,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.Builder,
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpecOrBuilder>
           infrastructureSpecBuilder_;
+
       /**
        *
        *
@@ -12528,6 +12888,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasInfrastructureSpec() {
         return ((bitField0_ & 0x00000080) != 0);
       }
+
       /**
        *
        *
@@ -12549,6 +12910,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return infrastructureSpecBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -12573,6 +12935,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12594,6 +12957,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12623,6 +12987,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12643,6 +13008,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -12659,6 +13025,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getInfrastructureSpecFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -12679,6 +13046,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : infrastructureSpec_;
         }
       }
+
       /**
        *
        *
@@ -12790,6 +13158,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The notebook.
      */
     java.lang.String getNotebook();
+
     /**
      *
      *
@@ -12819,6 +13188,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the infrastructureSpec field is set.
      */
     boolean hasInfrastructureSpec();
+
     /**
      *
      *
@@ -12832,6 +13202,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The infrastructureSpec.
      */
     com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec getInfrastructureSpec();
+
     /**
      *
      *
@@ -12858,6 +13229,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return A list containing the fileUris.
      */
     java.util.List<java.lang.String> getFileUrisList();
+
     /**
      *
      *
@@ -12871,6 +13243,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The count of fileUris.
      */
     int getFileUrisCount();
+
     /**
      *
      *
@@ -12885,6 +13258,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The fileUris at the given index.
      */
     java.lang.String getFileUris(int index);
+
     /**
      *
      *
@@ -12914,6 +13288,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return A list containing the archiveUris.
      */
     java.util.List<java.lang.String> getArchiveUrisList();
+
     /**
      *
      *
@@ -12928,6 +13303,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The count of archiveUris.
      */
     int getArchiveUrisCount();
+
     /**
      *
      *
@@ -12943,6 +13319,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The archiveUris at the given index.
      */
     java.lang.String getArchiveUris(int index);
+
     /**
      *
      *
@@ -12959,6 +13336,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.protobuf.ByteString getArchiveUrisBytes(int index);
   }
+
   /**
    *
    *
@@ -12973,6 +13351,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.NotebookTaskConfig)
       NotebookTaskConfigOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use NotebookTaskConfig.newBuilder() to construct.
     private NotebookTaskConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -13014,6 +13393,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object notebook_ = "";
+
     /**
      *
      *
@@ -13040,6 +13420,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -13069,6 +13450,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int INFRASTRUCTURE_SPEC_FIELD_NUMBER = 3;
     private com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec infrastructureSpec_;
+
     /**
      *
      *
@@ -13085,6 +13467,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasInfrastructureSpec() {
       return infrastructureSpec_ != null;
     }
+
     /**
      *
      *
@@ -13103,6 +13486,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.getDefaultInstance()
           : infrastructureSpec_;
     }
+
     /**
      *
      *
@@ -13125,6 +13509,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList fileUris_;
+
     /**
      *
      *
@@ -13140,6 +13525,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getFileUrisList() {
       return fileUris_;
     }
+
     /**
      *
      *
@@ -13155,6 +13541,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getFileUrisCount() {
       return fileUris_.size();
     }
+
     /**
      *
      *
@@ -13171,6 +13558,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getFileUris(int index) {
       return fileUris_.get(index);
     }
+
     /**
      *
      *
@@ -13192,6 +13580,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList archiveUris_;
+
     /**
      *
      *
@@ -13208,6 +13597,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getArchiveUrisList() {
       return archiveUris_;
     }
+
     /**
      *
      *
@@ -13224,6 +13614,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getArchiveUrisCount() {
       return archiveUris_.size();
     }
+
     /**
      *
      *
@@ -13241,6 +13632,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getArchiveUris(int index) {
       return archiveUris_.get(index);
     }
+
     /**
      *
      *
@@ -13467,6 +13859,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -13731,6 +14124,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       private int bitField0_;
 
       private java.lang.Object notebook_ = "";
+
       /**
        *
        *
@@ -13756,6 +14150,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -13781,6 +14176,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -13805,6 +14201,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -13825,6 +14222,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -13857,6 +14255,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpec.Builder,
               com.google.events.cloud.dataplex.v1.Task.InfrastructureSpecOrBuilder>
           infrastructureSpecBuilder_;
+
       /**
        *
        *
@@ -13872,6 +14271,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasInfrastructureSpec() {
         return ((bitField0_ & 0x00000002) != 0);
       }
+
       /**
        *
        *
@@ -13893,6 +14293,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return infrastructureSpecBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -13917,6 +14318,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -13938,6 +14340,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -13967,6 +14370,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -13987,6 +14391,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14003,6 +14408,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getInfrastructureSpecFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -14023,6 +14429,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : infrastructureSpec_;
         }
       }
+
       /**
        *
        *
@@ -14059,6 +14466,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000004;
         }
       }
+
       /**
        *
        *
@@ -14074,6 +14482,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getFileUrisList() {
         return fileUris_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -14089,6 +14498,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getFileUrisCount() {
         return fileUris_.size();
       }
+
       /**
        *
        *
@@ -14105,6 +14515,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getFileUris(int index) {
         return fileUris_.get(index);
       }
+
       /**
        *
        *
@@ -14121,6 +14532,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ByteString getFileUrisBytes(int index) {
         return fileUris_.getByteString(index);
       }
+
       /**
        *
        *
@@ -14144,6 +14556,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14166,6 +14579,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14185,6 +14599,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14203,6 +14618,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14236,6 +14652,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000008;
         }
       }
+
       /**
        *
        *
@@ -14252,6 +14669,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getArchiveUrisList() {
         return archiveUris_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -14268,6 +14686,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public int getArchiveUrisCount() {
         return archiveUris_.size();
       }
+
       /**
        *
        *
@@ -14285,6 +14704,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getArchiveUris(int index) {
         return archiveUris_.get(index);
       }
+
       /**
        *
        *
@@ -14302,6 +14722,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ByteString getArchiveUrisBytes(int index) {
         return archiveUris_.getByteString(index);
       }
+
       /**
        *
        *
@@ -14326,6 +14747,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14349,6 +14771,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14369,6 +14792,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14388,6 +14812,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -14495,6 +14920,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the updateTime field is set.
      */
     boolean hasUpdateTime();
+
     /**
      *
      *
@@ -14507,6 +14933,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The updateTime.
      */
     com.google.protobuf.Timestamp getUpdateTime();
+
     /**
      *
      *
@@ -14530,6 +14957,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the latestJob field is set.
      */
     boolean hasLatestJob();
+
     /**
      *
      *
@@ -14542,6 +14970,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      * @return The latestJob.
      */
     com.google.events.cloud.dataplex.v1.Job getLatestJob();
+
     /**
      *
      *
@@ -14553,6 +14982,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.events.cloud.dataplex.v1.JobOrBuilder getLatestJobOrBuilder();
   }
+
   /**
    *
    *
@@ -14567,6 +14997,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.Task.ExecutionStatus)
       ExecutionStatusOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use ExecutionStatus.newBuilder() to construct.
     private ExecutionStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -14602,6 +15033,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int UPDATE_TIME_FIELD_NUMBER = 3;
     private com.google.protobuf.Timestamp updateTime_;
+
     /**
      *
      *
@@ -14617,6 +15049,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return updateTime_ != null;
     }
+
     /**
      *
      *
@@ -14632,6 +15065,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.Timestamp getUpdateTime() {
       return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
     }
+
     /**
      *
      *
@@ -14648,6 +15082,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
     public static final int LATEST_JOB_FIELD_NUMBER = 9;
     private com.google.events.cloud.dataplex.v1.Job latestJob_;
+
     /**
      *
      *
@@ -14663,6 +15098,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasLatestJob() {
       return latestJob_ != null;
     }
+
     /**
      *
      *
@@ -14680,6 +15116,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.dataplex.v1.Job.getDefaultInstance()
           : latestJob_;
     }
+
     /**
      *
      *
@@ -14876,6 +15313,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -15088,6 +15526,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.protobuf.Timestamp.Builder,
               com.google.protobuf.TimestampOrBuilder>
           updateTimeBuilder_;
+
       /**
        *
        *
@@ -15102,6 +15541,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasUpdateTime() {
         return ((bitField0_ & 0x00000001) != 0);
       }
+
       /**
        *
        *
@@ -15122,6 +15562,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return updateTimeBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -15144,6 +15585,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15163,6 +15605,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15188,6 +15631,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15207,6 +15651,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15221,6 +15666,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getUpdateTimeFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -15239,6 +15685,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : updateTime_;
         }
       }
+
       /**
        *
        *
@@ -15271,6 +15718,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.dataplex.v1.Job.Builder,
               com.google.events.cloud.dataplex.v1.JobOrBuilder>
           latestJobBuilder_;
+
       /**
        *
        *
@@ -15285,6 +15733,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       public boolean hasLatestJob() {
         return ((bitField0_ & 0x00000002) != 0);
       }
+
       /**
        *
        *
@@ -15305,6 +15754,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           return latestJobBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -15327,6 +15777,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15346,6 +15797,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15371,6 +15823,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15390,6 +15843,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -15404,6 +15858,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getLatestJobFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -15422,6 +15877,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
               : latestJob_;
         }
       }
+
       /**
        *
        *
@@ -15527,6 +15983,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     private ConfigCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -15563,6 +16020,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -15588,6 +16046,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -15618,6 +16077,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -15642,6 +16102,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -15669,6 +16130,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CREATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -15684,6 +16146,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -15699,6 +16162,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -15715,6 +16179,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -15730,6 +16195,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -15745,6 +16211,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -15763,6 +16230,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -15786,6 +16254,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -15814,6 +16283,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object displayName_ = "";
+
   /**
    *
    *
@@ -15837,6 +16307,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -15863,6 +16334,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATE_FIELD_NUMBER = 7;
   private int state_ = 0;
+
   /**
    *
    *
@@ -15878,6 +16350,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -15922,6 +16395,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -15938,12 +16412,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -15957,6 +16433,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -15977,6 +16454,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -16000,6 +16478,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TRIGGER_SPEC_FIELD_NUMBER = 100;
   private com.google.events.cloud.dataplex.v1.Task.TriggerSpec triggerSpec_;
+
   /**
    *
    *
@@ -16015,6 +16494,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasTriggerSpec() {
     return triggerSpec_ != null;
   }
+
   /**
    *
    *
@@ -16032,6 +16512,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.dataplex.v1.Task.TriggerSpec.getDefaultInstance()
         : triggerSpec_;
   }
+
   /**
    *
    *
@@ -16050,6 +16531,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int EXECUTION_SPEC_FIELD_NUMBER = 101;
   private com.google.events.cloud.dataplex.v1.Task.ExecutionSpec executionSpec_;
+
   /**
    *
    *
@@ -16065,6 +16547,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasExecutionSpec() {
     return executionSpec_ != null;
   }
+
   /**
    *
    *
@@ -16082,6 +16565,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.dataplex.v1.Task.ExecutionSpec.getDefaultInstance()
         : executionSpec_;
   }
+
   /**
    *
    *
@@ -16101,6 +16585,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
 
   public static final int EXECUTION_STATUS_FIELD_NUMBER = 201;
   private com.google.events.cloud.dataplex.v1.Task.ExecutionStatus executionStatus_;
+
   /**
    *
    *
@@ -16116,6 +16601,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasExecutionStatus() {
     return executionStatus_ != null;
   }
+
   /**
    *
    *
@@ -16133,6 +16619,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.dataplex.v1.Task.ExecutionStatus.getDefaultInstance()
         : executionStatus_;
   }
+
   /**
    *
    *
@@ -16151,6 +16638,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int SPARK_FIELD_NUMBER = 300;
+
   /**
    *
    *
@@ -16166,6 +16654,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasSpark() {
     return configCase_ == 300;
   }
+
   /**
    *
    *
@@ -16184,6 +16673,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -16202,6 +16692,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int NOTEBOOK_FIELD_NUMBER = 302;
+
   /**
    *
    *
@@ -16217,6 +16708,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
   public boolean hasNotebook() {
     return configCase_ == 302;
   }
+
   /**
    *
    *
@@ -16235,6 +16727,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -16574,6 +17067,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -17004,6 +17498,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -17028,6 +17523,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -17052,6 +17548,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -17075,6 +17572,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17094,6 +17592,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17120,6 +17619,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -17143,6 +17643,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -17166,6 +17667,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -17188,6 +17690,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17206,6 +17709,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17236,6 +17740,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -17250,6 +17755,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -17270,6 +17776,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -17292,6 +17799,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17311,6 +17819,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17336,6 +17845,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17355,6 +17865,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17369,6 +17880,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -17387,6 +17899,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -17419,6 +17932,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -17433,6 +17947,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -17453,6 +17968,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -17475,6 +17991,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17494,6 +18011,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17519,6 +18037,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17538,6 +18057,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17552,6 +18072,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -17570,6 +18091,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -17597,6 +18119,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -17619,6 +18142,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -17641,6 +18165,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -17662,6 +18187,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17679,6 +18205,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17703,6 +18230,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object displayName_ = "";
+
     /**
      *
      *
@@ -17725,6 +18253,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -17747,6 +18276,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -17768,6 +18298,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17785,6 +18316,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17809,6 +18341,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -17824,6 +18357,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -17842,6 +18376,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17859,6 +18394,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
           com.google.events.cloud.dataplex.v1.State.forNumber(state_);
       return result == null ? com.google.events.cloud.dataplex.v1.State.UNRECOGNIZED : result;
     }
+
     /**
      *
      *
@@ -17880,6 +18416,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -17923,6 +18460,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -17939,12 +18477,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -17958,6 +18498,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -17978,6 +18519,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -18004,6 +18546,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -18020,12 +18563,14 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000080;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -18046,6 +18591,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       bitField0_ |= 0x00000080;
       return this;
     }
+
     /**
      *
      *
@@ -18067,6 +18613,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataplex.v1.Task.TriggerSpec.Builder,
             com.google.events.cloud.dataplex.v1.Task.TriggerSpecOrBuilder>
         triggerSpecBuilder_;
+
     /**
      *
      *
@@ -18081,6 +18628,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasTriggerSpec() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -18101,6 +18649,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return triggerSpecBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -18123,6 +18672,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18143,6 +18693,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18169,6 +18720,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18188,6 +18740,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18202,6 +18755,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getTriggerSpecFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -18220,6 +18774,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             : triggerSpec_;
       }
     }
+
     /**
      *
      *
@@ -18252,6 +18807,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataplex.v1.Task.ExecutionSpec.Builder,
             com.google.events.cloud.dataplex.v1.Task.ExecutionSpecOrBuilder>
         executionSpecBuilder_;
+
     /**
      *
      *
@@ -18266,6 +18822,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasExecutionSpec() {
       return ((bitField0_ & 0x00000200) != 0);
     }
+
     /**
      *
      *
@@ -18286,6 +18843,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return executionSpecBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -18308,6 +18866,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18328,6 +18887,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18355,6 +18915,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18374,6 +18935,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18389,6 +18951,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getExecutionSpecFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -18408,6 +18971,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             : executionSpec_;
       }
     }
+
     /**
      *
      *
@@ -18440,6 +19004,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataplex.v1.Task.ExecutionStatus.Builder,
             com.google.events.cloud.dataplex.v1.Task.ExecutionStatusOrBuilder>
         executionStatusBuilder_;
+
     /**
      *
      *
@@ -18454,6 +19019,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasExecutionStatus() {
       return ((bitField0_ & 0x00000400) != 0);
     }
+
     /**
      *
      *
@@ -18474,6 +19040,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return executionStatusBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -18497,6 +19064,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18517,6 +19085,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18544,6 +19113,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18563,6 +19133,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -18578,6 +19149,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getExecutionStatusFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -18597,6 +19169,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             : executionStatus_;
       }
     }
+
     /**
      *
      *
@@ -18628,6 +19201,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.Builder,
             com.google.events.cloud.dataplex.v1.Task.SparkTaskConfigOrBuilder>
         sparkBuilder_;
+
     /**
      *
      *
@@ -18643,6 +19217,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasSpark() {
       return configCase_ == 300;
     }
+
     /**
      *
      *
@@ -18668,6 +19243,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -18690,6 +19266,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 300;
       return this;
     }
+
     /**
      *
      *
@@ -18710,6 +19287,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 300;
       return this;
     }
+
     /**
      *
      *
@@ -18743,6 +19321,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 300;
       return this;
     }
+
     /**
      *
      *
@@ -18768,6 +19347,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -18780,6 +19360,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.Builder getSparkBuilder() {
       return getSparkFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -18800,6 +19381,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.dataplex.v1.Task.SparkTaskConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -18838,6 +19420,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig.Builder,
             com.google.events.cloud.dataplex.v1.Task.NotebookTaskConfigOrBuilder>
         notebookBuilder_;
+
     /**
      *
      *
@@ -18853,6 +19436,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
     public boolean hasNotebook() {
       return configCase_ == 302;
     }
+
     /**
      *
      *
@@ -18878,6 +19462,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -18900,6 +19485,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 302;
       return this;
     }
+
     /**
      *
      *
@@ -18920,6 +19506,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 302;
       return this;
     }
+
     /**
      *
      *
@@ -18955,6 +19542,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       configCase_ = 302;
       return this;
     }
+
     /**
      *
      *
@@ -18980,6 +19568,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -18993,6 +19582,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         getNotebookBuilder() {
       return getNotebookFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -19014,6 +19604,7 @@ public final class Task extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.dataplex.v1.Task.NotebookTaskConfig.getDefaultInstance();
       }
     }
+
     /**
      *
      *

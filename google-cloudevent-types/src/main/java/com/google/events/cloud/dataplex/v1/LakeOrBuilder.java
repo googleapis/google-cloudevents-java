@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface LakeOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface LakeOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -88,6 +90,7 @@ public interface LakeOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -114,6 +117,7 @@ public interface LakeOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -126,6 +130,7 @@ public interface LakeOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public interface LakeOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -161,6 +167,7 @@ public interface LakeOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -182,6 +189,7 @@ public interface LakeOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -192,9 +200,11 @@ public interface LakeOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -205,6 +215,7 @@ public interface LakeOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -219,6 +230,7 @@ public interface LakeOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -242,6 +254,7 @@ public interface LakeOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -267,6 +280,7 @@ public interface LakeOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -294,6 +308,7 @@ public interface LakeOrBuilder
    * @return The serviceAccount.
    */
   java.lang.String getServiceAccount();
+
   /**
    *
    *
@@ -322,6 +337,7 @@ public interface LakeOrBuilder
    * @return Whether the metastore field is set.
    */
   boolean hasMetastore();
+
   /**
    *
    *
@@ -335,6 +351,7 @@ public interface LakeOrBuilder
    * @return The metastore.
    */
   com.google.events.cloud.dataplex.v1.Lake.Metastore getMetastore();
+
   /**
    *
    *
@@ -359,6 +376,7 @@ public interface LakeOrBuilder
    * @return Whether the assetStatus field is set.
    */
   boolean hasAssetStatus();
+
   /**
    *
    *
@@ -371,6 +389,7 @@ public interface LakeOrBuilder
    * @return The assetStatus.
    */
   com.google.events.cloud.dataplex.v1.AssetStatus getAssetStatus();
+
   /**
    *
    *
@@ -394,6 +413,7 @@ public interface LakeOrBuilder
    * @return Whether the metastoreStatus field is set.
    */
   boolean hasMetastoreStatus();
+
   /**
    *
    *
@@ -406,6 +426,7 @@ public interface LakeOrBuilder
    * @return The metastoreStatus.
    */
   com.google.events.cloud.dataplex.v1.Lake.MetastoreStatus getMetastoreStatus();
+
   /**
    *
    *

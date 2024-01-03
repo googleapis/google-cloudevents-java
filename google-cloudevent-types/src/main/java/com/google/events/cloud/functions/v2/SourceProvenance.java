@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.functions.v2.SourceProvenance)
     SourceProvenanceOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SourceProvenance.newBuilder() to construct.
   private SourceProvenance(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
 
   public static final int RESOLVED_STORAGE_SOURCE_FIELD_NUMBER = 1;
   private com.google.events.cloud.functions.v2.StorageSource resolvedStorageSource_;
+
   /**
    *
    *
@@ -84,6 +86,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
   public boolean hasResolvedStorageSource() {
     return resolvedStorageSource_ != null;
   }
+
   /**
    *
    *
@@ -102,6 +105,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.functions.v2.StorageSource.getDefaultInstance()
         : resolvedStorageSource_;
   }
+
   /**
    *
    *
@@ -122,6 +126,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
 
   public static final int RESOLVED_REPO_SOURCE_FIELD_NUMBER = 2;
   private com.google.events.cloud.functions.v2.RepoSource resolvedRepoSource_;
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
   public boolean hasResolvedRepoSource() {
     return resolvedRepoSource_ != null;
   }
+
   /**
    *
    *
@@ -156,6 +162,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.functions.v2.RepoSource.getDefaultInstance()
         : resolvedRepoSource_;
   }
+
   /**
    *
    *
@@ -353,6 +360,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -570,6 +578,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.functions.v2.StorageSource.Builder,
             com.google.events.cloud.functions.v2.StorageSourceOrBuilder>
         resolvedStorageSourceBuilder_;
+
     /**
      *
      *
@@ -585,6 +594,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     public boolean hasResolvedStorageSource() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -606,6 +616,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         return resolvedStorageSourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -630,6 +641,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -651,6 +663,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -679,6 +692,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -699,6 +713,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -715,6 +730,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getResolvedStorageSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -735,6 +751,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             : resolvedStorageSource_;
       }
     }
+
     /**
      *
      *
@@ -768,6 +785,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.functions.v2.RepoSource.Builder,
             com.google.events.cloud.functions.v2.RepoSourceOrBuilder>
         resolvedRepoSourceBuilder_;
+
     /**
      *
      *
@@ -783,6 +801,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
     public boolean hasResolvedRepoSource() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -804,6 +823,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
         return resolvedRepoSourceBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -827,6 +847,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -848,6 +869,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -875,6 +897,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -895,6 +918,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -910,6 +934,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getResolvedRepoSourceFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -930,6 +955,7 @@ public final class SourceProvenance extends com.google.protobuf.GeneratedMessage
             : resolvedRepoSource_;
       }
     }
+
     /**
      *
      *

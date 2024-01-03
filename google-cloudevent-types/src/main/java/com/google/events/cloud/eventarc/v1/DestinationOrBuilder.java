@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DestinationOrBuilder
    * @return Whether the cloudRun field is set.
    */
   boolean hasCloudRun();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface DestinationOrBuilder
    * @return The cloudRun.
    */
   com.google.events.cloud.eventarc.v1.CloudRun getCloudRun();
+
   /**
    *
    *
@@ -77,6 +79,7 @@ public interface DestinationOrBuilder
    * @return Whether the cloudFunction field is set.
    */
   boolean hasCloudFunction();
+
   /**
    *
    *
@@ -93,6 +96,7 @@ public interface DestinationOrBuilder
    * @return The cloudFunction.
    */
   java.lang.String getCloudFunction();
+
   /**
    *
    *
@@ -123,6 +127,7 @@ public interface DestinationOrBuilder
    * @return Whether the gke field is set.
    */
   boolean hasGke();
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public interface DestinationOrBuilder
    * @return The gke.
    */
   com.google.events.cloud.eventarc.v1.GKE getGke();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface DestinationOrBuilder
    * @return Whether the workflow field is set.
    */
   boolean hasWorkflow();
+
   /**
    *
    *
@@ -178,6 +185,7 @@ public interface DestinationOrBuilder
    * @return The workflow.
    */
   java.lang.String getWorkflow();
+
   /**
    *
    *

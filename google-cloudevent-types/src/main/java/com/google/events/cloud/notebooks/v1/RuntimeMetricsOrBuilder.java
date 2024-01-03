@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface RuntimeMetricsOrBuilder
    * <code>map&lt;string, string&gt; system_metrics = 1;</code>
    */
   int getSystemMetricsCount();
+
   /**
    *
    *
@@ -43,9 +44,11 @@ public interface RuntimeMetricsOrBuilder
    * <code>map&lt;string, string&gt; system_metrics = 1;</code>
    */
   boolean containsSystemMetrics(java.lang.String key);
+
   /** Use {@link #getSystemMetricsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getSystemMetrics();
+
   /**
    *
    *
@@ -56,6 +59,7 @@ public interface RuntimeMetricsOrBuilder
    * <code>map&lt;string, string&gt; system_metrics = 1;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getSystemMetricsMap();
+
   /**
    *
    *
@@ -70,6 +74,7 @@ public interface RuntimeMetricsOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *

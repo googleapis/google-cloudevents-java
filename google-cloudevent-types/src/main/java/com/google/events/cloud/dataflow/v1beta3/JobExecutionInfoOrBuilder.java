@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface JobExecutionInfoOrBuilder
    * </code>
    */
   int getStagesCount();
+
   /**
    *
    *
@@ -47,10 +48,12 @@ public interface JobExecutionInfoOrBuilder
    * </code>
    */
   boolean containsStages(java.lang.String key);
+
   /** Use {@link #getStagesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.dataflow.v1beta3.JobExecutionStageInfo>
       getStages();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface JobExecutionInfoOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.cloud.dataflow.v1beta3.JobExecutionStageInfo>
       getStagesMap();
+
   /**
    *
    *
@@ -80,6 +84,7 @@ public interface JobExecutionInfoOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.dataflow.v1beta3.JobExecutionStageInfo defaultValue);
+
   /**
    *
    *

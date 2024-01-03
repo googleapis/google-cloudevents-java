@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public interface NormalizedPolylineOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.visionai.v1.NormalizedVertex> getNormalizedVerticesList();
+
   /**
    *
    *
@@ -45,6 +46,7 @@ public interface NormalizedPolylineOrBuilder
    * </code>
    */
   com.google.events.cloud.visionai.v1.NormalizedVertex getNormalizedVertices(int index);
+
   /**
    *
    *
@@ -56,6 +58,7 @@ public interface NormalizedPolylineOrBuilder
    * </code>
    */
   int getNormalizedVerticesCount();
+
   /**
    *
    *
@@ -68,6 +71,7 @@ public interface NormalizedPolylineOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.visionai.v1.NormalizedVertexOrBuilder>
       getNormalizedVerticesOrBuilderList();
+
   /**
    *
    *

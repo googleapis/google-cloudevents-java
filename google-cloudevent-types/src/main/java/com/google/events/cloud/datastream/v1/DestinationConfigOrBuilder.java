@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DestinationConfigOrBuilder
    * @return The destinationConnectionProfile.
    */
   java.lang.String getDestinationConnectionProfile();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface DestinationConfigOrBuilder
    * @return Whether the gcsDestinationConfig field is set.
    */
   boolean hasGcsDestinationConfig();
+
   /**
    *
    *
@@ -76,6 +78,7 @@ public interface DestinationConfigOrBuilder
    * @return The gcsDestinationConfig.
    */
   com.google.events.cloud.datastream.v1.GcsDestinationConfig getGcsDestinationConfig();
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public interface DestinationConfigOrBuilder
    * @return Whether the bigqueryDestinationConfig field is set.
    */
   boolean hasBigqueryDestinationConfig();
+
   /**
    *
    *
@@ -117,6 +121,7 @@ public interface DestinationConfigOrBuilder
    * @return The bigqueryDestinationConfig.
    */
   com.google.events.cloud.datastream.v1.BigQueryDestinationConfig getBigqueryDestinationConfig();
+
   /**
    *
    *

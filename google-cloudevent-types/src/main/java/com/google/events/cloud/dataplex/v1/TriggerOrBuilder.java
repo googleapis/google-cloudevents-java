@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface TriggerOrBuilder
    * @return Whether the onDemand field is set.
    */
   boolean hasOnDemand();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface TriggerOrBuilder
    * @return The onDemand.
    */
   com.google.events.cloud.dataplex.v1.Trigger.OnDemand getOnDemand();
+
   /**
    *
    *
@@ -70,6 +72,7 @@ public interface TriggerOrBuilder
    * @return Whether the schedule field is set.
    */
   boolean hasSchedule();
+
   /**
    *
    *
@@ -82,6 +85,7 @@ public interface TriggerOrBuilder
    * @return The schedule.
    */
   com.google.events.cloud.dataplex.v1.Trigger.Schedule getSchedule();
+
   /**
    *
    *

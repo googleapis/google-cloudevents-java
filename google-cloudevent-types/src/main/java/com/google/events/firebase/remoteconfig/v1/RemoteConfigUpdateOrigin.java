@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -81,6 +81,7 @@ public enum RemoteConfigUpdateOrigin implements com.google.protobuf.ProtocolMess
    * <code>REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED = 0;</code>
    */
   public static final int REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -91,6 +92,7 @@ public enum RemoteConfigUpdateOrigin implements com.google.protobuf.ProtocolMess
    * <code>CONSOLE = 1;</code>
    */
   public static final int CONSOLE_VALUE = 1;
+
   /**
    *
    *
@@ -101,6 +103,7 @@ public enum RemoteConfigUpdateOrigin implements com.google.protobuf.ProtocolMess
    * <code>REST_API = 2;</code>
    */
   public static final int REST_API_VALUE = 2;
+
   /**
    *
    *

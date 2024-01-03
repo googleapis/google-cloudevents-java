@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.BuiltImage)
     BuiltImageOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use BuiltImage.newBuilder() to construct.
   private BuiltImage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -125,6 +128,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object digest_ = "";
+
   /**
    *
    *
@@ -148,6 +152,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -174,6 +179,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
 
   public static final int PUSH_TIMING_FIELD_NUMBER = 4;
   private com.google.events.cloud.cloudbuild.v1.TimeSpan pushTiming_;
+
   /**
    *
    *
@@ -189,6 +195,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPushTiming() {
     return pushTiming_ != null;
   }
+
   /**
    *
    *
@@ -206,6 +213,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.cloudbuild.v1.TimeSpan.getDefaultInstance()
         : pushTiming_;
   }
+
   /**
    *
    *
@@ -404,6 +412,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -620,6 +629,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -643,6 +653,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -666,6 +677,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -688,6 +700,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -706,6 +719,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -731,6 +745,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object digest_ = "";
+
     /**
      *
      *
@@ -753,6 +768,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -775,6 +791,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -796,6 +813,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -813,6 +831,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -842,6 +861,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.cloudbuild.v1.TimeSpan.Builder,
             com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder>
         pushTimingBuilder_;
+
     /**
      *
      *
@@ -856,6 +876,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPushTiming() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -876,6 +897,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
         return pushTimingBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -898,6 +920,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -918,6 +941,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -943,6 +967,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -962,6 +987,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -976,6 +1002,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getPushTimingFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -994,6 +1021,7 @@ public final class BuiltImage extends com.google.protobuf.GeneratedMessageV3
             : pushTiming_;
       }
     }
+
     /**
      *
      *

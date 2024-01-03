@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataQualitySpec)
     DataQualitySpecOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataQualitySpec.newBuilder() to construct.
   private DataQualitySpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRule> rules_;
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
   public java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRule> getRulesList() {
     return rules_;
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       getRulesOrBuilderList() {
     return rules_;
   }
+
   /**
    *
    *
@@ -114,6 +118,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
   public int getRulesCount() {
     return rules_.size();
   }
+
   /**
    *
    *
@@ -128,6 +133,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
   public com.google.events.cloud.dataplex.v1.DataQualityRule getRules(int index) {
     return rules_.get(index);
   }
+
   /**
    *
    *
@@ -304,6 +310,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -568,6 +575,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
         return rulesBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -585,6 +593,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
         return rulesBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -602,6 +611,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
         return rulesBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -625,6 +635,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -646,6 +657,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -669,6 +681,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -692,6 +705,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -713,6 +727,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -734,6 +749,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -755,6 +771,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -775,6 +792,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -795,6 +813,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       }
       return this;
     }
+
     /**
      *
      *
@@ -808,6 +827,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
     public com.google.events.cloud.dataplex.v1.DataQualityRule.Builder getRulesBuilder(int index) {
       return getRulesFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -826,6 +846,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
         return rulesBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -844,6 +865,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
         return java.util.Collections.unmodifiableList(rules_);
       }
     }
+
     /**
      *
      *
@@ -858,6 +880,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
       return getRulesFieldBuilder()
           .addBuilder(com.google.events.cloud.dataplex.v1.DataQualityRule.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -873,6 +896,7 @@ public final class DataQualitySpec extends com.google.protobuf.GeneratedMessageV
           .addBuilder(
               index, com.google.events.cloud.dataplex.v1.DataQualityRule.getDefaultInstance());
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.AnalyticsValue)
     AnalyticsValueOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AnalyticsValue.newBuilder() to construct.
   private AnalyticsValue(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -83,6 +84,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     private ParamValueCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -120,6 +122,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int STRING_VALUE_FIELD_NUMBER = 1;
+
   /**
    * <code>string string_value = 1;</code>
    *
@@ -128,6 +131,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStringValue() {
     return paramValueCase_ == 1;
   }
+
   /**
    * <code>string string_value = 1;</code>
    *
@@ -149,6 +153,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    * <code>string string_value = 1;</code>
    *
@@ -172,6 +177,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int INT_VALUE_FIELD_NUMBER = 2;
+
   /**
    * <code>int64 int_value = 2;</code>
    *
@@ -181,6 +187,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   public boolean hasIntValue() {
     return paramValueCase_ == 2;
   }
+
   /**
    * <code>int64 int_value = 2;</code>
    *
@@ -195,6 +202,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int FLOAT_VALUE_FIELD_NUMBER = 3;
+
   /**
    * <code>float float_value = 3;</code>
    *
@@ -204,6 +212,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   public boolean hasFloatValue() {
     return paramValueCase_ == 3;
   }
+
   /**
    * <code>float float_value = 3;</code>
    *
@@ -218,6 +227,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int DOUBLE_VALUE_FIELD_NUMBER = 4;
+
   /**
    * <code>double double_value = 4;</code>
    *
@@ -227,6 +237,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
   public boolean hasDoubleValue() {
     return paramValueCase_ == 4;
   }
+
   /**
    * <code>double double_value = 4;</code>
    *
@@ -463,6 +474,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -716,6 +728,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStringValue() {
       return paramValueCase_ == 1;
     }
+
     /**
      * <code>string string_value = 1;</code>
      *
@@ -738,6 +751,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      * <code>string string_value = 1;</code>
      *
@@ -760,6 +774,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      * <code>string string_value = 1;</code>
      *
@@ -775,6 +790,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>string string_value = 1;</code>
      *
@@ -788,6 +804,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      * <code>string string_value = 1;</code>
      *
@@ -813,6 +830,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     public boolean hasIntValue() {
       return paramValueCase_ == 2;
     }
+
     /**
      * <code>int64 int_value = 2;</code>
      *
@@ -824,6 +842,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       }
       return 0L;
     }
+
     /**
      * <code>int64 int_value = 2;</code>
      *
@@ -837,6 +856,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>int64 int_value = 2;</code>
      *
@@ -859,6 +879,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     public boolean hasFloatValue() {
       return paramValueCase_ == 3;
     }
+
     /**
      * <code>float float_value = 3;</code>
      *
@@ -870,6 +891,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       }
       return 0F;
     }
+
     /**
      * <code>float float_value = 3;</code>
      *
@@ -883,6 +905,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>float float_value = 3;</code>
      *
@@ -905,6 +928,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
     public boolean hasDoubleValue() {
       return paramValueCase_ == 4;
     }
+
     /**
      * <code>double double_value = 4;</code>
      *
@@ -916,6 +940,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       }
       return 0D;
     }
+
     /**
      * <code>double double_value = 4;</code>
      *
@@ -929,6 +954,7 @@ public final class AnalyticsValue extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      * <code>double double_value = 4;</code>
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface RuntimeAccessConfigOrBuilder
    * @return The enum numeric value on the wire for accessType.
    */
   int getAccessTypeValue();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface RuntimeAccessConfigOrBuilder
    * @return The runtimeOwner.
    */
   java.lang.String getRuntimeOwner();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface RuntimeAccessConfigOrBuilder
    * @return The proxyUri.
    */
   java.lang.String getProxyUri();
+
   /**
    *
    *

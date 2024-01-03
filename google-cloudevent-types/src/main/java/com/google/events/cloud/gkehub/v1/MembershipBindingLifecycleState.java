@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkehub.v1.MembershipBindingLifecycleState)
     MembershipBindingLifecycleStateOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MembershipBindingLifecycleState.newBuilder() to construct.
   private MembershipBindingLifecycleState(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -141,6 +142,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
      * <code>CODE_UNSPECIFIED = 0;</code>
      */
     public static final int CODE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -151,6 +153,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
      * <code>CREATING = 1;</code>
      */
     public static final int CREATING_VALUE = 1;
+
     /**
      *
      *
@@ -161,6 +164,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
      * <code>READY = 2;</code>
      */
     public static final int READY_VALUE = 2;
+
     /**
      *
      *
@@ -171,6 +175,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
      * <code>DELETING = 3;</code>
      */
     public static final int DELETING_VALUE = 3;
+
     /**
      *
      *
@@ -273,6 +278,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
 
   public static final int CODE_FIELD_NUMBER = 1;
   private int code_ = 0;
+
   /**
    *
    *
@@ -288,6 +294,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
   public int getCodeValue() {
     return code_;
   }
+
   /**
    *
    *
@@ -473,6 +480,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -660,6 +668,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
     private int bitField0_;
 
     private int code_ = 0;
+
     /**
      *
      *
@@ -675,6 +684,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
     public int getCodeValue() {
       return code_;
     }
+
     /**
      *
      *
@@ -693,6 +703,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -712,6 +723,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
           ? com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState.Code.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -734,6 +746,7 @@ public final class MembershipBindingLifecycleState extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *

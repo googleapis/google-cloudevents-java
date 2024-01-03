@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.datafusion.v1.EventPublishConfig)
     EventPublishConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use EventPublishConfig.newBuilder() to construct.
   private EventPublishConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int ENABLED_FIELD_NUMBER = 1;
   private boolean enabled_ = false;
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object topic_ = "";
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -307,6 +311,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -504,6 +509,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
     private int bitField0_;
 
     private boolean enabled_;
+
     /**
      *
      *
@@ -519,6 +525,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
     public boolean getEnabled() {
       return enabled_;
     }
+
     /**
      *
      *
@@ -538,6 +545,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -557,6 +565,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object topic_ = "";
+
     /**
      *
      *
@@ -580,6 +589,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -603,6 +613,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -625,6 +636,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -643,6 +655,7 @@ public final class EventPublishConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *

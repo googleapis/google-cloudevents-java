@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface AnalyticsLogDataOrBuilder
    * @return Whether the userDim field is set.
    */
   boolean hasUserDim();
+
   /**
    *
    *
@@ -47,6 +48,7 @@ public interface AnalyticsLogDataOrBuilder
    * @return The userDim.
    */
   com.google.events.firebase.analytics.v1.UserDimensions getUserDim();
+
   /**
    *
    *
@@ -68,6 +70,7 @@ public interface AnalyticsLogDataOrBuilder
    * <code>repeated .google.events.firebase.analytics.v1.EventDimensions event_dim = 2;</code>
    */
   java.util.List<com.google.events.firebase.analytics.v1.EventDimensions> getEventDimList();
+
   /**
    *
    *
@@ -78,6 +81,7 @@ public interface AnalyticsLogDataOrBuilder
    * <code>repeated .google.events.firebase.analytics.v1.EventDimensions event_dim = 2;</code>
    */
   com.google.events.firebase.analytics.v1.EventDimensions getEventDim(int index);
+
   /**
    *
    *
@@ -88,6 +92,7 @@ public interface AnalyticsLogDataOrBuilder
    * <code>repeated .google.events.firebase.analytics.v1.EventDimensions event_dim = 2;</code>
    */
   int getEventDimCount();
+
   /**
    *
    *
@@ -99,6 +104,7 @@ public interface AnalyticsLogDataOrBuilder
    */
   java.util.List<? extends com.google.events.firebase.analytics.v1.EventDimensionsOrBuilder>
       getEventDimOrBuilderList();
+
   /**
    *
    *

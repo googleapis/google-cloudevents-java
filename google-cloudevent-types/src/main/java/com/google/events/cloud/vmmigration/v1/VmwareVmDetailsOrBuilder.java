@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The vmId.
    */
   java.lang.String getVmId();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The datacenterId.
    */
   java.lang.String getDatacenterId();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The datacenterDescription.
    */
   java.lang.String getDatacenterDescription();
+
   /**
    *
    *
@@ -112,6 +115,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The uuid.
    */
   java.lang.String getUuid();
+
   /**
    *
    *
@@ -137,6 +141,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -162,6 +167,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The enum numeric value on the wire for powerState.
    */
   int getPowerStateValue();
+
   /**
    *
    *
@@ -241,6 +247,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The guestDescription.
    */
   java.lang.String getGuestDescription();
+
   /**
    *
    *
@@ -268,6 +275,7 @@ public interface VmwareVmDetailsOrBuilder
    * @return The enum numeric value on the wire for bootOption.
    */
   int getBootOptionValue();
+
   /**
    *
    *

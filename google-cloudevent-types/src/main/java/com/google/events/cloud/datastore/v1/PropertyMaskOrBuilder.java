@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface PropertyMaskOrBuilder
    * @return A list containing the propertyPaths.
    */
   java.util.List<java.lang.String> getPropertyPathsList();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface PropertyMaskOrBuilder
    * @return The count of propertyPaths.
    */
   int getPropertyPathsCount();
+
   /**
    *
    *
@@ -63,6 +65,7 @@ public interface PropertyMaskOrBuilder
    * @return The propertyPaths at the given index.
    */
   java.lang.String getPropertyPaths(int index);
+
   /**
    *
    *

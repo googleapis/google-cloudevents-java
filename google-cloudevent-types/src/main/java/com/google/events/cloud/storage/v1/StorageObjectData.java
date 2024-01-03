@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.storage.v1.StorageObjectData)
     StorageObjectDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use StorageObjectData.newBuilder() to construct.
   private StorageObjectData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -110,6 +111,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
      * @return The encryptionAlgorithm.
      */
     java.lang.String getEncryptionAlgorithm();
+
     /**
      *
      *
@@ -135,6 +137,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
      * @return The keySha256.
      */
     java.lang.String getKeySha256();
+
     /**
      *
      *
@@ -148,6 +151,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
      */
     com.google.protobuf.ByteString getKeySha256Bytes();
   }
+
   /**
    *
    *
@@ -162,6 +166,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       // @@protoc_insertion_point(message_implements:google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption)
       CustomerEncryptionOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use CustomerEncryption.newBuilder() to construct.
     private CustomerEncryption(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -203,6 +208,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object encryptionAlgorithm_ = "";
+
     /**
      *
      *
@@ -226,6 +232,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return s;
       }
     }
+
     /**
      *
      *
@@ -254,6 +261,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object keySha256_ = "";
+
     /**
      *
      *
@@ -277,6 +285,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return s;
       }
     }
+
     /**
      *
      *
@@ -473,6 +482,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -686,6 +696,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       private int bitField0_;
 
       private java.lang.Object encryptionAlgorithm_ = "";
+
       /**
        *
        *
@@ -708,6 +719,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -730,6 +742,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -751,6 +764,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -768,6 +782,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -792,6 +807,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       }
 
       private java.lang.Object keySha256_ = "";
+
       /**
        *
        *
@@ -814,6 +830,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -836,6 +853,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -857,6 +875,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -874,6 +893,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -969,6 +989,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object contentEncoding_ = "";
+
   /**
    *
    *
@@ -993,6 +1014,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1022,6 +1044,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object contentDisposition_ = "";
+
   /**
    *
    *
@@ -1046,6 +1069,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1075,6 +1099,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object cacheControl_ = "";
+
   /**
    *
    *
@@ -1099,6 +1124,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1128,6 +1154,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object contentLanguage_ = "";
+
   /**
    *
    *
@@ -1152,6 +1179,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1179,6 +1207,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int METAGENERATION_FIELD_NUMBER = 6;
   private long metageneration_ = 0L;
+
   /**
    *
    *
@@ -1200,6 +1229,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int TIME_DELETED_FIELD_NUMBER = 7;
   private com.google.protobuf.Timestamp timeDeleted_;
+
   /**
    *
    *
@@ -1216,6 +1246,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasTimeDeleted() {
     return timeDeleted_ != null;
   }
+
   /**
    *
    *
@@ -1232,6 +1263,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getTimeDeleted() {
     return timeDeleted_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timeDeleted_;
   }
+
   /**
    *
    *
@@ -1251,6 +1283,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object contentType_ = "";
+
   /**
    *
    *
@@ -1277,6 +1310,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1306,6 +1340,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int SIZE_FIELD_NUMBER = 9;
   private long size_ = 0L;
+
   /**
    *
    *
@@ -1325,6 +1360,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int TIME_CREATED_FIELD_NUMBER = 10;
   private com.google.protobuf.Timestamp timeCreated_;
+
   /**
    *
    *
@@ -1341,6 +1377,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasTimeCreated() {
     return timeCreated_ != null;
   }
+
   /**
    *
    *
@@ -1357,6 +1394,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getTimeCreated() {
     return timeCreated_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : timeCreated_;
   }
+
   /**
    *
    *
@@ -1376,6 +1414,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object crc32C_ = "";
+
   /**
    *
    *
@@ -1402,6 +1441,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1431,6 +1471,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int COMPONENT_COUNT_FIELD_NUMBER = 12;
   private int componentCount_ = 0;
+
   /**
    *
    *
@@ -1453,6 +1494,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object md5Hash_ = "";
+
   /**
    *
    *
@@ -1480,6 +1522,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1512,6 +1555,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object etag_ = "";
+
   /**
    *
    *
@@ -1536,6 +1580,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1563,6 +1608,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int UPDATED_FIELD_NUMBER = 15;
   private com.google.protobuf.Timestamp updated_;
+
   /**
    *
    *
@@ -1578,6 +1624,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasUpdated() {
     return updated_ != null;
   }
+
   /**
    *
    *
@@ -1593,6 +1640,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getUpdated() {
     return updated_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updated_;
   }
+
   /**
    *
    *
@@ -1611,6 +1659,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object storageClass_ = "";
+
   /**
    *
    *
@@ -1634,6 +1683,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1662,6 +1712,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object kmsKeyName_ = "";
+
   /**
    *
    *
@@ -1686,6 +1737,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -1713,6 +1765,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int TIME_STORAGE_CLASS_UPDATED_FIELD_NUMBER = 18;
   private com.google.protobuf.Timestamp timeStorageClassUpdated_;
+
   /**
    *
    *
@@ -1728,6 +1781,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasTimeStorageClassUpdated() {
     return timeStorageClassUpdated_ != null;
   }
+
   /**
    *
    *
@@ -1745,6 +1799,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : timeStorageClassUpdated_;
   }
+
   /**
    *
    *
@@ -1763,6 +1818,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int TEMPORARY_HOLD_FIELD_NUMBER = 19;
   private boolean temporaryHold_ = false;
+
   /**
    *
    *
@@ -1781,6 +1837,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int RETENTION_EXPIRATION_TIME_FIELD_NUMBER = 20;
   private com.google.protobuf.Timestamp retentionExpirationTime_;
+
   /**
    *
    *
@@ -1797,6 +1854,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasRetentionExpirationTime() {
     return retentionExpirationTime_ != null;
   }
+
   /**
    *
    *
@@ -1815,6 +1873,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         ? com.google.protobuf.Timestamp.getDefaultInstance()
         : retentionExpirationTime_;
   }
+
   /**
    *
    *
@@ -1858,6 +1917,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public int getMetadataCount() {
     return internalGetMetadata().getMap().size();
   }
+
   /**
    *
    *
@@ -1874,12 +1934,14 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
     return internalGetMetadata().getMap().containsKey(key);
   }
+
   /** Use {@link #getMetadataMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getMetadata() {
     return getMetadataMap();
   }
+
   /**
    *
    *
@@ -1893,6 +1955,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public java.util.Map<java.lang.String, java.lang.String> getMetadataMap() {
     return internalGetMetadata().getMap();
   }
+
   /**
    *
    *
@@ -1913,6 +1976,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     java.util.Map<java.lang.String, java.lang.String> map = internalGetMetadata().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -1936,6 +2000,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int EVENT_BASED_HOLD_FIELD_NUMBER = 29;
   private boolean eventBasedHold_ = false;
+
   /**
    *
    *
@@ -1956,6 +2021,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -1979,6 +2045,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2007,6 +2074,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object id_ = "";
+
   /**
    *
    *
@@ -2031,6 +2099,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2060,6 +2129,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object bucket_ = "";
+
   /**
    *
    *
@@ -2083,6 +2153,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2109,6 +2180,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   public static final int GENERATION_FIELD_NUMBER = 26;
   private long generation_ = 0L;
+
   /**
    *
    *
@@ -2129,6 +2201,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public static final int CUSTOMER_ENCRYPTION_FIELD_NUMBER = 28;
   private com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption
       customerEncryption_;
+
   /**
    *
    *
@@ -2147,6 +2220,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
   public boolean hasCustomerEncryption() {
     return customerEncryption_ != null;
   }
+
   /**
    *
    *
@@ -2169,6 +2243,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             .getDefaultInstance()
         : customerEncryption_;
   }
+
   /**
    *
    *
@@ -2194,6 +2269,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object mediaLink_ = "";
+
   /**
    *
    *
@@ -2217,6 +2293,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2245,6 +2322,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object selfLink_ = "";
+
   /**
    *
    *
@@ -2268,6 +2346,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2296,6 +2375,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object kind_ = "";
+
   /**
    *
    *
@@ -2319,6 +2399,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -2796,6 +2877,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -3438,6 +3520,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     private int bitField0_;
 
     private java.lang.Object contentEncoding_ = "";
+
     /**
      *
      *
@@ -3461,6 +3544,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3484,6 +3568,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3506,6 +3591,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3524,6 +3610,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3549,6 +3636,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object contentDisposition_ = "";
+
     /**
      *
      *
@@ -3572,6 +3660,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3595,6 +3684,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3617,6 +3707,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3635,6 +3726,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3660,6 +3752,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object cacheControl_ = "";
+
     /**
      *
      *
@@ -3683,6 +3776,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3706,6 +3800,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3728,6 +3823,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3746,6 +3842,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3771,6 +3868,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object contentLanguage_ = "";
+
     /**
      *
      *
@@ -3794,6 +3892,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3817,6 +3916,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3839,6 +3939,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3857,6 +3958,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3882,6 +3984,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private long metageneration_;
+
     /**
      *
      *
@@ -3900,6 +4003,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public long getMetageneration() {
       return metageneration_;
     }
+
     /**
      *
      *
@@ -3922,6 +4026,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3949,6 +4054,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         timeDeletedBuilder_;
+
     /**
      *
      *
@@ -3964,6 +4070,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasTimeDeleted() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -3985,6 +4092,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return timeDeletedBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4008,6 +4116,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4028,6 +4137,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4054,6 +4164,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4074,6 +4185,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4089,6 +4201,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getTimeDeletedFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4108,6 +4221,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             : timeDeleted_;
       }
     }
+
     /**
      *
      *
@@ -4136,6 +4250,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object contentType_ = "";
+
     /**
      *
      *
@@ -4161,6 +4276,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4186,6 +4302,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4210,6 +4327,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4230,6 +4348,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4257,6 +4376,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private long size_;
+
     /**
      *
      *
@@ -4273,6 +4393,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public long getSize() {
       return size_;
     }
+
     /**
      *
      *
@@ -4293,6 +4414,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4318,6 +4440,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         timeCreatedBuilder_;
+
     /**
      *
      *
@@ -4333,6 +4456,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasTimeCreated() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -4354,6 +4478,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return timeCreatedBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4377,6 +4502,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4397,6 +4523,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4423,6 +4550,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4443,6 +4571,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4458,6 +4587,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getTimeCreatedFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4477,6 +4607,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             : timeCreated_;
       }
     }
+
     /**
      *
      *
@@ -4505,6 +4636,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object crc32C_ = "";
+
     /**
      *
      *
@@ -4530,6 +4662,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4555,6 +4688,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4579,6 +4713,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4599,6 +4734,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4626,6 +4762,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private int componentCount_;
+
     /**
      *
      *
@@ -4643,6 +4780,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public int getComponentCount() {
       return componentCount_;
     }
+
     /**
      *
      *
@@ -4664,6 +4802,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4685,6 +4824,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object md5Hash_ = "";
+
     /**
      *
      *
@@ -4711,6 +4851,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4737,6 +4878,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4762,6 +4904,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4783,6 +4926,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4811,6 +4955,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object etag_ = "";
+
     /**
      *
      *
@@ -4834,6 +4979,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4857,6 +5003,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4879,6 +5026,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4897,6 +5045,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4927,6 +5076,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updatedBuilder_;
+
     /**
      *
      *
@@ -4941,6 +5091,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasUpdated() {
       return ((bitField0_ & 0x00002000) != 0);
     }
+
     /**
      *
      *
@@ -4959,6 +5110,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return updatedBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4981,6 +5133,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5000,6 +5153,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5025,6 +5179,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5044,6 +5199,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5058,6 +5214,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getUpdatedFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -5074,6 +5231,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return updated_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updated_;
       }
     }
+
     /**
      *
      *
@@ -5101,6 +5259,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object storageClass_ = "";
+
     /**
      *
      *
@@ -5123,6 +5282,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -5145,6 +5305,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -5166,6 +5327,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5183,6 +5345,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5207,6 +5370,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object kmsKeyName_ = "";
+
     /**
      *
      *
@@ -5230,6 +5394,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -5253,6 +5418,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -5275,6 +5441,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5293,6 +5460,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5323,6 +5491,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         timeStorageClassUpdatedBuilder_;
+
     /**
      *
      *
@@ -5337,6 +5506,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasTimeStorageClassUpdated() {
       return ((bitField0_ & 0x00010000) != 0);
     }
+
     /**
      *
      *
@@ -5357,6 +5527,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return timeStorageClassUpdatedBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -5379,6 +5550,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5399,6 +5571,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5424,6 +5597,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5443,6 +5617,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5457,6 +5632,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getTimeStorageClassUpdatedFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -5475,6 +5651,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             : timeStorageClassUpdated_;
       }
     }
+
     /**
      *
      *
@@ -5502,6 +5679,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private boolean temporaryHold_;
+
     /**
      *
      *
@@ -5517,6 +5695,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean getTemporaryHold() {
       return temporaryHold_;
     }
+
     /**
      *
      *
@@ -5536,6 +5715,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5560,6 +5740,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         retentionExpirationTimeBuilder_;
+
     /**
      *
      *
@@ -5575,6 +5756,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasRetentionExpirationTime() {
       return ((bitField0_ & 0x00040000) != 0);
     }
+
     /**
      *
      *
@@ -5596,6 +5778,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return retentionExpirationTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -5619,6 +5802,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5640,6 +5824,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5666,6 +5851,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5686,6 +5872,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5701,6 +5888,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getRetentionExpirationTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -5720,6 +5908,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             : retentionExpirationTime_;
       }
     }
+
     /**
      *
      *
@@ -5773,6 +5962,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public int getMetadataCount() {
       return internalGetMetadata().getMap().size();
     }
+
     /**
      *
      *
@@ -5789,12 +5979,14 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       }
       return internalGetMetadata().getMap().containsKey(key);
     }
+
     /** Use {@link #getMetadataMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMetadata() {
       return getMetadataMap();
     }
+
     /**
      *
      *
@@ -5808,6 +6000,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public java.util.Map<java.lang.String, java.lang.String> getMetadataMap() {
       return internalGetMetadata().getMap();
     }
+
     /**
      *
      *
@@ -5828,6 +6021,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       java.util.Map<java.lang.String, java.lang.String> map = internalGetMetadata().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -5854,6 +6048,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       internalGetMutableMetadata().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -5870,12 +6065,14 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       internalGetMutableMetadata().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableMetadata() {
       bitField0_ |= 0x00080000;
       return internalGetMutableMetadata().getMutableMap();
     }
+
     /**
      *
      *
@@ -5896,6 +6093,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       bitField0_ |= 0x00080000;
       return this;
     }
+
     /**
      *
      *
@@ -5912,6 +6110,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private boolean eventBasedHold_;
+
     /**
      *
      *
@@ -5927,6 +6126,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean getEventBasedHold() {
       return eventBasedHold_;
     }
+
     /**
      *
      *
@@ -5946,6 +6146,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5965,6 +6166,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -5987,6 +6189,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6009,6 +6212,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6030,6 +6234,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6047,6 +6252,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6071,6 +6277,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object id_ = "";
+
     /**
      *
      *
@@ -6094,6 +6301,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6117,6 +6325,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6139,6 +6348,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6157,6 +6367,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6182,6 +6393,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object bucket_ = "";
+
     /**
      *
      *
@@ -6204,6 +6416,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6226,6 +6439,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6247,6 +6461,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6264,6 +6479,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6288,6 +6504,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private long generation_;
+
     /**
      *
      *
@@ -6304,6 +6521,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public long getGeneration() {
       return generation_;
     }
+
     /**
      *
      *
@@ -6324,6 +6542,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6350,6 +6569,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryption.Builder,
             com.google.events.cloud.storage.v1.StorageObjectData.CustomerEncryptionOrBuilder>
         customerEncryptionBuilder_;
+
     /**
      *
      *
@@ -6367,6 +6587,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     public boolean hasCustomerEncryption() {
       return ((bitField0_ & 0x02000000) != 0);
     }
+
     /**
      *
      *
@@ -6392,6 +6613,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return customerEncryptionBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -6418,6 +6640,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6442,6 +6665,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6473,6 +6697,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6495,6 +6720,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6513,6 +6739,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getCustomerEncryptionFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -6536,6 +6763,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
             : customerEncryption_;
       }
     }
+
     /**
      *
      *
@@ -6566,6 +6794,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object mediaLink_ = "";
+
     /**
      *
      *
@@ -6588,6 +6817,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6610,6 +6840,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6631,6 +6862,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6648,6 +6880,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6672,6 +6905,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object selfLink_ = "";
+
     /**
      *
      *
@@ -6694,6 +6928,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6716,6 +6951,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6737,6 +6973,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6754,6 +6991,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6778,6 +7016,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object kind_ = "";
+
     /**
      *
      *
@@ -6800,6 +7039,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -6822,6 +7062,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -6843,6 +7084,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6860,6 +7102,7 @@ public final class StorageObjectData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *

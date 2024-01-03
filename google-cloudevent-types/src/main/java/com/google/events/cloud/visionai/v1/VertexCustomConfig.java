@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.VertexCustomConfig)
     VertexCustomConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use VertexCustomConfig.newBuilder() to construct.
   private VertexCustomConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int MAX_PREDICTION_FPS_FIELD_NUMBER = 1;
   private int maxPredictionFps_ = 0;
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int DEDICATED_RESOURCES_FIELD_NUMBER = 2;
   private com.google.events.cloud.visionai.v1.DedicatedResources dedicatedResources_;
+
   /**
    *
    *
@@ -106,6 +109,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
   public boolean hasDedicatedResources() {
     return dedicatedResources_ != null;
   }
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
         ? com.google.events.cloud.visionai.v1.DedicatedResources.getDefaultInstance()
         : dedicatedResources_;
   }
+
   /**
    *
    *
@@ -146,6 +151,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object postProcessingCloudFunction_ = "";
+
   /**
    *
    *
@@ -176,6 +182,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       return s;
     }
   }
+
   /**
    *
    *
@@ -209,6 +216,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
 
   public static final int ATTACH_APPLICATION_METADATA_FIELD_NUMBER = 4;
   private boolean attachApplicationMetadata_ = false;
+
   /**
    *
    *
@@ -427,6 +435,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -658,6 +667,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     private int bitField0_;
 
     private int maxPredictionFps_;
+
     /**
      *
      *
@@ -676,6 +686,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     public int getMaxPredictionFps() {
       return maxPredictionFps_;
     }
+
     /**
      *
      *
@@ -698,6 +709,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -725,6 +737,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
             com.google.events.cloud.visionai.v1.DedicatedResources.Builder,
             com.google.events.cloud.visionai.v1.DedicatedResourcesOrBuilder>
         dedicatedResourcesBuilder_;
+
     /**
      *
      *
@@ -740,6 +753,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     public boolean hasDedicatedResources() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -761,6 +775,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
         return dedicatedResourcesBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -785,6 +800,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -806,6 +822,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -834,6 +851,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -854,6 +872,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -870,6 +889,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return getDedicatedResourcesFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -890,6 +910,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
             : dedicatedResources_;
       }
     }
+
     /**
      *
      *
@@ -918,6 +939,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     }
 
     private java.lang.Object postProcessingCloudFunction_ = "";
+
     /**
      *
      *
@@ -947,6 +969,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -976,6 +999,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1004,6 +1028,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1028,6 +1053,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1059,6 +1085,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     }
 
     private boolean attachApplicationMetadata_;
+
     /**
      *
      *
@@ -1082,6 +1109,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
     public boolean getAttachApplicationMetadata() {
       return attachApplicationMetadata_;
     }
+
     /**
      *
      *
@@ -1109,6 +1137,7 @@ public final class VertexCustomConfig extends com.google.protobuf.GeneratedMessa
       onChanged();
       return this;
     }
+
     /**
      *
      *

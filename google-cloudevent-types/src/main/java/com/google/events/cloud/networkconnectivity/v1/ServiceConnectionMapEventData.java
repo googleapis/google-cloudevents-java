@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionMapEventData)
     ServiceConnectionMapEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ServiceConnectionMapEventData.newBuilder() to construct.
   private ServiceConnectionMapEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap payload_;
+
   /**
    *
    *
@@ -86,6 +88,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -105,6 +108,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
         ? com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -296,6 +300,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -510,6 +515,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMap.Builder,
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionMapOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -526,6 +532,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -549,6 +556,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -574,6 +582,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -597,6 +606,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -627,6 +637,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -648,6 +659,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -665,6 +677,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -687,6 +700,7 @@ public final class ServiceConnectionMapEventData extends com.google.protobuf.Gen
             : payload_;
       }
     }
+
     /**
      *
      *

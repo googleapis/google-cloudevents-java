@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface EnvironmentOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface EnvironmentOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface EnvironmentOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -116,6 +119,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -128,6 +132,7 @@ public interface EnvironmentOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -151,6 +156,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -163,6 +169,7 @@ public interface EnvironmentOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -184,6 +191,7 @@ public interface EnvironmentOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -194,9 +202,11 @@ public interface EnvironmentOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -207,6 +217,7 @@ public interface EnvironmentOrBuilder
    * <code>map&lt;string, string&gt; labels = 6;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -221,6 +232,7 @@ public interface EnvironmentOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -244,6 +256,7 @@ public interface EnvironmentOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -269,6 +282,7 @@ public interface EnvironmentOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -296,6 +310,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the infrastructureSpec field is set.
    */
   boolean hasInfrastructureSpec();
+
   /**
    *
    *
@@ -310,6 +325,7 @@ public interface EnvironmentOrBuilder
    * @return The infrastructureSpec.
    */
   com.google.events.cloud.dataplex.v1.Environment.InfrastructureSpec getInfrastructureSpec();
+
   /**
    *
    *
@@ -336,6 +352,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the sessionSpec field is set.
    */
   boolean hasSessionSpec();
+
   /**
    *
    *
@@ -348,6 +365,7 @@ public interface EnvironmentOrBuilder
    * @return The sessionSpec.
    */
   com.google.events.cloud.dataplex.v1.Environment.SessionSpec getSessionSpec();
+
   /**
    *
    *
@@ -371,6 +389,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the sessionStatus field is set.
    */
   boolean hasSessionStatus();
+
   /**
    *
    *
@@ -383,6 +402,7 @@ public interface EnvironmentOrBuilder
    * @return The sessionStatus.
    */
   com.google.events.cloud.dataplex.v1.Environment.SessionStatus getSessionStatus();
+
   /**
    *
    *
@@ -408,6 +428,7 @@ public interface EnvironmentOrBuilder
    * @return Whether the endpoints field is set.
    */
   boolean hasEndpoints();
+
   /**
    *
    *
@@ -421,6 +442,7 @@ public interface EnvironmentOrBuilder
    * @return The endpoints.
    */
   com.google.events.cloud.dataplex.v1.Environment.Endpoints getEndpoints();
+
   /**
    *
    *

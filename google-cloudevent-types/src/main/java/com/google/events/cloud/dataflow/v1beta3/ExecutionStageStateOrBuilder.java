@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface ExecutionStageStateOrBuilder
    * @return The executionStageName.
    */
   java.lang.String getExecutionStageName();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface ExecutionStageStateOrBuilder
    * @return The enum numeric value on the wire for executionStageState.
    */
   int getExecutionStageStateValue();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface ExecutionStageStateOrBuilder
    * @return Whether the currentStateTime field is set.
    */
   boolean hasCurrentStateTime();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface ExecutionStageStateOrBuilder
    * @return The currentStateTime.
    */
   com.google.protobuf.Timestamp getCurrentStateTime();
+
   /**
    *
    *

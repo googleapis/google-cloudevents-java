@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface BuildConfigOrBuilder
    * @return The build.
    */
   java.lang.String getBuild();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface BuildConfigOrBuilder
    * @return The runtime.
    */
   java.lang.String getRuntime();
+
   /**
    *
    *
@@ -100,6 +102,7 @@ public interface BuildConfigOrBuilder
    * @return The entryPoint.
    */
   java.lang.String getEntryPoint();
+
   /**
    *
    *
@@ -130,6 +133,7 @@ public interface BuildConfigOrBuilder
    * @return Whether the source field is set.
    */
   boolean hasSource();
+
   /**
    *
    *
@@ -142,6 +146,7 @@ public interface BuildConfigOrBuilder
    * @return The source.
    */
   com.google.events.cloud.functions.v2.Source getSource();
+
   /**
    *
    *
@@ -165,6 +170,7 @@ public interface BuildConfigOrBuilder
    * @return Whether the sourceProvenance field is set.
    */
   boolean hasSourceProvenance();
+
   /**
    *
    *
@@ -177,6 +183,7 @@ public interface BuildConfigOrBuilder
    * @return The sourceProvenance.
    */
   com.google.events.cloud.functions.v2.SourceProvenance getSourceProvenance();
+
   /**
    *
    *
@@ -210,6 +217,7 @@ public interface BuildConfigOrBuilder
    * @return The workerPool.
    */
   java.lang.String getWorkerPool();
+
   /**
    *
    *
@@ -243,6 +251,7 @@ public interface BuildConfigOrBuilder
    * <code>map&lt;string, string&gt; environment_variables = 6;</code>
    */
   int getEnvironmentVariablesCount();
+
   /**
    *
    *
@@ -253,9 +262,11 @@ public interface BuildConfigOrBuilder
    * <code>map&lt;string, string&gt; environment_variables = 6;</code>
    */
   boolean containsEnvironmentVariables(java.lang.String key);
+
   /** Use {@link #getEnvironmentVariablesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables();
+
   /**
    *
    *
@@ -266,6 +277,7 @@ public interface BuildConfigOrBuilder
    * <code>map&lt;string, string&gt; environment_variables = 6;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariablesMap();
+
   /**
    *
    *
@@ -280,6 +292,7 @@ public interface BuildConfigOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -309,6 +322,7 @@ public interface BuildConfigOrBuilder
    * @return The enum numeric value on the wire for dockerRegistry.
    */
   int getDockerRegistryValue();
+
   /**
    *
    *
@@ -349,6 +363,7 @@ public interface BuildConfigOrBuilder
    * @return The dockerRepository.
    */
   java.lang.String getDockerRepository();
+
   /**
    *
    *
@@ -383,6 +398,7 @@ public interface BuildConfigOrBuilder
    * @return The buildpackStack.
    */
   java.lang.String getBuildpackStack();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface FunctionOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface FunctionOrBuilder
    * @return The enum numeric value on the wire for environment.
    */
   int getEnvironmentValue();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface FunctionOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public interface FunctionOrBuilder
    * @return Whether the buildConfig field is set.
    */
   boolean hasBuildConfig();
+
   /**
    *
    *
@@ -126,6 +130,7 @@ public interface FunctionOrBuilder
    * @return The buildConfig.
    */
   com.google.events.cloud.functions.v2.BuildConfig getBuildConfig();
+
   /**
    *
    *
@@ -151,6 +156,7 @@ public interface FunctionOrBuilder
    * @return Whether the serviceConfig field is set.
    */
   boolean hasServiceConfig();
+
   /**
    *
    *
@@ -164,6 +170,7 @@ public interface FunctionOrBuilder
    * @return The serviceConfig.
    */
   com.google.events.cloud.functions.v2.ServiceConfig getServiceConfig();
+
   /**
    *
    *
@@ -189,6 +196,7 @@ public interface FunctionOrBuilder
    * @return Whether the eventTrigger field is set.
    */
   boolean hasEventTrigger();
+
   /**
    *
    *
@@ -202,6 +210,7 @@ public interface FunctionOrBuilder
    * @return The eventTrigger.
    */
   com.google.events.cloud.functions.v2.EventTrigger getEventTrigger();
+
   /**
    *
    *
@@ -226,6 +235,7 @@ public interface FunctionOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -251,6 +261,7 @@ public interface FunctionOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -263,6 +274,7 @@ public interface FunctionOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -284,6 +296,7 @@ public interface FunctionOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -294,9 +307,11 @@ public interface FunctionOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -307,6 +322,7 @@ public interface FunctionOrBuilder
    * <code>map&lt;string, string&gt; labels = 8;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -321,6 +337,7 @@ public interface FunctionOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -342,6 +359,7 @@ public interface FunctionOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.StateMessage state_messages = 9;</code>
    */
   java.util.List<com.google.events.cloud.functions.v2.StateMessage> getStateMessagesList();
+
   /**
    *
    *
@@ -352,6 +370,7 @@ public interface FunctionOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.StateMessage state_messages = 9;</code>
    */
   com.google.events.cloud.functions.v2.StateMessage getStateMessages(int index);
+
   /**
    *
    *
@@ -362,6 +381,7 @@ public interface FunctionOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.StateMessage state_messages = 9;</code>
    */
   int getStateMessagesCount();
+
   /**
    *
    *
@@ -373,6 +393,7 @@ public interface FunctionOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.functions.v2.StateMessageOrBuilder>
       getStateMessagesOrBuilderList();
+
   /**
    *
    *

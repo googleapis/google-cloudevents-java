@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface BigQueryDestinationConfigOrBuilder
    * @return Whether the singleTargetDataset field is set.
    */
   boolean hasSingleTargetDataset();
+
   /**
    *
    *
@@ -52,6 +53,7 @@ public interface BigQueryDestinationConfigOrBuilder
    */
   com.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SingleTargetDataset
       getSingleTargetDataset();
+
   /**
    *
    *
@@ -80,6 +82,7 @@ public interface BigQueryDestinationConfigOrBuilder
    * @return Whether the sourceHierarchyDatasets field is set.
    */
   boolean hasSourceHierarchyDatasets();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface BigQueryDestinationConfigOrBuilder
    */
   com.google.events.cloud.datastream.v1.BigQueryDestinationConfig.SourceHierarchyDatasets
       getSourceHierarchyDatasets();
+
   /**
    *
    *
@@ -124,6 +128,7 @@ public interface BigQueryDestinationConfigOrBuilder
    * @return Whether the dataFreshness field is set.
    */
   boolean hasDataFreshness();
+
   /**
    *
    *
@@ -139,6 +144,7 @@ public interface BigQueryDestinationConfigOrBuilder
    * @return The dataFreshness.
    */
   com.google.protobuf.Duration getDataFreshness();
+
   /**
    *
    *

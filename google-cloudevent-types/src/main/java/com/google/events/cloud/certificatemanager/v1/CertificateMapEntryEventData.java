@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
     // @@protoc_insertion_point(message_implements:google.events.cloud.certificatemanager.v1.CertificateMapEntryEventData)
     CertificateMapEntryEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CertificateMapEntryEventData.newBuilder() to construct.
   private CertificateMapEntryEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -69,6 +70,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.certificatemanager.v1.CertificateMapEntry payload_;
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
         ? com.google.events.cloud.certificatemanager.v1.CertificateMapEntry.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -293,6 +297,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -507,6 +512,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
             com.google.events.cloud.certificatemanager.v1.CertificateMapEntry.Builder,
             com.google.events.cloud.certificatemanager.v1.CertificateMapEntryOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -522,6 +528,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -543,6 +550,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -567,6 +575,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -588,6 +597,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -617,6 +627,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -637,6 +648,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -653,6 +665,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -673,6 +686,7 @@ public final class CertificateMapEntryEventData extends com.google.protobuf.Gene
             : payload_;
       }
     }
+
     /**
      *
      *

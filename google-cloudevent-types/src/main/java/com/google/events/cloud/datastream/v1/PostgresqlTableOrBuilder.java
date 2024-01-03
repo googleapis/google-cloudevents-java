@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface PostgresqlTableOrBuilder
    * @return The table.
    */
   java.lang.String getTable();
+
   /**
    *
    *
@@ -61,6 +62,7 @@ public interface PostgresqlTableOrBuilder
    * </code>
    */
   java.util.List<com.google.events.cloud.datastream.v1.PostgresqlColumn> getPostgresqlColumnsList();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface PostgresqlTableOrBuilder
    * </code>
    */
   com.google.events.cloud.datastream.v1.PostgresqlColumn getPostgresqlColumns(int index);
+
   /**
    *
    *
@@ -87,6 +90,7 @@ public interface PostgresqlTableOrBuilder
    * </code>
    */
   int getPostgresqlColumnsCount();
+
   /**
    *
    *
@@ -101,6 +105,7 @@ public interface PostgresqlTableOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastream.v1.PostgresqlColumnOrBuilder>
       getPostgresqlColumnsOrBuilderList();
+
   /**
    *
    *

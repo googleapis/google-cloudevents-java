@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ReplicationSyncOrBuilder
    * @return Whether the lastSyncTime field is set.
    */
   boolean hasLastSyncTime();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface ReplicationSyncOrBuilder
    * @return The lastSyncTime.
    */
   com.google.protobuf.Timestamp getLastSyncTime();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.firestore.v1.DocumentEventData)
     DocumentEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DocumentEventData.newBuilder() to construct.
   private DocumentEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
 
   public static final int VALUE_FIELD_NUMBER = 1;
   private com.google.events.cloud.firestore.v1.Document value_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
   public boolean hasValue() {
     return value_ != null;
   }
+
   /**
    *
    *
@@ -101,6 +104,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.firestore.v1.Document.getDefaultInstance()
         : value_;
   }
+
   /**
    *
    *
@@ -120,6 +124,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
 
   public static final int OLD_VALUE_FIELD_NUMBER = 2;
   private com.google.events.cloud.firestore.v1.Document oldValue_;
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
   public boolean hasOldValue() {
     return oldValue_ != null;
   }
+
   /**
    *
    *
@@ -154,6 +160,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.firestore.v1.Document.getDefaultInstance()
         : oldValue_;
   }
+
   /**
    *
    *
@@ -173,6 +180,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
 
   public static final int UPDATE_MASK_FIELD_NUMBER = 3;
   private com.google.events.cloud.firestore.v1.DocumentMask updateMask_;
+
   /**
    *
    *
@@ -189,6 +197,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
+
   /**
    *
    *
@@ -207,6 +216,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.firestore.v1.DocumentMask.getDefaultInstance()
         : updateMask_;
   }
+
   /**
    *
    *
@@ -417,6 +427,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -642,6 +653,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.firestore.v1.Document.Builder,
             com.google.events.cloud.firestore.v1.DocumentOrBuilder>
         valueBuilder_;
+
     /**
      *
      *
@@ -657,6 +669,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
     public boolean hasValue() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -678,6 +691,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         return valueBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -701,6 +715,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -721,6 +736,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -747,6 +763,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -767,6 +784,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -782,6 +800,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getValueFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -801,6 +820,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             : value_;
       }
     }
+
     /**
      *
      *
@@ -834,6 +854,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.firestore.v1.Document.Builder,
             com.google.events.cloud.firestore.v1.DocumentOrBuilder>
         oldValueBuilder_;
+
     /**
      *
      *
@@ -849,6 +870,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
     public boolean hasOldValue() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -870,6 +892,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         return oldValueBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -893,6 +916,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -914,6 +938,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -940,6 +965,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -960,6 +986,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -975,6 +1002,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getOldValueFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -994,6 +1022,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             : oldValue_;
       }
     }
+
     /**
      *
      *
@@ -1027,6 +1056,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.firestore.v1.DocumentMask.Builder,
             com.google.events.cloud.firestore.v1.DocumentMaskOrBuilder>
         updateMaskBuilder_;
+
     /**
      *
      *
@@ -1042,6 +1072,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
     public boolean hasUpdateMask() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1063,6 +1094,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
         return updateMaskBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1086,6 +1118,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1107,6 +1140,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1134,6 +1168,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1154,6 +1189,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1169,6 +1205,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getUpdateMaskFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1188,6 +1225,7 @@ public final class DocumentEventData extends com.google.protobuf.GeneratedMessag
             : updateMask_;
       }
     }
+
     /**
      *
      *

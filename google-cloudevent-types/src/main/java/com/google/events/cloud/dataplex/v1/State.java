@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -91,6 +91,7 @@ public enum State implements com.google.protobuf.ProtocolMessageEnum {
    * <code>STATE_UNSPECIFIED = 0;</code>
    */
   public static final int STATE_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -101,6 +102,7 @@ public enum State implements com.google.protobuf.ProtocolMessageEnum {
    * <code>ACTIVE = 1;</code>
    */
   public static final int ACTIVE_VALUE = 1;
+
   /**
    *
    *
@@ -111,6 +113,7 @@ public enum State implements com.google.protobuf.ProtocolMessageEnum {
    * <code>CREATING = 2;</code>
    */
   public static final int CREATING_VALUE = 2;
+
   /**
    *
    *
@@ -121,6 +124,7 @@ public enum State implements com.google.protobuf.ProtocolMessageEnum {
    * <code>DELETING = 3;</code>
    */
   public static final int DELETING_VALUE = 3;
+
   /**
    *
    *

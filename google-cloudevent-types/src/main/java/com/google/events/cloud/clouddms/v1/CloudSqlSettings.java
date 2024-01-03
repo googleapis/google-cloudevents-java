@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     // @@protoc_insertion_point(message_implements:google.events.cloud.clouddms.v1.CloudSqlSettings)
     CloudSqlSettingsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CloudSqlSettings.newBuilder() to construct.
   private CloudSqlSettings(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -142,6 +143,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>SQL_ACTIVATION_POLICY_UNSPECIFIED = 0;</code>
      */
     public static final int SQL_ACTIVATION_POLICY_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -152,6 +154,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>ALWAYS = 1;</code>
      */
     public static final int ALWAYS_VALUE = 1;
+
     /**
      *
      *
@@ -304,6 +307,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>SQL_DATA_DISK_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int SQL_DATA_DISK_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -314,6 +318,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>PD_SSD = 1;</code>
      */
     public static final int PD_SSD_VALUE = 1;
+
     /**
      *
      *
@@ -535,6 +540,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>SQL_DATABASE_VERSION_UNSPECIFIED = 0;</code>
      */
     public static final int SQL_DATABASE_VERSION_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -545,6 +551,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>MYSQL_5_6 = 1;</code>
      */
     public static final int MYSQL_5_6_VALUE = 1;
+
     /**
      *
      *
@@ -555,6 +562,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>MYSQL_5_7 = 2;</code>
      */
     public static final int MYSQL_5_7_VALUE = 2;
+
     /**
      *
      *
@@ -565,6 +573,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>POSTGRES_9_6 = 3;</code>
      */
     public static final int POSTGRES_9_6_VALUE = 3;
+
     /**
      *
      *
@@ -575,6 +584,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>POSTGRES_11 = 4;</code>
      */
     public static final int POSTGRES_11_VALUE = 4;
+
     /**
      *
      *
@@ -585,6 +595,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>POSTGRES_10 = 5;</code>
      */
     public static final int POSTGRES_10_VALUE = 5;
+
     /**
      *
      *
@@ -595,6 +606,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>MYSQL_8_0 = 6;</code>
      */
     public static final int MYSQL_8_0_VALUE = 6;
+
     /**
      *
      *
@@ -605,6 +617,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>POSTGRES_12 = 7;</code>
      */
     public static final int POSTGRES_12_VALUE = 7;
+
     /**
      *
      *
@@ -615,6 +628,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>POSTGRES_13 = 8;</code>
      */
     public static final int POSTGRES_13_VALUE = 8;
+
     /**
      *
      *
@@ -781,6 +795,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>SQL_AVAILABILITY_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int SQL_AVAILABILITY_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -791,6 +806,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
      * <code>ZONAL = 1;</code>
      */
     public static final int ZONAL_VALUE = 1;
+
     /**
      *
      *
@@ -892,6 +908,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int DATABASE_VERSION_FIELD_NUMBER = 1;
   private int databaseVersion_ = 0;
+
   /**
    *
    *
@@ -909,6 +926,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getDatabaseVersionValue() {
     return databaseVersion_;
   }
+
   /**
    *
    *
@@ -959,6 +977,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getUserLabelsCount() {
     return internalGetUserLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -978,12 +997,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
     return internalGetUserLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getUserLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getUserLabels() {
     return getUserLabelsMap();
   }
+
   /**
    *
    *
@@ -1000,6 +1021,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public java.util.Map<java.lang.String, java.lang.String> getUserLabelsMap() {
     return internalGetUserLabels().getMap();
   }
+
   /**
    *
    *
@@ -1023,6 +1045,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -1051,6 +1074,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object tier_ = "";
+
   /**
    *
    *
@@ -1079,6 +1103,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1110,6 +1135,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int STORAGE_AUTO_RESIZE_LIMIT_FIELD_NUMBER = 4;
   private com.google.protobuf.Int64Value storageAutoResizeLimit_;
+
   /**
    *
    *
@@ -1126,6 +1152,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public boolean hasStorageAutoResizeLimit() {
     return storageAutoResizeLimit_ != null;
   }
+
   /**
    *
    *
@@ -1144,6 +1171,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         ? com.google.protobuf.Int64Value.getDefaultInstance()
         : storageAutoResizeLimit_;
   }
+
   /**
    *
    *
@@ -1163,6 +1191,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int ACTIVATION_POLICY_FIELD_NUMBER = 5;
   private int activationPolicy_ = 0;
+
   /**
    *
    *
@@ -1185,6 +1214,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getActivationPolicyValue() {
     return activationPolicy_;
   }
+
   /**
    *
    *
@@ -1216,6 +1246,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int IP_CONFIG_FIELD_NUMBER = 6;
   private com.google.events.cloud.clouddms.v1.SqlIpConfig ipConfig_;
+
   /**
    *
    *
@@ -1233,6 +1264,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public boolean hasIpConfig() {
     return ipConfig_ != null;
   }
+
   /**
    *
    *
@@ -1252,6 +1284,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         ? com.google.events.cloud.clouddms.v1.SqlIpConfig.getDefaultInstance()
         : ipConfig_;
   }
+
   /**
    *
    *
@@ -1272,6 +1305,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int AUTO_STORAGE_INCREASE_FIELD_NUMBER = 7;
   private com.google.protobuf.BoolValue autoStorageIncrease_;
+
   /**
    *
    *
@@ -1291,6 +1325,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public boolean hasAutoStorageIncrease() {
     return autoStorageIncrease_ != null;
   }
+
   /**
    *
    *
@@ -1312,6 +1347,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         ? com.google.protobuf.BoolValue.getDefaultInstance()
         : autoStorageIncrease_;
   }
+
   /**
    *
    *
@@ -1360,6 +1396,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getDatabaseFlagsCount() {
     return internalGetDatabaseFlags().getMap().size();
   }
+
   /**
    *
    *
@@ -1378,12 +1415,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
     return internalGetDatabaseFlags().getMap().containsKey(key);
   }
+
   /** Use {@link #getDatabaseFlagsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getDatabaseFlags() {
     return getDatabaseFlagsMap();
   }
+
   /**
    *
    *
@@ -1399,6 +1438,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public java.util.Map<java.lang.String, java.lang.String> getDatabaseFlagsMap() {
     return internalGetDatabaseFlags().getMap();
   }
+
   /**
    *
    *
@@ -1421,6 +1461,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     java.util.Map<java.lang.String, java.lang.String> map = internalGetDatabaseFlags().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -1446,6 +1487,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int DATA_DISK_TYPE_FIELD_NUMBER = 9;
   private int dataDiskType_ = 0;
+
   /**
    *
    *
@@ -1462,6 +1504,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getDataDiskTypeValue() {
     return dataDiskType_;
   }
+
   /**
    *
    *
@@ -1486,6 +1529,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int DATA_DISK_SIZE_GB_FIELD_NUMBER = 10;
   private com.google.protobuf.Int64Value dataDiskSizeGb_;
+
   /**
    *
    *
@@ -1502,6 +1546,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public boolean hasDataDiskSizeGb() {
     return dataDiskSizeGb_ != null;
   }
+
   /**
    *
    *
@@ -1520,6 +1565,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         ? com.google.protobuf.Int64Value.getDefaultInstance()
         : dataDiskSizeGb_;
   }
+
   /**
    *
    *
@@ -1541,6 +1587,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object zone_ = "";
+
   /**
    *
    *
@@ -1565,6 +1612,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1594,6 +1642,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object secondaryZone_ = "";
+
   /**
    *
    *
@@ -1619,6 +1668,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1649,6 +1699,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object sourceId_ = "";
+
   /**
    *
    *
@@ -1674,6 +1725,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1702,6 +1754,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int ROOT_PASSWORD_SET_FIELD_NUMBER = 14;
   private boolean rootPasswordSet_ = false;
+
   /**
    *
    *
@@ -1722,6 +1775,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object collation_ = "";
+
   /**
    *
    *
@@ -1745,6 +1799,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1773,6 +1828,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object cmekKeyName_ = "";
+
   /**
    *
    *
@@ -1796,6 +1852,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       return s;
     }
   }
+
   /**
    *
    *
@@ -1822,6 +1879,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
 
   public static final int AVAILABILITY_TYPE_FIELD_NUMBER = 17;
   private int availabilityType_ = 0;
+
   /**
    *
    *
@@ -1843,6 +1901,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
   public int getAvailabilityTypeValue() {
     return availabilityType_;
   }
+
   /**
    *
    *
@@ -2235,6 +2294,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -2698,6 +2758,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     private int bitField0_;
 
     private int databaseVersion_ = 0;
+
     /**
      *
      *
@@ -2715,6 +2776,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getDatabaseVersionValue() {
       return databaseVersion_;
     }
+
     /**
      *
      *
@@ -2735,6 +2797,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2758,6 +2821,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDatabaseVersion.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -2782,6 +2846,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2830,6 +2895,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getUserLabelsCount() {
       return internalGetUserLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -2849,12 +2915,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       }
       return internalGetUserLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getUserLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getUserLabels() {
       return getUserLabelsMap();
     }
+
     /**
      *
      *
@@ -2871,6 +2939,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public java.util.Map<java.lang.String, java.lang.String> getUserLabelsMap() {
       return internalGetUserLabels().getMap();
     }
+
     /**
      *
      *
@@ -2894,6 +2963,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -2923,6 +2993,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       internalGetMutableUserLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -2942,12 +3013,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       internalGetMutableUserLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableUserLabels() {
       bitField0_ |= 0x00000002;
       return internalGetMutableUserLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -2971,6 +3044,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000002;
       return this;
     }
+
     /**
      *
      *
@@ -2990,6 +3064,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object tier_ = "";
+
     /**
      *
      *
@@ -3017,6 +3092,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -3044,6 +3120,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -3070,6 +3147,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3092,6 +3170,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3126,6 +3205,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             com.google.protobuf.Int64Value.Builder,
             com.google.protobuf.Int64ValueOrBuilder>
         storageAutoResizeLimitBuilder_;
+
     /**
      *
      *
@@ -3141,6 +3221,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public boolean hasStorageAutoResizeLimit() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -3162,6 +3243,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return storageAutoResizeLimitBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3185,6 +3267,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3206,6 +3289,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3232,6 +3316,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3252,6 +3337,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3267,6 +3353,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getStorageAutoResizeLimitFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3286,6 +3373,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             : storageAutoResizeLimit_;
       }
     }
+
     /**
      *
      *
@@ -3314,6 +3402,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private int activationPolicy_ = 0;
+
     /**
      *
      *
@@ -3336,6 +3425,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getActivationPolicyValue() {
       return activationPolicy_;
     }
+
     /**
      *
      *
@@ -3361,6 +3451,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3389,6 +3480,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlActivationPolicy.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -3418,6 +3510,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3449,6 +3542,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             com.google.events.cloud.clouddms.v1.SqlIpConfig.Builder,
             com.google.events.cloud.clouddms.v1.SqlIpConfigOrBuilder>
         ipConfigBuilder_;
+
     /**
      *
      *
@@ -3465,6 +3559,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public boolean hasIpConfig() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -3487,6 +3582,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return ipConfigBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3511,6 +3607,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3533,6 +3630,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3560,6 +3658,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3581,6 +3680,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3597,6 +3697,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getIpConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3617,6 +3718,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             : ipConfig_;
       }
     }
+
     /**
      *
      *
@@ -3651,6 +3753,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             com.google.protobuf.BoolValue.Builder,
             com.google.protobuf.BoolValueOrBuilder>
         autoStorageIncreaseBuilder_;
+
     /**
      *
      *
@@ -3669,6 +3772,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public boolean hasAutoStorageIncrease() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -3693,6 +3797,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return autoStorageIncreaseBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3719,6 +3824,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3742,6 +3848,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3771,6 +3878,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3794,6 +3902,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3812,6 +3921,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getAutoStorageIncreaseFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3834,6 +3944,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             : autoStorageIncrease_;
       }
     }
+
     /**
      *
      *
@@ -3892,6 +4003,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getDatabaseFlagsCount() {
       return internalGetDatabaseFlags().getMap().size();
     }
+
     /**
      *
      *
@@ -3910,12 +4022,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       }
       return internalGetDatabaseFlags().getMap().containsKey(key);
     }
+
     /** Use {@link #getDatabaseFlagsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getDatabaseFlags() {
       return getDatabaseFlagsMap();
     }
+
     /**
      *
      *
@@ -3931,6 +4045,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public java.util.Map<java.lang.String, java.lang.String> getDatabaseFlagsMap() {
       return internalGetDatabaseFlags().getMap();
     }
+
     /**
      *
      *
@@ -3953,6 +4068,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       java.util.Map<java.lang.String, java.lang.String> map = internalGetDatabaseFlags().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -3981,6 +4097,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       internalGetMutableDatabaseFlags().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -3999,12 +4116,14 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       internalGetMutableDatabaseFlags().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableDatabaseFlags() {
       bitField0_ |= 0x00000080;
       return internalGetMutableDatabaseFlags().getMutableMap();
     }
+
     /**
      *
      *
@@ -4027,6 +4146,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       bitField0_ |= 0x00000080;
       return this;
     }
+
     /**
      *
      *
@@ -4045,6 +4165,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private int dataDiskType_ = 0;
+
     /**
      *
      *
@@ -4061,6 +4182,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getDataDiskTypeValue() {
       return dataDiskType_;
     }
+
     /**
      *
      *
@@ -4080,6 +4202,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4101,6 +4224,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlDataDiskType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -4124,6 +4248,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4149,6 +4274,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             com.google.protobuf.Int64Value.Builder,
             com.google.protobuf.Int64ValueOrBuilder>
         dataDiskSizeGbBuilder_;
+
     /**
      *
      *
@@ -4164,6 +4290,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public boolean hasDataDiskSizeGb() {
       return ((bitField0_ & 0x00000200) != 0);
     }
+
     /**
      *
      *
@@ -4185,6 +4312,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return dataDiskSizeGbBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4208,6 +4336,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4228,6 +4357,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4254,6 +4384,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4274,6 +4405,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4289,6 +4421,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return getDataDiskSizeGbFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4308,6 +4441,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
             : dataDiskSizeGb_;
       }
     }
+
     /**
      *
      *
@@ -4336,6 +4470,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object zone_ = "";
+
     /**
      *
      *
@@ -4359,6 +4494,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4382,6 +4518,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4404,6 +4541,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4422,6 +4560,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4447,6 +4586,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object secondaryZone_ = "";
+
     /**
      *
      *
@@ -4471,6 +4611,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4495,6 +4636,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4518,6 +4660,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4537,6 +4680,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4563,6 +4707,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object sourceId_ = "";
+
     /**
      *
      *
@@ -4587,6 +4732,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4611,6 +4757,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4634,6 +4781,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4653,6 +4801,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4679,6 +4828,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private boolean rootPasswordSet_;
+
     /**
      *
      *
@@ -4694,6 +4844,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public boolean getRootPasswordSet() {
       return rootPasswordSet_;
     }
+
     /**
      *
      *
@@ -4713,6 +4864,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4732,6 +4884,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object collation_ = "";
+
     /**
      *
      *
@@ -4754,6 +4907,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4776,6 +4930,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4797,6 +4952,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4814,6 +4970,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4838,6 +4995,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private java.lang.Object cmekKeyName_ = "";
+
     /**
      *
      *
@@ -4860,6 +5018,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4882,6 +5041,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4903,6 +5063,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4920,6 +5081,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4944,6 +5106,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     }
 
     private int availabilityType_ = 0;
+
     /**
      *
      *
@@ -4965,6 +5128,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
     public int getAvailabilityTypeValue() {
       return availabilityType_;
     }
+
     /**
      *
      *
@@ -4989,6 +5153,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5016,6 +5181,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
           ? com.google.events.cloud.clouddms.v1.CloudSqlSettings.SqlAvailabilityType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -5044,6 +5210,7 @@ public final class CloudSqlSettings extends com.google.protobuf.GeneratedMessage
       onChanged();
       return this;
     }
+
     /**
      *
      *

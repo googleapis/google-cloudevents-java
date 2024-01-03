@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.audit.v1.AuditLog)
     AuditLogOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AuditLog.newBuilder() to construct.
   private AuditLog(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -77,6 +78,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object serviceName_ = "";
+
   /**
    *
    *
@@ -101,6 +103,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -130,6 +133,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object methodName_ = "";
+
   /**
    *
    *
@@ -157,6 +161,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -189,6 +194,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object resourceName_ = "";
+
   /**
    *
    *
@@ -216,6 +222,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -246,6 +253,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCE_LOCATION_FIELD_NUMBER = 20;
   private com.google.events.cloud.audit.v1.ResourceLocation resourceLocation_;
+
   /**
    *
    *
@@ -261,6 +269,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasResourceLocation() {
     return resourceLocation_ != null;
   }
+
   /**
    *
    *
@@ -278,6 +287,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.audit.v1.ResourceLocation.getDefaultInstance()
         : resourceLocation_;
   }
+
   /**
    *
    *
@@ -296,6 +306,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESOURCE_ORIGINAL_STATE_FIELD_NUMBER = 19;
   private com.google.protobuf.Struct resourceOriginalState_;
+
   /**
    *
    *
@@ -317,6 +328,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasResourceOriginalState() {
     return resourceOriginalState_ != null;
   }
+
   /**
    *
    *
@@ -340,6 +352,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         ? com.google.protobuf.Struct.getDefaultInstance()
         : resourceOriginalState_;
   }
+
   /**
    *
    *
@@ -364,6 +377,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int NUM_RESPONSE_ITEMS_FIELD_NUMBER = 12;
   private long numResponseItems_ = 0L;
+
   /**
    *
    *
@@ -383,6 +397,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATUS_FIELD_NUMBER = 2;
   private com.google.rpc.Status status_;
+
   /**
    *
    *
@@ -398,6 +413,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStatus() {
     return status_ != null;
   }
+
   /**
    *
    *
@@ -413,6 +429,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.rpc.Status getStatus() {
     return status_ == null ? com.google.rpc.Status.getDefaultInstance() : status_;
   }
+
   /**
    *
    *
@@ -429,6 +446,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int AUTHENTICATION_INFO_FIELD_NUMBER = 3;
   private com.google.events.cloud.audit.v1.AuthenticationInfo authenticationInfo_;
+
   /**
    *
    *
@@ -444,6 +462,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasAuthenticationInfo() {
     return authenticationInfo_ != null;
   }
+
   /**
    *
    *
@@ -461,6 +480,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.audit.v1.AuthenticationInfo.getDefaultInstance()
         : authenticationInfo_;
   }
+
   /**
    *
    *
@@ -482,6 +502,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.audit.v1.AuthorizationInfo> authorizationInfo_;
+
   /**
    *
    *
@@ -498,6 +519,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       getAuthorizationInfoList() {
     return authorizationInfo_;
   }
+
   /**
    *
    *
@@ -514,6 +536,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       getAuthorizationInfoOrBuilderList() {
     return authorizationInfo_;
   }
+
   /**
    *
    *
@@ -529,6 +552,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public int getAuthorizationInfoCount() {
     return authorizationInfo_.size();
   }
+
   /**
    *
    *
@@ -544,6 +568,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.audit.v1.AuthorizationInfo getAuthorizationInfo(int index) {
     return authorizationInfo_.get(index);
   }
+
   /**
    *
    *
@@ -563,6 +588,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int REQUEST_METADATA_FIELD_NUMBER = 4;
   private com.google.events.cloud.audit.v1.RequestMetadata requestMetadata_;
+
   /**
    *
    *
@@ -578,6 +604,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasRequestMetadata() {
     return requestMetadata_ != null;
   }
+
   /**
    *
    *
@@ -595,6 +622,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.audit.v1.RequestMetadata.getDefaultInstance()
         : requestMetadata_;
   }
+
   /**
    *
    *
@@ -613,6 +641,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int REQUEST_FIELD_NUMBER = 16;
   private com.google.protobuf.Struct request_;
+
   /**
    *
    *
@@ -633,6 +662,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasRequest() {
     return request_ != null;
   }
+
   /**
    *
    *
@@ -653,6 +683,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Struct getRequest() {
     return request_ == null ? com.google.protobuf.Struct.getDefaultInstance() : request_;
   }
+
   /**
    *
    *
@@ -674,6 +705,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int RESPONSE_FIELD_NUMBER = 17;
   private com.google.protobuf.Struct response_;
+
   /**
    *
    *
@@ -694,6 +726,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasResponse() {
     return response_ != null;
   }
+
   /**
    *
    *
@@ -714,6 +747,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Struct getResponse() {
     return response_ == null ? com.google.protobuf.Struct.getDefaultInstance() : response_;
   }
+
   /**
    *
    *
@@ -735,6 +769,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int METADATA_FIELD_NUMBER = 18;
   private com.google.protobuf.Struct metadata_;
+
   /**
    *
    *
@@ -751,6 +786,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasMetadata() {
     return metadata_ != null;
   }
+
   /**
    *
    *
@@ -767,6 +803,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Struct getMetadata() {
     return metadata_ == null ? com.google.protobuf.Struct.getDefaultInstance() : metadata_;
   }
+
   /**
    *
    *
@@ -784,6 +821,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
 
   public static final int SERVICE_DATA_FIELD_NUMBER = 15;
   private com.google.protobuf.Struct serviceData_;
+
   /**
    *
    *
@@ -803,6 +841,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public boolean hasServiceData() {
     return serviceData_ != null;
   }
+
   /**
    *
    *
@@ -822,6 +861,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Struct getServiceData() {
     return serviceData_ == null ? com.google.protobuf.Struct.getDefaultInstance() : serviceData_;
   }
+
   /**
    *
    *
@@ -1165,6 +1205,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1620,6 +1661,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object serviceName_ = "";
+
     /**
      *
      *
@@ -1643,6 +1685,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1666,6 +1709,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1688,6 +1732,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1706,6 +1751,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1731,6 +1777,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object methodName_ = "";
+
     /**
      *
      *
@@ -1757,6 +1804,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1783,6 +1831,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1808,6 +1857,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1829,6 +1879,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1857,6 +1908,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object resourceName_ = "";
+
     /**
      *
      *
@@ -1883,6 +1935,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1909,6 +1962,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1934,6 +1988,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1955,6 +2010,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1988,6 +2044,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.ResourceLocation.Builder,
             com.google.events.cloud.audit.v1.ResourceLocationOrBuilder>
         resourceLocationBuilder_;
+
     /**
      *
      *
@@ -2002,6 +2059,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasResourceLocation() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -2022,6 +2080,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return resourceLocationBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2044,6 +2103,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2064,6 +2124,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2090,6 +2151,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2109,6 +2171,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2123,6 +2186,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getResourceLocationFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2142,6 +2206,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             : resourceLocation_;
       }
     }
+
     /**
      *
      *
@@ -2174,6 +2239,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         resourceOriginalStateBuilder_;
+
     /**
      *
      *
@@ -2194,6 +2260,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasResourceOriginalState() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -2220,6 +2287,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return resourceOriginalStateBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2248,6 +2316,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2273,6 +2342,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2304,6 +2374,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2329,6 +2400,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2349,6 +2421,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getResourceOriginalStateFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2373,6 +2446,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             : resourceOriginalState_;
       }
     }
+
     /**
      *
      *
@@ -2406,6 +2480,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     }
 
     private long numResponseItems_;
+
     /**
      *
      *
@@ -2422,6 +2497,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public long getNumResponseItems() {
       return numResponseItems_;
     }
+
     /**
      *
      *
@@ -2442,6 +2518,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2465,6 +2542,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.rpc.Status, com.google.rpc.Status.Builder, com.google.rpc.StatusOrBuilder>
         statusBuilder_;
+
     /**
      *
      *
@@ -2479,6 +2557,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -2497,6 +2576,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return statusBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2519,6 +2599,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2538,6 +2619,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2563,6 +2645,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2582,6 +2665,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2596,6 +2680,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2612,6 +2697,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return status_ == null ? com.google.rpc.Status.getDefaultInstance() : status_;
       }
     }
+
     /**
      *
      *
@@ -2641,6 +2727,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.AuthenticationInfo.Builder,
             com.google.events.cloud.audit.v1.AuthenticationInfoOrBuilder>
         authenticationInfoBuilder_;
+
     /**
      *
      *
@@ -2655,6 +2742,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasAuthenticationInfo() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2675,6 +2763,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return authenticationInfoBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2698,6 +2787,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2718,6 +2808,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2745,6 +2836,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2764,6 +2856,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2779,6 +2872,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getAuthenticationInfoFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2798,6 +2892,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             : authenticationInfo_;
       }
     }
+
     /**
      *
      *
@@ -2861,6 +2956,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return authorizationInfoBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -2879,6 +2975,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return authorizationInfoBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -2897,6 +2994,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return authorizationInfoBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -2922,6 +3020,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2944,6 +3043,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2968,6 +3068,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -2993,6 +3094,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3015,6 +3117,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3037,6 +3140,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3059,6 +3163,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3080,6 +3185,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3101,6 +3207,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -3116,6 +3223,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         int index) {
       return getAuthorizationInfoFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -3135,6 +3243,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return authorizationInfoBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -3154,6 +3263,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(authorizationInfo_);
       }
     }
+
     /**
      *
      *
@@ -3170,6 +3280,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       return getAuthorizationInfoFieldBuilder()
           .addBuilder(com.google.events.cloud.audit.v1.AuthorizationInfo.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -3187,6 +3298,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
           .addBuilder(
               index, com.google.events.cloud.audit.v1.AuthorizationInfo.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -3229,6 +3341,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.audit.v1.RequestMetadata.Builder,
             com.google.events.cloud.audit.v1.RequestMetadataOrBuilder>
         requestMetadataBuilder_;
+
     /**
      *
      *
@@ -3243,6 +3356,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasRequestMetadata() {
       return ((bitField0_ & 0x00000200) != 0);
     }
+
     /**
      *
      *
@@ -3263,6 +3377,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return requestMetadataBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3285,6 +3400,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3305,6 +3421,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3331,6 +3448,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3350,6 +3468,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3364,6 +3483,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getRequestMetadataFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3382,6 +3502,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             : requestMetadata_;
       }
     }
+
     /**
      *
      *
@@ -3414,6 +3535,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         requestBuilder_;
+
     /**
      *
      *
@@ -3433,6 +3555,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasRequest() {
       return ((bitField0_ & 0x00000400) != 0);
     }
+
     /**
      *
      *
@@ -3456,6 +3579,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return requestBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3483,6 +3607,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3507,6 +3632,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3537,6 +3663,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3561,6 +3688,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3580,6 +3708,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getRequestFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3601,6 +3730,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return request_ == null ? com.google.protobuf.Struct.getDefaultInstance() : request_;
       }
     }
+
     /**
      *
      *
@@ -3638,6 +3768,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         responseBuilder_;
+
     /**
      *
      *
@@ -3657,6 +3788,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasResponse() {
       return ((bitField0_ & 0x00000800) != 0);
     }
+
     /**
      *
      *
@@ -3680,6 +3812,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return responseBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3707,6 +3840,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3731,6 +3865,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3761,6 +3896,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3785,6 +3921,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3804,6 +3941,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getResponseFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -3825,6 +3963,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return response_ == null ? com.google.protobuf.Struct.getDefaultInstance() : response_;
       }
     }
+
     /**
      *
      *
@@ -3862,6 +4001,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         metadataBuilder_;
+
     /**
      *
      *
@@ -3877,6 +4017,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasMetadata() {
       return ((bitField0_ & 0x00001000) != 0);
     }
+
     /**
      *
      *
@@ -3896,6 +4037,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return metadataBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -3919,6 +4061,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3939,6 +4082,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3965,6 +4109,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -3985,6 +4130,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4000,6 +4146,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getMetadataFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4017,6 +4164,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return metadata_ == null ? com.google.protobuf.Struct.getDefaultInstance() : metadata_;
       }
     }
+
     /**
      *
      *
@@ -4050,6 +4198,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Struct.Builder,
             com.google.protobuf.StructOrBuilder>
         serviceDataBuilder_;
+
     /**
      *
      *
@@ -4068,6 +4217,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
     public boolean hasServiceData() {
       return ((bitField0_ & 0x00002000) != 0);
     }
+
     /**
      *
      *
@@ -4092,6 +4242,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
         return serviceDataBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4118,6 +4269,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4141,6 +4293,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4170,6 +4323,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4193,6 +4347,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4211,6 +4366,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getServiceDataFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -4233,6 +4389,7 @@ public final class AuditLog extends com.google.protobuf.GeneratedMessageV3
             : serviceData_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Input inputs = 1;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.Input> getInputsList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Input inputs = 1;</code>
    */
   com.google.events.cloud.video.transcoder.v1.Input getInputs(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Input inputs = 1;</code>
    */
   int getInputsCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.InputOrBuilder>
       getInputsOrBuilderList();
+
   /**
    *
    *
@@ -86,6 +90,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.EditAtom edit_list = 2;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.EditAtom> getEditListList();
+
   /**
    *
    *
@@ -97,6 +102,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.EditAtom edit_list = 2;</code>
    */
   com.google.events.cloud.video.transcoder.v1.EditAtom getEditList(int index);
+
   /**
    *
    *
@@ -108,6 +114,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.EditAtom edit_list = 2;</code>
    */
   int getEditListCount();
+
   /**
    *
    *
@@ -120,6 +127,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.EditAtomOrBuilder>
       getEditListOrBuilderList();
+
   /**
    *
    *
@@ -145,6 +153,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.ElementaryStream>
       getElementaryStreamsList();
+
   /**
    *
    *
@@ -157,6 +166,7 @@ public interface JobConfigOrBuilder
    * </code>
    */
   com.google.events.cloud.video.transcoder.v1.ElementaryStream getElementaryStreams(int index);
+
   /**
    *
    *
@@ -169,6 +179,7 @@ public interface JobConfigOrBuilder
    * </code>
    */
   int getElementaryStreamsCount();
+
   /**
    *
    *
@@ -182,6 +193,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.ElementaryStreamOrBuilder>
       getElementaryStreamsOrBuilderList();
+
   /**
    *
    *
@@ -206,6 +218,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.MuxStream mux_streams = 4;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.MuxStream> getMuxStreamsList();
+
   /**
    *
    *
@@ -216,6 +229,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.MuxStream mux_streams = 4;</code>
    */
   com.google.events.cloud.video.transcoder.v1.MuxStream getMuxStreams(int index);
+
   /**
    *
    *
@@ -226,6 +240,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.MuxStream mux_streams = 4;</code>
    */
   int getMuxStreamsCount();
+
   /**
    *
    *
@@ -237,6 +252,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.MuxStreamOrBuilder>
       getMuxStreamsOrBuilderList();
+
   /**
    *
    *
@@ -258,6 +274,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Manifest manifests = 5;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.Manifest> getManifestsList();
+
   /**
    *
    *
@@ -268,6 +285,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Manifest manifests = 5;</code>
    */
   com.google.events.cloud.video.transcoder.v1.Manifest getManifests(int index);
+
   /**
    *
    *
@@ -278,6 +296,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Manifest manifests = 5;</code>
    */
   int getManifestsCount();
+
   /**
    *
    *
@@ -289,6 +308,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.ManifestOrBuilder>
       getManifestsOrBuilderList();
+
   /**
    *
    *
@@ -312,6 +332,7 @@ public interface JobConfigOrBuilder
    * @return Whether the output field is set.
    */
   boolean hasOutput();
+
   /**
    *
    *
@@ -324,6 +345,7 @@ public interface JobConfigOrBuilder
    * @return The output.
    */
   com.google.events.cloud.video.transcoder.v1.Output getOutput();
+
   /**
    *
    *
@@ -346,6 +368,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.AdBreak ad_breaks = 7;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.AdBreak> getAdBreaksList();
+
   /**
    *
    *
@@ -357,6 +380,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.AdBreak ad_breaks = 7;</code>
    */
   com.google.events.cloud.video.transcoder.v1.AdBreak getAdBreaks(int index);
+
   /**
    *
    *
@@ -368,6 +392,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.AdBreak ad_breaks = 7;</code>
    */
   int getAdBreaksCount();
+
   /**
    *
    *
@@ -380,6 +405,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.AdBreakOrBuilder>
       getAdBreaksOrBuilderList();
+
   /**
    *
    *
@@ -404,6 +430,7 @@ public interface JobConfigOrBuilder
    * @return Whether the pubsubDestination field is set.
    */
   boolean hasPubsubDestination();
+
   /**
    *
    *
@@ -416,6 +443,7 @@ public interface JobConfigOrBuilder
    * @return The pubsubDestination.
    */
   com.google.events.cloud.video.transcoder.v1.PubsubDestination getPubsubDestination();
+
   /**
    *
    *
@@ -439,6 +467,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.SpriteSheet sprite_sheets = 9;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.SpriteSheet> getSpriteSheetsList();
+
   /**
    *
    *
@@ -450,6 +479,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.SpriteSheet sprite_sheets = 9;</code>
    */
   com.google.events.cloud.video.transcoder.v1.SpriteSheet getSpriteSheets(int index);
+
   /**
    *
    *
@@ -461,6 +491,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.SpriteSheet sprite_sheets = 9;</code>
    */
   int getSpriteSheetsCount();
+
   /**
    *
    *
@@ -473,6 +504,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.SpriteSheetOrBuilder>
       getSpriteSheetsOrBuilderList();
+
   /**
    *
    *
@@ -496,6 +528,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Overlay overlays = 10;</code>
    */
   java.util.List<com.google.events.cloud.video.transcoder.v1.Overlay> getOverlaysList();
+
   /**
    *
    *
@@ -506,6 +539,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Overlay overlays = 10;</code>
    */
   com.google.events.cloud.video.transcoder.v1.Overlay getOverlays(int index);
+
   /**
    *
    *
@@ -516,6 +550,7 @@ public interface JobConfigOrBuilder
    * <code>repeated .google.events.cloud.video.transcoder.v1.Overlay overlays = 10;</code>
    */
   int getOverlaysCount();
+
   /**
    *
    *
@@ -527,6 +562,7 @@ public interface JobConfigOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.video.transcoder.v1.OverlayOrBuilder>
       getOverlaysOrBuilderList();
+
   /**
    *
    *

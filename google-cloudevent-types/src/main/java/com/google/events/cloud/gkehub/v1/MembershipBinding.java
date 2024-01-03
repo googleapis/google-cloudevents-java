@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkehub.v1.MembershipBinding)
     MembershipBindingOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use MembershipBinding.newBuilder() to construct.
   private MembershipBinding(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -85,6 +86,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     private TargetCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -118,6 +120,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   }
 
   public static final int SCOPE_FIELD_NUMBER = 3;
+
   /**
    *
    *
@@ -133,6 +136,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasScope() {
     return targetCase_ == 3;
   }
+
   /**
    *
    *
@@ -161,6 +165,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -191,6 +196,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   }
 
   public static final int FLEET_FIELD_NUMBER = 4;
+
   /**
    *
    *
@@ -207,6 +213,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasFleet() {
     return targetCase_ == 4;
   }
+
   /**
    *
    *
@@ -231,6 +238,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -255,6 +263,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -284,6 +293,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object uid_ = "";
+
   /**
    *
    *
@@ -310,6 +320,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       return s;
     }
   }
+
   /**
    *
    *
@@ -339,6 +350,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   public static final int CREATE_TIME_FIELD_NUMBER = 5;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -354,6 +366,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -369,6 +382,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -385,6 +399,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 6;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -400,6 +415,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -415,6 +431,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -431,6 +448,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   public static final int DELETE_TIME_FIELD_NUMBER = 7;
   private com.google.protobuf.Timestamp deleteTime_;
+
   /**
    *
    *
@@ -446,6 +464,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasDeleteTime() {
     return deleteTime_ != null;
   }
+
   /**
    *
    *
@@ -461,6 +480,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public com.google.protobuf.Timestamp getDeleteTime() {
     return deleteTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : deleteTime_;
   }
+
   /**
    *
    *
@@ -477,6 +497,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
 
   public static final int STATE_FIELD_NUMBER = 8;
   private com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState state_;
+
   /**
    *
    *
@@ -492,6 +513,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
   public boolean hasState() {
     return state_ != null;
   }
+
   /**
    *
    *
@@ -509,6 +531,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState.getDefaultInstance()
         : state_;
   }
+
   /**
    *
    *
@@ -787,6 +810,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1124,6 +1148,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasScope() {
       return targetCase_ == 3;
     }
+
     /**
      *
      *
@@ -1153,6 +1178,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1182,6 +1208,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1204,6 +1231,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1224,6 +1252,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1263,6 +1292,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasFleet() {
       return targetCase_ == 4;
     }
+
     /**
      *
      *
@@ -1281,6 +1311,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       }
       return false;
     }
+
     /**
      *
      *
@@ -1301,6 +1332,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1323,6 +1355,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -1346,6 +1379,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1369,6 +1403,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1391,6 +1426,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1409,6 +1445,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1434,6 +1471,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     }
 
     private java.lang.Object uid_ = "";
+
     /**
      *
      *
@@ -1459,6 +1497,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1484,6 +1523,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1508,6 +1548,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1528,6 +1569,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1560,6 +1602,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -1574,6 +1617,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1594,6 +1638,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1616,6 +1661,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1635,6 +1681,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1660,6 +1707,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1679,6 +1727,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1693,6 +1742,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1711,6 +1761,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -1743,6 +1794,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -1757,6 +1809,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000020) != 0);
     }
+
     /**
      *
      *
@@ -1777,6 +1830,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1799,6 +1853,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1818,6 +1873,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1843,6 +1899,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1862,6 +1919,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1876,6 +1934,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1894,6 +1953,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -1926,6 +1986,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         deleteTimeBuilder_;
+
     /**
      *
      *
@@ -1940,6 +2001,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasDeleteTime() {
       return ((bitField0_ & 0x00000040) != 0);
     }
+
     /**
      *
      *
@@ -1960,6 +2022,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return deleteTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1982,6 +2045,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2001,6 +2065,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2026,6 +2091,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2045,6 +2111,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2059,6 +2126,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getDeleteTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2077,6 +2145,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             : deleteTime_;
       }
     }
+
     /**
      *
      *
@@ -2109,6 +2178,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleState.Builder,
             com.google.events.cloud.gkehub.v1.MembershipBindingLifecycleStateOrBuilder>
         stateBuilder_;
+
     /**
      *
      *
@@ -2123,6 +2193,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
     public boolean hasState() {
       return ((bitField0_ & 0x00000080) != 0);
     }
+
     /**
      *
      *
@@ -2143,6 +2214,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
         return stateBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2166,6 +2238,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2186,6 +2259,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2214,6 +2288,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2233,6 +2308,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2248,6 +2324,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getStateFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2267,6 +2344,7 @@ public final class MembershipBinding extends com.google.protobuf.GeneratedMessag
             : state_;
       }
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,6 +48,7 @@ public interface DataProfileResultOrBuilder
    * @return Whether the profile field is set.
    */
   boolean hasProfile();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface DataProfileResultOrBuilder
    * @return The profile.
    */
   com.google.events.cloud.dataplex.v1.DataProfileResult.Profile getProfile();
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public interface DataProfileResultOrBuilder
    * @return Whether the scannedData field is set.
    */
   boolean hasScannedData();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface DataProfileResultOrBuilder
    * @return The scannedData.
    */
   com.google.events.cloud.dataplex.v1.ScannedData getScannedData();
+
   /**
    *
    *

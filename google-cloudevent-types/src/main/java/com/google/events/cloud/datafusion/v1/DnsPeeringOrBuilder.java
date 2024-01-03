@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface DnsPeeringOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface DnsPeeringOrBuilder
    * @return The domain.
    */
   java.lang.String getDomain();
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public interface DnsPeeringOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -114,6 +117,7 @@ public interface DnsPeeringOrBuilder
    * @return The targetProject.
    */
   java.lang.String getTargetProject();
+
   /**
    *
    *
@@ -139,6 +143,7 @@ public interface DnsPeeringOrBuilder
    * @return The targetNetwork.
    */
   java.lang.String getTargetNetwork();
+
   /**
    *
    *

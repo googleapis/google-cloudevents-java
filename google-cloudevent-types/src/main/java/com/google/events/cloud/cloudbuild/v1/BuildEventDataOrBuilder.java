@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface BuildEventDataOrBuilder
    * @return The id.
    */
   java.lang.String getId();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface BuildEventDataOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface BuildEventDataOrBuilder
    * @return The enum numeric value on the wire for status.
    */
   int getStatusValue();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface BuildEventDataOrBuilder
    * @return The statusDetail.
    */
   java.lang.String getStatusDetail();
+
   /**
    *
    *
@@ -135,6 +139,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the source field is set.
    */
   boolean hasSource();
+
   /**
    *
    *
@@ -147,6 +152,7 @@ public interface BuildEventDataOrBuilder
    * @return The source.
    */
   com.google.events.cloud.cloudbuild.v1.Source getSource();
+
   /**
    *
    *
@@ -168,6 +174,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuildStep steps = 11;</code>
    */
   java.util.List<com.google.events.cloud.cloudbuild.v1.BuildStep> getStepsList();
+
   /**
    *
    *
@@ -178,6 +185,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuildStep steps = 11;</code>
    */
   com.google.events.cloud.cloudbuild.v1.BuildStep getSteps(int index);
+
   /**
    *
    *
@@ -188,6 +196,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuildStep steps = 11;</code>
    */
   int getStepsCount();
+
   /**
    *
    *
@@ -199,6 +208,7 @@ public interface BuildEventDataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.cloudbuild.v1.BuildStepOrBuilder>
       getStepsOrBuilderList();
+
   /**
    *
    *
@@ -222,6 +232,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the results field is set.
    */
   boolean hasResults();
+
   /**
    *
    *
@@ -234,6 +245,7 @@ public interface BuildEventDataOrBuilder
    * @return The results.
    */
   com.google.events.cloud.cloudbuild.v1.Results getResults();
+
   /**
    *
    *
@@ -257,6 +269,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -269,6 +282,7 @@ public interface BuildEventDataOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -292,6 +306,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the startTime field is set.
    */
   boolean hasStartTime();
+
   /**
    *
    *
@@ -304,6 +319,7 @@ public interface BuildEventDataOrBuilder
    * @return The startTime.
    */
   com.google.protobuf.Timestamp getStartTime();
+
   /**
    *
    *
@@ -329,6 +345,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the finishTime field is set.
    */
   boolean hasFinishTime();
+
   /**
    *
    *
@@ -343,6 +360,7 @@ public interface BuildEventDataOrBuilder
    * @return The finishTime.
    */
   com.google.protobuf.Timestamp getFinishTime();
+
   /**
    *
    *
@@ -370,6 +388,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the timeout field is set.
    */
   boolean hasTimeout();
+
   /**
    *
    *
@@ -384,6 +403,7 @@ public interface BuildEventDataOrBuilder
    * @return The timeout.
    */
   com.google.protobuf.Duration getTimeout();
+
   /**
    *
    *
@@ -415,6 +435,7 @@ public interface BuildEventDataOrBuilder
    * @return A list containing the images.
    */
   java.util.List<java.lang.String> getImagesList();
+
   /**
    *
    *
@@ -433,6 +454,7 @@ public interface BuildEventDataOrBuilder
    * @return The count of images.
    */
   int getImagesCount();
+
   /**
    *
    *
@@ -452,6 +474,7 @@ public interface BuildEventDataOrBuilder
    * @return The images at the given index.
    */
   java.lang.String getImages(int index);
+
   /**
    *
    *
@@ -487,6 +510,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the queueTtl field is set.
    */
   boolean hasQueueTtl();
+
   /**
    *
    *
@@ -502,6 +526,7 @@ public interface BuildEventDataOrBuilder
    * @return The queueTtl.
    */
   com.google.protobuf.Duration getQueueTtl();
+
   /**
    *
    *
@@ -529,6 +554,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the artifacts field is set.
    */
   boolean hasArtifacts();
+
   /**
    *
    *
@@ -542,6 +568,7 @@ public interface BuildEventDataOrBuilder
    * @return The artifacts.
    */
   com.google.events.cloud.cloudbuild.v1.Artifacts getArtifacts();
+
   /**
    *
    *
@@ -569,6 +596,7 @@ public interface BuildEventDataOrBuilder
    * @return The logsBucket.
    */
   java.lang.String getLogsBucket();
+
   /**
    *
    *
@@ -597,6 +625,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the sourceProvenance field is set.
    */
   boolean hasSourceProvenance();
+
   /**
    *
    *
@@ -609,6 +638,7 @@ public interface BuildEventDataOrBuilder
    * @return The sourceProvenance.
    */
   com.google.events.cloud.cloudbuild.v1.SourceProvenance getSourceProvenance();
+
   /**
    *
    *
@@ -633,6 +663,7 @@ public interface BuildEventDataOrBuilder
    * @return The buildTriggerId.
    */
   java.lang.String getBuildTriggerId();
+
   /**
    *
    *
@@ -659,6 +690,7 @@ public interface BuildEventDataOrBuilder
    * @return Whether the options field is set.
    */
   boolean hasOptions();
+
   /**
    *
    *
@@ -671,6 +703,7 @@ public interface BuildEventDataOrBuilder
    * @return The options.
    */
   com.google.events.cloud.cloudbuild.v1.BuildOptions getOptions();
+
   /**
    *
    *
@@ -694,6 +727,7 @@ public interface BuildEventDataOrBuilder
    * @return The logUrl.
    */
   java.lang.String getLogUrl();
+
   /**
    *
    *
@@ -717,6 +751,7 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, string&gt; substitutions = 29;</code>
    */
   int getSubstitutionsCount();
+
   /**
    *
    *
@@ -727,9 +762,11 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, string&gt; substitutions = 29;</code>
    */
   boolean containsSubstitutions(java.lang.String key);
+
   /** Use {@link #getSubstitutionsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getSubstitutions();
+
   /**
    *
    *
@@ -740,6 +777,7 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, string&gt; substitutions = 29;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getSubstitutionsMap();
+
   /**
    *
    *
@@ -754,6 +792,7 @@ public interface BuildEventDataOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -777,6 +816,7 @@ public interface BuildEventDataOrBuilder
    * @return A list containing the tags.
    */
   java.util.List<java.lang.String> getTagsList();
+
   /**
    *
    *
@@ -789,6 +829,7 @@ public interface BuildEventDataOrBuilder
    * @return The count of tags.
    */
   int getTagsCount();
+
   /**
    *
    *
@@ -802,6 +843,7 @@ public interface BuildEventDataOrBuilder
    * @return The tags at the given index.
    */
   java.lang.String getTags(int index);
+
   /**
    *
    *
@@ -826,6 +868,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Secret secrets = 32;</code>
    */
   java.util.List<com.google.events.cloud.cloudbuild.v1.Secret> getSecretsList();
+
   /**
    *
    *
@@ -836,6 +879,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Secret secrets = 32;</code>
    */
   com.google.events.cloud.cloudbuild.v1.Secret getSecrets(int index);
+
   /**
    *
    *
@@ -846,6 +890,7 @@ public interface BuildEventDataOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Secret secrets = 32;</code>
    */
   int getSecretsCount();
+
   /**
    *
    *
@@ -857,6 +902,7 @@ public interface BuildEventDataOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.cloudbuild.v1.SecretOrBuilder>
       getSecretsOrBuilderList();
+
   /**
    *
    *
@@ -884,6 +930,7 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, .google.events.cloud.cloudbuild.v1.TimeSpan&gt; timing = 33;</code>
    */
   int getTimingCount();
+
   /**
    *
    *
@@ -900,9 +947,11 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, .google.events.cloud.cloudbuild.v1.TimeSpan&gt; timing = 33;</code>
    */
   boolean containsTiming(java.lang.String key);
+
   /** Use {@link #getTimingMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.cloud.cloudbuild.v1.TimeSpan> getTiming();
+
   /**
    *
    *
@@ -919,6 +968,7 @@ public interface BuildEventDataOrBuilder
    * <code>map&lt;string, .google.events.cloud.cloudbuild.v1.TimeSpan&gt; timing = 33;</code>
    */
   java.util.Map<java.lang.String, com.google.events.cloud.cloudbuild.v1.TimeSpan> getTimingMap();
+
   /**
    *
    *
@@ -939,6 +989,7 @@ public interface BuildEventDataOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.cloud.cloudbuild.v1.TimeSpan defaultValue);
+
   /**
    *
    *

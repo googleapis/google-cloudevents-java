@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.alloydb.v1.SslConfig)
     SslConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SslConfig.newBuilder() to construct.
   private SslConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -135,6 +136,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>SSL_MODE_UNSPECIFIED = 0;</code>
      */
     public static final int SSL_MODE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -145,6 +147,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>SSL_MODE_ALLOW = 1;</code>
      */
     public static final int SSL_MODE_ALLOW_VALUE = 1;
+
     /**
      *
      *
@@ -157,6 +160,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>SSL_MODE_REQUIRE = 2;</code>
      */
     public static final int SSL_MODE_REQUIRE_VALUE = 2;
+
     /**
      *
      *
@@ -300,6 +304,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>CA_SOURCE_UNSPECIFIED = 0;</code>
      */
     public static final int CA_SOURCE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -394,6 +399,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
 
   public static final int SSL_MODE_FIELD_NUMBER = 1;
   private int sslMode_ = 0;
+
   /**
    *
    *
@@ -409,6 +415,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
   public int getSslModeValue() {
     return sslMode_;
   }
+
   /**
    *
    *
@@ -431,6 +438,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
 
   public static final int CA_SOURCE_FIELD_NUMBER = 2;
   private int caSource_ = 0;
+
   /**
    *
    *
@@ -447,6 +455,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
   public int getCaSourceValue() {
     return caSource_;
   }
+
   /**
    *
    *
@@ -642,6 +651,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -836,6 +846,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private int sslMode_ = 0;
+
     /**
      *
      *
@@ -851,6 +862,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     public int getSslModeValue() {
       return sslMode_;
     }
+
     /**
      *
      *
@@ -869,6 +881,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -888,6 +901,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.alloydb.v1.SslConfig.SslMode.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -909,6 +923,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -928,6 +943,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int caSource_ = 0;
+
     /**
      *
      *
@@ -944,6 +960,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     public int getCaSourceValue() {
       return caSource_;
     }
+
     /**
      *
      *
@@ -963,6 +980,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -983,6 +1001,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.alloydb.v1.SslConfig.CaSource.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1005,6 +1024,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

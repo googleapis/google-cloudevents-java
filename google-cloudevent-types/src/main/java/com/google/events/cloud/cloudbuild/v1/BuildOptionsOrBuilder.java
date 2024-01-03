@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface BuildOptionsOrBuilder
    * @return A list containing the sourceProvenanceHash.
    */
   java.util.List<com.google.events.cloud.cloudbuild.v1.Hash.HashType> getSourceProvenanceHashList();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface BuildOptionsOrBuilder
    * @return The count of sourceProvenanceHash.
    */
   int getSourceProvenanceHashCount();
+
   /**
    *
    *
@@ -63,6 +65,7 @@ public interface BuildOptionsOrBuilder
    * @return The sourceProvenanceHash at the given index.
    */
   com.google.events.cloud.cloudbuild.v1.Hash.HashType getSourceProvenanceHash(int index);
+
   /**
    *
    *
@@ -76,6 +79,7 @@ public interface BuildOptionsOrBuilder
    * @return A list containing the enum numeric values on the wire for sourceProvenanceHash.
    */
   java.util.List<java.lang.Integer> getSourceProvenanceHashValueList();
+
   /**
    *
    *
@@ -104,6 +108,7 @@ public interface BuildOptionsOrBuilder
    * @return The enum numeric value on the wire for requestedVerifyOption.
    */
   int getRequestedVerifyOptionValue();
+
   /**
    *
    *
@@ -130,6 +135,7 @@ public interface BuildOptionsOrBuilder
    * @return The enum numeric value on the wire for machineType.
    */
   int getMachineTypeValue();
+
   /**
    *
    *
@@ -176,6 +182,7 @@ public interface BuildOptionsOrBuilder
    * @return The enum numeric value on the wire for substitutionOption.
    */
   int getSubstitutionOptionValue();
+
   /**
    *
    *
@@ -207,6 +214,7 @@ public interface BuildOptionsOrBuilder
    * @return The enum numeric value on the wire for logStreamingOption.
    */
   int getLogStreamingOptionValue();
+
   /**
    *
    *
@@ -236,6 +244,7 @@ public interface BuildOptionsOrBuilder
    * @return The workerPool.
    */
   java.lang.String getWorkerPool();
+
   /**
    *
    *
@@ -263,6 +272,7 @@ public interface BuildOptionsOrBuilder
    * @return The enum numeric value on the wire for logging.
    */
   int getLoggingValue();
+
   /**
    *
    *
@@ -293,6 +303,7 @@ public interface BuildOptionsOrBuilder
    * @return A list containing the env.
    */
   java.util.List<java.lang.String> getEnvList();
+
   /**
    *
    *
@@ -309,6 +320,7 @@ public interface BuildOptionsOrBuilder
    * @return The count of env.
    */
   int getEnvCount();
+
   /**
    *
    *
@@ -326,6 +338,7 @@ public interface BuildOptionsOrBuilder
    * @return The env at the given index.
    */
   java.lang.String getEnv(int index);
+
   /**
    *
    *
@@ -359,6 +372,7 @@ public interface BuildOptionsOrBuilder
    * @return A list containing the secretEnv.
    */
   java.util.List<java.lang.String> getSecretEnvList();
+
   /**
    *
    *
@@ -374,6 +388,7 @@ public interface BuildOptionsOrBuilder
    * @return The count of secretEnv.
    */
   int getSecretEnvCount();
+
   /**
    *
    *
@@ -390,6 +405,7 @@ public interface BuildOptionsOrBuilder
    * @return The secretEnv at the given index.
    */
   java.lang.String getSecretEnv(int index);
+
   /**
    *
    *
@@ -423,6 +439,7 @@ public interface BuildOptionsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Volume volumes = 14;</code>
    */
   java.util.List<com.google.events.cloud.cloudbuild.v1.Volume> getVolumesList();
+
   /**
    *
    *
@@ -439,6 +456,7 @@ public interface BuildOptionsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Volume volumes = 14;</code>
    */
   com.google.events.cloud.cloudbuild.v1.Volume getVolumes(int index);
+
   /**
    *
    *
@@ -455,6 +473,7 @@ public interface BuildOptionsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.Volume volumes = 14;</code>
    */
   int getVolumesCount();
+
   /**
    *
    *
@@ -472,6 +491,7 @@ public interface BuildOptionsOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.cloudbuild.v1.VolumeOrBuilder>
       getVolumesOrBuilderList();
+
   /**
    *
    *

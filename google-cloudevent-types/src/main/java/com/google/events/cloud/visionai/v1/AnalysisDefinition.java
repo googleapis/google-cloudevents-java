@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.AnalysisDefinition)
     AnalysisDefinitionOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AnalysisDefinition.newBuilder() to construct.
   private AnalysisDefinition(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -76,6 +77,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.visionai.v1.AnalyzerDefinition> analyzers_;
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
   public java.util.List<com.google.events.cloud.visionai.v1.AnalyzerDefinition> getAnalyzersList() {
     return analyzers_;
   }
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       getAnalyzersOrBuilderList() {
     return analyzers_;
   }
+
   /**
    *
    *
@@ -116,6 +120,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
   public int getAnalyzersCount() {
     return analyzers_.size();
   }
+
   /**
    *
    *
@@ -129,6 +134,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
   public com.google.events.cloud.visionai.v1.AnalyzerDefinition getAnalyzers(int index) {
     return analyzers_.get(index);
   }
+
   /**
    *
    *
@@ -306,6 +312,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -576,6 +583,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         return analyzersBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -592,6 +600,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         return analyzersBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -608,6 +617,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         return analyzersBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -631,6 +641,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -651,6 +662,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -673,6 +685,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -696,6 +709,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -716,6 +730,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -736,6 +751,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -757,6 +773,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -776,6 +793,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -795,6 +813,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       }
       return this;
     }
+
     /**
      *
      *
@@ -808,6 +827,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         int index) {
       return getAnalyzersFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -825,6 +845,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         return analyzersBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -842,6 +863,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
         return java.util.Collections.unmodifiableList(analyzers_);
       }
     }
+
     /**
      *
      *
@@ -855,6 +877,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
       return getAnalyzersFieldBuilder()
           .addBuilder(com.google.events.cloud.visionai.v1.AnalyzerDefinition.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -870,6 +893,7 @@ public final class AnalysisDefinition extends com.google.protobuf.GeneratedMessa
           .addBuilder(
               index, com.google.events.cloud.visionai.v1.AnalyzerDefinition.getDefaultInstance());
     }
+
     /**
      *
      *

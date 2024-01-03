@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.gkebackup.v1.Namespaces)
     NamespacesOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Namespaces.newBuilder() to construct.
   private Namespaces(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList namespaces_;
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getNamespacesList() {
     return namespaces_;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
   public int getNamespacesCount() {
     return namespaces_.size();
   }
+
   /**
    *
    *
@@ -114,6 +118,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getNamespaces(int index) {
     return namespaces_.get(index);
   }
+
   /**
    *
    *
@@ -296,6 +301,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -502,6 +508,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -516,6 +523,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getNamespacesList() {
       return namespaces_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -530,6 +538,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     public int getNamespacesCount() {
       return namespaces_.size();
     }
+
     /**
      *
      *
@@ -545,6 +554,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getNamespaces(int index) {
       return namespaces_.get(index);
     }
+
     /**
      *
      *
@@ -560,6 +570,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getNamespacesBytes(int index) {
       return namespaces_.getByteString(index);
     }
+
     /**
      *
      *
@@ -582,6 +593,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -603,6 +615,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -621,6 +634,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -638,6 +652,7 @@ public final class Namespaces extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

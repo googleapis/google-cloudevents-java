@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface ArrayValueOrBuilder
    * <code>repeated .google.events.cloud.firestore.v1.Value values = 1;</code>
    */
   java.util.List<com.google.events.cloud.firestore.v1.Value> getValuesList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface ArrayValueOrBuilder
    * <code>repeated .google.events.cloud.firestore.v1.Value values = 1;</code>
    */
   com.google.events.cloud.firestore.v1.Value getValues(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface ArrayValueOrBuilder
    * <code>repeated .google.events.cloud.firestore.v1.Value values = 1;</code>
    */
   int getValuesCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface ArrayValueOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.firestore.v1.ValueOrBuilder>
       getValuesOrBuilderList();
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec>
       getGraphInputChannelSpecsList();
+
   /**
    *
    *
@@ -51,6 +52,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpec
       getGraphInputChannelSpecs(int index);
+
   /**
    *
    *
@@ -64,6 +66,7 @@ public interface ProcessorIOSpecOrBuilder
    * </code>
    */
   int getGraphInputChannelSpecsCount();
+
   /**
    *
    *
@@ -80,6 +83,7 @@ public interface ProcessorIOSpecOrBuilder
           ? extends
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphInputChannelSpecOrBuilder>
       getGraphInputChannelSpecsOrBuilderList();
+
   /**
    *
    *
@@ -108,6 +112,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   java.util.List<com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec>
       getGraphOutputChannelSpecsList();
+
   /**
    *
    *
@@ -121,6 +126,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpec
       getGraphOutputChannelSpecs(int index);
+
   /**
    *
    *
@@ -133,6 +139,7 @@ public interface ProcessorIOSpecOrBuilder
    * </code>
    */
   int getGraphOutputChannelSpecsCount();
+
   /**
    *
    *
@@ -148,6 +155,7 @@ public interface ProcessorIOSpecOrBuilder
           ? extends
               com.google.events.cloud.visionai.v1.ProcessorIOSpec.GraphOutputChannelSpecOrBuilder>
       getGraphOutputChannelSpecsOrBuilderList();
+
   /**
    *
    *
@@ -176,6 +184,7 @@ public interface ProcessorIOSpecOrBuilder
   java.util.List<
           com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec>
       getInstanceResourceInputBindingSpecsList();
+
   /**
    *
    *
@@ -189,6 +198,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceInputBindingSpec
       getInstanceResourceInputBindingSpecs(int index);
+
   /**
    *
    *
@@ -201,6 +211,7 @@ public interface ProcessorIOSpecOrBuilder
    * </code>
    */
   int getInstanceResourceInputBindingSpecsCount();
+
   /**
    *
    *
@@ -217,6 +228,7 @@ public interface ProcessorIOSpecOrBuilder
               com.google.events.cloud.visionai.v1.ProcessorIOSpec
                   .InstanceResourceInputBindingSpecOrBuilder>
       getInstanceResourceInputBindingSpecsOrBuilderList();
+
   /**
    *
    *
@@ -248,6 +260,7 @@ public interface ProcessorIOSpecOrBuilder
   java.util.List<
           com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec>
       getInstanceResourceOutputBindingSpecsList();
+
   /**
    *
    *
@@ -264,6 +277,7 @@ public interface ProcessorIOSpecOrBuilder
    */
   com.google.events.cloud.visionai.v1.ProcessorIOSpec.InstanceResourceOutputBindingSpec
       getInstanceResourceOutputBindingSpecs(int index);
+
   /**
    *
    *
@@ -279,6 +293,7 @@ public interface ProcessorIOSpecOrBuilder
    * </code>
    */
   int getInstanceResourceOutputBindingSpecsCount();
+
   /**
    *
    *
@@ -298,6 +313,7 @@ public interface ProcessorIOSpecOrBuilder
               com.google.events.cloud.visionai.v1.ProcessorIOSpec
                   .InstanceResourceOutputBindingSpecOrBuilder>
       getInstanceResourceOutputBindingSpecsOrBuilderList();
+
   /**
    *
    *

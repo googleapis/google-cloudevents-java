@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.UpgradeStatus)
     UpgradeStatusOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use UpgradeStatus.newBuilder() to construct.
   private UpgradeStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -132,6 +133,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -142,6 +144,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
      * <code>RUNNING = 1;</code>
      */
     public static final int RUNNING_VALUE = 1;
+
     /**
      *
      *
@@ -152,6 +155,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
      * <code>FAILED = 2;</code>
      */
     public static final int FAILED_VALUE = 2;
+
     /**
      *
      *
@@ -254,6 +258,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object version_ = "";
+
   /**
    *
    *
@@ -277,6 +282,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -303,6 +309,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
 
   public static final int STATE_FIELD_NUMBER = 2;
   private int state_ = 0;
+
   /**
    *
    *
@@ -318,6 +325,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
   public int getStateValue() {
     return state_;
   }
+
   /**
    *
    *
@@ -340,6 +348,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
 
   public static final int ERROR_FIELD_NUMBER = 3;
   private com.google.rpc.Status error_;
+
   /**
    *
    *
@@ -355,6 +364,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
   public boolean hasError() {
     return error_ != null;
   }
+
   /**
    *
    *
@@ -370,6 +380,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
   public com.google.rpc.Status getError() {
     return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
   }
+
   /**
    *
    *
@@ -386,6 +397,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
 
   public static final int START_TIME_FIELD_NUMBER = 4;
   private com.google.protobuf.Timestamp startTime_;
+
   /**
    *
    *
@@ -401,6 +413,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStartTime() {
     return startTime_ != null;
   }
+
   /**
    *
    *
@@ -416,6 +429,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getStartTime() {
     return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
   }
+
   /**
    *
    *
@@ -434,6 +448,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object previousVersion_ = "";
+
   /**
    *
    *
@@ -457,6 +472,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -690,6 +706,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -936,6 +953,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object version_ = "";
+
     /**
      *
      *
@@ -958,6 +976,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -980,6 +999,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1001,6 +1021,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1018,6 +1039,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1042,6 +1064,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     }
 
     private int state_ = 0;
+
     /**
      *
      *
@@ -1057,6 +1080,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -1075,6 +1099,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1094,6 +1119,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.vmmigration.v1.UpgradeStatus.State.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1115,6 +1141,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1137,6 +1164,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.rpc.Status, com.google.rpc.Status.Builder, com.google.rpc.StatusOrBuilder>
         errorBuilder_;
+
     /**
      *
      *
@@ -1151,6 +1179,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     public boolean hasError() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1169,6 +1198,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return errorBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1191,6 +1221,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1210,6 +1241,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1235,6 +1267,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1254,6 +1287,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1268,6 +1302,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getErrorFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1284,6 +1319,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
       }
     }
+
     /**
      *
      *
@@ -1313,6 +1349,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         startTimeBuilder_;
+
     /**
      *
      *
@@ -1327,6 +1364,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStartTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1345,6 +1383,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return startTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1367,6 +1406,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1386,6 +1426,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1411,6 +1452,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1430,6 +1472,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1444,6 +1487,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStartTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1460,6 +1504,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
       }
     }
+
     /**
      *
      *
@@ -1487,6 +1532,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object previousVersion_ = "";
+
     /**
      *
      *
@@ -1509,6 +1555,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1531,6 +1578,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1552,6 +1600,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1569,6 +1618,7 @@ public final class UpgradeStatus extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

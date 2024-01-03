@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return The cloudSqlId.
    */
   java.lang.String getCloudSqlId();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return Whether the settings field is set.
    */
   boolean hasSettings();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return The settings.
    */
   com.google.events.cloud.clouddms.v1.CloudSqlSettings getSettings();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return The privateIp.
    */
   java.lang.String getPrivateIp();
+
   /**
    *
    *
@@ -122,6 +126,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return The publicIp.
    */
   java.lang.String getPublicIp();
+
   /**
    *
    *
@@ -149,6 +154,7 @@ public interface CloudSqlConnectionProfileOrBuilder
    * @return The additionalPublicIp.
    */
   java.lang.String getAdditionalPublicIp();
+
   /**
    *
    *

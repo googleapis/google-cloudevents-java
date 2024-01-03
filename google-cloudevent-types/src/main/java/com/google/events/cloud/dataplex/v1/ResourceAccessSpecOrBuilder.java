@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return A list containing the readers.
    */
   java.util.List<java.lang.String> getReadersList();
+
   /**
    *
    *
@@ -51,6 +52,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The count of readers.
    */
   int getReadersCount();
+
   /**
    *
    *
@@ -66,6 +68,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The readers at the given index.
    */
   java.lang.String getReaders(int index);
+
   /**
    *
    *
@@ -94,6 +97,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return A list containing the writers.
    */
   java.util.List<java.lang.String> getWritersList();
+
   /**
    *
    *
@@ -106,6 +110,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The count of writers.
    */
   int getWritersCount();
+
   /**
    *
    *
@@ -119,6 +124,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The writers at the given index.
    */
   java.lang.String getWriters(int index);
+
   /**
    *
    *
@@ -145,6 +151,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return A list containing the owners.
    */
   java.util.List<java.lang.String> getOwnersList();
+
   /**
    *
    *
@@ -157,6 +164,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The count of owners.
    */
   int getOwnersCount();
+
   /**
    *
    *
@@ -170,6 +178,7 @@ public interface ResourceAccessSpecOrBuilder
    * @return The owners at the given index.
    */
   java.lang.String getOwners(int index);
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DocumentEventDataOrBuilder
    * @return Whether the value field is set.
    */
   boolean hasValue();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface DocumentEventDataOrBuilder
    * @return The value.
    */
   com.google.events.cloud.firestore.v1.Document getValue();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface DocumentEventDataOrBuilder
    * @return Whether the oldValue field is set.
    */
   boolean hasOldValue();
+
   /**
    *
    *
@@ -87,6 +90,7 @@ public interface DocumentEventDataOrBuilder
    * @return The oldValue.
    */
   com.google.events.cloud.firestore.v1.Document getOldValue();
+
   /**
    *
    *
@@ -112,6 +116,7 @@ public interface DocumentEventDataOrBuilder
    * @return Whether the updateMask field is set.
    */
   boolean hasUpdateMask();
+
   /**
    *
    *
@@ -125,6 +130,7 @@ public interface DocumentEventDataOrBuilder
    * @return The updateMask.
    */
   com.google.events.cloud.firestore.v1.DocumentMask getUpdateMask();
+
   /**
    *
    *

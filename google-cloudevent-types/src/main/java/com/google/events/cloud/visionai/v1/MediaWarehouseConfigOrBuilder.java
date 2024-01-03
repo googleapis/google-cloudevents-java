@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface MediaWarehouseConfigOrBuilder
    * @return The corpus.
    */
   java.lang.String getCorpus();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface MediaWarehouseConfigOrBuilder
    * @return The region.
    */
   java.lang.String getRegion();
+
   /**
    *
    *
@@ -90,6 +92,7 @@ public interface MediaWarehouseConfigOrBuilder
    * @return Whether the ttl field is set.
    */
   boolean hasTtl();
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public interface MediaWarehouseConfigOrBuilder
    * @return The ttl.
    */
   com.google.protobuf.Duration getTtl();
+
   /**
    *
    *

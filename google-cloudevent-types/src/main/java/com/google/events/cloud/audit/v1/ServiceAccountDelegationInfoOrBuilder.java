@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public interface ServiceAccountDelegationInfoOrBuilder
    * @return Whether the firstPartyPrincipal field is set.
    */
   boolean hasFirstPartyPrincipal();
+
   /**
    *
    *
@@ -52,6 +53,7 @@ public interface ServiceAccountDelegationInfoOrBuilder
    */
   com.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.FirstPartyPrincipal
       getFirstPartyPrincipal();
+
   /**
    *
    *
@@ -80,6 +82,7 @@ public interface ServiceAccountDelegationInfoOrBuilder
    * @return Whether the thirdPartyPrincipal field is set.
    */
   boolean hasThirdPartyPrincipal();
+
   /**
    *
    *
@@ -95,6 +98,7 @@ public interface ServiceAccountDelegationInfoOrBuilder
    */
   com.google.events.cloud.audit.v1.ServiceAccountDelegationInfo.ThirdPartyPrincipal
       getThirdPartyPrincipal();
+
   /**
    *
    *

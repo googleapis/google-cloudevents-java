@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface DeviceOrBuilder
    * @return The id.
    */
   java.lang.String getId();
+
   /**
    *
    *
@@ -66,6 +67,7 @@ public interface DeviceOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -112,6 +114,7 @@ public interface DeviceOrBuilder
    * <code>repeated .google.events.cloud.iot.v1.DeviceCredential credentials = 12;</code>
    */
   java.util.List<com.google.events.cloud.iot.v1.DeviceCredential> getCredentialsList();
+
   /**
    *
    *
@@ -127,6 +130,7 @@ public interface DeviceOrBuilder
    * <code>repeated .google.events.cloud.iot.v1.DeviceCredential credentials = 12;</code>
    */
   com.google.events.cloud.iot.v1.DeviceCredential getCredentials(int index);
+
   /**
    *
    *
@@ -142,6 +146,7 @@ public interface DeviceOrBuilder
    * <code>repeated .google.events.cloud.iot.v1.DeviceCredential credentials = 12;</code>
    */
   int getCredentialsCount();
+
   /**
    *
    *
@@ -158,6 +163,7 @@ public interface DeviceOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.iot.v1.DeviceCredentialOrBuilder>
       getCredentialsOrBuilderList();
+
   /**
    *
    *
@@ -190,6 +196,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastHeartbeatTime field is set.
    */
   boolean hasLastHeartbeatTime();
+
   /**
    *
    *
@@ -206,6 +213,7 @@ public interface DeviceOrBuilder
    * @return The lastHeartbeatTime.
    */
   com.google.protobuf.Timestamp getLastHeartbeatTime();
+
   /**
    *
    *
@@ -235,6 +243,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastEventTime field is set.
    */
   boolean hasLastEventTime();
+
   /**
    *
    *
@@ -249,6 +258,7 @@ public interface DeviceOrBuilder
    * @return The lastEventTime.
    */
   com.google.protobuf.Timestamp getLastEventTime();
+
   /**
    *
    *
@@ -276,6 +286,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastStateTime field is set.
    */
   boolean hasLastStateTime();
+
   /**
    *
    *
@@ -290,6 +301,7 @@ public interface DeviceOrBuilder
    * @return The lastStateTime.
    */
   com.google.protobuf.Timestamp getLastStateTime();
+
   /**
    *
    *
@@ -317,6 +329,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastConfigAckTime field is set.
    */
   boolean hasLastConfigAckTime();
+
   /**
    *
    *
@@ -331,6 +344,7 @@ public interface DeviceOrBuilder
    * @return The lastConfigAckTime.
    */
   com.google.protobuf.Timestamp getLastConfigAckTime();
+
   /**
    *
    *
@@ -357,6 +371,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastConfigSendTime field is set.
    */
   boolean hasLastConfigSendTime();
+
   /**
    *
    *
@@ -370,6 +385,7 @@ public interface DeviceOrBuilder
    * @return The lastConfigSendTime.
    */
   com.google.protobuf.Timestamp getLastConfigSendTime();
+
   /**
    *
    *
@@ -411,6 +427,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastErrorTime field is set.
    */
   boolean hasLastErrorTime();
+
   /**
    *
    *
@@ -425,6 +442,7 @@ public interface DeviceOrBuilder
    * @return The lastErrorTime.
    */
   com.google.protobuf.Timestamp getLastErrorTime();
+
   /**
    *
    *
@@ -454,6 +472,7 @@ public interface DeviceOrBuilder
    * @return Whether the lastErrorStatus field is set.
    */
   boolean hasLastErrorStatus();
+
   /**
    *
    *
@@ -470,6 +489,7 @@ public interface DeviceOrBuilder
    * @return The lastErrorStatus.
    */
   com.google.rpc.Status getLastErrorStatus();
+
   /**
    *
    *
@@ -501,6 +521,7 @@ public interface DeviceOrBuilder
    * @return Whether the config field is set.
    */
   boolean hasConfig();
+
   /**
    *
    *
@@ -517,6 +538,7 @@ public interface DeviceOrBuilder
    * @return The config.
    */
   com.google.events.cloud.iot.v1.DeviceConfig getConfig();
+
   /**
    *
    *
@@ -545,6 +567,7 @@ public interface DeviceOrBuilder
    * @return Whether the state field is set.
    */
   boolean hasState();
+
   /**
    *
    *
@@ -558,6 +581,7 @@ public interface DeviceOrBuilder
    * @return The state.
    */
   com.google.events.cloud.iot.v1.DeviceState getState();
+
   /**
    *
    *
@@ -584,6 +608,7 @@ public interface DeviceOrBuilder
    * @return The enum numeric value on the wire for logLevel.
    */
   int getLogLevelValue();
+
   /**
    *
    *
@@ -617,6 +642,7 @@ public interface DeviceOrBuilder
    * <code>map&lt;string, string&gt; metadata = 17;</code>
    */
   int getMetadataCount();
+
   /**
    *
    *
@@ -635,9 +661,11 @@ public interface DeviceOrBuilder
    * <code>map&lt;string, string&gt; metadata = 17;</code>
    */
   boolean containsMetadata(java.lang.String key);
+
   /** Use {@link #getMetadataMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getMetadata();
+
   /**
    *
    *
@@ -656,6 +684,7 @@ public interface DeviceOrBuilder
    * <code>map&lt;string, string&gt; metadata = 17;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getMetadataMap();
+
   /**
    *
    *
@@ -678,6 +707,7 @@ public interface DeviceOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -709,6 +739,7 @@ public interface DeviceOrBuilder
    * @return Whether the gatewayConfig field is set.
    */
   boolean hasGatewayConfig();
+
   /**
    *
    *
@@ -721,6 +752,7 @@ public interface DeviceOrBuilder
    * @return The gatewayConfig.
    */
   com.google.events.cloud.iot.v1.GatewayConfig getGatewayConfig();
+
   /**
    *
    *

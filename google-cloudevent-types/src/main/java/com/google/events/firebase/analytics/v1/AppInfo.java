@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.analytics.v1.AppInfo)
     AppInfoOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use AppInfo.newBuilder() to construct.
   private AppInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -75,6 +76,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object appVersion_ = "";
+
   /**
    *
    *
@@ -99,6 +101,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -128,6 +131,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object appInstanceId_ = "";
+
   /**
    *
    *
@@ -152,6 +156,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -181,6 +186,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object appStore_ = "";
+
   /**
    *
    *
@@ -206,6 +212,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -236,6 +243,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object appPlatform_ = "";
+
   /**
    *
    *
@@ -260,6 +268,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -289,6 +298,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object appId_ = "";
+
   /**
    *
    *
@@ -312,6 +322,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -531,6 +542,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -775,6 +787,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object appVersion_ = "";
+
     /**
      *
      *
@@ -798,6 +811,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -821,6 +835,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -843,6 +858,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -861,6 +877,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -886,6 +903,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object appInstanceId_ = "";
+
     /**
      *
      *
@@ -909,6 +927,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -932,6 +951,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -954,6 +974,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -972,6 +993,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -997,6 +1019,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object appStore_ = "";
+
     /**
      *
      *
@@ -1021,6 +1044,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1045,6 +1069,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1068,6 +1093,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1087,6 +1113,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1113,6 +1140,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object appPlatform_ = "";
+
     /**
      *
      *
@@ -1136,6 +1164,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1159,6 +1188,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1181,6 +1211,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1199,6 +1230,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1224,6 +1256,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object appId_ = "";
+
     /**
      *
      *
@@ -1246,6 +1279,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1268,6 +1302,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1289,6 +1324,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1306,6 +1342,7 @@ public final class AppInfo extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

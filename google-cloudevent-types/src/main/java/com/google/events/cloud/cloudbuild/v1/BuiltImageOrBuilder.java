@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface BuiltImageOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface BuiltImageOrBuilder
    * @return The digest.
    */
   java.lang.String getDigest();
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public interface BuiltImageOrBuilder
    * @return Whether the pushTiming field is set.
    */
   boolean hasPushTiming();
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public interface BuiltImageOrBuilder
    * @return The pushTiming.
    */
   com.google.events.cloud.cloudbuild.v1.TimeSpan getPushTiming();
+
   /**
    *
    *

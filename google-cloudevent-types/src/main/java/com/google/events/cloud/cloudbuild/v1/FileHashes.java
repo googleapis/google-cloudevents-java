@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.FileHashes)
     FileHashesOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use FileHashes.newBuilder() to construct.
   private FileHashes(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -72,6 +73,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.cloudbuild.v1.Hash> fileHash_;
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
   public java.util.List<com.google.events.cloud.cloudbuild.v1.Hash> getFileHashList() {
     return fileHash_;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       getFileHashOrBuilderList() {
     return fileHash_;
   }
+
   /**
    *
    *
@@ -112,6 +116,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
   public int getFileHashCount() {
     return fileHash_.size();
   }
+
   /**
    *
    *
@@ -125,6 +130,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
   public com.google.events.cloud.cloudbuild.v1.Hash getFileHash(int index) {
     return fileHash_.get(index);
   }
+
   /**
    *
    *
@@ -300,6 +306,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -562,6 +569,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
         return fileHashBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -578,6 +586,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
         return fileHashBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -594,6 +603,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
         return fileHashBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -616,6 +626,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -636,6 +647,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -658,6 +670,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -680,6 +693,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -699,6 +713,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -719,6 +734,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -739,6 +755,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -758,6 +775,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -777,6 +795,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -789,6 +808,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.cloudbuild.v1.Hash.Builder getFileHashBuilder(int index) {
       return getFileHashFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -805,6 +825,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
         return fileHashBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -822,6 +843,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
         return java.util.Collections.unmodifiableList(fileHash_);
       }
     }
+
     /**
      *
      *
@@ -835,6 +857,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       return getFileHashFieldBuilder()
           .addBuilder(com.google.events.cloud.cloudbuild.v1.Hash.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -848,6 +871,7 @@ public final class FileHashes extends com.google.protobuf.GeneratedMessageV3
       return getFileHashFieldBuilder()
           .addBuilder(index, com.google.events.cloud.cloudbuild.v1.Hash.getDefaultInstance());
     }
+
     /**
      *
      *

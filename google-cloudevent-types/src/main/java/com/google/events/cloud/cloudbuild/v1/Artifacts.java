@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.Artifacts)
     ArtifactsOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use Artifacts.newBuilder() to construct.
   private Artifacts(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -89,6 +90,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return The location.
      */
     java.lang.String getLocation();
+
     /**
      *
      *
@@ -118,6 +120,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return A list containing the paths.
      */
     java.util.List<java.lang.String> getPathsList();
+
     /**
      *
      *
@@ -130,6 +133,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return The count of paths.
      */
     int getPathsCount();
+
     /**
      *
      *
@@ -143,6 +147,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return The paths at the given index.
      */
     java.lang.String getPaths(int index);
+
     /**
      *
      *
@@ -169,6 +174,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return Whether the timing field is set.
      */
     boolean hasTiming();
+
     /**
      *
      *
@@ -181,6 +187,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      * @return The timing.
      */
     com.google.events.cloud.cloudbuild.v1.TimeSpan getTiming();
+
     /**
      *
      *
@@ -192,6 +199,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
      */
     com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder getTimingOrBuilder();
   }
+
   /**
    *
    *
@@ -207,6 +215,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       // @@protoc_insertion_point(message_implements:google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects)
       ArtifactObjectsOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use ArtifactObjects.newBuilder() to construct.
     private ArtifactObjects(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -247,6 +256,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object location_ = "";
+
     /**
      *
      *
@@ -274,6 +284,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         return s;
       }
     }
+
     /**
      *
      *
@@ -306,6 +317,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList paths_;
+
     /**
      *
      *
@@ -320,6 +332,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getPathsList() {
       return paths_;
     }
+
     /**
      *
      *
@@ -334,6 +347,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public int getPathsCount() {
       return paths_.size();
     }
+
     /**
      *
      *
@@ -349,6 +363,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getPaths(int index) {
       return paths_.get(index);
     }
+
     /**
      *
      *
@@ -367,6 +382,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
 
     public static final int TIMING_FIELD_NUMBER = 3;
     private com.google.events.cloud.cloudbuild.v1.TimeSpan timing_;
+
     /**
      *
      *
@@ -382,6 +398,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public boolean hasTiming() {
       return timing_ != null;
     }
+
     /**
      *
      *
@@ -399,6 +416,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.cloudbuild.v1.TimeSpan.getDefaultInstance()
           : timing_;
     }
+
     /**
      *
      *
@@ -607,6 +625,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -846,6 +865,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       private int bitField0_;
 
       private java.lang.Object location_ = "";
+
       /**
        *
        *
@@ -872,6 +892,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -898,6 +919,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -923,6 +945,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -944,6 +967,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -980,6 +1004,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
           bitField0_ |= 0x00000002;
         }
       }
+
       /**
        *
        *
@@ -994,6 +1019,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ProtocolStringList getPathsList() {
         return paths_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -1008,6 +1034,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       public int getPathsCount() {
         return paths_.size();
       }
+
       /**
        *
        *
@@ -1023,6 +1050,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       public java.lang.String getPaths(int index) {
         return paths_.get(index);
       }
+
       /**
        *
        *
@@ -1038,6 +1066,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       public com.google.protobuf.ByteString getPathsBytes(int index) {
         return paths_.getByteString(index);
       }
+
       /**
        *
        *
@@ -1060,6 +1089,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1081,6 +1111,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1099,6 +1130,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1116,6 +1148,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1145,6 +1178,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
               com.google.events.cloud.cloudbuild.v1.TimeSpan.Builder,
               com.google.events.cloud.cloudbuild.v1.TimeSpanOrBuilder>
           timingBuilder_;
+
       /**
        *
        *
@@ -1159,6 +1193,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       public boolean hasTiming() {
         return ((bitField0_ & 0x00000004) != 0);
       }
+
       /**
        *
        *
@@ -1179,6 +1214,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
           return timingBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -1201,6 +1237,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1221,6 +1258,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1246,6 +1284,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1265,6 +1304,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1279,6 +1319,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         onChanged();
         return getTimingFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -1297,6 +1338,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
               : timing_;
         }
       }
+
       /**
        *
        *
@@ -1394,6 +1436,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList images_;
+
   /**
    *
    *
@@ -1413,6 +1456,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.ProtocolStringList getImagesList() {
     return images_;
   }
+
   /**
    *
    *
@@ -1432,6 +1476,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
   public int getImagesCount() {
     return images_.size();
   }
+
   /**
    *
    *
@@ -1452,6 +1497,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getImages(int index) {
     return images_.get(index);
   }
+
   /**
    *
    *
@@ -1475,6 +1521,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
 
   public static final int OBJECTS_FIELD_NUMBER = 2;
   private com.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects objects_;
+
   /**
    *
    *
@@ -1497,6 +1544,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
   public boolean hasObjects() {
     return objects_ != null;
   }
+
   /**
    *
    *
@@ -1521,6 +1569,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         ? com.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects.getDefaultInstance()
         : objects_;
   }
+
   /**
    *
    *
@@ -1725,6 +1774,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -1949,6 +1999,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         bitField0_ |= 0x00000001;
       }
     }
+
     /**
      *
      *
@@ -1968,6 +2019,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ProtocolStringList getImagesList() {
       return images_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -1987,6 +2039,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public int getImagesCount() {
       return images_.size();
     }
+
     /**
      *
      *
@@ -2007,6 +2060,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getImages(int index) {
       return images_.get(index);
     }
+
     /**
      *
      *
@@ -2027,6 +2081,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public com.google.protobuf.ByteString getImagesBytes(int index) {
       return images_.getByteString(index);
     }
+
     /**
      *
      *
@@ -2054,6 +2109,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2080,6 +2136,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2103,6 +2160,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2125,6 +2183,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2159,6 +2218,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects.Builder,
             com.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjectsOrBuilder>
         objectsBuilder_;
+
     /**
      *
      *
@@ -2180,6 +2240,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
     public boolean hasObjects() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -2207,6 +2268,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
         return objectsBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -2237,6 +2299,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2264,6 +2327,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2299,6 +2363,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2325,6 +2390,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -2347,6 +2413,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getObjectsFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -2373,6 +2440,7 @@ public final class Artifacts extends com.google.protobuf.GeneratedMessageV3
             : objects_;
       }
     }
+
     /**
      *
      *

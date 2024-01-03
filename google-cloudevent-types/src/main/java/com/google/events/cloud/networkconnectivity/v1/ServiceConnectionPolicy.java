@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy)
     ServiceConnectionPolicyOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ServiceConnectionPolicy.newBuilder() to construct.
   private ServiceConnectionPolicy(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -158,6 +159,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * <code>STATE_UNSPECIFIED = 0;</code>
      */
     public static final int STATE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -168,6 +170,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * <code>ACTIVE = 1;</code>
      */
     public static final int ACTIVE_VALUE = 1;
+
     /**
      *
      *
@@ -179,6 +182,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * <code>FAILED = 2;</code>
      */
     public static final int FAILED_VALUE = 2;
+
     /**
      *
      *
@@ -189,6 +193,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * <code>CREATING = 3;</code>
      */
     public static final int CREATING_VALUE = 3;
+
     /**
      *
      *
@@ -308,6 +313,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return A list containing the subnetworks.
      */
     java.util.List<java.lang.String> getSubnetworksList();
+
     /**
      *
      *
@@ -322,6 +328,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The count of subnetworks.
      */
     int getSubnetworksCount();
+
     /**
      *
      *
@@ -337,6 +344,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The subnetworks at the given index.
      */
     java.lang.String getSubnetworks(int index);
+
     /**
      *
      *
@@ -365,6 +373,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return Whether the limit field is set.
      */
     boolean hasLimit();
+
     /**
      *
      *
@@ -378,6 +387,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      */
     long getLimit();
   }
+
   /**
    *
    *
@@ -394,6 +404,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig)
       PscConfigOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use PscConfig.newBuilder() to construct.
     private PscConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -436,6 +447,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private com.google.protobuf.LazyStringList subnetworks_;
+
     /**
      *
      *
@@ -452,6 +464,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public com.google.protobuf.ProtocolStringList getSubnetworksList() {
       return subnetworks_;
     }
+
     /**
      *
      *
@@ -468,6 +481,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public int getSubnetworksCount() {
       return subnetworks_.size();
     }
+
     /**
      *
      *
@@ -485,6 +499,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public java.lang.String getSubnetworks(int index) {
       return subnetworks_.get(index);
     }
+
     /**
      *
      *
@@ -505,6 +520,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     public static final int LIMIT_FIELD_NUMBER = 2;
     private long limit_ = 0L;
+
     /**
      *
      *
@@ -520,6 +536,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public boolean hasLimit() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -727,6 +744,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -970,6 +988,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           bitField0_ |= 0x00000001;
         }
       }
+
       /**
        *
        *
@@ -986,6 +1005,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public com.google.protobuf.ProtocolStringList getSubnetworksList() {
         return subnetworks_.getUnmodifiableView();
       }
+
       /**
        *
        *
@@ -1002,6 +1022,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public int getSubnetworksCount() {
         return subnetworks_.size();
       }
+
       /**
        *
        *
@@ -1019,6 +1040,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public java.lang.String getSubnetworks(int index) {
         return subnetworks_.get(index);
       }
+
       /**
        *
        *
@@ -1036,6 +1058,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public com.google.protobuf.ByteString getSubnetworksBytes(int index) {
         return subnetworks_.getByteString(index);
       }
+
       /**
        *
        *
@@ -1060,6 +1083,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1083,6 +1107,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1103,6 +1128,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1122,6 +1148,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1148,6 +1175,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private long limit_;
+
       /**
        *
        *
@@ -1163,6 +1191,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public boolean hasLimit() {
         return ((bitField0_ & 0x00000002) != 0);
       }
+
       /**
        *
        *
@@ -1178,6 +1207,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public long getLimit() {
         return limit_;
       }
+
       /**
        *
        *
@@ -1197,6 +1227,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -1302,6 +1333,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
+
     /**
      *
      *
@@ -1329,6 +1361,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The consumerForwardingRule.
      */
     java.lang.String getConsumerForwardingRule();
+
     /**
      *
      *
@@ -1355,6 +1388,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The consumerAddress.
      */
     java.lang.String getConsumerAddress();
+
     /**
      *
      *
@@ -1381,6 +1415,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The enum numeric value on the wire for errorType.
      */
     int getErrorTypeValue();
+
     /**
      *
      *
@@ -1407,6 +1442,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return Whether the error field is set.
      */
     boolean hasError();
+
     /**
      *
      *
@@ -1419,6 +1455,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The error.
      */
     com.google.rpc.Status getError();
+
     /**
      *
      *
@@ -1442,6 +1479,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The gceOperation.
      */
     java.lang.String getGceOperation();
+
     /**
      *
      *
@@ -1467,6 +1505,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The consumerTargetProject.
      */
     java.lang.String getConsumerTargetProject();
+
     /**
      *
      *
@@ -1492,6 +1531,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      * @return The pscConnectionId.
      */
     java.lang.String getPscConnectionId();
+
     /**
      *
      *
@@ -1505,6 +1545,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
      */
     com.google.protobuf.ByteString getPscConnectionIdBytes();
   }
+
   /**
    *
    *
@@ -1520,6 +1561,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection)
       PscConnectionOrBuilder {
     private static final long serialVersionUID = 0L;
+
     // Use PscConnection.newBuilder() to construct.
     private PscConnection(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
@@ -1565,6 +1607,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     public static final int STATE_FIELD_NUMBER = 1;
     private int state_ = 0;
+
     /**
      *
      *
@@ -1581,6 +1624,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public int getStateValue() {
       return state_;
     }
+
     /**
      *
      *
@@ -1608,6 +1652,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object consumerForwardingRule_ = "";
+
     /**
      *
      *
@@ -1632,6 +1677,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return s;
       }
     }
+
     /**
      *
      *
@@ -1661,6 +1707,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object consumerAddress_ = "";
+
     /**
      *
      *
@@ -1684,6 +1731,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return s;
       }
     }
+
     /**
      *
      *
@@ -1710,6 +1758,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     public static final int ERROR_TYPE_FIELD_NUMBER = 4;
     private int errorType_ = 0;
+
     /**
      *
      *
@@ -1726,6 +1775,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public int getErrorTypeValue() {
       return errorType_;
     }
+
     /**
      *
      *
@@ -1749,6 +1799,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     public static final int ERROR_FIELD_NUMBER = 5;
     private com.google.rpc.Status error_;
+
     /**
      *
      *
@@ -1764,6 +1815,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public boolean hasError() {
       return error_ != null;
     }
+
     /**
      *
      *
@@ -1779,6 +1831,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public com.google.rpc.Status getError() {
       return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
     }
+
     /**
      *
      *
@@ -1797,6 +1850,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object gceOperation_ = "";
+
     /**
      *
      *
@@ -1820,6 +1874,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return s;
       }
     }
+
     /**
      *
      *
@@ -1848,6 +1903,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object consumerTargetProject_ = "";
+
     /**
      *
      *
@@ -1871,6 +1927,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return s;
       }
     }
+
     /**
      *
      *
@@ -1899,6 +1956,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
     @SuppressWarnings("serial")
     private volatile java.lang.Object pscConnectionId_ = "";
+
     /**
      *
      *
@@ -1922,6 +1980,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return s;
       }
     }
+
     /**
      *
      *
@@ -2210,6 +2269,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       Builder builder = new Builder(parent);
       return builder;
     }
+
     /**
      *
      *
@@ -2521,6 +2581,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       private int bitField0_;
 
       private int state_ = 0;
+
       /**
        *
        *
@@ -2537,6 +2598,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public int getStateValue() {
         return state_;
       }
+
       /**
        *
        *
@@ -2556,6 +2618,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2579,6 +2642,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
                 .UNRECOGNIZED
             : result;
       }
+
       /**
        *
        *
@@ -2602,6 +2666,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2622,6 +2687,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private java.lang.Object consumerForwardingRule_ = "";
+
       /**
        *
        *
@@ -2645,6 +2711,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -2668,6 +2735,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -2690,6 +2758,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2708,6 +2777,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2733,6 +2803,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private java.lang.Object consumerAddress_ = "";
+
       /**
        *
        *
@@ -2755,6 +2826,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -2777,6 +2849,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -2798,6 +2871,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2815,6 +2889,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2839,6 +2914,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private int errorType_ = 0;
+
       /**
        *
        *
@@ -2856,6 +2932,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public int getErrorTypeValue() {
         return errorType_;
       }
+
       /**
        *
        *
@@ -2876,6 +2953,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2898,6 +2976,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             ? com.google.events.cloud.networkconnectivity.v1.ConnectionErrorType.UNRECOGNIZED
             : result;
       }
+
       /**
        *
        *
@@ -2922,6 +3001,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -2946,6 +3026,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       private com.google.protobuf.SingleFieldBuilderV3<
               com.google.rpc.Status, com.google.rpc.Status.Builder, com.google.rpc.StatusOrBuilder>
           errorBuilder_;
+
       /**
        *
        *
@@ -2960,6 +3041,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       public boolean hasError() {
         return ((bitField0_ & 0x00000010) != 0);
       }
+
       /**
        *
        *
@@ -2978,6 +3060,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return errorBuilder_.getMessage();
         }
       }
+
       /**
        *
        *
@@ -3000,6 +3083,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3019,6 +3103,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3044,6 +3129,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3063,6 +3149,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3077,6 +3164,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return getErrorFieldBuilder().getBuilder();
       }
+
       /**
        *
        *
@@ -3093,6 +3181,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return error_ == null ? com.google.rpc.Status.getDefaultInstance() : error_;
         }
       }
+
       /**
        *
        *
@@ -3117,6 +3206,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private java.lang.Object gceOperation_ = "";
+
       /**
        *
        *
@@ -3139,6 +3229,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3161,6 +3252,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3182,6 +3274,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3199,6 +3292,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3223,6 +3317,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private java.lang.Object consumerTargetProject_ = "";
+
       /**
        *
        *
@@ -3245,6 +3340,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3267,6 +3363,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3288,6 +3385,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3305,6 +3403,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3329,6 +3428,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
 
       private java.lang.Object pscConnectionId_ = "";
+
       /**
        *
        *
@@ -3351,6 +3451,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (java.lang.String) ref;
         }
       }
+
       /**
        *
        *
@@ -3373,6 +3474,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           return (com.google.protobuf.ByteString) ref;
         }
       }
+
       /**
        *
        *
@@ -3394,6 +3496,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3411,6 +3514,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         onChanged();
         return this;
       }
+
       /**
        *
        *
@@ -3509,6 +3613,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
+
   /**
    *
    *
@@ -3535,6 +3640,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -3564,6 +3670,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   public static final int CREATE_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp createTime_;
+
   /**
    *
    *
@@ -3579,6 +3686,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
+
   /**
    *
    *
@@ -3594,6 +3702,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
+
   /**
    *
    *
@@ -3610,6 +3719,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 3;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -3625,6 +3735,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -3640,6 +3751,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -3680,6 +3792,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public int getLabelsCount() {
     return internalGetLabels().getMap().size();
   }
+
   /**
    *
    *
@@ -3696,12 +3809,14 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     }
     return internalGetLabels().getMap().containsKey(key);
   }
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getLabels() {
     return getLabelsMap();
   }
+
   /**
    *
    *
@@ -3715,6 +3830,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
     return internalGetLabels().getMap();
   }
+
   /**
    *
    *
@@ -3735,6 +3851,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
+
   /**
    *
    *
@@ -3760,6 +3877,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -3783,6 +3901,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -3811,6 +3930,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object network_ = "";
+
   /**
    *
    *
@@ -3836,6 +3956,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -3866,6 +3987,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object serviceClass_ = "";
+
   /**
    *
    *
@@ -3893,6 +4015,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       return s;
     }
   }
+
   /**
    *
    *
@@ -3923,6 +4046,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
 
   public static final int INFRASTRUCTURE_FIELD_NUMBER = 8;
   private int infrastructure_ = 0;
+
   /**
    *
    *
@@ -3939,6 +4063,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public int getInfrastructureValue() {
     return infrastructure_;
   }
+
   /**
    *
    *
@@ -3963,6 +4088,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public static final int PSC_CONFIG_FIELD_NUMBER = 9;
   private com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConfig
       pscConfig_;
+
   /**
    *
    *
@@ -3981,6 +4107,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public boolean hasPscConfig() {
     return pscConfig_ != null;
   }
+
   /**
    *
    *
@@ -4003,6 +4130,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             .getDefaultInstance()
         : pscConfig_;
   }
+
   /**
    *
    *
@@ -4030,6 +4158,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   private java.util.List<
           com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection>
       pscConnections_;
+
   /**
    *
    *
@@ -4048,6 +4177,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       getPscConnectionsList() {
     return pscConnections_;
   }
+
   /**
    *
    *
@@ -4068,6 +4198,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       getPscConnectionsOrBuilderList() {
     return pscConnections_;
   }
+
   /**
    *
    *
@@ -4084,6 +4215,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
   public int getPscConnectionsCount() {
     return pscConnections_.size();
   }
+
   /**
    *
    *
@@ -4101,6 +4233,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       getPscConnections(int index) {
     return pscConnections_.get(index);
   }
+
   /**
    *
    *
@@ -4391,6 +4524,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -4796,6 +4930,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     private int bitField0_;
 
     private java.lang.Object name_ = "";
+
     /**
      *
      *
@@ -4821,6 +4956,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -4846,6 +4982,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -4870,6 +5007,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4890,6 +5028,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4922,6 +5061,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         createTimeBuilder_;
+
     /**
      *
      *
@@ -4936,6 +5076,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public boolean hasCreateTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -4956,6 +5097,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return createTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -4978,6 +5120,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -4997,6 +5140,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5022,6 +5166,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5041,6 +5186,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5055,6 +5201,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return getCreateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -5073,6 +5220,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             : createTime_;
       }
     }
+
     /**
      *
      *
@@ -5105,6 +5253,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -5119,6 +5268,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -5139,6 +5289,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -5161,6 +5312,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5180,6 +5332,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5205,6 +5358,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5224,6 +5378,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5238,6 +5393,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -5256,6 +5412,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -5307,6 +5464,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public int getLabelsCount() {
       return internalGetLabels().getMap().size();
     }
+
     /**
      *
      *
@@ -5323,12 +5481,14 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return internalGetLabels().getMap().containsKey(key);
     }
+
     /** Use {@link #getLabelsMap()} instead. */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getLabels() {
       return getLabelsMap();
     }
+
     /**
      *
      *
@@ -5342,6 +5502,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public java.util.Map<java.lang.String, java.lang.String> getLabelsMap() {
       return internalGetLabels().getMap();
     }
+
     /**
      *
      *
@@ -5362,6 +5523,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
+
     /**
      *
      *
@@ -5388,6 +5550,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       internalGetMutableLabels().getMutableMap().clear();
       return this;
     }
+
     /**
      *
      *
@@ -5404,12 +5567,14 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
     }
+
     /** Use alternate mutation accessors instead. */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getMutableLabels() {
       bitField0_ |= 0x00000008;
       return internalGetMutableLabels().getMutableMap();
     }
+
     /**
      *
      *
@@ -5430,6 +5595,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       bitField0_ |= 0x00000008;
       return this;
     }
+
     /**
      *
      *
@@ -5446,6 +5612,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -5468,6 +5635,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -5490,6 +5658,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -5511,6 +5680,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5528,6 +5698,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5552,6 +5723,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     }
 
     private java.lang.Object network_ = "";
+
     /**
      *
      *
@@ -5576,6 +5748,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -5600,6 +5773,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -5623,6 +5797,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5642,6 +5817,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5668,6 +5844,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     }
 
     private java.lang.Object serviceClass_ = "";
+
     /**
      *
      *
@@ -5694,6 +5871,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -5720,6 +5898,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -5745,6 +5924,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5766,6 +5946,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5794,6 +5975,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     }
 
     private int infrastructure_ = 0;
+
     /**
      *
      *
@@ -5810,6 +5992,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public int getInfrastructureValue() {
       return infrastructure_;
     }
+
     /**
      *
      *
@@ -5829,6 +6012,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5849,6 +6033,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
           ? com.google.events.cloud.networkconnectivity.v1.Infrastructure.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -5872,6 +6057,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5900,6 +6086,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy
                 .PscConfigOrBuilder>
         pscConfigBuilder_;
+
     /**
      *
      *
@@ -5917,6 +6104,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
     public boolean hasPscConfig() {
       return ((bitField0_ & 0x00000100) != 0);
     }
+
     /**
      *
      *
@@ -5942,6 +6130,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return pscConfigBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -5968,6 +6157,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -5992,6 +6182,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6023,6 +6214,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6045,6 +6237,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -6063,6 +6256,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       onChanged();
       return getPscConfigFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -6086,6 +6280,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
             : pscConfig_;
       }
     }
+
     /**
      *
      *
@@ -6161,6 +6356,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return pscConnectionsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -6180,6 +6376,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return pscConnectionsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -6200,6 +6397,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return pscConnectionsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -6228,6 +6426,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6253,6 +6452,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6280,6 +6480,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6308,6 +6509,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6332,6 +6534,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6357,6 +6560,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6384,6 +6588,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6406,6 +6611,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6428,6 +6634,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
       }
       return this;
     }
+
     /**
      *
      *
@@ -6445,6 +6652,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         getPscConnectionsBuilder(int index) {
       return getPscConnectionsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -6466,6 +6674,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return pscConnectionsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -6489,6 +6698,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
         return java.util.Collections.unmodifiableList(pscConnections_);
       }
     }
+
     /**
      *
      *
@@ -6509,6 +6719,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
               com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection
                   .getDefaultInstance());
     }
+
     /**
      *
      *
@@ -6530,6 +6741,7 @@ public final class ServiceConnectionPolicy extends com.google.protobuf.Generated
               com.google.events.cloud.networkconnectivity.v1.ServiceConnectionPolicy.PscConnection
                   .getDefaultInstance());
     }
+
     /**
      *
      *

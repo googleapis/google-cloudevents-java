@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface AppGatewayOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -62,6 +63,7 @@ public interface AppGatewayOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -74,6 +76,7 @@ public interface AppGatewayOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -97,6 +100,7 @@ public interface AppGatewayOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -109,6 +113,7 @@ public interface AppGatewayOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -130,6 +135,7 @@ public interface AppGatewayOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -140,9 +146,11 @@ public interface AppGatewayOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -153,6 +161,7 @@ public interface AppGatewayOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -167,6 +176,7 @@ public interface AppGatewayOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -191,6 +201,7 @@ public interface AppGatewayOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -218,6 +229,7 @@ public interface AppGatewayOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -244,6 +256,7 @@ public interface AppGatewayOrBuilder
    * @return The enum numeric value on the wire for type.
    */
   int getTypeValue();
+
   /**
    *
    *
@@ -269,6 +282,7 @@ public interface AppGatewayOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -294,6 +308,7 @@ public interface AppGatewayOrBuilder
    * @return The uri.
    */
   java.lang.String getUri();
+
   /**
    *
    *
@@ -320,6 +335,7 @@ public interface AppGatewayOrBuilder
    */
   java.util.List<com.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.AllocatedConnection>
       getAllocatedConnectionsList();
+
   /**
    *
    *
@@ -333,6 +349,7 @@ public interface AppGatewayOrBuilder
    */
   com.google.events.cloud.beyondcorp.appgateways.v1.AppGateway.AllocatedConnection
       getAllocatedConnections(int index);
+
   /**
    *
    *
@@ -345,6 +362,7 @@ public interface AppGatewayOrBuilder
    * </code>
    */
   int getAllocatedConnectionsCount();
+
   /**
    *
    *
@@ -361,6 +379,7 @@ public interface AppGatewayOrBuilder
               com.google.events.cloud.beyondcorp.appgateways.v1.AppGateway
                   .AllocatedConnectionOrBuilder>
       getAllocatedConnectionsOrBuilderList();
+
   /**
    *
    *
@@ -387,6 +406,7 @@ public interface AppGatewayOrBuilder
    * @return The enum numeric value on the wire for hostType.
    */
   int getHostTypeValue();
+
   /**
    *
    *

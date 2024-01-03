@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +40,7 @@ public interface ArtifactsOrBuilder
    * @return A list containing the images.
    */
   java.util.List<java.lang.String> getImagesList();
+
   /**
    *
    *
@@ -57,6 +58,7 @@ public interface ArtifactsOrBuilder
    * @return The count of images.
    */
   int getImagesCount();
+
   /**
    *
    *
@@ -75,6 +77,7 @@ public interface ArtifactsOrBuilder
    * @return The images at the given index.
    */
   java.lang.String getImages(int index);
+
   /**
    *
    *
@@ -113,6 +116,7 @@ public interface ArtifactsOrBuilder
    * @return Whether the objects field is set.
    */
   boolean hasObjects();
+
   /**
    *
    *
@@ -132,6 +136,7 @@ public interface ArtifactsOrBuilder
    * @return The objects.
    */
   com.google.events.cloud.cloudbuild.v1.Artifacts.ArtifactObjects getObjects();
+
   /**
    *
    *

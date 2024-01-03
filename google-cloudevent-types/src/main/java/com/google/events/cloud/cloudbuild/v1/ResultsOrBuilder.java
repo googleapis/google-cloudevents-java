@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ public interface ResultsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuiltImage images = 2;</code>
    */
   java.util.List<com.google.events.cloud.cloudbuild.v1.BuiltImage> getImagesList();
+
   /**
    *
    *
@@ -43,6 +44,7 @@ public interface ResultsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuiltImage images = 2;</code>
    */
   com.google.events.cloud.cloudbuild.v1.BuiltImage getImages(int index);
+
   /**
    *
    *
@@ -53,6 +55,7 @@ public interface ResultsOrBuilder
    * <code>repeated .google.events.cloud.cloudbuild.v1.BuiltImage images = 2;</code>
    */
   int getImagesCount();
+
   /**
    *
    *
@@ -64,6 +67,7 @@ public interface ResultsOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.cloudbuild.v1.BuiltImageOrBuilder>
       getImagesOrBuilderList();
+
   /**
    *
    *
@@ -88,6 +92,7 @@ public interface ResultsOrBuilder
    * @return A list containing the buildStepImages.
    */
   java.util.List<java.lang.String> getBuildStepImagesList();
+
   /**
    *
    *
@@ -101,6 +106,7 @@ public interface ResultsOrBuilder
    * @return The count of buildStepImages.
    */
   int getBuildStepImagesCount();
+
   /**
    *
    *
@@ -115,6 +121,7 @@ public interface ResultsOrBuilder
    * @return The buildStepImages at the given index.
    */
   java.lang.String getBuildStepImages(int index);
+
   /**
    *
    *
@@ -142,6 +149,7 @@ public interface ResultsOrBuilder
    * @return The artifactManifest.
    */
   java.lang.String getArtifactManifest();
+
   /**
    *
    *
@@ -184,6 +192,7 @@ public interface ResultsOrBuilder
    * @return A list containing the buildStepOutputs.
    */
   java.util.List<com.google.protobuf.ByteString> getBuildStepOutputsList();
+
   /**
    *
    *
@@ -200,6 +209,7 @@ public interface ResultsOrBuilder
    * @return The count of buildStepOutputs.
    */
   int getBuildStepOutputsCount();
+
   /**
    *
    *
@@ -230,6 +240,7 @@ public interface ResultsOrBuilder
    * @return Whether the artifactTiming field is set.
    */
   boolean hasArtifactTiming();
+
   /**
    *
    *
@@ -242,6 +253,7 @@ public interface ResultsOrBuilder
    * @return The artifactTiming.
    */
   com.google.events.cloud.cloudbuild.v1.TimeSpan getArtifactTiming();
+
   /**
    *
    *

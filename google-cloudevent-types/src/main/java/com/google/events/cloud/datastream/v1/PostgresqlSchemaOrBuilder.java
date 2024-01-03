@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface PostgresqlSchemaOrBuilder
    * @return The schema.
    */
   java.lang.String getSchema();
+
   /**
    *
    *
@@ -58,6 +59,7 @@ public interface PostgresqlSchemaOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.PostgresqlTable postgresql_tables = 2;</code>
    */
   java.util.List<com.google.events.cloud.datastream.v1.PostgresqlTable> getPostgresqlTablesList();
+
   /**
    *
    *
@@ -68,6 +70,7 @@ public interface PostgresqlSchemaOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.PostgresqlTable postgresql_tables = 2;</code>
    */
   com.google.events.cloud.datastream.v1.PostgresqlTable getPostgresqlTables(int index);
+
   /**
    *
    *
@@ -78,6 +81,7 @@ public interface PostgresqlSchemaOrBuilder
    * <code>repeated .google.events.cloud.datastream.v1.PostgresqlTable postgresql_tables = 2;</code>
    */
   int getPostgresqlTablesCount();
+
   /**
    *
    *
@@ -89,6 +93,7 @@ public interface PostgresqlSchemaOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.datastream.v1.PostgresqlTableOrBuilder>
       getPostgresqlTablesOrBuilderList();
+
   /**
    *
    *

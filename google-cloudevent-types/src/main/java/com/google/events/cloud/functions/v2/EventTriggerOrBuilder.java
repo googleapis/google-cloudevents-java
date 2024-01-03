@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface EventTriggerOrBuilder
    * @return The trigger.
    */
   java.lang.String getTrigger();
+
   /**
    *
    *
@@ -65,6 +66,7 @@ public interface EventTriggerOrBuilder
    * @return The triggerRegion.
    */
   java.lang.String getTriggerRegion();
+
   /**
    *
    *
@@ -95,6 +97,7 @@ public interface EventTriggerOrBuilder
    * @return The eventType.
    */
   java.lang.String getEventType();
+
   /**
    *
    *
@@ -120,6 +123,7 @@ public interface EventTriggerOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.EventFilter event_filters = 4;</code>
    */
   java.util.List<com.google.events.cloud.functions.v2.EventFilter> getEventFiltersList();
+
   /**
    *
    *
@@ -130,6 +134,7 @@ public interface EventTriggerOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.EventFilter event_filters = 4;</code>
    */
   com.google.events.cloud.functions.v2.EventFilter getEventFilters(int index);
+
   /**
    *
    *
@@ -140,6 +145,7 @@ public interface EventTriggerOrBuilder
    * <code>repeated .google.events.cloud.functions.v2.EventFilter event_filters = 4;</code>
    */
   int getEventFiltersCount();
+
   /**
    *
    *
@@ -151,6 +157,7 @@ public interface EventTriggerOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.functions.v2.EventFilterOrBuilder>
       getEventFiltersOrBuilderList();
+
   /**
    *
    *
@@ -179,6 +186,7 @@ public interface EventTriggerOrBuilder
    * @return The pubsubTopic.
    */
   java.lang.String getPubsubTopic();
+
   /**
    *
    *
@@ -213,6 +221,7 @@ public interface EventTriggerOrBuilder
    * @return The serviceAccountEmail.
    */
   java.lang.String getServiceAccountEmail();
+
   /**
    *
    *
@@ -243,6 +252,7 @@ public interface EventTriggerOrBuilder
    * @return The enum numeric value on the wire for retryPolicy.
    */
   int getRetryPolicyValue();
+
   /**
    *
    *
@@ -271,6 +281,7 @@ public interface EventTriggerOrBuilder
    * @return The channel.
    */
   java.lang.String getChannel();
+
   /**
    *
    *

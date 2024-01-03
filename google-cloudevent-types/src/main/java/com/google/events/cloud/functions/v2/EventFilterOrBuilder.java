@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface EventFilterOrBuilder
    * @return The attribute.
    */
   java.lang.String getAttribute();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface EventFilterOrBuilder
    * @return The value.
    */
   java.lang.String getValue();
+
   /**
    *
    *
@@ -88,6 +90,7 @@ public interface EventFilterOrBuilder
    * @return The operator.
    */
   java.lang.String getOperator();
+
   /**
    *
    *

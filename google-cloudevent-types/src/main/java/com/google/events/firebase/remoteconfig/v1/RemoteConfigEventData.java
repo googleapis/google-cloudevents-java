@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     // @@protoc_insertion_point(message_implements:google.events.firebase.remoteconfig.v1.RemoteConfigEventData)
     RemoteConfigEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use RemoteConfigEventData.newBuilder() to construct.
   private RemoteConfigEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -71,6 +72,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int VERSION_NUMBER_FIELD_NUMBER = 1;
   private long versionNumber_ = 0L;
+
   /**
    *
    *
@@ -89,6 +91,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int UPDATE_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp updateTime_;
+
   /**
    *
    *
@@ -104,6 +107,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
   public boolean hasUpdateTime() {
     return updateTime_ != null;
   }
+
   /**
    *
    *
@@ -119,6 +123,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
   public com.google.protobuf.Timestamp getUpdateTime() {
     return updateTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : updateTime_;
   }
+
   /**
    *
    *
@@ -135,6 +140,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int UPDATE_USER_FIELD_NUMBER = 3;
   private com.google.events.firebase.remoteconfig.v1.RemoteConfigUser updateUser_;
+
   /**
    *
    *
@@ -151,6 +157,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
   public boolean hasUpdateUser() {
     return updateUser_ != null;
   }
+
   /**
    *
    *
@@ -169,6 +176,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
         ? com.google.events.firebase.remoteconfig.v1.RemoteConfigUser.getDefaultInstance()
         : updateUser_;
   }
+
   /**
    *
    *
@@ -191,6 +199,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object description_ = "";
+
   /**
    *
    *
@@ -214,6 +223,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       return s;
     }
   }
+
   /**
    *
    *
@@ -240,6 +250,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int UPDATE_ORIGIN_FIELD_NUMBER = 5;
   private int updateOrigin_ = 0;
+
   /**
    *
    *
@@ -256,6 +267,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
   public int getUpdateOriginValue() {
     return updateOrigin_;
   }
+
   /**
    *
    *
@@ -280,6 +292,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int UPDATE_TYPE_FIELD_NUMBER = 6;
   private int updateType_ = 0;
+
   /**
    *
    *
@@ -295,6 +308,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
   public int getUpdateTypeValue() {
     return updateType_;
   }
+
   /**
    *
    *
@@ -317,6 +331,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
 
   public static final int ROLLBACK_SOURCE_FIELD_NUMBER = 7;
   private long rollbackSource_ = 0L;
+
   /**
    *
    *
@@ -570,6 +585,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -844,6 +860,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     private int bitField0_;
 
     private long versionNumber_;
+
     /**
      *
      *
@@ -859,6 +876,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public long getVersionNumber() {
       return versionNumber_;
     }
+
     /**
      *
      *
@@ -878,6 +896,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -902,6 +921,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         updateTimeBuilder_;
+
     /**
      *
      *
@@ -916,6 +936,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public boolean hasUpdateTime() {
       return ((bitField0_ & 0x00000002) != 0);
     }
+
     /**
      *
      *
@@ -936,6 +957,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
         return updateTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -958,6 +980,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -977,6 +1000,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1002,6 +1026,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1021,6 +1046,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1035,6 +1061,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return getUpdateTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1053,6 +1080,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
             : updateTime_;
       }
     }
+
     /**
      *
      *
@@ -1085,6 +1113,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
             com.google.events.firebase.remoteconfig.v1.RemoteConfigUser.Builder,
             com.google.events.firebase.remoteconfig.v1.RemoteConfigUserOrBuilder>
         updateUserBuilder_;
+
     /**
      *
      *
@@ -1100,6 +1129,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public boolean hasUpdateUser() {
       return ((bitField0_ & 0x00000004) != 0);
     }
+
     /**
      *
      *
@@ -1121,6 +1151,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
         return updateUserBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1145,6 +1176,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1166,6 +1198,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1195,6 +1228,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1215,6 +1249,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1231,6 +1266,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return getUpdateUserFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1251,6 +1287,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
             : updateUser_;
       }
     }
+
     /**
      *
      *
@@ -1279,6 +1316,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     }
 
     private java.lang.Object description_ = "";
+
     /**
      *
      *
@@ -1301,6 +1339,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1323,6 +1362,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1344,6 +1384,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1361,6 +1402,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1385,6 +1427,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     }
 
     private int updateOrigin_ = 0;
+
     /**
      *
      *
@@ -1401,6 +1444,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public int getUpdateOriginValue() {
       return updateOrigin_;
     }
+
     /**
      *
      *
@@ -1420,6 +1464,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1441,6 +1486,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
           ? com.google.events.firebase.remoteconfig.v1.RemoteConfigUpdateOrigin.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1464,6 +1510,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1484,6 +1531,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     }
 
     private int updateType_ = 0;
+
     /**
      *
      *
@@ -1499,6 +1547,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public int getUpdateTypeValue() {
       return updateType_;
     }
+
     /**
      *
      *
@@ -1517,6 +1566,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1536,6 +1586,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
           ? com.google.events.firebase.remoteconfig.v1.RemoteConfigUpdateType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -1558,6 +1609,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1577,6 +1629,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     }
 
     private long rollbackSource_;
+
     /**
      *
      *
@@ -1593,6 +1646,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
     public long getRollbackSource() {
       return rollbackSource_;
     }
+
     /**
      *
      *
@@ -1613,6 +1667,7 @@ public final class RemoteConfigEventData extends com.google.protobuf.GeneratedMe
       onChanged();
       return this;
     }
+
     /**
      *
      *

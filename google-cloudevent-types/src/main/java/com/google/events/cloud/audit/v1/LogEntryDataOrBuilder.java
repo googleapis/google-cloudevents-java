@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface LogEntryDataOrBuilder
    * @return The logName.
    */
   java.lang.String getLogName();
+
   /**
    *
    *
@@ -63,6 +64,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the resource field is set.
    */
   boolean hasResource();
+
   /**
    *
    *
@@ -78,6 +80,7 @@ public interface LogEntryDataOrBuilder
    * @return The resource.
    */
   com.google.api.MonitoredResource getResource();
+
   /**
    *
    *
@@ -105,6 +108,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the protoPayload field is set.
    */
   boolean hasProtoPayload();
+
   /**
    *
    *
@@ -118,6 +122,7 @@ public interface LogEntryDataOrBuilder
    * @return The protoPayload.
    */
   com.google.events.cloud.audit.v1.AuditLog getProtoPayload();
+
   /**
    *
    *
@@ -142,6 +147,7 @@ public interface LogEntryDataOrBuilder
    * @return The insertId.
    */
   java.lang.String getInsertId();
+
   /**
    *
    *
@@ -166,6 +172,7 @@ public interface LogEntryDataOrBuilder
    * <code>map&lt;string, string&gt; labels = 11;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -177,9 +184,11 @@ public interface LogEntryDataOrBuilder
    * <code>map&lt;string, string&gt; labels = 11;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -191,6 +200,7 @@ public interface LogEntryDataOrBuilder
    * <code>map&lt;string, string&gt; labels = 11;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -206,6 +216,7 @@ public interface LogEntryDataOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -231,6 +242,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the operation field is set.
    */
   boolean hasOperation();
+
   /**
    *
    *
@@ -244,6 +256,7 @@ public interface LogEntryDataOrBuilder
    * @return The operation.
    */
   com.google.events.cloud.audit.v1.LogEntryOperation getOperation();
+
   /**
    *
    *
@@ -268,6 +281,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the timestamp field is set.
    */
   boolean hasTimestamp();
+
   /**
    *
    *
@@ -280,6 +294,7 @@ public interface LogEntryDataOrBuilder
    * @return The timestamp.
    */
   com.google.protobuf.Timestamp getTimestamp();
+
   /**
    *
    *
@@ -303,6 +318,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the receiveTimestamp field is set.
    */
   boolean hasReceiveTimestamp();
+
   /**
    *
    *
@@ -315,6 +331,7 @@ public interface LogEntryDataOrBuilder
    * @return The receiveTimestamp.
    */
   com.google.protobuf.Timestamp getReceiveTimestamp();
+
   /**
    *
    *
@@ -338,6 +355,7 @@ public interface LogEntryDataOrBuilder
    * @return The enum numeric value on the wire for severity.
    */
   int getSeverityValue();
+
   /**
    *
    *
@@ -366,6 +384,7 @@ public interface LogEntryDataOrBuilder
    * @return The trace.
    */
   java.lang.String getTrace();
+
   /**
    *
    *
@@ -397,6 +416,7 @@ public interface LogEntryDataOrBuilder
    * @return The spanId.
    */
   java.lang.String getSpanId();
+
   /**
    *
    *
@@ -426,6 +446,7 @@ public interface LogEntryDataOrBuilder
    * @return Whether the split field is set.
    */
   boolean hasSplit();
+
   /**
    *
    *
@@ -439,6 +460,7 @@ public interface LogEntryDataOrBuilder
    * @return The split.
    */
   com.google.events.cloud.audit.v1.LogSplit getSplit();
+
   /**
    *
    *

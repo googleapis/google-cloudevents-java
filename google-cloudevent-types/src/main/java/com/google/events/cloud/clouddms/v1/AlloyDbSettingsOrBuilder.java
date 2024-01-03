@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,6 +39,7 @@ public interface AlloyDbSettingsOrBuilder
    * @return The vpcNetwork.
    */
   java.lang.String getVpcNetwork();
+
   /**
    *
    *
@@ -67,6 +68,7 @@ public interface AlloyDbSettingsOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -78,9 +80,11 @@ public interface AlloyDbSettingsOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -92,6 +96,7 @@ public interface AlloyDbSettingsOrBuilder
    * <code>map&lt;string, string&gt; labels = 3;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -107,6 +112,7 @@ public interface AlloyDbSettingsOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -127,6 +133,7 @@ public interface AlloyDbSettingsOrBuilder
    * @return Whether the primaryInstanceSettings field is set.
    */
   boolean hasPrimaryInstanceSettings();
+
   /**
    * <code>
    * .google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings primary_instance_settings = 4;
@@ -136,6 +143,7 @@ public interface AlloyDbSettingsOrBuilder
    */
   com.google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings
       getPrimaryInstanceSettings();
+
   /**
    * <code>
    * .google.events.cloud.clouddms.v1.AlloyDbSettings.PrimaryInstanceSettings primary_instance_settings = 4;

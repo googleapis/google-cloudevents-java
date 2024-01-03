@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.clouddms.v1.SslConfig)
     SslConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SslConfig.newBuilder() to construct.
   private SslConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -121,6 +122,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>SSL_TYPE_UNSPECIFIED = 0;</code>
      */
     public static final int SSL_TYPE_UNSPECIFIED_VALUE = 0;
+
     /**
      *
      *
@@ -131,6 +133,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
      * <code>SERVER_ONLY = 1;</code>
      */
     public static final int SERVER_ONLY_VALUE = 1;
+
     /**
      *
      *
@@ -228,6 +231,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
 
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_ = 0;
+
   /**
    *
    *
@@ -244,6 +248,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
   public int getTypeValue() {
     return type_;
   }
+
   /**
    *
    *
@@ -426,6 +431,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -607,6 +613,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private int type_ = 0;
+
     /**
      *
      *
@@ -623,6 +630,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
     public int getTypeValue() {
       return type_;
     }
+
     /**
      *
      *
@@ -642,6 +650,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -662,6 +671,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
           ? com.google.events.cloud.clouddms.v1.SslConfig.SslType.UNRECOGNIZED
           : result;
     }
+
     /**
      *
      *
@@ -684,6 +694,7 @@ public final class SslConfig extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface KerberosConfigOrBuilder
    * @return Whether the keytab field is set.
    */
   boolean hasKeytab();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface KerberosConfigOrBuilder
    * @return The keytab.
    */
   com.google.events.cloud.metastore.v1.Secret getKeytab();
+
   /**
    *
    *
@@ -75,6 +77,7 @@ public interface KerberosConfigOrBuilder
    * @return The principal.
    */
   java.lang.String getPrincipal();
+
   /**
    *
    *
@@ -104,6 +107,7 @@ public interface KerberosConfigOrBuilder
    * @return The krb5ConfigGcsUri.
    */
   java.lang.String getKrb5ConfigGcsUri();
+
   /**
    *
    *

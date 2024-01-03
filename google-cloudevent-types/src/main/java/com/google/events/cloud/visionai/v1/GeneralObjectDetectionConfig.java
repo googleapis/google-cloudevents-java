@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class GeneralObjectDetectionConfig extends com.google.protobuf.Gene
     // @@protoc_insertion_point(message_implements:google.events.cloud.visionai.v1.GeneralObjectDetectionConfig)
     GeneralObjectDetectionConfigOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use GeneralObjectDetectionConfig.newBuilder() to construct.
   private GeneralObjectDetectionConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -216,6 +217,7 @@ public final class GeneralObjectDetectionConfig extends com.google.protobuf.Gene
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.CycleStep)
     CycleStepOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CycleStep.newBuilder() to construct.
   private CycleStep(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -81,6 +82,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     private StepCase(int value) {
       this.value = value;
     }
+
     /**
      * @param value The number of the enum to look for.
      * @return The enum associated with the given number.
@@ -116,6 +118,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int INITIALIZING_REPLICATION_FIELD_NUMBER = 3;
+
   /**
    *
    *
@@ -133,6 +136,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasInitializingReplication() {
     return stepCase_ == 3;
   }
+
   /**
    *
    *
@@ -154,6 +158,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.InitializingReplicationStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -175,6 +180,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int REPLICATING_FIELD_NUMBER = 4;
+
   /**
    *
    *
@@ -190,6 +196,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasReplicating() {
     return stepCase_ == 4;
   }
+
   /**
    *
    *
@@ -208,6 +215,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.ReplicatingStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -226,6 +234,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   }
 
   public static final int POST_PROCESSING_FIELD_NUMBER = 5;
+
   /**
    *
    *
@@ -241,6 +250,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasPostProcessing() {
     return stepCase_ == 5;
   }
+
   /**
    *
    *
@@ -259,6 +269,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     }
     return com.google.events.cloud.vmmigration.v1.PostProcessingStep.getDefaultInstance();
   }
+
   /**
    *
    *
@@ -279,6 +290,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
 
   public static final int START_TIME_FIELD_NUMBER = 1;
   private com.google.protobuf.Timestamp startTime_;
+
   /**
    *
    *
@@ -294,6 +306,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasStartTime() {
     return startTime_ != null;
   }
+
   /**
    *
    *
@@ -309,6 +322,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getStartTime() {
     return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
   }
+
   /**
    *
    *
@@ -325,6 +339,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
 
   public static final int END_TIME_FIELD_NUMBER = 2;
   private com.google.protobuf.Timestamp endTime_;
+
   /**
    *
    *
@@ -340,6 +355,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public boolean hasEndTime() {
     return endTime_ != null;
   }
+
   /**
    *
    *
@@ -355,6 +371,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
   public com.google.protobuf.Timestamp getEndTime() {
     return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
   }
+
   /**
    *
    *
@@ -602,6 +619,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -889,6 +907,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.InitializingReplicationStep.Builder,
             com.google.events.cloud.vmmigration.v1.InitializingReplicationStepOrBuilder>
         initializingReplicationBuilder_;
+
     /**
      *
      *
@@ -906,6 +925,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasInitializingReplication() {
       return stepCase_ == 3;
     }
+
     /**
      *
      *
@@ -936,6 +956,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -961,6 +982,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -984,6 +1006,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -1021,6 +1044,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 3;
       return this;
     }
+
     /**
      *
      *
@@ -1048,6 +1072,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1063,6 +1088,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         getInitializingReplicationBuilder() {
       return getInitializingReplicationFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1087,6 +1113,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             .getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1129,6 +1156,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.ReplicatingStep.Builder,
             com.google.events.cloud.vmmigration.v1.ReplicatingStepOrBuilder>
         replicatingBuilder_;
+
     /**
      *
      *
@@ -1144,6 +1172,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasReplicating() {
       return stepCase_ == 4;
     }
+
     /**
      *
      *
@@ -1169,6 +1198,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicatingStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1191,6 +1221,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1211,6 +1242,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1244,6 +1276,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 4;
       return this;
     }
+
     /**
      *
      *
@@ -1269,6 +1302,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1281,6 +1315,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public com.google.events.cloud.vmmigration.v1.ReplicatingStep.Builder getReplicatingBuilder() {
       return getReplicatingFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1302,6 +1337,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.ReplicatingStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1340,6 +1376,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             com.google.events.cloud.vmmigration.v1.PostProcessingStep.Builder,
             com.google.events.cloud.vmmigration.v1.PostProcessingStepOrBuilder>
         postProcessingBuilder_;
+
     /**
      *
      *
@@ -1355,6 +1392,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasPostProcessing() {
       return stepCase_ == 5;
     }
+
     /**
      *
      *
@@ -1380,6 +1418,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.PostProcessingStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1403,6 +1442,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1423,6 +1463,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1457,6 +1498,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       stepCase_ = 5;
       return this;
     }
+
     /**
      *
      *
@@ -1482,6 +1524,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       }
       return this;
     }
+
     /**
      *
      *
@@ -1495,6 +1538,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         getPostProcessingBuilder() {
       return getPostProcessingFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1516,6 +1560,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return com.google.events.cloud.vmmigration.v1.PostProcessingStep.getDefaultInstance();
       }
     }
+
     /**
      *
      *
@@ -1555,6 +1600,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         startTimeBuilder_;
+
     /**
      *
      *
@@ -1569,6 +1615,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasStartTime() {
       return ((bitField0_ & 0x00000008) != 0);
     }
+
     /**
      *
      *
@@ -1587,6 +1634,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return startTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1609,6 +1657,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1628,6 +1677,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1653,6 +1703,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1672,6 +1723,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1686,6 +1738,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getStartTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1702,6 +1755,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
       }
     }
+
     /**
      *
      *
@@ -1734,6 +1788,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.Timestamp.Builder,
             com.google.protobuf.TimestampOrBuilder>
         endTimeBuilder_;
+
     /**
      *
      *
@@ -1748,6 +1803,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
     public boolean hasEndTime() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1766,6 +1822,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return endTimeBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1788,6 +1845,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1807,6 +1865,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1832,6 +1891,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1851,6 +1911,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1865,6 +1926,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return getEndTimeFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1881,6 +1943,7 @@ public final class CycleStep extends com.google.protobuf.GeneratedMessageV3
         return endTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : endTime_;
       }
     }
+
     /**
      *
      *

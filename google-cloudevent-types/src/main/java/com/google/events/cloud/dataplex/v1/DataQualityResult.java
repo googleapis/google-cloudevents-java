@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataplex.v1.DataQualityResult)
     DataQualityResultOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DataQualityResult.newBuilder() to construct.
   private DataQualityResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -70,6 +71,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
 
   public static final int PASSED_FIELD_NUMBER = 5;
   private boolean passed_ = false;
+
   /**
    *
    *
@@ -91,6 +93,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.dataplex.v1.DataQualityDimensionResult>
       dimensions_;
+
   /**
    *
    *
@@ -106,6 +109,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       getDimensionsList() {
     return dimensions_;
   }
+
   /**
    *
    *
@@ -122,6 +126,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       getDimensionsOrBuilderList() {
     return dimensions_;
   }
+
   /**
    *
    *
@@ -136,6 +141,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public int getDimensionsCount() {
     return dimensions_.size();
   }
+
   /**
    *
    *
@@ -150,6 +156,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public com.google.events.cloud.dataplex.v1.DataQualityDimensionResult getDimensions(int index) {
     return dimensions_.get(index);
   }
+
   /**
    *
    *
@@ -170,6 +177,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
 
   @SuppressWarnings("serial")
   private java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRuleResult> rules_;
+
   /**
    *
    *
@@ -183,6 +191,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public java.util.List<com.google.events.cloud.dataplex.v1.DataQualityRuleResult> getRulesList() {
     return rules_;
   }
+
   /**
    *
    *
@@ -198,6 +207,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       getRulesOrBuilderList() {
     return rules_;
   }
+
   /**
    *
    *
@@ -211,6 +221,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public int getRulesCount() {
     return rules_.size();
   }
+
   /**
    *
    *
@@ -224,6 +235,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public com.google.events.cloud.dataplex.v1.DataQualityRuleResult getRules(int index) {
     return rules_.get(index);
   }
+
   /**
    *
    *
@@ -241,6 +253,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
 
   public static final int ROW_COUNT_FIELD_NUMBER = 4;
   private long rowCount_ = 0L;
+
   /**
    *
    *
@@ -259,6 +272,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
 
   public static final int SCANNED_DATA_FIELD_NUMBER = 7;
   private com.google.events.cloud.dataplex.v1.ScannedData scannedData_;
+
   /**
    *
    *
@@ -274,6 +288,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
   public boolean hasScannedData() {
     return scannedData_ != null;
   }
+
   /**
    *
    *
@@ -291,6 +306,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         ? com.google.events.cloud.dataplex.v1.ScannedData.getDefaultInstance()
         : scannedData_;
   }
+
   /**
    *
    *
@@ -512,6 +528,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -844,6 +861,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     private int bitField0_;
 
     private boolean passed_;
+
     /**
      *
      *
@@ -859,6 +877,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     public boolean getPassed() {
       return passed_;
     }
+
     /**
      *
      *
@@ -878,6 +897,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -932,6 +952,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return dimensionsBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -949,6 +970,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return dimensionsBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -966,6 +988,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return dimensionsBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -990,6 +1013,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1012,6 +1036,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1036,6 +1061,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1060,6 +1086,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1081,6 +1108,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1103,6 +1131,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1125,6 +1154,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1145,6 +1175,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1165,6 +1196,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1179,6 +1211,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         getDimensionsBuilder(int index) {
       return getDimensionsFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1197,6 +1230,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return dimensionsBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1216,6 +1250,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return java.util.Collections.unmodifiableList(dimensions_);
       }
     }
+
     /**
      *
      *
@@ -1232,6 +1267,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
           .addBuilder(
               com.google.events.cloud.dataplex.v1.DataQualityDimensionResult.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1249,6 +1285,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
               index,
               com.google.events.cloud.dataplex.v1.DataQualityDimensionResult.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1316,6 +1353,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return rulesBuilder_.getMessageList();
       }
     }
+
     /**
      *
      *
@@ -1332,6 +1370,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return rulesBuilder_.getCount();
       }
     }
+
     /**
      *
      *
@@ -1348,6 +1387,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return rulesBuilder_.getMessage(index);
       }
     }
+
     /**
      *
      *
@@ -1371,6 +1411,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1392,6 +1433,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1414,6 +1456,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1437,6 +1480,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1457,6 +1501,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1478,6 +1523,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1499,6 +1545,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1518,6 +1565,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1537,6 +1585,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       }
       return this;
     }
+
     /**
      *
      *
@@ -1550,6 +1599,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         int index) {
       return getRulesFieldBuilder().getBuilder(index);
     }
+
     /**
      *
      *
@@ -1567,6 +1617,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return rulesBuilder_.getMessageOrBuilder(index);
       }
     }
+
     /**
      *
      *
@@ -1585,6 +1636,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return java.util.Collections.unmodifiableList(rules_);
       }
     }
+
     /**
      *
      *
@@ -1599,6 +1651,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
           .addBuilder(
               com.google.events.cloud.dataplex.v1.DataQualityRuleResult.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1615,6 +1668,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
               index,
               com.google.events.cloud.dataplex.v1.DataQualityRuleResult.getDefaultInstance());
     }
+
     /**
      *
      *
@@ -1647,6 +1701,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     }
 
     private long rowCount_;
+
     /**
      *
      *
@@ -1662,6 +1717,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     public long getRowCount() {
       return rowCount_;
     }
+
     /**
      *
      *
@@ -1681,6 +1737,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1705,6 +1762,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
             com.google.events.cloud.dataplex.v1.ScannedData.Builder,
             com.google.events.cloud.dataplex.v1.ScannedDataOrBuilder>
         scannedDataBuilder_;
+
     /**
      *
      *
@@ -1719,6 +1777,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
     public boolean hasScannedData() {
       return ((bitField0_ & 0x00000010) != 0);
     }
+
     /**
      *
      *
@@ -1739,6 +1798,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
         return scannedDataBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -1761,6 +1821,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1781,6 +1842,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1807,6 +1869,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1826,6 +1889,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1840,6 +1904,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
       onChanged();
       return getScannedDataFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -1858,6 +1923,7 @@ public final class DataQualityResult extends com.google.protobuf.GeneratedMessag
             : scannedData_;
       }
     }
+
     /**
      *
      *

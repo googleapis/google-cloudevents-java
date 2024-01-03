@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,7 @@ public interface ComputeSchedulingOrBuilder
    * @return The enum numeric value on the wire for onHostMaintenance.
    */
   int getOnHostMaintenanceValue();
+
   /**
    *
    *
@@ -72,6 +73,7 @@ public interface ComputeSchedulingOrBuilder
    * @return The enum numeric value on the wire for restartType.
    */
   int getRestartTypeValue();
+
   /**
    *
    *
@@ -104,6 +106,7 @@ public interface ComputeSchedulingOrBuilder
    */
   java.util.List<com.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity>
       getNodeAffinitiesList();
+
   /**
    *
    *
@@ -116,6 +119,7 @@ public interface ComputeSchedulingOrBuilder
    * </code>
    */
   com.google.events.cloud.vmmigration.v1.SchedulingNodeAffinity getNodeAffinities(int index);
+
   /**
    *
    *
@@ -128,6 +132,7 @@ public interface ComputeSchedulingOrBuilder
    * </code>
    */
   int getNodeAffinitiesCount();
+
   /**
    *
    *
@@ -141,6 +146,7 @@ public interface ComputeSchedulingOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.vmmigration.v1.SchedulingNodeAffinityOrBuilder>
       getNodeAffinitiesOrBuilderList();
+
   /**
    *
    *

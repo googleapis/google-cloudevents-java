@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,6 +52,7 @@ public interface DeviceConfigOrBuilder
    * @return Whether the cloudUpdateTime field is set.
    */
   boolean hasCloudUpdateTime();
+
   /**
    *
    *
@@ -65,6 +66,7 @@ public interface DeviceConfigOrBuilder
    * @return The cloudUpdateTime.
    */
   com.google.protobuf.Timestamp getCloudUpdateTime();
+
   /**
    *
    *
@@ -97,6 +99,7 @@ public interface DeviceConfigOrBuilder
    * @return Whether the deviceAckTime field is set.
    */
   boolean hasDeviceAckTime();
+
   /**
    *
    *
@@ -117,6 +120,7 @@ public interface DeviceConfigOrBuilder
    * @return The deviceAckTime.
    */
   com.google.protobuf.Timestamp getDeviceAckTime();
+
   /**
    *
    *

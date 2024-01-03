@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     // @@protoc_insertion_point(message_implements:google.events.cloud.dataflow.v1beta3.SdkHarnessContainerImage)
     SdkHarnessContainerImageOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use SdkHarnessContainerImage.newBuilder() to construct.
   private SdkHarnessContainerImage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -73,6 +74,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object containerImage_ = "";
+
   /**
    *
    *
@@ -96,6 +98,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       return s;
     }
   }
+
   /**
    *
    *
@@ -122,6 +125,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
 
   public static final int USE_SINGLE_CORE_PER_CONTAINER_FIELD_NUMBER = 2;
   private boolean useSingleCorePerContainer_ = false;
+
   /**
    *
    *
@@ -146,6 +150,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object environmentId_ = "";
+
   /**
    *
    *
@@ -170,6 +175,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       return s;
     }
   }
+
   /**
    *
    *
@@ -199,6 +205,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
 
   @SuppressWarnings("serial")
   private com.google.protobuf.LazyStringList capabilities_;
+
   /**
    *
    *
@@ -214,6 +221,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
   public com.google.protobuf.ProtocolStringList getCapabilitiesList() {
     return capabilities_;
   }
+
   /**
    *
    *
@@ -229,6 +237,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
   public int getCapabilitiesCount() {
     return capabilities_.size();
   }
+
   /**
    *
    *
@@ -245,6 +254,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
   public java.lang.String getCapabilities(int index) {
     return capabilities_.get(index);
   }
+
   /**
    *
    *
@@ -457,6 +467,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -703,6 +714,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     private int bitField0_;
 
     private java.lang.Object containerImage_ = "";
+
     /**
      *
      *
@@ -725,6 +737,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -747,6 +760,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -768,6 +782,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -785,6 +800,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -809,6 +825,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     }
 
     private boolean useSingleCorePerContainer_;
+
     /**
      *
      *
@@ -828,6 +845,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     public boolean getUseSingleCorePerContainer() {
       return useSingleCorePerContainer_;
     }
+
     /**
      *
      *
@@ -851,6 +869,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -874,6 +893,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     }
 
     private java.lang.Object environmentId_ = "";
+
     /**
      *
      *
@@ -897,6 +917,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -920,6 +941,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -942,6 +964,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -960,6 +983,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -993,6 +1017,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
         bitField0_ |= 0x00000008;
       }
     }
+
     /**
      *
      *
@@ -1008,6 +1033,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     public com.google.protobuf.ProtocolStringList getCapabilitiesList() {
       return capabilities_.getUnmodifiableView();
     }
+
     /**
      *
      *
@@ -1023,6 +1049,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     public int getCapabilitiesCount() {
       return capabilities_.size();
     }
+
     /**
      *
      *
@@ -1039,6 +1066,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     public java.lang.String getCapabilities(int index) {
       return capabilities_.get(index);
     }
+
     /**
      *
      *
@@ -1055,6 +1083,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
     public com.google.protobuf.ByteString getCapabilitiesBytes(int index) {
       return capabilities_.getByteString(index);
     }
+
     /**
      *
      *
@@ -1078,6 +1107,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1100,6 +1130,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1119,6 +1150,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1137,6 +1169,7 @@ public final class SdkHarnessContainerImage extends com.google.protobuf.Generate
       onChanged();
       return this;
     }
+
     /**
      *
      *

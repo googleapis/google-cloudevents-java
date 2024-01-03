@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ScheduleOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -64,6 +65,7 @@ public interface ScheduleOrBuilder
    * @return The displayName.
    */
   java.lang.String getDisplayName();
+
   /**
    *
    *
@@ -91,6 +93,7 @@ public interface ScheduleOrBuilder
    * @return The description.
    */
   java.lang.String getDescription();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface ScheduleOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    * <code>.google.events.cloud.notebooks.v1.Schedule.State state = 4;</code>
    *
@@ -132,6 +136,7 @@ public interface ScheduleOrBuilder
    * @return The cronSchedule.
    */
   java.lang.String getCronSchedule();
+
   /**
    *
    *
@@ -166,6 +171,7 @@ public interface ScheduleOrBuilder
    * @return The timeZone.
    */
   java.lang.String getTimeZone();
+
   /**
    *
    *
@@ -197,6 +203,7 @@ public interface ScheduleOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -209,6 +216,7 @@ public interface ScheduleOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -232,6 +240,7 @@ public interface ScheduleOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -244,6 +253,7 @@ public interface ScheduleOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -267,6 +277,7 @@ public interface ScheduleOrBuilder
    * @return Whether the executionTemplate field is set.
    */
   boolean hasExecutionTemplate();
+
   /**
    *
    *
@@ -279,6 +290,7 @@ public interface ScheduleOrBuilder
    * @return The executionTemplate.
    */
   com.google.events.cloud.notebooks.v1.ExecutionTemplate getExecutionTemplate();
+
   /**
    *
    *
@@ -301,6 +313,7 @@ public interface ScheduleOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.Execution recent_executions = 10;</code>
    */
   java.util.List<com.google.events.cloud.notebooks.v1.Execution> getRecentExecutionsList();
+
   /**
    *
    *
@@ -312,6 +325,7 @@ public interface ScheduleOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.Execution recent_executions = 10;</code>
    */
   com.google.events.cloud.notebooks.v1.Execution getRecentExecutions(int index);
+
   /**
    *
    *
@@ -323,6 +337,7 @@ public interface ScheduleOrBuilder
    * <code>repeated .google.events.cloud.notebooks.v1.Execution recent_executions = 10;</code>
    */
   int getRecentExecutionsCount();
+
   /**
    *
    *
@@ -335,6 +350,7 @@ public interface ScheduleOrBuilder
    */
   java.util.List<? extends com.google.events.cloud.notebooks.v1.ExecutionOrBuilder>
       getRecentExecutionsOrBuilderList();
+
   /**
    *
    *

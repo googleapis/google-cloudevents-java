@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface UserDimensionsOrBuilder
    * @return The userId.
    */
   java.lang.String getUserId();
+
   /**
    *
    *
@@ -74,6 +75,7 @@ public interface UserDimensionsOrBuilder
    * </code>
    */
   int getUserPropertiesCount();
+
   /**
    *
    *
@@ -87,10 +89,12 @@ public interface UserDimensionsOrBuilder
    * </code>
    */
   boolean containsUserProperties(java.lang.String key);
+
   /** Use {@link #getUserPropertiesMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
       getUserProperties();
+
   /**
    *
    *
@@ -105,6 +109,7 @@ public interface UserDimensionsOrBuilder
    */
   java.util.Map<java.lang.String, com.google.events.firebase.analytics.v1.UserPropertyValue>
       getUserPropertiesMap();
+
   /**
    *
    *
@@ -122,6 +127,7 @@ public interface UserDimensionsOrBuilder
       java.lang.String key,
       /* nullable */
       com.google.events.firebase.analytics.v1.UserPropertyValue defaultValue);
+
   /**
    *
    *
@@ -149,6 +155,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the deviceInfo field is set.
    */
   boolean hasDeviceInfo();
+
   /**
    *
    *
@@ -161,6 +168,7 @@ public interface UserDimensionsOrBuilder
    * @return The deviceInfo.
    */
   com.google.events.firebase.analytics.v1.DeviceInfo getDeviceInfo();
+
   /**
    *
    *
@@ -184,6 +192,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the geoInfo field is set.
    */
   boolean hasGeoInfo();
+
   /**
    *
    *
@@ -196,6 +205,7 @@ public interface UserDimensionsOrBuilder
    * @return The geoInfo.
    */
   com.google.events.firebase.analytics.v1.GeoInfo getGeoInfo();
+
   /**
    *
    *
@@ -219,6 +229,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the appInfo field is set.
    */
   boolean hasAppInfo();
+
   /**
    *
    *
@@ -231,6 +242,7 @@ public interface UserDimensionsOrBuilder
    * @return The appInfo.
    */
   com.google.events.firebase.analytics.v1.AppInfo getAppInfo();
+
   /**
    *
    *
@@ -254,6 +266,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the trafficSource field is set.
    */
   boolean hasTrafficSource();
+
   /**
    *
    *
@@ -266,6 +279,7 @@ public interface UserDimensionsOrBuilder
    * @return The trafficSource.
    */
   com.google.events.firebase.analytics.v1.TrafficSource getTrafficSource();
+
   /**
    *
    *
@@ -289,6 +303,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the bundleInfo field is set.
    */
   boolean hasBundleInfo();
+
   /**
    *
    *
@@ -301,6 +316,7 @@ public interface UserDimensionsOrBuilder
    * @return The bundleInfo.
    */
   com.google.events.firebase.analytics.v1.ExportBundleInfo getBundleInfo();
+
   /**
    *
    *
@@ -324,6 +340,7 @@ public interface UserDimensionsOrBuilder
    * @return Whether the ltvInfo field is set.
    */
   boolean hasLtvInfo();
+
   /**
    *
    *
@@ -336,6 +353,7 @@ public interface UserDimensionsOrBuilder
    * @return The ltvInfo.
    */
   com.google.events.firebase.analytics.v1.LtvInfo getLtvInfo();
+
   /**
    *
    *

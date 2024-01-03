@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
     // @@protoc_insertion_point(message_implements:google.events.cloud.certificatemanager.v1.CertificateEventData)
     CertificateEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use CertificateEventData.newBuilder() to construct.
   private CertificateEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.certificatemanager.v1.Certificate payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
         ? com.google.events.cloud.certificatemanager.v1.Certificate.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -282,6 +286,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -492,6 +497,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
             com.google.events.cloud.certificatemanager.v1.Certificate.Builder,
             com.google.events.cloud.certificatemanager.v1.CertificateOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -506,6 +512,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -526,6 +533,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -548,6 +556,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -568,6 +577,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -594,6 +604,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -613,6 +624,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -627,6 +639,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -646,6 +659,7 @@ public final class CertificateEventData extends com.google.protobuf.GeneratedMes
             : payload_;
       }
     }
+
     /**
      *
      *

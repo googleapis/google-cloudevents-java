@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
     // @@protoc_insertion_point(message_implements:google.events.cloud.eventarc.v1.ChannelConnectionEventData)
     ChannelConnectionEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ChannelConnectionEventData.newBuilder() to construct.
   private ChannelConnectionEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -67,6 +68,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
 
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.eventarc.v1.ChannelConnection payload_;
+
   /**
    *
    *
@@ -82,6 +84,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
   public boolean hasPayload() {
     return payload_ != null;
   }
+
   /**
    *
    *
@@ -99,6 +102,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
         ? com.google.events.cloud.eventarc.v1.ChannelConnection.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -280,6 +284,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -474,6 +479,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
             com.google.events.cloud.eventarc.v1.ChannelConnection.Builder,
             com.google.events.cloud.eventarc.v1.ChannelConnectionOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -488,6 +494,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -508,6 +515,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -530,6 +538,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -550,6 +559,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -576,6 +586,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -595,6 +606,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -609,6 +621,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -627,6 +640,7 @@ public final class ChannelConnectionEventData extends com.google.protobuf.Genera
             : payload_;
       }
     }
+
     /**
      *
      *

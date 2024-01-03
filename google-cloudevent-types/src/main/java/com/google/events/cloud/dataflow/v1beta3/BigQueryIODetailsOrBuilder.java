@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface BigQueryIODetailsOrBuilder
    * @return The table.
    */
   java.lang.String getTable();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface BigQueryIODetailsOrBuilder
    * @return The dataset.
    */
   java.lang.String getDataset();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface BigQueryIODetailsOrBuilder
    * @return The projectId.
    */
   java.lang.String getProjectId();
+
   /**
    *
    *
@@ -110,6 +113,7 @@ public interface BigQueryIODetailsOrBuilder
    * @return The query.
    */
   java.lang.String getQuery();
+
   /**
    *
    *

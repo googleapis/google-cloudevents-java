@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
     // @@protoc_insertion_point(message_implements:google.events.cloud.vmmigration.v1.DatacenterConnectorEventData)
     DatacenterConnectorEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use DatacenterConnectorEventData.newBuilder() to construct.
   private DatacenterConnectorEventData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -68,6 +69,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.vmmigration.v1.DatacenterConnector payload_;
+
   /**
    *
    *
@@ -83,6 +85,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -100,6 +103,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
         ? com.google.events.cloud.vmmigration.v1.DatacenterConnector.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -282,6 +286,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -492,6 +497,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
             com.google.events.cloud.vmmigration.v1.DatacenterConnector.Builder,
             com.google.events.cloud.vmmigration.v1.DatacenterConnectorOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -506,6 +512,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -526,6 +533,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -548,6 +556,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -568,6 +577,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -595,6 +605,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -614,6 +625,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -628,6 +640,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -647,6 +660,7 @@ public final class DatacenterConnectorEventData extends com.google.protobuf.Gene
             : payload_;
       }
     }
+
     /**
      *
      *

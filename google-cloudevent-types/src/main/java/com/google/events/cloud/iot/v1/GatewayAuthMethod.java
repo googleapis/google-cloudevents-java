@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -88,6 +88,7 @@ public enum GatewayAuthMethod implements com.google.protobuf.ProtocolMessageEnum
    * <code>GATEWAY_AUTH_METHOD_UNSPECIFIED = 0;</code>
    */
   public static final int GATEWAY_AUTH_METHOD_UNSPECIFIED_VALUE = 0;
+
   /**
    *
    *
@@ -99,6 +100,7 @@ public enum GatewayAuthMethod implements com.google.protobuf.ProtocolMessageEnum
    * <code>ASSOCIATION_ONLY = 1;</code>
    */
   public static final int ASSOCIATION_ONLY_VALUE = 1;
+
   /**
    *
    *
@@ -110,6 +112,7 @@ public enum GatewayAuthMethod implements com.google.protobuf.ProtocolMessageEnum
    * <code>DEVICE_AUTH_TOKEN_ONLY = 2;</code>
    */
   public static final int DEVICE_AUTH_TOKEN_ONLY_VALUE = 2;
+
   /**
    *
    *

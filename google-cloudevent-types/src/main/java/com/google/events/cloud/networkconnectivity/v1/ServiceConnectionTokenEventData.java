@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
     // @@protoc_insertion_point(message_implements:google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenEventData)
     ServiceConnectionTokenEventDataOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ServiceConnectionTokenEventData.newBuilder() to construct.
   private ServiceConnectionTokenEventData(
       com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -70,6 +71,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
   private int bitField0_;
   public static final int PAYLOAD_FIELD_NUMBER = 1;
   private com.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken payload_;
+
   /**
    *
    *
@@ -87,6 +89,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
   public boolean hasPayload() {
     return ((bitField0_ & 0x00000001) != 0);
   }
+
   /**
    *
    *
@@ -106,6 +109,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
         ? com.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken.getDefaultInstance()
         : payload_;
   }
+
   /**
    *
    *
@@ -298,6 +302,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -514,6 +519,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionToken.Builder,
             com.google.events.cloud.networkconnectivity.v1.ServiceConnectionTokenOrBuilder>
         payloadBuilder_;
+
     /**
      *
      *
@@ -531,6 +537,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
     public boolean hasPayload() {
       return ((bitField0_ & 0x00000001) != 0);
     }
+
     /**
      *
      *
@@ -555,6 +562,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
         return payloadBuilder_.getMessage();
       }
     }
+
     /**
      *
      *
@@ -581,6 +589,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -605,6 +614,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -636,6 +646,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -658,6 +669,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -676,6 +688,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
       onChanged();
       return getPayloadFieldBuilder().getBuilder();
     }
+
     /**
      *
      *
@@ -699,6 +712,7 @@ public final class ServiceConnectionTokenEventData extends com.google.protobuf.G
             : payload_;
       }
     }
+
     /**
      *
      *

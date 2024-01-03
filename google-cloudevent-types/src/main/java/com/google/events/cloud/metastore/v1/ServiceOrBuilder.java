@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public interface ServiceOrBuilder
    * @return Whether the hiveMetastoreConfig field is set.
    */
   boolean hasHiveMetastoreConfig();
+
   /**
    *
    *
@@ -49,6 +50,7 @@ public interface ServiceOrBuilder
    * @return The hiveMetastoreConfig.
    */
   com.google.events.cloud.metastore.v1.HiveMetastoreConfig getHiveMetastoreConfig();
+
   /**
    *
    *
@@ -76,6 +78,7 @@ public interface ServiceOrBuilder
    * @return The name.
    */
   java.lang.String getName();
+
   /**
    *
    *
@@ -103,6 +106,7 @@ public interface ServiceOrBuilder
    * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
+
   /**
    *
    *
@@ -115,6 +119,7 @@ public interface ServiceOrBuilder
    * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
+
   /**
    *
    *
@@ -138,6 +143,7 @@ public interface ServiceOrBuilder
    * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
+
   /**
    *
    *
@@ -150,6 +156,7 @@ public interface ServiceOrBuilder
    * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
+
   /**
    *
    *
@@ -171,6 +178,7 @@ public interface ServiceOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   int getLabelsCount();
+
   /**
    *
    *
@@ -181,9 +189,11 @@ public interface ServiceOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   boolean containsLabels(java.lang.String key);
+
   /** Use {@link #getLabelsMap()} instead. */
   @java.lang.Deprecated
   java.util.Map<java.lang.String, java.lang.String> getLabels();
+
   /**
    *
    *
@@ -194,6 +204,7 @@ public interface ServiceOrBuilder
    * <code>map&lt;string, string&gt; labels = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String> getLabelsMap();
+
   /**
    *
    *
@@ -208,6 +219,7 @@ public interface ServiceOrBuilder
       java.lang.String key,
       /* nullable */
       java.lang.String defaultValue);
+
   /**
    *
    *
@@ -233,6 +245,7 @@ public interface ServiceOrBuilder
    * @return The network.
    */
   java.lang.String getNetwork();
+
   /**
    *
    *
@@ -260,6 +273,7 @@ public interface ServiceOrBuilder
    * @return The endpointUri.
    */
   java.lang.String getEndpointUri();
+
   /**
    *
    *
@@ -298,6 +312,7 @@ public interface ServiceOrBuilder
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
+
   /**
    *
    *
@@ -324,6 +339,7 @@ public interface ServiceOrBuilder
    * @return The stateMessage.
    */
   java.lang.String getStateMessage();
+
   /**
    *
    *
@@ -351,6 +367,7 @@ public interface ServiceOrBuilder
    * @return The artifactGcsUri.
    */
   java.lang.String getArtifactGcsUri();
+
   /**
    *
    *
@@ -377,6 +394,7 @@ public interface ServiceOrBuilder
    * @return The enum numeric value on the wire for tier.
    */
   int getTierValue();
+
   /**
    *
    *
@@ -405,6 +423,7 @@ public interface ServiceOrBuilder
    * @return Whether the maintenanceWindow field is set.
    */
   boolean hasMaintenanceWindow();
+
   /**
    *
    *
@@ -420,6 +439,7 @@ public interface ServiceOrBuilder
    * @return The maintenanceWindow.
    */
   com.google.events.cloud.metastore.v1.MaintenanceWindow getMaintenanceWindow();
+
   /**
    *
    *
@@ -447,6 +467,7 @@ public interface ServiceOrBuilder
    * @return The uid.
    */
   java.lang.String getUid();
+
   /**
    *
    *
@@ -475,6 +496,7 @@ public interface ServiceOrBuilder
    * @return Whether the metadataManagementActivity field is set.
    */
   boolean hasMetadataManagementActivity();
+
   /**
    *
    *
@@ -489,6 +511,7 @@ public interface ServiceOrBuilder
    * @return The metadataManagementActivity.
    */
   com.google.events.cloud.metastore.v1.MetadataManagementActivity getMetadataManagementActivity();
+
   /**
    *
    *
@@ -516,6 +539,7 @@ public interface ServiceOrBuilder
    * @return The enum numeric value on the wire for releaseChannel.
    */
   int getReleaseChannelValue();
+
   /**
    *
    *
@@ -543,6 +567,7 @@ public interface ServiceOrBuilder
    * @return Whether the encryptionConfig field is set.
    */
   boolean hasEncryptionConfig();
+
   /**
    *
    *
@@ -556,6 +581,7 @@ public interface ServiceOrBuilder
    * @return The encryptionConfig.
    */
   com.google.events.cloud.metastore.v1.EncryptionConfig getEncryptionConfig();
+
   /**
    *
    *
@@ -581,6 +607,7 @@ public interface ServiceOrBuilder
    * @return Whether the networkConfig field is set.
    */
   boolean hasNetworkConfig();
+
   /**
    *
    *
@@ -594,6 +621,7 @@ public interface ServiceOrBuilder
    * @return The networkConfig.
    */
   com.google.events.cloud.metastore.v1.NetworkConfig getNetworkConfig();
+
   /**
    *
    *
@@ -618,6 +646,7 @@ public interface ServiceOrBuilder
    * @return The enum numeric value on the wire for databaseType.
    */
   int getDatabaseTypeValue();
+
   /**
    *
    *
@@ -644,6 +673,7 @@ public interface ServiceOrBuilder
    * @return Whether the telemetryConfig field is set.
    */
   boolean hasTelemetryConfig();
+
   /**
    *
    *
@@ -657,6 +687,7 @@ public interface ServiceOrBuilder
    * @return The telemetryConfig.
    */
   com.google.events.cloud.metastore.v1.TelemetryConfig getTelemetryConfig();
+
   /**
    *
    *
@@ -681,6 +712,7 @@ public interface ServiceOrBuilder
    * @return Whether the scalingConfig field is set.
    */
   boolean hasScalingConfig();
+
   /**
    *
    *
@@ -693,6 +725,7 @@ public interface ServiceOrBuilder
    * @return The scalingConfig.
    */
   com.google.events.cloud.metastore.v1.ScalingConfig getScalingConfig();
+
   /**
    *
    *

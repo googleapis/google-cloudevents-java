@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(message_implements:google.events.firebase.testlab.v1.ResultStorage)
     ResultStorageOrBuilder {
   private static final long serialVersionUID = 0L;
+
   // Use ResultStorage.newBuilder() to construct.
   private ResultStorage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -74,6 +75,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object toolResultsHistory_ = "";
+
   /**
    *
    *
@@ -100,6 +102,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -131,6 +134,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object toolResultsExecution_ = "";
+
   /**
    *
    *
@@ -158,6 +162,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -190,6 +195,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object resultsUri_ = "";
+
   /**
    *
    *
@@ -213,6 +219,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -241,6 +248,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
 
   @SuppressWarnings("serial")
   private volatile java.lang.Object gcsPath_ = "";
+
   /**
    *
    *
@@ -265,6 +273,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       return s;
     }
   }
+
   /**
    *
    *
@@ -476,6 +485,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     Builder builder = new Builder(parent);
     return builder;
   }
+
   /**
    *
    *
@@ -705,6 +715,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     private int bitField0_;
 
     private java.lang.Object toolResultsHistory_ = "";
+
     /**
      *
      *
@@ -730,6 +741,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -755,6 +767,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -779,6 +792,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -799,6 +813,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -826,6 +841,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object toolResultsExecution_ = "";
+
     /**
      *
      *
@@ -852,6 +868,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -878,6 +895,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -903,6 +921,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -924,6 +943,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -952,6 +972,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object resultsUri_ = "";
+
     /**
      *
      *
@@ -974,6 +995,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -996,6 +1018,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1017,6 +1040,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1034,6 +1058,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1058,6 +1083,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
     }
 
     private java.lang.Object gcsPath_ = "";
+
     /**
      *
      *
@@ -1081,6 +1107,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (java.lang.String) ref;
       }
     }
+
     /**
      *
      *
@@ -1104,6 +1131,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
         return (com.google.protobuf.ByteString) ref;
       }
     }
+
     /**
      *
      *
@@ -1126,6 +1154,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *
@@ -1144,6 +1173,7 @@ public final class ResultStorage extends com.google.protobuf.GeneratedMessageV3
       onChanged();
       return this;
     }
+
     /**
      *
      *

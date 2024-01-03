@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ public interface EndpointInfoOrBuilder
    * @return The sourceIp.
    */
   java.lang.String getSourceIp();
+
   /**
    *
    *
@@ -60,6 +61,7 @@ public interface EndpointInfoOrBuilder
    * @return The destinationIp.
    */
   java.lang.String getDestinationIp();
+
   /**
    *
    *
@@ -85,6 +87,7 @@ public interface EndpointInfoOrBuilder
    * @return The protocol.
    */
   java.lang.String getProtocol();
+
   /**
    *
    *
@@ -136,6 +139,7 @@ public interface EndpointInfoOrBuilder
    * @return The sourceNetworkUri.
    */
   java.lang.String getSourceNetworkUri();
+
   /**
    *
    *
@@ -161,6 +165,7 @@ public interface EndpointInfoOrBuilder
    * @return The destinationNetworkUri.
    */
   java.lang.String getDestinationNetworkUri();
+
   /**
    *
    *
