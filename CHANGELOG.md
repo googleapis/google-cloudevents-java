@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.15.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.14.1...v0.15.0) (2024-03-29)
+
+
+### Features
+
+* Add event types for [Cloud Batch](https://cloud.google.com/eventarc/docs/reference/supported-events#batch) ([#240](https://github.com/googleapis/google-cloudevents-java/issues/240)) ([67b543b](https://github.com/googleapis/google-cloudevents-java/commit/67b543bf964f9d907328515b840c8957b2fa28ee))
+* Add event types for [Network Services](https://cloud.google.com/eventarc/docs/reference/supported-events#network-services) ([#240](https://github.com/googleapis/google-cloudevents-java/issues/240)) ([67b543b](https://github.com/googleapis/google-cloudevents-java/commit/67b543bf964f9d907328515b840c8957b2fa28ee))
+* Add event types for Speech-to-Text ([#240](https://github.com/googleapis/google-cloudevents-java/issues/240)) ([67b543b](https://github.com/googleapis/google-cloudevents-java/commit/67b543bf964f9d907328515b840c8957b2fa28ee))
+
 ## [0.14.1](https://github.com/googleapis/google-cloudevents-java/compare/v0.14.0...v0.14.1) (2024-01-03)
 
 
