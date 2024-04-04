@@ -61,7 +61,7 @@ Tests are run during the project build. To run tests independently:
 
 1. Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same parent directory as this repo. Payload test cases are centrally maintained.
 
-2. Optional: Set path to `google-cloudevents` for test case lookup: `export TEST_DATA_PATH=<LOCAL_PATH/google-cloudevents>`. If not set, tests will seek the cloned repository at the path `../../google-cloudevents/testdata/`. (The default supports running tests from the `tools/` directory, directly running tests are probably from the repository root.)
+2. Optional: Set path to `google-cloudevents` for test case lookup: `export TEST_DATA_PATH=<LOCAL_PATH/google-cloudevents>`. If not set, tests will seek the cloned repository at the path `../../google-cloudevents/testdata/`. (To run tests with this default, change working directory to `tools/` or `google-cloudevent-types/`)
 
 4. Run the tests:
 
