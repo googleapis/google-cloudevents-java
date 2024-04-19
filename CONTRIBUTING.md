@@ -33,7 +33,7 @@ This library is generated from the protobuf source in [googleapis/google-cloudev
 
 The `google-cloudevents-types/` directory is the generated library source code. It should not be manually modified as changes will be overwritten.
 
-The `protoc-gen-java-snowpea/` directory defines a protoc plugin to generate tests for the library.
+The `protoc-gen-java-snowpea/` directory defines a protoc plugin to generate tests for the library. Check out it's [README](protoc-gen-java-snowpea/) to learn more.
 
 the `tools/` directory contains scripts for building the library.
 
@@ -43,7 +43,7 @@ the `tools/` directory contains scripts for building the library.
 
 * (Optional) set path to `protoc` executable: `export PROTOC_PATH=<LOCAL_PATH/bin/protoc>`
 
-* Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same directory as this repo.
+* Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same parent directory as this repo.
 
 * Set local path to `google-cloudevents`: `export DATA_SOURCE_PATH=<LOCAL_PATH/google-cloudevents>`
 
@@ -57,7 +57,13 @@ To build, package, and run all unit tests run the command
 
 ### Running tests
 
-Tests are ran during the project build. To run tests independently:
+Tests are run during the project build. To run tests independently:
+
+1. Clone the [google-cloudevents](https://github.com/googleapis/google-cloudevents) source of truth repo in the same parent directory as this repo. Payload test cases are centrally maintained.
+
+2. Optional: Set path to `google-cloudevents` for test case lookup: `export TEST_DATA_PATH=<LOCAL_PATH/google-cloudevents>`. If not set, tests will seek the cloned repository at the path `../../google-cloudevents/testdata/`. (To run tests with this default, change working directory to `tools/` or `google-cloudevent-types/`)
+
+4. Run the tests:
 
 ```sh
 mvn clean verify
