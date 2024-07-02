@@ -31,6 +31,54 @@ public final class Data {
       internal_static_google_events_cloud_scheduler_v1_SchedulerJobData_descriptor;
   static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_google_events_cloud_scheduler_v1_SchedulerJobData_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_HttpTarget_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_HttpTarget_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_HttpTarget_HeadersEntry_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_HttpTarget_HeadersEntry_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_HeadersEntry_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_HeadersEntry_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_PubsubTarget_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_PubsubTarget_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_PubsubTarget_AttributesEntry_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_PubsubTarget_AttributesEntry_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_AppEngineRouting_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_AppEngineRouting_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_OAuthToken_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_OAuthToken_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_OidcToken_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_OidcToken_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_Job_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_Job_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_RetryConfig_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_RetryConfig_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+      internal_static_google_events_cloud_scheduler_v1_JobEventData_descriptor;
+  static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_google_events_cloud_scheduler_v1_JobEventData_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
     return descriptor;
@@ -41,17 +89,82 @@ public final class Data {
   static {
     java.lang.String[] descriptorData = {
       "\n+google/events/cloud/scheduler/v1/data."
-          + "proto\022 google.events.cloud.scheduler.v1\""
-          + "\'\n\020SchedulerJobData\022\023\n\013custom_data\030\001 \001(\014"
-          + "B\236\001\n$com.google.events.cloud.scheduler.v"
-          + "1P\001\252\002)Google.Events.Protobuf.Cloud.Sched"
-          + "uler.V1\312\002 Google\\Events\\Cloud\\Scheduler\\"
-          + "V1\352\002$Google::Events::Cloud::Scheduler::V"
-          + "1b\006proto3"
+          + "proto\022 google.events.cloud.scheduler.v1\032"
+          + "\036google/protobuf/duration.proto\032\037google/"
+          + "protobuf/timestamp.proto\032\027google/rpc/sta"
+          + "tus.proto\"\'\n\020SchedulerJobData\022\023\n\013custom_"
+          + "data\030\001 \001(\014\"\206\003\n\nHttpTarget\022\013\n\003uri\030\001 \001(\t\022A"
+          + "\n\013http_method\030\002 \001(\0162,.google.events.clou"
+          + "d.scheduler.v1.HttpMethod\022J\n\007headers\030\003 \003"
+          + "(\01329.google.events.cloud.scheduler.v1.Ht"
+          + "tpTarget.HeadersEntry\022\014\n\004body\030\004 \001(\014\022C\n\013o"
+          + "auth_token\030\005 \001(\0132,.google.events.cloud.s"
+          + "cheduler.v1.OAuthTokenH\000\022A\n\noidc_token\030\006"
+          + " \001(\0132+.google.events.cloud.scheduler.v1."
+          + "OidcTokenH\000\032.\n\014HeadersEntry\022\013\n\003key\030\001 \001(\t"
+          + "\022\r\n\005value\030\002 \001(\t:\0028\001B\026\n\024authorization_hea"
+          + "der\"\321\002\n\023AppEngineHttpTarget\022A\n\013http_meth"
+          + "od\030\001 \001(\0162,.google.events.cloud.scheduler"
+          + ".v1.HttpMethod\022N\n\022app_engine_routing\030\002 \001"
+          + "(\01322.google.events.cloud.scheduler.v1.Ap"
+          + "pEngineRouting\022\024\n\014relative_uri\030\003 \001(\t\022S\n\007"
+          + "headers\030\004 \003(\0132B.google.events.cloud.sche"
+          + "duler.v1.AppEngineHttpTarget.HeadersEntr"
+          + "y\022\014\n\004body\030\005 \001(\014\032.\n\014HeadersEntry\022\013\n\003key\030\001"
+          + " \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\267\001\n\014PubsubTarget"
+          + "\022\022\n\ntopic_name\030\001 \001(\t\022\014\n\004data\030\003 \001(\014\022R\n\nat"
+          + "tributes\030\004 \003(\0132>.google.events.cloud.sch"
+          + "eduler.v1.PubsubTarget.AttributesEntry\0321"
+          + "\n\017AttributesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030"
+          + "\002 \001(\t:\0028\001\"T\n\020AppEngineRouting\022\017\n\007service"
+          + "\030\001 \001(\t\022\017\n\007version\030\002 \001(\t\022\020\n\010instance\030\003 \001("
+          + "\t\022\014\n\004host\030\004 \001(\t\":\n\nOAuthToken\022\035\n\025service"
+          + "_account_email\030\001 \001(\t\022\r\n\005scope\030\002 \001(\t\"<\n\tO"
+          + "idcToken\022\035\n\025service_account_email\030\001 \001(\t\022"
+          + "\020\n\010audience\030\002 \001(\t\"\222\006\n\003Job\022\014\n\004name\030\001 \001(\t\022"
+          + "\023\n\013description\030\002 \001(\t\022G\n\rpubsub_target\030\004 "
+          + "\001(\0132..google.events.cloud.scheduler.v1.P"
+          + "ubsubTargetH\000\022W\n\026app_engine_http_target\030"
+          + "\005 \001(\01325.google.events.cloud.scheduler.v1"
+          + ".AppEngineHttpTargetH\000\022C\n\013http_target\030\006 "
+          + "\001(\0132,.google.events.cloud.scheduler.v1.H"
+          + "ttpTargetH\000\022\020\n\010schedule\030\024 \001(\t\022\021\n\ttime_zo"
+          + "ne\030\025 \001(\t\0224\n\020user_update_time\030\t \001(\0132\032.goo"
+          + "gle.protobuf.Timestamp\022:\n\005state\030\n \001(\0162+."
+          + "google.events.cloud.scheduler.v1.Job.Sta"
+          + "te\022\"\n\006status\030\013 \001(\0132\022.google.rpc.Status\0221"
+          + "\n\rschedule_time\030\021 \001(\0132\032.google.protobuf."
+          + "Timestamp\0225\n\021last_attempt_time\030\022 \001(\0132\032.g"
+          + "oogle.protobuf.Timestamp\022C\n\014retry_config"
+          + "\030\023 \001(\0132-.google.events.cloud.scheduler.v"
+          + "1.RetryConfig\0223\n\020attempt_deadline\030\026 \001(\0132"
+          + "\031.google.protobuf.Duration\"X\n\005State\022\025\n\021S"
+          + "TATE_UNSPECIFIED\020\000\022\013\n\007ENABLED\020\001\022\n\n\006PAUSE"
+          + "D\020\002\022\014\n\010DISABLED\020\003\022\021\n\rUPDATE_FAILED\020\004B\010\n\006"
+          + "target\"\342\001\n\013RetryConfig\022\023\n\013retry_count\030\001 "
+          + "\001(\005\0225\n\022max_retry_duration\030\002 \001(\0132\031.google"
+          + ".protobuf.Duration\0227\n\024min_backoff_durati"
+          + "on\030\003 \001(\0132\031.google.protobuf.Duration\0227\n\024m"
+          + "ax_backoff_duration\030\004 \001(\0132\031.google.proto"
+          + "buf.Duration\022\025\n\rmax_doublings\030\005 \001(\005\"F\n\014J"
+          + "obEventData\0226\n\007payload\030\001 \001(\0132%.google.ev"
+          + "ents.cloud.scheduler.v1.Job*s\n\nHttpMetho"
+          + "d\022\033\n\027HTTP_METHOD_UNSPECIFIED\020\000\022\010\n\004POST\020\001"
+          + "\022\007\n\003GET\020\002\022\010\n\004HEAD\020\003\022\007\n\003PUT\020\004\022\n\n\006DELETE\020\005"
+          + "\022\t\n\005PATCH\020\006\022\013\n\007OPTIONS\020\007B\236\001\n$com.google."
+          + "events.cloud.scheduler.v1P\001\252\002)Google.Eve"
+          + "nts.Protobuf.Cloud.Scheduler.V1\312\002 Google"
+          + "\\Events\\Cloud\\Scheduler\\V1\352\002$Google::Eve"
+          + "nts::Cloud::Scheduler::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData, new com.google.protobuf.Descriptors.FileDescriptor[] {});
+            descriptorData,
+            new com.google.protobuf.Descriptors.FileDescriptor[] {
+              com.google.protobuf.DurationProto.getDescriptor(),
+              com.google.protobuf.TimestampProto.getDescriptor(),
+              com.google.rpc.StatusProto.getDescriptor(),
+            });
     internal_static_google_events_cloud_scheduler_v1_SchedulerJobData_descriptor =
         getDescriptor().getMessageTypes().get(0);
     internal_static_google_events_cloud_scheduler_v1_SchedulerJobData_fieldAccessorTable =
@@ -60,6 +173,135 @@ public final class Data {
             new java.lang.String[] {
               "CustomData",
             });
+    internal_static_google_events_cloud_scheduler_v1_HttpTarget_descriptor =
+        getDescriptor().getMessageTypes().get(1);
+    internal_static_google_events_cloud_scheduler_v1_HttpTarget_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_HttpTarget_descriptor,
+            new java.lang.String[] {
+              "Uri",
+              "HttpMethod",
+              "Headers",
+              "Body",
+              "OauthToken",
+              "OidcToken",
+              "AuthorizationHeader",
+            });
+    internal_static_google_events_cloud_scheduler_v1_HttpTarget_HeadersEntry_descriptor =
+        internal_static_google_events_cloud_scheduler_v1_HttpTarget_descriptor
+            .getNestedTypes()
+            .get(0);
+    internal_static_google_events_cloud_scheduler_v1_HttpTarget_HeadersEntry_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_HttpTarget_HeadersEntry_descriptor,
+            new java.lang.String[] {
+              "Key", "Value",
+            });
+    internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_descriptor =
+        getDescriptor().getMessageTypes().get(2);
+    internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_descriptor,
+            new java.lang.String[] {
+              "HttpMethod", "AppEngineRouting", "RelativeUri", "Headers", "Body",
+            });
+    internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_HeadersEntry_descriptor =
+        internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_descriptor
+            .getNestedTypes()
+            .get(0);
+    internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_HeadersEntry_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_AppEngineHttpTarget_HeadersEntry_descriptor,
+            new java.lang.String[] {
+              "Key", "Value",
+            });
+    internal_static_google_events_cloud_scheduler_v1_PubsubTarget_descriptor =
+        getDescriptor().getMessageTypes().get(3);
+    internal_static_google_events_cloud_scheduler_v1_PubsubTarget_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_PubsubTarget_descriptor,
+            new java.lang.String[] {
+              "TopicName", "Data", "Attributes",
+            });
+    internal_static_google_events_cloud_scheduler_v1_PubsubTarget_AttributesEntry_descriptor =
+        internal_static_google_events_cloud_scheduler_v1_PubsubTarget_descriptor
+            .getNestedTypes()
+            .get(0);
+    internal_static_google_events_cloud_scheduler_v1_PubsubTarget_AttributesEntry_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_PubsubTarget_AttributesEntry_descriptor,
+            new java.lang.String[] {
+              "Key", "Value",
+            });
+    internal_static_google_events_cloud_scheduler_v1_AppEngineRouting_descriptor =
+        getDescriptor().getMessageTypes().get(4);
+    internal_static_google_events_cloud_scheduler_v1_AppEngineRouting_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_AppEngineRouting_descriptor,
+            new java.lang.String[] {
+              "Service", "Version", "Instance", "Host",
+            });
+    internal_static_google_events_cloud_scheduler_v1_OAuthToken_descriptor =
+        getDescriptor().getMessageTypes().get(5);
+    internal_static_google_events_cloud_scheduler_v1_OAuthToken_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_OAuthToken_descriptor,
+            new java.lang.String[] {
+              "ServiceAccountEmail", "Scope",
+            });
+    internal_static_google_events_cloud_scheduler_v1_OidcToken_descriptor =
+        getDescriptor().getMessageTypes().get(6);
+    internal_static_google_events_cloud_scheduler_v1_OidcToken_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_OidcToken_descriptor,
+            new java.lang.String[] {
+              "ServiceAccountEmail", "Audience",
+            });
+    internal_static_google_events_cloud_scheduler_v1_Job_descriptor =
+        getDescriptor().getMessageTypes().get(7);
+    internal_static_google_events_cloud_scheduler_v1_Job_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_Job_descriptor,
+            new java.lang.String[] {
+              "Name",
+              "Description",
+              "PubsubTarget",
+              "AppEngineHttpTarget",
+              "HttpTarget",
+              "Schedule",
+              "TimeZone",
+              "UserUpdateTime",
+              "State",
+              "Status",
+              "ScheduleTime",
+              "LastAttemptTime",
+              "RetryConfig",
+              "AttemptDeadline",
+              "Target",
+            });
+    internal_static_google_events_cloud_scheduler_v1_RetryConfig_descriptor =
+        getDescriptor().getMessageTypes().get(8);
+    internal_static_google_events_cloud_scheduler_v1_RetryConfig_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_RetryConfig_descriptor,
+            new java.lang.String[] {
+              "RetryCount",
+              "MaxRetryDuration",
+              "MinBackoffDuration",
+              "MaxBackoffDuration",
+              "MaxDoublings",
+            });
+    internal_static_google_events_cloud_scheduler_v1_JobEventData_descriptor =
+        getDescriptor().getMessageTypes().get(9);
+    internal_static_google_events_cloud_scheduler_v1_JobEventData_fieldAccessorTable =
+        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+            internal_static_google_events_cloud_scheduler_v1_JobEventData_descriptor,
+            new java.lang.String[] {
+              "Payload",
+            });
+    com.google.protobuf.DurationProto.getDescriptor();
+    com.google.protobuf.TimestampProto.getDescriptor();
+    com.google.rpc.StatusProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
