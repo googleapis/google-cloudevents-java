@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.16.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.15.0...v0.16.0) (2024-09-26)
+
+
+### Features
+
+* Add Cloud Deploy event types ([#243](https://github.com/googleapis/google-cloudevents-java/issues/243)) ([0a8a297](https://github.com/googleapis/google-cloudevents-java/commit/0a8a297102c7506aea99893a8201484d31d14fdb))
+* Add Cloud Scheduler event types ([#246](https://github.com/googleapis/google-cloudevents-java/issues/246)) ([95bd701](https://github.com/googleapis/google-cloudevents-java/commit/95bd701cd899f865ccc260f3574935becc929213))
+
+
+### Documentation
+
+* Specify test running prerequisites in CONTRIBUTING.md ([#244](https://github.com/googleapis/google-cloudevents-java/issues/244)) ([739a64a](https://github.com/googleapis/google-cloudevents-java/commit/739a64a9ddeeba8eb215c42a3f243d6b37fb4a1e))
+
 ## [0.15.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.14.1...v0.15.0) (2024-03-29)
 
 
