@@ -291,9 +291,11 @@ public final class Data {
           + "kupPlanH\000\210\001\001B\n\n\010_payload\"_\n\020RestoreEvent"
           + "Data\022?\n\007payload\030\001 \001(\0132).google.events.cl"
           + "oud.gkebackup.v1.RestoreH\000\210\001\001B\n\n\010_payloa"
-          + "dBT\n$com.google.events.cloud.gkebackup.v"
-          + "1P\001\252\002)Google.Events.Protobuf.Cloud.GkeBa"
-          + "ckup.V1b\006proto3"
+          + "dB\236\001\n$com.google.events.cloud.gkebackup."
+          + "v1P\001\252\002)Google.Events.Protobuf.Cloud.GkeB"
+          + "ackup.V1\312\002 Google\\Events\\Cloud\\GkeBackup"
+          + "\\V1\352\002$Google::Events::Cloud::GkeBackup::"
+          + "V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
