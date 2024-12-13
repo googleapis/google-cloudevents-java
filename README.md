@@ -61,9 +61,14 @@ public class HelloProto implements CloudEventsFunction {
       String json = new String(event.getData().toBytes(), StandardCharsets.UTF_8);
       // Convert data to LogEntryData object
       LogEntryData.Builder builder = LogEntryData.newBuilder();
-      JsonFormat.parser().merge(json, builder);
       LogEntryData data = builder.build();
-      
+
+      // If you do not ignore unknown fields, then JsonFormat.Parser returns an
+      // error when encountering a new or unknown field. Note that you might lose
+      // some event data in the unmarshaling process by ignoring unknown fields.
+      JsonFormat.Parser parser = JsonFormat.parser().ignoringUnknownFields();
+      parser.merge(json, builder);
+
       // Extract specific data from LogEntryData object
       LOGGER.info("### CloudEvent Data ###");
       LOGGER.info(data.getLogName());
