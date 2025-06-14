@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 Google LLC
+ * Copyright 2025 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -89,4 +89,23 @@ public interface MessagePublishedDataOrBuilder
    * @return The bytes for subscription.
    */
   com.google.protobuf.ByteString getSubscriptionBytes();
+
+  /**
+   *
+   *
+   * <pre>
+   * The approximate number of times that Pub/Sub has attempted to deliver
+   * the associated message to a subscriber.
+   * More precisely, this is 1 + (number of NACKs) +
+   * (number of ack_deadline exceeds) for this message.
+   * Upon the first delivery of a given message, `delivery_attempt` will have a
+   * value of 1. The value is calculated at best effort and is approximate.
+   * If a DeadLetterPolicy is not set on the subscription, this will be 0.
+   * </pre>
+   *
+   * <code>int32 delivery_attempt = 3;</code>
+   *
+   * @return The deliveryAttempt.
+   */
+  int getDeliveryAttempt();
 }
