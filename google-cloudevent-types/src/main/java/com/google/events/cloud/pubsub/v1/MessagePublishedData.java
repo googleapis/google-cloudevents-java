@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 Google LLC
+ * Copyright 2025 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -178,6 +178,31 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     }
   }
 
+  public static final int DELIVERY_ATTEMPT_FIELD_NUMBER = 3;
+  private int deliveryAttempt_ = 0;
+
+  /**
+   *
+   *
+   * <pre>
+   * The approximate number of times that Pub/Sub has attempted to deliver
+   * the associated message to a subscriber.
+   * More precisely, this is 1 + (number of NACKs) +
+   * (number of ack_deadline exceeds) for this message.
+   * Upon the first delivery of a given message, `delivery_attempt` will have a
+   * value of 1. The value is calculated at best effort and is approximate.
+   * If a DeadLetterPolicy is not set on the subscription, this will be 0.
+   * </pre>
+   *
+   * <code>int32 delivery_attempt = 3;</code>
+   *
+   * @return The deliveryAttempt.
+   */
+  @java.lang.Override
+  public int getDeliveryAttempt() {
+    return deliveryAttempt_;
+  }
+
   private byte memoizedIsInitialized = -1;
 
   @java.lang.Override
@@ -198,6 +223,9 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subscription_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, subscription_);
     }
+    if (deliveryAttempt_ != 0) {
+      output.writeInt32(3, deliveryAttempt_);
+    }
     getUnknownFields().writeTo(output);
   }
 
@@ -212,6 +240,9 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subscription_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, subscription_);
+    }
+    if (deliveryAttempt_ != 0) {
+      size += com.google.protobuf.CodedOutputStream.computeInt32Size(3, deliveryAttempt_);
     }
     size += getUnknownFields().getSerializedSize();
     memoizedSize = size;
@@ -234,6 +265,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       if (!getMessage().equals(other.getMessage())) return false;
     }
     if (!getSubscription().equals(other.getSubscription())) return false;
+    if (getDeliveryAttempt() != other.getDeliveryAttempt()) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
     return true;
   }
@@ -251,6 +283,8 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
     }
     hash = (37 * hash) + SUBSCRIPTION_FIELD_NUMBER;
     hash = (53 * hash) + getSubscription().hashCode();
+    hash = (37 * hash) + DELIVERY_ATTEMPT_FIELD_NUMBER;
+    hash = (53 * hash) + getDeliveryAttempt();
     hash = (29 * hash) + getUnknownFields().hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -398,6 +432,7 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         messageBuilder_ = null;
       }
       subscription_ = "";
+      deliveryAttempt_ = 0;
       return this;
     }
 
@@ -439,6 +474,9 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       }
       if (((from_bitField0_ & 0x00000002) != 0)) {
         result.subscription_ = subscription_;
+      }
+      if (((from_bitField0_ & 0x00000004) != 0)) {
+        result.deliveryAttempt_ = deliveryAttempt_;
       }
     }
 
@@ -496,6 +534,9 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
         bitField0_ |= 0x00000002;
         onChanged();
       }
+      if (other.getDeliveryAttempt() != 0) {
+        setDeliveryAttempt(other.getDeliveryAttempt());
+      }
       this.mergeUnknownFields(other.getUnknownFields());
       onChanged();
       return this;
@@ -534,6 +575,12 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
                 bitField0_ |= 0x00000002;
                 break;
               } // case 18
+            case 24:
+              {
+                deliveryAttempt_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
             default:
               {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
@@ -863,6 +910,80 @@ public final class MessagePublishedData extends com.google.protobuf.GeneratedMes
       checkByteStringIsUtf8(value);
       subscription_ = value;
       bitField0_ |= 0x00000002;
+      onChanged();
+      return this;
+    }
+
+    private int deliveryAttempt_;
+
+    /**
+     *
+     *
+     * <pre>
+     * The approximate number of times that Pub/Sub has attempted to deliver
+     * the associated message to a subscriber.
+     * More precisely, this is 1 + (number of NACKs) +
+     * (number of ack_deadline exceeds) for this message.
+     * Upon the first delivery of a given message, `delivery_attempt` will have a
+     * value of 1. The value is calculated at best effort and is approximate.
+     * If a DeadLetterPolicy is not set on the subscription, this will be 0.
+     * </pre>
+     *
+     * <code>int32 delivery_attempt = 3;</code>
+     *
+     * @return The deliveryAttempt.
+     */
+    @java.lang.Override
+    public int getDeliveryAttempt() {
+      return deliveryAttempt_;
+    }
+
+    /**
+     *
+     *
+     * <pre>
+     * The approximate number of times that Pub/Sub has attempted to deliver
+     * the associated message to a subscriber.
+     * More precisely, this is 1 + (number of NACKs) +
+     * (number of ack_deadline exceeds) for this message.
+     * Upon the first delivery of a given message, `delivery_attempt` will have a
+     * value of 1. The value is calculated at best effort and is approximate.
+     * If a DeadLetterPolicy is not set on the subscription, this will be 0.
+     * </pre>
+     *
+     * <code>int32 delivery_attempt = 3;</code>
+     *
+     * @param value The deliveryAttempt to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDeliveryAttempt(int value) {
+
+      deliveryAttempt_ = value;
+      bitField0_ |= 0x00000004;
+      onChanged();
+      return this;
+    }
+
+    /**
+     *
+     *
+     * <pre>
+     * The approximate number of times that Pub/Sub has attempted to deliver
+     * the associated message to a subscriber.
+     * More precisely, this is 1 + (number of NACKs) +
+     * (number of ack_deadline exceeds) for this message.
+     * Upon the first delivery of a given message, `delivery_attempt` will have a
+     * value of 1. The value is calculated at best effort and is approximate.
+     * If a DeadLetterPolicy is not set on the subscription, this will be 0.
+     * </pre>
+     *
+     * <code>int32 delivery_attempt = 3;</code>
+     *
+     * @return This builder for chaining.
+     */
+    public Builder clearDeliveryAttempt() {
+      bitField0_ = (bitField0_ & ~0x00000004);
+      deliveryAttempt_ = 0;
       onChanged();
       return this;
     }
