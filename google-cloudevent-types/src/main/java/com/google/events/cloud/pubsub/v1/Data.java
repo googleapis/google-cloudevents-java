@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 Google LLC
+ * Copyright 2025 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,20 +50,21 @@ public final class Data {
     java.lang.String[] descriptorData = {
       "\n(google/events/cloud/pubsub/v1/data.pro"
           + "to\022\035google.events.cloud.pubsub.v1\032\037googl"
-          + "e/protobuf/timestamp.proto\"k\n\024MessagePub"
-          + "lishedData\022=\n\007message\030\001 \001(\0132,.google.eve"
-          + "nts.cloud.pubsub.v1.PubsubMessage\022\024\n\014sub"
-          + "scription\030\002 \001(\t\"\376\001\n\rPubsubMessage\022\014\n\004dat"
-          + "a\030\001 \001(\014\022P\n\nattributes\030\002 \003(\0132<.google.eve"
-          + "nts.cloud.pubsub.v1.PubsubMessage.Attrib"
-          + "utesEntry\022\022\n\nmessage_id\030\003 \001(\t\0220\n\014publish"
-          + "_time\030\004 \001(\0132\032.google.protobuf.Timestamp\022"
-          + "\024\n\014ordering_key\030\005 \001(\t\0321\n\017AttributesEntry"
-          + "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001B\222\001\n!com"
-          + ".google.events.cloud.pubsub.v1P\001\252\002&Googl"
-          + "e.Events.Protobuf.Cloud.PubSub.V1\312\002\035Goog"
-          + "le\\Events\\Cloud\\PubSub\\V1\352\002!Google::Even"
-          + "ts::Cloud::PubSub::V1b\006proto3"
+          + "e/protobuf/timestamp.proto\"\205\001\n\024MessagePu"
+          + "blishedData\022=\n\007message\030\001 \001(\0132,.google.ev"
+          + "ents.cloud.pubsub.v1.PubsubMessage\022\024\n\014su"
+          + "bscription\030\002 \001(\t\022\030\n\020delivery_attempt\030\003 \001"
+          + "(\005\"\376\001\n\rPubsubMessage\022\014\n\004data\030\001 \001(\014\022P\n\nat"
+          + "tributes\030\002 \003(\0132<.google.events.cloud.pub"
+          + "sub.v1.PubsubMessage.AttributesEntry\022\022\n\n"
+          + "message_id\030\003 \001(\t\0220\n\014publish_time\030\004 \001(\0132\032"
+          + ".google.protobuf.Timestamp\022\024\n\014ordering_k"
+          + "ey\030\005 \001(\t\0321\n\017AttributesEntry\022\013\n\003key\030\001 \001(\t"
+          + "\022\r\n\005value\030\002 \001(\t:\0028\001B\222\001\n!com.google.event"
+          + "s.cloud.pubsub.v1P\001\252\002&Google.Events.Prot"
+          + "obuf.Cloud.PubSub.V1\312\002\035Google\\Events\\Clo"
+          + "ud\\PubSub\\V1\352\002!Google::Events::Cloud::Pu"
+          + "bSub::V1b\006proto3"
     };
     descriptor =
         com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
@@ -77,7 +78,7 @@ public final class Data {
         new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_google_events_cloud_pubsub_v1_MessagePublishedData_descriptor,
             new java.lang.String[] {
-              "Message", "Subscription",
+              "Message", "Subscription", "DeliveryAttempt",
             });
     internal_static_google_events_cloud_pubsub_v1_PubsubMessage_descriptor =
         getDescriptor().getMessageTypes().get(1);
