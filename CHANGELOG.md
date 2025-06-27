@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.17.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.16.0...v0.17.0) (2025-06-27)
+
+
+### Features
+
+* Add type definitions for API Hub events ([#251](https://github.com/googleapis/google-cloudevents-java/issues/251)) ([c73f8ca](https://github.com/googleapis/google-cloudevents-java/commit/c73f8ca6b92e63756d1636100eb462bbd97edbca))
+
+
+### Documentation
+
+* Update example to discard unknown fields ([#252](https://github.com/googleapis/google-cloudevents-java/issues/252)) ([aced2bc](https://github.com/googleapis/google-cloudevents-java/commit/aced2bc43f7a856f738eda3a0a6f2d1028a7bf7d))
+
 ## [0.16.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.15.0...v0.16.0) (2024-09-26)
 
 
