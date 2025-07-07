@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.17.1](https://github.com/googleapis/google-cloudevents-java/compare/v0.17.0...v0.17.1) (2025-07-07)
+
+
+### Dependencies
+
+* Bump com.google.api-client:google-api-client from 2.2.0 to 2.8.0 ([#272](https://github.com/googleapis/google-cloudevents-java/issues/272)) ([5419369](https://github.com/googleapis/google-cloudevents-java/commit/5419369c3ae0a04ff455f65d4c06dbf655ad8908))
+* Bump com.google.protobuf:protobuf-java from 3.25.5 to 4.31.1 ([#268](https://github.com/googleapis/google-cloudevents-java/issues/268)) ([1f6ea4b](https://github.com/googleapis/google-cloudevents-java/commit/1f6ea4b88d8ccc150bbb4ff0155bcbb73c862c80))
+
 ## [0.17.0](https://github.com/googleapis/google-cloudevents-java/compare/v0.16.0...v0.17.0) (2025-06-27)
 
 
